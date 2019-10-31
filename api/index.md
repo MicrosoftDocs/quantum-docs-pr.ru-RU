@@ -11,7 +11,7 @@ ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999083"
+ms.locfileid: "73056967"
 ---
 # <a name="q-standard-libraries"></a>Стандартные библиотеки Q# #
 
