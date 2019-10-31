@@ -1,0 +1,99 @@
+### YamlMime:Landing
+title: Документация по Microsoft Quantum
+summary: Сведения о том, как использовать Microsoft Quantum Development Kit и Q# для разработки квантовых алгоритмов. Изучите основные концепции и создайте первую квантовую программу.
+metadata:
+  title: Документация по Microsoft Quantum — справочник по API Q#
+  description: Сведения о том, как использовать Microsoft Quantum Development Kit и Q# для разработки квантовых алгоритмов. Изучите основные концепции и создайте первую квантовую программу.
+  ms.prod: quantum
+  ms.topic: landing-page
+  ms.collection: collection
+  author: cjgronlund
+  ms.author: cgronlun
+  ms.date: 09/30/2019
+  ms.openlocfilehash: 692456cb6b117b206d202b01967202b7ac89e59d
+  ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/30/2019
+  ms.locfileid: "73065067"
+landingContent:
+- title: Начало работы с Microsoft Quantum
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Мы рады представить вам Microsoft Quantum Development Kit.
+      url: welcome.md
+  - linkListType: get-started
+    links:
+    - text: Установка Quantum Development Kit
+      url: install-guide/index.md
+    - text: Обновление Quantum Development Kit
+      url: install-guide/update.md
+  - linkListType: quickstart
+    links:
+    - text: Создание первой квантовой программы
+      url: quickstart.md
+- title: Сведения о квантовых вычислениях
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Что такое квантовые вычисления?
+      url: concepts/index.md
+    - text: Векторы и матрицы
+      url: concepts/vectors-and-matrices.md
+    - text: Расширенные концепции матриц
+      url: concepts/advanced-matrices.md
+    - text: Кубит
+      url: concepts/the-qubit.md
+    - text: Программный стек
+      url: concepts/software-stack.md
+- title: Методики квантовой разработки
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Что такое Q#?
+      url: techniques/file-structure.md
+    - text: Операции и функции
+      url: techniques/operations-and-functions.md
+    - text: Локальные переменные
+      url: techniques/local-variables.md
+    - text: Работа с кубитами
+      url: techniques/working-with-qubits.md
+    - text: Объединяя все перечисленное. Телепортация
+      url: techniques/putting-it-all-together.md
+- title: Управление компьютерами и драйверами
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Классические драйверы и компьютеры
+      url: machines/index.md
+    - text: Симулятор полного состояния из Quantum Development Kit
+      url: machines/full-state-simulator.md
+    - text: Средство оценки ресурсов
+      url: machines/resources-estimator.md
+    - text: Квантовый симулятор трассировки
+      url: machines/qc-trace-simulator/index.md
+    - text: Симулятор Тоффоли из Quantum Development Kit
+      url: machines/toffoli-simulator.md
+- title: Язык Q# и библиотеки к нему
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Общие сведения о языке Q#
+      url: language/index.md
+    - text: Заметки о выпуске
+      url: relnotes/index.md
+  - linkListType: reference
+    links:
+    - text: Стандартные библиотеки
+      url: libraries/standard/index.md
+    - text: Библиотека для химии
+      url: libraries/chemistry/index.md
+    - text: Числовая библиотека
+      url: libraries/numerics/index.md
+  - linkListType: reference
+    links:
+    - text: Справочник по Q#
+      url: https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.bitwise?view=qsharp-preview
+    - text: Компоненты на C#
+      url: https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators?view=quantum-dotnet-latest

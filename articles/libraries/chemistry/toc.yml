@@ -1,0 +1,9 @@
+- name: Установка и проверка
+  href: installation.md
+- name: Концепции квантовой химии
+  href: concepts/toc.yml
+- name: Вызов библиотеки для химии
+  topicHref: samples/index.md
+  href: samples/toc.yml
+- name: Схема
+  href: schema/toc.yml

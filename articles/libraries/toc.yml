@@ -1,0 +1,9 @@
+- name: Стандартные библиотеки
+  topicHref: standard/index.md
+  href: standard/toc.yml
+- name: Библиотека квантовой химии
+  topicHref: chemistry/index.md
+  href: chemistry/toc.yml
+- name: Квантовая библиотека числовых значений
+  topicHref: numerics/index.md
+  href: numerics/toc.yml

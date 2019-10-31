@@ -1,0 +1,22 @@
+---
+title: Библиотеки Quantum Development Kit | Документация Майкрософт
+author: cgranade
+ms.author: chgranad@microsoft.com
+ms.date: 10/17/2018
+ms.topic: article
+uid: microsoft.quantum.libraries
+ms.openlocfilehash: 5a5b28f7e8c1669d26d1064753f20551a6b0d036
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72970389"
+---
+<span data-ttu-id="4efb1-102">Quantum Development Kit включает несколько библиотек, которые упрощают разработку квантовых приложений на языке Q#.</span><span class="sxs-lookup"><span data-stu-id="4efb1-102">The Quantum Development Kit is provided with several libraries to make it easier to develop quantum applications in Q#.</span></span>
+<span data-ttu-id="4efb1-103">В этом разделе документации описываются эти библиотеки и способы их использования в программах.</span><span class="sxs-lookup"><span data-stu-id="4efb1-103">In this section of the documentation, we describe these libraries and how to use them in your programs.</span></span>
+
+- <span data-ttu-id="4efb1-104">[**Стандартные библиотеки.** ](xref:microsoft.quantum.libraries.standard.intro) В этом разделе собрана информация о библиотеках prelude, которая определяет интерфейсы между программами Q# и целевыми машинами, и canon, которая предоставляет общеупотребимые операции и функции для использования в программах Q#.</span><span class="sxs-lookup"><span data-stu-id="4efb1-104">[**Standard libraries**](xref:microsoft.quantum.libraries.standard.intro): This section describes the prelude, which defines the interface between Q# programs and target machines, and the canon, a Q# library that provides general-purpose operations and functions for use in writing Q# programs.</span></span>
+- <span data-ttu-id="4efb1-105">[**Библиотека Quantum Chemistry.** ](xref:microsoft.quantum.chemistry.concepts.intro) В этом разделе описывается библиотека для квантовой химии, которая содержит модель данных для загрузки гамильтоновых представлений фермионов, а также операции и функции квантового моделирования для работы с этими представлениями.</span><span class="sxs-lookup"><span data-stu-id="4efb1-105">[**Quantum chemistry library**](xref:microsoft.quantum.chemistry.concepts.intro): This section describes the quantum chemistry library, which provides a data model for loading representations of fermionic Hamiltonians and quantum simulation operations and functions which act on these representations.</span></span>
+- <span data-ttu-id="4efb1-106">[**Квантовая библиотека числовых значений.** ](xref:microsoft.quantum.numerics.intro) В этом разделе описывается квантовая библиотека числовых значений, которая предоставляет реализации большого набора математических функций.</span><span class="sxs-lookup"><span data-stu-id="4efb1-106">[**Quantum numerics library**](xref:microsoft.quantum.numerics.intro): This section describes the quantum numerics library, which provides implementations for a host of mathematical functions.</span></span> <span data-ttu-id="4efb1-107">Она поддерживает целочисленные значения (со знаком и без знака) и представления с фиксированной запятой.</span><span class="sxs-lookup"><span data-stu-id="4efb1-107">It supports integer (signed & unsigned) and fixed-point representations.</span></span>
+
+<span data-ttu-id="4efb1-108">Исходный код этих библиотек и примеры использования можно получить на GitHub.</span><span class="sxs-lookup"><span data-stu-id="4efb1-108">Sources of the libraries as well as code samples can be obtained from GitHub.</span></span> <span data-ttu-id="4efb1-109">См. сведения о [лицензировании](xref:microsoft.quantum.libraries.licensing).</span><span class="sxs-lookup"><span data-stu-id="4efb1-109">See also the [licensing](xref:microsoft.quantum.libraries.licensing) section for further information.</span></span> <span data-ttu-id="4efb1-110">Важно отметить, что для библиотек можно использовать ссылки на пакеты (двоичные файлы), что дает альтернативный способ включать их в проекты.</span><span class="sxs-lookup"><span data-stu-id="4efb1-110">It should be noted that package references ("binaries") are available also for the libraries which offers another way of including the libraries in projects.</span></span> <span data-ttu-id="4efb1-111">Например, очень удобно получать их с помощью [NuGet](https://nuget.org).</span><span class="sxs-lookup"><span data-stu-id="4efb1-111">A convenient way of obtaining them is via [nuget](https://nuget.org).</span></span>  
