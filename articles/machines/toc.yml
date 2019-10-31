@@ -1,0 +1,11 @@
+- name: Классические компьютеры и драйверы
+  href: index.md
+- name: Квантовый симулятор
+  href: full-state-simulator.md
+- name: Средство оценки ресурсов
+  href: resources-estimator.md
+- name: Симулятор трассировки квантового компьютера
+  topicHref: qc-trace-simulator/index.md
+  href: qc-trace-simulator/toc.yml
+- name: Симулятор Тоффоли
+  href: toffoli-simulator.md
