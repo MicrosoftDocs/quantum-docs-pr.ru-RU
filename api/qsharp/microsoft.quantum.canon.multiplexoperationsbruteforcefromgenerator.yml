@@ -1,0 +1,60 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.multiplexoperationsbruteforcefromgenerator
+name: MultiplexOperationsBruteForceFromGenerator
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Применяет операцию с множественным контролем, $U $, которая применяет единое $V _j $ при управлении с помощью n-кубит номера состояния $ \кет{ж} $.
+
+
+  $U = \сум ^ {N-1} _ {j = 0} \кет{ж}\бра{ж}\отимес V_j $.
+remarks: '`coefficients` будут дополнены элементами Identity, если указано меньше $2 ^ n $. Эта версия реализована непосредственно с помощью циклов в единых операторах, управляемых n.'
+syntax: "operation MultiplexOperationsBruteForceFromGenerator (unitaryGenerator : (Int, (Int -> ('T => Unit is Adj + Ctl))), index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T) : Unit"
+input:
+  content: "(unitaryGenerator : (Int, (Int -> ('T => Unit is Adj + Ctl))), index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T)"
+  types:
+  - name: unitaryGenerator
+    summary: Кортеж, в котором первый элемент `Int` является числом унитариес $N $, а второй элемент `(Int -> ('T => () is Adj + Ctl))` является функцией, принимающей целое число $j $ в $ [0, N-1] $ и выводит единую операцию $V _j $.
+    types:
+    - isPrimitive: true
+      uid: Int
+    - isFunction: true
+      input:
+        types:
+        - isPrimitive: true
+          uid: Int
+      output:
+        types:
+        - isOperation: true
+          input:
+            types:
+            - uid: "'T"
+              isLocal: true
+          output:
+            types:
+            - isPrimitive: true
+              uid: Unit
+          functors:
+          - Adjoint
+          - Controlled
+  - name: index
+    summary: $n $-кубит управления регистром, который кодирует числовые состояния $ \кет{ж} $ в формате с прямым порядком байтов.
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: target
+    summary: Универсальный кубит регистр, в $V котором работает _j $.
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: a010fc41e76c09f064fdb7a0fa890efcfd8a41f8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73225168"

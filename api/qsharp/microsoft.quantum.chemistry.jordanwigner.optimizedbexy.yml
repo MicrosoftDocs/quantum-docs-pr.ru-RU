@@ -1,0 +1,37 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.jordanwigner.optimizedbexy
+name: OptimizedBEXY
+type: operation
+namespace: Microsoft.Quantum.Chemistry.JordanWigner
+summary: Единая $U $, которая применяет строку Паули в $ (X ^ {z + 1}\_корр. {z}\_p) Z\_{p-1}... Z_0 $ on Кубитс $0.. p $ conditiond on a index $z \ин\{0, 1\}$ и $p $. То есть $ $ \бегин{алигн} У\кет {z} \ Сисакет {p} \ Сисакет {\ PSI} = \кет{з}\кет{п} (X ^ {z + 1}\_корректировка ^ {z}\_p) Z\_{p-1}... Z_0\ket {\ PSI} \енд{алигн} $ $
+syntax: 'operation OptimizedBEXY (pauliBasis : Qubit, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[]) : Unit'
+references: '- Кодирование электронных спектра в тактовых каналах с помощью линейной T сложности Райан Баббуш, Крейг Гиднэй, Dominic W. Берри, (Nathan Виебе, Жаррод Астрид, Александру Палер, Остин Фаулер, Хартмут Невен https://arxiv.org/abs/1805.03662'
+input:
+  content: '(pauliBasis : Qubit, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[])'
+  types:
+  - name: pauliBasis
+    summary: Если кубит находится в состоянии $ \кет{0}$, применяется $X $. Когда он находится в состоянии $ \кет{1}$, применяется $Y $.
+    isPrimitive: true
+    uid: Qubit
+  - name: indexRegister
+    summary: Состояние $ \кет{п} $ этого регистра определяет кубит, к которому применяется $X $ или $Y $ $.
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: targetRegister
+    summary: Регистрация Кубитс, к которой применяются операторы Паули.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: e0ac3f2f050ed584053f7da7a310f1855e992141
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228466"

@@ -1,0 +1,62 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.zip4
+name: Zip4
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: При наличии четырех массивов возвращает новый массив из 4 кортежей таким, что каждый 4 кортежа содержит элемент из каждого исходного массива.
+syntax: "function Zip4 (first : 'T1[], second : 'T2[], third : 'T3[], fourth : 'T4[]) : ('T1, 'T2, 'T3, 'T4)[]"
+input:
+  content: "(first : 'T1[], second : 'T2[], third : 'T3[], fourth : 'T4[])"
+  types:
+  - name: first
+    summary: Массив, содержащий значения для первого элемента каждого кортежа.
+    isArray: true
+    uid: "'T1"
+    isLocal: true
+  - name: second
+    summary: Массив, содержащий значения для второго элемента каждого кортежа.
+    isArray: true
+    uid: "'T2"
+    isLocal: true
+  - name: third
+    summary: Массив, содержащий значения для третьего элемента каждого кортежа.
+    isArray: true
+    uid: "'T3"
+    isLocal: true
+  - name: fourth
+    summary: Массив, содержащий значения для четвертого элемента каждого кортежа.
+    isArray: true
+    uid: "'T4"
+    isLocal: true
+output:
+  content: ('T1, 'T2, 'T3, 'T4)[]
+  types:
+  - summary: Массив, содержащий 4 кортежа `(first[idx], second[idx], third[idx], fourth[idx])` формы для каждой `idx`. Если четыре массива не имеют одинаковую длину, выходные данные будут иметь длину до более короткой из входных значений.
+    isArray: true
+    types:
+    - uid: "'T1"
+      isLocal: true
+    - uid: "'T2"
+      isLocal: true
+    - uid: "'T3"
+      isLocal: true
+    - uid: "'T4"
+      isLocal: true
+typeParameters:
+- uid: "'T1"
+  summary: Тип первого элемента массива.
+- uid: "'T2"
+  summary: Тип второго элемента массива.
+- uid: "'T3"
+  summary: Тип третьего элемента массива.
+- uid: "'T4"
+  summary: Тип четвертых элементов массива.
+seeAlso:
+- zip
+- zip3
+ms.openlocfilehash: 797258d6f178724007baa765be20b639c32f84fd
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214169"

@@ -1,0 +1,65 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.convert
+name: Microsoft.Quantum.Convert
+summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен содержит функции для преобразования различных типов данных Q #."
+functions:
+- uid: microsoft.quantum.convert.bigintasboolarray
+  summary: >-
+    Преобразует заданное большое целое число в массив логических значений.
+
+    Элемент 0 массива является наименее значащим битом длинного целого числа.
+- uid: microsoft.quantum.convert.boolarrayasbigint
+  summary: >-
+    Преобразует заданный массив логических значений в эквивалентное большое целое число.
+
+    Элемент 0 массива является наименее значащим битом длинного целого числа.
+- uid: microsoft.quantum.convert.boolarrayasint
+  summary: Возвращает положительное целое число из строки битов в формате с прямым порядком байтов.
+- uid: microsoft.quantum.convert.boolarrayaspauli
+  summary: При наличии битовой строки возвращает оператор Multi-кубит Паули, представленный в виде массива операторов с одним кубит Паули.
+- uid: microsoft.quantum.convert.boolarrayasresultarray
+  summary: Преобразует тип `Bool[]` в тип `Result[]`, где `true` сопоставляется с `One` и `false` сопоставляется с `Zero`.
+- uid: microsoft.quantum.convert.boolasresult
+  summary: Преобразует тип `Bool` в тип `Result`, где `true` сопоставляется с `One` и `false` сопоставляется с `Zero`.
+- uid: microsoft.quantum.convert.boolasstring
+  summary: Преобразует заданное логическое значение в эквивалентное строковое представление.
+- uid: microsoft.quantum.convert.doubleasstring
+  summary: Преобразует заданное число двойной точности с плавающей запятой в эквивалентное строковое представление.
+- uid: microsoft.quantum.convert.doubleasstringwithformat
+  summary: Преобразует заданное число с плавающей запятой двойной точности в эквивалентное строковое представление, используя заданный формат.
+- uid: microsoft.quantum.convert.functionasoperation
+  summary: Преобразует функции в операции.
+- uid: microsoft.quantum.convert.intasbigint
+  summary: Преобразует заданное целое число в эквивалентное большое целое число.
+- uid: microsoft.quantum.convert.intasboolarray
+  summary: Создает двоичное представление положительного целого числа с использованием представления с прямым порядком байтов для возвращаемого массива.
+- uid: microsoft.quantum.convert.intasdouble
+  summary: Преобразует заданное целое число в эквивалентное число двойной точности с плавающей запятой.
+- uid: microsoft.quantum.convert.intasstring
+  summary: Преобразует заданное целое число в эквивалентное строковое представление.
+- uid: microsoft.quantum.convert.intasstringwithformat
+  summary: Преобразует заданное целое число в эквивалентное строковое представление, используя заданный формат.
+- uid: microsoft.quantum.convert.maybebigintasint
+  summary: >-
+    Преобразует заданное большое целое число в эквивалентное целое число, если это возможно.
+
+    Функция возвращает пару результирующего целого числа и логический флаг, который имеет значение true, только если преобразование возможно.
+- uid: microsoft.quantum.convert.pauliarrayasint
+  summary: Кодирует оператор Multi-кубит Паули, представленный в виде массива операторов с одним кубит Паули в целое число.
+- uid: microsoft.quantum.convert.rangeasintarray
+  summary: Создает массив `arr` целочисленных значений, перечисленных с помощью Start.. шаг.. конце.
+- uid: microsoft.quantum.convert.resultarrayasboolarray
+  summary: Преобразует тип `Result[]` в тип `Bool[]`, где `One` сопоставляется с `true` и `Zero` сопоставляется с `false`.
+- uid: microsoft.quantum.convert.resultarrayasint
+  summary: Возвращает положительное целое число из строки результатов в формате с прямым порядком байтов.
+- uid: microsoft.quantum.convert.resultasbool
+  summary: Преобразует тип `Result` в тип `Bool`, где `One` сопоставляется с `true` и `Zero` сопоставляется с `false`.
+operations:
+- uid: microsoft.quantum.convert.call
+  summary: Вызывает функцию с заданным входным параметром.
+ms.openlocfilehash: a0c347d8004b8f8bd35fc1b7f7eaf52e6230cee0
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73210973"

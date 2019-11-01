@@ -1,0 +1,59 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyifoneca
+name: ApplyIfOneCA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Применяет единую операцию с условием для классического результирующего значения One.
+
+
+  При наличии `op` операции и значения результата `result`применяет `op` к `target`, если `result` — `One`. Если `Zero`, в `target`ничего не происходит.
+
+  Суффикс `CA` указывает, что применяемая операция является единой (управляемой и аджоинтабле).
+syntax: "operation ApplyIfOneCA (result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T)) : Unit"
+input:
+  content: "(result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T))"
+  types:
+  - name: result
+    summary: Результат измерения, определяющий, применяется ли оператор Op.
+    isPrimitive: true
+    uid: Result
+  - name: op
+    summary: Операция, применяемая к условию.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: target
+    summary: Входные данные, к которым применяется операция.
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: Тип входных данных операции, которая должна применяться условно.
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applyifonec
+- microsoft.quantum.canon.applyifonea
+- microsoft.quantum.canon.applyifoneca
+ms.openlocfilehash: 9756dcc29853d41e1d2a9fee5816254afa5e5d73
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73217399"

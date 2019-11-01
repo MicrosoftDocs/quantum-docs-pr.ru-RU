@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.ampampphasesfixedpoint
+name: AmpAmpPhasesFixedPoint
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: Вычисление этапов частичного отражения для усиления амплитуды с фиксированной точкой.
+syntax: 'function AmpAmpPhasesFixedPoint (nQueries : Int, successMin : Double) : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases'
+references: >-
+  Мы используем этапы в «усилении амплитуды с фиксированной точкой с оптимальным количеством запросов».
+
+
+  - [YoderLowChuang2014](https://arxiv.org/abs/1409.3305) См. также «методология составного тактового шлюза»
+
+  - [LowYoderChuang2016](https://arxiv.org/abs/1603.03996) для этапов в формате `RotationPhases`.
+input:
+  content: '(nQueries : Int, successMin : Double)'
+  types:
+  - name: nQueries
+    summary: Число запросов к состоянию Oracle для подготовки. Должно быть нечетным целым числом.
+    isPrimitive: true
+    uid: Int
+  - name: successMin
+    summary: Минимальная вероятность успеха для целевого объекта.
+    isPrimitive: true
+    uid: Double
+output:
+  content: Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases
+  types:
+  - summary: Массив фаз, который может использоваться в реализации алгоритма для усиления амплитуды с фиксированной точкой.
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+ms.openlocfilehash: 0dc2c9b18998bac65cd746b5c4065a09a990ef13
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215699"

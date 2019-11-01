@@ -1,0 +1,88 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance
+name: AssertQubitIsInStateWithinTolerance
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: >-
+  Утверждает, что кубит находится в ожидаемом состоянии.
+
+
+  `expected` представляет сложный вектор, $ \кет{\пси} = \бегин{бматрикс}а & б\енд {бматрикс} ^ {\Масрм{т}} $.
+
+  Первый элемент кортежей, представляющий каждый из $a $, $b $ является реальной частью комплексного числа, а второй — мнимой частью.
+
+  Последний аргумент определяет допуск, с которым выполняется утверждение.
+remarks: >-
+  Следующий код Масематика можно использовать для проверки выражений для MI, MX, My, MZ:
+
+
+  ```mathematica
+
+  {Id, X, Y, Z} = Table[PauliMatrix[k], {k, 0, 3}];
+
+  st = {{ reA + I imA }, { reB + I imB} };
+
+  M = st . ConjugateTranspose[st];
+
+  mx = Tr[M.X] // ComplexExpand;
+
+  my = Tr[M.Y] // ComplexExpand;
+
+  mz = Tr[M.Z] // ComplexExpand;
+
+  mi = Tr[M.Id] // ComplexExpand;
+
+  2 m == Id mi + X mx + Z mz + Y my // ComplexExpand // Simplify
+
+  ```
+
+
+  Допуск — это $L\_{\инфти} $ Distance между трехмерным реальным вектором (x ₂, x ₃, x ₄), определенным $ \лангле\пси | \пси\рангле = x\_1 I + x\_2 X + x\_3 Y + x\_4 Z $ и реальным вектором (Y ₂ , y ₃, y ₄), определяемой p = y ₁ I + y ₂ X + y ₃ Y + y ₄ Z, где p — это матрица плотности, соответствующая состоянию регистра.
+
+  Это справедливо только в случае предположения, что TR (p) и TR (| ψ ⟩ ⟨ ψ |) равны 1 (например, x ₁ = 1/2, y ₁ = 1/2).
+
+  Если это не так, функция утверждает, что l ∞ расстояние между (x ₂-x ₁, x ₃-x ₁, x ₄-x ₁, x ₄ + x ₁) и (y ₂-y ₁, y ₃-y ₁, y ₄-y ₁, y ₄ + y ₁) меньше, чем параметр допуска.
+examples: >-
+  ```Q#
+
+  using (qubits = Qubit[2]) {
+      // Both qubits are initialized as |0〉: a=(1 + 0*i), b=(0 + 0*i)
+      AssertQubitIsInStateWithinTolerance((Complex(1., 0.), Complex(0., 0.)), qubits[0], 1e-5);
+      AssertQubitIsInStateWithinTolerance((Complex(1., 0.), Complex(0., 0.)), qubits[1], 1e-5);
+      Y(qubits[1]);
+      // Y |0〉 = i |1〉: a=(0 + 0*i), b=(0 + 1*i)
+      AssertQubitIsInStateWithinTolerance((Complex(0., 0.), Complex(0., 1.)), qubits[1], 1e-5);
+  }
+
+  ```
+syntax: 'operation AssertQubitIsInStateWithinTolerance (expected : (Microsoft.Quantum.Math.Complex, Microsoft.Quantum.Math.Complex), register : Qubit, tolerance : Double) : Unit'
+input:
+  content: '(expected : (Microsoft.Quantum.Math.Complex, Microsoft.Quantum.Math.Complex), register : Qubit, tolerance : Double)'
+  types:
+  - name: expected
+    summary: Ожидаемые сложные амплитуды для $ \кет{0}$ и $ \кет{1}$ соответственно.
+    types:
+    - uid: microsoft.quantum.math.complex
+    - uid: microsoft.quantum.math.complex
+  - name: register
+    summary: Кубит, состояние которого должно быть утверждено. Обратите внимание, что предполагается, что кубит отделяемых из других выделенных Кубитс, а не запутанными.
+    isPrimitive: true
+    uid: Qubit
+  - name: tolerance
+    summary: >-
+      Аддитивная погрешность, с которой действительные амплитуды могут отклоняться от ожидаемого.
+
+      Дополнительные сведения см. в примечаниях ниже.
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 8b43bac19173c5ae5a11ff6879a03209c32e7c76
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227123"

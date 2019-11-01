@@ -1,0 +1,48 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.enumerated
+name: Enumerated
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: При наличии массива возвращает новый массив, содержащий элементы исходного массива вместе с индексами каждого элемента.
+examples: >-
+  Следующие циклы `for` эквивалентны:
+
+
+  ```Q#
+
+  for (idx in IndexRange(array)) {
+      let element = array[idx];
+      ...
+  }
+
+  for ((idx, element) in Enumerated(array)) { ... }
+
+  ```
+syntax: "function Enumerated (array : 'TElement[]) : (Int, 'TElement)[]"
+input:
+  content: "(array : 'TElement[])"
+  types:
+  - name: array
+    summary: Массив, элементы которого необходимо перечислить.
+    isArray: true
+    uid: "'TElement"
+    isLocal: true
+output:
+  content: (Int, 'TElement)[]
+  types:
+  - summary: Новый массив, содержащий извлекаются исходного массива вместе с их индексами.
+    isArray: true
+    types:
+    - isPrimitive: true
+      uid: Int
+    - uid: "'TElement"
+      isLocal: true
+typeParameters:
+- uid: "'TElement"
+  summary: Тип элементов массива.
+ms.openlocfilehash: 471b62b28ef2014584de637d41158fb8ac7c629d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73220969"

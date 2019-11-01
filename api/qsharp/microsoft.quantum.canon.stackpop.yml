@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.stackpop
+name: StackPop
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: Удаляет самый верхний элемент из <xref:microsoft.quantum.canon.resultstack>.
+syntax: 'function StackPop (stack : Microsoft.Quantum.Canon.ResultStack) : Microsoft.Quantum.Canon.ResultStack'
+input:
+  content: '(stack : Microsoft.Quantum.Canon.ResultStack)'
+  types:
+  - name: stack
+    summary: Стек для выталкивания.
+    uid: microsoft.quantum.canon.resultstack
+output:
+  content: Microsoft.Quantum.Canon.ResultStack
+  types:
+  - summary: '`stack` с удаленным верхним элементом. Новый стек имеет ту же емкость, что и старый, но его длина уменьшается на единицу.'
+    uid: microsoft.quantum.canon.resultstack
+ms.openlocfilehash: 371952e68e9c06fc11d9e8c309a4d388b80a9556
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219371"

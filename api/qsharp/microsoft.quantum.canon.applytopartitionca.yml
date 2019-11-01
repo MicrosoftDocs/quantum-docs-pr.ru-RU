@@ -1,0 +1,59 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytopartitionca
+name: ApplyToPartitionCA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Применяет пару операций к заданному разделу регистра на две части.
+
+  Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+syntax: 'operation ApplyToPartitionCA (op : ((Qubit[], Qubit[]) => Unit is Ctl + Adj), numberOfQubitsToFirstArgument : Int, target : Qubit[]) : Unit'
+input:
+  content: '(op : ((Qubit[], Qubit[]) => Unit is Ctl + Adj), numberOfQubitsToFirstArgument : Int, target : Qubit[])'
+  types:
+  - name: op
+    summary: Пара операций, применяемых к заданному разделу.
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: numberOfQubitsToFirstArgument
+    summary: >-
+      Число Кубитс от целевого объекта, помещаемых в первую часть секции.
+
+      Остальные Кубитс составляют вторую часть секции.
+    isPrimitive: true
+    uid: Int
+  - name: target
+    summary: Регистр Кубитс, которые секционированы и управляются данной двумя операциями.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applytopartition
+ms.openlocfilehash: 8eced8b43f98878de9c66135ba022cad8702c56e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213013"

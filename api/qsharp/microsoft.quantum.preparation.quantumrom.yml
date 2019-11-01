@@ -1,0 +1,99 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.preparation.quantumrom
+name: QuantumROM
+type: function
+namespace: Microsoft.Quantum.Preparation
+summary: >-
+  Использует методику такта для представления заданной матрицы плотности.
+
+
+  При наличии списка $N $ коэффициентов $ \alpha_j $ эта функция возвращает единую $U $, которая использует метод такта для подготовки приближения $ \tilde\rho\sum_{j = 0} ^ {N-1} p_j\ket {j} \ неверное {j} $ из пурификатион матрицы плотности $ \рхо = \sum_{j = 0} ^ {N-1} \фрак{| alpha_j |} {\sum_k | \alpha_k |} \кет{ж}\бра{ж} $. В этом приближении ошибка $ \епсилон $ заключается в том, что $ | p_j-\фрак{| alpha_j |} {\sum_k | \alpha_k |} | \ле \епсилон/N $ and $\|\тилде\рхо-\рхо\| \ле \епсилон $. Иными словами, $ $ \бегин{алигн} У\кет{0}^ {\lceil\log_2 Н\рцеил} \ Сисакет{0}^ {m} = \sum_{j = 0} ^ {N-1} \sqrt{p_j} \ket{j}\ket{\Text{Garbage}_j}.
+
+  \енд{алигн} $ $
+examples: >-
+  Следующий фрагмент кода подготавливает пурификатион из $3 $-кубит State $ \рхо = \sum_{j = 0} ^{4}\фрак{| alpha_j |} {\sum_k | \alpha_k |} \кет{ж}\бра{ж} $, где $ \век\алфа = (1.0, 2.0, 3.0, 4.0, 5.0) $, а ошибка — `1e-3`;
+
+
+  ```qsharp
+
+  let coefficients = [1.0,2.0,3.0,4.0,5.0];
+
+  let targetError = 1e-3;
+
+  let ((nTotalQubits, (nIndexQubits, nGarbageQubits)), oneNorm, op) = QuantumROM(targetError, coefficients);
+
+  using (indexRegister = Qubit[nIndexQubits]) {
+      using (garbageRegister = Qubit[nGarbageQubits]) {
+          op(LittleEndian(indexRegister), garbageRegister);
+      }
+  }
+
+  ```
+syntax: 'function QuantumROM (targetError : Double, coefficients : Double[]) : ((Int, (Int, Int)), Double, ((Microsoft.Quantum.Arithmetic.LittleEndian, Qubit[]) => Unit is Adj + Ctl))'
+references: '- Кодирование электронных спектра в тактовых каналах с помощью линейной T сложности Райан Баббуш, Крейг Гиднэй, Dominic W. Берри, (Nathan Виебе, Жаррод Астрид, Александру Палер, Остин Фаулер, Хартмут Невен https://arxiv.org/abs/1805.03662'
+input:
+  content: '(targetError : Double, coefficients : Double[])'
+  types:
+  - name: targetError
+    summary: Целевая ошибка $ \епсилон $.
+    isPrimitive: true
+    uid: Double
+  - name: coefficients
+    summary: >-
+      Массив коэффициентов $N $ с указанием вероятности базисных состояний.
+
+      Отрицательные числа $-\alpha_j $ будут рассматриваться как положительные $ | \alpha_j | $.
+    isArray: true
+    isPrimitive: true
+    uid: Double
+output:
+  content: ((Int, (Int, Int)), Double, ((Microsoft.Quantum.Arithmetic.LittleEndian, Qubit[]) => Unit is Adj + Ctl))
+  types:
+  - summary: >-
+      ## <a name="first-parameter"></a>Первый параметр
+
+
+      Кортеж `(x,(y,z))`, где `x = y + z` — общее количество выделенных Кубитс, `y` — число Кубитс для регистра `LittleEndian`, а `z` — число мусорных Кубитс.
+
+
+      ## <a name="second-parameter"></a>Второй параметр
+
+
+      1-норма $ \sum_j | \alpha_j | $ из массива коэффициентов.
+
+
+      ## <a name="third-parameter"></a>Третий параметр
+
+
+      Единая $U $.
+    types:
+    - types:
+      - isPrimitive: true
+        uid: Int
+      - types:
+        - isPrimitive: true
+          uid: Int
+        - isPrimitive: true
+          uid: Int
+    - isPrimitive: true
+      uid: Double
+    - isOperation: true
+      input:
+        types:
+        - uid: microsoft.quantum.arithmetic.littleendian
+        - isArray: true
+          isPrimitive: true
+          uid: Qubit
+      output:
+        types:
+        - isPrimitive: true
+          uid: Unit
+      functors:
+      - Adjoint
+      - Controlled
+ms.openlocfilehash: 33d21289b0b1ad64577677d5fa5ca622346224cc
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226426"

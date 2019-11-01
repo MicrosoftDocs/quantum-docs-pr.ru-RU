@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.oracles.stateoracle
+name: статеоракле
+type: newtype
+namespace: Microsoft.Quantum.Oracles
+summary: >-
+  Представляет Oracle для подготовки состояния.
+
+
+  Входные данные для Oracle $O $:
+
+
+  - Целочисленное индексирование флага кубит $f $.
+
+  - Система регистрирует $s $, которая будет хранить требуемое состояние такта $ \кет{\пси}\_s $.
+remarks: >-
+  Эта база данных Oracle определяется с помощью $ $ О\кет{0}\_{f} \кет{0}\_s = \ламбда\кет{1}\_ф\кет {\ PSI}\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс , $ $ действует на основе вычислительного состояния $ \кет{0}\_{f} \кет{0}\_s $ для создания целевого состояния $ \кет{\пси}\_s $ с амплитудой $ \ламбда $ в основе, помеченной как $ \кет{1}\_f $.
+
+  Первый параметр является индексом для регистра кубит в \_{0}\кет f $. Второй параметр охватывает оба регистра.
+syntax: newtype StateOracle = ((Int, Qubit[]) => Unit is Adj + Ctl);
+ms.openlocfilehash: 1faa47c21e43355ed036498adf4e823ff3f8a0e4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73067226"

@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.core.rangestep
+name: ранжестеп
+type: function
+namespace: Microsoft.Quantum.Core
+summary: Возвращает целое число, указывающее, как вычисляется следующее значение диапазона.
+remarks: Первый элемент выражения диапазона `start`, второй элемент — `start+step`, третий элемент — `start+step+step`и т. д., пока не будет передан `end`.
+syntax: 'function RangeStep (range : Range) : Int'
+input:
+  content: '(диапазон: диапазон)'
+  types:
+  - name: range
+    isPrimitive: true
+    uid: Range
+output:
+  content: Int
+  types:
+  - summary: Заданное значение шага данного диапазона.
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 0195f0f2eb03c163ae08cc789867627286a44097
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066614"

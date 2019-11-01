@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.core.rangestart
+name: RangeStart
+type: function
+namespace: Microsoft.Quantum.Core
+summary: Возвращает заданное начальное значение заданного диапазона.
+remarks: >-
+  Первый элемент выражения диапазона `start`, второй элемент — `start+step`, третий элемент — `start+step+step`и т. д., пока не будет передан `end`.
+
+
+  Обратите внимание, что определенное начальное значение диапазона совпадает с первым элементом последовательности, если диапазон не задает пустую последовательность (например, 2.. 1).
+syntax: 'function RangeStart (range : Range) : Int'
+input:
+  content: '(range : Range)'
+  types:
+  - name: range
+    isPrimitive: true
+    uid: Range
+output:
+  content: Int
+  types:
+  - summary: Заданное начальное значение заданного диапазона.
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 0d618a26d71a5b41e6ea6b73503e9f099b18f129
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231764"

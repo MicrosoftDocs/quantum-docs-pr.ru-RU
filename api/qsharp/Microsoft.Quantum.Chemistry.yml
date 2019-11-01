@@ -1,0 +1,24 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.chemistry
+name: Microsoft.Quantum.Chemistry
+functions:
+- uid: microsoft.quantum.chemistry.htermstogenidx
+  summary: Преобразует индекс в Хамилтониан термин в формате данных `HTerm[]` в Женераториндекс.
+- uid: microsoft.quantum.chemistry.htermstogensys
+  summary: Преобразует Хамилтониан в формате данных `HTerm[]` в Женераторсистем.
+- uid: microsoft.quantum.chemistry.htermtogenidx
+  summary: Преобразует Хамилтониан термин в формат данных `HTerm` в Женераториндекс.
+- uid: microsoft.quantum.chemistry.isnotzero
+  summary: Проверяет, является ли число `Double` не равным нулю.
+newtypes:
+- uid: microsoft.quantum.chemistry.hterm
+  summary: >-
+    Формат данных, передаваемых C# из в Q # для представления термина хамилтониан.
+
+    Значение представленных данных определяется алгоритмом, который их получает.
+ms.openlocfilehash: 78d6e9f54c25f9d1a6af32c157d23069b8a4872b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73210922"

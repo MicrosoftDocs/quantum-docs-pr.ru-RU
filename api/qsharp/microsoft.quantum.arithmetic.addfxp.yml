@@ -1,0 +1,35 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.addfxp
+name: AddFxP
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  Добавляет два числа с фиксированной запятой, хранящихся в тактовых регистрах.
+
+
+  При наличии двух регистров с фиксированной запятой соответственно в состояниях $ \ket{F_1} $ и $ \ket{F_2} $ выполняет операцию $ \ket{F_1} \ket{F_2} \мапсто \ket{F_1} \ket{F_1 + F_2} $.
+remarks: Текущая реализация требует, чтобы два числа с фиксированной запятой имели одну и ту же позицию точки с наименьшего значащим битом, т. е. $n _i $ и $p _i $ должны быть равны.
+syntax: 'operation AddFxP (fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, fp2 : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
+input:
+  content: '(fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, fp2 : Microsoft.Quantum.Arithmetic.FixedPoint)'
+  types:
+  - name: fp1
+    summary: Первое число с фиксированной запятой
+    uid: microsoft.quantum.arithmetic.fixedpoint
+  - name: fp2
+    summary: Второе число с фиксированной запятой будет обновлено для включения суммы двух входных значений.
+    uid: microsoft.quantum.arithmetic.fixedpoint
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 142c7927519e59fb3df1661b3beadd32cda0d2c8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215427"

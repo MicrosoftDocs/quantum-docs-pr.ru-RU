@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.ampampbyoracle
+name: AmpAmpByOracle
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: Стандартный алгоритм усиления амплитуды
+remarks: Это стандартный алгоритм усиления амплитуды, полученный при выборе фаз отражения, вычисленных `AmpAmpPhasesStandard` предполагается, что \бегин{алигн} А\кет{0}\_{f} \кет{0}\_s = \ламбда\кет{1}\_ф\кет {\ Text {Target} }\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс, \енд{алигн} эта операция подготавливает состояние \бегин{алигн} \Операторнаме{ампампбйоракле}\кет{0}\_{f} \ket{0}\_s = \sin ((2n + 1) \sin ^{-1}(\ лямбда)) \кет{1}\_ф\кет {\ Text {Target}}\_s + \кдотс\кет{0}\_f \енд{алигн} в большинстве случаев `flagQubit` и `ancillaRegister` инициализируются в состоянии $ \кет{0}\_ф\кет{0}@no__ t_25_ a $.
+syntax: 'function AmpAmpByOracle (nIterations : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
+references: '- [*G. Брассард, P. Хойер, M. Моска, A. касание*](https://arxiv.org/abs/quant-ph/0005055)'
+input:
+  content: '(nIterations : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int)'
+  types:
+  - name: nIterations
+    summary: Число итераций $n $ о усилении амплитуды
+    isPrimitive: true
+    uid: Int
+  - name: stateOracle
+    uid: microsoft.quantum.oracles.stateoracle
+  - name: idxFlagQubit
+    summary: Индекс для отметки кубит
+    isPrimitive: true
+    uid: Int
+output:
+  content: (Qubit[] => Unit is Adj + Ctl)
+  types:
+  - summary: Операция, реализующая стандартный алгоритм такта для усиления амплитуды
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+ms.openlocfilehash: b55aed7c3a9381827e79c66a4a255b1515982d8d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215801"

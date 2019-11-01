@@ -1,0 +1,19 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.chemistry.jordanwigner.vqe
+name: Microsoft. тактов. химия. Жорданвигнер. ВКЕ
+functions:
+- uid: microsoft.quantum.chemistry.jordanwigner.vqe.expandedcoefficients
+  summary: Развертывает компактное представление коэффициентов Вигнер, чтобы получить однозначное сопоставление между этими и Паули терминами.
+- uid: microsoft.quantum.chemistry.jordanwigner.vqe.measurementoperators
+  summary: Выполняет вычисление всех операторов измерения, необходимых для расчета предполагаемого Вигнер термина.
+operations:
+- uid: microsoft.quantum.chemistry.jordanwigner.vqe.estimateenergy
+  summary: Оценивает энергию молекулы путем суммирования энергии, потребляемой отдельными Вигнерными условиями.
+- uid: microsoft.quantum.chemistry.jordanwigner.vqe.estimatetermexpectation
+  summary: Вычисление энергии, связанной с заданным Вигнер Хамилтонианным термином
+ms.openlocfilehash: 5c56599c1926f2a11631c74cc03545c43a724eeb
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057211"
