@@ -1,0 +1,59 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.operationpowc
+name: OperationPowC
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Порождает операцию в степень.
+
+  Модификатор `C` указывает, что операция является управляемой.
+
+
+  То есть операция, представляющая шлюз $U $, возвращает новую операцию $U ^ m $ для Power $m $.
+syntax: "function OperationPowC (oracle : ('T => Unit is Ctl), power : Int) : ('T => Unit is Ctl)"
+input:
+  content: "(oracle : ('T => Unit is Ctl), power : Int)"
+  types:
+  - name: oracle
+    summary: Операция $U $, представляющая шлюз, который должен повторяться.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: power
+    summary: Количество повторных попыток $U $.
+    isPrimitive: true
+    uid: Int
+output:
+  content: ('T => Unit is Ctl)
+  types:
+  - summary: Новая операция, представляющая $U ^ m $, где $m = \тексттт{повер} $.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+typeParameters:
+- uid: "'T"
+  summary: Тип операции, которая должна быть включена.
+seeAlso:
+- microsoft.quantum.canon.operationpow
+ms.openlocfilehash: 5bc317597ef660bf92291b690fdb2d255eaaa616
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73230812"

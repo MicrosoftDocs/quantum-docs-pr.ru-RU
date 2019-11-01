@@ -1,0 +1,44 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.logical.and
+name: And
+type: function
+namespace: Microsoft.Quantum.Logical
+summary: Возвращает логическое значение, умноженное на два значения.
+remarks: >-
+  В отличие от оператора `and`, эта функция не является сокращенной, так что оба входа полностью оцениваются.
+
+
+  Ниже приведены эквивалентные действия для сокращенного поведения.
+
+
+  ```Q#
+
+  let x = a and b;
+
+  let x = And(a, b);
+
+  ```
+syntax: 'function And (a : Bool, b : Bool) : Bool'
+input:
+  content: '(a : Bool, b : Bool)'
+  types:
+  - name: a
+    summary: Первое значение, которое необходимо считать.
+    isPrimitive: true
+    uid: Bool
+  - name: b
+    summary: Второе значение, которое необходимо считать.
+    isPrimitive: true
+    uid: Bool
+output:
+  content: Bool
+  types:
+  - summary: '`true` только в том случае, если `a` и `b` оба `true`.'
+    isPrimitive: true
+    uid: Bool
+ms.openlocfilehash: 22e884f8041ecd66aba875c38f0b8af234aee0e5
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233379"

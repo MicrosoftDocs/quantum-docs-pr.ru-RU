@@ -1,0 +1,40 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.dumpregister
+name: DumpRegister
+type: function
+namespace: Microsoft.Quantum.Diagnostics
+summary: Выводит состояние текущего целевого компьютера, связанного с заданным Кубитс.
+remarks: >-
+  Этот метод позволяет сохранить дамп сведений, связанных с состоянием заданного Кубитс, в файл или в другое расположение.
+
+  Фактически созданная информация и семантика `location` относятся к каждому целевому компьютеру. Однако предоставление пустого кортежа в качестве расположения (`()`) обычно означает создание выходных данных в консоли.
+
+
+  Для локального симулятора полного состояния, распространяемого в составе пакета средств разработки такта, этот метод ожидает строку с путем к файлу, в котором будет записано состояние данного Кубитс (т. е. Функция Wave соответствующей подсистемы) как одномерный AR луч комплексных чисел, в котором каждый элемент представляет амплитуды вероятности измерения для соответствующего состояния.
+
+  Если заданный Кубитс запутанными с другим кубит и их состояние нельзя разделить, то просто сообщает, что Кубитс являются запутанными.
+syntax: "function DumpRegister (location : 'T, qubits : Qubit[]) : Unit"
+input:
+  content: "(location : 'T, qubits : Qubit[])"
+  types:
+  - name: location
+    summary: Содержит сведения о том, где можно создать дамп состояния.
+    uid: "'T"
+    isLocal: true
+  - name: qubits
+    summary: Список Кубитс для отчета.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - summary: Нет подходящих вариантов.
+    isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 6d553a95bfa619d142b681e2830fc0375c6bcae5
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227038"

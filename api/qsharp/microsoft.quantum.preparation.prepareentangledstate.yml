@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.preparation.prepareentangledstate
+name: PrepareEntangledState
+type: operation
+namespace: Microsoft.Quantum.Preparation
+summary: >-
+  Парные ентанглес два регистра кубит.
+
+
+  Это значит, что при наличии двух регистров подготавливается запутанными State $ \фрак{1}{\скрт{2}} \лефт (\кет{00} + \кет{11} \ригхт) $ между каждой парой Кубитс в соответствующих регистрах, предполагая, что каждый регистр начинается в $ \ket{0\ кдотс 0} $ State.
+syntax: 'operation PrepareEntangledState (left : Qubit[], right : Qubit[]) : Unit'
+input:
+  content: '(left : Qubit[], right : Qubit[])'
+  types:
+  - name: left
+    summary: Массив кубит в состоянии $ \ket{0\cdots 0} $
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: right
+    summary: Массив кубит в состоянии $ \ket{0\cdots 0} $
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 8bbd7a3a87a55a930fda18669f75dc9a98aee981
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226630"

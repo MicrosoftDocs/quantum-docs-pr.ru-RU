@@ -1,0 +1,54 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.ccontrolledc
+name: CControlledC
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`, ничего не происходит.
+
+  Модификатор `C` указывает, что операция является управляемой.
+syntax: "function CControlledC (op : ('T => Unit is Ctl)) : ((Bool, 'T) => Unit is Ctl)"
+input:
+  content: "(op : ('T => Unit is Ctl))"
+  types:
+  - name: op
+    summary: Операция, применяемая к условию.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+output:
+  content: ((Bool, 'T) => Unit is Ctl)
+  types:
+  - summary: Новая операция, выполняемая, если классический контрольный бит имеет значение true.
+    isOperation: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Bool
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+typeParameters:
+- uid: "'T"
+  summary: Тип входных данных операции, которая должна применяться условно.
+seeAlso:
+- microsoft.quantum.canon.ccontrolled
+ms.openlocfilehash: 73a953fd2f2380f808fd612e46084c443e6c87ee
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211789"

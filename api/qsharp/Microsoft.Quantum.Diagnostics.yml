@@ -1,0 +1,82 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.diagnostics
+name: Microsoft. тактов. Диагностика
+functions:
+- uid: microsoft.quantum.diagnostics.allequalityfactb
+  summary: Утверждает, что два массива логических значений равны.
+- uid: microsoft.quantum.diagnostics.dumpmachine
+  summary: Выводит дамп текущего состояния целевого компьютера.
+- uid: microsoft.quantum.diagnostics.dumpregister
+  summary: Выводит состояние текущего целевого компьютера, связанного с заданным Кубитс.
+- uid: microsoft.quantum.diagnostics.equalityfactb
+  summary: Утверждает, что классическая bool-переменная имеет ожидаемое значение.
+- uid: microsoft.quantum.diagnostics.equalityfactc
+  summary: Утверждает, что комплексное число имеет ожидаемое значение.
+- uid: microsoft.quantum.diagnostics.equalityfactcp
+  summary: Утверждает, что комплексное число имеет ожидаемое значение.
+- uid: microsoft.quantum.diagnostics.equalityfacti
+  summary: Утверждает, что классическая переменная типа int имеет ожидаемое значение.
+- uid: microsoft.quantum.diagnostics.equalityfactl
+  summary: Утверждает, что классическая переменная типа BigInt имеет ожидаемое значение.
+- uid: microsoft.quantum.diagnostics.equalityfactr
+  summary: Утверждает, что классическая результирующая переменная имеет ожидаемое значение.
+- uid: microsoft.quantum.diagnostics.equalitywithintolerancefact
+  summary: Представляет утверждение, что классическое значение с плавающей запятой имеет ожидаемое значение вплоть до заданного абсолютного допуска.
+- uid: microsoft.quantum.diagnostics.fact
+  summary: Объявляет, что классическое условие имеет значение true.
+- uid: microsoft.quantum.diagnostics.nearequalityfactc
+  summary: Утверждает, что классическое комплексное число имеет ожидаемое значение вплоть до маленькой допустимой допускки 1E-10.
+- uid: microsoft.quantum.diagnostics.nearequalityfactcp
+  summary: Утверждает, что классическое комплексное число имеет ожидаемое значение вплоть до маленькой допустимой допускки 1E-10.
+- uid: microsoft.quantum.diagnostics.nearequalityfactd
+  summary: Утверждает, что классическое значение с плавающей запятой имеет ожидаемое значение вплоть до маленькой допустимой допускки 1E-10.
+operations:
+- uid: microsoft.quantum.diagnostics.assertallzero
+  summary: Утверждение, что все заданные Кубитс в $ \кет{0}$ State.
+- uid: microsoft.quantum.diagnostics.assertallzerowithintolerance
+  summary: Утверждение, что все заданное Кубитс в $ \кет{0}$ State вплоть до заданного допуска.
+- uid: microsoft.quantum.diagnostics.assertoperationsequalinplace
+  summary: >-
+    Учитывая две операции, утверждает, что они действуют одинаково для всех входных состояний.
+
+
+    Это утверждение реализуется путем проверки действия операций во всех состояниях формы $V _0 \отимес... \отимес V_ {n-1} $, где $V _k $ является одним из состояний $ \кет{0}$, $ \кет{1}$, $ \кет{+} $ и $ \кет{и} $ (+ 1 еиженстате Паули).
+
+
+    Это утверждение использует $n $ Кубитс и требует нескольких вызовов сравниваемых операций.
+- uid: microsoft.quantum.diagnostics.assertoperationsequalinplacecompbasis
+  summary: >-
+    Проверяет, равно ли операция `givenU`, `expectedU` для заданного размера входных данных, проверяя действие операций только на векторах от вычислительной основе.
+
+    Это обязательное, но недостаточное условие для равенства двух унитариес.
+- uid: microsoft.quantum.diagnostics.assertoperationsequalreferenced
+  summary: >-
+    Учитывая две операции, утверждает, что они действуют одинаково для всех входных состояний.
+
+
+    Это утверждение реализуется с помощью Чои – Жамиłковски исоморфисм, чтобы уменьшить утверждение до одного из утверждений состояния кубит для двух регистров запутанными.
+
+    Таким образом, для этой операции требуется только один вызов каждой проверяемой операции, но в два раза требуется выделить не больше Кубитс.
+
+    Это утверждение можно использовать, чтобы убедиться, что оптимизированная версия операции действует аналогично его упрощенной реализации, или что операция, которая работает с диапазоном нетактовых входных данных, соглашается с известными случаями.
+- uid: microsoft.quantum.diagnostics.assertqubit
+  summary: Утверждает, что `q` кубит находится в ожидаемом еиженстате оператора Паули Z.
+- uid: microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance
+  summary: >-
+    Утверждает, что кубит находится в ожидаемом состоянии.
+
+
+    `expected` представляет сложный вектор, $ \кет{\пси} = \бегин{бматрикс}а & б\енд {бматрикс} ^ {\Масрм{т}} $.
+
+    Первый элемент кортежей, представляющий каждый из $a $, $b $ является реальной частью комплексного числа, а второй — мнимой частью.
+
+    Последний аргумент определяет допуск, с которым выполняется утверждение.
+- uid: microsoft.quantum.diagnostics.assertqubitwithintolerance
+  summary: Утверждает, что `q` кубит находится в ожидаемом еиженстате оператора Паули Z вплоть до заданного допуска.
+summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен содержит функции и операции, полезные для диагностики, в том числе операции Assert и функции утверждения."
+ms.openlocfilehash: c387a7dc3b2e997d00d54457b0af89a04fa918d3
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73056853"
