@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.jordanwigner.vqe.estimateenergy
+name: EstimateEnergy
+type: operation
+namespace: Microsoft.Quantum.Chemistry.JordanWigner.VQE
+summary: >-
+  Оценивает энергию молекулы путем суммирования энергии, потребляемой отдельными Вигнерными условиями.
+
+
+  Эта операция неявным образом зависит от соглашения об индексировании со счетчиком.
+syntax: 'operation EstimateEnergy (jwHamiltonian : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerEncodingData, nSamples : Int) : Double'
+input:
+  content: '(jwHamiltonian : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerEncodingData, nSamples : Int)'
+  types:
+  - name: jwHamiltonian
+    summary: Вигнер Хамилтониан.
+    uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerencodingdata
+  - name: nSamples
+    summary: Число выборок, используемых для оценки ожидаемых терминов.
+    isPrimitive: true
+    uid: Int
+output:
+  content: Double
+  types:
+  - summary: Предполагаемое энергопотребление молекулы
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 057a695c6206679ec5aad4c8ee8f2bb8e5ffbbd3
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73225032"

@@ -1,0 +1,44 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.research.chemistry.applydeltaparity
+name: ApplyDeltaParity
+type: operation
+namespace: Microsoft.Quantum.Research.Chemistry
+summary: Вычисление разницы между предыдущим ПКРС... условия и следующие ПКРС... термин. Это различие вычислено на вспомогательной кубит.
+remarks: Предполагается, что индексы P < Q < R < S <... для Превпк и Некстпк.
+syntax: 'operation ApplyDeltaParity (prevFermionicTerm : Int[], nextFermionicTerm : Int[], aux : Qubit, qubits : Qubit[]) : Unit'
+input:
+  content: '(prevFermionicTerm : Int[], nextFermionicTerm : Int[], aux : Qubit, qubits : Qubit[])'
+  types:
+  - name: prevFermionicTerm
+    summary: Список индексов для предыдущего ПКРС... черт.
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: nextFermionicTerm
+    summary: Список индексов для следующего ПКРС... черт.
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: aux
+    summary: Вспомогательная кубит, на которой сохраняются результаты вычисления четности.
+    isPrimitive: true
+    uid: Qubit
+  - name: qubits
+    summary: Кубит, обрабатываемый всеми ПКРС... черт.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 35ca6ae9ff6ac6db0d0a61cff9c89c7abf862f66
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228058"

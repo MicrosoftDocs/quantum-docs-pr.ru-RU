@@ -1,0 +1,18 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.environment
+name: Microsoft. такт. Environment
+summary: " # <a name=\"summary\"></a>Резюме\n Эти функции предоставляют сведения о среде, в которой происходит вычисление такта."
+operations:
+- uid: microsoft.quantum.environment.getqubitsavailabletoborrow
+  summary: >-
+    Возвращает количество Кубитс, доступных в данный момент для займа.
+
+    Сюда входят неиспользуемые Кубитс; Это относится к Кубитс, возвращаемому `GetQubitsAvailableToUse`.
+- uid: microsoft.quantum.environment.getqubitsavailabletouse
+  summary: Возвращает количество Кубитс, доступных в данный момент для использования.
+ms.openlocfilehash: 50e5cfb7c1b9a4075c25b2705d00b435a09e159e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73056829"

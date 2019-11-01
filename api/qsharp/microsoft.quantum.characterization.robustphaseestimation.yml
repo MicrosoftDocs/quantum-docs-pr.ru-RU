@@ -1,0 +1,35 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.characterization.robustphaseestimation
+name: RobustPhaseEstimation
+type: operation
+namespace: Microsoft.Quantum.Characterization
+summary: Выполняет надежный алгоритм оценки неитеративного тактового этапа для заданных `U` и еиженстате Oracle, а также предоставляет единую оценку этапа с масштабированием в пределах Гейзенбега.
+remarks: При ограничении большого количества запросов Крамер-РАО нижние границы для стандартного отклонения оценки $ \фи $ удовлетворяет $ \сигма \же 2 \пи/\текст{# запросов} $.
+syntax: 'operation RobustPhaseEstimation (bitsPrecision : Int, oracle : Microsoft.Quantum.Oracles.DiscreteOracle, targetState : Qubit[]) : Double'
+references: '- Надежная калибровка универсального Кубитового шлюза с помощью надежной оценки этапа Шелби Киммел, Guang Хао Low, текста книги J. Йодер https://arxiv.org/abs/1502.02677'
+input:
+  content: '(bitsPrecision : Int, oracle : Microsoft.Quantum.Oracles.DiscreteOracle, targetState : Qubit[])'
+  types:
+  - name: bitsPrecision
+    summary: Это дает оценку $ \фи $ со стандартным отклонением $ \сигма \ле 2 \ PI/2 ^ \Текст{битспреЦисион} $ с помощью такого количества запросов, как $ \сигма \ле 10,7 \пи/\текст{# запросов} $.
+    isPrimitive: true
+    uid: Int
+  - name: oracle
+    summary: Операция, реализующая $U ^ m $ для заданного целого числа, включает $m $.
+    uid: microsoft.quantum.oracles.discreteoracle
+  - name: targetState
+    summary: Регистр такта, в котором $U $ действует. Если в нем хранится еиженстате $ \кет{\фи} $ of $U $, то $U \кет{\фи} = e ^ {и\фи} \кет{\фи} $ for $ \фи\ин (-\пи, \пи] $ Неизвестный этап.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 169a828036fbe84f49e5d87399319d14a9584051
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229061"

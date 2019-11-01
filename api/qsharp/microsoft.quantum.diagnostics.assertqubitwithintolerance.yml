@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.assertqubitwithintolerance
+name: AssertQubitWithinTolerance
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: Утверждает, что `q` кубит находится в ожидаемом еиженстате оператора Паули Z вплоть до заданного допуска.
+remarks: <xref:microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance> позволяет утверждать произвольные состояния кубит, а не только $Z $ еиженстатес.
+syntax: 'operation AssertQubitWithinTolerance (expected : Result, q : Qubit, tolerance : Double) : Unit'
+input:
+  content: '(expected : Result, q : Qubit, tolerance : Double)'
+  types:
+  - name: expected
+    summary: 'Состояние, в котором ожидается кубит: `Zero` или `One`.'
+    isPrimitive: true
+    uid: Result
+  - name: q
+    summary: Кубит, состояние которого утверждено.
+    isPrimitive: true
+    uid: Qubit
+  - name: tolerance
+    summary: Допуск на вероятность измерения кубит, возвращающего ожидаемый результат.
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+seeAlso:
+- assertqubitisinstatewithintolerance
+ms.openlocfilehash: ccb44aed5612c369ff7c4e687e72fc65fba4180e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227089"

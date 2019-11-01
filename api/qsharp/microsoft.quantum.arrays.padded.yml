@@ -1,0 +1,53 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.padded
+name: Padded
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: Возвращает массив, дополненный с указанными значениями вплоть до указанной длины.
+examples: >-
+  ```qsharp
+
+  let array = [10, 11, 12];
+
+  // The following line returns [10, 12, 15, 2, 2, 2].
+
+  let output = Padded(-6, array, 2);
+
+  // The following line returns [2, 2, 2, 10, 12, 15].
+
+  let output = Padded(6, array, 2);
+
+  ```
+syntax: "function Padded (nElementsTotal : Int, defaultElement : 'T, inputArray : 'T[]) : 'T[]"
+input:
+  content: "(nElementsTotal : Int, defaultElement : 'T, inputArray : 'T[])"
+  types:
+  - name: nElementsTotal
+    summary: Длина заполненного массива. Если это положительный результат, `inputArray` заполняется в головном офисе. Если это отрицательное значение, `inputArray` дополняются с конца.
+    isPrimitive: true
+    uid: Int
+  - name: defaultElement
+    summary: Значение по умолчанию, используемое для заполнения элементов.
+    uid: "'T"
+    isLocal: true
+  - name: inputArray
+    summary: Массив, значения которого находятся в заголовке выходного массива.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - summary: Массив `output`, который является `inputArray`ом, дополненным в заголовке, до `defaultElement`s, пока `output` имеет длину `nElementsTotal`
+    isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: Тип элементов массива.
+ms.openlocfilehash: 3fb999af73e68de9143ddc051b8a43247f5282f0
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218062"

@@ -1,0 +1,49 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.r1
+name: R1
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: >-
+  Применяет поворот к состоянию $ \кет{1}$ на заданный угол.
+
+
+  \бегин{алигн} R_1 (\сета) \масрел{: =} \операторнаме{диаг} (1, e ^ {и\сета}).
+
+  \енд{алигн}
+remarks: >-
+  Эквивалентно:
+
+
+  ```qsharp
+
+  R(PauliZ, theta, qubit);
+
+  R(PauliI, -theta, qubit);
+
+  ```
+syntax: 'operation R1 (theta : Double, qubit : Qubit) : Unit'
+input:
+  content: '(theta : Double, qubit : Qubit)'
+  types:
+  - name: theta
+    summary: Угол поворота кубит.
+    isPrimitive: true
+    uid: Double
+  - name: qubit
+    summary: Кубит, к которому должен быть применен шлюз.
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: ec15deeef7a097927221be19c35917be6aedcdd4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234008"

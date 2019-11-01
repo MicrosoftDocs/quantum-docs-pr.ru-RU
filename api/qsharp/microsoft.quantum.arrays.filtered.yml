@@ -1,0 +1,43 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.filtered
+name: Filtered
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: При наличии массива и предиката, определенного для элементов массива, возвращает массив, состоящий из элементов, которые соответствуют предикату.
+remarks: Функция определяется для универсальных типов, например, при наличии массива `'T[]` и предиката `'T -> Bool` мы можем фильтровать элементы.
+syntax: "function Filtered (predicate : ('T -> Bool), array : 'T[]) : 'T[]"
+input:
+  content: "(predicate : ('T -> Bool), array : 'T[])"
+  types:
+  - name: predicate
+    summary: Функция от `'T` к логическому значению, используемому для фильтрации элементов.
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+  - name: array
+    summary: Массив элементов `'T`.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - summary: Массив `'T[]` элементов, которые соответствуют предикату.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: Тип элементов `array`.
+ms.openlocfilehash: f2749f204c6276a0a43ac67bdee9c4cda0de049e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218368"

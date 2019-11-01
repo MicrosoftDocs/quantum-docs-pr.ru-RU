@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.steanecoderecoveryx
+name: SteaneCodeRecoveryX
+type: function
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: Декодер для X-части группы стабилизер ⟦ 7, 1, 3 ⟧ Стеане.
+remarks: Выбранный декодер использует свойство кода CSS ⟦ 7, 1, 3 ⟧ Стеане Code, т. е. оно корректирует X Errors и Z Errors отдельно. Свойство кода заключается в том, что положение X, соответственно, с коррекцией Z, которое должно применяться, — это 3-разрядная кодировка X, соответственно, Z синдром, когда считается целым числом.
+syntax: 'function SteaneCodeRecoveryX (syndrome : Microsoft.Quantum.ErrorCorrection.Syndrome) : Pauli[]'
+references: '- D. Готтесман, «Стабилизер коды и исправление ошибок такта», «степень Ph.d. гипотеза», Калтеч, 1997; https://arxiv.org/abs/quant-ph/9705052'
+input:
+  content: '(syndrome : Microsoft.Quantum.ErrorCorrection.Syndrome)'
+  types:
+  - name: syndrome
+    summary: Массив синдром, полученный из измерения X-части стабилизер.
+    uid: microsoft.quantum.errorcorrection.syndrome
+output:
+  content: Pauli[]
+  types:
+  - summary: Массив операций Паули, которые при применении к закодированной тактовой системе исправляет ошибку, соответствующую `syndrome`.
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+seeAlso:
+- steanecoderecoveryx
+- steanecoderecoveryfns
+ms.openlocfilehash: 7805284f29bfcbb6d4ba56f616f492b2f2126f7b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73232291"

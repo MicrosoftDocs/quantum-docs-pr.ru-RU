@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.incrementphasebymodularinteger
+name: IncrementPhaseByModularInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  Выполняет модульное увеличение регистра кубит с помощью целочисленной константы.
+
+
+  Обратите внимание, `increment`, `modulus` на N и целое число, закодированное в `target` с помощью y. Затем операция выполняет следующее преобразование: | y ⟩ ↦ | y + a (MOD N) ⟩ целые значения кодируются в формате с прямым порядком байтов в Кфт.
+remarks: >-
+  Предполагает, что `target` имеет наивысший бит, равный 0.
+
+  Также предполагается, что значение целевого объекта меньше N.
+
+
+  Схема канала и описание см. на рис. 5 на [стр. 5 из арксив: Куант-pH/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=5).
+syntax: 'operation IncrementPhaseByModularInteger (increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
+input:
+  content: '(increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
+  types:
+  - name: increment
+    isPrimitive: true
+    uid: Int
+  - name: modulus
+    isPrimitive: true
+    uid: Int
+  - name: target
+    uid: microsoft.quantum.arithmetic.phaselittleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.modularincrementle
+ms.openlocfilehash: 897e46cca640e714e1f000548ffd3226e8e27fa4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219031"

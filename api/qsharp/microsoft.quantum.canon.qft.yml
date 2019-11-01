@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.qft
+name: QFT
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: Выполняет преобразование Фурье в тактовую операцию для регистра такта, содержащего целое число в представлении с обратным порядком байтов.
+remarks: Предполагается, что входные и выходные данные находятся в кодировке с обратным порядком байтов.
+syntax: 'operation QFT (qs : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
+input:
+  content: '(qs : Microsoft.Quantum.Arithmetic.BigEndian)'
+  types:
+  - name: qs
+    summary: Регистр такта, к которому применяется преобразование Фурье в тактовой области
+    uid: microsoft.quantum.arithmetic.bigendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applyquantumfouriertransformbe
+ms.openlocfilehash: 9791cc9812ee7709e17e0a32e0b98bd2ca85fbb8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73222618"

@@ -1,0 +1,62 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.assertprob
+name: AssertProb
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: Утверждения, измеряющие заданный Кубитс в данной Паулиной базе, будут иметь заданный результат с заданной вероятностью в пределах некоторой допустимости.
+remarks: Обратите внимание, что смежная и контролируемая версии этой операции не будут проверять условие.
+examples: >-
+  ```qsharp
+
+  using (register = Qubit()) {
+      H(register);
+      AssertProb([PauliZ], [register], One, 0.5,
+          "Measuring in conjugate basis did not give 50/50 results.", 1e-5);
+  }
+
+  ```
+syntax: 'operation AssertProb (bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double) : Unit'
+input:
+  content: '(bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double)'
+  types:
+  - name: bases
+    summary: Результат измерения для утверждения вероятности, выраженный как кубит оператор Паули.
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+  - name: qubits
+    summary: Регистр, для которого необходимо выполнить утверждение.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: result
+    summary: Ожидаемый результат `Measure(bases, qubits)`.
+    isPrimitive: true
+    uid: Result
+  - name: prob
+    summary: Вероятность, с которой ожидается данный результат.
+    isPrimitive: true
+    uid: Double
+  - name: msg
+    summary: Сообщение, которое необходимо сообщить, если утверждение не выполняется.
+    isPrimitive: true
+    uid: String
+  - name: tol
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- assert
+ms.openlocfilehash: 74260a7e80199049e2854a5cdb7988e5321adf83
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216651"

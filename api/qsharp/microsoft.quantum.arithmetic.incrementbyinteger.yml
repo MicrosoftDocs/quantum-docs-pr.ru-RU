@@ -1,0 +1,39 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.incrementbyinteger
+name: IncrementByInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  Увеличивает значение регистра неподписанного такта на классическое целое число с использованием ротаций фазы.
+
+
+  Предположим, что `target` кодирует целое число без знака $x $ в кодировке с прямым порядком байтов, а `increment` равно $a $.
+
+  Затем эта операция реализует единую $ \кет{КС} \мапсто \кет{КС + a} $, где сложение выполняется по модулю $2 ^ n $, где $n = \Тексттт{ленгс (Target!)} $.
+syntax: 'operation IncrementByInteger (increment : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(increment : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: increment
+    summary: Целое число, на которое увеличивается `target`.
+    isPrimitive: true
+    uid: Int
+  - name: target
+    summary: Тактовый регистр кодирует целое число без знака, используя обратную кодировку с прямым порядком байтов.
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- incrementbyintegerphasele
+ms.openlocfilehash: 3eafc268377e36301d511b77feb4db352a075d5d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215019"

@@ -1,0 +1,53 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.measurestabilizergenerators
+name: MeasureStabilizerGenerators
+type: operation
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: Измеряет заданный набор генераторов группы стабилизер.
+remarks: >-
+  Это не проверяет, работает ли данный набор генераторов.
+
+  В противном случае результат измерения может быть произвольным.
+syntax: 'operation MeasureStabilizerGenerators (stabilizerGroup : Pauli[][], logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister, gadget : ((Pauli[], Qubit[]) => Result)) : Microsoft.Quantum.ErrorCorrection.Syndrome'
+input:
+  content: '(stabilizerGroup : Pauli[][], logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister, gadget : ((Pauli[], Qubit[]) => Result))'
+  types:
+  - name: stabilizerGroup
+    summary: >-
+      Массив операторов Паули мултикубит.
+
+      Например, `stabilizerGroup[0]` представляет собой список матриц с одним кубит Паули, тензорныеным продуктом, который является генератором стабилизер.
+    isArray: true
+    types:
+    - isArray: true
+      isPrimitive: true
+      uid: Pauli
+  - name: logicalRegister
+    summary: Массив Кубитс, в котором определен код стабилизер.
+    uid: microsoft.quantum.errorcorrection.logicalregister
+  - name: gadget
+    summary: Операция, указывающая, как измерять оператор мултикубит Паули.
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Pauli
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Result
+output:
+  content: Microsoft.Quantum.ErrorCorrection.Syndrome
+  types:
+  - summary: Результат измерений.
+    uid: microsoft.quantum.errorcorrection.syndrome
+ms.openlocfilehash: 1ebc1613c471e11a3d06878bc9ca48cf2d5be505
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226766"

@@ -1,0 +1,42 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.convert.call
+name: Call
+type: operation
+namespace: Microsoft.Quantum.Convert
+summary: >-
+  Вызывает функцию с заданным входным параметром.
+
+
+  При наличии функции и входных данных для этой функции вызывает функцию и возвращает ее выходные данные.
+remarks: Эта операция в основном полезна для принудительного вызова функции в определенном месте операции или для вызова функции, в которой ожидается операция.
+syntax: "operation Call (fn : ('Input -> 'Output), input : 'Input) : 'Output"
+input:
+  content: "(fn : ('Input -> 'Output), input : 'Input)"
+  types:
+  - name: fn
+    summary: Вызываемая функция.
+    isFunction: true
+    input:
+      types:
+      - uid: "'Input"
+        isLocal: true
+    output:
+      types:
+      - uid: "'Output"
+        isLocal: true
+  - name: input
+    summary: Входные данные, передаваемые в функцию.
+    uid: "'Input"
+    isLocal: true
+output:
+  content: "'Output"
+  types:
+  - summary: Результат вызова `fn`.
+    uid: "'Output"
+    isLocal: true
+ms.openlocfilehash: a2cbb56ce70dbe3cbec0fbddffb5155a17704b84
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219337"

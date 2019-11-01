@@ -1,0 +1,61 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.extensions.convert
+name: Microsoft. тактов. Extensions. Convert
+summary: " # <a name=\"summary\"></a>Резюме\n Это некоторые из функций из пространства имен System. Convert в среде CLR .NET, которые относятся к системе типов Q #.\n\n # <a name=\"remarks\"></a>Примечания\n Если существует несколько версий функции для типов bool, int и Double, соответствующие функции имеют суффикс B, I и D."
+functions:
+- uid: microsoft.quantum.extensions.convert.biginttobools
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.bigintasboolarray".
+- uid: microsoft.quantum.extensions.convert.boolstobigint
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.boolarrayasbigint".
+- uid: microsoft.quantum.extensions.convert.pauliarraytoint
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.pauliarrayasint".
+- uid: microsoft.quantum.extensions.convert.tobigint
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.intasbigint".
+- uid: microsoft.quantum.extensions.convert.todouble
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.intasdouble".
+- uid: microsoft.quantum.extensions.convert.tostringb
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.boolasstring".
+- uid: microsoft.quantum.extensions.convert.tostringd
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.doubleasstring".
+- uid: microsoft.quantum.extensions.convert.tostringdformat
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.doubleasstringwithformat".
+- uid: microsoft.quantum.extensions.convert.tostringi
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.intasstring".
+- uid: microsoft.quantum.extensions.convert.tostringiformat
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.intasstringwithformat".
+ms.openlocfilehash: 57f341ec6e8f82cfa9fc4bb958a580743a350218
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73056487"

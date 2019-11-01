@@ -1,0 +1,57 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.characterization.estimatefrequencya
+name: EstimateFrequencyA
+type: operation
+namespace: Microsoft.Quantum.Characterization
+summary: Учитывая аджоинтабле и измерение подготовки, вы оцениваете частоту, с которой измерение завершается (Возвращает `Zero`), выполняя заданное число испытаний.
+remarks: Для операций аджоинтабле определенные предположения, такие как вызов операции, будут подготавливать Кубитс в точно такое же состояние, что позволит целевым компьютерам выполнять оптимизацию производительности.
+syntax: 'operation EstimateFrequencyA (preparation : (Qubit[] => Unit is Adj), measurement : (Qubit[] => Result), nQubits : Int, nMeasurements : Int) : Double'
+input:
+  content: '(preparation : (Qubit[] => Unit is Adj), measurement : (Qubit[] => Result), nQubits : Int, nMeasurements : Int)'
+  types:
+  - name: preparation
+    summary: Операция аджоинтабле $P $, которая подготавливает заданное состояние $ \рхо $ к входному регистру.
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: measurement
+    summary: Операция $M $, представляющая интересующую вас единицу измерения.
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Result
+  - name: nQubits
+    summary: Количество Кубитс, для которых каждый из них является подготовительным и измеряется.
+    isPrimitive: true
+    uid: Int
+  - name: nMeasurements
+    summary: Количество случаев, когда измерение должно быть выполнено, чтобы оценить интересующую вас частоту.
+    isPrimitive: true
+    uid: Int
+output:
+  content: Double
+  types:
+  - summary: Оценка $ \хат{п} $ частоты, с которой $M (P (\ket{00 \кдотс 0} \bra{00 \кдотс 0})) $ возвращает `Zero`, полученный с помощью несмещенного биномиальное оценщика $ \хат{п} = n\_{\упарров}/n\_{\текст{меасурементс}} $, где $n\_{\ Стрелка вверх} $ — число наблюдаемых результатов `Zero`.
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: cfc90cee0b98b88391ee23218489669600a97920
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229180"

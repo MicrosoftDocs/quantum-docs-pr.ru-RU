@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.bitwise.zbits
+name: ZBits
+type: function
+namespace: Microsoft.Quantum.Bitwise
+summary: Возвращает целое число, представляющее Z бит массива операторов Паули.
+remarks: Функция вызывает исключение, если длина массива `paulis` превышает 63.
+syntax: 'function ZBits (paulis : Pauli[]) : Int'
+input:
+  content: '(paulis : Pauli[])'
+  types:
+  - name: paulis
+    summary: Массив операторов Паули, которые должны быть представлены в виде целого числа.
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+output:
+  content: Int
+  types:
+  - summary: Целочисленное $x $ с двоичным представлением $ (P_{62}\,P_{61}\,\дотс\,p_0) $, где $p _i = $0, если `paulis[i]` — `PauliI` или `PauliX` и где $p _i = $1, если `paulis[i]` — `PauliY` или `PauliZ`.
+    isPrimitive: true
+    uid: Int
+seeAlso:
+- xbits
+ms.openlocfilehash: 21d3da075cb4b98e5604f72b8432536bb9d51753
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73217705"

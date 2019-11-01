@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.bitwise.rightshiftedl
+name: RightShiftedL
+type: function
+namespace: Microsoft.Quantum.Bitwise
+summary: Сдвигает побитовое представление числа вправо на заданное число битов.
+remarks: >-
+  Следующие эквивалентны:
+
+
+  ```Q#
+
+  let c = a >>> b;
+
+  let c = RightShiftedL(a, b);
+
+  ```
+syntax: 'function RightShiftedL (value : BigInt, amount : Int) : BigInt'
+input:
+  content: '(value : BigInt, amount : Int)'
+  types:
+  - name: value
+    summary: Число, побитовое представление которого должно быть смещено вправо (менее значимое).
+    isPrimitive: true
+    uid: BigInt
+  - name: amount
+    summary: Число битов, на которое перемещается `value` вправо.
+    isPrimitive: true
+    uid: Int
+output:
+  content: BigInt
+  types:
+  - summary: Значение `value`с сдвигом вправо на `amount` битах.
+    isPrimitive: true
+    uid: BigInt
+ms.openlocfilehash: 4c370d859eefdcff5fc844cf55e17adad7b5df86
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213863"

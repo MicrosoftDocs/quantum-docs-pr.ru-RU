@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.cnotchaintarget
+name: кнотчаинтаржет
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Выполняет подсчет четности массива Кубитс в целевом кубит.
+
+
+  Если изначально массив находится в состоянии $ \ket{q_0} \ket{q_1} \кдотс \ket{q_{\Text{Target}}} $, конечное состояние присваивается в $ \ket{q_0} \ket{q_1 \оплус q_0} \кдотс \ket{q_{n-1} \оплус \кдотс \оплус q_0 \оплус q_ {\текст{таржет}}} $.
+remarks: >-
+  Следующие эквивалентны:
+
+
+  ```qsharp
+
+  CNOTChainTarget(Most(qs), Last(qs));
+
+  ```
+
+
+  Azure и
+
+
+  ```qsharp
+
+  CNOTChain(qs);
+
+  ```
+syntax: 'operation CNOTChainTarget (qubits : Qubit[], targetQubit : Qubit) : Unit'
+input:
+  content: '(Кубитс: кубит [], Таржеткубит: кубит)'
+  types:
+  - name: кубитс
+    summary: Массив Кубитс, для которого вычислена четность.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: таржеткубит
+    summary: Окончательный кубит, в котором четностью Кубитс является Ксоред.
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Единица
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 26893296ec8fe7ec8d8cc5309e2bd5066f315849
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73068042"

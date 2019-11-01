@@ -1,0 +1,28 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.measureinteger
+name: MeasureInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: Измеряет содержимое регистра такта и преобразует его в целое число. Измерение выполняется в соответствии со стандартной вычислительной единицей, т. е. еиженбасис `PauliZ`.
+remarks: Эта операция сбрасывает регистр входных данных в состояние $ \ket{00\cdots 0} $, подходящее для освобождения на целевом компьютере.
+syntax: 'operation MeasureInteger (target : Microsoft.Quantum.Arithmetic.LittleEndian) : Int'
+input:
+  content: '(target : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: target
+    summary: Регистр такта в кодировке с прямым порядком байтов.
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Int
+  types:
+  - summary: Целое число без знака, содержащее измеряемое значение `target`.
+    isPrimitive: true
+    uid: Int
+seeAlso:
+- microsoft.quantum.canon.measureintegerbe
+ms.openlocfilehash: 989302867cbfb6b429bf8e8d4b8a76a0c1c4e61d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214883"

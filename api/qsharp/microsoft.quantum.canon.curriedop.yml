@@ -1,0 +1,74 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.curriedop
+name: курриедоп
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Возвращает перекаррированных версию операции с двумя входными данными.
+
+
+  Это значит, что при выполнении операции с двумя входными данными эта функция применяет карри исоморфисм $f (x, y) \екуив f (x) (y) $ для возврата операции одного входа, которая возвращает операцию одного входа.
+remarks: >-
+  Следующие эквивалентны:
+
+
+  ```qsharp
+
+  op(x, y);
+
+
+  let curried = CurriedOp(op);
+
+  let partial = curried(x);
+
+  partial(y);
+
+  ```
+syntax: "function CurriedOp (op : (('T, 'U) => Unit)) : ('T -> ('U => Unit))"
+input:
+  content: "(Op: (t, ' U) = единица >))"
+  types:
+  - name: операцион
+    summary: Операция, входные данные которой являются парой.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+      - uid: "'U"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+output:
+  content: (Не> (' U = единица >))
+  types:
+  - summary: Операция, которая принимает первый элемент пары и возвращает операцию, которая принимает в качестве входных данных второй элемент входных данных исходной операции.
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isOperation: true
+        input:
+          types:
+          - uid: "'U"
+            isLocal: true
+        output:
+          types:
+          - isPrimitive: true
+            uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: Тип первого компонента функции, определенной в парах.
+- uid: "'U"
+  summary: Тип второго компонента функции, определенной в парах.
+ms.openlocfilehash: 788648d24ba536926504caba92e768ecb34e001a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73067906"

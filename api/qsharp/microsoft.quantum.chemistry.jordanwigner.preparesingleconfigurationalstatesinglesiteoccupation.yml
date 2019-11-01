@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.jordanwigner.preparesingleconfigurationalstatesinglesiteoccupation
+name: PrepareSingleConfigurationalStateSingleSiteOccupation
+type: operation
+namespace: Microsoft.Quantum.Chemistry.JordanWigner
+summary: Простая подготовка состояния пробной версии с помощью оборотов по орбитам
+syntax: 'operation PrepareSingleConfigurationalStateSingleSiteOccupation (qubitIndices : Int[], qubits : Qubit[]) : Unit'
+input:
+  content: '(qubitIndices : Int[], qubits : Qubit[])'
+  types:
+  - name: qubitIndices
+    summary: Индексы Кубитс, которые будут заняты электронными обозначением.
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: qubits
+    summary: Кубитс Хамилтониан.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: a7ed22f7f458a515cf1c19c54a841f8c16e317fe
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231832"

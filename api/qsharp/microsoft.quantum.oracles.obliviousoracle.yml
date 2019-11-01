@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.oracles.obliviousoracle
+name: ObliviousOracle
+type: newtype
+namespace: Microsoft.Quantum.Oracles
+summary: >-
+  Представляет Oracle для усиления амплитуды очевидным.
+
+
+  Входные данные для Oracle $O $:
+
+
+  - АнЦилла Register $a $, с которым $O $ работает.
+
+  - Системная регистрация $s $, к которой применяется требуемая единая $U $, после выбора зарегистрировать $a $ в состоянии $ \кет{т}\_a $.
+remarks: >-
+  Эта база данных Oracle, определяемая $ $ О\кет {s}\_а\кет {\ PSI}\_s = \ламбда\кет{т}\_a U \кет{\пси}\_s + \sqrt{1-| \ламбда | ^ 2} \кет{т ^ \перп}\_а\кдотс $ $ действует в анЦилла состоянии $ \кет{с}\_a $ to Реализуйте единое $U $ в любом состоянии системы $ \кет{\пси}\_s $ с амплитудой $ \ламбда $ в зависимости от $ \кет{т}\_a $.
+
+  Первый параметр является кубит регистром $ \кет{с}\_a $. Вторым параметром является регистр кубит $ \кет{\пси}\_s $.
+syntax: newtype ObliviousOracle = ((Qubit[], Qubit[]) => Unit is Adj + Ctl);
+ms.openlocfilehash: f06527701dfad61843df66faca5dd265525b6aa6
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231067"

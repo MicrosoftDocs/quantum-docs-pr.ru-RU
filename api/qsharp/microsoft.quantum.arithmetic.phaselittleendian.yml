@@ -1,0 +1,21 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.phaselittleendian
+name: PhaseLittleEndian
+type: newtype
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  Целые числа без знака с прямым порядком байтов на основе Кфт.
+
+
+  Например, если $ \кет{КС} $ является обратно-байтовым кодированием целого числа $x $ в вычислительной базе, то $ \Операторнаме{кфтле} \кет{КС} $ является кодировкой $x $ в базе Кфт.
+remarks: Сокращение `PhaseLittleEndian` как `PhaseLE` в документации.
+syntax: newtype PhaseLittleEndian = Qubit[];
+seeAlso:
+- qft
+- qftle
+ms.openlocfilehash: 8efb8b58ff7ee5c0530abfb81792366f6990997e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218725"

@@ -1,0 +1,55 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.cx
+name: CX
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Применяет шлюз с управляемой X (CX) к паре Кубитс.
+
+
+  $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \енд{алигн} , $ $, где строки и столбцы упорядочены в соответствии с руководством по созданию тактовых понятий.
+remarks: >-
+  Эквивалентно:
+
+
+  ```qsharp
+
+  Controlled X([control], target);
+
+  ```
+
+
+  и в:
+
+
+  ```qsharp
+
+  CNOT(control, target);
+
+  ```
+syntax: 'operation CX (control : Qubit, target : Qubit) : Unit'
+input:
+  content: '(Control: кубит, Target: кубит)'
+  types:
+  - name: control
+    summary: Управление кубит для шлюза CX.
+    isPrimitive: true
+    uid: Qubit
+  - name: target
+    summary: Целевой кубит для шлюза CX.
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Единица
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 26cbc8dc2f22cdf8583d453b84e53b0151619f5d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73067872"

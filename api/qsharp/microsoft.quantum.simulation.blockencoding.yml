@@ -1,0 +1,20 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.blockencoding
+name: блоккенкодинг
+type: newtype
+namespace: Microsoft.Quantum.Simulation
+summary: >-
+  Представляет собой единое место кодирования произвольного оператора в верхнем левом блоке.
+
+
+  То есть `BlockEncoding` является единым $U $, где произвольный оператор $H $ of, который действует на системную регистрацию, `s` кодируется в верхнем левом блоке, соответствующем вспомогательному состоянию $ \кет{0}_A $. То есть
+
+
+  $ $ \бегин{алигн} (\бра{0}_A \ отимес I_s) U (\кет{0}_A \ отимес I_s) = H \енд{алигн} $ $.
+syntax: newtype BlockEncoding = ((Qubit[], Qubit[]) => Unit is Adj + Ctl);
+ms.openlocfilehash: 0991b1b54cdd8e908f60fc104edf588ae08e12e7
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066036"

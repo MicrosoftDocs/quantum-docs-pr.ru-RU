@@ -1,0 +1,62 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.jordanwigner.vqe.estimatetermexpectation
+name: EstimateTermExpectation
+type: operation
+namespace: Microsoft.Quantum.Chemistry.JordanWigner.VQE
+summary: >-
+  Вычисление энергии, связанной с заданным Вигнер Хамилтонианным термином
+
+
+  Эта операция оценивает значение ожидания, связанное с каждым оператором измерения, и умножает его на соответствующий коэффициент, используя выборку.
+
+  Результаты объединяются в переменную, содержащую энергию Вигнер термина.
+syntax: 'operation EstimateTermExpectation (inputStateUnitary : (Qubit[] => Unit is Adj), ops : Pauli[][], coeffs : Double[], nQubits : Int, nSamples : Int) : Double'
+input:
+  content: '(inputStateUnitary : (Qubit[] => Unit is Adj), ops : Pauli[][], coeffs : Double[], nQubits : Int, nSamples : Int)'
+  types:
+  - name: inputStateUnitary
+    summary: Единое значение, используемое для подготовки состояния.
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: ops
+    summary: Операторы измерения для термина «Иордания-Вигнер».
+    isArray: true
+    types:
+    - isArray: true
+      isPrimitive: true
+      uid: Pauli
+  - name: coeffs
+    summary: Коэффициенты Вигнерного термина.
+    isArray: true
+    isPrimitive: true
+    uid: Double
+  - name: nQubits
+    summary: Число Кубитс, необходимое для имитации системы молекулярное.
+    isPrimitive: true
+    uid: Int
+  - name: nSamples
+    summary: Количество выборок для оценки условия использования.
+    isPrimitive: true
+    uid: Int
+output:
+  content: Double
+  types:
+  - summary: Энергия, связанная с термином "Иордания-Вигнер".
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 9efa1c2aaa66d4b35e3266f785f837cb5e4dba27
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228449"
