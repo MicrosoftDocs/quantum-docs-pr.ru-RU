@@ -1,0 +1,44 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.foreach
+name: ForEach
+type: operation
+namespace: Microsoft.Quantum.Arrays
+summary: При наличии массива и операции, определенной для элементов массива, возвращает новый массив, состоящий из изображений исходного массива в операции.
+remarks: "Операция определяется для универсальных типов, например, при наличии массива `'T[]` и операции `action : 'T -> 'U` мы можем сопоставлять элементы массива и создавать новый массив типа `'U[]`."
+syntax: "operation ForEach (action : ('T => 'U), array : 'T[]) : 'U[]"
+input:
+  content: "(action : ('T => 'U), array : 'T[])"
+  types:
+  - name: action
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - uid: "'U"
+        isLocal: true
+  - name: array
+    summary: Массив элементов `'T`.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'U[]"
+  types:
+  - summary: Массив `'U[]` элементов, сопоставленных операцией `action`.
+    isArray: true
+    uid: "'U"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: Тип элементов `array`.
+- uid: "'U"
+  summary: Тип результата операции `action`.
+ms.openlocfilehash: f97e01504142681f34772cc84d6e598507d7d734
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218334"

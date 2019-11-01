@@ -1,0 +1,57 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.ampampobliviousbyoraclephases
+name: AmpAmpObliviousByOraclePhases
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: Усиление амплитуды очевидным по Oracle для частичных отражений.
+remarks: >-
+  Это накладывает более четкие условия на форму начального и целевого состояний анЦилла, чем в `AmpAmpObliviousByReflectionPhases`.
+
+  Предполагается, что $A \кет{0}\_ф\кет{0}\_A = \кет{\текст{старт}}\_{FA} $ подготавливает анЦилла Start State $ \кет{\текст{старт}}\_{FA} $ от вычислительной базы $ \кет{0}\_ф\кет{0}$.
+
+  Предполагается, что целевое состояние помечено как $ \кет{1}\_f $.
+
+  Предполагается, что \бегин{алигн} О\кет {\ Text {Start}}\_{FA} \кет{\пси}\_s = \ламбда\кет{1}\_ф\кет {\ Text {ничего}}\_а\кет {\ Text {Target}}\_s U \кет{\пси}\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс, \енд{алигн} для некоторых единых $U $.
+syntax: 'function AmpAmpObliviousByOraclePhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, idxFlagQubit : Int) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
+input:
+  content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, idxFlagQubit : Int)'
+  types:
+  - name: phases
+    summary: Фазы частичной отражения
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - name: ancillaOracle
+    summary: Единая база данных Oracle $A $, которая готовит состояние запуска анЦилла
+    uid: microsoft.quantum.oracles.deterministicstateoracle
+  - name: signalOracle
+    summary: Единая база данных Oracle $O $ из типа `ObliviousOracle`, которая взаимодействует с анЦилла и системным регистром.
+    uid: microsoft.quantum.oracles.obliviousoracle
+  - name: idxFlagQubit
+    summary: Регистр индекса для однокубитного флага
+    isPrimitive: true
+    uid: Int
+output:
+  content: ((Qubit[], Qubit[]) => Unit is Adj + Ctl)
+  types:
+  - summary: Операция, реализующая усиление амплитуды очевидным на основе частичных отражений.
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+ms.openlocfilehash: ff75e09bf106ccc351aa9c6fa1b6bc6ee776ffad
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215767"

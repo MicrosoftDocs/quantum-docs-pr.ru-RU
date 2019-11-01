@@ -1,0 +1,25 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.research.chemistry.jordanwigneroptimizedfermionevolutionset
+name: жорданвигнероптимизедфермионеволутионсет
+type: function
+namespace: Microsoft.Quantum.Research.Chemistry
+summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Паули.
+syntax: 'function JordanWignerOptimizedFermionEvolutionSet (parityQubit : Qubit) : Microsoft.Quantum.Simulation.EvolutionSet'
+input:
+  content: '(Паритикубит: кубит)'
+  types:
+  - name: паритикубит
+    summary: Кубит, определяющий знак времени — развитие.
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Microsoft. тактов. моделирование. эволюционный
+  types:
+  - summary: '`EvolutionSet`, сопоставляющая `GeneratorIndex` для Жвоптимизед на основе Еволутионунитари.'
+    uid: microsoft.quantum.simulation.evolutionset
+ms.openlocfilehash: 7d39228c91995e38423e2b3b5894952ab3bfa533
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066206"

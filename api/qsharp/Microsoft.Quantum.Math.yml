@@ -1,0 +1,260 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.math
+name: Microsoft. тактов. Math
+functions:
+- uid: microsoft.quantum.math.abscomplex
+  summary: Возвращает абсолютное значение комплексного числа типа `Complex`.
+- uid: microsoft.quantum.math.abscomplexpolar
+  summary: Возвращает абсолютное значение комплексного числа типа `ComplexPolar`.
+- uid: microsoft.quantum.math.absd
+  summary: Возвращает абсолютное значение числа с плавающей запятой двойной точности.
+- uid: microsoft.quantum.math.absi
+  summary: Возвращает абсолютное значение целого числа.
+- uid: microsoft.quantum.math.absl
+  summary: Возвращает абсолютное значение длинного целого числа.
+- uid: microsoft.quantum.math.abssquaredcomplex
+  summary: Возвращает абсолютное значение в квадрате комплексного числа типа `Complex`.
+- uid: microsoft.quantum.math.abssquaredcomplexpolar
+  summary: Возвращает абсолютное значение в квадрате комплексного числа типа `ComplexPolar`.
+- uid: microsoft.quantum.math.arccos
+  summary: Возвращает угол, косинус которого равен указанному числу.
+- uid: microsoft.quantum.math.arccosh
+  summary: Вычисляет обратный гиперболический косинус числа.
+- uid: microsoft.quantum.math.arcsin
+  summary: Возвращает угол, синус которого равен указанному числу.
+- uid: microsoft.quantum.math.arcsinh
+  summary: Вычисляет обратный гиперболический синус числа.
+- uid: microsoft.quantum.math.arctan
+  summary: Возвращает угол, тангенс которого равен указанному числу.
+- uid: microsoft.quantum.math.arctan2
+  summary: Возвращает угол, тангенс которого является частным двух указанных чисел.
+- uid: microsoft.quantum.math.arctanh
+  summary: Выполняет обратный гиперболический тангенс числа.
+- uid: microsoft.quantum.math.argcomplex
+  summary: Возвращает фазу комплексного числа типа `Complex`.
+- uid: microsoft.quantum.math.argcomplexpolar
+  summary: Возвращает фазу комплексного числа типа `ComplexPolar`.
+- uid: microsoft.quantum.math.bitsizei
+  summary: >-
+    Для неотрицательного целочисленного `a`возвращает число битов, необходимых для представления `a`.
+
+
+    То есть возвращает наименьшее $n $ например, $a < 2 ^ n $.
+- uid: microsoft.quantum.math.bitsizel
+  summary: >-
+    Для неотрицательного целочисленного `a`возвращает число битов, необходимых для представления `a`.
+
+
+    То есть возвращает наименьшее $n $ например, $a < 2 ^ n $.
+- uid: microsoft.quantum.math.ceiling
+  summary: Возвращает наименьшее целое число, которое больше или равно указанному числу.
+- uid: microsoft.quantum.math.complexascomplexpolar
+  summary: Преобразует комплексное число типа `Complex` в комплексное число `ComplexPolar`типа.
+- uid: microsoft.quantum.math.complexpolarascomplex
+  summary: Преобразует комплексное число типа `ComplexPolar` в комплексное число `Complex`типа.
+- uid: microsoft.quantum.math.complexpolartocomplex
+  summary: ''
+- uid: microsoft.quantum.math.complextocomplexpolar
+  summary: ''
+- uid: microsoft.quantum.math.continuedfractionconvergenti
+  summary: Находит прохождение дробной части, ближайшее к `fraction` с знаменателем меньше или равным `denominatorBound`
+- uid: microsoft.quantum.math.continuedfractionconvergentl
+  summary: Находит прохождение дробной части, ближайшее к `fraction` с знаменателем меньше или равным `denominatorBound`
+- uid: microsoft.quantum.math.cos
+  summary: Возвращает косинус указанного угла.
+- uid: microsoft.quantum.math.cosh
+  summary: Возвращает гиперболический косинус указанного угла.
+- uid: microsoft.quantum.math.dividedbyc
+  summary: Возвращает частное двух входных значений.
+- uid: microsoft.quantum.math.dividedbycp
+  summary: Возвращает частное двух входных значений.
+- uid: microsoft.quantum.math.dividedbyd
+  summary: Возвращает частное двух входных значений.
+- uid: microsoft.quantum.math.dividedbyi
+  summary: Возвращает частное двух входных значений.
+- uid: microsoft.quantum.math.dividedbyl
+  summary: Возвращает частное двух входных значений.
+- uid: microsoft.quantum.math.divreml
+  summary: Делит одно значение BigInteger на другое, возвращает результат и остаток в виде кортежа.
+- uid: microsoft.quantum.math.e
+  summary: Возвращает основание натурального логарифма $e $.
+- uid: microsoft.quantum.math.expd
+  summary: Возвращает $e $, возведенное в указанную степень.
+- uid: microsoft.quantum.math.expmodi
+  summary: Возвращает целое число, возведенное в заданную степень, по отношению к заданному модулю.
+- uid: microsoft.quantum.math.expmodl
+  summary: Возвращает целое число, возведенное в заданную степень, по отношению к заданному модулю.
+- uid: microsoft.quantum.math.extendedgreatestcommondivisori
+  summary: Выполняет вычисление кортежа $ (u, v) $ таким, что $u \кдот a + v \кдот b = \Операторнаме{ГКД} (a, b) $, где $ \Операторнаме{ГКД} $ — $a $ наибольший общий делитель $a $ и $b $. GCD всегда имеет положительное значение.
+- uid: microsoft.quantum.math.extendedgreatestcommondivisorl
+  summary: Выполняет вычисление кортежа $ (u, v) $ таким, что $u \кдот a + v \кдот b = \Операторнаме{ГКД} (a, b) $, где $ \Операторнаме{ГКД} $ — $a $ наибольший общий делитель $a $ и $b $. GCD всегда имеет положительное значение.
+- uid: microsoft.quantum.math.floor
+  summary: Возвращает наибольшее целочисленное значение, которое меньше или равно указанному числу.
+- uid: microsoft.quantum.math.greatestcommondivisori
+  summary: Вычисление наибольшего общего делителя $a $ и $b $. GCD всегда имеет положительное значение.
+- uid: microsoft.quantum.math.greatestcommondivisorl
+  summary: Вычисление наибольшего общего делителя $a $ и $b $. GCD всегда имеет положительное значение.
+- uid: microsoft.quantum.math.ieeeremainder
+  summary: Возвращает остаток от деления указанного числа на другое указанное число.
+- uid: microsoft.quantum.math.inversemodi
+  summary: Возвращает $b $ например, $a \кдот b = 1 (\операторнаме{мод} \тексттт{модулус}) $.
+- uid: microsoft.quantum.math.inversemodl
+  summary: Возвращает $b $ например, $a \кдот b = 1 (\операторнаме{мод} \тексттт{модулус}) $.
+- uid: microsoft.quantum.math.iscoprimei
+  summary: Возвращает значение true, если $a $ и $b $ являются сопростыми, и false в противном случае.
+- uid: microsoft.quantum.math.iscoprimel
+  summary: Возвращает значение true, если $a $ и $b $ являются сопростыми, и false в противном случае.
+- uid: microsoft.quantum.math.lg
+  summary: Вычисляет логарифм числа по основанию 2.
+- uid: microsoft.quantum.math.log
+  summary: Возвращает натуральный логарифм (базовый $e $) указанного числа.
+- uid: microsoft.quantum.math.log10
+  summary: Возвращает десятичный логарифм указанного числа.
+- uid: microsoft.quantum.math.logof2
+  summary: Возвращает натуральный логарифм числа 2.
+- uid: microsoft.quantum.math.max
+  summary: При наличии массива целых чисел возвращает самый крупный элемент.
+- uid: microsoft.quantum.math.maxd
+  summary: Возвращает большее из двух указанных чисел.
+- uid: microsoft.quantum.math.maxi
+  summary: Возвращает большее из двух указанных чисел.
+- uid: microsoft.quantum.math.maxl
+  summary: Возвращает большее из двух указанных чисел.
+- uid: microsoft.quantum.math.min
+  summary: При наличии массива целых чисел возвращает наименьший элемент.
+- uid: microsoft.quantum.math.mind
+  summary: Возвращает меньшее из двух указанных чисел.
+- uid: microsoft.quantum.math.mini
+  summary: Возвращает меньшее из двух указанных чисел.
+- uid: microsoft.quantum.math.minl
+  summary: Возвращает меньшее из двух указанных чисел.
+- uid: microsoft.quantum.math.minusc
+  summary: Возвращает разность между двумя входными данными.
+- uid: microsoft.quantum.math.minuscp
+  summary: Возвращает разность между двумя входными данными.
+- uid: microsoft.quantum.math.minusd
+  summary: Возвращает разность между двумя входными данными.
+- uid: microsoft.quantum.math.minusi
+  summary: Возвращает разность между двумя входными данными.
+- uid: microsoft.quantum.math.minusl
+  summary: Возвращает разность между двумя входными данными.
+- uid: microsoft.quantum.math.modi
+  summary: Возвращает модуль числа по отношению к другому числу.
+- uid: microsoft.quantum.math.modl
+  summary: Возвращает модуль числа по отношению к другому числу.
+- uid: microsoft.quantum.math.modpowl
+  summary: Выполняет модульное деление на число, возведенное в степень другого числа.
+- uid: microsoft.quantum.math.modulusi
+  summary: Вычисление канонического ресидуе `value` `modulus`остаток от деления.
+- uid: microsoft.quantum.math.modulusl
+  summary: Вычисление канонического ресидуе `value` `modulus`остаток от деления.
+- uid: microsoft.quantum.math.negationc
+  summary: Возвращает унарное отрицание входных данных.
+- uid: microsoft.quantum.math.negationcp
+  summary: Возвращает унарное отрицание входных данных.
+- uid: microsoft.quantum.math.negationd
+  summary: Возвращает унарное отрицание входных данных.
+- uid: microsoft.quantum.math.negationi
+  summary: Возвращает унарное отрицание входных данных.
+- uid: microsoft.quantum.math.negationl
+  summary: Возвращает унарное отрицание входных данных.
+- uid: microsoft.quantum.math.pi
+  summary: Представляет отношение длины окружности к ее диаметру, заданному константой π.
+- uid: microsoft.quantum.math.plusa
+  summary: Возвращает сумму (объединение) двух входных значений.
+- uid: microsoft.quantum.math.plusc
+  summary: Возвращает сумму двух входных значений.
+- uid: microsoft.quantum.math.pluscp
+  summary: Возвращает сумму двух входных значений.
+- uid: microsoft.quantum.math.plusd
+  summary: Возвращает сумму двух входных значений.
+- uid: microsoft.quantum.math.plusi
+  summary: Возвращает сумму двух входных значений.
+- uid: microsoft.quantum.math.plusl
+  summary: Возвращает сумму двух входных значений.
+- uid: microsoft.quantum.math.pnorm
+  summary: >-
+    Возвращает `L(p)` норму вектора `Double`s.
+
+
+    То есть при наличии массива $x $ типа `Double[]`возвращается $p $-норм $\|x\|\_p = (\sum_{j} | x_j | ^ {p}) ^ {1/p} $.
+- uid: microsoft.quantum.math.pnormalized
+  summary: >-
+    Нормализует вектор `Double`s в норме `L(p)`.
+
+
+    То есть при наличии массива $x $ типа `Double[]`возвращается массив, в котором все элементы делятся на $p $-норм $\|x\|_p $.
+- uid: microsoft.quantum.math.powc
+  summary: Возвращает число, возведенное в заданную степень.
+- uid: microsoft.quantum.math.powcp
+  summary: Возвращает число, возведенное в заданную степень.
+- uid: microsoft.quantum.math.powd
+  summary: Возвращает число x, возведенное в степень y.
+- uid: microsoft.quantum.math.powi
+  summary: Возвращает число, возведенное в заданную степень.
+- uid: microsoft.quantum.math.powl
+  summary: Возвращает число, возведенное в заданную степень.
+- uid: microsoft.quantum.math.realmod
+  summary: Выполняет вычисление модуля между двумя вещественными числами.
+- uid: microsoft.quantum.math.round
+  summary: Округляет значение до ближайшего целого или до указанного числа дробных разрядов.
+- uid: microsoft.quantum.math.signd
+  summary: Возвращает целое число, указывающее знак числа.
+- uid: microsoft.quantum.math.signi
+  summary: Возвращает целое число, указывающее знак числа.
+- uid: microsoft.quantum.math.signl
+  summary: Возвращает целое число, указывающее знак числа.
+- uid: microsoft.quantum.math.sin
+  summary: Возвращает синус указанного угла.
+- uid: microsoft.quantum.math.sinh
+  summary: Возвращает гиперболический синус указанного угла.
+- uid: microsoft.quantum.math.sqrt
+  summary: Возвращает квадратный корень из указанного числа.
+- uid: microsoft.quantum.math.tan
+  summary: Возвращает тангенс указанного угла.
+- uid: microsoft.quantum.math.tanh
+  summary: Возвращает гиперболический тангенс указанного угла.
+- uid: microsoft.quantum.math.timesc
+  summary: Возвращает произведение двух входных значений.
+- uid: microsoft.quantum.math.timescp
+  summary: Возвращает произведение двух входных значений.
+- uid: microsoft.quantum.math.timesd
+  summary: Возвращает произведение двух входных значений.
+- uid: microsoft.quantum.math.timesi
+  summary: Возвращает произведение двух входных значений.
+- uid: microsoft.quantum.math.timesl
+  summary: Возвращает произведение двух входных значений.
+- uid: microsoft.quantum.math.truncate
+  summary: Вычисляет целую часть числа.
+newtypes:
+- uid: microsoft.quantum.math.bigfraction
+  summary: Представляет рациональное число `p/q`формы. Integer `p` является первым элементом кортежа, а `q` — вторым элементом кортежа.
+- uid: microsoft.quantum.math.complex
+  summary: >-
+    Представляет комплексное число по реальному и мнимому компонентам.
+
+    Первый элемент кортежа является реальным компонентом, вторым — мнимым компонентом.
+- uid: microsoft.quantum.math.complexpolar
+  summary: >-
+    Представляет комплексное число в полярной форме.
+
+
+    Полярное представление комплексного числа имеет $c = r e ^ {i t} $.
+- uid: microsoft.quantum.math.fraction
+  summary: Представляет рациональное число `p/q`формы. Integer `p` является первым элементом кортежа, а `q` — вторым элементом кортежа.
+summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен содержит классические математические функции и типы данных."
+operations:
+- uid: microsoft.quantum.math.randomint
+  summary: Создает одинаковое случайное целое число, которое больше или равно нулю и меньше, чем предоставленная верхняя граница.
+- uid: microsoft.quantum.math.randomintpow2
+  summary: Создает случайное целое число выборки из всех целых чисел, которые могут быть представлены в заданном количестве битов.
+- uid: microsoft.quantum.math.randomreal
+  summary: Возвращает случайное вещественное число в интервале, которое больше или равно нулю и меньше единицы.
+- uid: microsoft.quantum.math.randomsinglequbitpauli
+  summary: Возвращает один из операторов Single-кубит Паули по крайней мере в случайном порядке.
+ms.openlocfilehash: 7f30ee26a1155b64946e8fb16f5692ec602aa602
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73056296"

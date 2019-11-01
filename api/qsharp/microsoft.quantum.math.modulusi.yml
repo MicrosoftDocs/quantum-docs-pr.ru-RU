@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.modulusi
+name: ModulusI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: Вычисление канонического ресидуе `value` `modulus`остаток от деления.
+remarks: 'Эта функция ведет себя так же, как оператор `%` ведет себя в C# , и Q # AS в результате всегда является положительным целым числом от 0 до `modulus - 1`, даже если значение отрицательное.'
+syntax: 'function ModulusI (value : Int, modulus : Int) : Int'
+input:
+  content: '(value : Int, modulus : Int)'
+  types:
+  - name: value
+    summary: Значение, для которого вычислено ресидуе
+    isPrimitive: true
+    uid: Int
+  - name: modulus
+    summary: Модуль, по которому ресидуес принимаются, должен быть положительным
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: Целочисленное $r $ between 0 и `modulus - 1`, что `value - r` делится по модулю
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 1bb3877b4d66b5ad09dabbc072d7d9fb61813745
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212095"

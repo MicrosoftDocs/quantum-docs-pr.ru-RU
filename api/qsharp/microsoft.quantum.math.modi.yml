@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.modi
+name: ModI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: Возвращает модуль числа по отношению к другому числу.
+syntax: 'function ModI (a : Int, b : Int) : Int'
+input:
+  content: '(a : Int, b : Int)'
+  types:
+  - name: a
+    summary: Входной $a $, модуль которого должен быть возвращен.
+    isPrimitive: true
+    uid: Int
+  - name: b
+    summary: Число по отношению к возвращаемому модулю $a $.
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: Модуль $a \бмод b $.
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 546d65a3bd08d7a33ebf8157ba7b65041fd1bc64
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233736"

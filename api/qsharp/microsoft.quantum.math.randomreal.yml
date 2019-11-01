@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.randomreal
+name: RandomReal
+type: operation
+namespace: Microsoft.Quantum.Math
+summary: Возвращает случайное вещественное число в интервале, которое больше или равно нулю и меньше единицы.
+remarks: Эта функция вызывает <xref:microsoft.quantum.intrinsic.random>, так что ее случайность зависит от реализации `Random`.
+syntax: 'operation RandomReal (bitsRandom : Int) : Double'
+input:
+  content: '(bitsRandom : Int)'
+  types:
+  - name: bitsRandom
+    summary: >-
+      Количество битов точности, с которой должно быть вычислено случайное число.
+
+          # Output
+
+      Вещественное число $x = k/2 ^ {\Тексттт{битсрандом}} $ для целого числа $k $ SAMPLED из интервала $ [0, 2 ^ {\Тексттт{битсрандом}}) $ с вероятностью $ \Пр (k) = 1/2 ^ {\Тексттт{битсрандом}} $.
+    isPrimitive: true
+    uid: Int
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: c0780e0b8771c74a04145d5dce70d47dfefafa0e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219966"

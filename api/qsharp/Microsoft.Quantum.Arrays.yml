@@ -1,0 +1,64 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.arrays
+name: Microsoft. тактов. Arrays
+summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен содержит функции для создания массивов данных и управления ими."
+functions:
+- uid: microsoft.quantum.arrays.all
+  summary: При наличии массива и предиката, определенного для элементов массива, и проверяет, удовлетворяет ли предикату все элементы массива.
+- uid: microsoft.quantum.arrays.any
+  summary: При наличии массива и предиката, определенного для элементов массива, проверяет, удовлетворяет ли предикату хотя бы один элемент массива.
+- uid: microsoft.quantum.arrays.constantarray
+  summary: Создает массив заданной длины со всеми элементами, равными заданному значению.
+- uid: microsoft.quantum.arrays.enumerated
+  summary: При наличии массива возвращает новый массив, содержащий элементы исходного массива вместе с индексами каждого элемента.
+- uid: microsoft.quantum.arrays.exclude
+  summary: Возвращает массив, содержащий элементы другого массива, за исключением элементов в указанном списке индексов.
+- uid: microsoft.quantum.arrays.filtered
+  summary: При наличии массива и предиката, определенного для элементов массива, возвращает массив, состоящий из элементов, которые соответствуют предикату.
+- uid: microsoft.quantum.arrays.fold
+  summary: Выполняет итерацию функции `f` с помощью `array`массива, возвращая `f(f(f(initialState, array[0]), array[1]), ...)`.
+- uid: microsoft.quantum.arrays.head
+  summary: Возвращает первый элемент массива.
+- uid: microsoft.quantum.arrays.indexof
+  summary: Возвращает первый индекс первого элемента в массиве, удовлетворяющего заданному предикату. Если такого элемента не существует, возвращает значение-1.
+- uid: microsoft.quantum.arrays.indexrange
+  summary: При наличии массива возвращает диапазон по индексам этого массива, который подходит для использования в цикле for.
+- uid: microsoft.quantum.arrays.lookupfunction
+  summary: При наличии массива возвращает функцию, которая возвращает элементы этого массива.
+- uid: microsoft.quantum.arrays.mapped
+  summary: При наличии массива и функции, определенной для элементов массива, возвращает новый массив, состоящий из изображений исходного массива в функции.
+- uid: microsoft.quantum.arrays.mappedbyindex
+  summary: При наличии массива и функции, определенной для индексированных элементов массива, возвращает новый массив, состоящий из изображений исходного массива в функции.
+- uid: microsoft.quantum.arrays.most
+  summary: Создает массив, равный входному массиву, за исключением того, что последний элемент массива удален.
+- uid: microsoft.quantum.arrays.padded
+  summary: Возвращает массив, дополненный с указанными значениями вплоть до указанной длины.
+- uid: microsoft.quantum.arrays.partitioned
+  summary: Разделяет массив на несколько частей.
+- uid: microsoft.quantum.arrays.rest
+  summary: Создает массив, равный входному массиву, за исключением того, что первый элемент массива удаляется.
+- uid: microsoft.quantum.arrays.reversed
+  summary: Создайте массив, содержащий те же элементы, что и входной массив, но в обратный порядок.
+- uid: microsoft.quantum.arrays.sequencei
+  summary: Получение массива целых чисел в заданном интервале.
+- uid: microsoft.quantum.arrays.sequencel
+  summary: Получение массива целых чисел в заданном интервале.
+- uid: microsoft.quantum.arrays.subarray
+  summary: Принимает массив и список расположений и создает новый массив, сформированный из элементов исходного массива, которые соответствуют заданным местам.
+- uid: microsoft.quantum.arrays.tail
+  summary: Возвращает последний элемент массива.
+- uid: microsoft.quantum.arrays.zip
+  summary: При наличии двух массивов возвращает новый массив пар, в котором каждая пара содержит элемент из каждого исходного массива.
+- uid: microsoft.quantum.arrays.zip3
+  summary: При наличии трех массивов возвращает новый массив из трех кортежей, в которых каждый кортеж из трех элементов содержит элемент из каждого исходного массива.
+- uid: microsoft.quantum.arrays.zip4
+  summary: При наличии четырех массивов возвращает новый массив из 4 кортежей таким, что каждый 4 кортежа содержит элемент из каждого исходного массива.
+operations:
+- uid: microsoft.quantum.arrays.foreach
+  summary: При наличии массива и операции, определенной для элементов массива, возвращает новый массив, состоящий из изображений исходного массива в операции.
+ms.openlocfilehash: 7c377d5df0e32be0da75f133b08c778ec94c6a39
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057256"

@@ -1,0 +1,33 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.characterization
+name: Microsoft. такт. Charactering
+summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен содержит функции и операции для обучения свойств состояний тактов и процессов, включая томографи и оценку этапа."
+operations:
+- uid: microsoft.quantum.characterization.continuousphaseestimationiteration
+  summary: Выполняет одну итерацию итеративного (классического) алгоритма оценки фазы с использованием произвольных реальных степеней единой системы Oracle.
+- uid: microsoft.quantum.characterization.discretephaseestimationiteration
+  summary: Выполняет одну итерацию итеративного (классического) алгоритма оценки фазы с помощью целочисленных степеней единой Oracle.
+- uid: microsoft.quantum.characterization.estimatefrequency
+  summary: При подготовке и измерении оценивается частота, с которой измерение будет выполнено (Возвращает `Zero`), выполняя заданное число испытаний.
+- uid: microsoft.quantum.characterization.estimatefrequencya
+  summary: Учитывая аджоинтабле и измерение подготовки, вы оцениваете частоту, с которой измерение завершается (Возвращает `Zero`), выполняя заданное число испытаний.
+- uid: microsoft.quantum.characterization.measureallz
+  summary: >-
+    Совместно измеряет регистр Кубитс на основе Паули Z.
+
+
+    Иными словами, измеряет операцию $Z \отимес Z \отимес \кдотс \отимес Z $ по заданному регистру.
+- uid: microsoft.quantum.characterization.measureidentity
+  summary: Измеряет оператор Identity в регистре Кубитс.
+- uid: microsoft.quantum.characterization.quantumphaseestimation
+  summary: Выполняет алгоритм оценки тактовой фазы для заданного `U` и `targetState`Oracle, считывая эту фазу в реестр тактов с обратным порядком байтов.
+- uid: microsoft.quantum.characterization.robustphaseestimation
+  summary: Выполняет надежный алгоритм оценки неитеративного тактового этапа для заданных `U` и еиженстате Oracle, а также предоставляет единую оценку этапа с масштабированием в пределах Гейзенбега.
+- uid: microsoft.quantum.characterization.singlequbitprocesstomographymeasurement
+  summary: Выполняет кубит процесс томографи измерения на основе Паули, учитывая конкретный интересующий Вас канал.
+ms.openlocfilehash: f6ca8c97c1e44950fb87da8ed7335c885cabc425
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73056944"

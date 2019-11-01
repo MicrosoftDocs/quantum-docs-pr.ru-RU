@@ -1,0 +1,49 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.quantumwalkbyqubitization
+name: куантумвалкбикубитизатион
+type: function
+namespace: Microsoft.Quantum.Simulation
+summary: >-
+  Преобразует `BlockEncodingReflection` в проход такта.
+
+
+  То есть, учитывая `BlockEncodingReflection` единая $U $, которая кодирует некоторый оператор $H $ of, преобразует его в проход такта $W $, содержащий спектр $ \пм e ^ {\пм и\син ^{-1}(H)} $.
+syntax: 'function QuantumWalkByQubitization (blockEncoding : Microsoft.Quantum.Simulation.BlockEncodingReflection) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
+references: >-
+  - Hamiltonian Simulation by Qubitization
+    Guang Hao Low, Isaac L. Chuang
+    https://arxiv.org/abs/1610.06546
+input:
+  content: '(Блоккенкодинг: Microsoft. тактов. симулятор. Блоккенкодингрефлектион)'
+  types:
+  - name: блоккенкодинг
+    uid: microsoft.quantum.simulation.blockencodingreflection
+output:
+  content: ((Кубит [], кубит []) = >ная единица — "года + CTL")
+  types:
+  - summary: Проверка такта $W $ действует совместно с регистрами `a` и `s` в блок-кодировках $H $ и содержит спектр $ \пм e ^ {\пм и\син ^{-1}(H)} $.
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+seeAlso:
+- microsoft.quantum.canon.blockencoding
+- microsoft.quantum.canon.blockencodingreflection
+ms.openlocfilehash: aec6e81e44d4fa09e2ca131f0350590541f4dc8d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73065356"

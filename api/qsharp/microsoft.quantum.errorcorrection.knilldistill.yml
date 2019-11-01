@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.knilldistill
+name: KnillDistill
+type: operation
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: >-
+  Реализует алгоритм Книлл "волшебного" состояния Magic.
+
+
+  Учитывая 15 приблизительных копий волшебного состояния $ $ \бегин{алигн} \кос\фрак{\пи}{8} \кет{0} + \син \фрак{\пи}{8} \кет{1} \енд{алигн}, $ $ дает одну копию более высокого качества.
+remarks: >-
+  Мы будем следовать алгоритму Книлл.
+
+  Однако представленная реализация далеко не является оптимальной, так как она использует слишком много Кубитс.
+
+  В этой подпрограммы добавлены волшебные состояния, в которых есть более эффективные протоколы.
+syntax: 'operation KnillDistill (roughMagic : Qubit[]) : Bool'
+references: '- [книлл](https://arxiv.org/abs/quant-ph/0402171)'
+input:
+  content: '(roughMagic : Qubit[])'
+  types:
+  - name: roughMagic
+    summary: Регистр пятнадцать Кубитс, содержащий приблизительные копии волшебного состояния. После применения этой процедуры перенастройки `roughMagic[0]` будет содержать одну копию более высокого качества, а оставшаяся часть регистра вернется к состоянию $ \ket{00\cdots 0} $.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Bool
+  types:
+  - summary: Если `true`, процедура прошла удачно и должна быть принята копия более высокого качества. Если `false`, процедура завершилась ошибкой, а состояние регистра должно считаться неопределенным.
+    isPrimitive: true
+    uid: Bool
+ms.openlocfilehash: 81d87b3dcd6f669a63847e331865b1f2c389f3ce
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226732"

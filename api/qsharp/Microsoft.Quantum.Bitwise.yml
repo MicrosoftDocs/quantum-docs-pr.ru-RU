@@ -1,0 +1,45 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.bitwise
+name: Microsoft.Quantum.Bitwise
+functions:
+- uid: microsoft.quantum.bitwise.and
+  summary: >-
+    Возвращает побитовое и для двух целых чисел.
+
+    При этом выполняются те же вычисления, что и у встроенного оператора `&&&`.
+- uid: microsoft.quantum.bitwise.leftshiftedi
+  summary: Сдвигает побитовое представление числа влево на заданное число битов.
+- uid: microsoft.quantum.bitwise.leftshiftedl
+  summary: Сдвигает побитовое представление числа влево на заданное число битов.
+- uid: microsoft.quantum.bitwise.not
+  summary: >-
+    Возвращает побитовое не целое число.
+
+    При этом выполняются те же вычисления, что и у встроенного оператора `~~~`.
+- uid: microsoft.quantum.bitwise.or
+  summary: >-
+    Возвращает побитовое или для двух целых чисел.
+
+    При этом выполняются те же вычисления, что и у встроенного оператора `|||`.
+- uid: microsoft.quantum.bitwise.parity
+  summary: Возвращает побитовую четность целого числа (1, если его двоичное представление содержит нечетное число элементов и 0 в противном случае).
+- uid: microsoft.quantum.bitwise.rightshiftedi
+  summary: Сдвигает побитовое представление числа вправо на заданное число битов.
+- uid: microsoft.quantum.bitwise.rightshiftedl
+  summary: Сдвигает побитовое представление числа вправо на заданное число битов.
+- uid: microsoft.quantum.bitwise.xbits
+  summary: Возвращает целое число, представляющее X бит массива операторов Паули.
+- uid: microsoft.quantum.bitwise.xor
+  summary: >-
+    Возвращает побитовое исключающее или (XOR) двух целых чисел.
+
+    При этом выполняются те же вычисления, что и у встроенного оператора `^^^`.
+- uid: microsoft.quantum.bitwise.zbits
+  summary: Возвращает целое число, представляющее Z бит массива операторов Паули.
+summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен содержит функции для работы с побитовым представлением классических типов данных."
+ms.openlocfilehash: c474d92e7a40f5491b21d80e00294fbdff96a62a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73210956"

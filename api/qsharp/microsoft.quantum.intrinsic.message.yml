@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.message
+name: Message
+type: function
+namespace: Microsoft.Quantum.Intrinsic
+summary: Записывает в журнал сообщение.
+remarks: Конкретное поведение этой функции зависит от симулятора, но в большинстве случаев данное сообщение будет записано в консоль.
+syntax: 'function Message (msg : String) : Unit'
+input:
+  content: '(msg : String)'
+  types:
+  - name: msg
+    summary: Сообщение, которое необходимо сообщить.
+    isPrimitive: true
+    uid: String
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 90ca6c1a059a327da86e81de70f1f6bfc34f8785
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234059"
