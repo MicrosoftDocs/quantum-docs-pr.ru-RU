@@ -1,0 +1,46 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyfermionicswap
+name: ApplyFermionicSWAP
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Применяет ПЕРЕМЕНную Фермионик.
+
+
+  Это по сути меняет местами Кубитс при применении глобального этапа – 1, если оба Кубитс равны 1. Сохраняет симметризатион орбиты.
+
+  Дополнительные сведения см. в разделе.
+
+
+  Эта операция представлена единым оператором \бегин{алигн} f_ {swap} \масрел{: =} \бегин{бматрикс} 1 & 0 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 &-1 \\\\ \енд{бматрикс}.
+
+  \енд{алигн}
+syntax: 'operation ApplyFermionicSWAP (qubit1 : Qubit, qubit2 : Qubit) : Unit'
+references: '- [*Райан баббуш, (Nathan виебе, Жаррод Астрид, Джеймс мкклаин, Хартмут Невен, Гарнет родственные-LIC*канал, арксив: 1706.00023](https://arxiv.org/pdf/1706.00023.pdf)'
+input:
+  content: '(qubit1 : Qubit, qubit2 : Qubit)'
+  types:
+  - name: qubit1
+    summary: Первый кубит, который необходимо поменять местами.
+    isPrimitive: true
+    uid: Qubit
+  - name: qubit2
+    summary: Второй кубит, который необходимо поменять местами.
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.intrinsic.swap
+ms.openlocfilehash: 4d9fd4ea879dd0df6bddddb3d4f769f4e8096657
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213829"

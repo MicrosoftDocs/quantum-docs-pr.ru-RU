@@ -1,0 +1,73 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.logical
+name: Microsoft. тактов. Logical
+summary: " # <a name=\"summary\"></a>Резюме\n Содержит функции для работы с логическими выражениями и логической логикой."
+functions:
+- uid: microsoft.quantum.logical.and
+  summary: Возвращает логическое значение, умноженное на два значения.
+- uid: microsoft.quantum.logical.conditioned
+  summary: Возвращает одно из двух значений в зависимости от значения логического условия.
+- uid: microsoft.quantum.logical.equalb
+  summary: Возвращает значение true только в том случае, если два входных значения равны.
+- uid: microsoft.quantum.logical.equalc
+  summary: Возвращает значение true только в том случае, если два входных значения равны.
+- uid: microsoft.quantum.logical.equalcp
+  summary: Возвращает значение true только в том случае, если два входных значения равны.
+- uid: microsoft.quantum.logical.equald
+  summary: Возвращает значение true только в том случае, если два входных значения равны.
+- uid: microsoft.quantum.logical.equali
+  summary: Возвращает значение true только в том случае, если два входных значения равны.
+- uid: microsoft.quantum.logical.equall
+  summary: Возвращает значение true только в том случае, если два входных значения равны.
+- uid: microsoft.quantum.logical.equalr
+  summary: Возвращает значение true только в том случае, если два входных значения равны.
+- uid: microsoft.quantum.logical.greaterthand
+  summary: Возвращает значение true только в том случае, если число больше, чем другое число.
+- uid: microsoft.quantum.logical.greaterthani
+  summary: Возвращает значение true только в том случае, если число больше, чем другое число.
+- uid: microsoft.quantum.logical.greaterthanl
+  summary: Возвращает значение true только в том случае, если число больше, чем другое число.
+- uid: microsoft.quantum.logical.greaterthanorequald
+  summary: Возвращает значение true только в том случае, если число больше или равно другому числу.
+- uid: microsoft.quantum.logical.greaterthanorequali
+  summary: Возвращает значение true только в том случае, если число больше или равно другому числу.
+- uid: microsoft.quantum.logical.greaterthanorequall
+  summary: Возвращает значение true только в том случае, если число больше или равно другому числу.
+- uid: microsoft.quantum.logical.lessthand
+  summary: Возвращает значение true только в том случае, если число меньше, чем другое число.
+- uid: microsoft.quantum.logical.lessthani
+  summary: Возвращает значение true только в том случае, если число меньше, чем другое число.
+- uid: microsoft.quantum.logical.lessthanl
+  summary: Возвращает значение true только в том случае, если число меньше, чем другое число.
+- uid: microsoft.quantum.logical.lessthanorequald
+  summary: Возвращает значение true только в том случае, если число меньше или равно другому числу.
+- uid: microsoft.quantum.logical.lessthanorequali
+  summary: Возвращает значение true только в том случае, если число меньше или равно другому числу.
+- uid: microsoft.quantum.logical.lessthanorequall
+  summary: Возвращает значение true только в том случае, если число меньше или равно другому числу.
+- uid: microsoft.quantum.logical.not
+  summary: Возвращает логическое отрицание значения.
+- uid: microsoft.quantum.logical.notequalb
+  summary: Возвращает значение true только в том случае, если два входных значения не равны.
+- uid: microsoft.quantum.logical.notequalc
+  summary: Возвращает значение true только в том случае, если два входных значения не равны.
+- uid: microsoft.quantum.logical.notequalcp
+  summary: Возвращает значение true только в том случае, если два входных значения не равны.
+- uid: microsoft.quantum.logical.notequald
+  summary: Возвращает значение true только в том случае, если два входных значения не равны.
+- uid: microsoft.quantum.logical.notequali
+  summary: Возвращает значение true только в том случае, если два входных значения не равны.
+- uid: microsoft.quantum.logical.notequall
+  summary: Возвращает значение true только в том случае, если два входных значения не равны.
+- uid: microsoft.quantum.logical.notequalr
+  summary: Возвращает значение true только в том случае, если два входных значения не равны.
+- uid: microsoft.quantum.logical.or
+  summary: Возвращает логическое сложение двух значений.
+- uid: microsoft.quantum.logical.xor
+  summary: Возвращает логическое исключающее сложение двух значений.
+ms.openlocfilehash: 12f462356dfe7ae4bf7c60110e71a9928bc8c178
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73056281"

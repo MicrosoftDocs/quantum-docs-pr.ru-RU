@@ -1,0 +1,944 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.canon
+name: Microsoft. тактов. Canon
+functions:
+- uid: microsoft.quantum.canon.asqubitarray
+  summary: >-
+    > [!WARNING]
+
+    > Устаревшая функция была удалена.
+- uid: microsoft.quantum.canon.assertalmostequal
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Diagnostics.NearEqualityFactD".
+- uid: microsoft.quantum.canon.assertalmostequaltol
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Diagnostics.EqualityWithinToleranceFact".
+- uid: microsoft.quantum.canon.assertboolarrayequal
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Diagnostics.AllEqualityFactB".
+- uid: microsoft.quantum.canon.assertboolequal
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Diagnostics.EqualityFactB".
+- uid: microsoft.quantum.canon.assertintequal
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Diagnostics.EqualityFactI".
+- uid: microsoft.quantum.canon.assertresultequal
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Diagnostics.EqualityFactR".
+- uid: microsoft.quantum.canon.bigendiantolittleendian
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian".
+- uid: microsoft.quantum.canon.bind
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.bound".
+- uid: microsoft.quantum.canon.binda
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.bounda".
+- uid: microsoft.quantum.canon.bindc
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.boundc".
+- uid: microsoft.quantum.canon.bindca
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.boundca".
+- uid: microsoft.quantum.canon.bitsize
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.math.bitsizei".
+- uid: microsoft.quantum.canon.boolarrfrompositiveint
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.intasboolarray".
+- uid: microsoft.quantum.canon.boolarrfromresultarr
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.resultarrayasboolarray".
+- uid: microsoft.quantum.canon.boolfromresult
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.resultasbool".
+- uid: microsoft.quantum.canon.bound
+  summary: При наличии массива операций, исдействующих один вход, создает новую операцию, которая выполняет каждую заданную операцию последовательно.
+- uid: microsoft.quantum.canon.bounda
+  summary: >-
+    При наличии массива операций, исдействующих один вход, создает новую операцию, которая выполняет каждую заданную операцию последовательно.
+
+    Модификатор `A` указывает, что все операции в массиве являются аджоинтабле.
+- uid: microsoft.quantum.canon.boundc
+  summary: >-
+    При наличии массива операций, исдействующих один вход, создает новую операцию, которая выполняет каждую заданную операцию последовательно.
+
+    Модификатор `C` указывает, что все операции в массиве являются управляемыми.
+- uid: microsoft.quantum.canon.boundca
+  summary: >-
+    При наличии массива операций, исдействующих один вход, создает новую операцию, которая выполняет каждую заданную операцию последовательно.
+
+    Модификатор `CA` указывает, что все операции в массиве являются аджоинтабле и управляемыми.
+- uid: microsoft.quantum.canon.ccontrolled
+  summary: При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`, ничего не происходит.
+- uid: microsoft.quantum.canon.ccontrolleda
+  summary: >-
+    При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`, ничего не происходит.
+
+    Модификатор `A` указывает, что операция является аджоинтабле.
+- uid: microsoft.quantum.canon.ccontrolledc
+  summary: >-
+    При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`, ничего не происходит.
+
+    Модификатор `C` указывает, что операция является управляемой.
+- uid: microsoft.quantum.canon.ccontrolledca
+  summary: >-
+    При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`, ничего не происходит.
+
+    Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.compose
+  summary: >-
+    Создает композицию двух функций.
+
+
+    То есть при наличии двух функций, $f $ и $g $, возвращается новая функция, представляющая $f \Цирк g $.
+- uid: microsoft.quantum.canon.conjugatedby
+  summary: При наличии внешних и внутренних операций возвращает новую операцию, которая сопряжена с внутренней операцией внешней операцией.
+- uid: microsoft.quantum.canon.conjugatedbya
+  summary: При наличии внешних и внутренних операций возвращает новую операцию, которая сопряжена с внутренней операцией внешней операцией.
+- uid: microsoft.quantum.canon.conjugatedbyc
+  summary: При наличии внешних и внутренних операций возвращает новую операцию, которая сопряжена с внутренней операцией внешней операцией.
+- uid: microsoft.quantum.canon.conjugatedbyca
+  summary: При наличии внешних и внутренних операций возвращает новую операцию, которая сопряжена с внутренней операцией внешней операцией.
+- uid: microsoft.quantum.canon.continuedfractionconvergent
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.math.continuedfractionconvergenti".
+- uid: microsoft.quantum.canon.controlledonbitstring
+  summary: Возвращает оператор, который применяет Oracle к целевой регистрации, если состояние регистра элемента управления соответствует заданной битовой маске.
+- uid: microsoft.quantum.canon.controlledonint
+  summary: Возвращает оператор, который применяет объект Oracle к целевой регистрации, если состояние регистра элемента управления соответствует заданному положительному целому числу.
+- uid: microsoft.quantum.canon.curriedop
+  summary: >-
+    Возвращает перекаррированных версию операции с двумя входными данными.
+
+
+    Это значит, что при выполнении операции с двумя входными данными эта функция применяет карри исоморфисм $f (x, y) \екуив f (x) (y) $ для возврата операции одного входа, которая возвращает операцию одного входа.
+- uid: microsoft.quantum.canon.curryop
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.curriedop".
+- uid: microsoft.quantum.canon.decomposeintotimestepsca
+  summary: Возвращает операцию, реализующую интегратор Троттер – Сузуки для данной операции.
+- uid: microsoft.quantum.canon.delayed
+  summary: Возвращает операцию, которая применяет заданную операцию с заданным аргументом.
+- uid: microsoft.quantum.canon.delayeda
+  summary: Возвращает операцию, которая применяет заданную операцию с заданным аргументом.
+- uid: microsoft.quantum.canon.delayedc
+  summary: Возвращает операцию, которая применяет заданную операцию с заданным аргументом.
+- uid: microsoft.quantum.canon.delayedca
+  summary: Возвращает операцию, которая применяет заданную операцию с заданным аргументом.
+- uid: microsoft.quantum.canon.embedpauli
+  summary: При наличии однокубитного оператора Паули и индекса кубит возвращает оператор Multi-кубит Паули с заданным оператором Single-кубит в этом индексе и `PauliI` по каждому индексу.
+- uid: microsoft.quantum.canon.expmod
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.math.expmodi".
+- uid: microsoft.quantum.canon.extendedgcd
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.math.extendedgreatestcommondivisori".
+- uid: microsoft.quantum.canon.filter
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Arrays.Filtered".
+- uid: microsoft.quantum.canon.forall
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Arrays.All".
+- uid: microsoft.quantum.canon.forany
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Arrays.Any".
+- uid: microsoft.quantum.canon.fst
+  summary: При наличии пары возвращает ее первый элемент.
+- uid: microsoft.quantum.canon.gcd
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.math.greatestcommondivisori".
+- uid: microsoft.quantum.canon.ignore
+  summary: Игнорирует выходные данные операции или функции.
+- uid: microsoft.quantum.canon.intabs
+  summary: >-
+    > [!WARNING]
+
+    > Устаревшая функция была удалена.
+- uid: microsoft.quantum.canon.intarrayfromrange
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.rangeasintarray".
+- uid: microsoft.quantum.canon.intmax
+  summary: >-
+    > [!WARNING]
+
+    > Устаревшая функция была удалена.
+- uid: microsoft.quantum.canon.inversemod
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.math.inversemodi".
+- uid: microsoft.quantum.canon.iscoprime
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.math.greatestcommondivisori".
+- uid: microsoft.quantum.canon.isresultone
+  summary: Проверяет, равно ли данное значение результата `One`.
+- uid: microsoft.quantum.canon.isresultzero
+  summary: Проверяет, равно ли данное значение результата `Zero`.
+- uid: microsoft.quantum.canon.littleendiantobigendian
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian".
+- uid: microsoft.quantum.canon.map
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Arrays.Mapped".
+- uid: microsoft.quantum.canon.mapindex
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Arrays.MappedByIndex".
+- uid: microsoft.quantum.canon.modulus
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.math.modulusi".
+- uid: microsoft.quantum.canon.multiplexerbruteforcefromgenerator
+  summary: >-
+    Возвращает операцию, зависящую от умножения, $U $, которая применяет единое $V _j $ при управлении с помощью n-кубит числового состояния $ \кет{ж} $.
+
+
+    $U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж}\отимес V_j $.
+- uid: microsoft.quantum.canon.multiplexerfromgenerator
+  summary: >-
+    Возвращает операцию, зависящую от умножения, $U $, которая применяет единое $V _j $ при управлении с помощью n-кубит числового состояния $ \кет{ж} $.
+
+
+    $U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж}\отимес V_j $.
+- uid: microsoft.quantum.canon.nearequalityfact
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Diagnostics.NearEqualityFactD".
+- uid: microsoft.quantum.canon.operationpow
+  summary: >-
+    Порождает операцию в степень.
+
+
+    То есть операция, представляющая шлюз $U $, возвращает новую операцию $U ^ m $ для Power $m $.
+- uid: microsoft.quantum.canon.operationpowa
+  summary: >-
+    Порождает операцию в степень.
+
+    Модификатор `A` указывает, что операция является аджоинтабле.
+
+
+    То есть операция, представляющая шлюз $U $, возвращает новую операцию $U ^ m $ для Power $m $.
+- uid: microsoft.quantum.canon.operationpowc
+  summary: >-
+    Порождает операцию в степень.
+
+    Модификатор `C` указывает, что операция является управляемой.
+
+
+    То есть операция, представляющая шлюз $U $, возвращает новую операцию $U ^ m $ для Power $m $.
+- uid: microsoft.quantum.canon.operationpowca
+  summary: >-
+    Порождает операцию в степень.
+
+    Модификатор `A` указывает, что операция является управляемой и аджоинтабле.
+
+
+    То есть операция, представляющая шлюз $U $, возвращает новую операцию $U ^ m $ для Power $m $.
+- uid: microsoft.quantum.canon.pad
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Arrays.Padded".
+- uid: microsoft.quantum.canon.paulifrombitstring
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.boolarrayaspauli".
+- uid: microsoft.quantum.canon.pnormalize
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.math.pnormalized".
+- uid: microsoft.quantum.canon.positiveintfromboolarr
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.boolarrayasint".
+- uid: microsoft.quantum.canon.positiveintfromresultarr
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.resultarrayasint".
+- uid: microsoft.quantum.canon.restrictedtosubregister
+  summary: Ограничивают операцию массивом индексов регистра, т. е. подрегистром.
+- uid: microsoft.quantum.canon.restrictedtosubregistera
+  summary: >-
+    Ограничивают операцию массивом индексов регистра, т. е. подрегистром.
+
+    Модификатор `A` указывает, что операция является аджоинтабле.
+- uid: microsoft.quantum.canon.restrictedtosubregisterc
+  summary: >-
+    Ограничивают операцию массивом индексов регистра, т. е. подрегистром.
+
+    Модификатор `C` указывает, что операция является управляемой.
+- uid: microsoft.quantum.canon.restrictedtosubregisterca
+  summary: >-
+    Ограничивают операцию массивом индексов регистра, т. е. подрегистром.
+
+    Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.restricttosubregister
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.restrictedtosubregister".
+- uid: microsoft.quantum.canon.restricttosubregistera
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.restrictedtosubregistera".
+- uid: microsoft.quantum.canon.restricttosubregisterc
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.restrictedtosubregisterc".
+- uid: microsoft.quantum.canon.restricttosubregisterca
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.restrictedtosubregisterca".
+- uid: microsoft.quantum.canon.resultarrfromboolarr
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.resultarrayasboolarray".
+- uid: microsoft.quantum.canon.resultasint
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.resultarrayasint".
+- uid: microsoft.quantum.canon.resultfrombool
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.boolasresult".
+- uid: microsoft.quantum.canon.reverse
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Arrays.Reversed".
+- uid: microsoft.quantum.canon.snd
+  summary: При наличии пары возвращает второй элемент.
+- uid: microsoft.quantum.canon.splitarray
+  summary: >-
+    > [!WARNING]
+
+    > Рекомендуется использовать вместо этого @"Microsoft.Quantum.Arrays.Partitioned".
+- uid: microsoft.quantum.canon.stackcapacity
+  summary: Возвращает емкость <xref:microsoft.quantum.canon.resultstack>.
+- uid: microsoft.quantum.canon.stacklength
+  summary: Извлекает количество элементов, хранящихся в <xref:microsoft.quantum.canon.resultstack>.
+- uid: microsoft.quantum.canon.stacknew
+  summary: Создает новый пустой <xref:microsoft.quantum.canon.resultstack> с заданной емкостью.
+- uid: microsoft.quantum.canon.stackpeek
+  summary: Извлекает самый верхний элемент <xref:microsoft.quantum.canon.resultstack>.
+- uid: microsoft.quantum.canon.stackpop
+  summary: Удаляет самый верхний элемент из <xref:microsoft.quantum.canon.resultstack>.
+- uid: microsoft.quantum.canon.stackpush
+  summary: Помещает новый элемент на <xref:microsoft.quantum.canon.resultstack>.
+- uid: microsoft.quantum.canon.tooperation
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.convert.functionasoperation".
+- uid: microsoft.quantum.canon.transformedoperation
+  summary: При наличии функции и операции возвращает новую операцию, входные данные которой преобразуются в заданную функцию.
+- uid: microsoft.quantum.canon.transformedoperationa
+  summary: При наличии функции и операции возвращает новую операцию, входные данные которой преобразуются в заданную функцию.
+- uid: microsoft.quantum.canon.transformedoperationc
+  summary: При наличии функции и операции возвращает новую операцию, входные данные которой преобразуются в заданную функцию.
+- uid: microsoft.quantum.canon.transformedoperationca
+  summary: При наличии функции и операции возвращает новую операцию, входные данные которой преобразуются в заданную функцию.
+- uid: microsoft.quantum.canon.uncurriedop
+  summary: При наличии функции, возвращающей операции, возвращает новую операцию, которая принимает оба входа как кортеж.
+- uid: microsoft.quantum.canon.uncurriedopa
+  summary: >-
+    При наличии функции, возвращающей операции, возвращает новую операцию, которая принимает оба входа как кортеж.
+
+    Модификатор `A` указывает, что операции являются аджоинтабле.
+- uid: microsoft.quantum.canon.uncurriedopc
+  summary: >-
+    При наличии функции, возвращающей операции, возвращает новую операцию, которая принимает оба входа как кортеж.
+
+    Модификатор `C` указывает, что операции являются управляемыми.
+- uid: microsoft.quantum.canon.uncurriedopca
+  summary: >-
+    При наличии функции, возвращающей операции, возвращает новую операцию, которая принимает оба входа как кортеж.
+
+    Модификатор `CA` указывает, что операции являются управляемыми и аджоинтабле.
+- uid: microsoft.quantum.canon.uncurryop
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.uncurriedop".
+- uid: microsoft.quantum.canon.uncurryopa
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.uncurriedopa".
+- uid: microsoft.quantum.canon.uncurryopc
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.uncurriedopc".
+- uid: microsoft.quantum.canon.uncurryopca
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.canon.uncurriedopca".
+- uid: microsoft.quantum.canon.weightonepaulis
+  summary: Возвращает массив всех операторов Паули веса-1 для заданного числа Кубитс.
+- uid: microsoft.quantum.canon.xor
+  summary: При этом вычисляются эксклюзивные или два бита.
+operations:
+- uid: microsoft.quantum.canon.adiabaticstateenergyunitary
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"microsoft.quantum.simuilation.pnormalized".
+- uid: microsoft.quantum.canon.andladder
+  summary: >-
+    Выполняет контролируемую "и" лестницу "на целевом Кубитс.
+
+
+    Это применяется в соответствии с приведенной ниже картой на основе векторов вычислительных операций: $ $ \бегин{алигн} \кет{КС\_1, \дотс, x\_n} \кет{и\_1, \дотс, y\_{n-1}} \мапсто \кет{КС\_1 , \дотс, x\_n} \кет{y\_1 \оплус (x\_1 \ланд x\_2), \дотс, y\_{n-1} \оплус (x\_1 \ланд x\_2 \ланд \кдотс \ланд x\_{n-1}} , \енд{алигн} $ $ WHERE $ \кет{КС\_1, \дотс, x\_n} $ относится к вычислительным состояниям `controls`, а $ \кет{и\_1, \дотс, y\_{n-1}} $ относится к вычислительным состояниям `targets`.
+- uid: microsoft.quantum.canon.applydiagonalunitary
+  summary: >-
+    Применяет массив сложных фаз к числовым состояниям регистра Кубитс.
+
+
+    Это значит, что реализует диагональную операцию $U $, которая применяет сложный этап $e ^ {i \theta_j} $ в $n $-кубит номер состояния $ \кет{ж} $.
+
+
+    $U = \сум ^ {2 ^ n-1} _ {j = 0} e ^ {i\theta_j} \ Сисакет {j} \ неверное {j} $.
+- uid: microsoft.quantum.canon.applyfermionicswap
+  summary: Применяет ПЕРЕМЕНную Фермионик.
+- uid: microsoft.quantum.canon.applyif
+  summary: Применяет операцию с условием на Классический бит.
+- uid: microsoft.quantum.canon.applyifa
+  summary: Применяет операцию аджоинтабле к классическому биту.
+- uid: microsoft.quantum.canon.applyifc
+  summary: Применяет управляемую операцию к классическому биту.
+- uid: microsoft.quantum.canon.applyifca
+  summary: Применяет единую операцию с условием на Классический бит.
+- uid: microsoft.quantum.canon.applyifelseb
+  summary: Применяет одну из двух операций в зависимости от значения классического бита.
+- uid: microsoft.quantum.canon.applyifelseba
+  summary: Применяет одну из двух операций аджоинтабле в зависимости от значения классического бита.
+- uid: microsoft.quantum.canon.applyifelsebc
+  summary: Применяет одну из двух контролируемых операций в зависимости от значения классического бита.
+- uid: microsoft.quantum.canon.applyifelsebca
+  summary: Применяет одну из двух операций в зависимости от значения классического бита.
+- uid: microsoft.quantum.canon.applyifelser
+  summary: Применяет одну из двух операций в зависимости от значения классического результата.
+- uid: microsoft.quantum.canon.applyifelsera
+  summary: Применяет одну из двух операций аджоинтабле в зависимости от значения классического результата.
+- uid: microsoft.quantum.canon.applyifelserc
+  summary: Применяет одну из двух контролируемых операций в зависимости от значения классического результата.
+- uid: microsoft.quantum.canon.applyifelserca
+  summary: Применяет одну из двух операций в зависимости от значения классического результата.
+- uid: microsoft.quantum.canon.applyifone
+  summary: Применяет операцию с условием для классического значения результата, равного одному.
+- uid: microsoft.quantum.canon.applyifonea
+  summary: Применяет операцию аджоинтабле с условием для классического значения result.
+- uid: microsoft.quantum.canon.applyifonec
+  summary: Применяет управляемую операцию с условием для классического значения result.
+- uid: microsoft.quantum.canon.applyifoneca
+  summary: Применяет единую операцию с условием для классического результирующего значения One.
+- uid: microsoft.quantum.canon.applyifzero
+  summary: Применяет операцию с условием для классического значения result, равного нулю.
+- uid: microsoft.quantum.canon.applyifzeroa
+  summary: Применяет операцию аджоинтабле, определенную для классического результирующего значения, равным нулю.
+- uid: microsoft.quantum.canon.applyifzeroc
+  summary: Применяет управляемую операцию, заданную для классического результирующего значения, равного нулю.
+- uid: microsoft.quantum.canon.applyifzeroca
+  summary: Применяет единую операцию с условием для классического результирующего значения, равного нулю.
+- uid: microsoft.quantum.canon.applymulticontrolledc
+  summary: >-
+    Применяет версию управляемой операции с одной операцией умножения.
+
+    Модификатор `C` указывает, что операция с одним кубитом является управляемой.
+- uid: microsoft.quantum.canon.applymulticontrolledca
+  summary: >-
+    Применяет версию управляемой операции с одной операцией умножения.
+
+    Модификатор `CA` указывает, что однокубитная операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applypauli
+  summary: При наличии кубит оператора Паули применяет соответствующую операцию к регистру.
+- uid: microsoft.quantum.canon.applypaulifrombitstring
+  summary: Применяет оператор Паули к каждому кубит в массиве, если соответствующий бит логического массива совпадает с заданным входным значением.
+- uid: microsoft.quantum.canon.applyquantumfouriertransform
+  summary: Выполняет преобразование Фурье в тактовую операцию для регистра такта, содержащего целое число в представлении с прямым порядком байтов.
+- uid: microsoft.quantum.canon.applyquantumfouriertransformbe
+  summary: >-
+    > [!WARNING]
+
+    > Устаревшая операция была удалена.
+- uid: microsoft.quantum.canon.applyquantumfouriertransformle
+  summary: ''
+- uid: microsoft.quantum.canon.applyreversedopbigendian
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.ApplyReversedOpBE".
+- uid: microsoft.quantum.canon.applyreversedopbigendiana
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEA".
+- uid: microsoft.quantum.canon.applyreversedopbigendianc
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC".
+- uid: microsoft.quantum.canon.applyreversedopbigendianca
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC".
+- uid: microsoft.quantum.canon.applyreversedoplittleendian
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.ApplyReversedOpLE".
+- uid: microsoft.quantum.canon.applyreversedoplittleendiana
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEA".
+- uid: microsoft.quantum.canon.applyreversedoplittleendianc
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC".
+- uid: microsoft.quantum.canon.applyreversedoplittleendianca
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC".
+- uid: microsoft.quantum.canon.applyripplecarrycomparatorbe
+  summary: >-
+    > [!WARNING]
+
+    > Устаревшая операция была удалена.
+- uid: microsoft.quantum.canon.applyripplecarrycomparatorle
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.CompareUsingRippleCarry".
+- uid: microsoft.quantum.canon.applytoeach
+  summary: Применяет одну операцию кубит к каждому элементу в регистре.
+- uid: microsoft.quantum.canon.applytoeacha
+  summary: >-
+    Применяет одну операцию кубит к каждому элементу в регистре.
+
+    Модификатор `A` указывает, что операция с одним кубитом — аджоинтабле.
+- uid: microsoft.quantum.canon.applytoeachc
+  summary: >-
+    Применяет одну операцию кубит к каждому элементу в регистре.
+
+    Модификатор `C` указывает, что операция с одним кубитом является управляемой.
+- uid: microsoft.quantum.canon.applytoeachca
+  summary: >-
+    Применяет одну операцию кубит к каждому элементу в регистре.
+
+    Модификатор `CA` указывает, что однокубитная операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applytoeachindex
+  summary: Применяет одну операцию кубит к каждому индексированному элементу в регистре.
+- uid: microsoft.quantum.canon.applytoeachindexa
+  summary: >-
+    Применяет одну операцию кубит к каждому индексированному элементу в регистре.
+
+    Модификатор `A` указывает, что операция с одним кубитом — аджоинтабле.
+- uid: microsoft.quantum.canon.applytoeachindexc
+  summary: >-
+    Применяет одну операцию кубит к каждому индексированному элементу в регистре.
+
+    Модификатор `C` указывает, что операция с одним кубитом является управляемой.
+- uid: microsoft.quantum.canon.applytoeachindexca
+  summary: >-
+    Применяет одну операцию кубит к каждому индексированному элементу в регистре.
+
+    Модификатор `CA` указывает, что однокубитная операция является аджоинтабле и управляемой.
+- uid: microsoft.quantum.canon.applytofirstqubit
+  summary: Применяет операцию к первому кубиту в регистре.
+- uid: microsoft.quantum.canon.applytofirstqubita
+  summary: >-
+    Применяет операцию к первому кубиту в регистре.
+
+    Модификатор `A` указывает, что операция является аджоинтабле.
+- uid: microsoft.quantum.canon.applytofirstqubitc
+  summary: >-
+    Применяет Op операции к первому кубит в регистре.
+
+    Модификатор `C` указывает, что операция является управляемой.
+- uid: microsoft.quantum.canon.applytofirstqubitca
+  summary: >-
+    Применяет Op операции к первому кубит в регистре.
+
+    Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applytofirstthreequbits
+  summary: Применяет операцию к первым трем Кубитс в регистре.
+- uid: microsoft.quantum.canon.applytofirstthreequbitsa
+  summary: >-
+    Применяет операцию к первым трем Кубитс в регистре.
+
+    Модификатор `A` указывает, что операция является аджоинтабле.
+- uid: microsoft.quantum.canon.applytofirstthreequbitsc
+  summary: >-
+    Применяет операцию к первым трем Кубитс в регистре.
+
+    Модификатор `C` указывает, что операция является управляемой.
+- uid: microsoft.quantum.canon.applytofirstthreequbitsca
+  summary: >-
+    Применяет операцию к первым трем Кубитс в регистре.
+
+    Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applytofirsttwoqubits
+  summary: Применяет операцию к первым двум Кубитс в регистре.
+- uid: microsoft.quantum.canon.applytofirsttwoqubitsa
+  summary: >-
+    Применяет операцию к первым двум Кубитс в регистре.
+
+    Модификатор `A` указывает, что операция является аджоинтабле.
+- uid: microsoft.quantum.canon.applytofirsttwoqubitsc
+  summary: >-
+    Применяет операцию к первым двум Кубитс в регистре.
+
+    Модификатор `C` указывает, что операция является управляемой.
+- uid: microsoft.quantum.canon.applytofirsttwoqubitsca
+  summary: >-
+    Применяет операцию к первым двум Кубитс в регистре.
+
+    Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applytopartition
+  summary: Применяет пару операций к заданному разделу регистра на две части.
+- uid: microsoft.quantum.canon.applytopartitiona
+  summary: >-
+    Применяет пару операций к заданному разделу регистра на две части.
+
+    Модификатор `A` указывает, что операция является аджоинтабле.
+- uid: microsoft.quantum.canon.applytopartitionc
+  summary: >-
+    Применяет пару операций к заданному разделу регистра на две части.
+
+    Модификатор `C` указывает, что операция является управляемой.
+- uid: microsoft.quantum.canon.applytopartitionca
+  summary: >-
+    Применяет пару операций к заданному разделу регистра на две части.
+
+    Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applytosubregister
+  summary: Применяет операцию к подрегистру регистра с Кубитс, заданным массивом своих индексов.
+- uid: microsoft.quantum.canon.applytosubregistera
+  summary: >-
+    Применяет операцию к подрегистру регистра с Кубитс, заданным массивом своих индексов.
+
+    Модификатор `A` указывает, что операция является аджоинтабле.
+- uid: microsoft.quantum.canon.applytosubregisterc
+  summary: >-
+    Применяет операцию к подрегистру регистра с Кубитс, заданным массивом своих индексов.
+
+    Модификатор `C` указывает, что операция является управляемой.
+- uid: microsoft.quantum.canon.applytosubregisterca
+  summary: >-
+    Применяет операцию к подрегистру регистра с Кубитс, заданным массивом своих индексов.
+
+    Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applywith
+  summary: При выполнении двух операций применяется одна, как сопряженная с другой.
+- uid: microsoft.quantum.canon.applywitha
+  summary: При выполнении двух операций применяется одна, как сопряженная с другой.
+- uid: microsoft.quantum.canon.applywithc
+  summary: ''
+- uid: microsoft.quantum.canon.applywithca
+  summary: При выполнении двух операций применяется одна, как сопряженная с другой.
+- uid: microsoft.quantum.canon.applywithinputtransformation
+  summary: При наличии операции, принимающей некоторые входные данные, функция, которая возвращает выходные данные, совместимые с этой операцией, и входные данные для этой функции, применяет операцию с помощью функции для преобразования входных данных в форму, ожидаемую операцией.
+- uid: microsoft.quantum.canon.applywithinputtransformationa
+  summary: При наличии операции, принимающей некоторые входные данные, функция, которая возвращает выходные данные, совместимые с этой операцией, и входные данные для этой функции, применяет операцию с помощью функции для преобразования входных данных в форму, ожидаемую операцией.
+- uid: microsoft.quantum.canon.applywithinputtransformationc
+  summary: При наличии операции, принимающей некоторые входные данные, функция, которая возвращает выходные данные, совместимые с этой операцией, и входные данные для этой функции, применяет операцию с помощью функции для преобразования входных данных в форму, ожидаемую операцией.
+- uid: microsoft.quantum.canon.applywithinputtransformationca
+  summary: При наличии операции, принимающей некоторые входные данные, функция, которая возвращает выходные данные, совместимые с этой операцией, и входные данные для этой функции, применяет операцию с помощью функции для преобразования входных данных в форму, ожидаемую операцией.
+- uid: microsoft.quantum.canon.approximateqft
+  summary: Примените примерное преобразование Фурье (АКФТ) к тактовому регистру.
+- uid: microsoft.quantum.canon.asserthighestbit
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.AssertMostSignificantBit".
+- uid: microsoft.quantum.canon.assertlessthanphasele
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan".
+- uid: microsoft.quantum.canon.assertphase
+  summary: >-
+    Утверждает, что фаза равного пресостояния перестановки имеет ожидаемое значение.
+
+
+    В частности, утверждает, что фаза $ \фи $ состояния такта, которая может быть выражена как $ \фрак{е ^ {i}} {\скрт{2}} (e ^ {и\фи} \ Сисакет{0} + e ^ {-и\фи} \ Сисакет{1}) $ для некоторых произвольных фактов t имеет ожидаемое значение.
+- uid: microsoft.quantum.canon.assertprobintbe
+  summary: >-
+    > [!WARNING]
+
+    > Устаревшая операция была удалена.
+- uid: microsoft.quantum.canon.cnotchain
+  summary: >-
+    Вычисление четности массива Кубитс на месте.
+
+
+    Он соответствует шаблону $ \ket{q_0} \ket{q_0 \оплус q_1} \ket{q_0 \оплус q_1 \оплус q_2} \кдотс $.
+- uid: microsoft.quantum.canon.cnotchaintarget
+  summary: >-
+    Выполняет подсчет четности массива Кубитс в целевом кубит.
+
+
+    Если изначально массив находится в состоянии $ \ket{q_0} \ket{q_1} \кдотс \ket{q_{\Text{Target}}} $, конечное состояние присваивается в $ \ket{q_0} \ket{q_1 \оплус q_0} \кдотс \ket{q_{n-1} \оплус \кдотс \оплус q_0 \оплус q_ {\текст{таржет}}} $.
+- uid: microsoft.quantum.canon.copymostsignificantbitle
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.CopyMostSignificantBit".
+- uid: microsoft.quantum.canon.cx
+  summary: >-
+    Применяет шлюз с управляемой X (CX) к паре Кубитс.
+
+
+    $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \енд{алигн} , $ $, где строки и столбцы упорядочены в соответствии с руководством по созданию тактовых понятий.
+- uid: microsoft.quantum.canon.cy
+  summary: >-
+    Применяет шлюз с управляемой Y (CY) к паре Кубитс.
+
+
+    $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 &-i \\\\ 0 & 0 & я & 0 \енд{алигн} , $ $, где строки и столбцы упорядочены в соответствии с руководством по созданию тактовых понятий.
+- uid: microsoft.quantum.canon.cz
+  summary: >-
+    Применяет шлюз с управляемым Z (CZ) к паре Кубитс.
+
+
+    $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 &-1 \енд{алигн} , $ $, где строки и столбцы упорядочены в соответствии с руководством по созданию тактовых понятий.
+- uid: microsoft.quantum.canon.delay
+  summary: Применяет заданную операцию с задержкой.
+- uid: microsoft.quantum.canon.delaya
+  summary: Применяет заданную операцию с задержкой.
+- uid: microsoft.quantum.canon.delayc
+  summary: Применяет заданную операцию с задержкой.
+- uid: microsoft.quantum.canon.delayca
+  summary: Применяет заданную операцию с задержкой.
+- uid: microsoft.quantum.canon.hy
+  summary: >-
+    Применяет аналог по оси Y к преобразованию Хадамард, которое изменяет оси Z и Y.
+
+
+    Преобразование Y Хадамард $H _Y = S H $ на одном кубит:
+
+
+    \бегин{алигн} H_Y \масрел{: =} \фрак{1}{\скрт{2}} \бегин{бматрикс} 1 & 1 \\\\ я &-i \енд{бматрикс}.
+
+    \енд{алигн}
+- uid: microsoft.quantum.canon.inplacexorbe
+  summary: >-
+    > [!WARNING]
+
+    > Устаревшая операция была удалена.
+- uid: microsoft.quantum.canon.inplacexorle
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Measurement.ApplyXorInPlace".
+- uid: microsoft.quantum.canon.integerincrementle
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.IncrementByInteger".
+- uid: microsoft.quantum.canon.integerincrementphasele
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.IncrementPhaseByInteger".
+- uid: microsoft.quantum.canon.iteratethroughcartesianpower
+  summary: Выполняет итерацию переменной, например arr, до декартовы произведения [0, с привязкой-1] × [0, с привязкой-1] × [0, с привязкой-1] и вызывает op (ARR) для каждого элемента декартово продукта.
+- uid: microsoft.quantum.canon.iteratethroughcartesianproduct
+  summary: Выполняет перебор переменной, скажем `arr`, через декартово произведение [0, границы [0]-1] × [0, границы [1]-1] × [0, границы [длина (границы)-1]-1] и вызывает op (ARR) для каждого элемента декартово продукта.
+- uid: microsoft.quantum.canon.measureintegerbe
+  summary: >-
+    > [!WARNING]
+
+    > Устаревшая операция была удалена.
+- uid: microsoft.quantum.canon.modularaddproductle
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.MultiplyAndAddByModularInteger".
+- uid: microsoft.quantum.canon.modularaddproductphasele
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.MultiplyAndAddPhaseByModularInteger".
+- uid: microsoft.quantum.canon.modularincrementle
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.ModularIncrementByInteger".
+- uid: microsoft.quantum.canon.modularincrementphasele
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.IncrementPhaseByModularInteger".
+- uid: microsoft.quantum.canon.modularmultiplybyconstantle
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Arithmetic.MultiplyByModularInteger".
+- uid: microsoft.quantum.canon.multiplexoperations
+  summary: >-
+    Применяет массив операций, управляемых массивом числовых состояний.
+
+
+    Это значит, что применяет операцию с множественным контролем, $U $, которая применяет единое $V _j $ при управлении с $n $-кубит Number State $ \кет{ж} $.
+
+
+    $U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж}\отимес V_j $.
+- uid: microsoft.quantum.canon.multiplexoperationsbruteforcefromgenerator
+  summary: >-
+    Применяет операцию с множественным контролем, $U $, которая применяет единое $V _j $ при управлении с помощью n-кубит номера состояния $ \кет{ж} $.
+
+
+    $U = \сум ^ {N-1} _ {j = 0} \кет{ж}\бра{ж}\отимес V_j $.
+- uid: microsoft.quantum.canon.multiplexoperationsfromgenerator
+  summary: >-
+    Применяет единую операцию, управляемую умножением, $U $, которая применяет единое $V _j $ при управлении с помощью n-кубит Number State $ \кет{ж} $.
+
+
+    $U = \сум ^ {N-1} _ {j = 0} \кет{ж}\бра{ж}\отимес V_j $.
+- uid: microsoft.quantum.canon.multiplexpauli
+  summary: >-
+    Применяет вращение Паули к массиву Кубитс.
+
+
+    Это применяет операцию, выполняемую после умножения, $U $, которая выполняет повороты с помощью оператора угловой $ \theta_j $ об одном кубит Паули operator $P $ при управлении $n $-кубит Number State $ \кет{ж} $.
+
+
+    $U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж}\отимес e ^ {i P \theta_j} $ $.
+- uid: microsoft.quantum.canon.multiplexz
+  summary: >-
+    Применяет поворот Паули Z к массиву Кубитс.
+
+
+    Это применяет операцию, выполняемую после умножения, $U $, которая выполняет повороты с помощью оператора угловой $ \theta_j $ об одном кубит Паули operator $Z $ при управлении $n $-кубит Number State $ \кет{ж} $.
+
+
+    $U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж}\отимес e ^ {i Z \theta_j} $.
+- uid: microsoft.quantum.canon.noop
+  summary: Выполняет операцию идентификации (No-op) для аргумента.
+- uid: microsoft.quantum.canon.qft
+  summary: Выполняет преобразование Фурье в тактовую операцию для регистра такта, содержащего целое число в представлении с обратным порядком байтов.
+- uid: microsoft.quantum.canon.qftle
+  summary: Выполняет преобразование Фурье в тактовую операцию для регистра такта, содержащего целое число в представлении с прямым порядком байтов.
+- uid: microsoft.quantum.canon.rall0
+  summary: >-
+    Выполняет операцию сдвига этапа.
+
+
+    $R = \болдоне-(1-e ^ {i \фи}) \ket{0\cdots 0} \bra{0\cdots 0} $.
+- uid: microsoft.quantum.canon.rall1
+  summary: >-
+    Выполняет операцию сдвига этапа.
+
+
+    $R = \болдоне-(1-e ^ {i \фи}) \ket{1\cdots 1} \bra{1\cdots 1} $.
+- uid: microsoft.quantum.canon.swapreverseregister
+  summary: Использует шлюзы переключения, чтобы обратить порядок Кубитс в регистре.
+- uid: microsoft.quantum.canon.with
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Canon.ApplyWith".
+- uid: microsoft.quantum.canon.witha
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Canon.ApplyWithA".
+- uid: microsoft.quantum.canon.withc
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Canon.ApplyWithC".
+- uid: microsoft.quantum.canon.withca
+  summary: >-
+    > [!WARNING]
+
+    > Не рекомендуется использовать @"Microsoft.Quantum.Canon.ApplyWithCA".
+newtypes:
+- uid: microsoft.quantum.canon.ccnotop
+  summary: Тип подписи шлюза ККНОТ.
+- uid: microsoft.quantum.canon.resultstack
+  summary: >-
+    Стек `Result` переменных «последним попервым».
+
+    Стек состоит из целочисленной емкости, указателя стека и массива `Result`.
+ms.openlocfilehash: 8767d438adcecd7ccbd539d7c123ac42cfb8c295
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73065169"

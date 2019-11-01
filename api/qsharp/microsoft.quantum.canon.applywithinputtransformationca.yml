@@ -1,0 +1,67 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applywithinputtransformationca
+name: ApplyWithInputTransformationCA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: При наличии операции, принимающей некоторые входные данные, функция, которая возвращает выходные данные, совместимые с этой операцией, и входные данные для этой функции, применяет операцию с помощью функции для преобразования входных данных в форму, ожидаемую операцией.
+examples: >-
+  Следующий вызов использует @"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian", чтобы применить операцию, предназначенную для входных данных @"Microsoft.Quantum.Arithmetic.BigEndian", в входные данные типа @"Microsoft.Quantum.Arithmetic.LittleEndian":
+
+
+  ```qsharp
+
+  ApplyWithInputTransformation(LittleEndianAsBigEndian, ApplyXorInPlaceBE, LittleEndian(qubits));
+
+  ```
+syntax: "operation ApplyWithInputTransformationCA (fn : ('U -> 'T), op : ('T => Unit is Adj + Ctl), input : 'U) : Unit"
+input:
+  content: "(fn : ('U -> 'T), op : ('T => Unit is Adj + Ctl), input : 'U)"
+  types:
+  - name: fn
+    summary: Функция, которая преобразует заданные входные данные в форму, ожидаемую операцией.
+    isFunction: true
+    input:
+      types:
+      - uid: "'U"
+        isLocal: true
+    output:
+      types:
+      - uid: "'T"
+        isLocal: true
+  - name: op
+    summary: Операция, которая будет применена.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: input
+    summary: Входные данные для функции.
+    uid: "'U"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- applywithinputtransformation
+- applywithinputtransformationa
+- applywithinputtransformationc
+- transformedoperation
+ms.openlocfilehash: 56033b5a81f87f7d4718f87cfef0fea020297547
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212605"

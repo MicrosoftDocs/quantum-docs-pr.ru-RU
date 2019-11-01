@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.multiplyfxp
+name: MultiplyFxP
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: Умножает два числа с фиксированной запятой в тактовые регистры.
+remarks: Текущая реализация требует, чтобы три цифры с фиксированной запятой имели одинаковую позицию и одно и то же число Кубитс.
+syntax: 'operation MultiplyFxP (fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, fp2 : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
+input:
+  content: '(fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, fp2 : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint)'
+  types:
+  - name: fp1
+    summary: Первое число с фиксированной запятой.
+    uid: microsoft.quantum.arithmetic.fixedpoint
+  - name: fp2
+    summary: Второе число с фиксированной запятой.
+    uid: microsoft.quantum.arithmetic.fixedpoint
+  - name: result
+    summary: Значение с фиксированной запятой результата должно находиться в состоянии $ \кет{0}$ изначально.
+    uid: microsoft.quantum.arithmetic.fixedpoint
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 0623deedf7dca05832ec1edd7c5771d7bc10aa08
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214832"

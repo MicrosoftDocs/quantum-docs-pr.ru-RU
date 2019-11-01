@@ -1,0 +1,44 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.approximateqft
+name: ApproximateQFT
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: Примените примерное преобразование Фурье (АКФТ) к тактовому регистру.
+remarks: >-
+  АКФТ требует использования шлюзов Z в форме 2π/2000 и Хадамард Gates.
+
+
+  Предполагается, что входные и выходные данные кодируются в кодировке с обратным порядком байтов.
+syntax: 'operation ApproximateQFT (a : Int, qs : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
+references: >-
+  - [*M. роеттелер, TH. Бет*, прим. \ ENG. коммун. Учет. 19 (3): 177-193 (2008)](http://doi.org/10.1007/s00200-008-0072-2)
+
+  - [*D. копперсмис* арксив: Куант-pH/0201067v1](https://arxiv.org/abs/quant-ph/0201067)
+input:
+  content: '(a : Int, qs : Microsoft.Quantum.Arithmetic.BigEndian)'
+  types:
+  - name: a
+    summary: >-
+      параметр аппроксимации, определяющий уровень управляемых поворотов Z, происходящих в цепи Кфт.
+
+
+      Параметр аппроксимации определяет уровень очистки поворотов по оси Z, т. е. ∈ {0.. n} и все повороты Z 2π/2000, где k > a удаляется из канала Кфт. Известно, что для k > = log ₂ (n) + log ₂ (1/ε) + 3 можно привязать | | КФТ-АКФТ | | < ε.
+    isPrimitive: true
+    uid: Int
+  - name: qs
+    summary: Регистр такта в n Кубитс, к которому применяется приблизительное преобразование тактов в виде Фурье.
+    uid: microsoft.quantum.arithmetic.bigendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 6d650d4c1d80e747df7560c630543189513d252a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212537"

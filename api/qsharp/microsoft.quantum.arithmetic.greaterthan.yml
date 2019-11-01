@@ -1,0 +1,40 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.greaterthan
+name: GreaterThan
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: Выполняет строго больше сравнений двух целых чисел $x $ и $y $, закодированных в кубит регистры XS и ИС. Если $x > y $, результат будет отражен кубит, в противном случае останется его состояние.
+remarks: Использует прием, который $x-y = (x "+ y)" $, где "обозначает дополнение одного.
+syntax: 'operation GreaterThan (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, result : Qubit) : Unit'
+references: >-
+  - Андрей A. Куккаро, Томас G. Драпер, Самуел A. Кутин, Дэвид Петрие Маултон: "Новая тактовая цепь Ripple — комплексное сложение", 2004.
+    https://arxiv.org/abs/quant-ph/0410184v1
+
+  - Томас Хаенер, Мартен Роеттелер, Криста M. Своре: "факторинг с использованием 2N + 2 Кубитс с модульным умножением на Тоффоли", 2016 https://arxiv.org/abs/1611.07995
+input:
+  content: '(xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, result : Qubit)'
+  types:
+  - name: xs
+    summary: Литтлиндиан кубит закодировать первое целое число $x $.
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: ys
+    summary: Литтлиндиан кубит зарегистрировать второе целое число $y $.
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: result
+    summary: Один кубит, который будет отражен, если $x > y $.
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 6961a6a4f22d2290a264298a3be3b15f7bdb0ac7
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214951"

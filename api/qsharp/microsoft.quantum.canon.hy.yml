@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.hy
+name: HY
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Применяет аналог по оси Y к преобразованию Хадамард, которое изменяет оси Z и Y.
+
+
+  Преобразование Y Хадамард $H _Y = S H $ на одном кубит:
+
+
+  \бегин{алигн} H_Y \масрел{: =} \фрак{1}{\скрт{2}} \бегин{бматрикс} 1 & 1 \\\\ я &-i \енд{бматрикс}.
+
+  \енд{алигн}
+syntax: 'operation HY (target : Qubit) : Unit'
+input:
+  content: '(target : Qubit)'
+  types:
+  - name: target
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 2cbbbe29e3cef42ead1f85c01ffa15ce016e8402
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227837"

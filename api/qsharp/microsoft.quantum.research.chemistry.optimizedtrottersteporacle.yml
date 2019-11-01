@@ -1,0 +1,50 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.research.chemistry.optimizedtrottersteporacle
+name: оптимизедтроттерстепоракле
+type: function
+namespace: Microsoft.Quantum.Research.Chemistry
+summary: Возвращает оптимизированную операцию Троттер шага и параметры, необходимые для ее запуска.
+syntax: 'function OptimizedTrotterStepOracle (qSharpData : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerEncodingData, trotterStepSize : Double, trotterOrder : Int) : (Int, (Double, (Qubit[] => Unit is Adj + Ctl)))'
+input:
+  content: '(Кшарпдата: Microsoft. тактов. химия. Жорданвигнер. Жорданвигнеренкодингдата, Троттерстепсизе: Double, Троттерордер: int)'
+  types:
+  - name: кшарпдата
+    summary: Хамилтониан, описываемый в формате `JordanWignerEncodingData`.
+    uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerencodingdata
+  - name: троттерстепсизе
+    summary: Размер шага Троттер Integrator.
+    isPrimitive: true
+    uid: Double
+  - name: троттерордер
+    summary: Порядок Троттер интегратора.
+    isPrimitive: true
+    uid: Int
+output:
+  content: (Int, (Double, (кубит [] = единица > — "года + CTL")))
+  types:
+  - summary: 'Кортеж, где: `Int` — число выделенных Кубитс, `Double` `1.0/trotterStepSize`, а операция — шаг Троттер.'
+    types:
+    - isPrimitive: true
+      uid: Int
+    - types:
+      - isPrimitive: true
+        uid: Double
+      - isOperation: true
+        input:
+          types:
+          - isArray: true
+            isPrimitive: true
+            uid: Qubit
+        output:
+          types:
+          - isPrimitive: true
+            uid: Unit
+        functors:
+        - Adjoint
+        - Controlled
+ms.openlocfilehash: f8fe25db9eac627649601b1526e4c81eb13d9b99
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066138"

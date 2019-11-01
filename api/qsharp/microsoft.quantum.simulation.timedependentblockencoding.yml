@@ -1,0 +1,22 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.timedependentblockencoding
+name: TimeDependentBlockEncoding
+type: newtype
+namespace: Microsoft.Quantum.Simulation
+summary: >-
+  Представляет `BlockEncoding`, который управляется регистром часов.
+
+
+  Это значит, что `TimeDependentBlockEncoding` является единым $U $, управляемым по регистру состояния $ \ket{k}_d $ в часах `d` таким образом, что произвольный оператор $H _k $ of, который действует на системном регистре, `s` кодируется в верхнем левом блоке, соответствующем вспомогательному состоянию $ \кет @no __t_3_ _A $. То есть
+
+
+  $ $ \бегин{алигн} (\бра{0}\_а\отимес I_ {DS}) U (\кет{0}\_а\отимес I_ {DS}) = \sum_{k}\ket{k}\bra{k}\_д\отимес H_k.
+
+  \енд{алигн} $ $.
+syntax: newtype TimeDependentBlockEncoding = ((Qubit[], Qubit[], Qubit[]) => Unit is Adj + Ctl);
+ms.openlocfilehash: 1f41d7592e7f031085430a42edaa341874724851
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211024"

@@ -1,0 +1,80 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.oracles
+name: Microsoft.Quantum.Oracles
+summary: " # <a name=\"summary\"></a>Резюме\n Эти пространства имен предоставляют определяемые пользователем типы для украшения различных видов Oracle по их предполагаемому использованию в алгоритмах такта, таких как Оценка этапа и усиление амплитуды."
+functions:
+- uid: microsoft.quantum.oracles.deterministicstateoraclefromstateoracle
+  summary: Преобразует Oracle типа `StateOracle` в `DeterministicStateOracle`.
+- uid: microsoft.quantum.oracles.obliviousoraclefromdeterministicstateoracle
+  summary: Объединяет `DeterministicStateOracle` и `ObliviousOracle`Oracle.
+- uid: microsoft.quantum.oracles.oracletodiscrete
+  summary: При наличии операции, представляющей "черный ящик" Oracle, возвращает отдельную репликацию Oracle, которая представляет "черный ящик", повторяющийся несколько раз.
+- uid: microsoft.quantum.oracles.reflectionoraclefromdeterministicstateoracle
+  summary: >-
+    Конструирует отражение о заданном состоянии из Oracle.
+
+
+    При наличии Oracle $O $ типа <xref:microsoft.quantum.oracles.deterministicstateoracle>результат этой функции является отражением состояния $ \кет{\пси} $, где $O \кет{0} = \кет{\пси} $.
+- uid: microsoft.quantum.oracles.stateoraclefromdeterministicstateoracle
+  summary: Преобразует Oracle типа `DeterministicStateOracle` в `StateOracle`.
+newtypes:
+- uid: microsoft.quantum.oracles.continuousoracle
+  summary: >-
+    Представляет Oracle с непрерывным временем.
+
+
+    Это Oracle, который реализует $U (\делта t): \кет{\пси (t)} \мапсто \кет{\пси (t + \делта t)} $ для всех случаев $t $, где $U $ является фиксированной операцией и где $ \делта t $ — неотрицательное вещественное число.
+- uid: microsoft.quantum.oracles.deterministicstateoracle
+  summary: >-
+    Представляет Oracle для подготовки детерминированного состояния.
+
+
+    Входные данные для Oracle $O $:
+
+
+    - Регистр, в котором будет храниться требуемое состояние такта $ \кет{\пси}\_s $.
+- uid: microsoft.quantum.oracles.discreteoracle
+  summary: >-
+    Представляет отдельный часовой объект Oracle.
+
+
+    Это Oracle, который реализует $U ^ m $ для фиксированной операции $U $ и неотрицательного целого числа $m $.
+- uid: microsoft.quantum.oracles.obliviousoracle
+  summary: >-
+    Представляет Oracle для усиления амплитуды очевидным.
+
+
+    Входные данные для Oracle $O $:
+
+
+    - АнЦилла Register $a $, с которым $O $ работает.
+
+    - Системная регистрация $s $, к которой применяется требуемая единая $U $, после выбора зарегистрировать $a $ в состоянии $ \кет{т}\_a $.
+- uid: microsoft.quantum.oracles.reflectionoracle
+  summary: >-
+    Представляет Oracle отражения.
+
+
+    Отражение Oracle, $O $, имеет входные данные:
+
+
+    - Этап $ \фи $, на который нужно повернуть отраженное подпространство.
+
+    - Регистр кубит, в котором выполняется данное отражение.
+- uid: microsoft.quantum.oracles.stateoracle
+  summary: >-
+    Представляет Oracle для подготовки состояния.
+
+
+    Входные данные для Oracle $O $:
+
+
+    - Целочисленное индексирование флага кубит $f $.
+
+    - Система регистрирует $s $, которая будет хранить требуемое состояние такта $ \кет{\пси}\_s $.
+ms.openlocfilehash: 10eb2c7acebf805b955816abe2bf1cabb95ce059
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216107"

@@ -1,0 +1,68 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.conjugatedbyca
+name: ConjugatedByCA
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: При наличии внешних и внутренних операций возвращает новую операцию, которая сопряжена с внутренней операцией внешней операцией.
+remarks: Во внешней операции всегда предполагается, что это аджоинтабле, но не обязательно быть управляемым, чтобы Объединенная операция была управляемой.
+syntax: "function ConjugatedByCA (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Adj + Ctl)) : ('T => Unit is Adj + Ctl)"
+input:
+  content: "(outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Adj + Ctl))"
+  types:
+  - name: outerOperation
+    summary: Операция $U $, которую следует использовать для сопряженного $V $. Обратите внимание, что внешняя операция $U $ должна быть аджоинтабле, но не обязательно должна быть управляемой.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: innerOperation
+    summary: Операция $V $, для которой выполняется сопряжение.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+output:
+  content: ('T => Unit is Adj + Ctl)
+  types:
+  - summary: Новая операция, действие которой представляется единой $U ^ {\дагжер} V U $.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+typeParameters:
+- uid: "'T"
+  summary: Тип целевого объекта, в котором работают все внутренние и внешние операции.
+seeAlso:
+- conjugatedbya
+- conjugatedbyc
+- conjugatedbyca
+- applywith
+ms.openlocfilehash: c9ffbcd0c7c441f3148ae3c834e47d944895557d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73223587"

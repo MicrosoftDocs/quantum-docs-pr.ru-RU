@@ -1,0 +1,46 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.incrementphasebyinteger
+name: IncrementPhaseByInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  Увеличивает значение регистра неподписанного такта на классическое целое число с использованием ротаций фазы.
+
+
+  Предположим, что `target` кодирует целое число без знака $x $ в кодировке с прямым порядком байтов, а `increment` равно $a $.
+
+  Затем эта операция реализует единую $ \кет{КС} \мапсто \кет{КС + a} $, где сложение выполняется по модулю $2 ^ n $, где $n = \Тексттт{ленгс (Target!)} $.
+remarks: >-
+  Обратите внимание, что мы упростили канал, так как инкремент является классической константой, а не тактовой регистром.
+
+
+  См. рисунок на [стр. 6 из арксив: Куант-pH/0008033v1](https://arxiv.org/pdf/quant-ph/0008033.pdf#page=6) для схемы канала и объяснения.
+syntax: 'operation IncrementPhaseByInteger (increment : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
+references: '- [*Томас G. Драпер*, арксив: Куант-pH/0008033](https://arxiv.org/pdf/quant-ph/0008033v1.pdf)'
+input:
+  content: '(increment : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
+  types:
+  - name: increment
+    summary: Целое число, на которое увеличивается `target`.
+    isPrimitive: true
+    uid: Int
+  - name: target
+    summary: Тактовый регистр кодирует целое число без знака, используя обратную кодировку с прямым порядком байтов в двойном (Кфт) уровне.
+    uid: microsoft.quantum.arithmetic.phaselittleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- incrementbyintegerbe
+- incrementbyintegerle
+ms.openlocfilehash: 379e643826ca54e123c8b855f4bba48a9d79a137
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219048"

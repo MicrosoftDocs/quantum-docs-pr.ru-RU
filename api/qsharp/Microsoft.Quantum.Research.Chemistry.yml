@@ -1,0 +1,23 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.research.chemistry
+name: Microsoft.Quantum.Research.Chemistry
+functions:
+- uid: microsoft.quantum.research.chemistry.jordanwigneroptimizedfermionevolutionset
+  summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Паули.
+- uid: microsoft.quantum.research.chemistry.jwoptimizedfermionevolutionfunction
+  summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Жвоптимизед.
+- uid: microsoft.quantum.research.chemistry.jwoptimizedgeneratorsystem
+  summary: Преобразует Хамилтониан, описываемый `JWOptimizedHTerms`, в `GeneratorSystem` выраженную в терминах соглашения `GeneratorIndex`, определенного в этом файле.
+- uid: microsoft.quantum.research.chemistry.optimizedtrottersteporacle
+  summary: Возвращает оптимизированную операцию Троттер шага и параметры, необходимые для ее запуска.
+operations:
+- uid: microsoft.quantum.research.chemistry.applydeltaparity
+  summary: Вычисление разницы между предыдущим ПКРС... условия и следующие ПКРС... термин. Это различие вычислено на вспомогательной кубит.
+- uid: microsoft.quantum.research.chemistry.jwoptimizedstatepreparation
+  summary: Простая подготовка состояния пробной версии с помощью оборотов по орбитам
+ms.openlocfilehash: 8737229d1362a444f54d1a8d0791da9312923224
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215954"

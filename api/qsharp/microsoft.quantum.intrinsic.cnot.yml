@@ -1,0 +1,48 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.cnot
+name: CNOT
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: >-
+  Применяет шлюз управляемого объекта (кнот) к паре Кубитс.
+
+
+  \бегин{алигн} \Операторнаме{кнот} \масрел{: =} \бегин{бматрикс} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \енд{бматрикс} , \енд{алигн}
+
+
+  где строки и столбцы упорядочиваются как в разделе "Основные понятия о такте".
+remarks: >-
+  Эквивалентно:
+
+
+  ```qsharp
+
+  Controlled X([control], target);
+
+  ```
+syntax: 'operation CNOT (control : Qubit, target : Qubit) : Unit'
+input:
+  content: '(control : Qubit, target : Qubit)'
+  types:
+  - name: control
+    summary: Управление кубит для шлюза кнот.
+    isPrimitive: true
+    uid: Qubit
+  - name: target
+    summary: Целевой кубит для шлюза кнот.
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: b0173ad04caa8f3c5830f856d5dc805c896eecff
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219286"

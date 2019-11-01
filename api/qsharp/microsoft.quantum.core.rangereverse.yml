@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.core.rangereverse
+name: ранжереверсе
+type: function
+namespace: Microsoft.Quantum.Core
+summary: Возвращает новый диапазон, являющийся обратным по отношению к входному диапазону.
+remarks: Обратите внимание, что обратная часть диапазона не просто `end`..`-step`..`start`, поскольку фактический последний элемент диапазона может не совпадать с `end`.
+syntax: 'function RangeReverse (r : Range) : Range'
+input:
+  content: '(r: Range)'
+  types:
+  - name: r
+    summary: Входной диапазон.
+    isPrimitive: true
+    uid: Range
+output:
+  content: Диапазон
+  types:
+  - summary: Новый диапазон, являющийся обратным по отношению к заданному диапазону.
+    isPrimitive: true
+    uid: Range
+ms.openlocfilehash: 978a476556d01f48533540333b5951f83da3d6dc
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066631"

@@ -1,0 +1,22 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.measurement
+name: Microsoft.Quantum.Measurement
+operations:
+- uid: microsoft.quantum.measurement.measurepaulis
+  summary: Учитывая массив операторов кубит Паули, измеряет каждый с помощью указанного мини-приложения измерения, а затем возвращает массив результатов.
+- uid: microsoft.quantum.measurement.measurewithscratch
+  summary: Измеряет заданный оператор Паули, используя явное значение "кубит" для выполнения измерения.
+- uid: microsoft.quantum.measurement.mresetx
+  summary: Измеряет один кубит в координате X и сбрасывает его в стандартное состояние "| 0 〉" после измерения.
+- uid: microsoft.quantum.measurement.mresety
+  summary: Измеряет один кубит в базе Y и сбрасывает его в стандартное состояние "| 0 〉" после измерения.
+- uid: microsoft.quantum.measurement.mresetz
+  summary: Измеряет один кубит на основе `Z` и сбрасывает его в стандартное состояние "| 0 〉" после измерения.
+- uid: microsoft.quantum.measurement.multim
+  summary: Измеряет каждый кубит в заданном массиве в стандартном уровне.
+ms.openlocfilehash: 872031f8a6ebd77e72cd74e1c98e7347c09ca14a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73210990"

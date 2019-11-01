@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.subarray
+name: Subarray
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: Принимает массив и список расположений и создает новый массив, сформированный из элементов исходного массива, которые соответствуют заданным местам.
+remarks: >-
+  Функция определена для универсальных типов, т. е. при наличии массива `'T[]` и списка расположений, `Int[]` определении подмассива.
+
+  Построение подмассива основано на создании новой глубокой копии заданного массива, а не на обслуживании ссылок.
+
+
+  Если `Length(indices) < Length(array)`, эта функция вернет подмножество `array`. С другой стороны, если `indices` содержит повторяющиеся элементы, соответствующие элементы `array` также будут повторяться.
+
+  Если `indices` и `array` имеют одинаковую длину, эта функция предоставляет перестановки `array`.
+syntax: "function Subarray (indices : Int[], array : 'T[]) : 'T[]"
+input:
+  content: "(indices : Int[], array : 'T[])"
+  types:
+  - name: indices
+    summary: Список целых чисел, используемый для определения подмассива.
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: array
+    summary: Массив элементов `'T`.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - summary: Массив `out` элементов, индексы которых соответствуют подмассиву, например `out[idx] == array[indices[idx]]`.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: Тип элементов `array`.
+ms.openlocfilehash: 1590e5c24dad56db8c6a0f5dc433bf060d8ac175
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73217858"

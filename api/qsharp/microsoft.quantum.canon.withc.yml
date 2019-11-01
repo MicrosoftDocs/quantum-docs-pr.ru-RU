@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.withc
+name: виск
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > Не рекомендуется
+
+
+  Используйте @"Microsoft.Quantum.Canon.ApplyWithC".
+syntax: "operation WithC (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Ctl), target : 'T) : Unit"
+input:
+  content: "(Аутероператион: ('T = > единицы измерения), Иннероператион: (t > = единица измерения — CTL), целевой объект: 'T)"
+  types:
+  - name: аутероператион
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: иннероператион
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: target
+    uid: "'T"
+    isLocal: true
+output:
+  content: Единица
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Controlled
+ms.openlocfilehash: 98d39f714608bc47ea97cfec0cc46e442337beaa
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73067668"

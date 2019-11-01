@@ -1,0 +1,49 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.ampampbyoraclephases
+name: AmpAmpByOraclePhases
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: Усиление амплитуды по Oracle для частичных отражений.
+remarks: >-
+  Это накладывает более четкие условия на формат начального и целевого состояний, чем в `AmpAmpByReflectionPhases`.
+
+  Предполагается, что целевое состояние помечено как $ \кет{1}\_f $.
+
+  Предполагается, что \бегин{алигн} А\кет{0}\_{f} \кет{0}\_s = \ламбда\кет{1}\_ф\кет {\ Text {Target}}\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс , \енд{алигн} в большинстве случаев `flagQubit` и `ancillaRegister` инициализируются в состоянии $ \кет{0}\_{f} \кет{0}\_s $.
+syntax: 'function AmpAmpByOraclePhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
+input:
+  content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int)'
+  types:
+  - name: phases
+    summary: Фазы частичной отражения
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - name: stateOracle
+    summary: Единая база данных Oracle $A $, подготавливающая начальное состояние
+    uid: microsoft.quantum.oracles.stateoracle
+  - name: idxFlagQubit
+    summary: Индекс для отметки кубит
+    isPrimitive: true
+    uid: Int
+output:
+  content: (Qubit[] => Unit is Adj + Ctl)
+  types:
+  - summary: Операция, которая реализует усиление амплитуды с помощью Oracle, которые реализуются частичными отражениями.
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+ms.openlocfilehash: cacd3b34fae01697ee5bba414d9a7422b3260e2f
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215835"

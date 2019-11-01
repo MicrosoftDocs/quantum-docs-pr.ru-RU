@@ -1,0 +1,21 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.core
+name: Microsoft. тактов. Core
+summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен включает основные функции и операции Q #.\n\n # <a name=\"remarks\"></a>Примечания\n Это пространство имен открывается компилятором Q # автоматически, поэтому все элементы этого пространства имен всегда доступны."
+functions:
+- uid: microsoft.quantum.core.length
+  summary: Возвращает количество элементов в массиве.
+- uid: microsoft.quantum.core.rangeend
+  summary: Возвращает определенное конечное значение заданного диапазона, которое не обязательно является последним элементом последовательности.
+- uid: microsoft.quantum.core.rangereverse
+  summary: Возвращает новый диапазон, являющийся обратным по отношению к входному диапазону.
+- uid: microsoft.quantum.core.rangestart
+  summary: Возвращает заданное начальное значение заданного диапазона.
+- uid: microsoft.quantum.core.rangestep
+  summary: Возвращает целое число, указывающее, как вычисляется следующее значение диапазона.
+ms.openlocfilehash: 41c28f8e8e11990ec1cf9b315478996a1e0811f4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73056895"

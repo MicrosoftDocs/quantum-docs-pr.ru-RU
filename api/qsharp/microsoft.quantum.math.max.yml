@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.max
+name: Максимальное количество
+type: function
+namespace: Microsoft.Quantum.Math
+summary: При наличии массива целых чисел возвращает самый крупный элемент.
+syntax: 'function Max (values : Int[]) : Int'
+input:
+  content: '(значения: int [])'
+  types:
+  - name: значения
+    summary: Массив, для которого требуется использовать максимум.
+    isArray: true
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: Самый крупный элемент `values`.
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 2e5a33b9b476e0428d5afc80957bb2524cc3dd6a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066512"

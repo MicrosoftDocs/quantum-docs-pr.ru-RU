@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.inttopauli
+name: инттопаули
+type: function
+namespace: Microsoft.Quantum.Simulation
+summary: Преобразует целое число в один кубит Паули оператор.
+syntax: 'function IntToPauli (idx : Int) : Pauli'
+input:
+  content: '(idx: int)'
+  types:
+  - name: IDX
+    summary: Целое число в диапазоне `0..3`, которое необходимо преобразовать в операторы Паули.
+    isPrimitive: true
+    uid: Int
+output:
+  content: паули
+  types:
+  - summary: '`Pauli` оператор, заданный `[PauliI, PauliX, PauliY, PauliZ][idx]`.'
+    isPrimitive: true
+    uid: Pauli
+ms.openlocfilehash: ca2ed56364d9fee748ac53b3f7f0aa40a96475b9
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73065492"
