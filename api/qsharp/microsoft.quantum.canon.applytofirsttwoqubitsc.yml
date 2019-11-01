@@ -1,0 +1,57 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytofirsttwoqubitsc
+name: ApplyToFirstTwoQubitsC
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Применяет операцию к первым двум Кубитс в регистре.
+
+  Модификатор `C` указывает, что операция является управляемой.
+remarks: >-
+  Это эквивалентно следующему:
+
+
+  ```qsharp
+
+  op(register[0], register[1]);
+
+  ```
+syntax: 'operation ApplyToFirstTwoQubitsC (op : ((Qubit, Qubit) => Unit is Ctl), register : Qubit[]) : Unit'
+input:
+  content: '(op : ((Qubit, Qubit) => Unit is Ctl), register : Qubit[])'
+  types:
+  - name: op
+    summary: Операция, применяемая к первым двум Кубитс
+    isOperation: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Qubit
+      - isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: register
+    summary: Массив кубит к первым двум Кубитс, к которым применяется операция.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applytofirsttwoqubits
+ms.openlocfilehash: def9af6b641d5f4a3301c77319dfbf55e348f142
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73225525"

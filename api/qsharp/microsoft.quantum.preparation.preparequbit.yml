@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.preparation.preparequbit
+name: PrepareQubit
+type: operation
+namespace: Microsoft.Quantum.Preparation
+summary: >-
+  Подготавливает кубит в еиженстате + 1 (`Zero`) для данного оператора Паули.
+
+  Если указан оператор Identity, кубит подготавливается в максимально смешанном состоянии.
+
+
+  Если кубит изначально находится в состоянии $ \кет{0}$, эта операция подготавливает кубит в еиженстате $ + $1 для данного оператора Паули или, для `PauliI`, в максимально смешанном состоянии (см. <xref:microsoft.quantum.preparation.preparesinglequbitidentity>).
+
+
+  Если кубит находится в состоянии, отличном от $ \кет{0}$, эта операция применяет следующие шлюзы: $H $ для `PauliX`, $HS $ для `PauliY`, $I $ для `PauliZ` и <xref:microsoft.quantum.preparation.preparesinglequbitidentity> для `PauliI`.
+syntax: 'operation PrepareQubit (basis : Pauli, qubit : Qubit) : Unit'
+input:
+  content: '(basis : Pauli, qubit : Qubit)'
+  types:
+  - name: basis
+    summary: Оператор Паули $P $.
+    isPrimitive: true
+    uid: Pauli
+  - name: qubit
+    summary: Кубит, который необходимо подготовить.
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: be4eb730bebd00531aaa49302578b23f4a52237b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226545"

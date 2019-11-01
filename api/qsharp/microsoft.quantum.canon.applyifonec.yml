@@ -1,0 +1,57 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyifonec
+name: ApplyIfOneC
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Применяет управляемую операцию с условием для классического значения result.
+
+
+  При наличии `op` операции и значения результата `result`применяет `op` к `target`, если `result` — `One`. Если `Zero`, в `target`ничего не происходит.
+
+  Суффикс `C` указывает, что операция, которая должна быть применена, является управляемой.
+syntax: "operation ApplyIfOneC (result : Result, (op : ('T => Unit is Ctl), target : 'T)) : Unit"
+input:
+  content: "(result : Result, (op : ('T => Unit is Ctl), target : 'T))"
+  types:
+  - name: result
+    summary: Результат измерения, определяющий, применяется ли оператор Op.
+    isPrimitive: true
+    uid: Result
+  - name: op
+    summary: Операция, применяемая к условию.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: target
+    summary: Входные данные, к которым применяется операция.
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: Тип входных данных операции, которая должна применяться условно.
+functors:
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applyifonec
+- microsoft.quantum.canon.applyifonea
+- microsoft.quantum.canon.applyifoneca
+ms.openlocfilehash: 51388c63a15b9f8244b49cc145297faef11bf5cc
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73220782"

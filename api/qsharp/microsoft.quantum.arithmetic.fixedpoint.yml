@@ -1,0 +1,13 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.fixedpoint
+name: FixedPoint
+type: newtype
+namespace: Microsoft.Quantum.Arithmetic
+summary: Представляет регистр Кубитс кодирования числа с фиксированной запятой. Состоит из целого числа, равного числу Кубитс слева от двоичной точки, т. е. Кубитс весовой коэффициент больше или равен 1, и регистр такта.
+syntax: newtype FixedPoint = (Int, Qubit[]);
+ms.openlocfilehash: 4ab209ab14486893ea3b23b32e14e6c8a05da514
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219082"

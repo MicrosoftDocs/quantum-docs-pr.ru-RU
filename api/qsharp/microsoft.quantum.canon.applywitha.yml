@@ -1,0 +1,65 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applywitha
+name: ApplyWithA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  При выполнении двух операций применяется одна, как сопряженная с другой.
+
+
+  При выполнении двух операций, которые соответственно описаны в единых операторах $U $ и $V $, применяет их в последовательности $U ^ {\дагжер} V U $. Это значит, что эта операция реализует оператор, заданный $V $ сопряженный с $U $.
+remarks: Во внешней операции всегда предполагается, что это аджоинтабле, но не обязательно быть управляемым, чтобы Объединенная операция была управляемой.
+syntax: "operation ApplyWithA (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Adj), target : 'T) : Unit"
+input:
+  content: "(outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Adj), target : 'T)"
+  types:
+  - name: outerOperation
+    summary: Операция $U $, которую следует использовать для сопряженного $V $. Обратите внимание, что внешняя операция $U $ должна быть аджоинтабле, но не обязательно должна быть управляемой.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: innerOperation
+    summary: Операция $V $, для которой выполняется сопряжение.
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: target
+    summary: Входные данные, которые должны быть предоставлены внешним и внутренним операциям.
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: Целевой объект, на котором работают все внутренние и внешние операции.
+functors:
+- Adjoint
+seeAlso:
+- applywith
+- applywithc
+- applywithca
+ms.openlocfilehash: 98ca0cd734202c7a1b78048177dd0c0774554864
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212741"

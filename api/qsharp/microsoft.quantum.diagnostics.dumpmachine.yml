@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.dumpmachine
+name: DumpMachine
+type: function
+namespace: Microsoft.Quantum.Diagnostics
+summary: Выводит дамп текущего состояния целевого компьютера.
+remarks: >-
+  Этот метод позволяет вывести сведения о текущем состоянии целевого компьютера в файл или в другое расположение.
+
+  Фактически созданная информация и семантика `location` относятся к каждому целевому компьютеру. Однако при предоставлении пустого кортежа в качестве расположения (`()`) или просто пропуска `location` параметра обычно означает создание выходных данных в консоли.
+
+
+  Для локального симулятора полного состояния, распространяемого в составе пакета средств разработки такта, этот метод ожидает строку с путем к файлу, в котором она будет записывать функцию Wave как одномерный массив комплексных чисел, в котором каждый элемент представляет амплитуды вероятности измерения соответствующего состояния.
+syntax: "function DumpMachine (location : 'T) : Unit"
+input:
+  content: "(location : 'T)"
+  types:
+  - name: location
+    summary: Содержит сведения о том, где создать дамп компьютера.
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - summary: Нет подходящих вариантов.
+    isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 7d268127c56dc5554e7c99494ae90b2bc14b336c
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227072"

@@ -1,0 +1,43 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.characterization.continuousphaseestimationiteration
+name: ContinuousPhaseEstimationIteration
+type: operation
+namespace: Microsoft.Quantum.Characterization
+summary: Выполняет одну итерацию итеративного (классического) алгоритма оценки фазы с использованием произвольных реальных степеней единой системы Oracle.
+syntax: 'operation ContinuousPhaseEstimationIteration (oracle : Microsoft.Quantum.Oracles.ContinuousOracle, time : Double, theta : Double, targetState : Qubit[], controlQubit : Qubit) : Unit'
+input:
+  content: '(oracle : Microsoft.Quantum.Oracles.ContinuousOracle, time : Double, theta : Double, targetState : Qubit[], controlQubit : Qubit)'
+  types:
+  - name: oracle
+    summary: Операция, работающая с двойным $t $ и регистром, таким, что $U ^ t $ применяется к заданному регистру, где $U $ является единым этапом, который должен быть оценен, а $t $ — целочисленной мощностью, заданной для Oracle
+    uid: microsoft.quantum.oracles.continuousoracle
+  - name: time
+    summary: Количество раз, когда применяется заданная Единая база данных Oracle.
+    isPrimitive: true
+    uid: Double
+  - name: theta
+    summary: Угол, на который следует обратить фазу на элементе управления кубит до того, как он будет действовать в целевом состоянии.
+    isPrimitive: true
+    uid: Double
+  - name: targetState
+    summary: Регистрация состояния в зависимости от заданного единого объекта Oracle.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: controlQubit
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 21fcfda2373e145d9565a73af5a89b7fe061d4f8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229248"

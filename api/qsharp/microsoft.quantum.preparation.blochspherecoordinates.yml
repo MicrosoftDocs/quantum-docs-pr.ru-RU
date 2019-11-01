@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.preparation.blochspherecoordinates
+name: BlochSphereCoordinates
+type: function
+namespace: Microsoft.Quantum.Preparation
+summary: >-
+  Выполняет вычисление координат БЛОЧ-сферы для одного кубит состояния.
+
+
+  Учитывая два комплексных числа, $a 0, a1 $, которые представляют состояние кубит, вычисляются координаты блочной сферы, например $a 0 \кет{0} + a1 \кет{1} = r e ^ {IT} (e ^ {-i \фи/2}\cos{(\ тета/2)} \кет{0}+ e ^ {i \фи/2}\sin{(\ тета/2)} \кет{1}) $.
+syntax: 'function BlochSphereCoordinates (a0 : Microsoft.Quantum.Math.ComplexPolar, a1 : Microsoft.Quantum.Math.ComplexPolar) : (Microsoft.Quantum.Math.ComplexPolar, Double, Double)'
+input:
+  content: '(a0 : Microsoft.Quantum.Math.ComplexPolar, a1 : Microsoft.Quantum.Math.ComplexPolar)'
+  types:
+  - name: a0
+    summary: Сложный коэффициент состояния $ \кет{0}$.
+    uid: microsoft.quantum.math.complexpolar
+  - name: a1
+    summary: Сложный коэффициент состояния $ \кет{1}$.
+    uid: microsoft.quantum.math.complexpolar
+output:
+  content: (Microsoft.Quantum.Math.ComplexPolar, Double, Double)
+  types:
+  - summary: Кортеж, содержащий `(ComplexPolar(r, t), phi, theta)`.
+    types:
+    - uid: microsoft.quantum.math.complexpolar
+    - isPrimitive: true
+      uid: Double
+    - isPrimitive: true
+      uid: Double
+ms.openlocfilehash: fc9dbef764c9d95de2183b9b093e00f20dfb0697
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228143"
