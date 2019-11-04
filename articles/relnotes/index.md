@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 169a8ac31c53f2892624618a227d8bdbdc458458
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: f8d7071b4917aba7ba7eec4e84ba4f46dff3618a
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "72958885"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442171"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске Microsoft Quantum Development Kit
 
@@ -20,6 +20,19 @@ ms.locfileid: "72958885"
 См. [инструкции по установке](xref:microsoft.quantum.install).
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
+
+## <a name="version-01019103107"></a>Версия 0.10.1910.3107
+
+*Дата выпуска: 1 ноября 2019 г.*
+
+Этот выпуск включает следующие обновления:
+
+- Обновления расширений Visual Studio Code и Visual Studio для развертывания языкового сервера в виде автономного исполняемого файла с исключением зависимости версии пакета SDK для .NET Core  
+- Миграция в .NET Core 3.0
+- Критическое изменение в Microsoft.Quantum.Simulation.Core.IOperationFactory с введением нового метода `Fail`. Оно влияет только на пользовательские симуляторы, которые не расширяют SimulatorBase. См. сведения в [запросе на вытягивание в GitHub](https://github.com/microsoft/qsharp-runtime/pull/59).
+- Возобновление поддержки устаревших атрибутов
+
+См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed) и [ката](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
 
 ## <a name="version-0919093002"></a>Версия 0.9.1909.3002
 
@@ -448,7 +461,7 @@ dotnet clean
 #### <a name="hardware-and-software-requirements"></a>Требования к аппаратному и программному обеспечению
 
 - Для работы симулятора из комплекта поставки Quantum Development Kit требуется 64-разрядная версия Microsoft Windows.
-- Квантовый симулятор Майкрософт, который устанавливается вместе с Quantum Development Kit, использует технологию AVX (Advance Vector Extensions) и работает только на ЦП с поддержкой AVX. Технологию AVX поддерживают все процессоры Intel, выпущенные в 1-м квартале 2011 г. (Sandy Bridge) или позднее. Мы рассматриваем возможность добавить поддержку более ранних процессоров, о чем будет сообщено позднее.
+- Квантовый симулятор Майкрософт, который устанавливается вместе с Quantum Development Kit, использует технологию AVX (Advanced Vector Extensions) и работает только на ЦП с поддержкой AVX. Технологию AVX поддерживают все процессоры Intel, выпущенные в 1-м квартале 2011 г. (Sandy Bridge) или позднее. Мы рассматриваем возможность добавить поддержку более ранних процессоров, о чем будет сообщено позднее.
 
 #### <a name="project-creation"></a>Создание проекта
 

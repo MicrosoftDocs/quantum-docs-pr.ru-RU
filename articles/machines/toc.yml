@@ -1,4 +1,4 @@
-- name: Классические компьютеры и драйверы
+- name: Обзор
   href: index.md
 - name: Квантовый симулятор
   href: full-state-simulator.md

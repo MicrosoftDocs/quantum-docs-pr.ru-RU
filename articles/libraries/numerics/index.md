@@ -6,14 +6,14 @@ ms.author: thhaner
 ms.date: 5/14/2019
 ms.topic: article
 uid: microsoft.quantum.numerics.intro
-ms.openlocfilehash: 0bffe0c2adeacce514fd9985c9206f6f9c3157be
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: efd1a712616534ac281433fc008f0983271881d7
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73056428"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442434"
 ---
-# <a name="introduction"></a>Введение
+# <a name="introduction-to-the-quantum-numerics-library"></a>Базовые сведения о библиотеке Quantum Numerics
 
 Многие квантовые алгоритмы используют [оракулов](xref:microsoft.quantum.concepts.oracles), которые оценивают математические функции как суперпозицию входных данных.
 Например, основной компонент алгоритма Шора оценивает выражение $f(x) = a^x\operatorname{mod} N$ для фиксированного значения $a$, раскладываемого на множители числа $N$, и значения $x$ с целочисленным типом из $2n$ кубитов с равномерным распределением по всем строкам длиной $2n$ бит.

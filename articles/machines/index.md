@@ -1,19 +1,19 @@
 ---
-title: Квантовые симуляторы и классические драйверы | Документация Майкрософт
+title: Квантовые симуляторы и ведущие приложения | Документация Майкрософт
 description: Здесь объясняется, как с помощью классического вычислительного языка .NET можно управлять квантовыми симуляторами, как правило, C# или Q#.
 author: QuantumWriter
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines
-ms.openlocfilehash: 5ac79280669ae0acfe993a1c2ae1c069b0c01848
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 14aed75ed0ed192f88699b1c7dbacfae23f74642
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73035121"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442223"
 ---
-# <a name="classical-drivers-and-machines"></a>Классические драйверы и машины
+# <a name="quantum-simulators-and-host-applications"></a>Квантовые симуляторы и ведущие приложения
 
 ## <a name="what-youll-learn"></a>Цели обучения
 
@@ -52,7 +52,7 @@ ms.locfileid: "73035121"
 * [Оценщик ресурсов на основе трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro), класс `QCTraceSimulator`, позволяет выполнять расширенный анализ потребления ресурсов для всего графа вызовов алгоритма.
 * [Симулятор Тоффоли](xref:microsoft.quantum.machines.toffoli-simulator), класс `ToffoliSimulator`.
 
-## <a name="writing-a-classical-driver-program"></a>Написание программы классического драйвера
+## <a name="writing-a-host-application"></a>Создание основного приложения
 
 В статье о [написании первой квантовой программы](xref:microsoft.quantum.write-program) мы написали простой драйвер C# для алгоритма телепортирования. Драйвер C# необходим для 4 основных целей:
 
@@ -94,7 +94,7 @@ ms.locfileid: "73035121"
 * Массивы должны быть заключены в объект `Microsoft.Quantum.Simulation.Core.QArray<T>`.
     У класса `QArray` есть конструктор, который может принимать любую упорядоченную коллекцию (`IEnumerable<T>`) соответствующих объектов.
 * Пустой кортеж, `()` на языке Q#, представлен `QVoid.Instance` на языке C#.
-* Непустые кортежи представлены в виде экземпляров `ValueType` .NET.
+* Непустые кортежи представлены в виде экземпляров `ValueTuple` .NET.
 * Пользовательские типы Q# передаются в качестве базового типа.
 * Чтобы передать операцию или функцию в метод `Run`, необходимо получить экземпляр класса операции или функции, используя метод `Get<>` симулятора.
 

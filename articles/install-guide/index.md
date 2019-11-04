@@ -6,12 +6,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install
-ms.openlocfilehash: 3ec53934436b47908fd4d794a98933010f6059a7
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 090cf98612c6c549c733e54f9dcbf74442b30fbd
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73035282"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442272"
 ---
 # <a name="install-the-microsoft-quantum-development-kit-qdk"></a>Установка Microsoft Quantum Development Kit (QDK)
 
@@ -26,11 +26,13 @@ ms.locfileid: "73035282"
 
 ## <a name="develop-with-python"></a>Разработка на языке Python
 
+Пакет Q# для Python позволяет легко моделировать операции и функции Q# в Python. IQ# — это расширение, которое в основном используется в Jupyter и Python и предоставляет основные функции для компиляции и моделирования операций Q#.
+
 1. Предварительные требования
 
     - [Python](https://www.python.org/downloads/) 3.6 или более поздней версии
     - Диспетчер пакетов Python [PIP](https://pip.pypa.io/en/stable/installing)
-    - [Пакет SDK для .NET Core 2.1 или более поздних версий](https://www.microsoft.com/net/download)
+    - [Пакет SDK для .NET Core 3.0 или более поздней версии](https://www.microsoft.com/net/download)
 
 1. Установите пакет `iqsharp`.
 
@@ -87,11 +89,16 @@ ms.locfileid: "73035282"
 
 ## <a name="develop-with-jupyter-notebooks"></a>Разработка с использованием записных книжек Jupyter
 
+Jupyter Notebook — это широко используемое в образовательных учреждениях, научных лабораториях и интерактивном программировании решение. Оно позволяет выполнять код локально, включая код Q#, инструкции, примечания и другое содержимое.  Ниже описаны действия, которые помогут вам приступить к созданию собственных записных книжек Q#.
+
+IQ# — это расширение, которое в основном используется в Jupyter и Python с пакетом SDK для .NET Core и предоставляет основные функции для компиляции и моделирования операций Q#.
+
+
 1. Предварительные требования
 
     - [Python](https://www.python.org/downloads/) 3.6 или более поздней версии
     - [Записная книжка Jupyter](https://jupyter.readthedocs.io/en/latest/install.html)
-    - [Пакет SDK для .NET Core 2.1 или более поздних версий](https://www.microsoft.com/net/download)
+    - [Пакет SDK для .NET Core 3.0 или более поздней версии](https://www.microsoft.com/net/download)
 
 1. Установите пакет `iqsharp`.
 
@@ -120,11 +127,22 @@ ms.locfileid: "73035282"
 
     - Запустите эту ячейку записной книжки.
 
-        ![Ячейка записной книжки Jupyter](~/media/install-guide-jupyter.png)
+        ![Ячейка записной книжки Jupyter с кодом Q#](~/media/install-guide-jupyter.png)
 
         В выходных данных ячейки должно отобразиться `SayHello`. При запуске в записных книжках Jupyter компилируется код Q#, а записная книжка выводит имя найденных операций.
 
+
+    - В новой ячейке смоделируйте выполнение операции, которую вы только что создали, на квантовом компьютере. Для этого используйте магическую команду `%simulate`:
+
+        ![Ячейка записной книжки Jupyter с магической командой %simulate](~/media/install-guide-jupyter-simulate.png)
+
+        Сообщение должно отобразиться на экране вместе с результатом вызванной операции (в нашем примере это пустое значение).
+
+
 ## <a name="develop-with-c-on-windows-using-visual-studio"></a>Разработка на языке C# в Windows с помощью Visual Studio
+
+Visual Studio обеспечивает обширную среду для разработки программ Q# с такими возможностями, как завершение кода и выделение синтаксиса, которые помогают разработчикам создавать приложения.  Расширение Q# Visual Studio содержит шаблоны для файлов и проектов Q#, а также предоставляет возможность выделения синтаксиса и поддержку IntelliSense.
+
 
 1. Предварительные требования
 
@@ -158,12 +176,16 @@ ms.locfileid: "73035282"
 > [!NOTE]
 > * Если в одном решении Visual Studio несколько проектов, все проекты, включенные в решение, нужно разместить в той же папке, что и решение, или в одной из вложенных в нее папок.  
 
-## <a name="develop-with-c-using-vs-code"></a>Разработка на языке C# с помощью VS Code
+## <a name="develop-with-c-using-visual-studio-code"></a>Разработка с помощью C# и Visual Studio Code
+
+Visual Studio Code (VS Code) обеспечивает обширную среду для разработки программ Q# в разных вычислительных средах, включая Windows, Linux и Mac, с такими возможностями, как завершение кода и выделение синтаксиса, которые помогают разработчикам создавать приложения.  Расширение Q# VS Code предоставляет возможность выделения синтаксиса и фрагменты кода Q#.
+
+Visual Studio Code (VS Code) обеспечивает обширную среду для разработки программ Q# в разных вычислительных средах, включая Windows, Linux и Mac, с такими возможностями, как завершение кода и выделение синтаксиса, которые помогают разработчикам создавать приложения.  Расширение Q# VS Code предоставляет возможность выделения синтаксиса и фрагменты кода Q#.
 
 1. Предварительные требования
 
    - [Код VS](https://code.visualstudio.com/download)
-   - [Пакет SDK для .NET Core 2.1 или более поздних версий](https://www.microsoft.com/net/download)
+   - [Пакет SDK для .NET Core 3.0 или более поздней версии](https://www.microsoft.com/net/download)
 
 1. Установите расширение Quantum VS Code.
 
@@ -195,9 +217,11 @@ ms.locfileid: "73035282"
 
 ## <a name="develop-with-c-using-the-dotnet-command-line-tool"></a>Разработка на языке C# с помощью программы командной строки `dotnet`
 
+Разумеется, вы можете создавать и запускать программы Q# и из командной строки. Для этого просто установите шаблоны проектов на основе пакетов QDK и SDK для .NET Core. 
+
 1. Предварительные требования
 
-    - [Пакет SDK для .NET Core 2.1 или более поздних версий](https://www.microsoft.com/net/download)
+    - [Пакет SDK для .NET Core 3.0 или более поздней версии](https://www.microsoft.com/net/download)
 
 1. Установите шаблоны проектов Quantum для .NET.
 
