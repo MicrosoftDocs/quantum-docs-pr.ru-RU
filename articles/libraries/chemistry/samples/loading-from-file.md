@@ -6,14 +6,14 @@ ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.loadhamiltonian
-ms.openlocfilehash: 9902e95b09d38323b4b91c29ab897a4f0124b6cd
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: HT
+ms.openlocfilehash: 18f257efe8d53d2a22af4840bd8d17ab6b80a503
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73184191"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442363"
 ---
-## <a name="loading-a-hamiltonian-from-file"></a>Загрузка Хамилтониан из файла
+# <a name="loading-a-hamiltonian-from-file"></a>Загрузка гамильтонова представления из файла
 Ранее мы создали Хамилтонианс, добавив в него отдельные термины. Хотя это и удобно для небольших примеров, тактовая химия в масштабе требует Хамилтонианс с миллионами или миллиардами терминов. Такие Хамилтонианс, созданные пакетами химия, такими как Нвчем, слишком велики для импорта вручную. В этом примере показано, как экземпляр `FermionHamiltonian` может быть автоматически создан из молекулы, представленной [схемой брумбридже](xref:microsoft.quantum.libraries.chemistry.schema.broombridge). Для справки можно проверить предоставленный образец `LithiumHydrideGUI` или образец `RunSimulation`. Ограниченная поддержка также доступна для импорта из формата, используемого [ликуи | >](https://www.microsoft.com/en-us/research/project/language-integrated-quantum-operations-liqui/).
 
 Рассмотрим пример молекулы Нитрожен, которая предоставляется в папке `IntegralData/YAML` репозитория Samples. Метод загрузки схемы `Broombridge` прост.

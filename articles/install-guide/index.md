@@ -6,12 +6,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install
-ms.openlocfilehash: 090cf98612c6c549c733e54f9dcbf74442b30fbd
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: 2a098d89f13278d7137bf182a184a74afb9393be
+ms.sourcegitcommit: 2ca4755d1a63431e3cb2d2918a10ad477ec2e368
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442272"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462869"
 ---
 # <a name="install-the-microsoft-quantum-development-kit-qdk"></a>Установка Microsoft Quantum Development Kit (QDK)
 
@@ -177,8 +177,6 @@ Visual Studio обеспечивает обширную среду для раз
 > * Если в одном решении Visual Studio несколько проектов, все проекты, включенные в решение, нужно разместить в той же папке, что и решение, или в одной из вложенных в нее папок.  
 
 ## <a name="develop-with-c-using-visual-studio-code"></a>Разработка с помощью C# и Visual Studio Code
-
-Visual Studio Code (VS Code) обеспечивает обширную среду для разработки программ Q# в разных вычислительных средах, включая Windows, Linux и Mac, с такими возможностями, как завершение кода и выделение синтаксиса, которые помогают разработчикам создавать приложения.  Расширение Q# VS Code предоставляет возможность выделения синтаксиса и фрагменты кода Q#.
 
 Visual Studio Code (VS Code) обеспечивает обширную среду для разработки программ Q# в разных вычислительных средах, включая Windows, Linux и Mac, с такими возможностями, как завершение кода и выделение синтаксиса, которые помогают разработчикам создавать приложения.  Расширение Q# VS Code предоставляет возможность выделения синтаксиса и фрагменты кода Q#.
 

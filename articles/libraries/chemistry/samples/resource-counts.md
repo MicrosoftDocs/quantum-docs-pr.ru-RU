@@ -6,14 +6,14 @@ ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.resourcecounts
-ms.openlocfilehash: b28a27c4c1f1e64644fcfb074a731ff7b65cacb6
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: HT
+ms.openlocfilehash: f9311c1987ced4336c4e98bdb984fbee009e9acc
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73184089"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442460"
 ---
-## <a name="obtaining-resource-counts"></a>Получение счетчиков ресурсов
+# <a name="obtaining-resource-counts"></a>Получение счетчиков ресурсов
 
 Затраты на моделирование $n $ Кубитс на классическая компьютеры масштабируются экспоненциально с $n $. Это значительно ограничивает размер имитации тактовой химияи, которую можно выполнить с помощью симулятора полного состояния. Для больших экземпляров химия, тем не менее, мы можем получить полезную информацию. Здесь мы рассмотрим, как издержки ресурсов, например количество шлюзов T-Гейтс или Кнот, для имитации химия можно получить в автоматическом режиме с помощью [симулятора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro). Такая информация информирует нас о том, что тактовые компьютеры могут быть достаточно большими для выполнения этих алгоритмов тактовой химияи. Для справки см. предоставленный образец `GetGateCount`.
 
@@ -83,7 +83,7 @@ operation RunQubitizationStep (qSharpData: JordanWignerEncodingData) : Double {
 }
 ```
 
-Теперь мы настроим симулятор трассировки, чтобы отслеживать интересующие вас ресурсы. В этом случае мы подсчитани простые тактовые операции, установив для флага `usePrimitiveOperationsCounter` значение `true`. Техническая информация `throwOnUnconstraintMeasurement` имеет значение `false`, чтобы избежать исключений в случаях, когда код Q # неправильно утверждает пробабилтий результатов измерения, если таковые были выполнены.
+Теперь мы настроим симулятор трассировки, чтобы отслеживать интересующие вас ресурсы. В этом случае мы подсчитани простые тактовые операции, установив для флага `usePrimitiveOperationsCounter` значение `true`. Техническая информация `throwOnUnconstraintMeasurement` имеет значение `false`, чтобы избежать исключений в случаях, когда код Q # неправильно утверждает вероятность результатов измерения, если таковые выполняются.
 
 ```csharp
 private static QCTraceSimulator CreateAndConfigureTraceSim()

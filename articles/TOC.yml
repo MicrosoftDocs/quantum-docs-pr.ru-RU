@@ -1,15 +1,39 @@
 - name: Документация по Microsoft Quantum
   href: index.yml
 - name: Обзор
-  href: welcome.md
+  items:
+    - name: Начало работы
+      href: welcome.md
+    - name: Пять вопросов о квантовых вычислениях
+      items:
+        - name: Что такое квантовые вычисления?
+          href: overview/what-is-quantum-computing.md
+        - name: Возможности квантового компьютера
+          href: overview/quantum-computers.md
+        - name: Задачи изучения принципов квантовых вычислений
+          href: overview/why-learn-quantum-computing.md
+        - name: 'Что такое Q#?'
+          href: overview/what-is-qsharp.md
+        - name: Способы изучения принципов квантовых вычислений
+          href: overview/how-to-learn-quantum-computing.md
+    - name: Обучение с помощью Quantum Katas
+      href: intro-to-katas.md
 - name: Краткие руководства
+  items:
+    - name: Квантовый генератор случайных чисел
+      href: quickstarts/qrng.md
+    - name: 'Основы квантового программирования с помощью Q#'
+      href: quickstart.md
+    - name: Реализация поиска по алгоритму Гровера
+      href: quickstarts/search.md
+- name: Руководства
   items:
     - name: Установка Quantum Development Kit
       href: install-guide/index.md
     - name: Обновление Quantum Development Kit
       href: install-guide/update.md
-    - name: Создание первой квантовой программы
-      href: quickstart.md
+    - name: 'Создание проекта Q#'
+      href: how-to-guides/create-qsharp-project.md
 - name: Основные понятия
   items:
     - name: Методики квантовой разработки
@@ -22,7 +46,7 @@
       href: libraries/toc.yml
     - name: Концепции квантовых вычислений
       href: concepts/toc.yml
-    - name: Как разместить квантовый компьютер
+    - name: Квантовые симуляторы и средства оценки ресурсов
       href: machines/toc.yml
 - name: Ресурсы
   items:
