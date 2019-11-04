@@ -1,0 +1,16 @@
+- name: Квантовая динамика
+  href: quantum-dynamics.md
+- name: Квантовые модели для электронных систем
+  href: quantum-models.md
+- name: Второе квантование
+  href: second-quantization.md
+- name: Симметрия молекулярных интегралов
+  href: symmetries-molecular.md
+- name: "Представление Жордана\_— Вигнера"
+  href: jordan-wigner.md
+- name: Имитация динамики Гамильтона
+  href: algorithms.md
+- name: "Теория Хартри\_— Фока"
+  href: hartree-fock.md
+- name: Коррелированные волновые функции
+  href: multireference.md

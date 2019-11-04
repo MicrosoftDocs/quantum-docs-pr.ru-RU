@@ -1,0 +1,12 @@
+- name: Справочные материалы
+  items:
+    - name: 'Библиотеки Q#'
+      href: qsharp/toc.yml
+    - name: Библиотеки .NET
+      items:
+        - name: Симулятор трассировки
+          href: 'https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators'
+        - name: Квантовая химия
+          href: 'https://docs.microsoft.com/dotnet/api/microsoft.quantum.chemistry'
+    - name: Библиотеки Python
+      href: 'https://docs.microsoft.com/python/qsharp'
