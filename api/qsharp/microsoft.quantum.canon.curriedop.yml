@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.canon.curriedop
-name: курриедоп
+name: CurriedOp
 type: function
 namespace: Microsoft.Quantum.Canon
 summary: >-
@@ -26,9 +26,9 @@ remarks: >-
   ```
 syntax: "function CurriedOp (op : (('T, 'U) => Unit)) : ('T -> ('U => Unit))"
 input:
-  content: "(Op: (t, ' U) = единица >))"
+  content: "(op : (('T, 'U) => Unit))"
   types:
-  - name: операцион
+  - name: op
     summary: Операция, входные данные которой являются парой.
     isOperation: true
     input:
@@ -42,7 +42,7 @@ input:
       - isPrimitive: true
         uid: Unit
 output:
-  content: (Не> (' U = единица >))
+  content: ('T -> ('U => Unit))
   types:
   - summary: Операция, которая принимает первый элемент пары и возвращает операцию, которая принимает в качестве входных данных второй элемент входных данных исходной операции.
     isFunction: true
@@ -66,9 +66,10 @@ typeParameters:
   summary: Тип первого компонента функции, определенной в парах.
 - uid: "'U"
   summary: Тип второго компонента функции, определенной в парах.
-ms.openlocfilehash: 788648d24ba536926504caba92e768ecb34e001a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067906"
+metadata:
+  ms.openlocfilehash: 788648d24ba536926504caba92e768ecb34e001a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067906"

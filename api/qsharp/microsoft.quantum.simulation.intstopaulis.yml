@@ -1,12 +1,12 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.simulation.intstopaulis
-name: интстопаулис
+name: IntsToPaulis
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: Преобразует массив целых чисел в массив однокубитных операторов Паули.
 syntax: 'function IntsToPaulis (ints : Int[]) : Pauli[]'
 input:
-  content: '(ints: int [])'
+  content: '(ints : Int[])'
   types:
   - name: ints
     summary: Массив целых чисел в диапазоне `0..3` для преобразования в операторы Паули.
@@ -14,15 +14,16 @@ input:
     isPrimitive: true
     uid: Int
 output:
-  content: Паули []
+  content: Pauli[]
   types:
   - summary: Массив `paulis` операторов Паули `Pauli[]` той же длины, что и `ints` такие, что `paulis[idxPauli]` равно элементу `[PauliI, PauliX, PauliY, PauliZ]`, заданному `ints[idxPauli]`.
     isArray: true
     isPrimitive: true
     uid: Pauli
-ms.openlocfilehash: 407ad1481c220f390fffb5f1b59f0968d6d6570c
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066988"
+metadata:
+  ms.openlocfilehash: 407ad1481c220f390fffb5f1b59f0968d6d6570c
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066988"

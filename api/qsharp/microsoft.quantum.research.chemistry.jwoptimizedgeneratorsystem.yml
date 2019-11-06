@@ -1,24 +1,25 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.research.chemistry.jwoptimizedgeneratorsystem
-name: жвоптимизедженераторсистем
+name: JWOptimizedGeneratorSystem
 type: function
 namespace: Microsoft.Quantum.Research.Chemistry
 summary: Преобразует Хамилтониан, описываемый `JWOptimizedHTerms`, в `GeneratorSystem` выраженную в терминах соглашения `GeneratorIndex`, определенного в этом файле.
 syntax: 'function JWOptimizedGeneratorSystem (data : Microsoft.Quantum.Chemistry.JordanWigner.JWOptimizedHTerms) : Microsoft.Quantum.Simulation.GeneratorSystem'
 input:
-  content: '(данные: Microsoft. тактов. химия. Жорданвигнер. Жвоптимизедхтермс)'
+  content: '(data : Microsoft.Quantum.Chemistry.JordanWigner.JWOptimizedHTerms)'
   types:
   - name: data
     summary: Описание Хамилтониан в формате `JWOptimizedHTerms`.
     uid: microsoft.quantum.chemistry.jordanwigner.jwoptimizedhterms
 output:
-  content: Microsoft. тактов. моделирование. Женераторсистем
+  content: Microsoft.Quantum.Simulation.GeneratorSystem
   types:
   - summary: Представление Хамилтониан как `GeneratorSystem`.
     uid: microsoft.quantum.simulation.generatorsystem
-ms.openlocfilehash: 5f5037767f9737391f3fd07d3dd0e330f8995f56
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066172"
+metadata:
+  ms.openlocfilehash: 5f5037767f9737391f3fd07d3dd0e330f8995f56
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066172"

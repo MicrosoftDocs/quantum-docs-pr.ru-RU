@@ -1,14 +1,14 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.preparation.preparechoistatec
-name: препаречоистатек
+name: PrepareChoiStateC
 type: operation
 namespace: Microsoft.Quantum.Preparation
 summary: Подготавливает состояние Чои – Жамиłковски для данной операции с контролируемым вариантом на заданный эталонный и целевой регистр.
 syntax: 'operation PrepareChoiStateC (op : (Qubit[] => Unit is Ctl), reference : Qubit[], target : Qubit[]) : Unit'
 input:
-  content: '(Op: (кубит [] = > единица — CTL), ссылка: кубит [], целевой объект: кубит [])'
+  content: '(op : (Qubit[] => Unit is Ctl), reference : Qubit[], target : Qubit[])'
   types:
-  - name: операцион
+  - name: op
     isOperation: true
     input:
       types:
@@ -30,7 +30,7 @@ input:
     isPrimitive: true
     uid: Qubit
 output:
-  content: Единица
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
@@ -38,9 +38,10 @@ functors:
 - Controlled
 seeAlso:
 - preparechoistate
-ms.openlocfilehash: 79579ec18d7b5a6ff0443f26271106af37af1c65
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067192"
+metadata:
+  ms.openlocfilehash: 79579ec18d7b5a6ff0443f26271106af37af1c65
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067192"
