@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.simulation.paulievolutionset
-name: паулиеволутионсет
+name: PauliEvolutionSet
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Паули.
@@ -10,13 +10,14 @@ input:
   content: ()
   types: []
 output:
-  content: Microsoft. тактов. моделирование. эволюционный
+  content: Microsoft.Quantum.Simulation.EvolutionSet
   types:
   - summary: '`EvolutionSet`, сопоставляющая `GeneratorIndex` для Паули на основе Еволутионунитари.'
     uid: microsoft.quantum.simulation.evolutionset
-ms.openlocfilehash: cd1180caa3e2afeea044e409ddde9ac414a7ee84
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065390"
+metadata:
+  ms.openlocfilehash: cd1180caa3e2afeea044e409ddde9ac414a7ee84
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065390"
