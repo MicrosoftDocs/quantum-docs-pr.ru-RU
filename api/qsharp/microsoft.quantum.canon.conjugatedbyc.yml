@@ -1,15 +1,15 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.canon.conjugatedbyc
-name: конжугатедбик
+name: ConjugatedByC
 type: function
 namespace: Microsoft.Quantum.Canon
 summary: При наличии внешних и внутренних операций возвращает новую операцию, которая сопряжена с внутренней операцией внешней операцией.
 remarks: Во внешней операции всегда предполагается, что это аджоинтабле, но не обязательно быть управляемым, чтобы Объединенная операция была управляемой.
 syntax: "function ConjugatedByC (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Ctl)) : ('T => Unit is Ctl)"
 input:
-  content: "(Аутероператион: ('T = > единица является назначением), Иннероператион: ('T = единица > является CTL))"
+  content: "(outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Ctl))"
   types:
-  - name: аутероператион
+  - name: outerOperation
     summary: Операция $U $, которую следует использовать для сопряженного $V $. Обратите внимание, что внешняя операция $U $ должна быть аджоинтабле, но не обязательно должна быть управляемой.
     isOperation: true
     input:
@@ -22,7 +22,7 @@ input:
         uid: Unit
     functors:
     - Adjoint
-  - name: иннероператион
+  - name: innerOperation
     summary: Операция $V $, для которой выполняется сопряжение.
     isOperation: true
     input:
@@ -36,7 +36,7 @@ input:
     functors:
     - Controlled
 output:
-  content: (А = единица > является CTL)
+  content: ('T => Unit is Ctl)
   types:
   - summary: Новая операция, действие которой представляется единой $U ^ {\дагжер} V U $.
     isOperation: true
@@ -58,9 +58,10 @@ seeAlso:
 - conjugatedbya
 - conjugatedbyca
 - applywith
-ms.openlocfilehash: 64b754d98164ea9d7ef5fcdc17141a5b1ef008d4
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067974"
+metadata:
+  ms.openlocfilehash: 64b754d98164ea9d7ef5fcdc17141a5b1ef008d4
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067974"
