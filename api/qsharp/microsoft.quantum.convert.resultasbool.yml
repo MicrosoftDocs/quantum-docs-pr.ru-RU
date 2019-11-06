@@ -1,12 +1,12 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.convert.resultasbool
-name: ресултасбул
+name: ResultAsBool
 type: function
 namespace: Microsoft.Quantum.Convert
 summary: Преобразует тип `Result` в тип `Bool`, где `One` сопоставляется с `true` и `Zero` сопоставляется с `false`.
 syntax: 'function ResultAsBool (input : Result) : Bool'
 input:
-  content: '(входные данные: result)'
+  content: '(input : Result)'
   types:
   - name: input
     summary: '`Result` для преобразования.'
@@ -18,9 +18,10 @@ output:
   - summary: '`Bool`, представляющий `input`.'
     isPrimitive: true
     uid: Bool
-ms.openlocfilehash: 2e6db6cf91e3ded2ec3a1ad73d0d6f7203058d03
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067600"
+metadata:
+  ms.openlocfilehash: 2e6db6cf91e3ded2ec3a1ad73d0d6f7203058d03
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067600"

@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.intrinsic.exp
-name: Расширением
+name: Exp
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
 summary: >-
@@ -10,33 +10,34 @@ summary: >-
   \бегин{алигн} e ^ {i \сета [P_0 \отимес P_1 \кдотс P_ {N-1}]}, \енд{алигн}, где $P _i $ — $i $-элемент `paulis`, а $N = $`Length(paulis)`.
 syntax: 'operation Exp (paulis : Pauli[], theta : Double, qubits : Qubit[]) : Unit'
 input:
-  content: '(Пол: Паули [], тета: Double, Кубитс: кубит [])'
+  content: '(paulis : Pauli[], theta : Double, qubits : Qubit[])'
   types:
-  - name: Пол
+  - name: paulis
     summary: Массив значений Single-кубит Паули, указывающих факторы продукта тензорные для каждого кубит.
     isArray: true
     isPrimitive: true
     uid: Pauli
-  - name: тета-
+  - name: theta
     summary: Угол для данного оператора Multi-кубит Паули, на который будет повернут целевой регистр.
     isPrimitive: true
     uid: Double
-  - name: кубитс
+  - name: qubits
     summary: Зарегистрируйтесь, чтобы применить заданный поворот к.
     isArray: true
     isPrimitive: true
     uid: Qubit
 output:
-  content: Единица
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
 functors:
 - Adjoint
 - Controlled
-ms.openlocfilehash: d301f6281d5c8a07479417fab1e25c66e2251a25
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067328"
+metadata:
+  ms.openlocfilehash: d301f6281d5c8a07479417fab1e25c66e2251a25
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067328"

@@ -49,9 +49,10 @@ output:
   - summary: Оценка $ \хат{п} $ частоты, с которой $M (P (\ket{00 \кдотс 0} \bra{00 \кдотс 0})) $ возвращает `Zero`, полученный с помощью несмещенного биномиальное оценщика $ \хат{п} = n\_{\упарров}/n\_{\текст{меасурементс}} $, где $n\_{\ Стрелка вверх} $ — число наблюдаемых результатов `Zero`.
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: cfc90cee0b98b88391ee23218489669600a97920
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73229180"
+metadata:
+  ms.openlocfilehash: cfc90cee0b98b88391ee23218489669600a97920
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73229180"

@@ -11,7 +11,7 @@ remarks: >-
   Обратите внимание, что определенное конечное значение диапазона может отличаться от последнего элемента последовательности, заданной диапазоном. Например, в диапазоне 0.. 2.. 5 последний элемент — 4, а конечное значение — 5.
 syntax: 'function RangeEnd (range : Range) : Int'
 input:
-  content: '(диапазон: диапазон)'
+  content: '(range : Range)'
   types:
   - name: range
     isPrimitive: true
@@ -22,9 +22,10 @@ output:
   - summary: Определенное конечное значение заданного диапазона.
     isPrimitive: true
     uid: Int
-ms.openlocfilehash: c7436046b6be7d4d0801471ecc6c78e36421e54a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066648"
+metadata:
+  ms.openlocfilehash: c7436046b6be7d4d0801471ecc6c78e36421e54a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066648"

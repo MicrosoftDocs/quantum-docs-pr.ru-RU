@@ -1,24 +1,24 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.diagnostics.assertallzerowithintolerance
-name: ассерталлзеровисинтолеранце
+name: AssertAllZeroWithinTolerance
 type: operation
 namespace: Microsoft.Quantum.Diagnostics
 summary: Утверждение, что все заданное Кубитс в $ \кет{0}$ State вплоть до заданного допуска.
 syntax: 'operation AssertAllZeroWithinTolerance (qubits : Qubit[], tolerance : Double) : Unit'
 input:
-  content: '(Кубитс: кубит [], допуск: Double)'
+  content: '(qubits : Qubit[], tolerance : Double)'
   types:
-  - name: кубитс
+  - name: qubits
     summary: Кубитс, которые включены в $ \кет{0}$ State.
     isArray: true
     isPrimitive: true
     uid: Qubit
-  - name: график
+  - name: tolerance
     summary: Точность, с которой состояние должно находиться в $ \кет{0}$ State
     isPrimitive: true
     uid: Double
 output:
-  content: Единица
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
@@ -27,9 +27,10 @@ functors:
 - Controlled
 seeAlso:
 - assertqubitwithintolerance
-ms.openlocfilehash: 0e3b560d08077bb353147d98a921a2c2ca3ae202
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066546"
+metadata:
+  ms.openlocfilehash: 0e3b560d08077bb353147d98a921a2c2ca3ae202
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066546"

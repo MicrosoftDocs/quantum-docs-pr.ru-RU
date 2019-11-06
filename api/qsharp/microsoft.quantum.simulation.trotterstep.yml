@@ -1,27 +1,27 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.simulation.trotterstep
-name: троттерстеп
+name: TrotterStep
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: Реализует однократный этап развития времени с помощью системы, описанной в `EvolutionGenerator` использовании декомпозиции Троттер – Сузуки.
 remarks: Дополнительные сведения о декомпозиции Троттер – Сузуки см. в разделе [упорядочение по времени](/quantum/libraries/control-flow#time-ordered-composition).
 syntax: 'function TrotterStep (evolutionGenerator : Microsoft.Quantum.Simulation.EvolutionGenerator, trotterOrder : Int, trotterStepSize : Double) : (Qubit[] => Unit is Adj + Ctl)'
 input:
-  content: '(Еволутионженератор: Microsoft. тактов. симулятор. Еволутионженератор, Троттерордер: int, Троттерстепсизе: Double)'
+  content: '(evolutionGenerator : Microsoft.Quantum.Simulation.EvolutionGenerator, trotterOrder : Int, trotterStepSize : Double)'
   types:
-  - name: еволутионженератор
+  - name: evolutionGenerator
     summary: Полное описание системы для имитации.
     uid: microsoft.quantum.simulation.evolutiongenerator
-  - name: троттерордер
+  - name: trotterOrder
     summary: Порядок Троттер интегратора. Это должно быть либо 1, либо четное число.
     isPrimitive: true
     uid: Int
-  - name: троттерстепсизе
+  - name: trotterStepSize
     summary: Продолжительность имитации времени — развитие в одном Троттер шаге.
     isPrimitive: true
     uid: Double
 output:
-  content: (Кубит [] = единица измерения >а + CTL)
+  content: (Qubit[] => Unit is Adj + Ctl)
   types:
   - summary: Единая операция, которая приблизительно составляет один шаг времени — развитие длительности `trotterStepSize`.
     isOperation: true
@@ -37,9 +37,10 @@ output:
     functors:
     - Adjoint
     - Controlled
-ms.openlocfilehash: 0605c7de832286b8b7a11b82af50b528d233d18c
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065220"
+metadata:
+  ms.openlocfilehash: 0605c7de832286b8b7a11b82af50b528d233d18c
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065220"
