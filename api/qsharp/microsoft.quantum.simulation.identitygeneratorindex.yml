@@ -1,25 +1,26 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.simulation.identitygeneratorindex
-name: идентитиженераториндекс
+name: IdentityGeneratorIndex
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: Возвращает индекс генератора, совместимый с нулевым Хамилтониан, `H = 0`, который соответствует операции эволюции идентификаторов.
 syntax: 'function IdentityGeneratorIndex (idxTerm : Int) : Microsoft.Quantum.Simulation.GeneratorIndex'
 input:
-  content: '(Идкстерм: int)'
+  content: '(idxTerm : Int)'
   types:
-  - name: идкстерм
+  - name: idxTerm
     summary: Эти входные данные игнорируются и определяются для согласованности с <xref:microsoft.quantum.simulation.generatorsystem> определяемым пользователем типом.
     isPrimitive: true
     uid: Int
 output:
-  content: Microsoft. тактов. моделирование. Женераториндекс
+  content: Microsoft.Quantum.Simulation.GeneratorIndex
   types:
   - summary: Индекс генератора, представляющий развитие в Хамилтониан $H = $0.
     uid: microsoft.quantum.simulation.generatorindex
-ms.openlocfilehash: 004eea82988c6a4f6c776802d5f4634f600ed404
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065594"
+metadata:
+  ms.openlocfilehash: 004eea82988c6a4f6c776802d5f4634f600ed404
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065594"

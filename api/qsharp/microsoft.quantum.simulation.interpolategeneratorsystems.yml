@@ -1,30 +1,31 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.simulation.interpolategeneratorsystems
-name: интерполатеженераторсистемс
+name: InterpolateGeneratorSystems
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: Возвращает `TimeDependentGeneratorSystem`, представляющую линейную интерполяцию между двумя `GeneratorSystem`s.
 syntax: 'function InterpolateGeneratorSystems (generatorSystemStart : Microsoft.Quantum.Simulation.GeneratorSystem, generatorSystemEnd : Microsoft.Quantum.Simulation.GeneratorSystem) : Microsoft.Quantum.Simulation.TimeDependentGeneratorSystem'
 input:
-  content: '(Женераторсистемстарт: Microsoft. тактов. симулятор. Женераторсистем, Женераторсистеменд: Microsoft. тактов. моделирование. Женераторсистем)'
+  content: '(generatorSystemStart : Microsoft.Quantum.Simulation.GeneratorSystem, generatorSystemEnd : Microsoft.Quantum.Simulation.GeneratorSystem)'
   types:
-  - name: женераторсистемстарт
+  - name: generatorSystemStart
     summary: '`GeneratorSystem`запуска.'
     uid: microsoft.quantum.simulation.generatorsystem
-  - name: женераторсистеменд
+  - name: generatorSystemEnd
     summary: '`GeneratorSystem`окончания.'
     uid: microsoft.quantum.simulation.generatorsystem
 output:
-  content: Microsoft. тактов. моделирование. Тимедепендентженераторсистем
+  content: Microsoft.Quantum.Simulation.TimeDependentGeneratorSystem
   types:
   - summary: '`TimeDependentGeneratorSystem` представляющий систему, которая является суммой систем генератора входных данных, с весовым коэффициентом $ (1-s) $ на `generatorSystemStart` и весом $s $ на `generatorSystemEnd`.'
     uid: microsoft.quantum.simulation.timedependentgeneratorsystem
 seeAlso:
 - microsoft.quantum.canon.generatorsystem
 - microsoft.quantum.canon.timedependentgeneratorsystem
-ms.openlocfilehash: ac01ddee211ddf2ad741b611707aa6e5e6ea70f9
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065526"
+metadata:
+  ms.openlocfilehash: ac01ddee211ddf2ad741b611707aa6e5e6ea70f9
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065526"

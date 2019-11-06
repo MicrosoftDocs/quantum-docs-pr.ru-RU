@@ -1,14 +1,14 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.canon.applytoeachindex
-name: апплитоеачиндекс
+name: ApplyToEachIndex
 type: operation
 namespace: Microsoft.Quantum.Canon
 summary: Применяет одну операцию кубит к каждому индексированному элементу в регистре.
 syntax: "operation ApplyToEachIndex (singleElementOperation : ((Int, 'T) => Unit), register : 'T[]) : Unit"
 input:
-  content: "(Синглилементоператион: ((int, t) = единица >), регистр: 'T [])"
+  content: "(singleElementOperation : ((Int, 'T) => Unit), register : 'T[])"
   types:
-  - name: синглилементоператион
+  - name: singleElementOperation
     summary: Операция, применяемая к каждому кубит.
     isOperation: true
     input:
@@ -21,13 +21,13 @@ input:
       types:
       - isPrimitive: true
         uid: Unit
-  - name: регистрация
+  - name: register
     summary: Массив Кубитс, для которого применяется заданная операция.
     isArray: true
     uid: "'T"
     isLocal: true
 output:
-  content: Единица
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
@@ -39,9 +39,10 @@ seeAlso:
 - microsoft.quantum.canon.applytoeachindexa
 - microsoft.quantum.canon.applytoeachindexc
 - microsoft.quantum.canon.applytoeachindexca
-ms.openlocfilehash: 1cbe6b342dc3d821c082a959bebbdaaada1f9763
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73068518"
+metadata:
+  ms.openlocfilehash: 1cbe6b342dc3d821c082a959bebbdaaada1f9763
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73068518"

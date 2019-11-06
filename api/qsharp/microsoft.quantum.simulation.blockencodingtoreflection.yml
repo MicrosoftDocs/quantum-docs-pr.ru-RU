@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.simulation.blockencodingtoreflection
-name: блоккенкодингторефлектион
+name: BlockEncodingToReflection
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: >-
@@ -12,27 +12,25 @@ summary: >-
   Это увеличивает размер дополнительного регистра $U $ на один кубит.
 remarks: Это увеличивает размер дополнительного регистра $U $ на один кубит.
 syntax: 'function BlockEncodingToReflection (blockEncoding : Microsoft.Quantum.Simulation.BlockEncoding) : Microsoft.Quantum.Simulation.BlockEncodingReflection'
-references: >-
-  - Hamiltonian Simulation by Qubitization
-    Guang Hao Low, Isaac L. Chuang
-    https://arxiv.org/abs/1610.06546
+references: '- Моделирование хамилтониан с Кубитизатион Guang Хао Low, Исаак L. Чжуанский https://arxiv.org/abs/1610.06546'
 input:
-  content: '(Блоккенкодинг: Microsoft. тактов. симулятор. Блоккенкодинг)'
+  content: '(blockEncoding : Microsoft.Quantum.Simulation.BlockEncoding)'
   types:
-  - name: блоккенкодинг
+  - name: blockEncoding
     summary: '`BlockEncoding` единое $U $ для преобразования в отражение.'
     uid: microsoft.quantum.simulation.blockencoding
 output:
-  content: Microsoft. тактов. моделирование. Блоккенкодингрефлектион
+  content: Microsoft.Quantum.Simulation.BlockEncodingReflection
   types:
   - summary: Единая $U "$ действует совместно с регистрами `a` и `s`, которые блокируют кодировку $H $, и соответствует $U" ^ \дагжер = U "$.
     uid: microsoft.quantum.simulation.blockencodingreflection
 seeAlso:
 - microsoft.quantum.canon.blockencoding
 - microsoft.quantum.canon.blockencodingreflection
-ms.openlocfilehash: 47eba3c59ef30f89139830aa4d9b98d22d141d8f
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065628"
+metadata:
+  ms.openlocfilehash: 47eba3c59ef30f89139830aa4d9b98d22d141d8f
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065628"

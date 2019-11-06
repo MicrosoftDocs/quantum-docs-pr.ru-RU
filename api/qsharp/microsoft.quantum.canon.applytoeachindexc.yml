@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.canon.applytoeachindexc
-name: апплитоеачиндекск
+name: ApplyToEachIndexC
 type: operation
 namespace: Microsoft.Quantum.Canon
 summary: >-
@@ -9,9 +9,9 @@ summary: >-
   Модификатор `C` указывает, что операция с одним кубитом является управляемой.
 syntax: "operation ApplyToEachIndexC (singleElementOperation : ((Int, 'T) => Unit is Ctl), register : 'T[]) : Unit"
 input:
-  content: '(Синглилементоператион: ((int, t) = > единица — CTL), Register: не [])'
+  content: "(singleElementOperation : ((Int, 'T) => Unit is Ctl), register : 'T[])"
   types:
-  - name: синглилементоператион
+  - name: singleElementOperation
     summary: Операция, применяемая к каждому кубит.
     isOperation: true
     input:
@@ -26,13 +26,13 @@ input:
         uid: Unit
     functors:
     - Controlled
-  - name: регистрация
+  - name: register
     summary: Массив Кубитс, для которого применяется заданная операция.
     isArray: true
     uid: "'T"
     isLocal: true
 output:
-  content: Единица
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
@@ -43,9 +43,10 @@ functors:
 - Controlled
 seeAlso:
 - microsoft.quantum.canon.applytoeachindex
-ms.openlocfilehash: ca5ba68229968b43d28535e3bf728b2b8a8ef4fb
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73068450"
+metadata:
+  ms.openlocfilehash: ca5ba68229968b43d28535e3bf728b2b8a8ef4fb
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73068450"

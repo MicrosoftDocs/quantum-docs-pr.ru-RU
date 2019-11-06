@@ -1,29 +1,30 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.simulation.timedependenttrottersimulationalgorithm
-name: тимедепенденттроттерсимулатионалгорисм
+name: TimeDependentTrotterSimulationAlgorithm
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: Функция `TimeDependentSimulationAlgorithm`, использующая декомпозицию Троттер – Сузуки для приближения единого оператора, который решается с учетом времени Счродинжер уравнения.
 syntax: 'function TimeDependentTrotterSimulationAlgorithm (trotterStepSize : Double, trotterOrder : Int) : Microsoft.Quantum.Simulation.TimeDependentSimulationAlgorithm'
 input:
-  content: '(Троттерстепсизе: Double, Троттерордер: int)'
+  content: '(trotterStepSize : Double, trotterOrder : Int)'
   types:
-  - name: троттерстепсизе
+  - name: trotterStepSize
     summary: Продолжительность имитации времени — развитие в одном Троттер шаге.
     isPrimitive: true
     uid: Double
-  - name: троттерордер
+  - name: trotterOrder
     summary: Порядок Троттер интегратора. Это должно быть либо 1, либо четное число.
     isPrimitive: true
     uid: Int
 output:
-  content: Microsoft. тактов. моделирование. Тимедепендентсимулатионалгорисм
+  content: Microsoft.Quantum.Simulation.TimeDependentSimulationAlgorithm
   types:
   - summary: Тип `TimeDependentSimulationAlgorithm`.
     uid: microsoft.quantum.simulation.timedependentsimulationalgorithm
-ms.openlocfilehash: dbac8ac91d7145216f9594f26e443f3a2660831e
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065254"
+metadata:
+  ms.openlocfilehash: dbac8ac91d7145216f9594f26e443f3a2660831e
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065254"

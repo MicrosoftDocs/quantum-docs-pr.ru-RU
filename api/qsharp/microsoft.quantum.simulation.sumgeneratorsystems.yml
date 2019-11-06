@@ -1,27 +1,28 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.simulation.sumgeneratorsystems
-name: сумженераторсистемс
+name: SumGeneratorSystems
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: Добавляет несколько `GeneratorSystem`s для создания нового Женераторсистем.
 syntax: 'function SumGeneratorSystems (generatorSystems : Microsoft.Quantum.Simulation.GeneratorSystem[]) : Microsoft.Quantum.Simulation.GeneratorSystem'
 input:
-  content: '(Женераторсистемс: Microsoft. тактов. симулятор. Женераторсистем [])'
+  content: '(generatorSystems : Microsoft.Quantum.Simulation.GeneratorSystem[])'
   types:
-  - name: женераторсистемс
+  - name: generatorSystems
     summary: Массив типа `GeneratorSystem[]`.
     isArray: true
     uid: microsoft.quantum.simulation.generatorsystem
 output:
-  content: Microsoft. тактов. моделирование. Женераторсистем
+  content: Microsoft.Quantum.Simulation.GeneratorSystem
   types:
   - summary: '`GeneratorSystem`, представляющая собой систему, которая является суммой систем генератора входных данных.'
     uid: microsoft.quantum.simulation.generatorsystem
 seeAlso:
 - microsoft.quantum.canon.generatorsystem
-ms.openlocfilehash: 610e6f8e49d940d70c9f0e7d15eb63298453920e
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065322"
+metadata:
+  ms.openlocfilehash: 610e6f8e49d940d70c9f0e7d15eb63298453920e
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065322"

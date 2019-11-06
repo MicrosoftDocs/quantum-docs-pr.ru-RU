@@ -1,14 +1,14 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.arithmetic.applyreversedople
-name: апплиреверседопле
+name: ApplyReversedOpLE
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
 summary: Применяет операцию, принимающую обратный ввод с прямым порядком байтов в кодировку для кодирования целого числа без знака с использованием формата с обратным порядком байтов.
 syntax: 'operation ApplyReversedOpLE (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit), register : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
 input:
-  content: '(Op: (Microsoft. тактов. арифметик. Литтлиндиан = >ная единица), Register: Microsoft. тактов. арифметик. байтов)'
+  content: '(op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit), register : Microsoft.Quantum.Arithmetic.BigEndian)'
   types:
-  - name: операцион
+  - name: op
     summary: Операция, которая работает с регистром с прямым порядком следования.
     isOperation: true
     input:
@@ -18,11 +18,11 @@ input:
       types:
       - isPrimitive: true
         uid: Unit
-  - name: регистрация
+  - name: register
     summary: Регистр с обратным порядком байтов для преобразования.
     uid: microsoft.quantum.arithmetic.bigendian
 output:
-  content: Единица
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
@@ -30,9 +30,10 @@ seeAlso:
 - applyreversedoplea
 - applyreversedoplec
 - applyreversedopleca
-ms.openlocfilehash: a48900eba6a7afce3cb57c0514dbfd58bf11633c
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057076"
+metadata:
+  ms.openlocfilehash: a48900eba6a7afce3cb57c0514dbfd58bf11633c
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73057076"

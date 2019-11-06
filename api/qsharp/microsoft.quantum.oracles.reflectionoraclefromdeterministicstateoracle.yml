@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.oracles.reflectionoraclefromdeterministicstateoracle
-name: рефлектионораклефромдетерминистикстатеоракле
+name: ReflectionOracleFromDeterministicStateOracle
 type: function
 namespace: Microsoft.Quantum.Oracles
 summary: >-
@@ -10,22 +10,23 @@ summary: >-
   При наличии Oracle $O $ типа <xref:microsoft.quantum.oracles.deterministicstateoracle>результат этой функции является отражением состояния $ \кет{\пси} $, где $O \кет{0} = \кет{\пси} $.
 syntax: 'function ReflectionOracleFromDeterministicStateOracle (oracle : Microsoft.Quantum.Oracles.DeterministicStateOracle) : Microsoft.Quantum.Oracles.ReflectionOracle'
 input:
-  content: '(Oracle: Microsoft. тактов. Oracle. Детерминистикстатеоракле)'
+  content: '(oracle : Microsoft.Quantum.Oracles.DeterministicStateOracle)'
   types:
-  - name: СУБД
+  - name: oracle
     summary: Oracle типа «Детерминистикстатеоракле»
     uid: microsoft.quantum.oracles.deterministicstateoracle
 output:
-  content: Microsoft. тактов. Oracle. Рефлектионоракле
+  content: Microsoft.Quantum.Oracles.ReflectionOracle
   types:
   - summary: '`ReflectionOracle`, отражающее состояние $ \кет{\пси} $.'
     uid: microsoft.quantum.oracles.reflectionoracle
 seeAlso:
 - deterministicstateoracle
 - reflectionoracle
-ms.openlocfilehash: c48c9259b4b3c122a8d7551db6d326ea523dd2a0
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73050332"
+metadata:
+  ms.openlocfilehash: c48c9259b4b3c122a8d7551db6d326ea523dd2a0
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73050332"
