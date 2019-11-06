@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.canon.applytoeachindexa
-name: апплитоеачиндекса
+name: ApplyToEachIndexA
 type: operation
 namespace: Microsoft.Quantum.Canon
 summary: >-
@@ -9,9 +9,9 @@ summary: >-
   Модификатор `A` указывает, что операция с одним кубитом — аджоинтабле.
 syntax: "operation ApplyToEachIndexA (singleElementOperation : ((Int, 'T) => Unit is Adj), register : 'T[]) : Unit"
 input:
-  content: "(Синглилементоператион: ((int, t) = > единица является прогода), регистрация: 'T [])"
+  content: "(singleElementOperation : ((Int, 'T) => Unit is Adj), register : 'T[])"
   types:
-  - name: синглилементоператион
+  - name: singleElementOperation
     summary: Операция, применяемая к каждому кубит.
     isOperation: true
     input:
@@ -26,13 +26,13 @@ input:
         uid: Unit
     functors:
     - Adjoint
-  - name: регистрация
+  - name: register
     summary: Массив Кубитс, для которого применяется заданная операция.
     isArray: true
     uid: "'T"
     isLocal: true
 output:
-  content: Единица
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
@@ -43,9 +43,10 @@ functors:
 - Adjoint
 seeAlso:
 - microsoft.quantum.canon.applytoeachindex
-ms.openlocfilehash: 6b99e977120a417780875475b35094a44d1c4e08
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73068484"
+metadata:
+  ms.openlocfilehash: 6b99e977120a417780875475b35094a44d1c4e08
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73068484"
