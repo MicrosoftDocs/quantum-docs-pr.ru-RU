@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 868d256270516cf99c228a757a11c6dc1a6319df
-ms.sourcegitcommit: c93fea5980d1d46fbda1e7c7153831b9337134bf
+ms.openlocfilehash: 90fd8ad455702ef4f962e1b3291c650eb0afea2e
+ms.sourcegitcommit: 87dd450cea5bcac76a42f0bdc224bfae712efdde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73463337"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74153324"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске Microsoft Quantum Development Kit
 
@@ -20,6 +20,17 @@ ms.locfileid: "73463337"
 См. [инструкции по установке](xref:microsoft.quantum.install).
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
+
+## <a name="version-01019111607"></a>Версия 0.10.1911.1607
+
+*Дата выпуска: 17 ноября 2019 г.*
+
+Этот выпуск включает следующие обновления:
+
+- Корректировка производительности для [Quantum Katas](https://github.com/Microsoft/QuantumKatas) и записных книжек Jupyter
+
+См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed) и [ката](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
+
 
 ## <a name="version-0101911307"></a>Версия 0.10.1911.307
 
