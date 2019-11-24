@@ -7,7 +7,7 @@ summary: >-
   Применяет экспоненту оператора Multi-кубит Паули.
 
 
-  \бегин{алигн} e ^ {i \сета [P_0 \отимес P_1 \кдотс P_ {N-1}]}, \енд{алигн}, где $P _i $ — $i $-элемент `paulis`, а $N = $`Length(paulis)`.
+  \бегин{алигн} e ^ {i \сета [P_0 \отимес P_1 \кдотс P_ {N-1}]}, \енд{алигн}, где $P _i $ является $iным элементом `paulis`и где $N = $`Length(paulis)`.
 syntax: 'operation Exp (paulis : Pauli[], theta : Double, qubits : Qubit[]) : Unit'
 input:
   content: '(paulis : Pauli[], theta : Double, qubits : Qubit[])'

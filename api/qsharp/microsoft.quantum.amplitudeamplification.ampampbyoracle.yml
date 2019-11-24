@@ -4,7 +4,7 @@ name: AmpAmpByOracle
 type: function
 namespace: Microsoft.Quantum.AmplitudeAmplification
 summary: Стандартный алгоритм усиления амплитуды
-remarks: Это стандартный алгоритм усиления амплитуды, полученный при выборе фаз отражения, вычисленных `AmpAmpPhasesStandard` предполагается, что \бегин{алигн} А\кет{0}\_{f} \кет{0}\_s = \ламбда\кет{1}\_ф\кет {\ Text {Target} }\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс, \енд{алигн} эта операция подготавливает состояние \бегин{алигн} \Операторнаме{ампампбйоракле}\кет{0}\_{f} \ket{0}\_s = \sin ((2n + 1) \sin ^{-1}(\ лямбда)) \кет{1}\_ф\кет {\ Text {Target}}\_s + \кдотс\кет{0}\_f \енд{алигн} в большинстве случаев `flagQubit` и `ancillaRegister` инициализируются в состоянии $ \кет{0}\_ф\кет{0}@no__ t_25_ a $.
+remarks: Это стандартный алгоритм усиления амплитуды, полученный в результате выбора фаз отражения, вычисленных `AmpAmpPhasesStandard` предполагается, что \бегин{алигн} А\кет{0}\_{f} \кет{0}\_s = \ламбда\кет{1}\_ф\кет {\ Text {Target}}\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс \енд{алигн} эта операция готовит состояние \бегин{алигн} \operatorname{AmpAmpByOracle}\ket{0}\_{f} \ket{0}\_s = \sin ((2n + 1) \sin ^{-1}(\ лямбда)) \кет{1}\_ф\кет {\ Text {Target}}\_s + \кдотс\кет{0}\_f \енд{алигн} в большинстве случаев `flagQubit` и `ancillaRegister` инициализируются в состоянии $ \кет{0}\_ф\кет{0}\_$.
 syntax: 'function AmpAmpByOracle (nIterations : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
 references: '- [*G. Брассард, P. Хойер, M. Моска, A. касание*](https://arxiv.org/abs/quant-ph/0005055)'
 input:

@@ -7,18 +7,18 @@ summary: >-
   Применяет поворот Паули Z к массиву Кубитс.
 
 
-  Это применяет операцию, выполняемую после умножения, $U $, которая выполняет повороты с помощью оператора угловой $ \theta_j $ об одном кубит Паули operator $Z $ при управлении $n $-кубит Number State $ \кет{ж} $.
+  Это применяет операцию, выполняемую после умножения, $U $, которая выполняет повороты по угловому оператору $ \ theta_j $ о однокубит Паули operator $Z $ при управлении с помощью $n $-кубит номер State $ \кет{ж} $.
 
 
-  $U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж}\отимес e ^ {i Z \theta_j} $.
-remarks: '`coefficients` будут дополнены элементами $ \theta_j = $0,0, если указано меньше $2 ^ n $.'
+  $U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж}\отимес e ^ {i Z \ theta_j} $.
+remarks: '`coefficients` будут дополнены элементами $ \ theta_j = $0,0, если указаны меньше $2 ^ n $.'
 syntax: 'operation MultiplexZ (coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
 references: '- Синтез каналов логики тактов Вивек V. Шенде, Стивен S. Буллокк, Игорь L. марковской https://arxiv.org/abs/quant-ph/0406176'
 input:
   content: '(coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
   types:
   - name: coefficients
-    summary: Массив до $2 ^ n $ коэффициенты $ \theta_j $. Коэффициент $j $ TH индексирует числовое состояние $ \кет{ж} $, закодированное в формате с прямым порядком байтов.
+    summary: Массив до $2 ^ n $ коэффициенты $ \ theta_j $. Коэффициент $j $ TH индексирует числовое состояние $ \кет{ж} $, закодированное в формате с прямым порядком байтов.
     isArray: true
     isPrimitive: true
     uid: Double
@@ -26,7 +26,7 @@ input:
     summary: $n $-кубит управления регистром, который кодирует числовые состояния $ \кет{ж} $ в формате с прямым порядком байтов.
     uid: microsoft.quantum.arithmetic.littleendian
   - name: target
-    summary: Один кубит регистр, повернутый $e ^ {i P \theta_j} $.
+    summary: Один кубит регистр, повернутый $e ^ {i P \ theta_j} $.
     isPrimitive: true
     uid: Qubit
 output:

@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.arrays
 name: Microsoft.Quantum.Arrays
-summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен содержит функции для создания массивов данных и управления ими."
+summary: " # <a name=\"summary\"></a>summary\n Это пространство имен содержит функции для создания массивов данных и управления ими."
 functions:
 - uid: microsoft.quantum.arrays.all
   summary: При наличии массива и предиката, определенного для элементов массива, и проверяет, удовлетворяет ли предикату все элементы массива.
