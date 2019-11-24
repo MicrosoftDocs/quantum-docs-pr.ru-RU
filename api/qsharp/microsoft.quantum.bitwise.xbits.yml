@@ -17,7 +17,7 @@ input:
 output:
   content: Int
   types:
-  - summary: Целочисленное $x $ с двоичным представлением $ (P_{62}\,P_{61}\,\дотс\,p_0) $, где $p _i = $0, если `paulis[i]` — `PauliI` или `PauliZ` и где $p _i = $1, если `paulis[i]` — `PauliX` или `PauliY`.
+  - summary: Целое $x $ с двоичным представлением $ (p_{62}\,p_{61}\,\дотс\,p_0) $, где $p _i = $0, если `paulis[i]` — `PauliI` или `PauliZ`, а $p _i = $1, `paulis[i]` или `PauliX`.`PauliY`
     isPrimitive: true
     uid: Int
 seeAlso:

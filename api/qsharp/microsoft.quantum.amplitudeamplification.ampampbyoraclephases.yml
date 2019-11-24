@@ -9,7 +9,7 @@ remarks: >-
 
   Предполагается, что целевое состояние помечено как $ \кет{1}\_f $.
 
-  Предполагается, что \бегин{алигн} А\кет{0}\_{f} \кет{0}\_s = \ламбда\кет{1}\_ф\кет {\ Text {Target}}\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс , \енд{алигн} в большинстве случаев `flagQubit` и `ancillaRegister` инициализируются в состоянии $ \кет{0}\_{f} \кет{0}\_s $.
+  Предполагается, что \бегин{алигн} А\кет{0}\_{f} \кет{0}\_s = \ламбда\кет{1}\_ф\кет {\ Text {Target}}\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс, \енд{алигн} в большинстве случаев, `flagQubit` и `ancillaRegister` инициализируются в состоянии $ \кет{0}\_{f} \кет{0}\_s $.
 syntax: 'function AmpAmpByOraclePhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
 input:
   content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int)'

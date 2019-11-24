@@ -11,7 +11,7 @@ remarks: >-
 
   Предполагается, что целевое состояние помечено как $ \кет{1}\_f $.
 
-  Предполагается, что \бегин{алигн} О\кет {\ Text {Start}}\_{FA} \кет{\пси}\_s = \ламбда\кет{1}\_ф\кет {\ Text {ничего}}\_а\кет {\ Text {Target}}\_s U \кет{\пси}\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс, \енд{алигн} для некоторых единых $U $.
+  Предполагается, что \бегин{алигн} О\кет {\ Text {Start}}\_{FA} \кет{\пси}\_s = \ламбда\кет{1}\_ф\кет {\ Text {ничего}}\_а\кет {\ Text {Target}}\_s U \кет{\пси}\_s + \sqrt{1-| \ламбда | ^ 2} \кет{0}\_ф\кдотс, \end{align} для некоторого единого $U $.
 syntax: 'function AmpAmpObliviousByOraclePhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, idxFlagQubit : Int) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
 input:
   content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, idxFlagQubit : Int)'

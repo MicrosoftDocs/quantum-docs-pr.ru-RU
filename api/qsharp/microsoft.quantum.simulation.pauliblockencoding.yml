@@ -7,8 +7,8 @@ summary: >-
   Создает единое блочное кодирование для Хамилтониан.
 
 
-  Хамилтониан $H = \sum_{j}\alpha_j P_j $ описывается суммой Паули условий $P _j $, каждый с действительным коэффициентом $ \alpha_j $.
-remarks: Это достигается путем подготовки и отменяя подготовку состояния $ \ sum_ {j} \ sqrt {\ alpha_j/\ Alpha} \ Сисакет {j} $, а также создания единой <xref:microsoft.quantum.preparation.statepreparationpositivecoefficients> и <xref:microsoft.quantum.canon.multiplexoperationsfromgenerator>с множественным контролем.
+  Хамилтониан $H = \ sum_ {j} \ alpha_j P_j $ описывается суммой Паулиных терминов $P _j $, каждый с действительным коэффициентом $ \ alpha_j $.
+remarks: Это достигается путем подготовки и отменяя подготовку состояния $ \ sum_ {j} \скрт{\ alpha_j/\алфа}\кет{ж} $, а также создания единого <xref:microsoft.quantum.preparation.statepreparationpositivecoefficients> и <xref:microsoft.quantum.canon.multiplexoperationsfromgenerator>с множественным контролем.
 syntax: 'function PauliBlockEncoding (generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem) : (Double, Microsoft.Quantum.Simulation.BlockEncodingReflection)'
 input:
   content: '(generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem)'
@@ -23,7 +23,7 @@ output:
       ## <a name="first-parameter"></a>Первый параметр
 
 
-      Один из норм коэффициентов $ \алфа = \sum_{j} | \alpha_j | $.
+      Один из норм коэффициентов $ \алфа = \ sum_ {j} | \ alpha_j | $.
 
 
       ## <a name="second-parameter"></a>Второй параметр

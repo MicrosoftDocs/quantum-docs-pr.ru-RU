@@ -7,7 +7,7 @@ summary: >-
   Кодирует интересующий оператор в `BlockEncodingReflection`.
 
 
-  Создается `BlockEncodingReflection` единая $U = П\кдот В\кдот P ^ \дагжер $, которая кодирует некоторый оператор $H = \sum_{j} | \alpha_j | U_j $, представляющая собой линейное сочетание унитариес. Как правило, $P $ — это единое средство подготовки, например $P \кет{0}\_a\sum_j\sqrt {\ alpha_j/\|\век\алфа\|\_2} \кет{ж}\_a $ и $V = \sum_{j}\ket{j}\bra{j}\_а\отимес U_ j $.
+  Создается `BlockEncodingReflection` единая $U = П\кдот В\кдот P ^ \дагжер $, которая кодирует некоторый оператор $H = \ sum_ {j} | \ alpha_j | U_j $, представляющая собой линейное сочетание унитариес. Как правило, $P $ является подготовкой состояния, таким, что $P \кет{0}\_a sum_j \скрт{\ alpha_j/\|\век\алфа\|\_2} \кет{ж}\_a $ и $V = \ sum_ {j} \кет{ж}\бра{ж}\_а\отимес U_j $.
 remarks: Эта `BlockEncoding` реализация предоставляет свойства `BlockEncodingReflection`.
 syntax: 'function BlockEncodingReflectionByLCU (statePreparation : (Qubit[] => Unit is Adj + Ctl), selector : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)) : Microsoft.Quantum.Simulation.BlockEncodingReflection'
 input:

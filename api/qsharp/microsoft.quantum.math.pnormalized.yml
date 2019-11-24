@@ -7,7 +7,7 @@ summary: >-
   Нормализует вектор `Double`s в норме `L(p)`.
 
 
-  То есть при наличии массива $x $ типа `Double[]`возвращается массив, в котором все элементы делятся на $p $-норм $\|x\|_p $.
+  То есть при наличии массива $x $ типа `Double[]`возвращается массив, в котором все элементы делятся на $p $-нормы $\|x\|_p $.
 syntax: 'function PNormalized (p : Double, array : Double[]) : Double[]'
 input:
   content: '(p : Double, array : Double[])'
