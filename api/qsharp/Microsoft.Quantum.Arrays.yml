@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.arrays
 name: Microsoft.Quantum.Arrays
-summary: " # <a name=\"summary\"></a>summary\n Это пространство имен содержит функции для создания массивов данных и управления ими."
+summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен содержит функции для создания массивов данных и управления ими."
 functions:
 - uid: microsoft.quantum.arrays.all
   summary: При наличии массива и предиката, определенного для элементов массива, и проверяет, удовлетворяет ли предикату все элементы массива.
@@ -45,8 +45,12 @@ functions:
   summary: Получение массива целых чисел в заданном интервале.
 - uid: microsoft.quantum.arrays.subarray
   summary: Принимает массив и список расположений и создает новый массив, сформированный из элементов исходного массива, которые соответствуют заданным местам.
+- uid: microsoft.quantum.arrays.swapped
+  summary: Применяет перестановку двух элементов в массиве.
 - uid: microsoft.quantum.arrays.tail
   summary: Возвращает последний элемент массива.
+- uid: microsoft.quantum.arrays.tuplearrayasnestedarray
+  summary: Включает список из двух кортежей в вложенный массив.
 - uid: microsoft.quantum.arrays.zip
   summary: При наличии двух массивов возвращает новый массив пар, в котором каждая пара содержит элемент из каждого исходного массива.
 - uid: microsoft.quantum.arrays.zip3
@@ -57,9 +61,9 @@ operations:
 - uid: microsoft.quantum.arrays.foreach
   summary: При наличии массива и операции, определенной для элементов массива, возвращает новый массив, состоящий из изображений исходного массива в операции.
 metadata:
-  ms.openlocfilehash: 7c377d5df0e32be0da75f133b08c778ec94c6a39
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 12835bef2608d979809027cb9a271f2cda864b10
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73057256"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74858876"
