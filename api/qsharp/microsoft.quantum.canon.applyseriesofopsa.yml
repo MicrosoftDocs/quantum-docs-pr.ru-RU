@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyseriesofopsa
+name: ApplySeriesOfOpsA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: Применяет список Ops и их целевых объектов последовательно в массиве. (Прилегающий)
+syntax: "operation ApplySeriesOfOpsA (listOfOps : ('T[] => Unit is Adj)[], targets : Int[][], register : 'T[]) : Unit"
+input:
+  content: "(listOfOps : ('T[] => Unit is Adj)[], targets : Int[][], register : 'T[])"
+  types:
+  - name: listOfOps
+    summary: >-
+      Список операций, каждый из которых принимает массив «t» для применения. Они применяются последовательно, сначала по нижнему индексу.
+
+      Каждый должен иметь смежный функтор
+    isArray: true
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: targets
+    summary: Вложенные массивы, описывающие целевые объекты Op. Каждый массив должен содержать список ints, описывающих индексы для использования.
+    isArray: true
+    types:
+    - isArray: true
+      isPrimitive: true
+      uid: Int
+  - name: register
+    summary: Регистр кубит, по которому будет выполняться операция.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+seeAlso:
+- microsoft.quantum.canon.applyoprepeatedlyover
+metadata:
+  ms.openlocfilehash: 0d48ff75f99ea7fd3b7c65790ef6c5d184532f82
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74866399"

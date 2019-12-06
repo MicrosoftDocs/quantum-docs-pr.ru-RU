@@ -1,0 +1,48 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.permutequbits
+name: PermuteQubits
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: Пермутес Кубитс с помощью операции переключения.
+examples: >-
+  При указании Order = [2, 1, 0] и Register $ \кет{\ alpha_0} \кет{\ alpha_1} \кет{\ alpha_2} $ Пермутекубитс изменяет регистр на $ \кет{\ alpha_2} \кет{\ alpha_1} \кет{\ alpha_0} $
+
+
+  ```qsharp
+
+  // The following two lines are equivalent
+
+  PermuteQubits([2, 1, 0], register);
+
+  SWAP(register[0], register[2]);
+
+  ```
+syntax: 'operation PermuteQubits (ordering : Int[], register : Qubit[]) : Unit'
+input:
+  content: '(ordering : Int[], register : Qubit[])'
+  types:
+  - name: ordering
+    summary: Описание нового порядка Кубитс, где кубит с индексом теперь будет в порядке [i].
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: register
+    summary: Регистр кубит, по которому будет выполняться операция.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+metadata:
+  ms.openlocfilehash: ad5b37017edfc6ba3cb2f552172da1b910227681
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74866586"
