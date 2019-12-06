@@ -1,19 +1,19 @@
 ---
 title: Участвующий код | Документация Майкрософт
-description: Участвующий код
+description: Код дополнения
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.code
-ms.openlocfilehash: cca50e6c63d4bb982aa5f0a59fc19d08ecbec508
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 3ff15a744bf15924564d5a8fee54f4fbce4c04ee
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73185908"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74864429"
 ---
-# <a name="contributing-code"></a>Участвующий код #
+# <a name="contributing-code"></a>Участие в написании кода #
 
 Помимо составления отчетов о проблемах и улучшения документации, Добавление кода в пакет разработки тактов может быть очень прямым способом помочь вашим коллегам в сообществе разработчиков тактов.
 Добавив код, вы можете помочь устранить проблемы, предоставить новые примеры, упростить использование существующих библиотек или даже добавить совершенно новые функции.
@@ -26,17 +26,18 @@ ms.locfileid: "73185908"
 Принимая участие в написании кода, он становится частью самого пакета разработки такта, поэтому новые функции будут выпущены, сохранены и разработаны так же, как и остальные компоненты пакета разработки тактов.
 Таким образом, это полезно при тщательном тестировании функциональности, добавленной в публикацию, и документированной.
 
-### <a name="unit-tests"></a>Модульные тесты ###
+### <a name="unit-tests"></a>модульные тесты ###
 
 Функции Q #, операции и определяемые пользователем типы, составляющие библиотеки, такие как Canon, автоматически тестируются как часть разработки в репозитории [**Microsoft/куантумлибрариес**](https://github.com/Microsoft/QuantumLibraries/) .
 Например, при открытии нового запроса на вытягивание [Azure pipelines](https://azure.microsoft.com/services/devops/pipelines/) конфигурация будет проверять, что изменения в запросе на вытягивание не нарушают существующие функциональные возможности, от которых зависит сообщество программирования тактов.
-Эти тесты написаны с помощью пакета [Microsoft. такт. xUnit](https://www.nuget.org/packages/Microsoft.Quantum.Xunit/) , который предоставляет функции и операции Q # в качестве тестов для платформы [xUnit](https://xunit.github.io/) .
 
-[`Standard/tests/Standard.Tests.csproj`](https://github.com/microsoft/QuantumLibraries/blob/master/Standard/tests/Standard.Tests.csproj) использует эту интеграцию xUnit для выполнения любых функций или операций, завершенных в `Test`.
-Например, следующая функция используется для того, чтобы функции <xref:microsoft.quantum.canon.fst> и <xref:microsoft.quantum.canon.snd> возвращали правильные выходные данные в репрезентативном примере.
+С последней версией Q # модульный тест определяется с помощью атрибута `@Test("QuantumSimulator")`. Аргумент может иметь значение "Куантумсимулатор", "Тоффолисимулатор", "Трацесимулатор" или любое полное имя, указывающее цель выполнения. Несколько атрибутов, определяющих различные цели выполнения, могут быть присоединены к одному и тому же вызываемому объекту. Некоторые из наших тестов по-прежнему используют устаревший пакет [Microsoft. тактов. xUnit](https://www.nuget.org/packages/Microsoft.Quantum.Xunit/) , который предоставляет все функции и операции Q #, которые заканчиваются на `Test` Framework [xUnit](https://xunit.github.io/) . Этот пакет больше не требуется для определения модульных тестов. 
+
+Следующая функция используется для того, чтобы функции <xref:microsoft.quantum.canon.fst> и <xref:microsoft.quantum.canon.snd> возвращали правильные выходные данные в репрезентативном примере.
 Если выходные данные `Fst` или `Snd` неверны, используется инструкция `fail`, которая приводит к сбою теста.
 
 ```qsharp
+@Test("QuantumSimulator")
 function PairTest () : Unit {
     let pair = (12, PauliZ);
 
@@ -56,6 +57,7 @@ function PairTest () : Unit {
 Например, следующий тест проверяет, что `H(q); X(q); H(q);`, как вызвано <xref:microsoft.quantum.canon.applywith>, выполняет то же самое, что и `Z(q)`.
 
 ```qsharp
+@Test("QuantumSimulator")
 operation WithTest () : Unit {
     let actual = ApplyWith(H, X, _);
     let expected = Z;
