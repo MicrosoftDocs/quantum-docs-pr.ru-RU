@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 90fd8ad455702ef4f962e1b3291c650eb0afea2e
-ms.sourcegitcommit: 87dd450cea5bcac76a42f0bdc224bfae712efdde
+ms.openlocfilehash: c709f1eb130d37f930ffc4acc4bd663b8b8ba24a
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74153324"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74863169"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске Microsoft Quantum Development Kit
 
@@ -20,6 +20,18 @@ ms.locfileid: "74153324"
 См. [инструкции по установке](xref:microsoft.quantum.install).
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
+
+## <a name="version-01019120501"></a>Версия 0.10.1912.0501
+
+*Дата выпуска: 5 декабря 2019 г.*
+
+Этот выпуск включает следующие обновления:
+
+- Добавлен новый атрибут Test для функции модульного тестирования Q#. Ознакомьтесь с обновленной документацией по API [здесь](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.test), а также с обновленным руководством по тестированию и отладке [здесь](xref:microsoft.quantum.techniques.testing-and-debugging).
+- Добавлена трассировка стека на случай возникновения ошибки при выполнении программы Q#.
+- В Visual Studio Code добавлена поддержка точек останова в связи с обновлением в расширении [C# (OmniSharp) для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+
+См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed) и [ката](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
 
 ## <a name="version-01019111607"></a>Версия 0.10.1911.1607
 
@@ -205,7 +217,7 @@ ms.locfileid: "74153324"
 
 - Добавлена поддержка Jupyter Notebook, что позволяет изучать Q#.  [Ознакомьтесь с новыми примерами для Jupyter Notebook и узнайте, как создавать собственные записные книжки](xref:microsoft.quantum.install). 
 
-- Добавлена арифметика целочисленного сложения в библиотеку Quantum Canon.  См. сведения в записной книжке Jupyter, где [описано применение нового блока целочисленного сложения](https://github.com/Microsoft/Quantum/blob/master/Samples/src/Arithmetic/Adder%20Example.ipynb).
+- Добавлена арифметика целочисленного сложения в библиотеку Quantum Canon.  См. сведения в записной книжке Jupyter, где [описано применение нового блока целочисленного сложения](https://github.com/microsoft/Quantum/blob/master/samples/arithmetic/AdderExample.ipynb).
 
 - Исправлена ошибка, приводящая к проблеме с DumpRegister, о которой сообщило сообщество ([#148](https://github.com/Microsoft/Quantum/issues/148)).
 
