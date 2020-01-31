@@ -1,0 +1,39 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.applyamplitudeamplification
+name: ApplyAmplitudeAmplification
+type: operation
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: Применяет усиление амплитуды к заданному регистру, используя заданный набор фаз и Oracle, чтобы отражать начальное и конечное состояния.
+syntax: 'operation ApplyAmplitudeAmplification (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, target : Qubit[]) : Unit'
+input:
+  content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, target : Qubit[])'
+  types:
+  - name: phases
+    summary: Набор этапов, описывающих частичные отражения на каждом шаге алгоритма усиления амплитуды. См. @"microsoft.quantum.amplitudeamplification.standardreflectionphases" в качестве примера.
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - name: startStateReflection
+    summary: Oracle, отражающий начальное состояние.
+    uid: microsoft.quantum.oracles.reflectionoracle
+  - name: targetStateReflection
+    summary: Значение Oracle, отражающее требуемое конечное состояние.
+    uid: microsoft.quantum.oracles.reflectionoracle
+  - name: target
+    summary: Регистр для выполнения усиления амплитуды.
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+metadata:
+  ms.openlocfilehash: 36b58c7b553c225c022e44d6c7257ab92a280807
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76872484"

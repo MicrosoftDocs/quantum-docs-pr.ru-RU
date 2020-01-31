@@ -7,11 +7,13 @@ summary: >-
   Выполняет модульное увеличение регистра кубит с помощью целочисленной константы.
 
 
-  Обратите внимание, `increment`, `modulus` на N и целое число, закодированное в `target` с помощью y. Затем операция выполняет следующее преобразование: | y ⟩ ↦ | y + a (MOD N) ⟩ целые значения кодируются в формате с прямым порядком байтов в Кфт.
+  Отметим, `increment` $a $, `modulus` $N $ и целое число в `target` $y $.
+
+  Затем операция выполняет следующее преобразование: \бегин{алигн} \кет{и} \мапсто \кет{(y + a) \операторнаме{мод} N} \енд{алигн} целые числа в Кфт кодируются в формате с прямым порядком байтов.
 remarks: >-
   Предполагает, что `target` имеет наивысший бит, равный 0.
 
-  Также предполагается, что значение целевого объекта меньше N.
+  Также предполагается, что значение целевого объекта меньше $N $.
 
 
   Схема канала и описание см. на рис. 5 на [стр. 5 из арксив: Куант-pH/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=5).
@@ -20,12 +22,15 @@ input:
   content: '(increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
   types:
   - name: increment
+    summary: Целочисленное приращение $a $, добавляемое в $y $.
     isPrimitive: true
     uid: Int
   - name: modulus
+    summary: Integer $N $, МОДС $y + a $.
     isPrimitive: true
     uid: Int
   - name: target
+    summary: Целочисленное $y $ в формате с прямым порядком байтов, закодированном с при`increment` $a $.
     uid: microsoft.quantum.arithmetic.phaselittleendian
 output:
   content: Unit
@@ -36,11 +41,11 @@ functors:
 - Adjoint
 - Controlled
 seeAlso:
-- microsoft.quantum.canon.modularincrementle
+- microsoft.quantum.arithmetic.incrementbymodularinteger
 metadata:
-  ms.openlocfilehash: 897e46cca640e714e1f000548ffd3226e8e27fa4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 69240c9ecac0917f8f2a6d1f6a3554cc93269cbd
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219031"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871419"

@@ -1,0 +1,61 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.applyobliviousamplitudeamplification
+name: ApplyObliviousAmplitudeAmplification
+type: operation
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: Усиление амплитуды очевидным путем указания частичных отражений.
+remarks: >-
+  С определенным вспомогательным состоянием запуска $ \кет{\текст{старт}}\_a $, определенное дополнительное целевое состояние $ \кет{\текст{таржет}}\_a $, а также любое состояние системы $ \кет{\пси}\_s $, предположим, что \бегин{алигн} О\кет {\ Text {Start}}\_а\кет {\ PSI}\_s = \ламбда\кет{\текст{таржет}}\_U \ket{\psi}\_s + \sqrt{1-| \lambda | ^ 2} \ket{\Text{Target} ^ \perp}\_a\cdots \end{align} для некоторых единых $U $.
+
+  По последовательности отражения о начальном и целевом состояниях вспомогательной ККМ, которая покидается приложениями `signalOracle` и его примыкающей, вероятность успешного применения U может быть изменена.
+
+
+  В большинстве случаев `auxiliaryRegister` инициализируется в состоянии $ \кет{\текст{старт}}\_a $.
+syntax: 'operation ApplyObliviousAmplitudeAmplification (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, auxiliaryRegister : Qubit[], systemRegister : Qubit[]) : Unit'
+references: >-
+  См.
+
+
+  - [ *Д.в. Берри, дочерние, r. Cleve, r. Котари, р.д. Сомма* ](https://arxiv.org/abs/1312.1414) для стандартной версии.
+    См.
+  - [ *Г.х. Low, и.л. Чжуанский* ](https://arxiv.org/abs/1610.06546) для обобщения с частичными отражениями.
+input:
+  content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, auxiliaryRegister : Qubit[], systemRegister : Qubit[])'
+  types:
+  - name: phases
+    summary: Фазы частичной отражения
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - name: startStateReflection
+    summary: Оператор Reflection о начальном состоянии дополнительного регистра
+    uid: microsoft.quantum.oracles.reflectionoracle
+  - name: targetStateReflection
+    summary: Оператор отражения о целевом состоянии дополнительного регистра
+    uid: microsoft.quantum.oracles.reflectionoracle
+  - name: signalOracle
+    summary: Единая база данных Oracle $O $ типа `ObliviousOracle`, которая взаимодействует с вспомогательными и системными регистрами.
+    uid: microsoft.quantum.oracles.obliviousoracle
+  - name: auxiliaryRegister
+    summary: Дополнительный регистр
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: systemRegister
+    summary: Системный регистр
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+metadata:
+  ms.openlocfilehash: 3ed252d38ebe32900a7ac22079f46eaf04f2018d
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76872552"
