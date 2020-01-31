@@ -1,17 +1,17 @@
 ---
 title: 'Q # тип модель | Документация Майкрософт'
-description: 'Модель типа Q #'
+description: Модель типов Q#
 author: QuantumWriter
 uid: microsoft.quantum.language.type-model
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 4e251053d1b8306bf8956314d8099e95c56bce55
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 0aabb144779da301b71ad215c8e975cc29b4dcce
+ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "73184752"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76871640"
 ---
 # <a name="the-type-model"></a>Модель типа
 
@@ -120,7 +120,7 @@ Q # не предоставляет механизм для изменения �
 
 Файл Q # может определять новый именованный тип, содержащий одно значение любого допустимого типа.
 Для любого типа кортежа `T`можно объявить новый определяемый пользователем тип, который является подтипом `T` с помощью инструкции `newtype`.
-Например, в пространстве имен @"microsoft.quantum.canon" комплексные числа определяются как определяемые пользователем типы данных.
+Например, в пространстве имен @"microsoft.quantum.math" комплексные числа определяются как определяемые пользователем типы данных.
 
 ```qsharp
 newtype Complex = (Double, Double);
@@ -141,7 +141,7 @@ newtype Nested = (Double, (ItemName : Int, String));
 Именованные элементы имеют преимущество, доступ к которому можно получить напрямую с помощью оператора доступа `::`. 
 
 ```qsharp
-function Addition (c1 : Complex, c2 : Complex) : Complex {
+function ComplexAddition(c1 : Complex, c2 : Complex) : Complex {
     return Complex(c1::Re + c2::Re, c1::Im + c2::Im);
 }
 ```
@@ -151,7 +151,7 @@ function Addition (c1 : Complex, c2 : Complex) : Complex {
 Тип такого выражения "Unwrap" является базовым типом определяемого пользователем типа. 
 
 ```qsharp
-function PrintMsg (value : Nested) : Unit {
+function PrintedMessage(value : Nested) : Unit {
     let (d, (_, str)) = value!;
     Message ($"{str}, value: {d}");
 }
@@ -227,7 +227,7 @@ newtype Polar = (Radius : Double, Phase : Double);
 ## <a name="operation-and-function-types"></a>Типы операций и функций
 
 _Операция_ Q # — это подпрограмма-такт.
-То есть это вызываемая подпрограммы, которая содержит операции с тактовыми тактами.
+Такая вызываемая подпрограмма содержит квантовые операции.
 
 _Функция_ Q # — это классическая подпрограмма, используемая в алгоритме такта.
 Он может содержать классический код, но не операции с тактовыми тактами.
@@ -286,27 +286,28 @@ Q # является контравариантным по отношению к
 Это происходит при наличии следующих определений:
 
 ```qsharp
-operation Invertible (qs : Qubit[]) : Unit 
+operation Invert(qubits : Qubit[]) : Unit 
 is Adj {...} 
-operation Unitary (qs : Qubit[]) : Unit 
+
+operation ApplyUnitary(qubits : Qubit[]) : Unit 
 is Adj + Ctl {...} 
 
-function ConjugateInvertibleWith (
-   inner: (Qubit[] => Unit is Adj),
-   outer : (Qubit[] => Unit is Adj))
+function ConjugateInvertWith(
+    inner : (Qubit[] => Unit is Adj),
+    outer : (Qubit[] => Unit is Adj))
 : (Qubit[] => Unit is Adj) {...}
 
-function ConjugateUnitaryWith (
-   inner: (Qubit[] => Unit is Adj + Ctl),
-   outer : (Qubit[] => Unit is Adj))
+function ConjugateUnitaryWith(
+    inner : (Qubit[] => Unit is Adj + Ctl),
+    outer : (Qubit[] => Unit is Adj))
 : (Qubit[] => Unit is Adj + Ctl) {...}
 ```
 
 выполняются следующие условия.
 
-- `ConjugateInvertibleWith` операции можно вызвать с аргументом `inner` либо `Invertible`, либо `Unitary`.
-- `ConjugateUnitaryWith` операции можно вызвать с `inner` аргументом `Unitary`, но не `Invertible`.
-- Значение типа `(Qubit[] => Unit is Adj + Ctl)` может быть возвращено из `ConjugateInvertibleWith`.
+- Функцию `ConjugateInvertWith` можно вызвать с аргументом `inner` либо `Invert`, либо `ApplyUnitary`.
+- Функция `ConjugateUnitaryWith` может быть вызвана с `inner` аргументом `ApplyUnitary`, но не `Invert`.
+- Значение типа `(Qubit[] => Unit is Adj + Ctl)` может быть возвращено из `ConjugateInvertWith`.
 
 > [!IMPORTANT]
 > В параметре Q # 0,3 появилась существенная разница в работе определяемых пользователем типов.
@@ -377,14 +378,12 @@ function ConjugateUnitaryWith (
 ```qsharp
 /// # Summary
 /// Prepares a state and measures it in the Pauli-Z basis.
-operation MeasureOneQubit () : Result {
+operation MeasureOneQubit() : Result {
         mutable result = Zero;
 
         using (qubit = Qubit()) { // Allocate a qubit
             H(qubit);               // Use a quantum operation on that qubit
-
             set result = M(qubit);      // Measure the qubit
-
             if (result == One) {    // Reset the qubit so that it can be released
                 X(qubit);
             }
@@ -396,12 +395,11 @@ operation MeasureOneQubit () : Result {
 
 Этот пример функции взят из примера [фасистиматион](https://github.com/microsoft/Quantum/tree/master/samples/characterization/phase-estimation) . Он содержит чисто классический код. Вы видите, что, в отличие от приведенного выше примера, Кубитс не выделяется, а операции с тактами не используются.
 
-
 ```qsharp
 /// # Summary
 /// Given two arrays, returns a new array that is the pointwise product
 /// of each of the given arrays.
-function MultiplyPointwise (left : Double[], right : Double[]) : Double[] {
+function PointwiseProduct(left : Double[], right : Double[]) : Double[] {
     mutable product = new Double[Length(left)];
 
     for (idxElement in IndexRange(left)) {
@@ -417,7 +415,10 @@ function MultiplyPointwise (left : Double[], right : Double[]) : Double[] {
 /// # Summary
 /// Translate MCT masks into multiple-controlled Toffoli gates (with single
 /// targets).
-function GateMasksToToffoliGates (qubits : Qubit[], masks : MCMTMask[]) : MCTGate[] {
+function GateMasksToToffoliGates(
+    qubits : Qubit[], 
+    masks : MCMTMask[]) 
+: MCTGate[] {
 
     mutable result = new MCTGate[0];
     let n = Length(qubits);

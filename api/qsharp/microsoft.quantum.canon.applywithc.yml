@@ -3,7 +3,11 @@ uid: microsoft.quantum.canon.applywithc
 name: ApplyWithC
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: При выполнении двух операций, которые соответственно описаны в единых операторах $U $ и $V $, применяет их в последовательности $U ^ {\дагжер} V U $. Это значит, что эта операция реализует оператор, заданный $V $ сопряженный с $U $.
+summary: >-
+  При выполнении двух операций применяется одна, как сопряженная с другой.
+
+
+  При выполнении двух операций, которые соответственно описаны в единых операторах $U $ и $V $, применяет их в последовательности $U ^ {\дагжер} V U $. Это значит, что эта операция реализует оператор, заданный $V $ сопряженный с $U $.
 remarks: Во внешней операции всегда предполагается, что это аджоинтабле, но не обязательно быть управляемым, чтобы Объединенная операция была управляемой.
 syntax: "operation ApplyWithC (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Ctl), target : 'T) : Unit"
 input:
@@ -54,9 +58,9 @@ seeAlso:
 - applywitha
 - applywithca
 metadata:
-  ms.openlocfilehash: 583ac4b57df9f2585308dea549bc3730fac7bdae
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c8ef86ff567e612fa9a49b981435e800a4b80ffb
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73212792"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871317"

@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.simulation
 name: Microsoft.Quantum.Simulation
-summary: " # <a name=\"summary\"></a>summary\n Это пространство имен содержит функции и операции для согласованной имитации Dynamics тактовых систем."
+summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен содержит функции и операции для согласованной имитации Dynamics тактовых систем."
 functions:
 - uid: microsoft.quantum.simulation.addgeneratorsystems
   summary: Добавляет два `GeneratorSystem`s для создания нового `GeneratorSystem`.
@@ -62,11 +62,7 @@ functions:
 - uid: microsoft.quantum.simulation.paulistringfromgenidx
   summary: Извлекает строку Паули и ее индексы кубит для термина Паули, описываемого `GeneratorIndex`.
 - uid: microsoft.quantum.simulation.quantumwalkbyqubitization
-  summary: >-
-    Преобразует `BlockEncodingReflection` в проход такта.
-
-
-    То есть, учитывая `BlockEncodingReflection` единая $U $, которая кодирует некоторый оператор $H $ of, преобразует его в проход такта $W $, содержащий спектр $ \пм e ^ {\пм и\син ^{-1}(H)} $.
+  summary: Преобразует отражение кодирования блока в проход такта.
 - uid: microsoft.quantum.simulation.sumgeneratorsystems
   summary: Добавляет несколько `GeneratorSystem`s для создания нового Женераторсистем.
 - uid: microsoft.quantum.simulation.timedependenttrottersimulationalgorithm
@@ -162,9 +158,9 @@ newtypes:
 - uid: microsoft.quantum.simulation.unitary
   summary: Представляет развитие по единому оператору.
 metadata:
-  ms.openlocfilehash: 05db213d04304a635e4e86e0f6c40f15bb81441a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 967c27e6c5c8f475e54f7e9d4f3a14594fb04cc5
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215886"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76869833"

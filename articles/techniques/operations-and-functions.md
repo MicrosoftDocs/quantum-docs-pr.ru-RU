@@ -1,17 +1,17 @@
 ---
-title: 'Методы Q # — операции и функции | Документация Майкрософт'
-description: 'Методы Q # — операции и функции'
+title: 'Операции и функции — методы Q # | Документация Майкрософт'
+description: 'Операции и функции — методы Q #'
 uid: microsoft.quantum.techniques.opsandfunctions
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 06da09dc9c6e0ba0331db6bc0cd3d2ddeb287113
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 1fca20bb44cc42008f7d25d2fc71a39b962525c2
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183460"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820782"
 ---
 # <a name="q-operations-and-functions"></a>Q # операции и функции
 
@@ -66,7 +66,7 @@ operation Superdense(here : Qubit, there : Qubit) : (Result, Result) {
 Существование этих специализаций можно объявить как часть сигнатуры операции: `is Adj + Ctl` в следующем примере. Затем соответствующая реализация для каждой такой неявно объявленной специализации создается компилятором. 
 
 ```qsharp
-operation PrepareEntangledPair(here : Qubit, there : Qubit) : Unit {
+operation PrepareEntangledPair(here : Qubit, there : Qubit) : Unit
 is Adj + Ctl { // implies the existence of an adjoint, a controlled, and a controlled adjoint specialization
     H(here);
     CNOT(here, there);
@@ -111,7 +111,7 @@ is Ctl + Adj {
     controlled adjoint invert; 
 }
 ```
-В приведенном выше примере `adjoint invert;` указывает, что примыкающая специализация должна быть создана путем инвертирования реализации тела, а `controlled adjoint invert;` указывает, что управляемая примыкающая специализация должна быть создана путем инвертирования данной реализации элемента управления контролируемая специализация.
+В приведенном выше примере `adjoint invert;` указывает, что примыкающая специализация должна быть создана путем инвертирования реализации тела, а `controlled adjoint invert;` указывает, что управляемая примыкающая специализация должна быть создана путем инвертирования заданной реализации управляемой специализации.
 
 В [потоке управления более высокого порядка](xref:microsoft.quantum.concepts.control-flow)будут рассмотрены дополнительные примеры.
 
@@ -163,7 +163,7 @@ operation U(target : Qubit) : Unit {
 
 Каждый раз, когда вызывается `U`, он будет иметь другое действие в `target`.
 В частности, компилятор не может гарантировать, что если мы добавили объявление специализации `adjoint auto` для `U`, `U(target); Adjoint U(target);` будет выступать в качестве удостоверения (т. е. без операции).
-Это нарушает определение примыкающего, которое мы видели в [векторах и матрицах](xref:microsoft.quantum.concepts.vectors), что позволяет автоматически формировать смежную специализацию в операции, в которой мы вызвали операцию <xref:microsoft.quantum.math.randomreal> нарушают гарантии, предоставляемые компилятором. ; <xref:microsoft.quantum.math.randomreal> — это операция, для которой не существует ни одной примыкающей или контролируемой версии.
+Это нарушает определение примыкающего, которое мы видели в [векторах и матрицах](xref:microsoft.quantum.concepts.vectors), что позволяет автоматически формировать смежную специализацию в операции, в которой мы вызвали операцию <xref:microsoft.quantum.math.randomreal> нарушают гарантии, предоставляемые компилятором. <xref:microsoft.quantum.math.randomreal> — это операция, для которой не существует ни одной примыкающей или контролируемой версии.
 
 С другой стороны, разрешение вызовов функций, таких как `Square`, является надежным, в том, что компилятор может быть уверенным в том, что необходимо сохранить входные данные для `Square`, чтобы обеспечить стабильную работу.
 Таким образом, изоляция максимально возможной логики функций позволяет легко повторно использовать эту логику в других функциях и операциях.

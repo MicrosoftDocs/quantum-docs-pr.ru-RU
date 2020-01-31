@@ -6,12 +6,12 @@ ms.author: anpaz@microsoft.com
 ms.date: 1/22/2019
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: 591e306b3001934bd81342a533e3f6ca25129781
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 960fda3dade7648f9cd24496c3a49fd11d6f807a
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73184990"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820867"
 ---
 # <a name="the-resourcesestimator-target-machine"></a>Целевой компьютер Ресаурцесестиматор
 
@@ -97,7 +97,7 @@ namespace Quantum.MyProgram
 * __Кубитклиффорд__: количество всех выполненных шлюзов кубит Клиффорд и Паули.
 * __Мера__: количество всех выполненных измерений.
 * __R__: количество всех выполненных поворотов кубит, исключая T, Клиффорд и Паули Gates.
-* __T__: количество t шлюзов и их сопряженных объектов, включая t Gate, T_x = H. t. H и T_y = Хи. t. Хи, выполняется.
+* __T__: число t шлюзов и их сопряжений, включая t gate, T_x = H. t. H, и T_y = Хи. t. Хи, выполняется.
 * __Depth__: глубина тактовой цепи, выполненной операцией Q #. По умолчанию в глубину учитываются только T шлюзов, дополнительные сведения см. в разделе [счетчик глубины](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter) .
 * __Width__: максимальное число Кубитс, выделенных во время выполнения операции Q #.
 * __Борроведвидс__: максимальное число Кубитс, заимствованных в операции Q #.
@@ -105,32 +105,32 @@ namespace Quantum.MyProgram
 
 ## <a name="providing-the-probability-of-measurement-outcomes"></a>Предоставление вероятности результатов измерения
 
-<xref:microsoft.quantum.primitive.assertprob> из пространства имен <xref:microsoft.quantum.primitive> можно использовать, чтобы предоставить сведения о ожидаемой вероятности измерения, чтобы обеспечить выполнение программы Q #. Проиллюстрируем это на примере.
+<xref:microsoft.quantum.intrinsic.assertprob> из пространства имен <xref:microsoft.quantum.intrinsic> можно использовать, чтобы предоставить сведения о ожидаемой вероятности измерения, чтобы обеспечить выполнение программы Q #. Проиллюстрируем это на примере.
 
 ```qsharp
-operation Teleportation (source : Qubit, target : Qubit) : Unit {
+operation Teleport(source : Qubit, target : Qubit) : Unit {
 
-    using (ancilla = Qubit()) {
+    using (qubit = Qubit()) {
 
-        H(ancilla);
-        CNOT(ancilla, target);
+        H(q);
+        CNOT(qubit, target);
 
-        CNOT(source, ancilla);
+        CNOT(source, qubit);
         H(source);
 
         AssertProb([PauliZ], [source], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
-        AssertProb([PauliZ], [ancilla], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
+        AssertProb([PauliZ], [qubit], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
 
         if (M(source) == One)  { Z(target); X(source); }
-        if (M(ancilla) == One) { X(target); X(ancilla); }
+        if (M(qubit) == One) { X(target); X(qubit); }
     }
 }
 ```
 
-Когда `ResourcesEstimator` встречает `AssertProb` он записывает `PauliZ` измерения в `source` и `ancilla` должен получить результат `Zero` с вероятностью 0,5. Когда она выполняется `M` позже, она найдет записанные значения вероятностей результата и `M` возвратит `Zero` или `One` с вероятностью 0,5.
+Когда `ResourcesEstimator` встречает `AssertProb` он записывает `PauliZ` измерения в `source` и `q` должен получить результат `Zero` с вероятностью 0,5. Когда она выполняется `M` позже, она найдет записанные значения вероятностей результата и `M` возвратит `Zero` или `One` с вероятностью 0,5.
 
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 
 `ResourcesEstimator` построены на основе [симулятора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro)компьютерных компьютеров, который предоставляет более широкий набор метрик, возможность сообщать метрики на полном графе вызовов и такие функции, как [средство проверки различных входных данных](xref:microsoft.quantum.machines.qc-trace-simulator.distinct-inputs) , для поиска ошибок в программах Q #. Дополнительные сведения см. в документации по [симулятору трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro) .
 
