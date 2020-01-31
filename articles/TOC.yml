@@ -22,14 +22,22 @@
   items:
     - name: Квантовый генератор случайных чисел
       href: quickstarts/qrng.md
-    - name: 'Основы квантового программирования с помощью Q#'
+    - name: 'Основы квантового программирования на Q#'
       href: quickstart.md
     - name: Реализация поиска по алгоритму Гровера
       href: quickstarts/search.md
-- name: Руководства
+- name: Практические руководства
   items:
     - name: Установка Quantum Development Kit
-      href: install-guide/index.md
+      items:
+        - name: Обзор установки
+          href: install-guide/index.md
+        - name: 'Q# +C#'
+          href: install-guide/csinstall.md
+        - name: 'Q# + Python'
+          href: install-guide/pyinstall.md
+        - name: 'Q# + Записные книжки Jupyter'
+          href: install-guide/qjupyter.md
     - name: Обновление Quantum Development Kit
       href: install-guide/update.md
     - name: 'Создание проекта Q#'
