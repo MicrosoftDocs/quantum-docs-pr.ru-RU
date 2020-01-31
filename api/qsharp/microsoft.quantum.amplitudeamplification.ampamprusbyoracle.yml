@@ -3,17 +3,14 @@ uid: microsoft.quantum.amplitudeamplification.ampamprusbyoracle
 name: AmpAmpRUSByOracle
 type: operation
 namespace: Microsoft.Quantum.AmplitudeAmplification
-summary: Алгоритм усиления амплитуды с фиксированной точкой
-remarks: Старткубитс должен находиться в состоянии $ \ket{0 \кдотс 0} $. Эта операция выполняет перебор нескольких запросов в степени $2 $ до тех пор, пока не будет достигнуто максимальное число запросов или не будет найдено целевое состояние.
+summary: Ампампрусбйоракле является устаревшим. Вместо нее используйте @"microsoft.quantum.amplitudeamplification.applyfixedpointamplification".
 syntax: 'operation AmpAmpRUSByOracle (statePrepOracle : Microsoft.Quantum.Oracles.StateOracle, startQubits : Qubit[]) : Unit'
 input:
   content: '(statePrepOracle : Microsoft.Quantum.Oracles.StateOracle, startQubits : Qubit[])'
   types:
   - name: statePrepOracle
-    summary: Единая база данных Oracle, подготавливающая начальное состояние.
     uid: microsoft.quantum.oracles.stateoracle
   - name: startQubits
-    summary: Кубит регистр
     isArray: true
     isPrimitive: true
     uid: Qubit
@@ -23,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: a652d0fc94986552946a438a21bf9bfcba193eea
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a8b3c884b0d42a2c7d45cf42d4077cef486f7815
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215580"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870841"

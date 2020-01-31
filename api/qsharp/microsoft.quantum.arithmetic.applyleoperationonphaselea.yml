@@ -1,13 +1,13 @@
 ### YamlMime:QSharpType
-uid: microsoft.quantum.arithmetic.applyleoperationonphaseleca
-name: ApplyLEOperationOnPhaseLECA
+uid: microsoft.quantum.arithmetic.applyleoperationonphaselea
+name: ApplyLEOperationOnPhaseLEA
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
 summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.phaselittleendian> зарегистрировать в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.littleendian>.
 remarks: Регистр преобразуется в `LittleEndian` с помощью <xref:microsoft.quantum.canon.qftle> и возвращается в исходное представление после `op`приложения.
-syntax: 'operation ApplyLEOperationOnPhaseLECA (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj + Ctl), target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
+syntax: 'operation ApplyLEOperationOnPhaseLEA (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj), target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
 input:
-  content: '(op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj + Ctl), target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
+  content: '(op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj), target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
   types:
   - name: op
     summary: Операция, которая будет применена.
@@ -21,7 +21,6 @@ input:
         uid: Unit
     functors:
     - Adjoint
-    - Controlled
   - name: target
     summary: Регистр, к которому применяется операция.
     uid: microsoft.quantum.arithmetic.phaselittleendian
@@ -32,15 +31,14 @@ output:
     uid: Unit
 functors:
 - Adjoint
-- Controlled
 seeAlso:
 - microsoft.quantum.canon.applyleoperationonphasele
-- microsoft.quantum.canon.applyleoperationonphaselea
 - microsoft.quantum.canon.applyleoperationonphaselec
+- microsoft.quantum.canon.applyleoperationonphaseleca
 metadata:
-  ms.openlocfilehash: 199458274bd1238211058e7ed993a9d497af9d80
+  ms.openlocfilehash: b6cfbdba8837f3c4f253234a20d246816c2d8bd8
   ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: ru-RU
   ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871147"
+  ms.locfileid: "76871113"
