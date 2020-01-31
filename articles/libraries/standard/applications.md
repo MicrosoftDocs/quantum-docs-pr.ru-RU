@@ -6,14 +6,14 @@ uid: microsoft.quantum.libraries.applications
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: ef22460a5bca63ebaf32c0ba21984e103ec8ebdd
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 3e629e095bd2ee492496066710ef6fd4e578a543
+ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74864395"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76868974"
 ---
-# <a name="applications"></a>приложениям #
+# <a name="applications"></a>Приложения #
 
 ## <a name="hamiltonian-simulation"></a>Гамильтоново моделирование ##
 
@@ -69,15 +69,16 @@ newtype TimeDependentSimulationAlgorithm = ((Double, EvolutionSchedule, Qubit[])
 
 ```qsharp
 function TrotterSimulationAlgorithm(
-    trotterStepSize: Double, 
-    trotterOrder: Int) 
-    : SimulationAlgorithm {
+    trotterStepSize : Double, 
+    trotterOrder : Int) 
+: SimulationAlgorithm {
     ...
 }
+
 function TimeDependentTrotterSimulationAlgorithm(
-    trotterStepSize: Double, 
-    trotterOrder: Int) 
-    : TimeDependentSimulationAlgorithm {
+    trotterStepSize : Double, 
+    trotterOrder : Int) 
+: TimeDependentSimulationAlgorithm {
     ...
 }
 ```
@@ -99,11 +100,11 @@ function TimeDependentTrotterSimulationAlgorithm(
 
 ```qsharp
 function InterpolatedEvolution(
-        interpolationTime: Double, 
-        evolutionGeneratorStart: EvolutionGenerator,
-        evolutionGeneratorEnd: EvolutionGenerator,
-        timeDependentSimulationAlgorithm: TimeDependentSimulationAlgorithm)
-        : (Qubit[] => Unit is Adj + Ctl) {
+        interpolationTime : Double, 
+        evolutionGeneratorStart : EvolutionGenerator,
+        evolutionGeneratorEnd : EvolutionGenerator,
+        timeDependentSimulationAlgorithm : TimeDependentSimulationAlgorithm)
+: (Qubit[] => Unit is Adj + Ctl) {
         ...
 }
  
@@ -114,13 +115,13 @@ function InterpolatedEvolution(
 Мы также определим полезную операцию, которая автоматически выполняет все шаги типичного химияного эксперимента. Например, у нас есть следующий пример, который возвращает оценку энергии для состояния, полученного при подготовке адиабатик State.
 
 ```qsharp
-operation AdiabaticStateEnergyEstimate( 
-    nQubits : Int, 
-    statePrepUnitary: (Qubit[] => Unit),
-    adiabaticUnitary: (Qubit[] => Unit),
+operation EstimateAdiabaticStateEnergy(
+    nQubits : Int,
+    statePrepUnitary : (Qubit[] => Unit),
+    adiabaticUnitary : (Qubit[] => Unit),
     qpeUnitary: (Qubit[] => Unit is Adj + Ctl),
-    phaseEstAlgorithm : ((DiscreteOracle, Qubit[]) => Double)) 
-    : Double {
+    phaseEstAlgorithm : ((DiscreteOracle, Qubit[]) => Double))
+: Double {
 ...
 }
 ```
@@ -174,7 +175,7 @@ operation AdiabaticStateEnergyEstimate(
 Чтобы достичь $ (a ^ NX) \текст{mod} N $, мы можем просто применить контролируемый $U _ {a ^ N} $, где мы вычисляем $a ^ n \текст{mod} N $ Classic, чтобы подключаться к тактовой цепи.  
 Цепи для достижения такой модульной арифметической операции были описаны в [документации по арифметическим](./algorithms.md#arithmetic)операциям, в частности, нам требуется модульное возведение в степень для реализации управляемого $U\_{a ^ i} $ операций.
 
-Хотя Вышеприведенная цепь соответствует [оценке этапа такта](xref:microsoft.quantum.characterization.quantumphaseestimation) и явно включает поиск заказов, мы можем сократить количество Кубитс. Мы можем использовать метод Беаурегард для поиска заказов, как описано [на стр. 8 из арксив: Куант-pH/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8), или воспользоваться одной из подпрограмм оценки этапа, доступных в Microsoft. тактов. Canon. Например, в ходе [надежной оценки этапа](xref:microsoft.quantum.characterization.robustphaseestimation) также используется один дополнительный кубит.
+Хотя Вышеприведенная цепь соответствует [оценке этапа такта](xref:microsoft.quantum.characterization.quantumphaseestimation) и явно включает поиск заказов, мы можем сократить количество Кубитс. Мы можем проследить за методом Беаурегард для поиска, как описано [на стр. 8 из арксив: Куант-pH/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8), или использовать одну из подпрограмм оценки этапа, доступных в Microsoft. тактов. charactering. Например, в ходе [надежной оценки этапа](xref:microsoft.quantum.characterization.robustphaseestimation) также используется один дополнительный кубит.
  
 ### <a name="factoring"></a>Учитывая ###
 Целью факторинга является определение двух простых факторов целочисленного $N $, где $N $ является $n $-битным числом.  

@@ -1,0 +1,50 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyand
+name: ApplyAnd
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  Инвертирует заданный целевой объект кубит только в том случае, если оба элемента управления Кубитс находятся в состоянии 1, с помощью измерения для выполнения примыкающей операции.
+
+
+  Инвертирует `target` только в том случае, если оба элемента управления равны 1, но предполагает, что `target` находится в состоянии 0.  Операция имеет T-Count 4, T-Depth 2 и не требует вспомогательных кубит и, следовательно, может быть предпочтительнее операции ККНОТ, если `target` известно как 0.  Смежная операция основана на измерении и не требует T-шлюзов.
+
+
+  Для контролируемого приложения этой операции не требуется вспомогательный кубит, `2^c` `Rz` шлюзов и он не оптимизирован для глубины, где `c` — это число общих Кубитс элементов управления, включая два элемента управления из операции `ApplyAnd`.  Для этого приложения требуется `2^c - 1` `Rz` шлюзов (в два раза больше размера несмежной операции), не кубит вспомогательного метода и не оптимизирована для глубины.
+syntax: 'operation ApplyAnd (control1 : Qubit, control2 : Qubit, target : Qubit) : Unit'
+references: >-
+  - Коди Jones: "романские конструкции для отказоустойчивого Тоффоли шлюза", инвентаризационная. Rev. A 87, 022328, 2013 [арксив: 1212.5069](https://arxiv.org/abs/1212.5069) ДОИ: 10.1103/фисрева. 87.022328
+
+  - Крейг Гиднэй: "сократить затраты на сложение тактов", такт 2, страница 74, 2018 [арксив: 1709.06648](https://arxiv.org/abs/1709.06648) ДОИ: 10.1103/фисрева. 85.044302
+
+  - Матиас Соекен: "цепи Oracle-цепей и шаблон дерева Рождества", [статья блога из децемер 19, 2019](https://msoeken.github.io/blog_qac.html) (Примечание: объясняется многоуправляемая конструкция)
+input:
+  content: '(control1 : Qubit, control2 : Qubit, target : Qubit)'
+  types:
+  - name: control1
+    summary: Первый элемент управления кубит
+    isPrimitive: true
+    uid: Qubit
+  - name: control2
+    summary: Второй элемент управления кубит
+    isPrimitive: true
+    uid: Qubit
+  - name: target
+    summary: Целевой ауксиллари кубит; должно находиться в состоянии 0
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+metadata:
+  ms.openlocfilehash: 7cde3dbbd33ff482609bbaaccb15e4c7b1bc536e
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76872994"

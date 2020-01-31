@@ -3,25 +3,22 @@ uid: microsoft.quantum.amplitudeamplification.ampampphasesstandard
 name: AmpAmpPhasesStandard
 type: function
 namespace: Microsoft.Quantum.AmplitudeAmplification
-summary: Вычисление этапов частичного отражения для стандартного усиления амплитуды.
-remarks: Все фазы являются $ \пи $, за исключением первого отражения о начальном состоянии и последнего отражения состояния целевого объекта, которое равно $0 $.
+summary: Ампампфасесстандард является устаревшим. Вместо нее используйте @"microsoft.quantum.amplitudeamplification.standardreflectionphases".
 syntax: 'function AmpAmpPhasesStandard (nIterations : Int) : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases'
 input:
   content: '(nIterations : Int)'
   types:
   - name: nIterations
-    summary: Число итераций усиления амплитуды для создания фаз частичного отражения для.
     isPrimitive: true
     uid: Int
 output:
   content: Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases
   types:
-  - summary: Операция, реализующая этапы, указанные как частичные отражения
-    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - uid: microsoft.quantum.amplitudeamplification.reflectionphases
 metadata:
-  ms.openlocfilehash: eeea673baba07c1d36ba15e4dc16268938655f86
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 33e87abf856736960bf445934d2124a7493ccf30
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215682"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76869140"

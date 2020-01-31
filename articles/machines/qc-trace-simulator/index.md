@@ -6,12 +6,12 @@ ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.intro
-ms.openlocfilehash: 7fd9d1fa4fb3c5dd216d846038abd40454ece2e8
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 929745a6da6034599e97d2f573190308fde6eb75
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73035135"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820442"
 ---
 # <a name="quantum-trace-simulator"></a>Квантовый симулятор трассировки
 
@@ -24,29 +24,26 @@ ms.locfileid: "73035135"
 
 ## <a name="providing-the-probability-of-measurement-outcomes"></a>Предоставление вероятности результатов измерения
 
-Существует два типа измерений, которые отображаются в квантовых алгоритмах. Первый тип играет вспомогательную роль, где пользователь обычно знает вероятность результатов. В этом случае пользователь может записывать <xref:microsoft.quantum.primitive.assertprob> из пространства имен <xref:microsoft.quantum.primitive>, чтобы выразить этот набор знаний. Проиллюстрируем это на примере.
+Существует два типа измерений, которые отображаются в квантовых алгоритмах. Первый тип играет вспомогательную роль, где пользователь обычно знает вероятность результатов. В этом случае пользователь может записывать <xref:microsoft.quantum.intrinsic.assertprob> из пространства имен <xref:microsoft.quantum.intrinsic>, чтобы выразить этот набор знаний. Проиллюстрируем это на примере.
 
 ```qsharp
-operation Teleportation (source : Qubit, target : Qubit) : Unit {
-
-    using (ancilla = Qubit()) {
-
-        H(ancilla);
-        CNOT(ancilla, target);
-
-        CNOT(source, ancilla);
+operation TeleportQubit(source : Qubit, target : Qubit) : Unit {
+    using (qubit = Qubit()) {
+        H(qubit);
+        CNOT(qubit, target);
+        CNOT(source, qubit);
         H(source);
 
         AssertProb([PauliZ], [source], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
-        AssertProb([PauliZ], [ancilla], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
+        AssertProb([PauliZ], [q], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
 
         if (M(source) == One)  { Z(target); X(source); }
-        if (M(ancilla) == One) { X(target); X(ancilla); }
+        if (M(q) == One) { X(target); X(q); }
     }
 }
 ```
 
-При выполнении `AssertProb` симулятором трассировки он записывает измерения `PauliZ` в `source` и `ancilla` должен получить результат `Zero` с вероятностью 0,5. Когда симулятор выполняет `M` позже, он найдет записанные значения вероятностей результата и `M` возвратит `Zero` или `One` с вероятностью 0,5. Если один и тот же код выполняется в симуляторе, который отслеживает квантовое состояние, такой симулятор проверяет правильность предоставленных вероятностей в `AssertProb`.
+При выполнении `AssertProb` симулятором трассировки он записывает измерения `PauliZ` в `source` и `q` должен получить результат `Zero` с вероятностью 0,5. Когда симулятор выполняет `M` позже, он найдет записанные значения вероятностей результата и `M` возвратит `Zero` или `One` с вероятностью 0,5. Если один и тот же код выполняется в симуляторе, который отслеживает квантовое состояние, такой симулятор проверяет правильность предоставленных вероятностей в `AssertProb`.
 
 ## <a name="running-your-program-with-the-quantum-computer-trace-simulator"></a>Запуск программы с симулятором трассировки квантового компьютера 
 
@@ -84,6 +81,6 @@ namespace Quantum.MyProgram
 
 Каждый из этих компонентов можно включить, установив соответствующие флажки в `QCTraceSimulatorConfiguration`. Дополнительные сведения об использовании каждого из этих компонентов приведены в соответствующих справочных файлах. Конкретные сведения см. в документации API [QCTraceSimulatorConfiguration](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration) (Настройка симулятора трассировки QC).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 Справочник по C# [симулятора трассировки](xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator) квантового компьютера 
 

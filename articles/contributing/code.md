@@ -1,17 +1,17 @@
 ---
 title: Участвующий код | Документация Майкрософт
-description: Код дополнения
+description: Участвующий код
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.code
-ms.openlocfilehash: 3ff15a744bf15924564d5a8fee54f4fbce4c04ee
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: f9e0f0d9540102331aea64a1245cbaa4833e1e02
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74864429"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819966"
 ---
 # <a name="contributing-code"></a>Участие в написании кода #
 
@@ -26,7 +26,7 @@ ms.locfileid: "74864429"
 Принимая участие в написании кода, он становится частью самого пакета разработки такта, поэтому новые функции будут выпущены, сохранены и разработаны так же, как и остальные компоненты пакета разработки тактов.
 Таким образом, это полезно при тщательном тестировании функциональности, добавленной в публикацию, и документированной.
 
-### <a name="unit-tests"></a>модульные тесты ###
+### <a name="unit-tests"></a>Модульные тесты ###
 
 Функции Q #, операции и определяемые пользователем типы, составляющие библиотеки, такие как Canon, автоматически тестируются как часть разработки в репозитории [**Microsoft/куантумлибрариес**](https://github.com/Microsoft/QuantumLibraries/) .
 Например, при открытии нового запроса на вытягивание [Azure pipelines](https://azure.microsoft.com/services/devops/pipelines/) конфигурация будет проверять, что изменения в запросе на вытягивание не нарушают существующие функциональные возможности, от которых зависит сообщество программирования тактов.
@@ -58,7 +58,7 @@ function PairTest () : Unit {
 
 ```qsharp
 @Test("QuantumSimulator")
-operation WithTest () : Unit {
+operation TestApplyWith() : Unit {
     let actual = ApplyWith(H, X, _);
     let expected = Z;
     AssertOperationsEqualReferenced(ApplyToEach(actual, _), ApplyToEachA(expected, _), 4);

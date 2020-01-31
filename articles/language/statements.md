@@ -6,12 +6,12 @@ uid: microsoft.quantum.language.statements
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 5bcbee868c76aaf53d0b7969e6e634da62689aaa
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 9157cf3336ce0894816dbfbaf13ce0e712a6b096
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73184871"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821071"
 ---
 # <a name="statements-and-other-constructs"></a>Операторы и другие конструкции
 
@@ -54,8 +54,7 @@ ms.locfileid: "73184871"
 ///
 /// # See Also
 /// - Microsoft.Quantum.Intrinsic.H
-operation ApplyTwice<'T>(op : ('T => Unit), target : 'T) : Unit
-{
+operation ApplyTwice<'T>(op : ('T => Unit), target : 'T) : Unit {
     op(target);
     op(target);
 }
@@ -90,7 +89,6 @@ operation ApplyTwice<'T>(op : ('T => Unit), target : 'T) : Unit
 
 ```qsharp
 namespace NS {
-
     open Microsoft.Quantum.Intrinsic; // opens the namespace
     open Microsoft.Quantum.Math as Math; // defines a short name for the namespace
 }
@@ -181,7 +179,7 @@ for (i in 1 .. 2 .. 10) {
 Аналогичные операторы доступны для всех бинарных операторов, в которых тип левой стороны соответствует типу выражения. Это предоставляет пример удобного способа накопления значений:
 ```qsharp
 mutable results = new Result[0];
-for (q in qubits) {
+for (qubit in qubits) {
     set results += [M(q)];
     // ...
 }
@@ -193,7 +191,7 @@ for (q in qubits) {
 ```qsharp
 newtype Complex = (Re : Double, Im : Double);
 
-function AddAll (reals : Double[], ims : Double[]) : Complex[] {
+function ElementwisePlus(reals : Double[], ims : Double[]) : Complex[] {
     mutable res = Complex(0.,0.);
 
     for (r in reals) {
@@ -209,19 +207,17 @@ function AddAll (reals : Double[], ims : Double[]) : Complex[] {
 В случае массивов наши стандартные библиотеки содержат необходимые средства для многих общих задач инициализации и манипуляции массивов, что позволяет избежать необходимости обновлять элементы массива в первую очередь. Инструкции обновления и повторного назначения предоставляют альтернативный вариант при необходимости:
 
 ```qsharp
-operation RandomInts(maxInt : Int, nrSamples : Int) : Int[] {
-
+operation GenerateRandomInts(max : Int, nSamples : Int) : Int[] {
     mutable samples = new Double[0];
-    for (i in 1 .. nrSamples) {
-        set samples += [RandomInt(maxInt)];
+    for (i in 1 .. nSamples) {
+        set samples += [RandomInt(max)];
     }
     return samples;
 }
 
-operation SampleUniformDistr(nrSamples : Int, prec : Int) : Double[] {
-
-    let normalization = 1. / IntAsDouble(prec);
-    mutable samples = RandomInts(prec, nrSamples);
+operation SampleUniformDistrbution(nSamples : Int, nSteps : Int) : Double[] {
+    let normalization = 1. / IntAsDouble(nSteps);
+    mutable samples = GenerateRandomInts(nSteps, nSamples);
     
     for (i in IndexRange(samples) {
         let value = IntAsDouble(samples[i]);
@@ -236,10 +232,9 @@ operation SampleUniformDistr(nrSamples : Int, prec : Int) : Double[] {
 
 Функция
 ```qsharp
-function EmbedPauli (pauli : Pauli, location : Int, n : Int) : Pauli[]
-{
-    mutable pauliArray = new Pauli[n];
-    for (index in 0 .. n - 1) {
+function PauliEmbedding(pauli : Pauli, length : Int, location : Int) : Pauli[] {
+    mutable pauliArray = new Pauli[length];
+    for (index in 0 .. length - 1) {
         set pauliArray w/= index <- 
             index == location ? pauli | PauliI;
     }    
@@ -249,8 +244,8 @@ function EmbedPauli (pauli : Pauli, location : Int, n : Int) : Pauli[]
 Например, можно просто упростить использование функции `ConstantArray` в `Microsoft.Quantum.Arrays`и возвратить выражение копирования и обновления:
 
 ```qsharp
-function EmbedPauli (pauli : Pauli, i : Int, n : Int) : Pauli[] {
-    return ConstantArray(n, PauliI) w/ i <- pauli;
+function PauliEmbedding(pauli : Pauli, length : Int, location : Int) : Pauli[] {
+    return ConstantArray(length, PauliI) w/ location <- pauli;
 }
 ```
 
@@ -315,7 +310,7 @@ if (a == b) {
 
 ## <a name="control-flow"></a>Поток управления
 
-### <a name="for-loop"></a>Цикл for
+### <a name="for-loop"></a>Цикл For
 
 Оператор `for` поддерживает итерацию по диапазону целых чисел или к массиву.
 Оператор состоит из ключевого слова `for`, открывающей скобки `(`, за которой следует символ или кортеж символов, ключевое слово `in`, выражение типа `Range` или Array, закрывающая круглая скобка `)`и блок операторов.
@@ -330,8 +325,8 @@ if (a == b) {
 
 ```qsharp
 // ...
-for (qb in qubits) { // qubits contains a Qubit[]
-    H(qb);
+for (qubit in qubits) { // qubits contains a Qubit[]
+    H(qubit);
 }
 
 mutable results = new (Int, Results)[Length(qubits)];
@@ -359,13 +354,13 @@ for ((index, measured) in results) {
 ```qsharp
 mutable iter = 1;
 repeat {
-    ProbabilisticCircuit(qs);
-    let success = ComputeSuccessIndicator(qs);
+    ProbabilisticCircuit(qubits);
+    let success = ComputeSuccessIndicator(qubits);
 }
 until (success || iter > maxIter)
 fixup {
     iter += 1;
-    ComputeCorrection(qs);
+    ComputeCorrection(qubits);
 }
 ```
 
@@ -374,25 +369,25 @@ fixup {
 Обратите внимание, что завершение выполнения адресной привязки завершает область действия инструкции, чтобы привязки символов, сделанные во время тела или исправления, были недоступны при последующих повторах.
 
 Например, следующий код представляет собой цепь вероятностная, которая реализует важный шлюз ротации $V _3 = (\болдоне + 2 i Z)/\скрт{5}$ с использованием Хадамард и T Gates.
-Цикл завершается через 8/5 повторений в среднем.
+Цикл завершается в параметре $ \фрак{8}{5}числом повторений $ в среднем.
 Дополнительные сведения см. в разделе [*Повтор-Until-Success: недетерминированная декомпозиция одного кубит унитариес*](https://arxiv.org/abs/1311.1074) (Паетзникк и своре, 2014).
 
 ```qsharp
-using (anc = Qubit()) {
+using (qubit = Qubit()) {
     repeat {
-        H(anc);
-        T(anc);
-        CNOT(target,anc);
-        H(anc);
-        Adjoint T(anc);
-        H(anc);
-        T(anc);
-        H(anc);
-        CNOT(target,anc);
-        T(anc);
+        H(qubit);
+        T(qubit);
+        CNOT(target, qubit);
+        H(qubit);
+        Adjoint T(qubit);
+        H(qubit);
+        T(qubit);
+        H(qubit);
+        CNOT(target, qubit);
+        T(qubit);
         Z(target);
-        H(anc);
-        let result = M(anc);
+        H(qubit);
+        let result = M(qubit);
     } until (result == Zero);
 }
 ```
@@ -450,7 +445,7 @@ if (i == 1) {
 }
 ```
 
-### <a name="return"></a>Return
+### <a name="return"></a>Возвращает
 
 Оператор Return завершает выполнение операции или функции и возвращает значение вызывающему объекту.
 Он состоит из ключевого слова `return`, за которым следует выражение соответствующего типа и завершающая точка с запятой.
@@ -480,7 +475,7 @@ return ();
 return (results, qubits);
 ```
 
-### <a name="fail"></a>Fail;
+### <a name="fail"></a>Ошибка
 
 Инструкция Fail завершает выполнение операции и возвращает вызывающему объекту значение ошибки.
 Он состоит из ключевого слова `fail`, за которым следует строка и завершающая точка с запятой.
@@ -519,15 +514,15 @@ fail $"Syndrome {syn} is incorrect";
 Например,
 
 ```qsharp
-using (q = Qubit()) {
+using (qubit = Qubit()) {
     // ...
 }
-using ((ancilla, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
+using ((auxiliary, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
     // ...
 }
 ```
 
-### <a name="dirty-qubits"></a>Грязный Кубитс
+### <a name="borrowed-qubits"></a>Заимствованный Кубитс
 
 Оператор `borrowing` используется для получения Кубитс для временного использования. Оператор состоит из ключевого слова `borrowing`, за которым следует открывающая круглая скобка `(`, привязка, закрывающая круглая скобка `)`и блок операторов, в рамках которого будет доступна Кубитс.
 Привязка соответствует тому же шаблону и правилам, что и в операторе `using`.
@@ -535,10 +530,10 @@ using ((ancilla, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
 Например,
 
 ```qsharp
-borrowing (q = Qubit()) {
+borrowing (qubit = Qubit()) {
     // ...
 }
-borrowing ((ancilla, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
+borrowing ((auxiliary, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
     // ...
 }
 ```
@@ -547,8 +542,7 @@ borrowing ((ancilla, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
 Он фиксируется, чтобы покинуть Кубитс в том состоянии, в котором они находились в момент заимствования, т. е. состояние в начале и в конце блока инструкции должны совпадать.
 Это состояние в частности не всегда является классическим состоянием, поэтому в большинстве случаев области действия не должны содержать измерений. 
 
-Такие Кубитс часто называются «грязными анЦиллаами».
-Пример использования "грязных" 2N см. в разделе [*факторинг с использованием функции "Тоффоли" + 2 Кубитс с модульным умножением на*](https://arxiv.org/abs/1611.07995) единицу (Ханер, Роеттелер и своре 2017).
+Пример заимствованного роеттелер использования см. в разделе [*факторинг с использованием 2N + 2 Кубитс с модульным умножением на основе Тоффоли*](https://arxiv.org/abs/1611.07995) (Ханер, Своре и кубит 2017).
 
 При заимствовании Кубитс система сначала пытается заполнить запрос от Кубитс, который используется, но к нему не обращаются в теле инструкции `borrowing`.
 Если такой Кубитс не хватает, он выделит новый Кубитс для выполнения запроса.

@@ -6,16 +6,16 @@ ms.author: thhaner
 ms.date: 5/14/2019
 ms.topic: article
 uid: microsoft.quantum.numerics.usage
-ms.openlocfilehash: 332781a4356015461426ee7640fd931a41450367
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: ca24ff60cd9ae5077c7f4bae0012fe1180d7e6d4
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73184616"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821037"
 ---
 # <a name="using-the-numerics-library"></a>Использование библиотеки числовых средств
 
-## <a name="overview"></a>Краткое описание
+## <a name="overview"></a>Обзор
 
 Библиотека числовых данных состоит из трех компонентов.
 
@@ -64,7 +64,7 @@ open Microsoft.Quantum.Arithmetic;
     - Обратная (1/x)
     - Измерение (классическое значение Double)
 
-Дополнительные сведения и подробную документацию по каждой из этих операций см. в справочной документации по библиотеке Q # по адресу [docs.Microsoft.com](https://docs.microsoft.com/en-us/quantum)
+Дополнительные сведения и подробную документацию по каждой из этих операций см. в справочной документации по библиотеке Q # по адресу [docs.Microsoft.com](https://docs.microsoft.com/quantum)
 
 ## <a name="sample-integer-addition"></a>Пример: сложение целых чисел
 
@@ -72,15 +72,14 @@ open Microsoft.Quantum.Arithmetic;
 
 С помощью пакета средств разработки тактов эту операцию можно применить следующим образом:
 ```qsharp
-operation MyAdditionTest (xInt : Int, yInt : Int, n : Int) : Unit
-{
+operation TestMyAddition(xValue : Int, yValue : Int, n : Int) : Unit {
     using ((xQubits, yQubits) = (Qubit[n], Qubit[n]))
     {
         x = LittleEndian(xQubits); // define bit order
         y = LittleEndian(yQubits);
         
-        ApplyXorInPlace(xInt, x); // initialize values
-        ApplyXorInPlace(yInt, y);
+        ApplyXorInPlace(xValue, x); // initialize values
+        ApplyXorInPlace(yValue, y);
         
         AddI(x, y); // perform addition x+y into y
         
@@ -95,18 +94,18 @@ operation MyAdditionTest (xInt : Int, yInt : Int, n : Int) : Unit
 
 Первый, `EvaluatePolynomialFxP`, позволяет оценить полином вида $ $ P (x) = a_0 + a_1x + a_2x ^ 2 + \кдотс + a_dx ^ d, $ $, где $d $ обозначает *степень*. Для этого все, что требуется, — это коэффициенты полинома `[a_0,..., a_d]` (типа `Double[]`), входные `x : FixedPoint` и выходное `y : FixedPoint` (изначально ноль):
 ```qsharp
-EvaluatePolynomialFxP([1.0, 2.0], xFxP, yFxP);
+EvaluatePolynomialFxP([1.0, 2.0], x, y);
 ```
 Результат, $P (x) = 1 + 2x $, будет храниться в `yFxP`.
 
-Второй, `EvaluateEvenPolynomialFxP`и третий `EvaluateOddPolynomialFxP`, являются специализациями для случаев четных и нечетных функций соответственно. Это значит, что для четной или нечетной функции $f (x) $ и $ $ P_ {четный} (x) = a_0 + A_1 x ^ 2 + A_2 x ^ 4 + \кдотс + a_d x ^ {2D}, $ $ $f (x) $ приблизительно хорошо подходит для $P _ {четный} (x) $ или $P _ {нечет} (x): = кс\кдот P_ {четный} (x) $ содержани.
+Второй, `EvaluateEvenPolynomialFxP`и третий `EvaluateOddPolynomialFxP`, являются специализациями для случаев четных и нечетных функций соответственно. Это значит, что для четной или нечетной функции $f (x) $ и $ $ P_ {четный} (x) = a_0 + a_1 x ^ 2 + a_2 x ^ 4 + \кдотс + a_d x ^ {2D}, $ $ $f (x) $ приближенно подходит $P _ {четный} (x) $ или $P _ {нечет} (x): = кс\кдот P_ {четный} (x) $ соответственно.
 В Q # эти два варианта можно обработать следующим образом:
 ```qsharp
-EvaluateEvenPolynomialFxP([1.0, 2.0], xFxP, yFxP);
+EvaluateEvenPolynomialFxP([1.0, 2.0], x, y);
 ```
 который вычисляет $P _ {четный} (x) = 1 + 2x ^ 2 $ и
 ```qsharp
-EvaluateOddPolynomialFxP([1.0, 2.0], xFxP, yFxP);
+EvaluateOddPolynomialFxP([1.0, 2.0], x, y);
 ```
 который вычисляет $P _ {нечетный} (x) = x + 2x ^ 3 $.
 

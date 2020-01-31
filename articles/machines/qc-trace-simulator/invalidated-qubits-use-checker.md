@@ -6,19 +6,19 @@ ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits
-ms.openlocfilehash: 283cc7d7d88f731f40fa396c38ae5ea8dd90537f
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 093937346488725eacb69ef7da6affde764ec5c1
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74863186"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820884"
 ---
 # <a name="invalidated-qubits-use-checker"></a>Недействительная Проверка использования Кубитс
 
 `Invalidated Qubits Use Checker` является частью тактового компьютера, [трацесимулатор](xref:microsoft.quantum.machines.qc-trace-simulator.intro) , предназначенного для обнаружения потенциальных ошибок в коде. Рассмотрим следующий фрагмент кода Q #, чтобы продемонстрировать проблемы, обнаруженные `Invalidated Qubits Use Checker`.
 
 ```qsharp
-operation UseReleasedQubit () : Unit {
+operation UseReleasedQubit() : Unit {
     mutable q = new Qubit[1];
     using (ans = Qubit()) {
         set q w/= 0 <- ans;
@@ -58,6 +58,6 @@ namespace Quantum.MyProgram
 
 Класс `QCTraceSimulatorConfiguration` хранит конфигурацию симулятора трассировки компьютерных тактов и может быть предоставлена в качестве аргумента для конструктора `QCTraceSimulator`. Если `useInvalidatedQubitsUseChecker` имеет значение true, `Invalidated Qubits Use Checker` включен. Дополнительные сведения см. в документации по API на [кктрацесимулатор](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator) и [кктрацесимулаторконфигуратион](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration) .
 
-## <a name="see-also"></a>Дополнительные материалы ##
+## <a name="see-also"></a>См. также ##
 
 - Обзор [имитатора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro) компьютерных тактов.
