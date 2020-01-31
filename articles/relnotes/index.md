@@ -6,20 +6,33 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: c709f1eb130d37f930ffc4acc4bd663b8b8ba24a
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: c135dacb2fc305fa97874cb4abcf4e2ac489b9e4
+ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74863169"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76871623"
 ---
-# <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске Microsoft Quantum Development Kit
+# <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
 Эта статья содержит сведения обо всех выпусках Quantum Development Kit
 
 См. [инструкции по установке](xref:microsoft.quantum.install).
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
+
+## <a name="version-01020012831"></a>Версия 0.10.2001.2831
+
+*Дата выпуска: 29 января 2020 г.*
+
+Этот выпуск включает следующие обновления:
+
+- Новый пакет NuGet Microsoft.Quantum.SDK (см. файл [README](https://github.com/microsoft/qsharp-compiler/blob/master/src/QuantumSdk/README.md))
+- Добавлена поддержка .NET Core 3.1. При этом настоятельно рекомендуется установить версию 3.1.100, так как при выполнении сборки с более старыми версиями пакета SDK для .NET Core могут возникать проблемы.
+- Новые преобразования компилятора, доступные в Microsoft.Quantum.QsCompiler.Experimental
+- Новые функции для предоставления векторов состояния вывода в виде HTML в IQ#
+- Включена поддержка EstimateFrequencyA в Microsoft.Quantum.Characterization для тестов Hadamard и SWAP
+- Для работы с пространством имен AmplitudeAmplification теперь используется руководство по стилю Q#
 
 ## <a name="version-01019120501"></a>Версия 0.10.1912.0501
 
@@ -127,7 +140,7 @@ ms.locfileid: "74863169"
 * Добавлена поддержка [волновых функций с несколькими опорными сигналами](xref:microsoft.quantum.chemistry.concepts.multireference), в том числе разреженных волновых функций с несколькими опорными сигналами и единых связанных кластеров.  [PR №110](https://github.com/Microsoft/QuantumLibraries/pull/110).
 * Благодарим участника [1QBit](https://1qbit.com) ([@valentinS4t1qbit](https://github.com/ValentinS4t1qbit)). Оценка энергопотребления с использованием вариативного подхода. [PR №120](https://github.com/Microsoft/QuantumLibraries/pull/120).
 * Обновлена схема [Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) до новой [версии 0.2](xref:microsoft.quantum.libraries.chemistry.schema.spec_v_0_2), которая добавляет спецификацию единого связанного кластера. [Проблема №65](https://github.com/microsoft/QuantumLibraries/issues/65)
-* Добавлена возможность взаимодействия Python с функциями из библиотеки для химической отрасли. Опробуйте [этот пример](https://github.com/microsoft/Quantum/tree/master/Chemistry/PythonIntegration). [Проблема №53](https://github.com/microsoft/QuantumLibraries/issues/53) [PR №110](https://github.com/Microsoft/QuantumLibraries/pull/110).
+* Добавлена возможность взаимодействия Python с функциями из библиотеки для химической отрасли. Опробуйте [этот пример](https://github.com/microsoft/Quantum/tree/master/Chemistry/PythonIntegration). [Проблема № 53](https://github.com/microsoft/QuantumLibraries/issues/53) [PR № 110](https://github.com/Microsoft/QuantumLibraries/pull/110).
 
 ## <a name="version-061905"></a>Версия 0.6.1905
 
@@ -154,7 +167,7 @@ ms.locfileid: "74863169"
 В этом выпуске библиотеки реорганизованы так, чтобы они развивались единообразно:
 * Пространство имен Microsoft.Quantum.Primitive переименовано в Microsoft.Quantum.Intrinsic.  Эти операции реализуются на целевом компьютере.  Пространство имен Microsoft.Quantum.Primitive объявлено устаревшим.  Предупреждение среды выполнения будет информировать о вызове в программах операций и функций с устаревшими именами.
 
-* Пакет Microsoft.Quantum.Canon переименован в Microsoft.Quantum.Standard.  Этот пакет содержит пространства имен, которые обычно используются в большинстве программ Q#.  А именно:  
+* Пакет Microsoft.Quantum.Canon переименован в Microsoft.Quantum.Standard.  Этот пакет содержит пространства имен, которые обычно используются в большинстве программ Q#.  В том числе:  
     - Microsoft.Quantum.Canon для типичных операций;
     - Microsoft.Quantum.Arithmetic для арифметических операций общего назначения;
     - Microsoft.Quantum.Preparation для операций подготовки состояния кубитов;
@@ -255,7 +268,7 @@ ms.locfileid: "74863169"
 
 Наше расширение VS Code было помечено и удалено из Marketplace при [очистке расширений](https://code.visualstudio.com/blogs/2018/11/26/event-stream), связанных с пакетом NPM `event-stream`, хотя оно и не использовало этот пакет. В этой версии удалены все зависимости среды выполнения, которые могут привести к срабатыванию любых систем защиты.
 
-Если вы ранее установили расширение, его придется установить его еще раз, посетив страницу расширения [Microsoft Quantum Development Kit для Visual Studio Code](vscode:extension/quantum.quantum-devkit-vscode) на сайте Visual Studio Marketplace и нажав кнопку "Установить". Приносим извинения за причиненные неудобства.
+Если вы ранее установили расширение, его придется установить его еще раз, посетив страницу расширения [пакет средств разработки Microsoft Quantum для Visual Studio Code](vscode:extension/quantum.quantum-devkit-vscode) на сайте Visual Studio Marketplace и нажав кнопку "Установить". Приносим извинения за причиненные неудобства.
 
 
 ## <a name="version-0318111511"></a>Версия 0.3.1811.1511
@@ -357,7 +370,7 @@ ms.locfileid: "74863169"
 * Усовершенствованы функции отладки.
 * Вклады сообщества в виде исправлений ошибок, новых вспомогательных функций, операций и примеров.
 
-### <a name="performance-improvements"></a>Повышение производительности.
+### <a name="performance-improvements"></a>Повышение производительности
 
 Это обновление включает значительные улучшения производительности для моделирования большого и малого количества кубитов на всех целевых компьютерах.  Это улучшение хорошо заметно в моделировании H<sub>2</sub>, стандартном примере из Quantum Development Kit.
 
