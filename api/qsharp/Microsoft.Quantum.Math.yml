@@ -7,7 +7,7 @@ functions:
 - uid: microsoft.quantum.math.abscomplexpolar
   summary: Возвращает абсолютное значение комплексного числа типа `ComplexPolar`.
 - uid: microsoft.quantum.math.absd
-  summary: Возвращает абсолютное значение числа двойной точности с плавающей запятой.
+  summary: Возвращает абсолютное значение числа с плавающей запятой двойной точности.
 - uid: microsoft.quantum.math.absi
   summary: Возвращает абсолютное значение целого числа.
 - uid: microsoft.quantum.math.absl
@@ -27,7 +27,7 @@ functions:
 - uid: microsoft.quantum.math.arctan
   summary: Возвращает угол, тангенс которого равен указанному числу.
 - uid: microsoft.quantum.math.arctan2
-  summary: Возвращает угол, тангенс которого равен отношению двух указанных чисел.
+  summary: Возвращает угол, тангенс которого является частным двух указанных чисел.
 - uid: microsoft.quantum.math.arctanh
   summary: Выполняет обратный гиперболический тангенс числа.
 - uid: microsoft.quantum.math.argcomplex
@@ -47,15 +47,15 @@ functions:
 
     То есть возвращает наименьшее $n $ например, $a < 2 ^ n $.
 - uid: microsoft.quantum.math.ceiling
-  summary: Возвращает наименьшее целое число, которое больше или равно заданному числу.
+  summary: Возвращает наименьшее целое число, которое больше или равно указанному числу.
 - uid: microsoft.quantum.math.complexascomplexpolar
   summary: Преобразует комплексное число типа `Complex` в комплексное число `ComplexPolar`типа.
 - uid: microsoft.quantum.math.complexpolarascomplex
   summary: Преобразует комплексное число типа `ComplexPolar` в комплексное число `Complex`типа.
 - uid: microsoft.quantum.math.complexpolartocomplex
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКомплексполартокомплекс является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.complexpolarascomplex\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКомплексполартокомплекс является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.complexpolarascomplex\"."
 - uid: microsoft.quantum.math.complextocomplexpolar
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКомплекстокомплексполар является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.complexascomplexpolar\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКомплекстокомплексполар является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.complexascomplexpolar\"."
 - uid: microsoft.quantum.math.continuedfractionconvergenti
   summary: Находит прохождение дробной части, ближайшее к `fraction` с знаменателем меньше или равным `denominatorBound`
 - uid: microsoft.quantum.math.continuedfractionconvergentl
@@ -95,7 +95,7 @@ functions:
 - uid: microsoft.quantum.math.greatestcommondivisorl
   summary: Вычисление наибольшего общего делителя $a $ и $b $. GCD всегда имеет положительное значение.
 - uid: microsoft.quantum.math.ieeeremainder
-  summary: Возвращает остаток от деления одного указанного числа на другое указанное число.
+  summary: Возвращает остаток от деления указанного числа на другое указанное число.
 - uid: microsoft.quantum.math.inversemodi
   summary: Возвращает $b $ например, $a \кдот b = 1 (\операторнаме{мод} \тексттт{модулус}) $.
 - uid: microsoft.quantum.math.inversemodl
@@ -109,7 +109,7 @@ functions:
 - uid: microsoft.quantum.math.log
   summary: Возвращает натуральный логарифм (базовый $e $) указанного числа.
 - uid: microsoft.quantum.math.log10
-  summary: Возвращает логарифм с основанием 10 указанного числа.
+  summary: Возвращает десятичный логарифм указанного числа.
 - uid: microsoft.quantum.math.logof2
   summary: Возвращает натуральный логарифм числа 2.
 - uid: microsoft.quantum.math.max
@@ -159,7 +159,7 @@ functions:
 - uid: microsoft.quantum.math.negationl
   summary: Возвращает унарное отрицание входных данных.
 - uid: microsoft.quantum.math.pi
-  summary: Представляет отношение длины окружности к ее диаметру, определяемое константой π.
+  summary: Представляет отношение длины окружности к ее диаметру, заданному константой π.
 - uid: microsoft.quantum.math.plusa
   summary: Возвращает сумму (объединение) двух входных значений.
 - uid: microsoft.quantum.math.plusc
@@ -197,7 +197,7 @@ functions:
 - uid: microsoft.quantum.math.realmod
   summary: Выполняет вычисление модуля между двумя вещественными числами.
 - uid: microsoft.quantum.math.round
-  summary: Округляет значение до ближайшего целого или указанного количества десятичных знаков.
+  summary: Округляет значение до ближайшего целого.
 - uid: microsoft.quantum.math.signd
   summary: Возвращает целое число, указывающее знак числа.
 - uid: microsoft.quantum.math.signi
@@ -242,7 +242,7 @@ newtypes:
     Полярное представление комплексного числа имеет $c = r e ^ {i t} $.
 - uid: microsoft.quantum.math.fraction
   summary: Представляет рациональное число `p/q`формы. Integer `p` является первым элементом кортежа, а `q` — вторым элементом кортежа.
-summary: " # <a name=\"summary\"></a>Резюме\n Это пространство имен содержит классические математические функции и типы данных."
+summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен содержит классические математические функции и типы данных."
 operations:
 - uid: microsoft.quantum.math.randomint
   summary: Создает одинаковое случайное целое число, которое больше или равно нулю и меньше, чем предоставленная верхняя граница.
@@ -253,9 +253,9 @@ operations:
 - uid: microsoft.quantum.math.randomsinglequbitpauli
   summary: Возвращает один из операторов Single-кубит Паули по крайней мере в случайном порядке.
 metadata:
-  ms.openlocfilehash: 00156d553e8378b1a38dcd6f1749c4ff3cb689a7
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: f1a0185252155a39572a6b4159a88686533154c0
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858264"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870192"
