@@ -6,12 +6,12 @@ ms.author: chgranad@microsoft.com
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
-ms.openlocfilehash: 75028a1dc29abe5fbea2e789d896563f3d6331c9
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: c1fd578fdb3d56a7b48972e6ccc9b1605047fe36
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73443942"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820357"
 ---
 # <a name="quickstart-implement-grovers-search-algorithm-in-q"></a>Краткое руководство. Реализация поиска по алгоритму Гровера на Q#
 
@@ -43,11 +43,11 @@ ms.locfileid: "73443942"
 
 1. В файл `Operations.qs` этого проекта добавьте следующий код:
 
-    [!code-qsharp[](~/quantum/samples/algorithms/simple-grover/SimpleGrover.qs?highlight=5,27)]
+    :::code language="qsharp" source="~/quantum/samples/algorithms/simple-grover/SimpleGrover.qs" range="4-23" highlight="5,27":::
 
 1. Чтобы определить список, в котором выполняется поиск, создайте новый файл `Reflections.qs` и вставьте в него следующий код:
 
-    [!code-qsharp[](~/quantum/samples/algorithms/simple-grover/Reflections.qs)]
+    :::code language="qsharp" source="~/quantum/samples/algorithms/simple-grover/Reflections.qs" range="4-70":::
 
     Операция `ReflectAboutMarked` определяет помеченные входные данные, которые вы ищете: строка с чередованием нулей и единиц. В этом примере помеченные входные данные жестко прописаны в коде, но вы можете дополнить пример поиском других входных данных или обобщить для поиска любых входных данных.
 
@@ -57,7 +57,7 @@ ms.locfileid: "73443942"
 
     Чтобы выполнить эту программу Q# из кода Python, сохраните следующий код в файл `host.py`:
 
-    [!code-python[](~/quantum/samples/algorithms/simple-grover/host.py)]
+    :::code language="python" source="~/quantum/samples/algorithms/simple-grover/host.py" range="9-14":::
 
     Теперь вы сможете запустить основную программу Python из командной строки следующим образом:
 
@@ -75,7 +75,7 @@ ms.locfileid: "73443942"
 
     Чтобы выполнить эту программу Q# из кода C#, измените `Driver.cs`, включив в него следующий код:
 
-    [!code-csharp[](~/quantum/samples/algorithms/simple-grover/Host.cs)]
+    :::code language="csharp" source="~/quantum/samples/algorithms/simple-grover/Host.cs" range="4-23":::
 
     Теперь вы сможете запустить основную программу C# из командной строки следующим образом:
 
@@ -94,7 +94,7 @@ ms.locfileid: "73443942"
 
     Чтобы выполнить эту программу Q# из кода C# в Visual Studio, измените `Driver.cs`, включив в него следующий код:
 
-    [!code-csharp[](~/quantum/samples/algorithms/simple-grover/Host.cs)]
+    :::code language="csharp" source="~/quantum/samples/algorithms/simple-grover/Host.cs" range="4-23":::
 
     Затем нажмите клавишу F5, чтобы запустить программу. Вы увидите новое всплывающее окно со следующими результатами: 
 
@@ -112,7 +112,7 @@ ms.locfileid: "73443942"
 
     Операция `ReflectAboutMarked` была вызвана только четыре раза, но программа на Q# смогла найти входные данные 01010 из $2^{5} = 32$ возможных вариантов!
 
-## <a name="next-steps"></a>Дополнительная информация
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вам понравилось это краткое руководство, воспользуйтесь перечисленными ниже ресурсами, чтобы изучить другие варианты применения Q# для собственных квантовых приложений.
 
