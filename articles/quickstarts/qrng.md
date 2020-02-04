@@ -6,12 +6,12 @@ ms.author: megbrow@microsoft.com
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
-ms.openlocfilehash: c3039b92c4b3235a397d5cf31280ac2673706e9d
-ms.sourcegitcommit: 2ca4755d1a63431e3cb2d2918a10ad477ec2e368
+ms.openlocfilehash: 134617455b720cc755b9ee9fb68fb59e624d3f1a
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73462839"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820940"
 ---
 # <a name="quickstart-implement-a-quantum-random-number-generator-in-q"></a>Краткое руководство. Реализация квантового генератора случайных чисел на языке Q#
 Простой пример квантового алгоритма на языке Q#, который моделирует генератор случайных чисел. Этот алгоритм использует природу квантовой механики для получения случайного числа. 
@@ -33,10 +33,10 @@ ms.locfileid: "73462839"
         open Microsoft.Quantum.Intrinsic;
 
         operation QuantumRandomNumberGenerator() : Result {
-            using(q = Qubit())  { // Allocate a qubit.
-                H(q);             // Put the qubit to superposition. It now has a 50% chance of being 0 or 1.
-                let r = M(q);     // Measure the qubit value.
-                Reset(q);
+            using(qubit = Qubit())  { // Allocate a qubit.
+                H(qubit);             // Put the qubit to superposition. It now has a 50% chance of being 0 or 1.
+                let r = M(v);     // Measure the qubit value.
+                Reset(qubit);
                 return r;
             }
         }
@@ -55,18 +55,61 @@ ms.locfileid: "73462839"
 
 ### <a name="visualizing-the-code-with-the-bloch-sphere"></a>Визуализация кода в формате сферы Блоха
 
-В сфере Блоха северный полюс соответствует классическому значению **0**, а южный — классическому значению **1**. Любое состояние суперпозиции обозначается точкой на этой сфере (или стрелкой на схеме). Чем ближе конец этой стрелки к одному из полюсов, тем выше вероятность схлопывания этого кубита при измерении в то классическое состояние, которое соответствует этому полюсу. В примере ниже красная стрелка обозначает состояние с более высокой вероятностью получить значение **0** при измерении кубита.
+В сфере Блоха северный полюс соответствует классическому значению **0**, а южный — классическому значению **1**. Любое состояние суперпозиции обозначается точкой на этой сфере (или стрелкой на схеме). Чем ближе конец этой стрелки к одному из полюсов, тем выше вероятность схлопывания этого кубита при измерении в то классическое состояние, которое соответствует этому полюсу. В примере ниже красная стрелка обозначает состояние с более высокой вероятностью получить значение **0** при измерении кубита.
 
-<img src="./Bloch.svg" width="175">
+<img src="~/media/qrng-Bloch.png" width="175">
 
 Мы можем использовать это представление для визуализации работы нашего кода.
 
 * Для начала мы инициализируем кубит в состоянии **0** и применим `H`, чтобы создать состояние суперпозиции с равной вероятностью получить значения **0** и **1**.
 
-<img src="./H.svg" width="450">
+<img src="~/media/qrng-H.png" width="450">
 
 * Затем мы измерим состояние кубита и сохраним выходное значение:
 
-<img src="./Measurement2.svg" width="450">
+<img src="~/media/qrng-meas.png" width="450">
 
 Так как исход этого измерения является полностью случайным, можно считать, что мы получили случайный бит. Вызывая эту операцию несколько раз, мы получим большое целое число. Например, три вызова этой операции возвращают три случайных бита, позволяя создать трехбитовое число (т. е. случайное число в диапазоне от 0 до 7).
+
+## <a name="creating-a-complete-random-number-generator-using-a-host-program"></a>Создание комплексного генератора случайных чисел с помощью основной программы
+
+Теперь, когда у нас есть операция Q#, создающая случайные биты, мы можем использовать ее для создания комплексного квантового генератора случайных чисел с помощью основной программы.
+
+ ### <a name="python-with-visual-studio-code-or-the-command-linetabtabid-python"></a>[Вызов Python из Visual Studio Code или командной строки](#tab/tabid-python)
+ 
+ Чтобы выполнить эту программу Q# из кода Python, сохраните следующий код в файл `host.py`:
+ 
+:::code language="python" source="~/quantum/samples/getting-started/qrng/host.py" range="11-30":::
+
+ Теперь вы сможете запустить основную программу Python из командной строки следующим образом:
+ ```bash
+ $ python host.py
+ Preparing Q# environment...
+ ..The random number generated is 42
+ ```
+ ### <a name="c-with-visual-studio-code-or-the-command-linetabtabid-csharp"></a>[Вызов C# из Visual Studio Code или командной строки](#tab/tabid-csharp)
+ 
+ Чтобы выполнить эту программу Q# из кода C#, измените `Driver.cs`, включив в него следующий код:
+ 
+ :::code language="csharp" source="~/quantum/samples/getting-started/qrng/Host.cs" range="4-39":::
+ 
+ Теперь вы сможете запустить основную программу C# из командной строки следующим образом:
+ 
+ ```bash
+ $ dotnet run
+ The random number generated is 42
+ ```
+
+ ### <a name="c-with-visual-studio-2019tabtabid-vs2019"></a>[Вызов C# из Visual Studio 2019](#tab/tabid-vs2019)
+
+ Чтобы выполнить эту программу Q# из кода C# в Visual Studio, измените `Driver.cs`, включив в него следующий код:
+
+ :::code language="csharp" source="~/quantum/samples/getting-started/qrng/Host.cs" range="4-39":::
+
+ Затем нажмите клавишу F5, чтобы запустить программу. Отобразится новое всплывающее окно со сгенерированным случайным числом: 
+
+ ```bash
+ $ dotnet run
+ The random number generated is 42
+ ```
+ ***

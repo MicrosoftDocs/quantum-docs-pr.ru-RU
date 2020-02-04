@@ -1,17 +1,17 @@
 ---
 title: Введение в Quantum Katas
-description: Сведения о тренировочных упражнениях (ката), которые входят в пакет Microsoft Quantum Development Kit
+description: Сведения о тренировочных упражнениях (ката), которые входят в пакет средств разработки Microsoft Quantum
 author: natke
 ms.author: nakersha
 ms.date: 10/17/2019
 ms.topic: overview
 uid: microsoft.quantum.overview.katas
-ms.openlocfilehash: 7fb8dba2a10f9a983ebee52e394260bbdc0d2f9c
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: af54a2260147b8ca07919b241548aac85ed0d8a1
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73444146"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821105"
 ---
 # <a name="learn-quantum-computing-with-the-quantum-katas"></a>Изучение квантовых вычислений с помощью Quantum Katas
 
@@ -19,7 +19,7 @@ ms.locfileid: "73444146"
 
 ## <a name="learning-by-doing"></a>Обучение путем выполнения
 
-Руководства и ката, собранные в этом проекте, реализуют идею обучения путем выполнения. Вам предлагаются задачи по программированию на определенные темы с разным уровнем сложности. В каждой задаче вам нужно добавить определенный код. Для первой задачи в серии нужна всего одна строка, а для последней — более крупный фрагмент.
+Руководства и упражнения, собранные в этом проекте, предназначены для обучения путем выполнения задач по программированию на определенные темы с разным уровнем сложности. В каждой задаче вам нужно добавить определенный код. Для первой задачи в серии нужна всего одна строка, а для последней — более крупный фрагмент.
 
 Что важнее всего, в ката включены платформы для тестирования, которые подготавливают и запускают ваши решения, а также проверяют результаты. Это позволяет немедленно оценить ваше решение, чтобы вы могли поменять неправильный подход.
 
@@ -36,10 +36,12 @@ ms.locfileid: "73444146"
 
 ### <a name="introduction-to-quantum-computing-concepts"></a>Сведения о концепциях квантовых вычислений
 
-* [Сложные арифметические действия](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/ComplexArithmetic)
-* [Линейная алгебра](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/LinearAlgebra)
-* [Концепция кубита](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/Qubit)
-* [Квантовые вентили с одним кубитом](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/SingleQubitGates)
+* [Сложные арифметические действия](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic)
+* [Линейная алгебра](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra)
+* [Концепция кубита](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/Qubit)
+* [Квантовые вентили с одним кубитом](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates)
+* [Системы с несколькими кубитами](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/MultiQubitSystems)
+* [Вентили с несколькими кубитами](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/MultiQubitGates)
 
 ### <a name="quantum-computing-fundamentals"></a>Основы квантовых вычислений
 
@@ -52,10 +54,10 @@ ms.locfileid: "73444146"
 
 * [Квантовая телепортация](https://github.com/microsoft/QuantumKatas/tree/master/Teleportation)
 * [Сверхплотное кодирование](https://github.com/microsoft/QuantumKatas/tree/master/SuperdenseCoding)
-* [Алгоритм Дойча — Йожи](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/DeutschJozsaAlgorithm)
+* [Алгоритм Дойча — Йожи](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm)
 * [Реализация алгоритма поиска Гровера](https://github.com/microsoft/QuantumKatas/tree/master/GroversAlgorithm)
-* [Изучение высокоуровневых свойств алгоритма поиска Гровера](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/ExploringGroversAlgorithm)
-* Решение реальных задач с помощью алгоритма Гровера: [Задача выполнимости булевых формул](https://github.com/microsoft/QuantumKatas/blob/master/SolveSATWithGrover) и [задача цветовой раскраски графа](https://github.com/microsoft/QuantumKatas/blob/master/GraphColoring)
+* [Изучение высокоуровневых свойств алгоритма поиска Гровера](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringGroversAlgorithm)
+* Решение реальных задач с помощью алгоритма Гровера: [Задача выполнимости булевых формул](https://github.com/microsoft/QuantumKatas/tree/master/SolveSATWithGrover) и [задача цветовой раскраски графа](https://github.com/microsoft/QuantumKatas/tree/master/GraphColoring)
 
 ### <a name="protocols-and-libraries"></a>Протоколы и библиотеки
 
@@ -66,8 +68,8 @@ ms.locfileid: "73444146"
 
 ### <a name="entanglement-games"></a>Игры с запутанностью
 
-* [Игра CHSH](https://github.com/microsoft/QuantumKatas/blob/master/CHSHGame)
-* [Игра GHZ](https://github.com/microsoft/QuantumKatas/blob/master/GHZGame)
+* [Игра CHSH](https://github.com/microsoft/QuantumKatas/tree/master/CHSHGame)
+* [Игра GHZ](https://github.com/microsoft/QuantumKatas/tree/master/GHZGame)
 * [Игра "Волшебный квадрат" Мермина — Переса](https://github.com/microsoft/QuantumKatas/tree/master/MagicSquareGame)
 
 ## <a name="resources"></a>Ресурсы

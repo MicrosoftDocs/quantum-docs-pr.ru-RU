@@ -6,16 +6,18 @@ author: natke
 ms.author: nakersha
 ms.date: 10/23/2019
 ms.topic: overview
-ms.openlocfilehash: 8fb3b7181632bd6f2b562735546adbf4b461a1b6
-ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+ms.openlocfilehash: 4308bf7e0e48e5735419fab836e479641455e9a5
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73530023"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819933"
 ---
 # <a name="get-started-with-the-quantum-development-kit-qdk"></a>Начало работы с Quantum Development Kit (QDK)
 
-Мы рады представить вам Microsoft Quantum Development Kit.  Здесь вы найдете все необходимые средства для изучения квантового программирования с помощью Q#.  Чтобы познакомить вас с принципами квантовых вычислений с использованием Q#, мы разработали это начальное руководство как для тех из вас, кто хочет сразу создавать квантовые программы, так и для тех, кто просто знакомится с концепциями Q# и квантового программирования, но еще не готов программировать.
+Мы рады представить вам пакет средств разработки Microsoft Quantum.  Здесь вы найдете все необходимые средства для изучения квантового программирования с помощью Q#.  Чтобы познакомить вас с принципами квантовых вычислений с использованием Q#, мы разработали это начальное руководство как для тех из вас, кто хочет сразу создавать квантовые программы, так и для тех, кто просто знакомится с концепциями Q# и квантового программирования, но еще не готов программировать. 
+
+Если вы готовы писать код, [установите QDK](xref:microsoft.quantum.install).
 
 ## <a name="questions-about-quantum-computing"></a>Вопросы о квантовых вычислениях
 
@@ -43,7 +45,7 @@ Q# и Quantum Development Kit предоставляют все необходи
 
 * [Видео](https://www.microsoft.com/videoplayer/embed/RE2JOJf) с информацией о создании квантовых программ на основе библиотек Q#.  QDK включает несколько стандартных и числовых библиотек для Q#, которые предоставляют эффективные вычислительные абстракции для разработки таких решений. Мы также предоставляем библиотеку Quantum Chemistry Library для Q#, которая помогает моделировать химические процессы на квантовом уровне.
 
-## <a name="next-steps"></a>Дополнительная информация
+## <a name="next-steps"></a>Дальнейшие действия
 
 Перечисленные выше руководства по началу работы и статьи помогут вам получить представление о квантовых вычислениях и Q#, независимо от того, хотите ли вы работать с кодом.  Когда вы будете готовы продолжать изучение Q# для программирования квантовых компьютеров, переходите к следующим материалам:
 
@@ -54,9 +56,8 @@ Q# и Quantum Development Kit предоставляют все необходи
 * Изучите [примеры для Q#](https://docs.microsoft.com/samples/browse/?languages=qsharp) и некоторые проблемы, которые можно решить с помощью квантовых вычислений.
 
 * Для разработки основной программы можно выбрать любой привычный язык программирования и среду разработки на локальном компьютере:
-  * Разработка на [Python](xref:microsoft.quantum.install#develop-with-python)
-  * Разработка с помощью [Visual Studio](xref:microsoft.quantum.install#develop-with-c-on-windows-using-visual-studio)
-  * Разработка с помощью [Visual Studio Code](xref:microsoft.quantum.install#develop-with-c-using-visual-studio-code)
-  * Разработка в [Jupyter Notebook](xref:microsoft.quantum.install#develop-with-jupyter-notebooks)
+  * Разработка на [Q# + Python](xref:microsoft.quantum.install.python)
+  * Разработка на [Q# + C#](xref:microsoft.quantum.install.cs)
+  * Разработка на [Q# + Jupyter Notebook](xref:microsoft.quantum.install.jupyter)
 
 * Станьте участником сообщества Microsoft Quantum и примите участие в разработке проекта [QDK](xref:microsoft.quantum.contributing) с открытым исходным кодом.
