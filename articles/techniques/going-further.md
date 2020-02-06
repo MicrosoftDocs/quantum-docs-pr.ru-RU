@@ -6,12 +6,12 @@ ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.techniques.going-further
-ms.openlocfilehash: bd2b799d4001e280baccb04158247891b9cbb5bc
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 41713827a93d2cc97e198fa4ad377012c846cf8b
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820204"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036242"
 ---
 # <a name="going-further"></a>Дальнейшие переходы #
 
@@ -29,7 +29,7 @@ ms.locfileid: "76820204"
 Давайте запишем краткий пример `Map`, используя ★ в качестве заполнителя, пока мы выберем, какие типы нам нужны.
 
 ```qsharp
-function Map(fn : ★ -> ★, values : ★[]) : ★[] {
+function Map(fn : (★ -> ★), values : ★[]) : ★[] {
     mutable mappedValues = new ★[Length(values)];
     for (idx in 0..Length(values) - 1) {
         set mappedValues w/= idx <- fn(values[idx]);
@@ -42,7 +42,7 @@ function Map(fn : ★ -> ★, values : ★[]) : ★[] {
 , Например, карту из целых чисел в пол, похожа на карту из чисел с плавающей запятой в строки:
 
 ```qsharp
-function MapIntsToPaulis(fn : Int -> Pauli, values : Int[]) : Pauli[] {
+function MapIntsToPaulis(fn : (Int -> Pauli), values : Int[]) : Pauli[] {
     mutable mappedValues = new Pauli[Length(values)];
     for (idx in 0..Length(values) - 1) {
         set mappedValues w/= idx <- fn(values[idx]);
@@ -50,7 +50,7 @@ function MapIntsToPaulis(fn : Int -> Pauli, values : Int[]) : Pauli[] {
     return mappedValues;
 }
 
-function MapDoublesToStrings(fn : Double -> String, values : Double[]) : String[] {
+function MapDoublesToStrings(fn : (Double -> String), values : Double[]) : String[] {
     mutable mappedValues = new String[Length(values)];
     for (idx in 0..Length(values) - 1) {
         set mappedValues w/= idx <- fn(values[idx]);
@@ -79,7 +79,7 @@ function MapDoublesToStrings(fn : Double -> String, values : Double[]) : String[
 Для `Map`мы пишем следующее:
 
 ```qsharp
-function Map<'Input, 'Output>(fn : 'Input -> 'Output, values : 'Input[]) : 'Output {
+function Map<'Input, 'Output>(fn : ('Input -> 'Output), values : 'Input[]) : 'Output[] {
     mutable mappedValues = new 'Output[Length(values)];
     for (idx in 0..Length(values) - 1) {
         set mappedValues w/= idx <- fn(values[idx]);

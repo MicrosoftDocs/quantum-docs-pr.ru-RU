@@ -6,12 +6,12 @@ ms.author: gulow
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.chemistry.concepts.installation
-ms.openlocfilehash: fd43c783fa82c7219e143a57759919606fdd197f
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: de13d1814821c612ed74a347dc8ffb5881063576
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73184208"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036480"
 ---
 # <a name="chemistry-library-installation-and-validation"></a>Установка и проверка библиотеки химия
 
@@ -51,18 +51,18 @@ Install-Package Microsoft.Quantum.Chemistry
 
 **Командная строка или Visual Studio Code:** Используя командную строку самостоятельно или в Visual Studio Code, можно использовать команду `dotnet`, чтобы добавить ссылку на пакет NuGet в проект:
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Quantum.Chemistry
 ```
 
 ## <a name="verifying-your-installation"></a>Проверка установки 
 
 Как и в остальной части пакета средств разработки тактов, в библиотеке тактов химия имеется ряд полностью документированных примеров, которые помогут быстро приступить к работе.
-Чтобы проверить установку с помощью этих примеров, выполните клонирование [основного репозитория примеров](https://github.com/Microsoft/Quantum), а затем запустите один из примеров.  Например, чтобы запустить пример [`MolecularHydrogen`](https://github.com/Microsoft/Quantum/tree/master/Chemistry/MolecularHydrogen) :
+Чтобы проверить установку с помощью этих примеров, выполните клонирование [основного репозитория примеров](https://github.com/Microsoft/Quantum), а затем запустите один из примеров.  Например, чтобы запустить пример [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogen) :
 
 ```bash
 git clone https://github.com/Microsoft/Quantum.git
-cd Quantum/Chemistry/MolecularHydrogen
+cd Quantum/samples/chemistry/MolecularHydrogen
 dotnet run
 ```
 
@@ -78,11 +78,11 @@ dotnet run
 
 В примере Молекулархидрожен используются входные данные молекулярное, настроенные вручную.  Хотя это и удобно для небольших примеров, тактовая химия в масштабе требует Хамилтонианс с миллионами или миллиардами терминов. Такие Хамилтонианс, созданные масштабируемыми вычислительными пакетами химия, слишком велики для импорта вручную. 
 
-Библиотека тактовой химия для пакета разработки такта разработана для работы с вычислительными пакетами химия, что особенно важно для [**нвчем**](http://www.nwchem-sw.org/) вычислительной платформы химия, разработанной лабораторией молекулярное Sciences. ЕМСЛ) по тихоокеанскому северо-западной национальной лаборатории.
+Библиотека тактовой химия для пакета разработки такта разработана для работы с вычислительными пакетами химия, которая, в первую очередь, является [**нвчем**](http://www.nwchem-sw.org/) вычислительной химияной платформой, разработанной лабораторией молекулярное SCIENCES (емсл) в северо-западной национальной лаборатории.
 В частности, пакет `Microsoft.Quantum.Chemistry` предоставляет средства для загрузки экземпляров проблем моделирования тактов химия, представленных в [схеме брумбридже](xref:microsoft.quantum.libraries.chemistry.schema.broombridge), которые также поддерживаются для экспорта в последних версиях нвчем.
 
 Чтобы начать работу с помощью Нвчем вместе с пакетом средств разработки тактов, мы предлагаем один из следующих методов:
-- Начните работу с существующих файлов Брумбридже, предоставленных в примерах на сайте [интегралдата/YAML](https://github.com/Microsoft/Quantum/tree/master/Chemistry/IntegralData/YAML).
+- Начните работу с существующих файлов Брумбридже, предоставленных в примерах на сайте [интегралдата/YAML](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML).
 - Используйте [Построитель стрелок емсл для Microsoft Quantum Development Kit](https://arrows.emsl.pnnl.gov/api/qsharp_chem) , который является веб-интерфейсом для нвчем, для создания новых входных файлов брумбридже с форматом молекулярное.  
 - Используйте [образ DOCKER](https://hub.docker.com/r/nwchemorg/nwchem-qc/) , предоставленный пннл для запуска нвчем, или
 - [Скомпилируйте нвчем](http://www.nwchem-sw.org/index.php/Compiling_NWChem) для своей платформы.
@@ -90,9 +90,10 @@ dotnet run
 Дополнительные сведения о работе с Нвчем для химических моделей для анализа с помощью библиотеки химия пакета персонала [Kit см. в этой](xref:microsoft.quantum.chemistry.examples.endtoend) статье.
 
 ### <a name="getting-started-using-broombridge-files-provided-with-the-samples"></a>Приступая к работе с файлами Брумбридже, поставляемыми с образцами
-Папка [интегралдата/YAML](https://github.com/Microsoft/Quantum/tree/master/Chemistry/IntegralData/YAML) в репозитории примеров пакета разработки тактов содержит файлы данных с брумбридже форматом.  
 
-В качестве простого примера используйте пример библиотеки химия, [жетгатекаунт](https://github.com/Microsoft/Quantum/tree/master/Chemistry/GetGateCount) , чтобы загрузить хамилтониан из одного из брумбридже файлов и выполнить прогнозное моделирование алгоригсмс:
+Папка [интегралдата/YAML](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML) в репозитории примеров пакета разработки тактов содержит файлы данных с брумбридже форматом.  
+
+В качестве простого примера используйте пример библиотеки химия, [жетгатекаунт](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/GetGateCount) , чтобы загрузить хамилтониан из одного из брумбридже файлов и выполнить прогнозное моделирование алгоригсмс:
 
 ```bash
 cd Quantum/Chemistry/GetGateCount
@@ -171,5 +172,3 @@ Convert-NWChemToBroombridge ./input.nw
 Convert-NWChemToBroombridge -?
 Get-Help Convert-NWChemToBroombridge -Full
 ```
-
-

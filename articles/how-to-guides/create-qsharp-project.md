@@ -7,12 +7,12 @@ ms.date: 10/19/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.howto.createproject
-ms.openlocfilehash: 5fa32f14291fa2070b49e4bb3b720cbf31ee614b
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: c093284f1ea33b72d4d264992b0ba6bf6bc72782
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819898"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036446"
 ---
 # <a name="create-a-q-project-in-your-development-environment"></a>Создание проекта Q # в среде разработки
 
@@ -30,13 +30,13 @@ ms.locfileid: "76819898"
 
 ## <a name="create-a-python-project"></a>Создание проекта Python
 
-1. Технические условия
+1. Предварительные требования
 
      * Установка [пакета средств разработки тактов для Python](xref:microsoft.quantum.install.python)
 
 1. Создайте папку для проекта и перейдите к этой папке.
 
-1. Создайте файл Q # с именем `Operation.qs`и добавьте в него код Q #. Пример.
+1. Создайте файл Q # с именем `Operation.qs`и добавьте в него код Q #. Пример:
 
     ```qsharp
     namespace HelloWorld {
@@ -50,7 +50,7 @@ ms.locfileid: "76819898"
     }
     ```
 
-1. Создайте файл узла Python с именем `host.py`, чтобы вызвать операцию Q #. Пример.
+1. Создайте файл узла Python с именем `host.py`, чтобы вызвать операцию Q #. Пример:
 
     ```python
     import qsharp
@@ -77,7 +77,7 @@ ms.locfileid: "76819898"
 
 ## <a name="create-a-q-jupyter-notebook-project"></a>Создание проекта Q # Jupyter Notebook
 
-1. Технические условия
+1. Предварительные требования
 
     * Установка [пакета средств разработки тактов для записных книжек Jupyter](xref:microsoft.quantum.install.jupyter)
 
@@ -87,7 +87,7 @@ ms.locfileid: "76819898"
     jupyter notebook
     ```
 
-1. Перейдите по URL-адресу, указанному в командной строке. Пример: [http://localhost:8888/?token=c790a52ba54f0cf77465c3c8983d776348285b0280d91b85 ]
+1. Перейдите по URL-адресу, указанному в командной строке. Пример: [http://localhost:8888/?token=c790a52ba54f0cf77465c3c8983d776348285b0280d91b85]
 
 1. В браузере появится страница Jupyter. На вкладке **файлы** выберите **создать** > **Q #** , чтобы создать записную книжку Jupyter с ядром Q #. Добавьте следующий код в первую ячейку записной книжки:
 
@@ -113,7 +113,7 @@ ms.locfileid: "76819898"
 
 ## <a name="create-a-c-project-on-windows-using-visual-studio"></a>Создание C# проекта в Windows с помощью Visual Studio
 
-1. Технические условия
+1. Предварительные требования
 
     * Установка [расширения пакета разработки тактов для Visual Studio](xref:microsoft.quantum.install.cs)
 
@@ -142,7 +142,7 @@ ms.locfileid: "76819898"
 
 ## <a name="create-a-c-project-using-vs-code"></a>Создание C# проекта с помощью VS Code
 
-1. Технические условия
+1. Предварительные требования
 
     * Установка [расширения пакета разработки такта для VS Code](xref:microsoft.quantum.install.cs)
 
@@ -167,13 +167,13 @@ ms.locfileid: "76819898"
 
 ## <a name="create-a-c-project-using-the-dotnet-command-line-tool"></a>Создание C# проекта с помощью средства командной строки `dotnet`
 
-1. Технические условия
+1. Предварительные требования
 
     * Установка [пакета средств разработки тактов для командной строки](xref:microsoft.quantum.install.cs)
 
 1. Создание приложения
 
-    ```bash
+    ```dotnetcli
     dotnet new console -lang Q# -o <project name>
     ```
 
@@ -187,7 +187,7 @@ ms.locfileid: "76819898"
 
 1. Выполнение приложения
 
-    ```bash
+    ```dotnetcli
     dotnet run
     ```
 
@@ -195,6 +195,6 @@ ms.locfileid: "76819898"
 
 Теперь вы можете продолжить разработку тактов с помощью средств командной строки.
 
-## <a name="whats-next"></a>Что дальше?
+## <a name="whats-next"></a>Дальнейшие действия
 
 После создания проекта в предпочитаемой среде можно продолжить разработку тактов.

@@ -6,12 +6,12 @@ uid: microsoft.quantum.libraries.characterization
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 51124dc78feedf6d5c85fe224898e66a1c5ed459
-ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+ms.openlocfilehash: 0c347113339a77e9eaf63dc0967c320f8b063a0e
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76870357"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036259"
 ---
 # <a name="quantum-characterization-and-statistics"></a>Посимвольная и статистика тактовой задержки #
 
@@ -88,7 +88,7 @@ ms.locfileid: "76870357"
 
 Наблюдая `Result` с функцией правдоподобия итеративной оценки, мы можем использовать правило алгоритма Байеса, предписывает, что следует предполагать, что этап должен следовать за этим наблюдением.
 Конкретнее, \бегин{екуатион} \Пр (\фи | d) = \Фрак{\пр (d | \фи) \Пр (\фи)} {\инт \Пр (d | \фи) \Пр (\фи) {\масрм d} \фи} \Пр (\Phi), \end{Equation}, где $d \in \\{\texttt{Zero}, \texttt{One}\\} $ — это `Result`, где $ \Pr (\Phi) $ описывает наши предыдущие воззрений о $ \Phi $.
-Это делает итеративную природу оценки итеративной фазы явной, так как апостериорные Distribution $ \Пр (\фи | d) $ описывает наши воззрений, которые немедленно проводили наблюдение за следующей `Result`.
+Это делает итеративную природу оценки итеративной фазы явной, так как апостериорные Distribution $ \Пр (\фи | d) $ описывает наш воззрений непосредственно перед нашим наблюдением за следующим `Result`.
 
 В любой момент выполнения этой процедуры мы можем сообщить этап $ \хат{\фи} $, выводимый классическим контроллером как \бегин{екуатион} \хат{\фи} \масрел{: =} \експект [\фи | \текст{Дата}] = \инт \фи \Pr (\Phi | \Text{Data}) {\mathrm d} \Phi, \end{Equation}, где $ \Text{Data} $ означает всю запись всех `Result` значений.
 

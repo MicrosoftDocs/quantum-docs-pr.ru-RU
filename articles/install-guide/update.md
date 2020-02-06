@@ -6,12 +6,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.update
-ms.openlocfilehash: ed2a90749bbe245dde97424fc3191682f995d85b
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: f19285ae0e008b3460d06430a236f098d716e268
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819745"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036327"
 ---
 # <a name="update-the-microsoft-quantum-development-kit-qdk"></a>Обновление Microsoft Quantum Development Kit (КДК)
 
@@ -28,10 +28,12 @@ ms.locfileid: "76819745"
 Независимо от того, используете C# ли вы или Python для размещения операций q #, следуйте этим инструкциям, чтобы обновить проекты q #.
 
 1. Сначала убедитесь, что у вас установлена последняя версия [пакет SDK для .NET Core 3,1](https://dotnet.microsoft.com/download). В командной строке выполните следующую команду:
-    ```bash
+
+    ```dotnetcli
     dotnet --version
     ```
-Убедитесь, что выходные данные имеют `3.1.100` или выше. В противном случае установите [последнюю версию](https://dotnet.microsoft.com/download) и снова проверьте. Затем следуйте приведенным ниже инструкциям в зависимости от настроек (Visual Studio, Visual Studio Code или непосредственно в командной строке).
+
+    Убедитесь, что выходные данные имеют `3.1.100` или выше. В противном случае установите [последнюю версию](https://dotnet.microsoft.com/download) и снова проверьте. Затем следуйте приведенным ниже инструкциям в зависимости от настроек (Visual Studio, Visual Studio Code или непосредственно в командной строке).
 
 ### <a name="update-q-projects-in-visual-studio"></a>Обновление проектов Q # в Visual Studio
  
@@ -40,18 +42,22 @@ ms.locfileid: "76819745"
 3. В меню выберите **сборка** -> **Очистить решение** .
 4. В каждом из CSPROJ-файлов обновите целевую платформу до `netcoreapp3.0` (или `netstandard2.1`, если это проект библиотеки).
     То есть измените строки формы:
+
     ```xml
     <TargetFramework>netcoreapp3.0</TargetFramework>
     ```
+
     Дополнительные сведения об указании целевых платформ можно найти [здесь](https://docs.microsoft.com/dotnet/standard/frameworks#how-to-specify-target-frameworks).
 5. Сохранение и закрытие всех файлов в решении
 6. Выберите **инструменты** -> **командной строки** -> **Командная строка разработчика**
 7. Для каждого проекта в решении выполните следующую команду:
-    ```bash
+
+    ```dotnetcli
     dotnet add [project_name].csproj package Microsoft.Quantum.Development.Kit
     ```
-    Если в проектах используются любые другие пакеты Microsoft. тактов (например, Microsoft. тактов. numeric), выполните для них команду.
-8. Закройте командную строку и выберите **сборка** -> **сборка решения** (не *выбирайте* Перестроение решения, так как перестроение первоначально завершится сбоем).
+
+   Если в проектах используются любые другие пакеты Microsoft. тактов (например, Microsoft. тактов. numeric), выполните для них команду.
+8. Закройте командную строку и выберите **build** -> **Build Solution** ( *не* выбирайте Rebuild Solution).
 
 Теперь вы можете перейти к [обновлению расширения Visual Studio КДК](#update-visual-studio-qdk-extension).
 
@@ -66,24 +72,30 @@ ms.locfileid: "76819745"
 
 1. Перейдите к папке, содержащей файл проекта
 2. Выполните следующую команду:
-    ```bash
+
+    ```dotnetcli
     dotnet clean [project_name].csproj
     ```
 
 3. В каждом из CSPROJ-файлов обновите целевую платформу до `netcoreapp3.0` (или `netstandard2.1`, если это проект библиотеки).
     То есть измените строки формы:
+
     ```xml
     <TargetFramework>netcoreapp3.0</TargetFramework>
     ```
+
     Дополнительные сведения об указании целевых платформ можно найти [здесь](https://docs.microsoft.com/dotnet/standard/frameworks#how-to-specify-target-frameworks).
 4. Выполните следующую команду:
-    ```bash
+
+    ```dotnetcli
     dotnet add package Microsoft.Quantum.Development.Kit
     ```
+
     Если в проекте используются любые другие пакеты Microsoft. тактов (например, Microsoft. тактов. numeric), выполните для них команду.
 5. Сохраните и закройте все файлы.
 6. Повторите 1-4 для каждой зависимости проекта, а затем вернитесь к папке, содержащей основной проект, и выполните команду:
-    ```bash
+
+    ```dotnetcli
     dotnet build [project_name].csproj
     ```
 
@@ -105,14 +117,14 @@ ms.locfileid: "76819745"
 
 1. Обновление ядра `iqsharp` 
 
-    ```bash
+    ```dotnetcli
     dotnet tool update -g Microsoft.Quantum.IQSharp
     dotnet iqsharp install
     ```
 
 2. Проверка версии `iqsharp`
 
-    ```bash
+    ```dotnetcli
     dotnet iqsharp --version
     ```
 
@@ -122,6 +134,7 @@ ms.locfileid: "76819745"
     iqsharp: 0.10.1912.501
     Jupyter Core: 1.2.20112.0
     ```
+
     Не беспокойтесь, если ваша версия `iqsharp` более высокая, она должна соответствовать [последнему выпуску](xref:microsoft.quantum.relnotes).
 
 3. Обновление пакета `qsharp`
@@ -144,7 +157,9 @@ ms.locfileid: "76819745"
     Summary: Python client for Q#, a domain-specific quantum programming language
     ...
     ```
+
 5. Выполните следующую команду из расположения файлов `.qs`
+
     ```bash
     python -c "import qsharp; qsharp.reload()"
     ```
@@ -155,14 +170,14 @@ ms.locfileid: "76819745"
 
 1. Обновление ядра `iqsharp`
 
-    ```bash
+    ```dotnetcli
     dotnet tool update -g Microsoft.Quantum.IQSharp
     dotnet iqsharp install
     ```
 
 2. Проверка версии `iqsharp`
 
-    ```bash
+    ```dotnetcli
     dotnet iqsharp --version
     ```
 
@@ -172,9 +187,11 @@ ms.locfileid: "76819745"
     iqsharp: 0.10.1912.501
     Jupyter Core: 1.2.20112.0
     ```
+
     Не беспокойтесь, если ваша версия `iqsharp` более высокая, она должна соответствовать [последнему выпуску](xref:microsoft.quantum.relnotes).
 
 3. Выполните следующую команду в ячейке Jupyter Notebook:
+
     ```
     %workspace reload
     ```
@@ -210,10 +227,10 @@ ms.locfileid: "76819745"
 
 1. Обновление шаблонов проектов тактов для .NET
 
-    ```bash
+    ```dotnetcli
     dotnet new -i Microsoft.Quantum.ProjectTemplates
     ```
 
-## <a name="whats-next"></a>Что дальше?
+## <a name="whats-next"></a>Дальнейшие действия
 
 После обновления пакета средств разработки тактов в предпочтительной среде можно продолжить разработку и запуск тактовых программ. Если вы еще не написали программу, вы можете начать работу с [первой тактовой программой](xref:microsoft.quantum.write-program).

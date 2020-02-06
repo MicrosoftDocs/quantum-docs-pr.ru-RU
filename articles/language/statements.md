@@ -6,12 +6,12 @@ uid: microsoft.quantum.language.statements
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 9157cf3336ce0894816dbfbaf13ce0e712a6b096
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 9a6f5d53ec21090d0c13f4369e0270d264cd1e9b
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821071"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036497"
 ---
 # <a name="statements-and-other-constructs"></a>Операторы и другие конструкции
 
@@ -29,7 +29,7 @@ ms.locfileid: "76821071"
 Как расширение Markdown, перекрестные ссылки на операции, функции и определяемые пользователем типы в Q # можно включать с помощью `@"<ref target>"`, где `<ref target>` заменяется полным именем объекта кода, на который указывает ссылка.
 Кроме того, обработчик документации может также поддерживать дополнительные расширения Markdown.
 
-Пример.
+Пример:
 
 ```qsharp
 /// # Summary
@@ -191,7 +191,7 @@ for (qubit in qubits) {
 ```qsharp
 newtype Complex = (Re : Double, Im : Double);
 
-function ElementwisePlus(reals : Double[], ims : Double[]) : Complex[] {
+function ComplexSum(reals : Double[], ims : Double[]) : Complex[] {
     mutable res = Complex(0.,0.);
 
     for (r in reals) {
@@ -273,7 +273,7 @@ let n = 8;
 ...                 // n is 8
 ```
 
-Azure и
+и
 
 ```qsharp
 if (a == b) {
@@ -433,7 +433,7 @@ if (result == One) {
 } 
 ```
 
-или
+или диспетчер конфигурации служб
 
 ```qsharp
 if (i == 1) {
@@ -463,13 +463,13 @@ if (i == 1) {
 return 1;
 ```
 
-или
+или диспетчер конфигурации служб
 
 ```qsharp
 return ();
 ```
 
-или
+или диспетчер конфигурации служб
 
 ```qsharp
 return (results, qubits);
@@ -490,7 +490,7 @@ return (results, qubits);
 fail $"Impossible state reached";
 ```
 
-или
+или диспетчер конфигурации служб
 
 ```qsharp
 fail $"Syndrome {syn} is incorrect";
