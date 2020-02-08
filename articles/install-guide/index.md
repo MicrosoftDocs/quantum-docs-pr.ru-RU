@@ -6,12 +6,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install
-ms.openlocfilehash: b209f0b600d973c3870c66060e1b484ec519322f
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 0e9dd1c74316eeb1fa7bbbf657d2e78231ee4294
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820714"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036514"
 ---
 # <a name="install-the-microsoft-quantum-development-kit-qdk"></a>Установка пакета средств разработки Microsoft Quantum (QDK)
 
@@ -19,7 +19,7 @@ ms.locfileid: "76820714"
 
 - язык программирования Q#;
 - набор библиотек, абстрагирующих сложные функции в Q#;
-- API для языков Python и .NET (например: C#, F#и VB.NET) для запуска квантовых программ, написанных в Q#
+- API-интерфейсы для Python и языков .NET (C#, F# и VB.NET) для запуска квантовых программ, написанных на Q#
 - средства для упрощения разработки.
 
 Программы Q# часто связаны с основной программой, написанной на языке .NET (обычно C#) или Python. Это позволяет вызывать квантовые операции из классической программы.
