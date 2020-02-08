@@ -1,122 +1,96 @@
 ### YamlMime:Landing
-title: Microsoft Quantum Development Kit
-summary: Узнайте о том, как использовать Microsoft Quantum Development Kit и Q# для создания квантовых алгоритмов.
+title: Документация по Microsoft Quantum
+summary: Сведения о том, как использовать Microsoft Quantum Development Kit и Q# для разработки квантовых алгоритмов. Изучите основные концепции и создайте первую квантовую программу.
 metadata:
-  title: Microsoft Quantum Development Kit. Справочник по API Q#
-  description: Узнайте о том, как использовать Microsoft Quantum Development Kit и Q# для создания квантовых алгоритмов. Изучите основные концепции и создайте первую квантовую программу.  Изучите полнофункциональные средства и библиотеки QDK.
+  title: Документация по Microsoft Quantum — справочник по API Q#
+  description: Сведения о том, как использовать Microsoft Quantum Development Kit и язык Q# в квантовом программировании. Изучите основные концепции и создайте первую квантовую программу.  Изучите полнофункциональные средства и библиотеки QDK.
   ms.prod: quantum
   ms.topic: landing-page
   ms.collection: collection
   author: cjgronlund
   ms.author: cgronlun
   ms.date: 10/21/2019
-  ms.openlocfilehash: 53ee7b0a1ba7a83fb943f18afd27b5c699f848b2
-  ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+  ms.openlocfilehash: a39b230bc3b740afd23f0050b9c45df6094bea4e
+  ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76820731"
+  ms.lasthandoff: 02/06/2020
+  ms.locfileid: "77036582"
 landingContent:
 - title: Начало работы с Microsoft Quantum
   linkLists:
   - linkListType: overview
     links:
-    - text: Пять вопросов о квантовых вычислениях
+    - text: Quantum Development Kit
       url: welcome.md
-  - linkListType: get-started
+  - linkListType: learn
+    links:
+    - text: Что такое квантовые вычисления?
+      url: overview/what-is-quantum-computing.md
+    - text: Возможности квантового компьютера
+      url: overview/quantum-computers.md
+    - text: Задачи изучения принципов квантовых вычислений
+      url: overview/why-learn-quantum-computing.md
+    - text: Что такое Q#?
+      url: overview/what-is-qsharp.md
+    - text: Как узнать, что такое квантовые вычисления?
+      url: overview/how-to-learn-quantum-computing.md
+- title: Скачать Quantum Development Kit
+  linkLists:
+  - linkListType: download
+    links:
+    - text: Установка Quantum Development Kit
+      url: install-guide/index.md
+    - text: Обновление Quantum Development Kit
+      url: install-guide/update.md
+- title: Краткие руководства
+  linkLists:
+  - linkListType: quickstart
     links:
     - text: Создание квантового генератора случайных чисел
       url: quickstarts/qrng.md
     - text: Основы квантового программирования на Q#
       url: quickstart.md
-    - text: Важные квантовые программы на языке Q#
+    - text: 'Квантовое ускорение: алгоритм Гровера для поиска'
       url: quickstarts/search.md
-    - text: Сведения о решении крупнейших проблем в химической отрасли
-      url: https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/
-  - linkListType: learn
-    links:
-    - text: Обучение с помощью Quantum Katas
-      url: intro-to-katas.md
-    - text: Обзор примеров Q#
-      url: https://docs.microsoft.com/samples/browse/?languages=qsharp
-- title: Разработка на Q#, Python или в записных книжках Jupyter
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Установка Python
-      url: install-guide/pyinstall.md
-    - text: Установка Jupyter
-      url: install-guide/qjupyter.md
-  - linkListType: how-to-guide
-    links:
-    - text: Примеры Q# с использованием Python
-      url: https://docs.microsoft.com/samples/browse/?languages=python&products=qdk
-    - text: Телепортирование записной книжки Q# Jupyter
-      url: https://docs.microsoft.com/samples/microsoft/quantum/quantum-teleportation/
-    - text: Создание записных книжек Q# Jupyter
-      url: https://docs.microsoft.com/samples/microsoft/quantum/intro-to-qsharp-jupyter/
-- title: Среды разработки Q#
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Установка Visual Studio
-      url: install-guide/csinstall.md
-    - text: Установка Visual Studio Code
-      url: install-guide/csinstall.md
-- title: Примеры для Q#
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Три простых алгоритма
-      url: https://docs.microsoft.com/samples/microsoft/quantum/simple-quantum-algorithms
-    - text: Поиск по алгоритму Гровера
-      url: https://docs.microsoft.com/samples/microsoft/quantum/searching-with-grovers-algorithm
-    - text: Квантовая телепортация
-      url: https://docs.microsoft.com/samples/microsoft/quantum/quantum-teleportation/
-    - text: Все примеры
-      url: https://docs.microsoft.com/samples/browse/?languages=qsharp
-- title: Методы разработки с использованием Q#
-  linkLists:
-  - linkListType: learn
-    links:
-    - text: Общие сведения о языке Q#
-      url: language/index.md
-  - linkListType: how-to-guide
-    links:
-    - text: Квантовые симуляторы и основные приложения
-      url: machines/index.md
-  - linkListType: how-to-guide
-    links:
-    - text: Обзор программ Q#
-      url: techniques/file-structure.md
-    - text: Операции и функции
-      url: techniques/operations-and-functions.md
-    - text: Локальные переменные
-      url: techniques/local-variables.md
-    - text: Работа с кубитами
-      url: techniques/working-with-qubits.md
-    - text: Объединяя все перечисленное. Телепортация
-      url: techniques/putting-it-all-together.md
 - title: Концепции квантовых вычислений
   linkLists:
   - linkListType: concept
     links:
     - text: Концепции квантовых вычислений
       url: concepts/index.md
-    - text: Глоссарий
-      url: Glossary.md
-- title: Алгоритмы и приложения Q#
+- title: Язык программирования Q#
   linkLists:
-  - linkListType: reference
+  - linkListType: learn
     links:
-    - text: Усиление амплитуды
-      url: libraries/standard/algorithms.md
-    - text: Оценка квантовых фаз
-      url: libraries/standard/algorithms.md#quantum-phase-estimation
-    - text: Алгоритм Шора
-      url: libraries/standard/applications.md#shors-algorithm
-    - text: Гамильтоново моделирование
-      url: libraries/standard/applications.md
+    - text: Общие сведения о языке Q#
+      url: language/index.md
+    - text: Методики разработки с помощью Q#
+      url: techniques/index.md
+- title: Целевые компьютеры
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Квантовые симуляторы и основные приложения
+      url: machines/index.md
+  - linkListType: architecture
+    links:
+    - text: Симулятор полного состояния
+      url: machines/full-state-simulator.md
+    - text: Средство оценки ресурсов
+      url: machines/resources-estimator.md
+    - text: Симулятор трассировки
+      url: machines/qc-trace-simulator/index.md
+    - text: Симулятор Тоффоли
+      url: machines/toffoli-simulator.md
+- title: Учебные материалы по Q#
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Обучение с помощью Quantum Katas
+      url: intro-to-katas.md
+    - text: Обзор примеров кода на Q#
+      url: https://docs.microsoft.com/samples/browse/?languages=qsharp
 - title: Библиотеки Q#
   linkLists:
   - linkListType: reference
@@ -129,14 +103,18 @@ landingContent:
       url: libraries/chemistry/index.md
     - text: Концепции химических вычислений
       url: libraries/chemistry/concepts/quantum-dynamics.md
-  - linkListType: how-to-guide
+- title: Алгоритмы и приложения на Q# (из стандартных библиотек)
+  linkLists:
+  - linkListType: reference
     links:
-    - text: Примеры числовых значений Q#
-      url: libraries/numerics/numerics.md
-    - text: Примеры химических вычислений Q#
-      url: libraries/chemistry/samples/index.md
-    - text: Полный цикл работы с NWChem
-      url: libraries/chemistry/samples/end-to-end.md
+    - text: Усиление амплитуды
+      url: libraries/standard/algorithms.md
+    - text: Оценка квантовых фаз
+      url: libraries/standard/algorithms.md#quantum-phase-estimation
+    - text: Алгоритм Шора
+      url: libraries/standard/applications.md#shors-algorithm
+    - text: Гамильтоново моделирование
+      url: libraries/standard/applications.md
 - title: Сообщество и вклад
   linkLists:
   - linkListType: how-to-guide
