@@ -3,18 +3,73 @@ uid: microsoft.quantum.canon.controlledonbitstring
 name: ControlledOnBitString
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: Возвращает оператор, который применяет Oracle к целевой регистрации, если состояние регистра элемента управления соответствует заданной битовой маске.
+summary: >-
+  Возвращает оператор, который применяет Oracle к целевой регистрации, если состояние регистра элемента управления соответствует заданной битовой маске.
+
+
+  Выходные данные этой функции могут быть представлены единым преобразованием $U $ таким, что \бегин{алигн} U \кет{b_0 b_1 \кдотс b_ {n-1}} \кет{\пси} = \кет{b_0 b_1 \кдотс b_ {n-1}} \отимес \бегин{Касес} V \кет{\пси} & \textrm{if} (b_0 b_1 \cdots b_ {n-1}) = \texttt{BITS} \\\\ \ket{\psi} & \textrm{otherwise} \end{cases} \end{align}, где $V $ является единым преобразованием, представляющим действие `oracle` операции.
+remarks: >-
+  Длина `bits` и `controlRegister` должна быть равна.
+
+
+  При указании логического `bits` массива и `oracle`операции результат этой функции является операцией, которая выполняет следующие действия:
+
+
+  * Примените операцию `X` к каждому кубит регистру элемента управления, соответствующему `false` элементу `bits`;
+
+  * Примените `Controlled oracle` к элементу управления и целевым регистрам.
+
+  * Примените операцию `X` к каждому кубит регистру элемента управления, который соответствует `false`ному элементу `bits` еще раз, чтобы вернуть Контрольный регистр к исходному состоянию.
+
+
+  Выходные данные `Controlled` функтор — это особый случай `ControlledOnBitString`, где `bits` равно `[true, ..., true]`.
+examples: >-
+  Следующие фрагменты кода эквивалентны:
+
+
+  ```qsharp
+
+  (ControlledOnBitString(bits, oracle))(controlRegister, targetRegister);
+
+  ```
+
+
+  и
+
+
+  ```qsharp
+
+  within {
+      ApplyPauliFromBitString(PauliX, false, bits, controlRegister);
+  } apply {
+      Controlled oracle(controlRegister, targetRegister);
+  }
+
+  ```
+
+
+  Следующий код подготавливает параметр state $ \фрак{1}{2}(\кет{00}-\кет{01} + \кет{10} + \кет{11}) $:
+
+
+  ```qsharp
+
+  using (register = Qubit[2]) {
+      ApplyToEach(H, register);
+      (ControlledOnBitString([false], Z))(register[0..0], register[1]);
+  }
+
+  ```
 syntax: "function ControlledOnBitString (bits : Bool[], oracle : ('T => Unit is Adj + Ctl)) : ((Qubit[], 'T) => Unit is Adj + Ctl)"
 input:
   content: "(bits : Bool[], oracle : ('T => Unit is Adj + Ctl))"
   types:
   - name: bits
-    summary: Логический массив.
+    summary: Битовая строка для управления данным единым оператором в.
     isArray: true
     isPrimitive: true
     uid: Bool
   - name: oracle
-    summary: Оператор с единым.
+    summary: Оператор, применяемый к целевой регистрации.
     isOperation: true
     input:
       types:
@@ -47,9 +102,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 1abe0f1abcbab06aa9821c52878cf85b03d2c592
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: dde246a6eb0cf5e278cd079ff52c3a0b0ff71120
+  ms.sourcegitcommit: b7e205aaa7fa1ca9f0daa163e46154945f4bc965
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227395"
+  ms.lasthandoff: 02/18/2020
+  ms.locfileid: "77441051"
