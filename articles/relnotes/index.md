@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: c135dacb2fc305fa97874cb4abcf4e2ac489b9e4
-ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+ms.openlocfilehash: be1eff8127be9fb024a1dc2de3ec82952ac2dc2b
+ms.sourcegitcommit: b7e205aaa7fa1ca9f0daa163e46154945f4bc965
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76871623"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77441030"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -21,13 +21,14 @@ ms.locfileid: "76871623"
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
 
+
 ## <a name="version-01020012831"></a>Версия 0.10.2001.2831
 
 *Дата выпуска: 29 января 2020 г.*
 
 Этот выпуск включает следующие обновления:
 
-- Новый пакет NuGet Microsoft.Quantum.SDK (см. файл [README](https://github.com/microsoft/qsharp-compiler/blob/master/src/QuantumSdk/README.md))
+- Новый пакет NuGet Microsoft.Quantum.SDK
 - Добавлена поддержка .NET Core 3.1. При этом настоятельно рекомендуется установить версию 3.1.100, так как при выполнении сборки с более старыми версиями пакета SDK для .NET Core могут возникать проблемы.
 - Новые преобразования компилятора, доступные в Microsoft.Quantum.QsCompiler.Experimental
 - Новые функции для предоставления векторов состояния вывода в виде HTML в IQ#
