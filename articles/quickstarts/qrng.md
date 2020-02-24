@@ -6,12 +6,12 @@ ms.author: megbrow@microsoft.com
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
-ms.openlocfilehash: 134617455b720cc755b9ee9fb68fb59e624d3f1a
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: d1ad2c1153814e2fa19a38307b2c668c77eae4e3
+ms.sourcegitcommit: b7e205aaa7fa1ca9f0daa163e46154945f4bc965
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820940"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77441078"
 ---
 # <a name="quickstart-implement-a-quantum-random-number-generator-in-q"></a>Краткое руководство. Реализация квантового генератора случайных чисел на языке Q#
 Простой пример квантового алгоритма на языке Q#, который моделирует генератор случайных чисел. Этот алгоритм использует природу квантовой механики для получения случайного числа. 
@@ -28,20 +28,7 @@ ms.locfileid: "76820940"
 
 1. Замените содержимое файла Operation.cs следующим кодом:
 
-    ```qsharp
-    namespace Quantum {
-        open Microsoft.Quantum.Intrinsic;
-
-        operation QuantumRandomNumberGenerator() : Result {
-            using(qubit = Qubit())  { // Allocate a qubit.
-                H(qubit);             // Put the qubit to superposition. It now has a 50% chance of being 0 or 1.
-                let r = M(v);     // Measure the qubit value.
-                Reset(qubit);
-                return r;
-            }
-        }
-    }
-    ```
+ :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="3-14":::
 
 Как упоминалось в статье [Сведения о квантовых вычислениях](xref:microsoft.quantum.overview.what), кубит представляет собой единицу квантовой информации и может находиться в состоянии суперпозиции. При измерении он всегда возвращает значение 0 или 1. Но во время выполнения состояние кубита отражает вероятность получить значение 0 или 1 при измерении. Такое вероятностное состояние называется суперпозицией. Эту вероятность мы можем применить для создания случайных чисел.
 
@@ -75,7 +62,7 @@ ms.locfileid: "76820940"
 
 Теперь, когда у нас есть операция Q#, создающая случайные биты, мы можем использовать ее для создания комплексного квантового генератора случайных чисел с помощью основной программы.
 
- ### <a name="python-with-visual-studio-code-or-the-command-linetabtabid-python"></a>[Вызов Python из Visual Studio Code или командной строки](#tab/tabid-python)
+ ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[Вызов Python из Visual Studio Code или командной строки](#tab/tabid-python)
  
  Чтобы выполнить эту программу Q# из кода Python, сохраните следующий код в файл `host.py`:
  
@@ -87,7 +74,7 @@ ms.locfileid: "76820940"
  Preparing Q# environment...
  ..The random number generated is 42
  ```
- ### <a name="c-with-visual-studio-code-or-the-command-linetabtabid-csharp"></a>[Вызов C# из Visual Studio Code или командной строки](#tab/tabid-csharp)
+ ### <a name="c-with-visual-studio-code-or-the-command-line"></a>[Вызов C# из Visual Studio Code или командной строки](#tab/tabid-csharp)
  
  Чтобы выполнить эту программу Q# из кода C#, измените `Driver.cs`, включив в него следующий код:
  
@@ -100,7 +87,7 @@ ms.locfileid: "76820940"
  The random number generated is 42
  ```
 
- ### <a name="c-with-visual-studio-2019tabtabid-vs2019"></a>[Вызов C# из Visual Studio 2019](#tab/tabid-vs2019)
+ ### <a name="c-with-visual-studio-2019"></a>[Вызов C# из Visual Studio 2019](#tab/tabid-vs2019)
 
  Чтобы выполнить эту программу Q# из кода C# в Visual Studio, измените `Driver.cs`, включив в него следующий код:
 
