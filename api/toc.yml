@@ -1,4 +1,4 @@
-- name: Справочные материалы
+- name: Справочник по API
   items:
     - name: 'Библиотеки Q#'
       href: qsharp/toc.yml
