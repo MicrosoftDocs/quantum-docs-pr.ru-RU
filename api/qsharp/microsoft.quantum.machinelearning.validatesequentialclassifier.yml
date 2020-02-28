@@ -1,0 +1,39 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.validatesequentialclassifier
+name: ValidateSequentialClassifier
+type: operation
+namespace: Microsoft.Quantum.MachineLearning
+summary: Проверяет заданный последовательный классификатор на соответствие заданному набору предварительно помеченных образцов.
+syntax: 'operation ValidateSequentialClassifier (model : Microsoft.Quantum.MachineLearning.SequentialModel, samples : Microsoft.Quantum.MachineLearning.LabeledSample[], tolerance : Double, nMeasurements : Int, validationSchedule : Microsoft.Quantum.MachineLearning.SamplingSchedule) : Microsoft.Quantum.MachineLearning.ValidationResults'
+input:
+  content: '(model : Microsoft.Quantum.MachineLearning.SequentialModel, samples : Microsoft.Quantum.MachineLearning.LabeledSample[], tolerance : Double, nMeasurements : Int, validationSchedule : Microsoft.Quantum.MachineLearning.SamplingSchedule)'
+  types:
+  - name: model
+    summary: Последовательная модель для проверки.
+    uid: microsoft.quantum.machinelearning.sequentialmodel
+  - name: samples
+    summary: Примеры, используемые для проверки данной модели.
+    isArray: true
+    uid: microsoft.quantum.machinelearning.labeledsample
+  - name: tolerance
+    summary: Погрешность аппроксимации, используемая при кодировании каждого образца в качестве входных данных для последовательного классификатора.
+    isPrimitive: true
+    uid: Double
+  - name: nMeasurements
+    summary: Количество измерений, используемых при классификации каждого образца.
+    isPrimitive: true
+    uid: Int
+  - name: validationSchedule
+    summary: Расписание, по которому образцы должны быть выведены из набора проверки.
+    uid: microsoft.quantum.machinelearning.samplingschedule
+output:
+  content: Microsoft.Quantum.MachineLearning.ValidationResults
+  types:
+  - uid: microsoft.quantum.machinelearning.validationresults
+metadata:
+  ms.openlocfilehash: 211f5110f11a1128da4c73edbdfc948bc87e7959
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77908486"

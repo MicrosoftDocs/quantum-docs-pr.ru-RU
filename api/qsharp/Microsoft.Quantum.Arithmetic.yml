@@ -139,6 +139,8 @@ operations:
   summary: Произведение целого числа со знаком `xs` с помощью целого числа со знаком `ys` и сохранение результата в `result`, который должен быть равен нулю изначально.
 - uid: microsoft.quantum.arithmetic.preparefxp
   summary: Инициализируйте число с фиксированной запятой такта до классической константы.
+- uid: microsoft.quantum.arithmetic.reflectaboutinteger
+  summary: Отражает тактовый регистр относительно заданного классического целого числа.
 - uid: microsoft.quantum.arithmetic.ripplecarryaddercdkm
   summary: Обратимое выполнение — добавление двух целых чисел.
 - uid: microsoft.quantum.arithmetic.ripplecarryadderd
@@ -177,9 +179,9 @@ newtypes:
 - uid: microsoft.quantum.arithmetic.signedlittleendian
   summary: Тип целого числа со знаком, хранящегося с прямым порядком байтов (см. Литтлиндиан).
 metadata:
-  ms.openlocfilehash: f4bdca1f7b6339079cd1e13cfafc2de4e592901a
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 905bac104c15881be6b2e600bd090ff650d63e0e
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870448"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77904559"
