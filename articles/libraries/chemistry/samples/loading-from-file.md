@@ -1,17 +1,17 @@
 ---
-title: Загрузка Хамилтониан из файла | Документация Майкрософт
-description: Загрузка Хамилтониан из файловых документов
+title: Загрузка гамильтонова представления из файла
+description: Узнайте, как автоматически создать большой Хамилтониан с помощью схемы Брумбридже.
 author: guanghaolow
 ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.loadhamiltonian
-ms.openlocfilehash: 18f257efe8d53d2a22af4840bd8d17ab6b80a503
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: 715dbcefc10ecc5af45f2bdd228890f1cb28886b
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442363"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907296"
 ---
 # <a name="loading-a-hamiltonian-from-file"></a>Загрузка гамильтонова представления из файла
 Ранее мы создали Хамилтонианс, добавив в него отдельные термины. Хотя это и удобно для небольших примеров, тактовая химия в масштабе требует Хамилтонианс с миллионами или миллиардами терминов. Такие Хамилтонианс, созданные пакетами химия, такими как Нвчем, слишком велики для импорта вручную. В этом примере показано, как экземпляр `FermionHamiltonian` может быть автоматически создан из молекулы, представленной [схемой брумбридже](xref:microsoft.quantum.libraries.chemistry.schema.broombridge). Для справки можно проверить предоставленный образец `LithiumHydrideGUI` или образец `RunSimulation`. Ограниченная поддержка также доступна для импорта из формата, используемого [ликуи | >](https://www.microsoft.com/en-us/research/project/language-integrated-quantum-operations-liqui/).

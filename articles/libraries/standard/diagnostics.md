@@ -1,18 +1,18 @@
 ---
-title: 'Q # Стандартные библиотеки — диагностика | Документация Майкрософт'
-description: 'Q # Стандартные библиотеки — диагностика'
+title: 'Диагностика в стандартных библиотеках Q #'
+description: 'Сведения о диагностических функциях и операциях в стандартных библиотеках Q #, используемых для перехвата ошибок или ошибок в тактовых программах.'
 author: cgranade
 uid: microsoft.quantum.libraries.diagnostics
 ms.author: chgranad@microsoft.com
 ms.topic: article
-ms.openlocfilehash: 67ec6780d8cbbda7223d46026a9df97cebc92b33
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: ba2f248327bb3db4ee895f8e65ea31c17e42b5f4
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820986"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906242"
 ---
-# <a name="diagnostics"></a>Диагностика: #
+# <a name="diagnostics"></a>Диагностика #
 
 Как и в классической среде разработки, важно иметь возможность диагностировать ошибки и ошибки в тактовых программах.
 Библиотеки Q # Standard предоставляют различные способы обеспечения правильности работы тактовых программ, как описано в <xref:microsoft.quantum.techniques.testing-and-debugging>.

@@ -1,17 +1,17 @@
 ---
-title: Структура файла | Документация Майкрософт
-description: 'Q # файл структура'
+title: 'Q # файл структура'
+description: 'Сведения о структурировании пространств имен, операций, функций и определяемых пользователем типов объявлений в Q # Programs and librarys.'
 author: QuantumWriter
 uid: microsoft.quantum.language.file-structure
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 364d353c55bda38f227456909755d13dc7e67080
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: b4bb7d4d70677dbd5d921a9f68313760499a56a1
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821088"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907398"
 ---
 # <a name="file-structure"></a>Структура файла
 
@@ -66,7 +66,7 @@ Q # предоставляет пользователям возможность
 
 Объявление определяемого пользователем типа состоит из ключевого слова `newtype`, за которым следует имя определяемого пользователем типа, `=`, допустимая спецификация типа и завершающая точка с запятой.
 
-Пример.
+Пример:
 
 ```qsharp
 newtype PairOfInts = (Int, Int);

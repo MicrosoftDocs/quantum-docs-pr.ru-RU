@@ -1,17 +1,17 @@
 ---
-title: Сопутствующая документация | Документация Майкрософт
-description: Сопутствующая документация
+title: Дополнение к документации по Microsoft КДК
+description: Узнайте, как вносить концептуальные материалы или содержимое API в набор документации по Microsoft тактов.
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.docs
-ms.openlocfilehash: 1e24dd859c0b75a161f4f3c7151e2eec227075a2
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: d244a7841b4093031d6225230a6cbefb22cc6a39
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183681"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904899"
 ---
 # <a name="improving-documentation"></a>Улучшение документации #
 
@@ -24,7 +24,7 @@ ms.locfileid: "73183681"
 
 С другой стороны, каждая форма документации немного различается в деталях:
 
-- **Концептуальная документация** состоит из набора статей, опубликованных в https://docs.microsoft.com/quantum и описывающих все, от основ тактовых вычислений до технических спецификаций для форматов обмена. Эти статьи написаны на [DocFX Markdown (DFM)](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html), Markdown вариант, используемый для создания обширных наборов документации.
+- **Концептуальная документация** состоит из набора статей, опубликованных в https://docs.microsoft.com/quantumи описывающих все, от основ тактовых вычислений до технических спецификаций для форматов обмена. Эти статьи написаны на [DocFX Markdown (DFM)](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html), Markdown вариант, используемый для создания обширных наборов документации.
 - **Справочник по API** — это набор страниц для каждой функции Q #, операции и определяемого пользователем типа, опубликованный в https://docs.microsoft.com/qsharp/api/. Эти страницы задокументированы входы и операции для каждого вызова, а также примеры и ссылки на дополнительные сведения. Справочник по API автоматически извлекается из небольших документов DFM в исходном коде Q # в составе каждого выпуска.
 - Файлы **сведений<!---->. md** , включенные в каждый пример и Ката, описывают, как использовать этот пример или Ката, что он охватывает и как он связан с остальной частью пакета разработки тактов. Эти файлы пишутся с помощью [GitHub Markdown (GFM)](https://github.github.com/gfm/), более простой альтернативы DFM, который часто используется для присоединения документации непосредственно к репозиториям кода.
 
@@ -45,48 +45,85 @@ ms.locfileid: "73183681"
 
 Чтобы внести улучшения в ссылки API, очень полезно открыть запрос на вытягивание непосредственно в задокументированном коде.
 Каждая функция, операция или определяемый пользователем тип поддерживает комментарий к документации (обозначенный `///` вместо `//`).
-При компиляции каждого выпуска пакета средств разработки тактов эти комментарии используются для создания справочника по API на https://docs.microsoft.com/qsharp/api/ , включая сведения о входах и выходных данных каждого из вызываемых функций, предположения о каждом вызываемом методе и примеры их использования.
+При компиляции каждого выпуска пакета средств разработки тактов эти комментарии используются для создания справочника по API на https://docs.microsoft.com/qsharp/api/, включая сведения о входах и выходных данных каждого из вызываемых функций, предположения о каждом вызываемом методе и примеры их использования.
 
 > [!IMPORTANT]
 > Не изменяйте созданную документацию по API вручную, так как эти файлы перезаписываются с каждым новым выпуском.
 > Мы предлагаем вам вклад в сообщество и хотим убедиться, что изменения продолжают помочь пользователям выпустить после выпуска.
 
-Например, рассмотрим операцию `PrepareTrialState(angles : Double[], register : Qubit[]) : Unit`.
-Комментарий к документации должен помочь пользователю узнать, как интерпретировать `angles`, что предполагает выполнение операции относительно начального состояния `register`, воздействия на `register` и т. д.
+Например, рассмотрим функцию `ControlledOnBitString<'T> (bits : Bool[], oracle : ('T => Unit is Adj + Ctl)) : ((Qubit[], 'T) => Unit is Adj + Ctl)`.
+Комментарий к документации должен помочь пользователю узнать, как интерпретировать `bits` и `oracle` и функции.
 Каждый из этих частей информации может предоставляться компилятору Q # с помощью специально названного раздела Markdown в комментарии к документации.
-В качестве примера `PrepareTrialState`можно написать нечто вроде следующего:
+В качестве примера `ControlledOnBitString`можно написать нечто вроде следующего:
 
 ```qsharp
-/// # Summary
-/// Given a register of qubits, prepares them in a trial state by rotating each
-/// independently.
-///
-/// # Description
-/// This operation prepares the input register by performing a
-/// $Y$ rotation on each qubit by an angle given in `angles`.
-///
-/// # Input
-/// ## angles
-/// An array of parameters
-/// ## register
-/// A register of qubits initially in the $\ket{00\cdots0}$ state.
-///
-/// # Example
-/// To prepare an equal superposition $\ket{++\cdots+}$ over all input qubits:
-/// ```qsharp
-/// PrepareTrialState(ConstantArray(Length(register), PI() / 2.0), register);
-/// ```
-///
-/// # Remarks
-/// This operation is generally useful in the inner loop of an optimization
-/// algorithm.
-///
-/// # See Also
-/// - Microsoft.Quantum.Intrinsic.Ry
-operation PrepareTrialState(angles : Double[], register : Qubit[]) : Unit {
-    // ...
-}
+ /// # Summary
+ /// Returns a unitary operation that applies an oracle on the target register if the 
+ /// control register state corresponds to a specified bit mask.
+ ///
+ /// # Description
+ /// The output of this function is an operation that can be represented by a
+ /// unitary transformation $U$ such that
+ /// \begin{align}
+ ///     U \ket{b_0 b_1 \cdots b_{n - 1}} \ket{\psi} = \ket{b_0 b_1 \cdots b_{n-1}} \otimes
+ ///     \begin{cases}
+ ///         V \ket{\psi} & \textrm{if} (b_0 b_1 \cdots b_{n - 1}) = \texttt{bits} \\\\
+ ///         \ket{\psi} & \textrm{otherwise}
+ ///     \end{cases},
+ /// \end{align}
+ /// where $V$ is a unitary transformation that represents the action of the
+ /// `oracle` operation.
+ ///
+ /// # Input
+ /// ## bits
+ /// The bit string to control the given unitary operation on.
+ /// ## oracle
+ /// The unitary operation to be applied on the target register.
+ ///
+ /// # Output
+ /// A unitary operation that applies `oracle` on the target register if the control 
+ /// register state corresponds to the bit mask `bits`.
+ ///
+ /// # Remarks
+ /// The length of `bits` and `controlRegister` must be equal.
+ ///
+ /// Given a Boolean array `bits` and a unitary operation `oracle`, the output of this function
+ /// is an operation that performs the following steps:
+ /// * apply an `X` operation to each qubit of the control register that corresponds to `false` 
+ /// element of the `bits`;
+ /// * apply `Controlled oracle` to the control and target registers;
+ /// * apply an `X` operation to each qubit of the control register that corresponds to `false` 
+ /// element of the `bits` again to return the control register to the original state.
+ ///
+ /// The output of the `Controlled` functor is a special case of `ControlledOnBitString` where `bits` is equal to `[true, ..., true]`.
+ ///
+ /// # Example
+ /// The following code snippets are equivalent:
+ /// ```qsharp
+ /// (ControlledOnBitString(bits, oracle))(controlRegister, targetRegister);
+ /// ```
+ /// and
+ /// ```qsharp
+ /// within {
+ ///     ApplyPauliFromBitString(PauliX, false, bits, controlRegister);
+ /// } apply {
+ ///     Controlled oracle(controlRegister, targetRegister);
+ /// }
+ /// ```
+ ///
+ /// The following code prepares a state $\frac{1}{2}(\ket{00} - \ket{01} + \ket{10} + \ket{11})$:
+ /// ```qsharp
+ /// using (register = Qubit[2]) {
+ ///     ApplyToEach(H, register);
+ ///     (ControlledOnBitString([false], Z))(register[0..0], register[1]);
+ /// }
+ /// ```
+ function ControlledOnBitString<'T> (bits : Bool[], oracle : ('T => Unit is Adj + Ctl)) : ((Qubit[], 'T) => Unit is Adj + Ctl)
+ {
+     return ControlledOnBitStringImpl(bits, oracle, _, _);
+ }
 ```
+Отображаемую версию кода, приведенную выше, можно увидеть в [документации по API для функции `ControlledOnBitString`](xref:microsoft.quantum.canon.controlledonbitstring).
 
 В дополнение к общей практике написания документации по написанию комментариев к документации по API он помогает в уме некоторые моменты.
 

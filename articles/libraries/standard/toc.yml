@@ -1,5 +1,3 @@
-- name: Лицензирование OSS
-  href: licensing.md
 - name: Вводная часть
   href: prelude.md
 - name: Классическая математика
@@ -18,5 +16,7 @@
   href: characterization.md
 - name: Коррекция ошибок
   href: error-correction.md
-- name: ПРИЛОЖЕНИЯ
+- name: Приложения
   href: applications.md
+- name: Лицензирование OSS
+  href: licensing.md

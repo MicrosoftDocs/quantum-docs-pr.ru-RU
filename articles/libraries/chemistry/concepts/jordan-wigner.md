@@ -1,17 +1,17 @@
 ---
-title: Иордания — представление Вигнер | Документация Майкрософт
-description: Иордания — Вигнер представление концептуальных документов
+title: Иордания — представление Вигнер
+description: Сведения о Вигнер представлении, которое сопоставляет операторы Хамилтониан с едиными матрицами, которые более легко реализовать на тактовой системе.
 author: nathanwiebe2
 ms.author: nawiebe@microsoft.com
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.jordanwigner
-ms.openlocfilehash: 5d9038e440a2022547395e889e149a531a7ef818
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 17cb473c6d33e3356d5da886f47985c3828d4d1f
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820544"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904525"
 ---
 # <a name="jordan-wigner-representation"></a>Иордания — представление Вигнер
 

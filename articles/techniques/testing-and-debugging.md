@@ -1,24 +1,24 @@
 ---
-title: 'Тестирование и отладка — методы Q # | Документация Майкрософт'
-description: 'Тестирование и отладка — методы Q #'
+title: 'Тестирование и Отладка программ Q #'
+description: Узнайте, как использовать модульные тесты, факты и утверждения и функции дампа для тестирования и отладки тактовых программ.
 author: tcNickolas
 ms.author: mamykhai@microsoft.com
 uid: microsoft.quantum.techniques.testing-and-debugging
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: cfc71f08be0f190d9f5f4a48796e3d0ad06d6107
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 3df8df8defabcc9cc87d59f543f425c882b001e0
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820119"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907687"
 ---
 # <a name="testing-and-debugging"></a>Тестирование и отладка
 
 Как и в случае с классическим программированием, важно иметь возможность проверить, правильно ли работают тактовые программы и может ли она диагностировать неправильные тактовые программы.
 В этом разделе мы рассмотрим средства, предлагаемые Q # для тестирования и отладки тактовых программ.
 
-## <a name="unit-tests"></a>Модульные тесты
+## <a name="unit-tests"></a>модульные тесты
 
 Одним из распространенных подходов к тестированию классических программ является написание небольших программ, именуемых *модульными тестами* , которые выполняют код в библиотеке и сравнивают выходные данные с ожидаемыми выходными данными.
 Например, может потребоваться убедиться, что `Square(2)` возвращает `4`, так как мы узнали *приори* , что $2 ^ 2 = $4.
@@ -27,12 +27,12 @@ Q # поддерживает создание модульных тестов д
 
 ### <a name="creating-a-test-project"></a>Создание тестового проекта
 
-#### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 Откройте Visual Studio 2019. Перейдите в меню `File` и выберите `New` > `Project...`.
 В правом верхнем углу найдите `Q#`и выберите шаблон `Q# Test Project`.
 
-#### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[Командная строка и Visual Studio Code](#tab/tabid-vscode)
+#### <a name="command-line--visual-studio-code"></a>[Командная строка и Visual Studio Code](#tab/tabid-vscode)
 
 В командной строке избранного выполните следующую команду:
 ```bash
@@ -71,7 +71,7 @@ $ code . # To open in Visual Studio Code
 
 ### <a name="running-q-unit-tests"></a>Выполнение модульных тестов Q #
 
-#### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 В качестве одноразовой настройки для каждого решения перейдите в меню `Test` и выберите `Test Settings` > `Default Processor Architecture` > `X64`.
 
@@ -81,7 +81,7 @@ $ code . # To open in Visual Studio Code
 
 Выполните сборку проекта, перейдите в меню `Test` и выберите `Windows` > `Test Explorer`. `AllocateQubit` будут отображаться в списке тестов в группе `Not Run Tests`. Выберите `Run All` или запустите этот отдельный тест, и он должен пройти!
 
-#### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[Командная строка и Visual Studio Code](#tab/tabid-vscode)
+#### <a name="command-line--visual-studio-code"></a>[Командная строка и Visual Studio Code](#tab/tabid-vscode)
 
 Чтобы запустить тесты, перейдите в папку проекта (папку, содержащую `Tests.csproj`) и выполните команду:
 
@@ -123,29 +123,29 @@ $ dotnet test --filter "Name=AllocateQubit"
 
 Встроенная функция <xref:microsoft.quantum.intrinsic.message> имеет тип `(String -> Unit)` и позволяет создавать диагностические сообщения.
 
-#### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 После выполнения теста в обозревателе тестов и нажатия кнопки тест появится панель со сведениями о выполнении теста: состояние пройдено/неудачно, затраченное время и ссылка "выходные данные". Если щелкнуть ссылку "выходные данные", тестовый вывод откроется в новом окне.
 
 ![выходные данные теста](~/media/unit-test-output.png)
 
-#### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[Командная строка и Visual Studio Code](#tab/tabid-vscode)
+#### <a name="command-line--visual-studio-code"></a>[Командная строка и Visual Studio Code](#tab/tabid-vscode)
 
 Состояние "успех/сбой" для каждого теста выводится на консоль `dotnet test`.
 Для неудачных тестов выходные данные также выводятся на консоль для облегчения диагностики сбоя.
 
 ***
 
-## <a name="assertions"></a>Утверждения
+## <a name="facts-and-assertions"></a>Факты и утверждения
 
 Поскольку функции в Q # не имеют _логических_ побочных эффектов, любые _другие виды_ эффектов выполнения функции, тип вывода которой является пустым кортежем, `()` не могут рассматриваться в программе Q #.
 То есть целевой компьютер может не выполнять какую-либо функцию, возвращающую `()` с гарантией, что это не приведет к изменению поведения любого следующего кода Q #.
-Это позволяет функциям возвращать `()` полезное средство для внедрения утверждений и логики отладки в программы Q #. 
+Это позволяет функциям возвращать `()` (т. е. `Unit`) полезное средство для внедрения утверждений и логики отладки в программы Q #. 
 
-Для реализации утверждений можно применить ту же логику. Рассмотрим простой пример:
+Рассмотрим простой пример:
 
 ```qsharp
-function AssertPositive(value : Double) : Unit 
+function PositivityFact(value : Double) : Unit 
 {
     if (value <= 0) 
     {
@@ -156,11 +156,31 @@ function AssertPositive(value : Double) : Unit
 
 В этом случае ключевое слово `fail` указывает, что вычисление не должно выполняться, вызывая исключение на целевом компьютере, на котором выполняется программа Q #.
 По определению, сбой этого вида не может рассматриваться в Q #, так как дальнейший код Q # не будет выполняться после того, как будет достигнута инструкция `fail`.
-Таким же, если бы мы пропустили вызов `AssertPositive`, мы можем быть уверены, что его входные данные были положительными.
+Таким же, если бы мы пропустили вызов `PositivityFact`, мы можем быть уверены, что его входные данные были положительными.
+
+Обратите внимание, что мы можем реализовать то же поведение, что и `PositivityFact` используя функцию [`Fact`](xref:microsoft.quantum.diagnostics.fact) из пространства имен <xref:microsoft.quantum.diagnostics>:
+
+```qsharp
+    Fact(value <= 0, "Expected a positive number.");
+```
+
+*Утверждения*, с другой стороны, используются аналогично фактам, но могут зависеть от состояния целевого компьютера. Соответственно, они определяются как операции, тогда как факты определяются как функции (как показано выше).
+Чтобы понять различие, рассмотрим следующее применение факта в утверждении:
+
+```qsharp
+operation AssertQubitsAreAvailable() : Unit
+{
+     Fact(GetQubitsAvailableToUse() > 0, "No qubits were actually available");
+}
+```
+
+Здесь мы используем операцию <xref:microsoft.quantum.environment.getqubitsavailabletouse>, чтобы получить количество доступных для использования Кубитс.
+Так как это явно зависит от глобального состояния программы и среды выполнения, наше определение `AssertQubitsAreAvailable` также должно быть операцией.
+Однако можно использовать это глобальное состояние, чтобы получить простое `Bool` значение в качестве входных данных для функции `Fact`.
 
 Основываясь на этих идеях, [версионного](xref:microsoft.quantum.libraries.standard.prelude) предлагает два особенно полезных утверждения, <xref:microsoft.quantum.intrinsic.assert> и <xref:microsoft.quantum.intrinsic.assertprob> как с помощью операций, так и в `()`. Каждый из этих утверждений принимает Оператор Паули, описывающий определенное измерение интересов, тактовый регистр, на котором выполняется измерение, и гипотетический результат.
 На целевых компьютерах, работающих по моделированию, мы не привязаны [к Теорема без клонирования](https://en.wikipedia.org/wiki/No-cloning_theorem)и могут выполнять такие измерения без нарушения регистра, передаваемого в такие утверждения.
-Симулятор может, как и приведенная выше функция `AssertPositive`, прерывать вычисления, если гипотетический результат не наблюдается на практике:
+Симулятор может, как и приведенная выше функция `PositivityFact`, прерывать вычисления, если гипотетический результат не наблюдается на практике:
 
 ```qsharp
 using (register = Qubit()) 
@@ -265,7 +285,7 @@ using (register = Qubit())
   > Идентификатор кубит назначается во время выполнения и не обязательно соответствует порядку выделения кубит или его позиции в кубит регистре.
 
 
-#### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
   > [!TIP]
   > Чтобы определить идентификатор кубит в Visual Studio, поместите точку останова в код и проверьте значение переменной кубит, например:
@@ -274,7 +294,7 @@ using (register = Qubit())
   >
   > Кубит с индексом `0` в `register2` имеет ID =`3`, кубит с индексом `1` имеет ID =`2`.
 
-#### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[Командная строка и Visual Studio Code](#tab/tabid-vscode)
+#### <a name="command-line--visual-studio-code"></a>[Командная строка и Visual Studio Code](#tab/tabid-vscode)
 
   > [!TIP]
   > Вы можете определить идентификатор кубит с помощью функции <xref:microsoft.quantum.intrinsic.message> и передать переменную кубит в сообщении, например:

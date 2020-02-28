@@ -1,17 +1,17 @@
 ---
-title: Оценщик ресурсов комплекта разработки тактов | Документация Майкрософт
-description: Обзор средства оценки ресурсов пакета разработки такта Майкрософт
+title: Оценщик ресурсов комплекта разработки тактов
+description: 'Сведения о оценщике ресурсов, который оценивает ресурсы, необходимые для выполнения заданного экземпляра операции Q # на тактовый компьютер.'
 author: anpaz-msft
 ms.author: anpaz@microsoft.com
 ms.date: 1/22/2019
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: 960fda3dade7648f9cd24496c3a49fd11d6f807a
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 37c901e5a861f0e8a10cdc911ad1d84ddd3e6e00
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820867"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907058"
 ---
 # <a name="the-resourcesestimator-target-machine"></a>Целевой компьютер Ресаурцесестиматор
 
@@ -130,7 +130,7 @@ operation Teleport(source : Qubit, target : Qubit) : Unit {
 Когда `ResourcesEstimator` встречает `AssertProb` он записывает `PauliZ` измерения в `source` и `q` должен получить результат `Zero` с вероятностью 0,5. Когда она выполняется `M` позже, она найдет записанные значения вероятностей результата и `M` возвратит `Zero` или `One` с вероятностью 0,5.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 `ResourcesEstimator` построены на основе [симулятора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro)компьютерных компьютеров, который предоставляет более широкий набор метрик, возможность сообщать метрики на полном графе вызовов и такие функции, как [средство проверки различных входных данных](xref:microsoft.quantum.machines.qc-trace-simulator.distinct-inputs) , для поиска ошибок в программах Q #. Дополнительные сведения см. в документации по [симулятору трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro) .
 

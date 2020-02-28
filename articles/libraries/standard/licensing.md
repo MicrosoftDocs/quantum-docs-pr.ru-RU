@@ -1,22 +1,22 @@
 ---
-title: Лицензирование OSS
-description: 'Q # Стандартные библиотеки — лицензирование и дополнение'
+title: Лицензирование с открытым исходным кодом для КДК
+description: 'Узнайте о лицензировании для использования и вкладе в стандартные библиотеки Microsoft Q # — лицензирование и участие.'
 author: martinro
 ms.author: martinro@microsoft.com
 ms.date: 2/16/2018
 ms.topic: article
 uid: microsoft.quantum.libraries.licensing
-ms.openlocfilehash: 35e55f6741e5dcc79724f80f31d89937696d8554
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 4bc0fb7fbeb4a71b891619218905d509e50911c9
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73184395"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906208"
 ---
 # <a name="licensing"></a>Лицензирование #
 
 Пакет разработки такта предоставляется с обширным набором функций и операций с открытым исходным кодом, лицензированных по [лицензии MIT](https://github.com/Microsoft/Quantum/blob/master/LICENSE.txt).
-Части стандартной библиотеки, переносимые на целевые компьютеры, можно получить из репозитория [Microsoft/куантумлибрариес](https://github.com/Microsoft/QuantumLibraries) на сайте GitHub, а также с другими библиотеками, такими как и другие библиотеки, такие как [Библиотека тактов химия. ](xref:microsoft.quantum.chemistry.concepts.intro).
+Части стандартной библиотеки, переносимые на целевые компьютеры, можно получить из репозитория [Microsoft/куантумлибрариес](https://github.com/Microsoft/QuantumLibraries) на сайте GitHub, а также с другими библиотеками, такими как и другие библиотеки, такие как [Библиотека тактов химия](xref:microsoft.quantum.chemistry.concepts.intro).
 
 Пакет Microsoft для разработки тактов также предоставляет специализированные функции и операции библиотеки, лицензированные по [лицензии на исследование Майкрософт](https://github.com/Microsoft/Quantum-NC/blob/master/LICENSE).
 Их можно получить из репозитория [Microsoft/тактов-NC](https://github.com/microsoft/quantum-nc) в GitHub.
@@ -32,5 +32,5 @@ ms.locfileid: "73184395"
 
 Когда вы отправляете запрос на вытягивание, CLA-Bot автоматически определяет, нужно ли предоставлять CLA и оформлять (например, метку, комментарий). Просто следуйте инструкциям, предоставленным программой Bot. Это необходимо сделать только один раз для всех репозиториев, использующих наш CLA.
 
-Microsoft Open Source Code of Conduct [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+В рамках этого проекта действуют [правила поведения в отношении продуктов с открытым исходным кодом Майкрософт](https://opensource.microsoft.com/codeofconduct/).
 Дополнительные сведения:[вопросы и ответы по правилам поведения](https://opensource.microsoft.com/codeofconduct/faq/). С любыми другими вопросами или комментариями обращайтесь по адресу[opencode@microsoft.com](mailto:opencode@microsoft.com).

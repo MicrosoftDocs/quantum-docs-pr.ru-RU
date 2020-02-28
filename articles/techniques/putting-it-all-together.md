@@ -1,17 +1,17 @@
 ---
-title: 'Все вместе — методы Q # | Документация Майкрософт'
-description: 'Все вместе — методы Q #'
+title: 'Методы Q # — совместное размещение'
+description: 'Пошаговые инструкции по обычной программе Q #, демонстрирующие последовательное последовательное перепорт.'
 uid: microsoft.quantum.techniques.puttingittogether
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 3605826da159757d4b321dbf4ec6acd7f4e6be05
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 6c988f77ef6e433945dbf21dfb41204c74bdda3e
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820170"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906837"
 ---
 # <a name="putting-it-all-together-teleportation"></a>Совместное размещение: телепередача #
 Давайте вернемся к примеру канала телепереноса, определенного в [тактовой цепи](xref:microsoft.quantum.concepts.circuits). Мы будем использовать его для иллюстрации концепций, которые мы узнали до сих пор. Пояснения о телепортовой телетранспортировке приведены ниже для тех, кто не знаком с теории, за которым следует пошаговое руководство по реализации кода в Q #. 

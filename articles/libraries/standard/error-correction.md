@@ -1,21 +1,21 @@
 ---
-title: 'Q # Стандартные библиотеки — исправление ошибок | Документация Майкрософт'
-description: 'Q # Стандартные библиотеки — исправление ошибок'
+title: 'Исправление ошибок в стандартных библиотеках Q #'
+description: 'Узнайте, как использовать исправленные коды ошибок в программах Q # при защите состояния Кубитс.'
 author: QuantumWriter
 uid: microsoft.quantum.libraries.error-correction
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: e1b78cf94ae0a043ad275d4cb06b230eafd7fc85
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 514fe68f603b9a3a0b4607390719b08a43fe4967
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74863203"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907772"
 ---
 # <a name="error-correction"></a>Исправление ошибок #
 
-## <a name="introduction"></a>Общие сведения ##
+## <a name="introduction"></a>Введение ##
 
 В классический вычислительной среде, если бы один из них хочет защититься от ошибок, он часто может представлять этот бит на *логический бит* , повторив бит данных.
 Например, пусть $ \оверлине{0} = $0 быть кодировкой бита данных 0, где мы используем строку над меткой 0, чтобы указать, что она является кодировкой бита в состоянии 0.

@@ -1,17 +1,17 @@
 ---
-title: Установка и проверка библиотеки химия | Документация Майкрософт
-description: Установка и проверка библиотеки химия
+title: 'Установка и проверка библиотеки Microsoft Q # химия'
+description: Узнайте, как установить библиотеку Microsoft тактов химия и использовать ее с Нвчем вычислительной химия платформой.
 author: guanghaolow
 ms.author: gulow
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.chemistry.concepts.installation
-ms.openlocfilehash: de13d1814821c612ed74a347dc8ffb5881063576
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: 48bf7bc980e238e622053f5c2bdd09604c572596
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036480"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907364"
 ---
 # <a name="chemistry-library-installation-and-validation"></a>Установка и проверка библиотеки химия
 
@@ -21,25 +21,25 @@ ms.locfileid: "77036480"
 **Visual Studio 2019:** При использовании Visual Studio 2019 можно добавить пакеты тактовой химия с помощью диспетчера пакетов NuGet.
 Чтобы открыть диспетчер пакетов, щелкните правой кнопкой мыши проект, в который вы хотите добавить библиотеку химия, и выберите пункт "Управление пакетами NuGet...", как показано на снимке экрана ниже.
 
-![](~/media/vs2017-nuget-manage-packages.png)
+![Использование диспетчера пакетов NuGet в Visual Studio 2019](~/media/vs2017-nuget-manage-packages.png)
 
 На вкладке Обзор найдите имя пакета Microsoft. такт. химия.
 
 > [!NOTE]
 > Обязательно пометка "включить предварительные выпуски".
 
-![](~/media/vs2017-nuget-package-search.png)
+![Флажок "включить предварительные выпуски"](~/media/vs2017-nuget-package-search.png)
 
 В этом списке будут перечислены пакеты, доступные для загрузки.
 Щелкните элемент "Microsoft. тактов. Химия" в левой области, выберите последнюю предварительную версию на правой панели и нажмите кнопку "установить":
 
-![](~/media/vs2017-nuget-select-chem.png)
+![Установка последнего пакета Microsoft. Тактing. Химия](~/media/vs2017-nuget-select-chem.png)
 
 Дополнительные сведения см. в разделе [Путеводитель по пользовательскому интерфейсу диспетчера пакетов](https://docs.microsoft.com/nuget/tools/package-manager-ui).
 
 Кроме того, с помощью консоли диспетчера пакетов можно добавить в проект библиотеку тактов химия с помощью интерфейса командной строки.
 
-![](~/media/vs2017-nuget-console-menu.png)
+![Использование консоли диспетчера пакетов из командной строки](~/media/vs2017-nuget-console-menu.png)
 
 В консоли диспетчера пакетов выполните следующую команду:
 

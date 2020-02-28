@@ -1,17 +1,17 @@
 ---
-title: Использование библиотеки числовых библиотек | Документация Майкрософт
-description: Использование библиотеки числовых средств
+title: 'Использование библиотеки числовых средств Microsoft Q #'
+description: Сведения о типах и операциях, доступных в библиотеке цифровых чисел Microsoft тактов.
 author: thomashaener
 ms.author: thhaner
 ms.date: 5/14/2019
 ms.topic: article
 uid: microsoft.quantum.numerics.usage
-ms.openlocfilehash: ca24ff60cd9ae5077c7f4bae0012fe1180d7e6d4
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: ad9f529efd06fdf13bab4467b091aafacf1d5b09
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821037"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907262"
 ---
 # <a name="using-the-numerics-library"></a>Использование библиотеки числовых средств
 
@@ -36,7 +36,7 @@ open Microsoft.Quantum.Arithmetic;
 1. **`SignedLittleEndian`** : то же, что `LittleEndian`, за исключением того, что он представляет целое число со знаком, хранящееся в дополнениех двух.
 1. **`FixedPoint`** : представляет вещественное число, состоящее из массива кубит `qArr2 : Qubit[]` и позиции двоичной точки `pos`, которая подсчитывает количество двоичных разрядов слева от двоичной точки. `qArr2` хранится так же, как `SignedLittleEndian`.
 
-## <a name="operations"></a>Operations
+## <a name="operations"></a>Операции
 
 Для каждого из трех перечисленных выше типов доступны различные операции:
 

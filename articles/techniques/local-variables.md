@@ -1,22 +1,22 @@
 ---
-title: 'Локальные переменные — методы Q # | Документация Майкрософт'
-description: 'Локальные переменные — методы Q #'
+title: 'Локальные переменные — методы Q #'
+description: 'Узнайте, как определить локальные переменные и работать с ними в Q #.'
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.techniques.local-variables
-ms.openlocfilehash: 8b1de5c096210fb36a81c127a8bbbe1b39522741
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: cb6c662137c31a13c3dd6e9ca3f67879c469f788
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820187"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906871"
 ---
 # <a name="local-variables"></a>Локальные переменные #
 
 Значение любого типа в Q # можно присвоить переменной для повторного использования в операции или функции с помощью ключевого слова `let`.
-Например:
+например
 
 ```qsharp
 let measurementOperator = [PauliX, PauliZ, PauliZ, PauliX, PauliI];

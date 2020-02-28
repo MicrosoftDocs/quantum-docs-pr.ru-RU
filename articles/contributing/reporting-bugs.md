@@ -1,19 +1,19 @@
 ---
-title: Сообщения об ошибках | Документация Майкрософт
-description: Сообщения об ошибках
+title: Сообщения об ошибках
+description: Узнайте, как сообщать об ошибках или проблемах с Microsoft Quantum Development Kit (КДК).
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.reporting
-ms.openlocfilehash: bc2a877448f545a3142217331af3e6711ad45329
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 510f842a068a61502d150ccf5e3b2b5742984f3a
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183664"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904797"
 ---
-# <a name="reporting-bugs"></a>Сообщения об ошибках #
+# <a name="reporting-bugs"></a>Сообщение об ошибках #
 
 Если вы считаете, что в компоненте пакета средств разработки такта обнаружена ошибка, мы очень ценим отчет.
 В конце концов, кто-то другой может испытывать проблемы с той же проблемой. помощь нам в том, чтобы помочь нам исправить ее для всех пользователей.

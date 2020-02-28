@@ -1,17 +1,17 @@
 ---
-title: Установка и проверка библиотеки числовых значений | Документация Майкрософт
-description: Установка и проверка библиотеки числовых значений
+title: Библиотека цифровых чисел (Майкрософт) — Установка и проверка
+description: Узнайте, как добавить библиотеку Microsoft тактовых чисел в установку Visual Studio 2019 или более поздней версии.
 author: thomashaener
 ms.author: thhaner
 ms.date: 05/14/2019
 ms.topic: article
 uid: microsoft.quantum.numerics.installation
-ms.openlocfilehash: c41bb73ea484271689eea2ca1b59ce6639dc15a7
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: cb0d00a509b3986b605dd7f15f9bccc0661bb894
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036463"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906344"
 ---
 # <a name="numerics-library-installation-and-validation"></a>Установка и проверка библиотеки числовых значений
 
@@ -33,7 +33,7 @@ ms.locfileid: "77036463"
 
 Кроме того, можно использовать консоль диспетчера пакетов, чтобы добавить библиотеку числовых библиотек в проект с помощью интерфейса командной строки.
 
-![](../../media/vs2017-nuget-console-menu.png)
+![Использование консоли диспетчера пакетов из командной строки](../../media/vs2017-nuget-console-menu.png)
 
 В консоли диспетчера пакетов выполните следующую команду:
 

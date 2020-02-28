@@ -1,17 +1,17 @@
 ---
-title: Участвующий код | Документация Майкрософт
-description: Участвующий код
+title: Дополнение кода к Microsoft КДК
+description: Сведения о том, как внести пример и код библиотеки в Microsoft Quantum Development Kit (КДК).
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.code
-ms.openlocfilehash: f9e0f0d9540102331aea64a1245cbaa4833e1e02
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 1882e640dacf3987745ed225fef18636726f70a8
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819966"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907483"
 ---
 # <a name="contributing-code"></a>Участие в написании кода #
 
@@ -26,7 +26,7 @@ ms.locfileid: "76819966"
 Принимая участие в написании кода, он становится частью самого пакета разработки такта, поэтому новые функции будут выпущены, сохранены и разработаны так же, как и остальные компоненты пакета разработки тактов.
 Таким образом, это полезно при тщательном тестировании функциональности, добавленной в публикацию, и документированной.
 
-### <a name="unit-tests"></a>Модульные тесты ###
+### <a name="unit-tests"></a>модульные тесты ###
 
 Функции Q #, операции и определяемые пользователем типы, составляющие библиотеки, такие как Canon, автоматически тестируются как часть разработки в репозитории [**Microsoft/куантумлибрариес**](https://github.com/Microsoft/QuantumLibraries/) .
 Например, при открытии нового запроса на вытягивание [Azure pipelines](https://azure.microsoft.com/services/devops/pipelines/) конфигурация будет проверять, что изменения в запросе на вытягивание не нарушают существующие функциональные возможности, от которых зависит сообщество программирования тактов.
