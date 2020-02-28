@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.logical
 name: Microsoft.Quantum.Logical
-summary: " # <a name=\"summary\"></a>Резюме\n Содержит функции для работы с логическими выражениями и логической логикой."
+summary: " # <a name=\"summary\"></a>Сводка\n Содержит функции для работы с логическими выражениями и логической логикой."
 functions:
 - uid: microsoft.quantum.logical.and
   summary: Возвращает логическое значение, умноженное на два значения.
@@ -45,6 +45,8 @@ functions:
   summary: Возвращает значение true только в том случае, если число меньше или равно другому числу.
 - uid: microsoft.quantum.logical.lessthanorequall
   summary: Возвращает значение true только в том случае, если число меньше или равно другому числу.
+- uid: microsoft.quantum.logical.nearlyequald
+  summary: Возвращает значение true только в том случае, если два входных значения почти равны (то есть в пределах допустимого диапазона 1E-12).
 - uid: microsoft.quantum.logical.not
   summary: Возвращает логическое отрицание значения.
 - uid: microsoft.quantum.logical.notequalb
@@ -61,14 +63,16 @@ functions:
   summary: Возвращает значение true только в том случае, если два входных значения не равны.
 - uid: microsoft.quantum.logical.notequalr
   summary: Возвращает значение true только в том случае, если два входных значения не равны.
+- uid: microsoft.quantum.logical.notnearlyequald
+  summary: Возвращает значение true только в том случае, если два входных значения не почти равны (то есть не находятся в пределах допустимого диапазона 1E-12).
 - uid: microsoft.quantum.logical.or
   summary: Возвращает логическое сложение двух значений.
 - uid: microsoft.quantum.logical.xor
   summary: Возвращает логическое исключающее сложение двух значений.
 metadata:
-  ms.openlocfilehash: 12f462356dfe7ae4bf7c60110e71a9928bc8c178
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 356a31be888d7ed3a96e219f8f7b31151179d3eb
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73056281"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77905902"

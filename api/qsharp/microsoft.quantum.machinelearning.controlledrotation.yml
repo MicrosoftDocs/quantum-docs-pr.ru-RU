@@ -1,0 +1,32 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.controlledrotation
+name: ControlledRotation
+type: newtype
+namespace: Microsoft.Quantum.MachineLearning
+summary: Описывает управляемый поворот в терминах целевого объекта и индексов управления, ось вращения и индекс в векторе параметров модели.
+remarks: >-
+  Неуправляемый поворот можно представить, задав `ControlIndices` пустой массив индексов `new Int[0]`.
+
+
+  ### <a name="examples"></a>Примеры
+
+  Ниже представлен поворот $X $-AXIS первого кубит в регистре, управление вторым кубит, а также угол, заданный Четвертым параметром в последовательной модели.
+
+
+  ```Q#
+
+  let controlledRotation = ControlledRotation(
+      (0, [1]),
+      PauliX,
+      3
+  )
+
+  ```
+syntax: newtype ControlledRotation = ((Int, Int[]), Pauli, Int);
+metadata:
+  ms.openlocfilehash: b09588e77a43be10493184d4e3b8bbe7a0025ce6
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77909523"

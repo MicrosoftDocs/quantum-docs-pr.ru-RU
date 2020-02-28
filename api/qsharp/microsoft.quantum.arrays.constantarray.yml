@@ -4,6 +4,15 @@ name: ConstantArray
 type: function
 namespace: Microsoft.Quantum.Arrays
 summary: Создает массив заданной длины со всеми элементами, равными заданному значению.
+examples: >-
+  Следующий код создает массив из трех логических значений, каждый из которых равен `true`:
+
+
+  ```qsharp
+
+  let array = ConstantArray(3, true);
+
+  ```
 syntax: "function ConstantArray (length : Int, value : 'T) : 'T[]"
 input:
   content: "(length : Int, value : 'T)"
@@ -13,7 +22,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: value
-    summary: Значение, которое будет содержаться в каждом индексе нового массива.
+    summary: Значение каждого элемента нового массива.
     uid: "'T"
     isLocal: true
 output:
@@ -24,9 +33,9 @@ output:
     uid: "'T"
     isLocal: true
 metadata:
-  ms.openlocfilehash: 7b641f4e037b760ac036abfc23ac197d7008bc0e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3eb9380a9bf3c2229b936941d31041ef2adcce06
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214441"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77905426"

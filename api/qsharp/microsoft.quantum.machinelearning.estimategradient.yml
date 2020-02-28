@@ -1,0 +1,35 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.estimategradient
+name: EstimateGradient
+type: operation
+namespace: Microsoft.Quantum.MachineLearning
+summary: Оценивает градиентное обучение для последовательного классификатора в определенной модели и для заданных закодированных входных данных.
+remarks: Для оценки градиента эта операция использует Хадамард тест и метод сдвига параметров.
+syntax: 'operation EstimateGradient (model : Microsoft.Quantum.MachineLearning.SequentialModel, encodedInput : Microsoft.Quantum.MachineLearning.StateGenerator, nMeasurements : Int) : Double[]'
+input:
+  content: '(model : Microsoft.Quantum.MachineLearning.SequentialModel, encodedInput : Microsoft.Quantum.MachineLearning.StateGenerator, nMeasurements : Int)'
+  types:
+  - name: model
+    summary: Последовательная модель, градиент которой должен быть оценен.
+    uid: microsoft.quantum.machinelearning.sequentialmodel
+  - name: encodedInput
+    summary: Входные данные для последовательного классификатора, закодированные в операцию подготовки состояния.
+    uid: microsoft.quantum.machinelearning.stategenerator
+  - name: nMeasurements
+    summary: Количество измерений, используемых при оценке градиента.
+    isPrimitive: true
+    uid: Int
+output:
+  content: Double[]
+  types:
+  - summary: Оценка оценочного градиента на заданном входе и параметрах модели.
+    isArray: true
+    isPrimitive: true
+    uid: Double
+metadata:
+  ms.openlocfilehash: 05f80d57bc84e937e3a2580e9941a50ec60eab56
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77909421"
