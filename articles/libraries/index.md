@@ -1,16 +1,17 @@
 ---
-title: Библиотеки Quantum Development Kit | Документация Майкрософт
+title: Библиотека пакета средств разработки Quantum
+description: Общие сведения о стандартной библиотеке, а также о библиотеках химии и числовых значений в составе Microsoft Quantum Development Kit.
 author: cgranade
 ms.author: chgranad@microsoft.com
 ms.date: 10/17/2018
 ms.topic: article
 uid: microsoft.quantum.libraries
-ms.openlocfilehash: 7b51945a8aaf937856441cdb10e8a024bf816f88
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: 89612aaa5c11e1a5e0d418256e96366953fdd3fe
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442417"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906412"
 ---
 # <a name="overview-of-q-libraries"></a>Обзор библиотек Q#
 Quantum Development Kit включает несколько библиотек, которые упрощают разработку квантовых приложений на языке Q#.
@@ -20,4 +21,4 @@ Quantum Development Kit включает несколько библиотек, 
 - [**Библиотека Quantum Chemistry.** ](xref:microsoft.quantum.chemistry.concepts.intro) В этом разделе описывается библиотека для квантовой химии, которая содержит модель данных для загрузки гамильтоновых представлений фермионов, а также операции и функции квантового моделирования для работы с этими представлениями.
 - [**Квантовая библиотека числовых значений.** ](xref:microsoft.quantum.numerics.intro) В этом разделе описывается квантовая библиотека числовых значений, которая предоставляет реализации большого набора математических функций. Она поддерживает целочисленные значения (со знаком и без знака) и представления с фиксированной запятой.
 
-Исходный код этих библиотек и примеры использования можно получить на GitHub. См. сведения о [лицензировании](xref:microsoft.quantum.libraries.licensing). Важно отметить, что для библиотек можно использовать ссылки на пакеты (двоичные файлы), что дает альтернативный способ включать их в проекты. Например, очень удобно получать их с помощью [NuGet](https://nuget.org).  
+Исходный код этих библиотек и примеры использования можно получить на GitHub. См. сведения о [лицензировании](xref:microsoft.quantum.libraries.licensing). Важно отметить, что для библиотек можно использовать ссылки на пакеты (двоичные файлы), что дает альтернативный способ включать их в проекты. Например, очень удобно получать их с помощью [NuGet](https://nuget.org).

@@ -1,28 +1,24 @@
 ### YamlMime:Landing
 title: Документация по Microsoft Quantum
-summary: Сведения о том, как использовать Microsoft Quantum Development Kit и Q# для разработки квантовых алгоритмов. Изучите основные концепции и создайте первую квантовую программу.
+summary: Сведения о том, как использовать Microsoft Quantum Development Kit и язык Q# в квантовом программировании. Изучите основные концепции и создайте первую квантовую программу. Изучите полнофункциональные средства и библиотеки QDK.
 metadata:
-  title: Документация по Microsoft Quantum — справочник по API Q#
-  description: Сведения о том, как использовать Microsoft Quantum Development Kit и язык Q# в квантовом программировании. Изучите основные концепции и создайте первую квантовую программу.  Изучите полнофункциональные средства и библиотеки QDK.
+  title: Документация по Microsoft Quantum и справочник по API Q#
+  description: Изучите основные понятия тактовых вычислений и узнайте, как использовать Microsoft Quantum Development Kit (QDK) и Q# — язык для квантового программирования с открытым кодом.
   ms.prod: quantum
   ms.topic: landing-page
   ms.collection: collection
   author: cjgronlund
   ms.author: cgronlun
   ms.date: 10/21/2019
-  ms.openlocfilehash: a39b230bc3b740afd23f0050b9c45df6094bea4e
-  ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+  ms.openlocfilehash: 27f7ca535ddd846e7bae01baee3fbbb4713e0433
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/06/2020
-  ms.locfileid: "77036582"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77907432"
 landingContent:
-- title: Начало работы с Microsoft Quantum
+- title: Квантовые вычисления
   linkLists:
-  - linkListType: overview
-    links:
-    - text: Quantum Development Kit
-      url: welcome.md
   - linkListType: learn
     links:
     - text: Что такое квантовые вычисления?
@@ -31,66 +27,58 @@ landingContent:
       url: overview/quantum-computers.md
     - text: Задачи изучения принципов квантовых вычислений
       url: overview/why-learn-quantum-computing.md
-    - text: Что такое Q#?
+    - text: Что такое Q# и QDK?
       url: overview/what-is-qsharp.md
-    - text: Как узнать, что такое квантовые вычисления?
+    - text: Как получить дополнительную информацию?
       url: overview/how-to-learn-quantum-computing.md
+  - linkListType: concept
+    links:
+    - text: Концепции квантовых вычислений
+      url: concepts/index.md
 - title: Скачать Quantum Development Kit
   linkLists:
+  - linkListType: overview
+    links:
+    - text: Quantum Development Kit
+      url: welcome.md
   - linkListType: download
     links:
     - text: Установка Quantum Development Kit
       url: install-guide/index.md
     - text: Обновление Quantum Development Kit
       url: install-guide/update.md
-- title: Краткие руководства
-  linkLists:
-  - linkListType: quickstart
-    links:
-    - text: Создание квантового генератора случайных чисел
-      url: quickstarts/qrng.md
-    - text: Основы квантового программирования на Q#
-      url: quickstart.md
-    - text: 'Квантовое ускорение: алгоритм Гровера для поиска'
-      url: quickstarts/search.md
-- title: Концепции квантовых вычислений
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Концепции квантовых вычислений
-      url: concepts/index.md
 - title: Язык программирования Q#
   linkLists:
-  - linkListType: learn
+  - linkListType: overview
     links:
     - text: Общие сведения о языке Q#
       url: language/index.md
     - text: Методики разработки с помощью Q#
       url: techniques/index.md
-- title: Целевые компьютеры
-  linkLists:
-  - linkListType: overview
-    links:
     - text: Квантовые симуляторы и основные приложения
       url: machines/index.md
-  - linkListType: architecture
+  - linkListType: quickstart
     links:
-    - text: Симулятор полного состояния
-      url: machines/full-state-simulator.md
-    - text: Средство оценки ресурсов
-      url: machines/resources-estimator.md
-    - text: Симулятор трассировки
-      url: machines/qc-trace-simulator/index.md
-    - text: Симулятор Тоффоли
-      url: machines/toffoli-simulator.md
-- title: Учебные материалы по Q#
-  linkLists:
+    - text: Создание квантового генератора случайных чисел
+      url: quickstarts/qrng.md
+    - text: Исследование запутанности с использованием Q#
+      url: quickstart.md
+    - text: 'Квантовое ускорение: алгоритм Гровера для поиска'
+      url: quickstarts/search.md
   - linkListType: learn
     links:
     - text: Обучение с помощью Quantum Katas
       url: intro-to-katas.md
     - text: Обзор примеров кода на Q#
       url: https://docs.microsoft.com/samples/browse/?languages=qsharp
+- title: Сообщество и вклад
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Приглашаем к участию в разработке QDK
+      url: contributing/index.md
+    - text: Загляните в блог Microsoft Quantum
+      url: https://cloudblogs.microsoft.com/quantum
 - title: Библиотеки Q#
   linkLists:
   - linkListType: reference
@@ -101,25 +89,3 @@ landingContent:
       url: libraries/numerics/index.md
     - text: Библиотека для химии
       url: libraries/chemistry/index.md
-    - text: Концепции химических вычислений
-      url: libraries/chemistry/concepts/quantum-dynamics.md
-- title: Алгоритмы и приложения на Q# (из стандартных библиотек)
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Усиление амплитуды
-      url: libraries/standard/algorithms.md
-    - text: Оценка квантовых фаз
-      url: libraries/standard/algorithms.md#quantum-phase-estimation
-    - text: Алгоритм Шора
-      url: libraries/standard/applications.md#shors-algorithm
-    - text: Гамильтоново моделирование
-      url: libraries/standard/applications.md
-- title: Сообщество и вклад
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Приглашаем к участию в разработке QDK
-      url: contributing/index.md
-    - text: Загляните в блог Microsoft Quantum
-      url: https://cloudblogs.microsoft.com/quantum
