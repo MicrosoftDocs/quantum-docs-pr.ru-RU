@@ -1,17 +1,17 @@
 ---
 title: Задачи изучения принципов квантовых вычислений
-description: ''
+description: Откройте для себя задачи квантовых вычислений, которые вдохновляют и позволяют получить удовольствие от полученных результатов.
 author: natke
 ms.author: nakersha
 ms.date: 10/16/2019
 ms.topic: article
 uid: microsoft.quantum.overview.why
-ms.openlocfilehash: 389b745a9f19caa6272e7d537e3ee5f884cec36b
-ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+ms.openlocfilehash: abf8804dc772a82126d432348cc6d2bc1c77f1f7
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73529911"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906973"
 ---
 # <a name="why-learn-quantum-computing"></a>Задачи изучения принципов квантовых вычислений
 
@@ -35,7 +35,7 @@ ms.locfileid: "73529911"
 
 Помимо всех влияний на реальный мир, которые мы перечислили выше, нам просто очень нравятся квантовые вычисления. Изучение квантовых вычислений станет приятным опытом и подарит вам понимание новейших знаний и навыков, на основе которых вы сможете создать технологии будущего.
 
-## <a name="next-steps"></a>Дополнительная информация
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Что такое Q#?](xref:microsoft.quantum.overview.qsharp)
-* [Начало работы с Microsoft Quantum Development Kit](xref:microsoft.quantum.welcome)
+* [Начало работы с пакетом средств разработки Microsoft Quantum](xref:microsoft.quantum.welcome)

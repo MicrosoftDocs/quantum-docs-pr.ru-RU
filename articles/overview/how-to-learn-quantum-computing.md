@@ -1,25 +1,25 @@
 ---
 title: Способы изучения квантовых вычислений с использованием Q#
-description: ''
+description: Ресурсы для получения базовых математических и физических знаний, которые помогут приступить к работе с квантовыми вычислениями.
 author: natke
 ms.author: nakersha
 ms.date: 10/23/2019
 ms.topic: article
 uid: microsoft.quantum.overview.learn
-ms.openlocfilehash: 53682ae8ab9cb31fa0de68832cb3574aa4e30216
-ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+ms.openlocfilehash: 17fc4e7a73f93a86d981996bf8b59309bccb6e67
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73529963"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907755"
 ---
-# <a name="how-to-learn-quantum-computing"></a>Способы изучения принципов квантовых вычислений
+# <a name="how-to-learn-about-quantum-computing"></a>Как узнать, что такое квантовые вычисления?
 
 Рекомендации по изучению технологий квантовых вычислений и созданию первых программ. Вы не найдете здесь исчерпывающих инструкций, но этот материал поможет вам приступить к изучению.
 
 ## <a name="getting-started-overview"></a>Начало работы
 
-Статья [Начало работы с Microsoft Quantum Development Kit](xref:microsoft.quantum.welcome) включает обобщенное описание квантовых вычислений на Q#, в том числе руководства по написанию простых программ Q#, руководства по началу работы и общие сведения о квантовых библиотеках Q# для разработки квантовых программ.
+Статья [Начало работы с пакетом средств разработки Microsoft Quantum](xref:microsoft.quantum.welcome) включает обобщенное описание квантовых вычислений на Q#, в том числе руководства по написанию простых программ Q#, руководства по началу работы и общие сведения о квантовых библиотеках Q# для разработки квантовых программ.
 
 ## <a name="learning-the-basics-what-do-you-need-to-know"></a>Знакомство с основами
 
