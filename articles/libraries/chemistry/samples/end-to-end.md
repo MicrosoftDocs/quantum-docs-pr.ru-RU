@@ -5,16 +5,16 @@ author: cgranade
 ms.author: chgranad@microsoft.com
 ms.date: 10/23/2018
 uid: microsoft.quantum.chemistry.examples.endtoend
-ms.openlocfilehash: 545ade99859f2a9939477fb18604921f70a5d9aa
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 7605676e05ee352e47791657eeaafceef5dbb493
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77906514"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022496"
 ---
 # <a name="end-to-end-with-nwchem"></a>Полный цикл работы с NWChem #
 
-На этой странице мы рассмотрим пример получения счетчиков шлюзов для моделирования тактовой химия, начиная с колоды входных данных [нвчем](http://www.nwchem-sw.org/index.php/Main_Page) .
+В этой статье вы узнаете пример получения счетчиков шлюзов для моделирования тактовой химия, начиная с колоды входных данных [нвчем](http://www.nwchem-sw.org/index.php/Main_Page) .
 Прежде чем продолжить работу с этим примером, убедитесь, что вы установили DOCKER, следуя [инструкциям по установке и проверке](xref:microsoft.quantum.chemistry.concepts.installation).
 
 Дополнительные сведения
@@ -62,7 +62,7 @@ Get-Command -Module InvokeNWChem
 ```
 
 Далее мы импортируем команду `Get-GateCount`, предоставленную в примере **жетгатекаунт** .
-Полные сведения см. в [инструкциях, приведенных в примере](https://github.com/Microsoft/Quantum/tree/master/Chemistry/GetGateCount).
+Полные сведения см. в [инструкциях, приведенных в примере](https://github.com/Microsoft/Quantum/tree/master/samples/chemistry/GetGateCount).
 Затем выполните следующую команду, заменив `<runtime>` на `win10-x64`, `osx-x64`или `linux-x64`в зависимости от операционной системы.
 
 ```powershell
@@ -112,7 +112,7 @@ set tce:qelb  9
 
 ## <a name="producing-and-consuming-broombridge-output-from-nwchem"></a>Создание и использование выходных данных Брумбридже из Нвчем ##
 
-Теперь у нас есть все, что нужно для создания и использования документов Брумбридже.
+Теперь у вас есть все, что нужно для создания и использования документов Брумбридже.
 Чтобы запустить Нвчем и создать документ Брумбридже для `h4_sto6g_0.000.nw` входной лоток, выполните `Convert-NWChemToBroombridge`:
 
 > [!NOTE]
@@ -164,7 +164,7 @@ ElapsedMilliseconds : 721
 - Попробуйте использовать различные предопределенные колоды ввода, например, путем изменения параметра `alpha` в `h4_sto6g_alpha.nw` 
 - Попробуйте изменить колоды, изменив Нвчем колоды напрямую, например, изучив модели `STO-nG` для различных вариантов n, 
 - Попробуйте использовать другие предопределенные Нвчем входные колоды, доступные на `nwchem/qa/chem_library_tests`
-- Испытайте набор предопределенных тестов производительности Брумбридже YAML, созданных из Нвчем и доступных в составе [репозитория Microsoft/такта](https://github.com/Microsoft/Quantum/tree/master/Chemistry/IntegralData/YAML). Ниже перечислены эти тесты производительности. 
+- Испытайте набор предопределенных тестов производительности Брумбридже YAML, созданных из Нвчем и доступных в составе [репозитория Microsoft/такта](https://github.com/Microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML). Ниже перечислены эти тесты производительности. 
     - небольшие молекулы, такие как молекулярное водо(H2), БериллиУМ (быть), литий хидриде (лих),
     - более крупные молекулы, такие как озоне (O3), Beta-каротене, цитосине и многие другие. 
 - Испытайте графические [стрелки емсл](https://arrows.emsl.pnnl.gov/api/qsharp_chem) , которые применяют интерфейс к Microsoft Quantum Development Kit. 

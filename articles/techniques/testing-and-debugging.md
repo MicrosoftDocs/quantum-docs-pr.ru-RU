@@ -6,12 +6,12 @@ ms.author: mamykhai@microsoft.com
 uid: microsoft.quantum.techniques.testing-and-debugging
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 3df8df8defabcc9cc87d59f543f425c882b001e0
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 8131c2ec9320b5075c37370e12ad39a4df5bd3d5
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907687"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022858"
 ---
 # <a name="testing-and-debugging"></a>Тестирование и отладка
 
@@ -384,4 +384,4 @@ namespace app
 
 В верхней части `Assert` и `Dump` функций и операций, Q # поддерживает подмножество стандартных возможностей отладки Visual Studio: [Установка точек останова в строке](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints), [пошаговое выполнение кода с помощью F10](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger) и [Проверка значений классических переменных](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows) во время выполнения кода в симуляторе.
 
-Отладка в Visual Studio Code использует возможности отладки, C# предоставляемые для расширения Visual Studio Code, на базе OmniSharp и требует установки [последней версии](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). 
+Отладка в Visual Studio Code использует возможности отладки, C# предоставляемые для расширения Visual Studio Code, на базе OmniSharp и требует установки [последней версии](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp). 
