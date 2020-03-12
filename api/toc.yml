@@ -1,9 +1,14 @@
 - name: Справочник по API
   items:
+    - name: Справочник по API
+      href: index.md
     - name: 'Библиотеки Q#'
+      topicHref: qsharp/index.md
       href: qsharp/toc.yml
     - name: Библиотеки .NET
       items:
+        - name: Библиотеки .NET
+          href: dot-net-libraries.md
         - name: Симулятор трассировки
           href: 'https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators'
         - name: Квантовая химия
