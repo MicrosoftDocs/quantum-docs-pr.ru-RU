@@ -6,14 +6,14 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing
-ms.openlocfilehash: 63c6f90a511c7bd14435b2e593af0d8615c18519
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: cf913a09395f0694a51645ec8f91171e5b1555c3
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77904882"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022481"
 ---
-# <a name="contributing-to-the-quantum-development-kit"></a>Участие в развитии Microsoft Quantum Development Kit #
+# <a name="contributing-to-the-quantum-development-kit"></a>Участие в развитии Microsoft Quantum Development Kit
 
 Пакет разработки Quantum Development Kit — это больше, чем набор средств для написания квантовых программ.
 Это часть широкого сообщества людей, которые обнаруживают квантовые вычисления, выполняют исследования в сфере квантовых алгоритмов, разрабатывают новые приложения для работы с квантовыми устройствами и иным образом работают над получением максимального потенциала в квантовом программировании.
@@ -23,7 +23,7 @@ ms.locfileid: "77904882"
 
 В этом руководстве мы предоставляем советы о том, как сделать вашу публикацию полезной для более широкой аудитории сообщества квантового программирования.
 
-## <a name="building-community"></a>Создание сообщества ##
+## <a name="building-community"></a>Создание сообщества
 
 Очень важно всегда помнить о сообществе, в которое вы вносите свой вклад.
 Действуя уважительно и профессионально по отношению к своим коллегам в сообществе квантового программирования, вы сможете сделать сообщество лучше и гостеприимнее.
@@ -31,7 +31,7 @@ ms.locfileid: "77904882"
 В рамках этой работы все проекты Quantum Development Kit применяют [правила поведения при работе с открытым кодом, принятые в проектах корпорации Майкрософт](https://opensource.microsoft.com/codeofconduct/).
 Ознакомьтесь с [вопросами и ответами по правилам поведения](https://opensource.microsoft.com/codeofconduct/faq/). С любыми другими вопросами или комментариями обращайтесь по адресу [opencode@microsoft.com](mailto:opencode@microsoft.com).
 
-## <a name="what-kinds-of-contributions-help-the-community"></a>Какие виды вкладов помогают сообществу? ##
+## <a name="what-kinds-of-contributions-help-the-community"></a>Какие виды вкладов помогают сообществу?
 
 Есть множество различных способов помочь сообществу квантового программирования.
 В этом руководстве мы рассмотрим три способа, которые особенно важны для Quantum Development Kit.
@@ -45,7 +45,7 @@ ms.locfileid: "77904882"
 Различные виды публикаций являются чрезвычайно ценными и очень важны.
 В оставшейся части руководства мы предоставим советы о разных видах участия.
 
-## <a name="where-do-contributions-go"></a>Куда попадают внесенные изменения? ##
+## <a name="where-do-contributions-go"></a>Куда попадают внесенные изменения?
 
 Пакет разработки Quantum Development Kit содержит ряд различных компонентов, которые вместе помогают реализовать платформу для написания квантовых программ.
 Каждая из этих частей попадает в различные репозитории, поэтому следует как можно быстрее разобраться, куда лучше публиковать свою наработку.
@@ -66,7 +66,7 @@ ms.locfileid: "77904882"
 - [**msr-quarc/qsharp.sty**](https://github.com/msr-quarc/qsharp.sty): поддержка форматирования LaTeX для синтаксиса Q#.
 - [**msr-quarc/intern-workshop-2019**](https://github.com/msr-quarc/intern-workshop-2019): руководство по IQ# Notebook для алгоритма Deutsch–Jozsa, представленное на семинаре для стажеров в 2019 году.
 
-## <a name="next-steps"></a>Дальнейшие действия ##
+## <a name="next-steps"></a>Дальнейшие действия
 
 Спасибо за участие в развитии сообщества Quantum Development Kit. Мы рады вашим вкладам!
 Если вы хотите узнать больше о вкладах, перейдите к одному из следующих руководств.

@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: f4bc69e5b14833dea0d61106a9eb368d7d7f5663
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 53b7d226f0f9b12f47460964944f1ddb6160c357
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77906939"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022838"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -57,7 +57,7 @@ ms.locfileid: "77906939"
 
 - Добавлен новый атрибут Test для функции модульного тестирования Q#. Ознакомьтесь с обновленной документацией по API [здесь](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.test), а также с обновленным руководством по тестированию и отладке [здесь](xref:microsoft.quantum.techniques.testing-and-debugging).
 - Добавлена трассировка стека на случай возникновения ошибки при выполнении программы Q#.
-- В Visual Studio Code добавлена поддержка точек останова в связи с обновлением в расширении [C# (OmniSharp) для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+- В Visual Studio Code добавлена поддержка точек останова в связи с обновлением в расширении [C# (OmniSharp) для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 
 См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed) и [ката](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
 
