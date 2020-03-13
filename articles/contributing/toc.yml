@@ -6,5 +6,9 @@
   href: pull-requests.md
 - name: Участие в написании кода
   href: code.md
+- name: Участие в написании примеров
+  href: samples.md
 - name: Руководство по стилю
   href: style-guide.md
+- name: Принципы проектирования API
+  href: api-design-principles.md
