@@ -5,6 +5,29 @@ type: function
 namespace: Microsoft.Quantum.Arrays
 summary: При наличии массива и предиката, определенного для элементов массива, возвращает массив, состоящий из элементов, которые соответствуют предикату.
 remarks: Функция определяется для универсальных типов, например, при наличии массива `'T[]` и предиката `'T -> Bool` мы можем фильтровать элементы.
+examples: >-
+  В следующем коде показана функция FILTERED.
+
+  Предикат определяется с помощью функции @"microsoft.quantum.logical.greaterthani":
+
+
+  ```qsharp
+
+  open Microsoft.Quantum.Arrays;
+
+  open Microsoft.Quantum.Logical;
+
+
+  function FilteredDemo() : Unit {
+     let predicate = GreaterThanI(_, 5);
+     let filteredArray = Filtered(predicate, [2, 5, 9, 1, 8]);
+     Message($"{filteredArray}");
+  }
+
+  ```
+
+
+  Результат, ожидаемый в этом примере, должен быть массивом чисел, превышающим 5.
 syntax: "function Filtered (predicate : ('T -> Bool), array : 'T[]) : 'T[]"
 input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
@@ -36,9 +59,9 @@ typeParameters:
 - uid: "'T"
   summary: Тип элементов `array`.
 metadata:
-  ms.openlocfilehash: f2749f204c6276a0a43ac67bdee9c4cda0de049e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 8ce7f84c2243a5194b5a2223884fb68304767dbf
+  ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218368"
+  ms.lasthandoff: 03/26/2020
+  ms.locfileid: "80320744"
