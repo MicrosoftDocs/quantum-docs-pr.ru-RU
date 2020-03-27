@@ -6,12 +6,12 @@ uid: microsoft.quantum.concepts.pauli
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: fcd30c171859f96c3f9cc74664ecba8df0a02855
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 08babbcb0d6c6c4d83622489bc4ecc811e64829a
+ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907517"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80320861"
 ---
 # <a name="pauli-measurements"></a>Паули измерения
 
@@ -61,7 +61,7 @@ $ $ \бегин{алигн} Z & = \бегин{бматрикс} 1 & 0 \\\\ 0 &-1
 $ $ \бегин{алигн} S = \бегин{бматрикс} 1 & 0 \\\\ 0 & i \енд{бматрикс}.
 \енд{алигн} $ $
 
-Он также эквивалентен применению $HS ^ \дагжер $ к вектору состояния такта, а затем измерению $Z $, чтобы следующая операция эквивалентна `Measure([PauliY], [q]])`:
+Он также эквивалентен применению $HS ^ \дагжер $ к вектору состояния такта, а затем измерению $Z $, чтобы следующая операция эквивалентна `Measure([PauliY], [q])`:
 
 ```Q#
 operation MeasureY(qubit : Qubit) : Result {

@@ -6,17 +6,17 @@ ms.author: anpaz@microsoft.com
 ms.date: 1/22/2019
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: 37c901e5a861f0e8a10cdc911ad1d84ddd3e6e00
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 51186134e9279727fec212cdce84f69493aaa656
+ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907058"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80320821"
 ---
 # <a name="the-resourcesestimator-target-machine"></a>Целевой компьютер Ресаурцесестиматор
 
 Как следует из названия, `ResourcesEstimator` оценивает ресурсы, необходимые для выполнения заданного экземпляра операции Q # на компьютере-такте.
-Это достигается за счет выполнения операции такта без фактической имитации состояния тактового компьютера. по этой причине он может оценить ресурсы для операций Q #, использующих тысячи Кубитс.
+Это достигается за счет выполнения операции такта без фактической имитации состояния тактового компьютера. по этой причине он может оценить ресурсы для операций Q #, использующих тысячи Кубитс, если классическая часть кода может выполняться в разумное время.
 
 ## <a name="usage"></a>Использование
 

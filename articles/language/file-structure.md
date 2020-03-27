@@ -6,12 +6,12 @@ uid: microsoft.quantum.language.file-structure
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: b4bb7d4d70677dbd5d921a9f68313760499a56a1
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 96de062bc6ce4edf94520bec449e8d95259c0f5c
+ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907398"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80320766"
 ---
 # <a name="file-structure"></a>Структура файла
 
@@ -248,7 +248,7 @@ is Adj + Ctl {
 ```qsharp
 // Entangle two qubits.
 // Assumes that both qubits are in the |0> state.
-operation EPR (q1 : Qubit, q2 : Qubit) : Unit 
+operation PrepareEntangledPair (q1 : Qubit, q2 : Qubit) : Unit 
 is Adj + Ctl {
     H(q2);
     CNOT(q2, q1);
@@ -262,10 +262,10 @@ operation Teleport (source : Qubit, target : Qubit) : Unit {
     using (ancilla = Qubit())
     {
         // Create a Bell pair between the temporary and the target
-        EPR(target, ancilla);
+        PrepareEntangledPair(target, ancilla);
 
         // Do the teleportation
-        Adjoint EPR (ancilla, source);
+        Adjoint PrepareEntangledPair(ancilla, source);
 
         if (MResetZ(source) == One) {
             X(target);
@@ -304,3 +304,41 @@ function DotProduct(a : Double[], b : Double[]) : Double {
     return accum;
 }
 ```
+
+
+## <a name="internal-declarations"></a>Внутренние объявления
+
+Определяемые пользователем типы, операции и функции также могут быть объявлены как *внутренние*.
+Это означает, что доступ к ним можно получить только в проекте Q #, в котором они объявляются.
+Если в качестве ссылки используется проект, все его *открытые* (не внутренние) объявления становятся доступными, но попытка использовать внутреннее объявление из другого проекта приведет к ошибке.
+Внутренние объявления полезны при написании модульного кода, который может повторно использоваться другими частями проекта, но по-прежнему изменяется, не нарушая работу других проектов, которые могут зависеть от него.
+
+Внутренний определяемый пользователем тип, операция или функция могут быть объявлены просто путем добавления `internal` в начале объявления.
+Например,
+
+```qsharp
+internal newtype PairOfQubits = (Qubit, Qubit);
+
+internal operation PrepareEntangledPair(pair : PairOfQubits) : Unit 
+is Adj + Ctl {
+    let (q1, q2) = pair!;
+    H(q2);
+    CNOT(q2, q1);
+}
+
+internal function DotProduct(a : Double[], b : Double[]) : Double {
+    ...
+}
+```
+
+> [!WARNING]
+> Внутренние определяемые пользователем типы могут использоваться только в сигнатурах или базовых типах, если соответствующий вызываемый или определяемый пользователем тип также является внутренним.
+> Например, если имеется определяемый пользователем тип `InternalOptions`, объявленный с ключевым словом `internal`, то следующие объявления приведут к ошибкам:
+>
+> ```qsharp
+> // Error: Can't use InternalOptions as an output type of a public function.
+> function DefaultInternalOptions() : InternalOptions { ... }
+>
+> // Error: Can't use InternalOptions as an item in a public user-defined type.
+> newtype ExtendedOptions = (Internal : InternalOptions);
+> ```
