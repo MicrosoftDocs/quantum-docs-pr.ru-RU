@@ -1,17 +1,17 @@
 ---
-title: Заметки о выпуске предварительной версии Quantum Development Kit
+title: Заметки о выпуске пакета средств разработки Microsoft Quantum
 description: Узнайте о последних обновлениях предварительной версии Microsoft Quantum Development Kit.
 author: natke
 ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 53b7d226f0f9b12f47460964944f1ddb6160c357
-ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
+ms.openlocfilehash: 61a91278ee2c77972ff12ed77b4f20c837b02643
+ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79022838"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80320697"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 

@@ -1,6 +1,6 @@
 - name: Сообщение об ошибках
   href: reporting-bugs.md
-- name: Участие в разработке документации
+- name: Улучшение документации
   href: docs.md
 - name: Открытие запросов на вытягивание
   href: pull-requests.md
