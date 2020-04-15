@@ -5,5 +5,5 @@
 - name: Вызов библиотеки для химии
   topicHref: samples/index.md
   href: samples/toc.yml
-- name: Схема
+- name: схема
   href: schema/toc.yml
