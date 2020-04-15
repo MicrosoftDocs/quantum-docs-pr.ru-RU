@@ -7,10 +7,10 @@ ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines
 ms.openlocfilehash: 14aed75ed0ed192f88699b1c7dbacfae23f74642
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "73442223"
 ---
 # <a name="quantum-simulators-and-host-applications"></a>Квантовые симуляторы и ведущие приложения
@@ -102,7 +102,7 @@ ms.locfileid: "73442223"
 
 Результаты квантового алгоритма возвращаются из метода `Run`.
 Метод `Run` выполняется асинхронно, поэтому возвращает экземпляр <xref:System.Threading.Tasks.Task`1>.
-Получить результаты фактической операции можно несколькими способами. Самый простой способ заключается в использовании свойства[`Result`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1.result) `Task`.
+Получить результаты фактической операции можно несколькими способами. Самый простой способ заключается в использовании свойства[`Result`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1.result)`Task`.
 
 ```csharp
     var res = BellTest.Run(sim, 1000, initial).Result;
