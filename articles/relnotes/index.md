@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 4fbb740568ff6cdc99e4f6a813802ed8d4234ab4
-ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
+ms.openlocfilehash: 7a080f82e586f06d40e9d793ee05932db4c3ccef
+ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81269392"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81481412"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -28,7 +28,7 @@ ms.locfileid: "81269392"
 
 Этот выпуск включает следующие обновления:
 
-- Реализована поддержка модификаторов доступа в Q# (см. сведения о [файловых структурах](xref:microsoft.quantum.language.file-structure)).
+- Реализована поддержка модификаторов доступа в Q# (см. сведения о [файловых структурах](xref:microsoft.quantum.language.file-structure#internal-declarations)).
 - Обновление до пакета SDK для .NET Core 3.1
 
 См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed) и [ката](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
