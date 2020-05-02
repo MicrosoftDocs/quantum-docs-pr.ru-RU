@@ -3,13 +3,13 @@ uid: microsoft.quantum.chemistry.jordanwigner.optimizedblockencodinggeneratorsys
 name: OptimizedBlockEncodingGeneratorSystem
 type: function
 namespace: Microsoft.Quantum.Chemistry.JordanWigner
-summary: Преобразует Хамилтониан, описываемый `JWOptimizedHTerms`, в `GeneratorSystem`, выраженный в терминах `GeneratorIndex`Паули.
+summary: Преобразует Хамилтониан, описанный `JWOptimizedHTerms` в `GeneratorSystem` выражении в виде Паули `GeneratorIndex`.
 syntax: 'function OptimizedBlockEncodingGeneratorSystem (data : Microsoft.Quantum.Chemistry.JordanWigner.JWOptimizedHTerms) : Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBEGeneratorSystem'
 input:
   content: '(data : Microsoft.Quantum.Chemistry.JordanWigner.JWOptimizedHTerms)'
   types:
   - name: data
-    summary: Описание Хамилтониан в формате `JWOptimizedHTerms`.
+    summary: Описание Хамилтониан в `JWOptimizedHTerms` формате.
     uid: microsoft.quantum.chemistry.jordanwigner.jwoptimizedhterms
 output:
   content: Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBEGeneratorSystem
@@ -17,9 +17,9 @@ output:
   - summary: Представление Хамилтониан как `GeneratorSystem`.
     uid: microsoft.quantum.chemistry.jordanwigner.optimizedbegeneratorsystem
 metadata:
-  ms.openlocfilehash: 85e34ffd430096873e9bdb9e15be9ebaf7127e94
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3a8354223ba4c5fe7c45d6b494f62aa5ceb41a38
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231934"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82665239"
