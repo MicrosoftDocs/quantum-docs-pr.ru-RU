@@ -4,10 +4,10 @@ name: PNormalized
 type: function
 namespace: Microsoft.Quantum.Math
 summary: >-
-  Нормализует вектор `Double`s в норме `L(p)`.
+  Нормализация вектора `Double`s в `L(p)` норме.
 
 
-  То есть при наличии массива $x $ типа `Double[]`возвращается массив, в котором все элементы делятся на $p $-нормы $\|x\|_p $.
+  То есть при наличии массива, $x $ типа `Double[]`, возвращается массив, в котором все элементы делятся на $p $-норму $\|x\|_p $.
 syntax: 'function PNormalized (p : Double, array : Double[]) : Double[]'
 input:
   content: '(p : Double, array : Double[])'
@@ -30,9 +30,9 @@ output:
 seeAlso:
 - pnorm
 metadata:
-  ms.openlocfilehash: 5fd219b866b14d3d6faf58cdf4f1ce2b9fbadf9d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 68697fe159fecfeed0078f95de8d91f825125f41
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067294"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684029"

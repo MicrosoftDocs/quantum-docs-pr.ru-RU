@@ -7,7 +7,7 @@ summary: >-
   Выполняет вычисление координат БЛОЧ-сферы для одного кубит состояния.
 
 
-  Учитывая два комплексных числа, $a 0, a1 $, которые представляют состояние кубит, вычисляются координаты блочной сферы, например $a 0 \кет{0} + a1 \кет{1} = r e ^ {IT} (e ^ {-i \фи/2}\cos{(\ тета/2)} \кет{0}+ e ^ {i \фи/2}\sin{(\ тета/2)} \кет{1}) $.
+  Учитывая два комплексных числа $a 0, a1 $, которые представляют состояние кубит, рассчитывает координаты в блочной сфере, что $a 0{0} \кет + a1{1} \кет = r e ^ {IT} (e ^ {-i \фи/2}\cos{(\ тета/2)}{0}\кет + e ^ {i \фи/2}\sin{(\ тета/2)}{1}\кет) $.
 syntax: 'function BlochSphereCoordinates (a0 : Microsoft.Quantum.Math.ComplexPolar, a1 : Microsoft.Quantum.Math.ComplexPolar) : (Microsoft.Quantum.Math.ComplexPolar, Double, Double)'
 input:
   content: '(a0 : Microsoft.Quantum.Math.ComplexPolar, a1 : Microsoft.Quantum.Math.ComplexPolar)'
@@ -29,9 +29,9 @@ output:
     - isPrimitive: true
       uid: Double
 metadata:
-  ms.openlocfilehash: fc9dbef764c9d95de2183b9b093e00f20dfb0697
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 98d543849be177941a0c346c1de6b5b6930e783e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228143"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683226"
