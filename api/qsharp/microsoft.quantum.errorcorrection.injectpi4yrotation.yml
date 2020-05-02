@@ -10,7 +10,7 @@ summary: >-
   Выполняет поворот π/4 о `Y`.
 
 
-  Поворот выполняется путем использования волшебного состояния; то есть копия State $ $ \бегин{алигн} \кос\фрак{\пи}{8} \кет{0} + \син \фрак{\пи}{8} \кет{1}.
+  Поворот выполняется путем использования волшебного состояния; то есть копия State $ $ \бегин{алигн}{8} \кос\фрак{\пи} \кет{0} + \син \фрак{\пи}{8} \кет.{1}
 
   \енд{алигн} $ $
 remarks: >-
@@ -24,7 +24,7 @@ remarks: >-
   ```
 
 
-  Azure и
+  и
 
 
   ```qsharp
@@ -48,7 +48,7 @@ input:
     isPrimitive: true
     uid: Qubit
   - name: magic
-    summary: Кубит изначально находится в состоянии Magic. После применения этой операции `magic` возвращается в состояние $ \кет{0}$ $.
+    summary: Кубит изначально находится в состоянии Magic. После применения этой операции `magic` возвращается в состояние $ \кет{0}$.
     isPrimitive: true
     uid: Qubit
 output:
@@ -59,9 +59,9 @@ output:
 functors:
 - Adjoint
 metadata:
-  ms.openlocfilehash: 9792980f4b8ad01ec41f1317fb574de85e2d4683
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: cb0efd896b4d8f9b4b81c061b644a1e2f7f74e96
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871657"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684881"

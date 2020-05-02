@@ -14,15 +14,15 @@ input:
 output:
   content: Microsoft.Quantum.Oracles.StateOracle
   types:
-  - summary: Одно и то же состояние подготовки Oracle $A $, но теперь типа `StateOracle`. Обратите внимание, что индекс флага в этом `StateOracle` является фиктивной переменной и не имеет результата.
+  - summary: То же состояние подготовки Oracle $A $, но теперь типа `StateOracle`. Обратите внимание, что индекс флага в этом `StateOracle` случае является фиктивной переменной и не имеет результата.
     uid: microsoft.quantum.oracles.stateoracle
 seeAlso:
 - microsoft.quantum.canon.deterministicstateoracle
 - microsoft.quantum.canon.stateoracle
 metadata:
-  ms.openlocfilehash: 681d5a8a132819fa1b0c1af049418123d21ecec4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9431b58659bb50de872f73890a4a055c5534b2a0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228211"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685146"

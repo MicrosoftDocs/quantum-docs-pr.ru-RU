@@ -23,7 +23,7 @@ output:
       ## <a name="first-parameter"></a>Первый параметр
 
 
-      Кортеж `(x,(y,z))`, где `x = y + z` — общее количество выделенных Кубитс, `y` — число Кубитс для регистра `LittleEndian`, а `z` — число мусорных Кубитс.
+      Кортеж `(x,(y,z))` , где `x = y + z` — общее число выделенных Кубитс, `y` — число Кубитс для `LittleEndian` регистра, а `z` — число Кубитс мусора.
     types:
     - isPrimitive: true
       uid: Int
@@ -33,9 +33,9 @@ output:
       - isPrimitive: true
         uid: Int
 metadata:
-  ms.openlocfilehash: fdc1d18f088cd5d07558a6fac28b92af6c9884d3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 717de1097641dcbabf6441424e88d77b71e05738
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226392"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685118"
