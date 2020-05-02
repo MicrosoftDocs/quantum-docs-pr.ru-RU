@@ -7,7 +7,7 @@ summary: >-
   Утверждает, что кубит находится в ожидаемом состоянии.
 
 
-  `expected` представляет сложный вектор, $ \кет{\пси} = \бегин{бматрикс}а & б\енд {бматрикс} ^ {\Масрм{т}} $.
+  `expected`представляет сложный вектор, $ \кет{\пси} = \бегин{бматрикс}а & б\енд {бматрикс} ^ {\Масрм{т}} $.
 
   Первый элемент кортежей, представляющий каждый из $a $, $b $ является реальной частью комплексного числа, а второй — мнимой частью.
 
@@ -37,7 +37,7 @@ remarks: >-
   ```
 
 
-  Допуск — это $L\_{\инфти} $ Distance между трехмерным реальным вектором (x ₂, x ₃, x ₄), определенным $ \лангле\пси | \пси\рангле = x\_1 I + x\_2 X + x\_3 Y + x\_4 Z $ и реальным вектором (Y ₂ , y ₃, y ₄), определяемой p = y ₁ I + y ₂ X + y ₃ Y + y ₄ Z, где p — это матрица плотности, соответствующая состоянию регистра.
+  Допуск — это $L\_{\инфти} $ Distance между трехмерным реальным вектором (x ₂, x ₃, x ₄), определяемый $ \лангле\пси | \пси\рангле =\_x 1 I +\_x 2 x +\_x 3 Y +\_x 4 Z $ и вещественный вектор (y ₂, y ₃, Y ₄), определенный p = Y ₁ I + y ₂ x + y ₃ Y + y ₄ Z, где p — это матрица плотности, соответствующая состоянию регистра.
 
   Это справедливо только в случае предположения, что TR (p) и TR (| ψ ⟩ ⟨ ψ |) равны 1 (например, x ₁ = 1/2, y ₁ = 1/2).
 
@@ -60,7 +60,7 @@ input:
   content: '(expected : (Microsoft.Quantum.Math.Complex, Microsoft.Quantum.Math.Complex), register : Qubit, tolerance : Double)'
   types:
   - name: expected
-    summary: Ожидаемые сложные амплитуды для $ \кет{0}$ и $ \кет{1}$ соответственно.
+    summary: Ожидаемые сложные амплитуды для ${0}\кет $ и ${1}\кет $ соответственно.
     types:
     - uid: microsoft.quantum.math.complex
     - uid: microsoft.quantum.math.complex
@@ -81,9 +81,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 8b43bac19173c5ae5a11ff6879a03209c32e7c76
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 77d28c122a44f39924242dedb6bd6163974e18c1
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227123"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82656599"
