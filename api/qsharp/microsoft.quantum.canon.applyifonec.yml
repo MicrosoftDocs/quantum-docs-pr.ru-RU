@@ -7,7 +7,7 @@ summary: >-
   Применяет управляемую операцию с условием для классического значения result.
 
 
-  При наличии `op` операции и значения результата `result`применяет `op` к `target`, если `result` — `One`. Если `Zero`, в `target`ничего не происходит.
+  При наличии операции `op` и результирующего значения `result`применяется `op` к, `target` если `result` имеет `One`значение. Если `Zero`значение равно, то `target`ничего не происходит с.
 
   Суффикс `C` указывает, что операция, которая должна быть применена, является управляемой.
 syntax: "operation ApplyIfOneC (result : Result, (op : ('T => Unit is Ctl), target : 'T)) : Unit"
@@ -50,9 +50,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifonea
 - microsoft.quantum.canon.applyifoneca
 metadata:
-  ms.openlocfilehash: 51388c63a15b9f8244b49cc145297faef11bf5cc
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: e42bb11c3f3f8cf740bbd619b4388f23c77ed8a5
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220782"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672658"

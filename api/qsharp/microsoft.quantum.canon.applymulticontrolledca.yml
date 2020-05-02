@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Canon
 summary: >-
   Применяет версию управляемой операции с одной операцией умножения.
 
-  Модификатор `CA` указывает, что однокубитная операция является управляемой и аджоинтабле.
+  Модификатор `CA` указывает, что одна операция кубит является управляемой и аджоинтабле.
 remarks: >-
   Эта операция использует только чистый анЦилла Кубитс.
 
@@ -23,7 +23,7 @@ input:
 
       Первым кубит в аргументе операции считается элемент управления, а остальные считаются целевыми Кубитс.
 
-      `ApplyMultiControlled` всегда вызывает `singlyControlledOp` с аргументом, длина которого не меньше 1.
+      `ApplyMultiControlled`всегда вызывает `singlyControlledOp` аргумент длиной не менее 1.
     isOperation: true
     input:
       types:
@@ -41,14 +41,14 @@ input:
     uid: microsoft.quantum.canon.ccnotop
   - name: controls
     summary: >-
-      Кубитс, для которого необходимо контролировать `singlyControlledOp`.
+      Кубитс, управление `singlyControlledOp` которым должно осуществляться.
 
       Длина `controls` должна быть не меньше 1.
     isArray: true
     isPrimitive: true
     uid: Qubit
   - name: targets
-    summary: Целевой Кубитс, на который `singlyControlledOp` действует.
+    summary: Целевой Кубитс, на `singlyControlledOp` основе которого действует.
     isArray: true
     isPrimitive: true
     uid: Qubit
@@ -63,9 +63,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applymulticontrolledc
 metadata:
-  ms.openlocfilehash: d9b0f2b18d025d0ce60bbb02a9559546539eaecd
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1cb239c8c49ff4f4f8f991d6ad81374f0dd23f7f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220714"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672527"
