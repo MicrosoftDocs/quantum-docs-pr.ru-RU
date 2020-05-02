@@ -3,10 +3,10 @@ uid: microsoft.quantum.characterization.robustphaseestimation
 name: RobustPhaseEstimation
 type: operation
 namespace: Microsoft.Quantum.Characterization
-summary: Выполняет надежный алгоритм оценки неитеративного тактового этапа для заданных `U` и еиженстате Oracle, а также предоставляет единую оценку этапа с масштабированием в пределах Гейзенбега.
+summary: Выполняет устойчивый алгоритм оценки неитеративного тактового этапа для заданных `U` Oracle и еиженстате и предоставляет единую оценку этапа с масштабированием в пределах Гейзенбега.
 remarks: При ограничении большого количества запросов Крамер-РАО нижние границы для стандартного отклонения оценки $ \фи $ удовлетворяет $ \сигма \же 2 \пи/\текст{# запросов} $.
 syntax: 'operation RobustPhaseEstimation (bitsPrecision : Int, oracle : Microsoft.Quantum.Oracles.DiscreteOracle, targetState : Qubit[]) : Double'
-references: '- Надежная калибровка универсального Кубитового шлюза с помощью надежной оценки этапа Шелби Киммел, Guang Хао Low, текста книги J. Йодер https://arxiv.org/abs/1502.02677'
+references: '- Надежная калибровка универсального Кубитового шлюза с помощью надежной оценки фазы Шелби Киммел, Guang Хао Low, текста книги J. Йодерhttps://arxiv.org/abs/1502.02677'
 input:
   content: '(bitsPrecision : Int, oracle : Microsoft.Quantum.Oracles.DiscreteOracle, targetState : Qubit[])'
   types:
@@ -28,9 +28,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 169a828036fbe84f49e5d87399319d14a9584051
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5fa87e4da621871685501d58fa4a70b172f973b7
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229061"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677604"

@@ -7,7 +7,7 @@ summary: >-
   Преобразует заданное большое целое число в эквивалентное целое число, если это возможно.
 
   Функция возвращает пару результирующего целого числа и логический флаг, который имеет значение true, только если преобразование возможно.
-remarks: Дополнительные сведения см. в разделе [ C# конструктор BigInteger](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.-ctor?view=netframework-4.7.2#System_Numerics_BigInteger__ctor_System_Int64_) .
+remarks: Дополнительные сведения см. в разделе [конструктор C# BigInteger](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.-ctor?view=netframework-4.7.2#System_Numerics_BigInteger__ctor_System_Int64_) .
 syntax: 'function MaybeBigIntAsInt (a : BigInt) : (Int, Bool)'
 input:
   content: '(a : BigInt)'
@@ -24,9 +24,9 @@ output:
     - isPrimitive: true
       uid: Bool
 metadata:
-  ms.openlocfilehash: cd679df4a0cf178bf53bbf566bdfa0395ad8b019
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 98bd88315e9a1cbce2770ba82fd0eed18eac73c3
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73230778"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677407"
