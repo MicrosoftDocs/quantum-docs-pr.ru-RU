@@ -4,10 +4,10 @@ name: PrepareUniformSuperposition
 type: operation
 namespace: Microsoft.Quantum.Preparation
 summary: >-
-  Создает равномерное перестановку по состояниям, которые кодируются от 0 до `nIndices`.
+  Создает равномерное перестановку по состояниям, закодированным с 0 по `nIndices`.
 
 
-  То есть, это единое $U $ создает равномерное перестановку для всех состояний $0 $ в $M-$1, учитывая входное состояние $ \ket{0\cdots 0} $. Иными словами, $ $ \бегин{алигн} У\кет{0}= \фрак{1}{\Скрт{м}}\ sum_ {j = 0} ^ {M-1} \кет{ж}.
+  То есть, это единое $U $ создает равномерное перестановку для всех состояний $0 $ в $M-$1, учитывая входное состояние $ \ket{0\cdots 0} $. Иными словами, $ $ \бегин{алигн} У\кет{0}= \Фрак{1}{\скрт{м}}\ sum_ {j = 0} ^ {M-1} \кет{ж}.
 
   \енд{алигн} $ $.
 examples: >-
@@ -33,7 +33,7 @@ input:
     uid: Int
   - name: indexRegister
     summary: >-
-      Регистр кубит, в котором хранятся числовые состояния в `LittleEndian`ном формате.
+      Регистр кубит, в котором хранятся числовые состояния `LittleEndian` в формате.
 
       Этот регистр должен иметь возможность хранить число $M-$1, а предполагается, что оно инициализировано в состоянии $ \ket{0\cdots 0} $.
     uid: microsoft.quantum.arithmetic.littleendian
@@ -46,9 +46,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 4bb7c83382f8d48f132fbd91acfd2184a570aea4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a697f4d410ed47c8be3908e2206080a9393260f7
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226494"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686522"
