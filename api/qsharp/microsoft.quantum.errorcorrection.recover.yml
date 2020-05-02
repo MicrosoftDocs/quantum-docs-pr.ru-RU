@@ -3,16 +3,16 @@ uid: microsoft.quantum.errorcorrection.recover
 name: Recover
 type: operation
 namespace: Microsoft.Quantum.ErrorCorrection
-summary: Выполняет единичное округление исправления ошибок с помощью кода такта, описанного типом `QECC`.
+summary: Выполняет единичное округление исправления ошибки с помощью кода такта, описанного `QECC` типом.
 syntax: 'operation Recover (code : Microsoft.Quantum.ErrorCorrection.QECC, fn : Microsoft.Quantum.ErrorCorrection.RecoveryFn, logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister) : Unit'
 input:
   content: '(code : Microsoft.Quantum.ErrorCorrection.QECC, fn : Microsoft.Quantum.ErrorCorrection.RecoveryFn, logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister)'
   types:
   - name: code
-    summary: Ошибка такта. Исправление кода, упакованного как тип `QECC`, описывает кодирование и декодирование данных тактов, а также способ измерения ошибки синдромес.
+    summary: Ошибка такта. Исправление кода, упакованного как `QECC` тип, описывает кодирование и декодирование данных тактов, а также способ измерения ошибки синдромес.
     uid: microsoft.quantum.errorcorrection.qecc
   - name: fn
-    summary: '`RecoveryFn`, которая сопоставляет каждую ошибку синдром с операциями `Pauli[]`, которые исправлять обнаруженную ошибку.'
+    summary: Объект `RecoveryFn` , сопоставляющий каждую ошибку, синдром с `Pauli[]` операциями, которые исправлять обнаруженную ошибку.
     uid: microsoft.quantum.errorcorrection.recoveryfn
   - name: logicalRegister
     summary: Массив Кубитс, в котором определен код стабилизер.
@@ -27,9 +27,9 @@ seeAlso:
 - microsoft.quantum.canon.recoveryfn
 - microsoft.quantum.canon.logicalregister
 metadata:
-  ms.openlocfilehash: baaa5862dd189a04667081d762900931e6b5e766
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2a873e06c20bf62c998b1096d862d26ff89aa134
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220357"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682288"
