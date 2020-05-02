@@ -7,7 +7,7 @@ summary: >-
   Применяет шлюз с управляемой X (CX) к паре Кубитс.
 
 
-  $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \енд{алигн}, $ $, где строки и столбцы упорядочены в соответствии с руководством по работе с тактовыми концепциями.
+  $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \енд{алигн}, $ $, где строки и столбцы упорядочены как в разделе "Основные понятия о такте".
 remarks: >-
   Эквивалентно:
 
@@ -48,9 +48,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 26cbc8dc2f22cdf8583d453b84e53b0151619f5d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d5a987001de638b9415a1d5ede1dc88aee7edf0f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067872"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680298"

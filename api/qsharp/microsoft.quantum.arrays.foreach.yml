@@ -4,13 +4,13 @@ name: ForEach
 type: operation
 namespace: Microsoft.Quantum.Arrays
 summary: При наличии массива и операции, определенной для элементов массива, возвращает новый массив, состоящий из изображений исходного массива в операции.
-remarks: "Операция определяется для универсальных типов, например, при наличии массива `'T[]` и операции `action : 'T -> 'U` мы можем сопоставлять элементы массива и создавать новый массив типа `'U[]`."
+remarks: "Операция определяется для универсальных типов, т. е. Если у нас есть массив `'T[]` и операция `action : 'T -> 'U` , которые мы можем сопоставлять элементы массива и создаем новый массив типа `'U[]`."
 syntax: "operation ForEach (action : ('T => 'U), array : 'T[]) : 'U[]"
 input:
   content: "(action : ('T => 'U), array : 'T[])"
   types:
   - name: action
-    summary: Операция с `'T` к `'U`, которая применяется к каждому элементу.
+    summary: Операция из `'T` к `'U` , которая применяется к каждому элементу.
     isOperation: true
     input:
       types:
@@ -28,19 +28,19 @@ input:
 output:
   content: "'U[]"
   types:
-  - summary: Массив `'U[]` элементов, сопоставленных операцией `action`.
+  - summary: Массив `'U[]` элементов, сопоставленных с `action` операцией.
     isArray: true
     uid: "'U"
     isLocal: true
 typeParameters:
 - uid: "'T"
-  summary: Тип элементов `array`.
+  summary: Тип `array` элементов.
 - uid: "'U"
-  summary: Тип результата операции `action`.
+  summary: Тип результата `action` операции.
 metadata:
-  ms.openlocfilehash: 6f61c37fb7a62bcbcfe91768725173e9a919e987
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: af4b6b469017e4cee581a9bdd96ef6171d9b1deb
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871028"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681038"

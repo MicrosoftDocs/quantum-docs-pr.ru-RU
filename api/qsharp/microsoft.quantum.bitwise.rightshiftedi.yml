@@ -24,19 +24,19 @@ input:
     isPrimitive: true
     uid: Int
   - name: amount
-    summary: Число битов, на которое перемещается `value` вправо.
+    summary: Число битов, на которое `value` будет перемещено право.
     isPrimitive: true
     uid: Int
 output:
   content: Int
   types:
-  - summary: Значение `value`с сдвигом вправо на `amount` битах.
+  - summary: Значение `value`, перемещенное вправо по `amount` битам.
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 801e07c06b8af34385fb80badf4dfebb503c982d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9bf08ce00efc1bc93397c25c1a3ddd4d2432721d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217756"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680617"

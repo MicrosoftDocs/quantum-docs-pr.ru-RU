@@ -4,13 +4,13 @@ name: Mapped
 type: function
 namespace: Microsoft.Quantum.Arrays
 summary: При наличии массива и функции, определенной для элементов массива, возвращает новый массив, состоящий из изображений исходного массива в функции.
-remarks: "Функция определена для универсальных типов, например, при наличии массива `'T[]` и функции, `mapper: 'T -> 'U` мы можем сопоставлять элементы массива и создавать новый массив типа `'U[]`."
+remarks: "Функция определена для универсальных типов, т. е. при наличии массива `'T[]` и функции `mapper: 'T -> 'U` мы можем сопоставлять элементы массива и создавать новый массив типа. `'U[]`"
 syntax: "function Mapped (mapper : ('T -> 'U), array : 'T[]) : 'U[]"
 input:
   content: "(mapper : ('T -> 'U), array : 'T[])"
   types:
   - name: mapper
-    summary: Функция из `'T` в `'U`, которая используется для отображения элементов.
+    summary: Функция из `'T` в `'U` , используемая для отображения элементов.
     isFunction: true
     input:
       types:
@@ -28,19 +28,19 @@ input:
 output:
   content: "'U[]"
   types:
-  - summary: Массив `'U[]` элементов, сопоставленных с помощью функции `mapper`.
+  - summary: Массив `'U[]` элементов, сопоставленных с `mapper` функцией.
     isArray: true
     uid: "'U"
     isLocal: true
 typeParameters:
 - uid: "'T"
-  summary: Тип элементов `array`.
+  summary: Тип `array` элементов.
 - uid: "'U"
-  summary: Тип результата функции `mapper`.
+  summary: Тип результата `mapper` функции.
 metadata:
-  ms.openlocfilehash: 3e9262d3d2b294ccfafac24b2b080b124c9e319c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 877899dad82374281090e189c727c2a662f12b7b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218130"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680946"
