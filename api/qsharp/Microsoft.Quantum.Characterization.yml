@@ -8,7 +8,7 @@ operations:
 - uid: microsoft.quantum.characterization.discretephaseestimationiteration
   summary: Выполняет одну итерацию итеративного (классического) алгоритма оценки фазы с помощью целочисленных степеней единой Oracle.
 - uid: microsoft.quantum.characterization.estimatefrequency
-  summary: При подготовке и измерении оценивается частота, с которой измерение будет выполнено (Возвращает `Zero`), выполняя заданное число испытаний.
+  summary: При подготовке и измерении оценивается частота, с которой измерение завершается (Возвращает `Zero`), выполняя заданное число испытаний.
 - uid: microsoft.quantum.characterization.estimatefrequencya
   summary: Учитывая аджоинтабле и измерение подготовки, вы оцениваете частоту, с которой измерение завершается (Возвращает `Zero`), выполняя заданное число испытаний.
 - uid: microsoft.quantum.characterization.estimateimagoverlapbetweenstates
@@ -18,19 +18,19 @@ operations:
 - uid: microsoft.quantum.characterization.estimaterealoverlapbetweenstates
   summary: При наличии двух операций, каждый из которых подготавливает копии состояния, оценивает реальную часть перекрытия между состояниями, подготовленными каждой операцией.
 - uid: microsoft.quantum.characterization.measureallz
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМеасуреаллз является устаревшим. Вместо нее используйте @\"microsoft.quantum.measurement.measureallz\".\nИспользуйте @\"microsoft.quantum.measurement.measureAllZ\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМеасуреаллз является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.measurement.measureallz\".\nВзамен рекомендуется использовать @\"microsoft.quantum.measurement.measureAllZ\"."
 - uid: microsoft.quantum.characterization.measureidentity
   summary: Измеряет оператор Identity в регистре Кубитс.
 - uid: microsoft.quantum.characterization.quantumphaseestimation
-  summary: Выполняет алгоритм оценки тактовой фазы для заданного `U` и `targetState`Oracle, считывая эту фазу в реестр тактов с обратным порядком байтов.
+  summary: Выполняет алгоритм оценки тактовой фазы для заданного Oracle `U` и `targetState`считывает его в реестр такта с обратным порядком байтов.
 - uid: microsoft.quantum.characterization.robustphaseestimation
-  summary: Выполняет надежный алгоритм оценки неитеративного тактового этапа для заданных `U` и еиженстате Oracle, а также предоставляет единую оценку этапа с масштабированием в пределах Гейзенбега.
+  summary: Выполняет устойчивый алгоритм оценки неитеративного тактового этапа для заданных `U` Oracle и еиженстате и предоставляет единую оценку этапа с масштабированием в пределах Гейзенбега.
 - uid: microsoft.quantum.characterization.singlequbitprocesstomographymeasurement
   summary: Выполняет кубит процесс томографи измерения на основе Паули, учитывая конкретный интересующий Вас канал.
 metadata:
-  ms.openlocfilehash: ff2bee3d5885c4b83a7ba17eeaf578c226dbbf20
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 2ae4ee28cf6e87a3fde1f8107194760c388b462c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870687"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673354"
