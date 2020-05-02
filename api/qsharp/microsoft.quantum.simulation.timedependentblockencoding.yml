@@ -4,20 +4,20 @@ name: TimeDependentBlockEncoding
 type: newtype
 namespace: Microsoft.Quantum.Simulation
 summary: >-
-  Представляет `BlockEncoding`, который управляется регистром часов.
+  Представляет объект `BlockEncoding` , который управляется регистром часов.
 
 
-  Это значит, что `TimeDependentBlockEncoding` является единым $U $, управляемым по регистру состояния $ \ket{k}_d $ в часах `d` таким образом, что произвольный оператор $H _k $ of, который действует на системном регистре, `s` кодируется в верхнем левом блоке, соответствующем вспомогательному состоянию $ \кет @no __t_3_ _A $. То есть
+  То есть, `TimeDependentBlockEncoding` представляет собой единое $U $, управляемое состоянием $ \кет{к} _d $ в регистре `d` часов таким образом, что произвольный оператор $H _k $, который действует на системный `s` регистр, кодируется в верхнем левом блоке, соответствующем вспомогательному состоянию $ \кет{0}_A $. Это означает следующее:
 
 
-  $ $ \бегин{алигн} (\бра{0}\_а\отимес I_ {DS}) U (\кет{0}\_а\отимес I_ {DS}) = \sum_{k}\ket{k}\bra{k}\_д\отимес H_k.
+  $ $ \бегин{алигн} (\бра{0}\_а\отимес I_ {DS}) U (\кет{0}\_а\отимес I_ {DS}) = \ sum_ {k} \кет{к}\бра{к}\_д\отимес H_k.
 
   \енд{алигн} $ $.
 syntax: newtype TimeDependentBlockEncoding = ((Qubit[], Qubit[], Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 1f41d7592e7f031085430a42edaa341874724851
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6a9bb3648a24eae7fd5279c4300ece7b169fb00a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211024"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82687305"
