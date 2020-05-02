@@ -7,7 +7,7 @@ summary: >-
   Применяет единую операцию с условием для классического результирующего значения, равного нулю.
 
 
-  При наличии `op` операции и значения результата `result`применяет `op` к `target`, если `result` — `Zero`. Если `One`, в `target`ничего не происходит.
+  При наличии операции `op` и результирующего значения `result`применяется `op` к, `target` если `result` имеет `Zero`значение. Если `One`значение равно, то `target`ничего не происходит с.
 
   Суффикс `CA` указывает, что применяемая операция является единой (управляемой и аджоинтабле).
 syntax: "operation ApplyIfZeroCA (result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T)) : Unit"
@@ -52,9 +52,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifzeroa
 - microsoft.quantum.canon.applyifzeroca
 metadata:
-  ms.openlocfilehash: 9ec05f688c3895b2d68fc3f4717401e127fbe641
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 64e35b2fc198e7c3df862681e8c16870399f58c7
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213608"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672586"

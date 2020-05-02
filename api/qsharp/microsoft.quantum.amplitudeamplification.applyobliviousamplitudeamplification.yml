@@ -5,9 +5,9 @@ type: operation
 namespace: Microsoft.Quantum.AmplitudeAmplification
 summary: Усиление амплитуды очевидным путем указания частичных отражений.
 remarks: >-
-  С определенным вспомогательным состоянием запуска $ \кет{\текст{старт}}\_a $, определенное дополнительное целевое состояние $ \кет{\текст{таржет}}\_a $, а также любое состояние системы $ \кет{\пси}\_s $, предположим, что \бегин{алигн} О\кет {\ Text {Start}}\_а\кет {\ PSI}\_s = \ламбда\кет{\текст{таржет}}\_U \ket{\psi}\_s + \sqrt{1-| \lambda | ^ 2} \ket{\Text{Target} ^ \perp}\_a\cdots \end{align} для некоторых единых $U $.
+  Учитывая определенное вспомогательное состояние запуска $ \кет{\текст{старт}}\_$, определенное вспомогательное\_состояние $ \кет{\текст{таржет}}\_a $ и любое состояние системы $ \кет{\пси} s $, предположим, что \бегин{алигн} о\кет {\ Text {Start}}\_а\кет {\ PSI}\_s = \ламбда\кет{\текст{таржет}}\_a U \ket{\psi}\_s + \sqrt{1-| \lambda | ^ 2} \ket{\Text{Target} ^ \perp}\_a\cdots \end{align} для $U $.
 
-  По последовательности отражения о начальном и целевом состояниях вспомогательной ККМ, которая покидается приложениями `signalOracle` и его примыкающей, вероятность успешного применения U может быть изменена.
+  По последовательности отражений состояний запуска и целевого объекта вспомогательной ККМ, `signalOracle` которая загружается приложениями и соседними, вероятность успешного применения U может быть изменена.
 
 
   В большинстве случаев `auxiliaryRegister` инициализируется в состоянии $ \кет{\текст{старт}}\_a $.
@@ -32,7 +32,7 @@ input:
     summary: Оператор отражения о целевом состоянии дополнительного регистра
     uid: microsoft.quantum.oracles.reflectionoracle
   - name: signalOracle
-    summary: Единая база данных Oracle $O $ типа `ObliviousOracle`, которая взаимодействует с вспомогательными и системными регистрами.
+    summary: Единая база данных Oracle $O `ObliviousOracle` $ типа, которая взаимодействует с вспомогательными и системными регистрами.
     uid: microsoft.quantum.oracles.obliviousoracle
   - name: auxiliaryRegister
     summary: Дополнительный регистр
@@ -53,9 +53,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 3ed252d38ebe32900a7ac22079f46eaf04f2018d
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 7452686a76d9ff89c0eb79290e7dae23347778ac
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76872552"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672947"

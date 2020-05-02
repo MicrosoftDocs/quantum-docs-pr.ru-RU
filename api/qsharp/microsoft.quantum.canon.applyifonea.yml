@@ -7,9 +7,9 @@ summary: >-
   Применяет операцию аджоинтабле с условием для классического значения result.
 
 
-  При наличии `op` операции и значения результата `result`применяет `op` к `target`, если `result` — `One`. Если `Zero`, в `target`ничего не происходит.
+  При наличии операции `op` и результирующего значения `result`применяется `op` к, `target` если `result` имеет `One`значение. Если `Zero`значение равно, то `target`ничего не происходит с.
 
-  Суффикс `A` указывает, что применяемая операция — это аджоинтабле.
+  Суффикс `A` указывает, что операция, которую необходимо применить, — аджоинтабле.
 syntax: "operation ApplyIfOneA (result : Result, (op : ('T => Unit is Adj), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit is Adj), target : 'T))"
@@ -50,9 +50,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifonea
 - microsoft.quantum.canon.applyifoneca
 metadata:
-  ms.openlocfilehash: 5846b1178a8373f4b21faaa63ae9f6f86e514339
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 041b9f1f97ec5fe615b6ff83fe7c69bf5a7d0894
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217416"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672687"

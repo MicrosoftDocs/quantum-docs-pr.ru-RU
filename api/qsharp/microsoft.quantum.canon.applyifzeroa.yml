@@ -7,9 +7,9 @@ summary: >-
   Применяет операцию аджоинтабле, определенную для классического результирующего значения, равным нулю.
 
 
-  При наличии `op` операции и значения результата `result`применяет `op` к `target`, если `result` — `Zero`. Если `One`, в `target`ничего не происходит.
+  При наличии операции `op` и результирующего значения `result`применяется `op` к, `target` если `result` имеет `Zero`значение. Если `One`значение равно, то `target`ничего не происходит с.
 
-  Суффикс `A` указывает, что применяемая операция — это аджоинтабле.
+  Суффикс `A` указывает, что операция, которую необходимо применить, — аджоинтабле.
 syntax: "operation ApplyIfZeroA (result : Result, (op : ('T => Unit is Adj), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit is Adj), target : 'T))"
@@ -50,9 +50,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifzeroa
 - microsoft.quantum.canon.applyifzeroca
 metadata:
-  ms.openlocfilehash: 626bb5bbd18cceb409632ec0d27b48c6ea98fbbe
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b8b85714f173e10d3121d6f012fefa76b956686e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220731"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672616"

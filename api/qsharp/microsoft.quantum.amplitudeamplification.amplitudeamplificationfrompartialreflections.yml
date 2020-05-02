@@ -7,7 +7,7 @@ summary: Усиление амплитуды путем частичной от�
 remarks: >-
   Усиление амплитуды — это особый случай усиления амплитуды очевидным, когда нет Кубитс системы, а очевидным Oracle имеет значение Identity.
 
-  В большинстве случаев `startQubits` инициализируется в состоянии $ \кет{\текст{старт}}\_$1, которое представляет собой $-$1 еиженстате `startStateReflection`.
+  В большинстве случаев `startQubits` инициализируется в состоянии $ \кет{\текст{старт}}\_$1, которое является $-$1 еиженстате. `startStateReflection`
 syntax: 'function AmplitudeAmplificationFromPartialReflections (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle) : (Qubit[] => Unit is Adj + Ctl)'
 input:
   content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle)'
@@ -39,9 +39,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 8fd7ecce6a7623158e26ec4db6732daf114490af
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 4dae118f99c8a2e7cf933a378ed38d414a94fef4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76872314"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673002"
