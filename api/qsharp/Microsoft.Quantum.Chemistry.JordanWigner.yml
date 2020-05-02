@@ -3,19 +3,19 @@ uid: microsoft.quantum.chemistry.jordanwigner
 name: Microsoft.Quantum.Chemistry.JordanWigner
 functions:
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerblockencodinggeneratorsystem
-  summary: Преобразует Хамилтониан, описываемый `JWOptimizedHTerms`, в `GeneratorSystem`, выраженный в терминах `GeneratorIndex`Паули.
+  summary: Преобразует Хамилтониан, описанный `JWOptimizedHTerms` в `GeneratorSystem` выражении в виде Паули `GeneratorIndex`.
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerclusteroperatorevolutionset
   summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Жорданвигнер.
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerclusteroperatorgeneratorsystem
-  summary: Преобразует Хамилтониан, описываемый `JWOptimizedHTerms`, в `GeneratorSystem` выраженную в терминах соглашения `GeneratorIndex`, определенного в этом файле.
+  summary: Преобразует Хамилтониан, описанный `JWOptimizedHTerms` в `GeneratorSystem` выражении, в терминах `GeneratorIndex` соглашения, определенного в этом файле.
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerfermionevolutionset
   summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Жорданвигнер.
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerfermionfunction
   summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Жорданвигнер.
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignergeneratorsystem
-  summary: Преобразует Хамилтониан, описываемый `JWOptimizedHTerms`, в `GeneratorSystem` выраженную в терминах соглашения `GeneratorIndex`, определенного в этом файле.
+  summary: Преобразует Хамилтониан, описанный `JWOptimizedHTerms` в `GeneratorSystem` выражении, в терминах `GeneratorIndex` соглашения, определенного в этом файле.
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedblockencodinggeneratorsystem
-  summary: Преобразует Хамилтониан, описываемый `JWOptimizedHTerms`, в `GeneratorSystem`, выраженный в терминах `GeneratorIndex`Паули.
+  summary: Преобразует Хамилтониан, описанный `JWOptimizedHTerms` в `GeneratorSystem` выражении в виде Паули `GeneratorIndex`.
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedqubitizationoracle
   summary: Возвращает оптимизированную Кубитизатион операцию T-Count и параметры, необходимые для ее запуска.
 - uid: microsoft.quantum.chemistry.jordanwigner.qubitizationoracle
@@ -24,7 +24,7 @@ functions:
   summary: Возвращает операцию Троттер шага и параметры, необходимые для ее запуска.
 operations:
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedbexy
-  summary: Единая $U $, которая применяет строку Паули в $ (X ^ {z + 1}\_корр. {z}\_p) Z\_{p-1}... Z_0 $ on Кубитс $0.. p $ conditiond on a index $z \ин\{0, 1\}$ и $p $. То есть $ $ \бегин{алигн} У\кет {z} \ Сисакет {p} \ Сисакет {\ PSI} = \кет{з}\кет{п} (X ^ {z + 1}\_корректировка ^ {z}\_p) Z\_{p-1}... Z_0\ket {\ PSI} \енд{алигн} $ $
+  summary: Единая $U $, которая применяет строку Паули в $ (X ^ {z +\_1} корр. {\_Z} p\_) z {p-1}... Z_0 $0.. p $ включено в индекс $z \ин\{0, 1\}$ и $p $. Т. е. $ $ \бегин{алигн} У\кет {z} \ Сисакет {p} \ Сисакет {\ PSI} = \кет{з}\кет{п} (X ^ {z + 1\_} корр. {z\_} p)\_z {p-1}... Z_0 \кет{\пси} \енд{алигн} $ $
 - uid: microsoft.quantum.chemistry.jordanwigner.preparesingleconfigurationalstatesinglesiteoccupation
   summary: Простая подготовка состояния пробной версии с помощью оборотов по орбитам
 - uid: microsoft.quantum.chemistry.jordanwigner.preparesparsemulticonfigurationalstate
@@ -34,28 +34,28 @@ operations:
 - uid: microsoft.quantum.chemistry.jordanwigner.prepareunitarycoupledclusterstate
   summary: Единое связывание — подготовка состояния для пробного использования в кластере
 - uid: microsoft.quantum.chemistry.jordanwigner.selectz
-  summary: Единая $U $, которая применяет шлюз Паули $Z $ к Кубитс $p $ с состоянием индекса $ \кет{п} $. Т. е. $ $ \бегин{алигн} У\кет {p} \ Сисакет {\ PSI} = \Кет{п}з\_п\кет {\ PSI} \енд{алигн} $ $
+  summary: Единая $U $, которая применяет шлюз Паули $Z $ к Кубитс $p $ с состоянием индекса $ \кет{п} $. Т. е. $ $ \бегин{алигн} У\кет {p} \ Сисакет {\ PSI} =\_\кет{п}з п\кет {\ PSI} \енд{алигн} $ $
 newtypes:
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerencodingdata
   summary: >-
-    Формат данных, передаваемых C# из в Q # для представления всей информации для имитации хамилтониан.
+    Формат данных, передаваемых из C# в Q #, для представления всей информации для имитации Хамилтониан.
 
     Значение представленных данных определяется алгоритмом, который их получает.
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerinputstate
-  summary: 'Формат данных, передаваемых C# из в Q # для представления подготовки начального состояния, значение представленных данных определяется алгоритмом, который их получает.'
+  summary: 'Формат данных, передаваемых из C# в Q # для представления подготовки начального состояния, значение представленных данных определяется алгоритмом, который их получает.'
 - uid: microsoft.quantum.chemistry.jordanwigner.jwoptimizedhterms
   summary: >-
-    Формат данных, передаваемых C# из в Q # для представления терминов хамилтониан.
+    Формат данных, передаваемых из C# в Q # для представления терминов Хамилтониан.
 
     Значение представленных данных определяется алгоритмом, который их получает.
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedbegeneratorsystem
-  summary: Функция, возвращающая `OptimizedBETermIndex` данных для термина `n` с заданным целочисленным `n`, вместе с числом терминов в первом `Int` и суммой абсолютных значений всех термов в `Double`.
+  summary: '`OptimizedBETermIndex` Функция, возвращающая данные `n` для Терма `n`, имеющего целое число, вместе с числом терминов в первой `Int` и сумме абсолютных значений всех термов в `Double`.'
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedbetermindex
   summary: Данные терминов в оптимизированном алгоритме блочного кодирования.
 metadata:
-  ms.openlocfilehash: d84c4f8bf74f902cdffc19dc7e489f80c63d7949
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: bbc51f1ca36c81f15f96d0e526eb15bf79922373
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73210939"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677043"

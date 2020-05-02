@@ -4,7 +4,7 @@ name: All
 type: function
 namespace: Microsoft.Quantum.Arrays
 summary: При наличии массива и предиката, определенного для элементов массива, и проверяет, удовлетворяет ли предикату все элементы массива.
-remarks: "Функция определена для универсальных типов, например, при наличии массива `'T[]` и функции `predicate: 'T -> Bool` можно создать значение `Bool`, которое указывает, соответствуют ли все элементы `predicate`."
+remarks: "`'T[]` Функция определена для универсальных типов, т. е. при наличии массива и функции `predicate: 'T -> Bool` мы можем получить `Bool` значение, которое указывает, соответствуют `predicate`ли все элементы."
 examples: >-
   Следующий код проверяет, не являются ли все элементы массива ненулевыми:
 
@@ -28,7 +28,7 @@ input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
   types:
   - name: predicate
-    summary: Функция из `'T` для `Bool`, которая используется для проверки элементов.
+    summary: Функция из `'T` в `Bool` , используемая для проверки элементов.
     isFunction: true
     input:
       types:
@@ -46,16 +46,16 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`Bool` значение функции и предиката, применяемого ко всем элементам.'
+  - summary: '`Bool` Значение функции и предиката, применяемого ко всем элементам.'
     isPrimitive: true
     uid: Bool
 typeParameters:
 - uid: "'T"
-  summary: Тип элементов `array`.
+  summary: Тип `array` элементов.
 metadata:
-  ms.openlocfilehash: bc21229d0468adcd41f6c460f5325cad9f09ba5c
-  ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
+  ms.openlocfilehash: 116a2a537c4712c968187785873c0546ec236762
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/26/2020
-  ms.locfileid: "80320777"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676583"

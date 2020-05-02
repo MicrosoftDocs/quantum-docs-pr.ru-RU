@@ -7,11 +7,11 @@ summary: >-
   Применяет операцию аджоинтабле к классическому биту.
 
 
-  При `op` операции и битовом значении `bit`применяет `op` к `target`, если `bit` — `true`. Если `false`, в `target`ничего не происходит.
+  При наличии операции `op` и битового значения `bit`применяется `op` к, `target` если `bit` имеет `true`значение. Если `false`значение равно, то `target`ничего не происходит с.
 
-  Суффикс `A` указывает, что применяемая операция — это аджоинтабле.
+  Суффикс `A` указывает, что операция, которую необходимо применить, — аджоинтабле.
 examples: >-
-  Следующий командлет готовит регистр Кубитс в вычислительное состояние, представленное классическим битом строки, заданным как массив значений `Bool`:
+  Следующий командлет готовит регистр Кубитс в вычислительное состояние, представленное классическим битом строки, заданным как массив `Bool` значений:
 
 
   ```Q#
@@ -65,9 +65,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifa
 - microsoft.quantum.canon.applyifca
 metadata:
-  ms.openlocfilehash: 2c62617251d7795f19fa67f7de01859679c94313
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: fca10f4a39c8cdc3941d9a7d06e47e1c6dfefa74
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213880"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676340"

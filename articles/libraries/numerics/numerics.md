@@ -6,12 +6,12 @@ ms.author: thhaner
 ms.date: 5/14/2019
 ms.topic: article
 uid: microsoft.quantum.numerics.usage
-ms.openlocfilehash: ad9f529efd06fdf13bab4467b091aafacf1d5b09
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 10d5675e0ef182211a38db4d09347b05afe109c3
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907262"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82677107"
 ---
 # <a name="using-the-numerics-library"></a>Использование библиотеки числовых средств
 
@@ -23,7 +23,7 @@ ms.locfileid: "77907262"
 1. **Высокоуровневые целочисленные функции** , построенные на основе базовой функциональности; Он включает умножение, деление, инверсию и т. д.  для целых чисел со знаком и без знака.
 1. **Арифметические функции с фиксированной запятой** с инициализацией, сложение, умножение, обратная Оценка и измерение.
 
-Доступ ко всем этим компонентам можно получить с помощью одной инструкции `open`:
+Доступ ко всем этим компонентам можно получить с помощью `open` одной инструкции:
 ```qsharp
 open Microsoft.Quantum.Arithmetic;
 ```
@@ -32,9 +32,9 @@ open Microsoft.Quantum.Arithmetic;
 
 Библиотека числовых типов поддерживает следующие типы
 
-1. **`LittleEndian`** : массив кубит `qArr : Qubit[]`, представляющий целое число, где `qArr[0]` обозначает наименее значащий бит.
-1. **`SignedLittleEndian`** : то же, что `LittleEndian`, за исключением того, что он представляет целое число со знаком, хранящееся в дополнениех двух.
-1. **`FixedPoint`** : представляет вещественное число, состоящее из массива кубит `qArr2 : Qubit[]` и позиции двоичной точки `pos`, которая подсчитывает количество двоичных разрядов слева от двоичной точки. `qArr2` хранится так же, как `SignedLittleEndian`.
+1. **`LittleEndian`**: Массив `qArr : Qubit[]` кубит, представляющий целое число, `qArr[0]` где обозначает наименее значащий бит.
+1. **`SignedLittleEndian`**: То же `LittleEndian` , что и за исключением того, что он представляет целое число со знаком, хранящееся в дополнениех двух.
+1. **`FixedPoint`**— Представляет вещественное число, состоящее из массива `qArr2 : Qubit[]` кубит и позиции `pos`двоичной точки, которая подсчитывает количество двоичных разрядов слева от двоичной точки. `qArr2`хранится так же, как `SignedLittleEndian`и.
 
 ## <a name="operations"></a>Операции
 
@@ -75,8 +75,8 @@ open Microsoft.Quantum.Arithmetic;
 operation TestMyAddition(xValue : Int, yValue : Int, n : Int) : Unit {
     using ((xQubits, yQubits) = (Qubit[n], Qubit[n]))
     {
-        x = LittleEndian(xQubits); // define bit order
-        y = LittleEndian(yQubits);
+        let x = LittleEndian(xQubits); // define bit order
+        let y = LittleEndian(yQubits);
         
         ApplyXorInPlace(xValue, x); // initialize values
         ApplyXorInPlace(yValue, y);
@@ -90,15 +90,15 @@ operation TestMyAddition(xValue : Int, yValue : Int, n : Int) : Unit {
 
 ## <a name="sample-evaluating-smooth-functions"></a>Пример. Вычисление гладких функций
 
-Для вычисления гладких функций, таких как $ \син (x) $, на компьютере-такте, где $x $ является `FixedPoint`ным числом, Библиотека числовых пакетов разработки тактов предоставляет операции `EvaluatePolynomialFxP` и `Evaluate[Even/Odd]PolynomialFxP`.
+Для вычисления гладких функций, таких как $ \син (x) $, на тактовый компьютер, где $x $ `FixedPoint` — это тактовый номер, Библиотека числовых пакетов разработки тактов предоставляет `EvaluatePolynomialFxP` операции `Evaluate[Even/Odd]PolynomialFxP`и.
 
-Первый, `EvaluatePolynomialFxP`, позволяет оценить полином вида $ $ P (x) = a_0 + a_1x + a_2x ^ 2 + \кдотс + a_dx ^ d, $ $, где $d $ обозначает *степень*. Для этого все, что требуется, — это коэффициенты полинома `[a_0,..., a_d]` (типа `Double[]`), входные `x : FixedPoint` и выходное `y : FixedPoint` (изначально ноль):
+Первый, `EvaluatePolynomialFxP`,, позволяет оценить полином вида $ $ P (x) = a_0 + a_1x + a_2x ^ 2 + \кдотс + a_dx ^ d, $ $, где $d $ обозначает *степень*. Для этого `[a_0,..., a_d]` все, что требуется, — это коэффициенты полинома (типа `Double[]`), входные `x : FixedPoint` и выходные данные `y : FixedPoint` (изначально ноль):
 ```qsharp
 EvaluatePolynomialFxP([1.0, 2.0], x, y);
 ```
-Результат, $P (x) = 1 + 2x $, будет храниться в `yFxP`.
+Результат, $P (x) = 1 + 2x $, будет сохранен в `yFxP`.
 
-Второй, `EvaluateEvenPolynomialFxP`и третий `EvaluateOddPolynomialFxP`, являются специализациями для случаев четных и нечетных функций соответственно. Это значит, что для четной или нечетной функции $f (x) $ и $ $ P_ {четный} (x) = a_0 + a_1 x ^ 2 + a_2 x ^ 4 + \кдотс + a_d x ^ {2D}, $ $ $f (x) $ приближенно подходит $P _ {четный} (x) $ или $P _ {нечет} (x): = кс\кдот P_ {четный} (x) $ соответственно.
+Второй, `EvaluateEvenPolynomialFxP`, и третий, `EvaluateOddPolynomialFxP`являются специализациями для случаев четных и нечетных функций соответственно. Это значит, что для четной или нечетной функции $f (x) $ и $ $ P_ {четный} (x) = a_0 + a_1 x ^ 2 + a_2 x ^ 4 + \кдотс + a_d x ^ {2D}, $ $ $f (x) $ приближенно подходит $P _ {четный} (x) $ или $P _ {нечет} (x): = кс\кдот P_ {четный} (x) $ соответственно.
 В Q # эти два варианта можно обработать следующим образом:
 ```qsharp
 EvaluateEvenPolynomialFxP([1.0, 2.0], x, y);
@@ -113,7 +113,7 @@ EvaluateOddPolynomialFxP([1.0, 2.0], x, y);
 
 Дополнительные примеры можно найти в [основном репозитории примеров](https://github.com/Microsoft/Quantum).
 
-Чтобы приступить к работе, клонировать репозиторий и открыть вложенную папку `Numerics`:
+Чтобы приступить к работе, клонировать репозиторий и `Numerics` открыть вложенную папку:
 
 ```bash
 git clone https://github.com/Microsoft/Quantum.git

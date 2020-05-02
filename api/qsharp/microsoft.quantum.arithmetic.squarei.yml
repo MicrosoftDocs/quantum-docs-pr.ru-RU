@@ -3,7 +3,7 @@ uid: microsoft.quantum.arithmetic.squarei
 name: SquareI
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
-summary: Вычисляет квадрат целого `xs` в `result`, который должен быть равен нулю изначально.
+summary: Вычисляет квадрат целого числа `xs` в `result`, который должен быть равен нулю изначально.
 remarks: Использует стандартный подход Shift и-Add для расчета квадрата. Сохраняет $n-$1 Кубитс по сравнению с прямым решением, которое сначала копирует XS перед применением обычного множителя, а затем отменяет операцию копирования.
 syntax: 'operation SquareI (xs : Microsoft.Quantum.Arithmetic.LittleEndian, result : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
@@ -24,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: ae55cd24a5dad065c010006f01484f7e903e76f6
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: eedc2536da0fd75712929af44f5167d3fc73add3
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218436"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676610"
