@@ -7,7 +7,7 @@ summary: >-
   Обратимое выполнение — добавление двух целых чисел.
 
 
-  Учитывая два $n $-разрядных целых чисел, закодированных в регистрах Литтлиндиан `xs` и `ys`, и кубит, операция вычисляет сумму двух целых чисел, где $n $ наименьшее количество значащих битов результата, в `ys`, а бит выполнения — ксоред кубит `carry`.
+  Учитывая два $n $-разрядных целых чисел, закодированных в `xs` регистрах литтлиндиан и `ys`, и кубит, операция вычисляет сумму двух целых чисел, в `ys` которых $n $ наименьшие значащие биты результата, а бит выполнения — ксоред кубит. `carry`
 remarks: Эта операция имеет те же функциональные возможности, что и Рипплекарряддерд, но использует только один анЦилла кубит вместо $n $.
 syntax: 'operation RippleCarryAdderCDKM (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, carry : Qubit) : Unit'
 references: >-
@@ -35,9 +35,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: bc5a7af8534741cab8e7b18a404b1745454a20c4
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: d75313cbc70643bc9cb96967c1b2eb928296f8d7
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871368"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675136"

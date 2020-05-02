@@ -22,13 +22,13 @@ input:
     functors:
     - Controlled
   - name: arg
-    summary: Входные данные, к которым применяется `op` операций.
+    summary: Входные данные, к которым `op` применяется операция.
     uid: "'T"
     isLocal: true
 output:
   content: (Unit => Unit is Ctl)
   types:
-  - summary: Новая операция, которая применяет `op` с входными данными `arg`
+  - summary: Новая операция, которая применяется `op` с входными данными`arg`
     isOperation: true
     input:
       types:
@@ -47,9 +47,9 @@ seeAlso:
 - microsoft.quantum.canon.delayed
 - microsoft.quantum.canon.delay
 metadata:
-  ms.openlocfilehash: 99a85abc78a28a939f67278458069b46a8c36324
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 909d645e2567e92ca8943188c580e6d942cefcda
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219422"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675632"

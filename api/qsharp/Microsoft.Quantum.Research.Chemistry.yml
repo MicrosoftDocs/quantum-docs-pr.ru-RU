@@ -1,13 +1,14 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.research.chemistry
 name: Microsoft.Quantum.Research.Chemistry
+summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен предоставляет методы расширенного исследования для имитации тактовой химия.\n\n # <a name=\"references\"></a>Ссылки\n - Улучшение алгоритмов такта для тактовой химия, M. B. Хастингс, D. Веккер, B. Бауер, M. Тройер,https://arxiv.org/abs/1403.1539"
 functions:
 - uid: microsoft.quantum.research.chemistry.jordanwigneroptimizedfermionevolutionset
   summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Паули.
 - uid: microsoft.quantum.research.chemistry.jwoptimizedfermionevolutionfunction
   summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Жвоптимизед.
 - uid: microsoft.quantum.research.chemistry.jwoptimizedgeneratorsystem
-  summary: Преобразует Хамилтониан, описываемый `JWOptimizedHTerms`, в `GeneratorSystem` выраженную в терминах соглашения `GeneratorIndex`, определенного в этом файле.
+  summary: Преобразует Хамилтониан, описанный `JWOptimizedHTerms` в `GeneratorSystem` выражении, в терминах `GeneratorIndex` соглашения, определенного в этом файле.
 - uid: microsoft.quantum.research.chemistry.optimizedtrottersteporacle
   summary: Возвращает оптимизированную операцию Троттер шага и параметры, необходимые для ее запуска.
 operations:
@@ -16,9 +17,9 @@ operations:
 - uid: microsoft.quantum.research.chemistry.jwoptimizedstatepreparation
   summary: Простая подготовка состояния пробной версии с помощью оборотов по орбитам
 metadata:
-  ms.openlocfilehash: 8737229d1362a444f54d1a8d0791da9312923224
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: aa1aa58d6e2dcee6f650714073b9a1386f0ed679
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215954"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675478"
