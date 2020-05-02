@@ -12,14 +12,14 @@ summary: >-
 
   - Регистр, в котором будет храниться требуемое состояние такта $ \кет{\пси}\_s $.
 remarks: >-
-  Эта база данных Oracle, определенная $O \кет{0}= \кет{\пси} $, действует в состоянии вычислительного основания $ \кет{0}$ для создания состояния $ \кет{\пси} $.
+  Эта база данных Oracle, определенная $O \кет{0}= \кет{\пси} $, действует в состоянии вычислительного основания{0}$ \кет $ для создания состояния $ \кет{\пси} $.
 
   Первый параметр — это кубит регистр $ \кет{\пси} $.
 syntax: newtype DeterministicStateOracle = (Qubit[] => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: bc10b84502866d1f5e19b28e77e54c1b10d01b28
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 35d4b0243fac954c483a81ae1cccb46b44759ca0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231135"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681311"

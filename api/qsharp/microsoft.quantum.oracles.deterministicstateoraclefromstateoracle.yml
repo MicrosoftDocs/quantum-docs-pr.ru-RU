@@ -9,7 +9,7 @@ input:
   content: '(idxFlagQubit : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle)'
   types:
   - name: idxFlagQubit
-    summary: 'Индекс для флага кубит `stateOracle` $A $, который явно работает с двумя регистрами: флаг $f $ и System $s $, например $A \кет{0}\_ф\кет {\ PSI}\_s $.'
+    summary: '`stateOracle` Индекс для флага $A кубит $, который явно работает с двумя регистрами: флаг $f $ и System $s $, например $A{0}\_\кет ф\кет {\ PSI}\_s $.'
     isPrimitive: true
     uid: Int
   - name: stateOracle
@@ -18,15 +18,15 @@ input:
 output:
   content: Microsoft.Quantum.Oracles.DeterministicStateOracle
   types:
-  - summary: Одно и то же состояние подготовки Oracle $A $, но теперь типа `DeterministicStateOracle`, поэтому он работает с регистром, где $a, s $ больше не разделяются явным образом, например  $A \ket{0\psi}\_{AS} $.
+  - summary: Одно и то же состояние подготовленная база данных Oracle $A $ `DeterministicStateOracle`, но теперь имеет тип, поэтому он работает с регистром, где $a, s $ больше не разделяются явным образом, например  $A \ket{0\psi}\_{AS} $.
     uid: microsoft.quantum.oracles.deterministicstateoracle
 seeAlso:
 - microsoft.quantum.canon.stateoracle
 - microsoft.quantum.canon.deterministicstateoracle
 metadata:
-  ms.openlocfilehash: 5eda40115d4d4ca7b4187f76b5e0807695913407
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: cf6ddc1f1baff27c986f36d944e67192958a0d3f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231101"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681287"
