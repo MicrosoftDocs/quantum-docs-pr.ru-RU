@@ -3,23 +3,23 @@ uid: microsoft.quantum.chemistry
 name: Microsoft.Quantum.Chemistry
 functions:
 - uid: microsoft.quantum.chemistry.htermstogenidx
-  summary: Преобразует индекс в Хамилтониан термин в формате данных `HTerm[]` в Женераториндекс.
+  summary: Преобразует индекс в Хамилтониан термин в `HTerm[]` формате данных в женераториндекс.
 - uid: microsoft.quantum.chemistry.htermstogensys
-  summary: Преобразует Хамилтониан в формате данных `HTerm[]` в Женераторсистем.
+  summary: Преобразует Хамилтониан в `HTerm[]` формате данных в женераторсистем.
 - uid: microsoft.quantum.chemistry.htermtogenidx
-  summary: Преобразует Хамилтониан термин в формат данных `HTerm` в Женераториндекс.
+  summary: Преобразует термин Хамилтониан в `HTerm` формате данных в женераториндекс.
 - uid: microsoft.quantum.chemistry.isnotzero
-  summary: Проверяет, является ли число `Double` не равным нулю.
+  summary: Проверяет, не `Double` равен ли число приблизительно нулю.
 newtypes:
 - uid: microsoft.quantum.chemistry.hterm
   summary: >-
-    Формат данных, передаваемых C# из в Q # для представления термина хамилтониан.
+    Формат данных, передаваемых из C# в Q # для представления термина Хамилтониан.
 
     Значение представленных данных определяется алгоритмом, который их получает.
 metadata:
-  ms.openlocfilehash: 78d6e9f54c25f9d1a6af32c157d23069b8a4872b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: fda6e5c8daebeae115046771e85e0e49d057e666
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73210922"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677020"

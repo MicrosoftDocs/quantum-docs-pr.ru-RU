@@ -3,7 +3,7 @@ uid: microsoft.quantum.arrays.fold
 name: Fold
 type: function
 namespace: Microsoft.Quantum.Arrays
-summary: Выполняет итерацию функции `f` с помощью `array`массива, возвращая `f(f(f(initialState, array[0]), array[1]), ...)`.
+summary: Выполняет итерацию функции `f` через массив `array`, возвращая `f(f(f(initialState, array[0]), array[1]), ...)`.
 examples: >-
   ```qsharp
 
@@ -45,18 +45,18 @@ input:
 output:
   content: "'State"
   types:
-  - summary: Конечное состояние, возвращенное папкой после прохода по всем элементам `array`.
+  - summary: Конечное состояние, возвращенное папкой после прохода по всем `array`элементам.
     uid: "'State"
     isLocal: true
 typeParameters:
 - uid: "'State"
-  summary: Тип состояний, в которых работает функция `folder`, т. е. принимает в качестве первого аргумента и возвращает.
+  summary: Тип состояний, в которых `folder` функция работает, т. е. принимает в качестве первого аргумента и возвращает.
 - uid: "'T"
-  summary: Тип элементов `array`.
+  summary: Тип `array` элементов.
 metadata:
-  ms.openlocfilehash: 4be4752029b10351cfb3fe0fa6aa61b84b157510
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d02d20c049e8b8d21214028efcd6a647067bf71f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214356"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676443"

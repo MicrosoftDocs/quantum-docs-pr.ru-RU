@@ -3,37 +3,37 @@ uid: microsoft.quantum.canon
 name: Microsoft.Quantum.Canon
 functions:
 - uid: microsoft.quantum.canon.asqubitarray
-  summary: "\n> [!WARNING]\n> Устарело\n\nАскубитаррай является устаревшим.\nЭта функция была удалена."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАскубитаррай является устаревшим.\nЭта функция была удалена."
 - uid: microsoft.quantum.canon.assertalmostequal
-  summary: "\n> [!WARNING]\n> Устарело\n\nАссерталмостекуал является устаревшим. Вместо нее используйте @\"microsoft.quantum.diagnostics.nearequalityfactd\".\nВместо нее используйте @\"Microsoft.Quantum.Diagnostics.NearEqualityFactD\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерталмостекуал является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.nearequalityfactd\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Diagnostics.NearEqualityFactD\"."
 - uid: microsoft.quantum.canon.assertalmostequaltol
-  summary: "\n> [!WARNING]\n> Устарело\n\nАссерталмостекуалтол является устаревшим. Вместо нее используйте @\"microsoft.quantum.diagnostics.equalitywithintolerancefact\".\nВместо нее используйте @\"Microsoft.Quantum.Diagnostics.EqualityWithinToleranceFact\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерталмостекуалтол является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.equalitywithintolerancefact\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Diagnostics.EqualityWithinToleranceFact\"."
 - uid: microsoft.quantum.canon.assertboolarrayequal
-  summary: "\n> [!WARNING]\n> Устарело\n\nАссертбуларрайекуал является устаревшим. Вместо нее используйте @\"microsoft.quantum.diagnostics.allequalityfactb\".\nВместо нее используйте @\"Microsoft.Quantum.Diagnostics.AllEqualityFactB\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертбуларрайекуал является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.allequalityfactb\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Diagnostics.AllEqualityFactB\"."
 - uid: microsoft.quantum.canon.assertboolequal
-  summary: "\n> [!WARNING]\n> Устарело\n\nАссертбулекуал является устаревшим. Вместо нее используйте @\"microsoft.quantum.diagnostics.equalityfactb\".\nВместо нее используйте @\"Microsoft.Quantum.Diagnostics.EqualityFactB\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертбулекуал является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.equalityfactb\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Diagnostics.EqualityFactB\"."
 - uid: microsoft.quantum.canon.assertintequal
-  summary: "\n> [!WARNING]\n> Устарело\n\nАссертинтекуал является устаревшим. Вместо нее используйте @\"microsoft.quantum.diagnostics.equalityfacti\".\nВместо нее используйте @\"Microsoft.Quantum.Diagnostics.EqualityFactI\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертинтекуал является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.equalityfacti\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Diagnostics.EqualityFactI\"."
 - uid: microsoft.quantum.canon.assertresultequal
-  summary: "\n> [!WARNING]\n> Устарело\n\nАссертресултекуал является устаревшим. Вместо нее используйте @\"microsoft.quantum.diagnostics.equalityfactr\".\nВместо нее используйте @\"Microsoft.Quantum.Diagnostics.EqualityFactR\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертресултекуал является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.equalityfactr\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Diagnostics.EqualityFactR\"."
 - uid: microsoft.quantum.canon.bigendiantolittleendian
-  summary: "\n> [!WARNING]\n> Устарело\n\nБижендиантолиттлиндиан является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.bigendianaslittleendian\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБижендиантолиттлиндиан является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.bigendianaslittleendian\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian\"."
 - uid: microsoft.quantum.canon.bind
-  summary: "\n> [!WARNING]\n> Устарело\n\nПривязка является устаревшей. Вместо нее используйте @\"microsoft.quantum.canon.bound\".\nСледует использовать @\"microsoft.quantum.canon.bound\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПривязка является устаревшей. Взамен рекомендуется использовать @\"microsoft.quantum.canon.bound\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.bound\"."
 - uid: microsoft.quantum.canon.binda
-  summary: "\n> [!WARNING]\n> Устарело\n\nПривязка не рекомендуется к использованию. Вместо нее используйте @\"microsoft.quantum.canon.bounda\".\nСледует использовать @\"microsoft.quantum.canon.bounda\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПривязка не рекомендуется к использованию. Взамен рекомендуется использовать @\"microsoft.quantum.canon.bounda\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.bounda\"."
 - uid: microsoft.quantum.canon.bindc
-  summary: "\n> [!WARNING]\n> Устарело\n\nБиндк является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.boundc\".\nСледует использовать @\"microsoft.quantum.canon.boundc\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБиндк является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.boundc\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.boundc\"."
 - uid: microsoft.quantum.canon.bindca
-  summary: "\n> [!WARNING]\n> Устарело\n\nБиндка является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.boundca\".\nСледует использовать @\"microsoft.quantum.canon.boundca\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБиндка является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.boundca\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.boundca\"."
 - uid: microsoft.quantum.canon.bitsize
-  summary: "\n> [!WARNING]\n> Устарело\n\nBitsize меняется является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.bitsizei\".\nСледует использовать @\"microsoft.quantum.math.bitsizei\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nBitsize меняется является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.bitsizei\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.bitsizei\"."
 - uid: microsoft.quantum.canon.boolarrfrompositiveint
-  summary: "\n> [!WARNING]\n> Устарело\n\nБуларрфромпоситивеинт является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.intasboolarray\".\nСледует использовать @\"microsoft.quantum.convert.intasboolarray\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБуларрфромпоситивеинт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.intasboolarray\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.intasboolarray\"."
 - uid: microsoft.quantum.canon.boolarrfromresultarr
-  summary: "\n> [!WARNING]\n> Устарело\n\nБуларрфромресултарр является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.resultarrayasboolarray\".\nСледует использовать @\"microsoft.quantum.convert.resultarrayasboolarray\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБуларрфромресултарр является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.resultarrayasboolarray\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.resultarrayasboolarray\"."
 - uid: microsoft.quantum.canon.boolfromresult
-  summary: "\n> [!WARNING]\n> Устарело\n\nБулфромресулт является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.resultasbool\".\nСледует использовать @\"microsoft.quantum.convert.resultasbool\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБулфромресулт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.resultasbool\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.resultasbool\"."
 - uid: microsoft.quantum.canon.bound
   summary: При наличии массива операций, исдействующих один вход, создает новую операцию, которая выполняет каждую заданную операцию последовательно.
 - uid: microsoft.quantum.canon.bounda
@@ -52,20 +52,20 @@ functions:
 
     Модификатор `CA` указывает, что все операции в массиве являются аджоинтабле и управляемыми.
 - uid: microsoft.quantum.canon.ccontrolled
-  summary: При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`, ничего не происходит.
+  summary: При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`значение равно, ничего не происходит.
 - uid: microsoft.quantum.canon.ccontrolleda
   summary: >-
-    При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`, ничего не происходит.
+    При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`значение равно, ничего не происходит.
 
     Модификатор `A` указывает, что операция является аджоинтабле.
 - uid: microsoft.quantum.canon.ccontrolledc
   summary: >-
-    При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`, ничего не происходит.
+    При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`значение равно, ничего не происходит.
 
     Модификатор `C` указывает, что операция является управляемой.
 - uid: microsoft.quantum.canon.ccontrolledca
   summary: >-
-    При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`, ничего не происходит.
+    При наличии операции операция возвращает новую операцию, которая применяет оператор, если классический контрольный бит имеет значение true. Если `false`значение равно, ничего не происходит.
 
     Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
 - uid: microsoft.quantum.canon.compose
@@ -79,7 +79,7 @@ functions:
 - uid: microsoft.quantum.canon.conjugatedbyca
   summary: При наличии внешних и внутренних операций возвращает новую операцию, которая сопряжена с внутренней операцией внешней операцией.
 - uid: microsoft.quantum.canon.continuedfractionconvergent
-  summary: "\n> [!WARNING]\n> Устарело\n\nКонтинуедфрактионконвержент является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.continuedfractionconvergenti\".\nСледует использовать @\"microsoft.quantum.math.continuedfractionconvergenti\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКонтинуедфрактионконвержент является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.continuedfractionconvergenti\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.continuedfractionconvergenti\"."
 - uid: microsoft.quantum.canon.controlledonbitstring
   summary: Возвращает единую операцию, которая применяет Oracle к целевой регистрации, если состояние регистра элемента управления соответствует заданной битовой маске.
 - uid: microsoft.quantum.canon.controlledonint
@@ -91,11 +91,11 @@ functions:
 
     Это значит, что при выполнении операции с двумя входными данными эта функция применяет карри исоморфисм $f (x, y) \екуив f (x) (y) $ для возврата операции одного входа, которая возвращает операцию одного входа.
 - uid: microsoft.quantum.canon.curryop
-  summary: "\n> [!WARNING]\n> Устарело\n\nКуррйоп является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.curriedop\".\nСледует использовать @\"microsoft.quantum.canon.curriedop\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКуррйоп является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.curriedop\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.curriedop\"."
 - uid: microsoft.quantum.canon.decomposedintotimestepsca
   summary: Возвращает операцию, реализующую интегратор Троттер – Сузуки для данной операции.
 - uid: microsoft.quantum.canon.decomposeintotimestepsca
-  summary: "\n> [!WARNING]\n> Устарело\n\nДекомпосеинтотиместепска является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.decomposedintotimestepsca\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nДекомпосеинтотиместепска является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.decomposedintotimestepsca\"."
 - uid: microsoft.quantum.canon.delayed
   summary: Возвращает операцию, которая применяет заданную операцию с заданным аргументом.
 - uid: microsoft.quantum.canon.delayeda
@@ -105,45 +105,45 @@ functions:
 - uid: microsoft.quantum.canon.delayedca
   summary: Возвращает операцию, которая применяет заданную операцию с заданным аргументом.
 - uid: microsoft.quantum.canon.embedpauli
-  summary: При наличии однокубитного оператора Паули и индекса кубит возвращает оператор Multi-кубит Паули с заданным оператором Single-кубит в этом индексе и `PauliI` по каждому индексу.
+  summary: При наличии однокубитного оператора Паули и индекса кубит возвращает оператор Multi-кубит Паули с заданным оператором Single-кубит в этом индексе и `PauliI` в каждом другом индексе.
 - uid: microsoft.quantum.canon.expmod
-  summary: "\n> [!WARNING]\n> Устарело\n\nЕкспмод является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.expmodi\".\nСледует использовать @\"microsoft.quantum.math.expmodi\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЕкспмод является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.expmodi\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.expmodi\"."
 - uid: microsoft.quantum.canon.extendedgcd
-  summary: "\n> [!WARNING]\n> Устарело\n\nЕкстендедгкд является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.extendedgreatestcommondivisori\".\nСледует использовать @\"microsoft.quantum.math.extendedgreatestcommondivisori\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЕкстендедгкд является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.extendedgreatestcommondivisori\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.extendedgreatestcommondivisori\"."
 - uid: microsoft.quantum.canon.filter
-  summary: "\n> [!WARNING]\n> Устарело\n\nФильтр устарел. Вместо нее используйте @\"microsoft.quantum.arrays.filtered\".\nВместо нее используйте @\"Microsoft.Quantum.Arrays.Filtered\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФильтр устарел. Взамен рекомендуется использовать @\"microsoft.quantum.arrays.filtered\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arrays.Filtered\"."
 - uid: microsoft.quantum.canon.forall
-  summary: "\n> [!WARNING]\n> Устарело\n\nНе рекомендуется использовать ForAll. Вместо нее используйте @\"microsoft.quantum.arrays.all\".\nВместо нее используйте @\"Microsoft.Quantum.Arrays.All\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНе рекомендуется использовать ForAll. Взамен рекомендуется использовать @\"microsoft.quantum.arrays.all\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arrays.All\"."
 - uid: microsoft.quantum.canon.forany
-  summary: "\n> [!WARNING]\n> Устарело\n\nФорани является устаревшим. Вместо нее используйте @\"microsoft.quantum.arrays.any\".\nВместо нее используйте @\"Microsoft.Quantum.Arrays.Any\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФорани является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arrays.any\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arrays.Any\"."
 - uid: microsoft.quantum.canon.fst
   summary: При наличии пары возвращает ее первый элемент.
 - uid: microsoft.quantum.canon.gcd
-  summary: "\n> [!WARNING]\n> Устарело\n\nGCD является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.greatestcommondivisori\".\nСледует использовать @\"microsoft.quantum.math.greatestcommondivisori\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nGCD является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.greatestcommondivisori\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.greatestcommondivisori\"."
 - uid: microsoft.quantum.canon.ignore
   summary: Игнорирует выходные данные операции или функции.
 - uid: microsoft.quantum.canon.intabs
-  summary: "\n> [!WARNING]\n> Устарело\n\nЗнаки табуляции являются устаревшими. Вместо нее используйте @\"microsoft.quantum.math.absi\".\nЭта функция была удалена."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЗнаки табуляции являются устаревшими. Взамен рекомендуется использовать @\"microsoft.quantum.math.absi\".\nЭта функция была удалена."
 - uid: microsoft.quantum.canon.intarrayfromrange
-  summary: "\n> [!WARNING]\n> Устарело\n\nИнтаррайфромранже является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.rangeasintarray\".\nСледует использовать @\"microsoft.quantum.convert.rangeasintarray\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИнтаррайфромранже является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.rangeasintarray\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.rangeasintarray\"."
 - uid: microsoft.quantum.canon.intmax
-  summary: "\n> [!WARNING]\n> Устарело\n\nИнтмакс является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.maxi\".\nЭта функция была удалена."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИнтмакс является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.maxi\".\nЭта функция была удалена."
 - uid: microsoft.quantum.canon.inversemod
-  summary: "\n> [!WARNING]\n> Устарело\n\nИнверсемод является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.inversemodi\".\nСледует использовать @\"microsoft.quantum.math.inversemodi\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИнверсемод является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.inversemodi\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.inversemodi\"."
 - uid: microsoft.quantum.canon.iscoprime
-  summary: "\n> [!WARNING]\n> Устарело\n\nИскоприме является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.iscoprimei\".\nСледует использовать @\"microsoft.quantum.math.greatestcommondivisori\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИскоприме является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.iscoprimei\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.greatestcommondivisori\"."
 - uid: microsoft.quantum.canon.isresultone
-  summary: Проверяет, равно ли данное значение результата `One`.
+  summary: Проверяет, равно ли данное значение результата значению `One`.
 - uid: microsoft.quantum.canon.isresultzero
-  summary: Проверяет, равно ли данное значение результата `Zero`.
+  summary: Проверяет, равно ли данное значение результата значению `Zero`.
 - uid: microsoft.quantum.canon.littleendiantobigendian
-  summary: "\n> [!WARNING]\n> Устарело\n\nЛиттлиндиантобижендиан является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.littleendianasbigendian\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЛиттлиндиантобижендиан является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.littleendianasbigendian\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian\"."
 - uid: microsoft.quantum.canon.map
-  summary: "\n> [!WARNING]\n> Устарело\n\nMap является нерекомендуемым. Вместо нее используйте @\"microsoft.quantum.arrays.mapped\".\nВместо нее используйте @\"Microsoft.Quantum.Arrays.Mapped\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nMap является нерекомендуемым. Взамен рекомендуется использовать @\"microsoft.quantum.arrays.mapped\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arrays.Mapped\"."
 - uid: microsoft.quantum.canon.mapindex
-  summary: "\n> [!WARNING]\n> Устарело\n\nМапиндекс является устаревшим. Вместо нее используйте @\"microsoft.quantum.arrays.mappedbyindex\".\nВместо нее используйте @\"Microsoft.Quantum.Arrays.MappedByIndex\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМапиндекс является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arrays.mappedbyindex\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arrays.MappedByIndex\"."
 - uid: microsoft.quantum.canon.modulus
-  summary: "\n> [!WARNING]\n> Устарело\n\nМодуль не рекомендуется к использованию. Вместо нее используйте @\"microsoft.quantum.math.modulusi\".\nСледует использовать @\"microsoft.quantum.math.modulusi\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМодуль не рекомендуется к использованию. Взамен рекомендуется использовать @\"microsoft.quantum.math.modulusi\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.modulusi\"."
 - uid: microsoft.quantum.canon.multiplexerbruteforcefromgenerator
   summary: >-
     Возвращает операцию, зависящую от умножения, $U $, которая применяет единое $V _j $ при управлении с помощью n-кубит числового состояния $ \кет{ж} $.
@@ -157,7 +157,7 @@ functions:
 
     $U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж}\отимес V_j $.
 - uid: microsoft.quantum.canon.nearequalityfact
-  summary: "\n> [!WARNING]\n> Устарело\n\nНеарекуалитифакт является устаревшим. Вместо нее используйте @\"microsoft.quantum.diagnostics.nearequalityfactd\".\nВместо нее используйте @\"Microsoft.Quantum.Diagnostics.NearEqualityFactD\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНеарекуалитифакт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.nearequalityfactd\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Diagnostics.NearEqualityFactD\"."
 - uid: microsoft.quantum.canon.operationpow
   summary: >-
     Порождает операцию в степень.
@@ -189,15 +189,15 @@ functions:
 
     То есть операция, представляющая шлюз $U $, возвращает новую операцию $U ^ m $ для Power $m $.
 - uid: microsoft.quantum.canon.pad
-  summary: "\n> [!WARNING]\n> Устарело\n\nНе рекомендуется использовать Pad. Вместо нее используйте @\"microsoft.quantum.arrays.padded\".\nВместо нее используйте @\"Microsoft.Quantum.Arrays.Padded\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНе рекомендуется использовать Pad. Взамен рекомендуется использовать @\"microsoft.quantum.arrays.padded\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arrays.Padded\"."
 - uid: microsoft.quantum.canon.paulifrombitstring
-  summary: "\n> [!WARNING]\n> Устарело\n\nПаулифромбитстринг является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.boolarrayaspauli\".\nСледует использовать @\"microsoft.quantum.convert.boolarrayaspauli\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПаулифромбитстринг является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.boolarrayaspauli\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.boolarrayaspauli\"."
 - uid: microsoft.quantum.canon.pnormalize
-  summary: "\n> [!WARNING]\n> Устарело\n\nПнормализе является устаревшим. Вместо нее используйте @\"microsoft.quantum.math.pnormalized\".\nСледует использовать @\"microsoft.quantum.math.pnormalized\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПнормализе является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.pnormalized\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.pnormalized\"."
 - uid: microsoft.quantum.canon.positiveintfromboolarr
-  summary: "\n> [!WARNING]\n> Устарело\n\nПоситивеинтфромбуларр является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.boolarrayasint\".\nСледует использовать @\"microsoft.quantum.convert.boolarrayasint\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПоситивеинтфромбуларр является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.boolarrayasint\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.boolarrayasint\"."
 - uid: microsoft.quantum.canon.positiveintfromresultarr
-  summary: "\n> [!WARNING]\n> Устарело\n\nПоситивеинтфромресултарр является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.resultarrayasint\".\nСледует использовать @\"microsoft.quantum.canon.resultarrayasint\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПоситивеинтфромресултарр является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.resultarrayasint\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.resultarrayasint\"."
 - uid: microsoft.quantum.canon.restrictedtosubregister
   summary: Ограничивают операцию массивом индексов регистра, т. е. подрегистром.
 - uid: microsoft.quantum.canon.restrictedtosubregistera
@@ -216,39 +216,39 @@ functions:
 
     Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
 - uid: microsoft.quantum.canon.restricttosubregister
-  summary: "\n> [!WARNING]\n> Устарело\n\nРестрикттосубрегистер является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.restrictedtosubregister\".\nСледует использовать @\"microsoft.quantum.canon.restrictedtosubregister\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРестрикттосубрегистер является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.restrictedtosubregister\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.restrictedtosubregister\"."
 - uid: microsoft.quantum.canon.restricttosubregistera
-  summary: "\n> [!WARNING]\n> Устарело\n\nРестрикттосубрегистера является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.restrictedtosubregistera\".\nСледует использовать @\"microsoft.quantum.canon.restrictedtosubregistera\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРестрикттосубрегистера является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.restrictedtosubregistera\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.restrictedtosubregistera\"."
 - uid: microsoft.quantum.canon.restricttosubregisterc
-  summary: "\n> [!WARNING]\n> Устарело\n\nРестрикттосубрегистерк является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.restrictedtosubregisterc\".\nСледует использовать @\"microsoft.quantum.canon.restrictedtosubregisterc\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРестрикттосубрегистерк является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.restrictedtosubregisterc\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.restrictedtosubregisterc\"."
 - uid: microsoft.quantum.canon.restricttosubregisterca
-  summary: "\n> [!WARNING]\n> Устарело\n\nРестрикттосубрегистерка является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.restrictedtosubregisterca\".\nСледует использовать @\"microsoft.quantum.canon.restrictedtosubregisterca\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРестрикттосубрегистерка является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.restrictedtosubregisterca\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.restrictedtosubregisterca\"."
 - uid: microsoft.quantum.canon.resultarrfromboolarr
-  summary: "\n> [!WARNING]\n> Устарело\n\nРесултаррфромбуларр является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.boolarrayasresultarray\".\nСледует использовать @\"microsoft.quantum.convert.resultarrayasboolarray\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРесултаррфромбуларр является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.boolarrayasresultarray\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.resultarrayasboolarray\"."
 - uid: microsoft.quantum.canon.resultasint
-  summary: "\n> [!WARNING]\n> Устарело\n\nРесултасинт является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.resultarrayasint\".\nСледует использовать @\"microsoft.quantum.convert.resultarrayasint\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРесултасинт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.resultarrayasint\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.resultarrayasint\"."
 - uid: microsoft.quantum.canon.resultfrombool
-  summary: "\n> [!WARNING]\n> Устарело\n\nРесултфромбул является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.boolasresult\".\nСледует использовать @\"microsoft.quantum.convert.boolasresult\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРесултфромбул является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.boolasresult\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.boolasresult\"."
 - uid: microsoft.quantum.canon.reverse
-  summary: "\n> [!WARNING]\n> Устарело\n\nОбратный является устаревшим. Вместо нее используйте @\"microsoft.quantum.arrays.reversed\".\nВместо нее используйте @\"Microsoft.Quantum.Arrays.Reversed\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nОбратный является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arrays.reversed\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arrays.Reversed\"."
 - uid: microsoft.quantum.canon.snd
   summary: При наличии пары возвращает второй элемент.
 - uid: microsoft.quantum.canon.splitarray
-  summary: "\n> [!WARNING]\n> Устарело\n\nСплитаррай является устаревшим. Вместо нее используйте @\"microsoft.quantum.arrays.partitioned\".\nВместо нее используйте @\"Microsoft.Quantum.Arrays.Partitioned\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСплитаррай является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arrays.partitioned\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arrays.Partitioned\"."
 - uid: microsoft.quantum.canon.stackcapacity
-  summary: "\n> [!WARNING]\n> Устарело\n\nСтакккапаЦити является устаревшим."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСтакккапаЦити является устаревшим."
 - uid: microsoft.quantum.canon.stacklength
-  summary: "\n> [!WARNING]\n> Устарело\n\nСтаккленгс является устаревшим."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСтаккленгс является устаревшим."
 - uid: microsoft.quantum.canon.stacknew
-  summary: "\n> [!WARNING]\n> Устарело\n\nСтаккнев является устаревшим."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСтаккнев является устаревшим."
 - uid: microsoft.quantum.canon.stackpeek
-  summary: "\n> [!WARNING]\n> Устарело\n\nСтаккпик является устаревшим."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСтаккпик является устаревшим."
 - uid: microsoft.quantum.canon.stackpop
-  summary: "\n> [!WARNING]\n> Устарело\n\nСтаккпоп является устаревшим."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСтаккпоп является устаревшим."
 - uid: microsoft.quantum.canon.stackpush
-  summary: "\n> [!WARNING]\n> Устарело\n\nСтаккпуш является устаревшим."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСтаккпуш является устаревшим."
 - uid: microsoft.quantum.canon.tooperation
-  summary: "\n> [!WARNING]\n> Устарело\n\nТуператион является устаревшим. Вместо нее используйте @\"microsoft.quantum.convert.functionasoperation\".\nСледует использовать @\"microsoft.quantum.convert.functionasoperation\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТуператион является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.functionasoperation\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.functionasoperation\"."
 - uid: microsoft.quantum.canon.transformedoperation
   summary: При наличии функции и операции возвращает новую операцию, входные данные которой преобразуются в заданную функцию.
 - uid: microsoft.quantum.canon.transformedoperationa
@@ -275,20 +275,20 @@ functions:
 
     Модификатор `CA` указывает, что операции являются управляемыми и аджоинтабле.
 - uid: microsoft.quantum.canon.uncurryop
-  summary: "\n> [!WARNING]\n> Устарело\n\nУнкуррйоп является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.uncurriedop\".\nСледует использовать @\"microsoft.quantum.canon.uncurriedop\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nУнкуррйоп является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.uncurriedop\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.uncurriedop\"."
 - uid: microsoft.quantum.canon.uncurryopa
-  summary: "\n> [!WARNING]\n> Устарело\n\nУнкуррйопа является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.uncurriedopa\".\nСледует использовать @\"microsoft.quantum.canon.uncurriedopa\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nУнкуррйопа является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.uncurriedopa\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.uncurriedopa\"."
 - uid: microsoft.quantum.canon.uncurryopc
-  summary: "\n> [!WARNING]\n> Устарело\n\nУнкуррйопк является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.uncurriedopc\".\nСледует использовать @\"microsoft.quantum.canon.uncurriedopc\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nУнкуррйопк является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.uncurriedopc\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.uncurriedopc\"."
 - uid: microsoft.quantum.canon.uncurryopca
-  summary: "\n> [!WARNING]\n> Устарело\n\nУнкуррйопка является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.uncurriedopca\".\nСледует использовать @\"microsoft.quantum.canon.uncurriedopca\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nУнкуррйопка является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.uncurriedopca\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.uncurriedopca\"."
 - uid: microsoft.quantum.canon.weightonepaulis
   summary: Возвращает массив всех операторов Паули веса-1 для заданного числа Кубитс.
 - uid: microsoft.quantum.canon.xor
-  summary: "\n> [!WARNING]\n> Устарело\n\nНе рекомендуется использовать XOR. Вместо нее используйте @\"microsoft.quantum.logical.xor\".\nСледует использовать @\"microsoft.quantum.logical.xor\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНе рекомендуется использовать XOR. Взамен рекомендуется использовать @\"microsoft.quantum.logical.xor\".\nВзамен рекомендуется использовать @\"microsoft.quantum.logical.xor\"."
 operations:
 - uid: microsoft.quantum.canon.adiabaticstateenergyunitary
-  summary: "\n> [!WARNING]\n> Устарело\n\nАдиабатикстатинергюнитари является устаревшим. Вместо нее используйте @\"microsoft.quantum.simulation.estimateenergywithadiabaticevolution\".\nСледует использовать @\"microsoft.quantum.simuilation.pnormalized\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАдиабатикстатинергюнитари является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.simulation.estimateenergywithadiabaticevolution\".\nВзамен рекомендуется использовать @\"microsoft.quantum.simuilation.pnormalized\"."
 - uid: microsoft.quantum.canon.andladder
   summary: Выполняет управляемый "и" лестницу "для регистра целевых Кубитс.
 - uid: microsoft.quantum.canon.applyand
@@ -347,12 +347,12 @@ operations:
   summary: >-
     Применяет версию управляемой операции с одной операцией умножения.
 
-    Модификатор `C` указывает, что операция с одним кубитом является управляемой.
+    Модификатор `C` указывает, что операция с одним кубит является управляемой.
 - uid: microsoft.quantum.canon.applymulticontrolledca
   summary: >-
     Применяет версию управляемой операции с одной операцией умножения.
 
-    Модификатор `CA` указывает, что однокубитная операция является управляемой и аджоинтабле.
+    Модификатор `CA` указывает, что одна операция кубит является управляемой и аджоинтабле.
 - uid: microsoft.quantum.canon.applyoprepeatedlyover
   summary: Применяет одну и ту же Op к кубит регистру несколько раз.
 - uid: microsoft.quantum.canon.applyoprepeatedlyovera
@@ -368,29 +368,29 @@ operations:
 - uid: microsoft.quantum.canon.applyquantumfouriertransform
   summary: Выполняет преобразование Фурье в тактовую операцию для регистра такта, содержащего целое число в представлении с прямым порядком байтов.
 - uid: microsoft.quantum.canon.applyquantumfouriertransformbe
-  summary: "\n> [!WARNING]\n> Устарело\n\nАппликуантумфауриертрансформбе является устаревшим. Вместо нее следует использовать @ \"аппликуантумфауриертрансформ (бижендианаслиттлиндиан (QS))\".\nЭта операция была удалена."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАппликуантумфауриертрансформбе является устаревшим. Вместо нее следует использовать @ \"аппликуантумфауриертрансформ (бижендианаслиттлиндиан (QS))\".\nЭта операция была удалена."
 - uid: microsoft.quantum.canon.applyquantumfouriertransformle
-  summary: "\n> [!WARNING]\n> Устарело\n\nАппликуантумфауриертрансформле является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.applyquantumfouriertransform\".\nСледует использовать @\"microsoft.quantum.canon.applyquantumfouriertransform\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАппликуантумфауриертрансформле является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.applyquantumfouriertransform\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.applyquantumfouriertransform\"."
 - uid: microsoft.quantum.canon.applyreversedopbigendian
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплиреверседопбижендиан является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.applyreversedopbe\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBE\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплиреверседопбижендиан является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applyreversedopbe\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBE\"."
 - uid: microsoft.quantum.canon.applyreversedopbigendiana
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплиреверседопбижендиана является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.applyreversedopbea\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEA\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплиреверседопбижендиана является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applyreversedopbea\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEA\"."
 - uid: microsoft.quantum.canon.applyreversedopbigendianc
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплиреверседопбижендианк является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.applyreversedopbec\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплиреверседопбижендианк является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applyreversedopbec\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC\"."
 - uid: microsoft.quantum.canon.applyreversedopbigendianca
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплиреверседопбижендианка является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.applyreversedopbeca\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплиреверседопбижендианка является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applyreversedopbeca\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC\"."
 - uid: microsoft.quantum.canon.applyreversedoplittleendian
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплиреверседоплиттлиндиан является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.applyreversedople\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLE\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплиреверседоплиттлиндиан является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applyreversedople\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLE\"."
 - uid: microsoft.quantum.canon.applyreversedoplittleendiana
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплиреверседоплиттлиндиана является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.applyreversedoplea\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEA\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплиреверседоплиттлиндиана является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applyreversedoplea\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEA\"."
 - uid: microsoft.quantum.canon.applyreversedoplittleendianc
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплиреверседоплиттлиндианк является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.applyreversedoplec\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплиреверседоплиттлиндианк является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applyreversedoplec\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC\"."
 - uid: microsoft.quantum.canon.applyreversedoplittleendianca
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплиреверседоплиттлиндианка является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.applyreversedopleca\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплиреверседоплиттлиндианка является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applyreversedopleca\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC\"."
 - uid: microsoft.quantum.canon.applyripplecarrycomparatorbe
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплирипплекаррикомпараторбе является устаревшим. Используйте вместо него @ \"компареусингрипплекарри (бижендианаслиттлиндиан (x), бижендианаслиттлиндиан (y), Output)\".\nЭта операция была удалена."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплирипплекаррикомпараторбе является устаревшим. Используйте вместо него @ \"компареусингрипплекарри (бижендианаслиттлиндиан (x), бижендианаслиттлиндиан (y), Output)\".\nЭта операция была удалена."
 - uid: microsoft.quantum.canon.applyripplecarrycomparatorle
-  summary: "\n> [!WARNING]\n> Устарело\n\nАпплирипплекаррикомпараторле является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.compareusingripplecarry\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.CompareUsingRippleCarry\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАпплирипплекаррикомпараторле является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.compareusingripplecarry\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.CompareUsingRippleCarry\"."
 - uid: microsoft.quantum.canon.applyseriesofops
   summary: Применяет список Ops и их целевых объектов последовательно в массиве.
 - uid: microsoft.quantum.canon.applyseriesofopsa
@@ -405,34 +405,34 @@ operations:
   summary: >-
     Применяет одну операцию кубит к каждому элементу в регистре.
 
-    Модификатор `A` указывает, что операция с одним кубитом — аджоинтабле.
+    Модификатор `A` указывает, что единственной операцией кубит является аджоинтабле.
 - uid: microsoft.quantum.canon.applytoeachc
   summary: >-
     Применяет одну операцию кубит к каждому элементу в регистре.
 
-    Модификатор `C` указывает, что операция с одним кубитом является управляемой.
+    Модификатор `C` указывает, что операция с одним кубит является управляемой.
 - uid: microsoft.quantum.canon.applytoeachca
   summary: >-
     Применяет одну операцию кубит к каждому элементу в регистре.
 
-    Модификатор `CA` указывает, что однокубитная операция является управляемой и аджоинтабле.
+    Модификатор `CA` указывает, что одна операция кубит является управляемой и аджоинтабле.
 - uid: microsoft.quantum.canon.applytoeachindex
   summary: Применяет одну операцию кубит к каждому индексированному элементу в регистре.
 - uid: microsoft.quantum.canon.applytoeachindexa
   summary: >-
     Применяет одну операцию кубит к каждому индексированному элементу в регистре.
 
-    Модификатор `A` указывает, что операция с одним кубитом — аджоинтабле.
+    Модификатор `A` указывает, что единственной операцией кубит является аджоинтабле.
 - uid: microsoft.quantum.canon.applytoeachindexc
   summary: >-
     Применяет одну операцию кубит к каждому индексированному элементу в регистре.
 
-    Модификатор `C` указывает, что операция с одним кубитом является управляемой.
+    Модификатор `C` указывает, что операция с одним кубит является управляемой.
 - uid: microsoft.quantum.canon.applytoeachindexca
   summary: >-
     Применяет одну операцию кубит к каждому индексированному элементу в регистре.
 
-    Модификатор `CA` указывает, что однокубитная операция является аджоинтабле и управляемой.
+    Модификатор `CA` указывает, что операция с одним кубитом является аджоинтабле и управляемой.
 - uid: microsoft.quantum.canon.applytoelement
   summary: Применяет операцию к заданному элементу массива.
 - uid: microsoft.quantum.canon.applytoelementa
@@ -551,43 +551,43 @@ operations:
 - uid: microsoft.quantum.canon.approximateqft
   summary: Примените примерное преобразование Фурье (АКФТ) к тактовому регистру.
 - uid: microsoft.quantum.canon.asserthighestbit
-  summary: "\n> [!WARNING]\n> Устарело\n\nАссерсигхестбит является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.assertmostsignificantbit\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.AssertMostSignificantBit\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерсигхестбит является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.assertmostsignificantbit\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.AssertMostSignificantBit\"."
 - uid: microsoft.quantum.canon.assertlessthanphasele
-  summary: "\n> [!WARNING]\n> Устарело\n\nАссертлесссанфаселе является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.assertphaselessthan\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертлесссанфаселе является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.assertphaselessthan\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan\"."
 - uid: microsoft.quantum.canon.assertphase
   summary: >-
     Утверждает, что фаза равного пресостояния перестановки имеет ожидаемое значение.
 
 
-    В частности, утверждает, что фаза $ \фи $ состояния такта, которая может быть выражена как $ \фрак{е ^ {i}} {\скрт{2}} (e ^ {и\фи} \ Сисакет{0} + e ^ {-и\фи} \ Сисакет{1}) $ для некоторых произвольных фактов t имеет ожидаемое значение.
+    В частности, утверждает, что фаза $ \фи $ состояния такта, которая может быть выражена как $ \фрак{е ^ {i t}} {{2}\скрт} (e ^ {и\фи} \{0} Сисакет + e ^ {-и\фи} \{1}Сисакет) $ для некоторых произвольных реальных t, имеет ожидаемое значение.
 - uid: microsoft.quantum.canon.assertprobintbe
-  summary: "\n> [!WARNING]\n> Устарело\n\nАссертпробинтбе является устаревшим. Используйте вместо него @ \"ассертпробинт (статеиндекс, prob, бижендианаслиттлиндиан (Кубитс), допуск)\".\nЭта операция была удалена."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертпробинтбе является устаревшим. Используйте вместо него @ \"ассертпробинт (статеиндекс, prob, бижендианаслиттлиндиан (Кубитс), допуск)\".\nЭта операция была удалена."
 - uid: microsoft.quantum.canon.cascadecnot
-  summary: "\n> [!WARNING]\n> Устарело\n\nКаскадекнот является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.applycnotchain\".\nСледует использовать @\"microsoft.quantum.canon.applycnotchain\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКаскадекнот является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.applycnotchain\".\nВзамен рекомендуется использовать @\"microsoft.quantum.canon.applycnotchain\"."
 - uid: microsoft.quantum.canon.cnotchain
-  summary: "\n> [!WARNING]\n> Устарело\n\nКнотчаин является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.applycnotchain\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКнотчаин является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.applycnotchain\"."
 - uid: microsoft.quantum.canon.cnotchaintarget
-  summary: "\n> [!WARNING]\n> Устарело\n\nКнотчаинтаржет является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.applycnotchainwithtarget\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКнотчаинтаржет является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.applycnotchainwithtarget\"."
 - uid: microsoft.quantum.canon.copymostsignificantbitle
-  summary: "\n> [!WARNING]\n> Устарело\n\nКопимостсигнификантбитле является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.copymostsignificantbit\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.CopyMostSignificantBit\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКопимостсигнификантбитле является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.copymostsignificantbit\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.CopyMostSignificantBit\"."
 - uid: microsoft.quantum.canon.cx
   summary: >-
     Применяет шлюз с управляемой X (CX) к паре Кубитс.
 
 
-    $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \енд{алигн}, $ $, где строки и столбцы упорядочены в соответствии с руководством по работе с тактовыми концепциями.
+    $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \енд{алигн}, $ $, где строки и столбцы упорядочены как в разделе "Основные понятия о такте".
 - uid: microsoft.quantum.canon.cy
   summary: >-
     Применяет шлюз с управляемой Y (CY) к паре Кубитс.
 
 
-    $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 &-i \\\\ 0 & 0 & я & 0 \енд{алигн}, $ $, где строки и столбцы упорядочены в соответствии с руководством по созданию тактовых понятий.
+    $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 &-i \\ \\ 0 & 0 & я & 0 \енд{алигн}, $ $, где строки и столбцы упорядочены в соответствии с руководством по работе с тактовыми концепциями.
 - uid: microsoft.quantum.canon.cz
   summary: >-
     Применяет шлюз с управляемым Z (CZ) к паре Кубитс.
 
 
-    $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 &-1 \енд{алигн}, $ $, где строки и столбцы упорядочены в соответствии с руководством по работе с тактовыми концепциями.
+    $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 0 & 0 &-1 \енд{алигн}, $ $ где строки и столбцы упорядочены как в разделе "Основные понятия о такте".
 - uid: microsoft.quantum.canon.delay
   summary: Применяет заданную операцию с задержкой.
 - uid: microsoft.quantum.canon.delaya
@@ -604,35 +604,35 @@ operations:
     Преобразование Y Хадамард $H _Y = S H $ в одном кубит:
 
 
-    \бегин{алигн} H_Y \масрел{: =} \фрак{1}{\скрт{2}} \бегин{бматрикс} 1 & 1 \\\\ я &-i \енд{бматрикс}.
+    \бегин{алигн} H_Y \масрел{: =} \фрак{1}{\скрт{2}} \бегин{бматрикс} 1 & 1 \\ \\ i &-i \енд{бматрикс}.
 
     \енд{алигн}
 - uid: microsoft.quantum.canon.inplacemajority
-  summary: "\n> [!WARNING]\n> Устарело\n\nИнплацемажорити является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.applymajorityinplace\".\nСледует использовать @\"microsoft.quantum.arithmetic.applymajorityinplace\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИнплацемажорити является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applymajorityinplace\".\nВзамен рекомендуется использовать @\"microsoft.quantum.arithmetic.applymajorityinplace\"."
 - uid: microsoft.quantum.canon.inplacexorbe
-  summary: "\n> [!WARNING]\n> Устарело\n\nИнплацексорбе является устаревшим. Используйте вместо него @ \"апплиреверседоплека (аппликсоринплаце (value, _), Target)\".\nЭта операция была удалена."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИнплацексорбе является устаревшим. Используйте вместо него @ \"апплиреверседоплека (аппликсоринплаце (value, _), Target)\".\nЭта операция была удалена."
 - uid: microsoft.quantum.canon.inplacexorle
-  summary: "\n> [!WARNING]\n> Устарело\n\nИнплацексорле является устаревшим. Вместо нее используйте @\"microsoft.quantum.measurement.applyxorinplace\".\nСледует использовать @\"Microsoft.Quantum.Measurement.ApplyXorInPlace\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИнплацексорле является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.measurement.applyxorinplace\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Measurement.ApplyXorInPlace\"."
 - uid: microsoft.quantum.canon.integerincrementle
-  summary: "\n> [!WARNING]\n> Устарело\n\nИнтежеринкрементле является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.incrementbyinteger\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.IncrementByInteger\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИнтежеринкрементле является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.incrementbyinteger\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.IncrementByInteger\"."
 - uid: microsoft.quantum.canon.integerincrementphasele
-  summary: "\n> [!WARNING]\n> Устарело\n\nИнтежеринкрементфаселе является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.incrementphasebyinteger\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.IncrementPhaseByInteger\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИнтежеринкрементфаселе является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.incrementphasebyinteger\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.IncrementPhaseByInteger\"."
 - uid: microsoft.quantum.canon.iteratethroughcartesianpower
   summary: Применяет операцию к каждому индексу в блоке питания целого диапазона.
 - uid: microsoft.quantum.canon.iteratethroughcartesianproduct
   summary: Применяет операцию для каждого индекса в декартово произведение нескольких диапазонов.
 - uid: microsoft.quantum.canon.measureintegerbe
-  summary: "\n> [!WARNING]\n> Устарело\n\nМеасуреинтежербе является устаревшим. Используйте вместо него @ \"меасуреинтежер (бижендианаслиттлиндиан (Target))\".\nЭта операция была удалена."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМеасуреинтежербе является устаревшим. Используйте вместо него @ \"меасуреинтежер (бижендианаслиттлиндиан (Target))\".\nЭта операция была удалена."
 - uid: microsoft.quantum.canon.modularaddproductle
-  summary: "\n> [!WARNING]\n> Устарело\n\nМодулараддпродуктле является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.multiplyandaddbymodularinteger\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.MultiplyAndAddByModularInteger\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМодулараддпродуктле является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.multiplyandaddbymodularinteger\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.MultiplyAndAddByModularInteger\"."
 - uid: microsoft.quantum.canon.modularaddproductphasele
-  summary: "\n> [!WARNING]\n> Устарело\n\nМодулараддпродуктфаселе является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.MultiplyAndAddPhaseByModularInteger\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМодулараддпродуктфаселе является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.MultiplyAndAddPhaseByModularInteger\"."
 - uid: microsoft.quantum.canon.modularincrementle
-  summary: "\n> [!WARNING]\n> Устарело\n\nМодуларинкрементле является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.modularincrementbyinteger\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.ModularIncrementByInteger\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМодуларинкрементле является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.modularincrementbyinteger\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.ModularIncrementByInteger\"."
 - uid: microsoft.quantum.canon.modularincrementphasele
-  summary: "\n> [!WARNING]\n> Устарело\n\nМодуларинкрементфаселе является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.incrementphasebymodularinteger\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.IncrementPhaseByModularInteger\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМодуларинкрементфаселе является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.incrementphasebymodularinteger\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.IncrementPhaseByModularInteger\"."
 - uid: microsoft.quantum.canon.modularmultiplybyconstantle
-  summary: "\n> [!WARNING]\n> Устарело\n\nМодулармултиплибиконстантле является устаревшим. Вместо нее используйте @\"microsoft.quantum.arithmetic.multiplybymodularinteger\".\nСледует использовать @\"Microsoft.Quantum.Arithmetic.MultiplyByModularInteger\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМодулармултиплибиконстантле является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.multiplybymodularinteger\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Arithmetic.MultiplyByModularInteger\"."
 - uid: microsoft.quantum.canon.multiplexoperations
   summary: >-
     Применяет массив операций, управляемых массивом числовых состояний.
@@ -681,22 +681,22 @@ operations:
 - uid: microsoft.quantum.canon.swapreverseregister
   summary: Использует шлюзы переключения, чтобы обратить порядок Кубитс в регистре.
 - uid: microsoft.quantum.canon.with
-  summary: "\n> [!WARNING]\n> Устарело\n\nПараметр WITH является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.applywith\".\nСледует использовать @\"Microsoft.Quantum.Canon.ApplyWith\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПараметр WITH является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.applywith\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Canon.ApplyWith\"."
 - uid: microsoft.quantum.canon.witha
-  summary: "\n> [!WARNING]\n> Устарело\n\nПараметр WITH не рекомендуется использовать. Вместо нее используйте @\"microsoft.quantum.canon.applywitha\".\nСледует использовать @\"Microsoft.Quantum.Canon.ApplyWithA\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПараметр WITH не рекомендуется использовать. Взамен рекомендуется использовать @\"microsoft.quantum.canon.applywitha\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Canon.ApplyWithA\"."
 - uid: microsoft.quantum.canon.withc
-  summary: "\n> [!WARNING]\n> Устарело\n\nВИСК является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.applywithc\".\nСледует использовать @\"Microsoft.Quantum.Canon.ApplyWithC\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nВИСК является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.applywithc\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Canon.ApplyWithC\"."
 - uid: microsoft.quantum.canon.withca
-  summary: "\n> [!WARNING]\n> Устарело\n\nВиска является устаревшим. Вместо нее используйте @\"microsoft.quantum.canon.applywithca\".\nСледует использовать @\"Microsoft.Quantum.Canon.ApplyWithCA\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nВиска является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.applywithca\".\nВзамен рекомендуется использовать @\"Microsoft.Quantum.Canon.ApplyWithCA\"."
 newtypes:
 - uid: microsoft.quantum.canon.ccnotop
   summary: Тип подписи шлюза ККНОТ.
 - uid: microsoft.quantum.canon.resultstack
-  summary: "\n> [!WARNING]\n> Устарело\n\nРесултстакк является устаревшим."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРесултстакк является устаревшим."
 metadata:
-  ms.openlocfilehash: db3466b0e6fe493393f75bea85f9c91e2f56ec67
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: a38f0267c2caefba7acc63e8e36d96a1b8c08d91
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77905630"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677059"

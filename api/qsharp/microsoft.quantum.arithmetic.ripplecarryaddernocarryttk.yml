@@ -7,7 +7,7 @@ summary: >-
   Обратимое выполнение — добавление двух целых чисел без выполнения.
 
 
-  При наличии двух $n $-разрядных целых чисел, закодированных в регистрах Литтлиндиан `xs` и `ys`, операция вычисляет сумму двух целых чисел по модулю $2 ^ n $, где $n $ — это битовый размер входных `xs` и `ys`. Он не выполняет вычисление бита выполнения.
+  При наличии двух $n $- `xs` разрядных целых чисел `ys`, закодированных в регистрах литтлиндиан, операция вычисляет сумму двух целочисленных целых чисел от 2 до n $, где $n $ — это разрядный размер входных данных `xs` и `ys`. Он не выполняет вычисление бита выполнения.
 remarks: Эта операция имеет те же функции, что и Рипплекарряддерттк, но не возвращает допустимый бит.
 syntax: 'operation RippleCarryAdderNoCarryTTK (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 references: >-
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 5147d6d78582ad3f45587938f1b4cf3f8a2dd506
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: cf6855325edc354d22b0324f5949a435a11ce8bb
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871062"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676679"

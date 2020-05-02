@@ -7,13 +7,13 @@ summary: >-
   Применяет одну из двух операций аджоинтабле в зависимости от значения классического результата.
 
 
-  Учитывая `result`результата, применяет операцию `zeroOp` с `zeroInput` в качестве входных данных, когда `result` равно `Zero`и применяет `oneOp(oneInput)` при `result == One`.
+  Учитывая `result`результат, применяет операцию `zeroOp` с `zeroInput` в качестве входных `result` данных `Zero`, если равен, и `oneOp(oneInput)` применяется `result == One`, когда.
 syntax: "operation ApplyIfElseRA (result : Result, (zeroOp : ('T => Unit is Adj), zeroInput : 'T), (oneOp : ('U => Unit is Adj), oneInput : 'U)) : Unit"
 input:
   content: "(result : Result, (zeroOp : ('T => Unit is Adj), zeroInput : 'T), (oneOp : ('U => Unit is Adj), oneInput : 'U))"
   types:
   - name: result
-    summary: Результат измерения, используемый для определения того, применяется ли `zeroOp` или `oneOp`.
+    summary: Результат измерения, используемый для определения применения `zeroOp` или `oneOp` .
     isPrimitive: true
     uid: Result
   - name: zeroOp
@@ -30,7 +30,7 @@ input:
     functors:
     - Adjoint
   - name: zeroInput
-    summary: Входные данные, предоставляемые для `zeroOp` при `result == Zero`.
+    summary: Входные данные, которые должны `zeroOp` быть `result == Zero`предоставлены в When.
     uid: "'T"
     isLocal: true
   - name: oneOp
@@ -47,7 +47,7 @@ input:
     functors:
     - Adjoint
   - name: oneInput
-    summary: Входные данные, предоставляемые для `oneOp` при `result == One`.
+    summary: Входные данные, которые должны `oneOp` быть `result == One`предоставлены в When.
     uid: "'U"
     isLocal: true
 output:
@@ -57,9 +57,9 @@ output:
     uid: Unit
 typeParameters:
 - uid: "'T"
-  summary: Тип входных данных операции, `zeroOp` к условному применению.
+  summary: Тип входных данных операции `zeroOp` , которая должна применяться условно.
 - uid: "'U"
-  summary: Тип входных данных операции, `oneOp` к условному применению.
+  summary: Тип входных данных операции `oneOp` , которая должна применяться условно.
 functors:
 - Adjoint
 seeAlso:
@@ -69,9 +69,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifelsera
 - microsoft.quantum.canon.applyifelserca
 metadata:
-  ms.openlocfilehash: df838f6eda12db4710ee19cd3c0aeb334935cd22
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6168a991766f07ec5d0fd0a7685f17d02510e038
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213914"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676328"
