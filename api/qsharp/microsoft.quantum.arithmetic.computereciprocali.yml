@@ -3,7 +3,7 @@ uid: microsoft.quantum.arithmetic.computereciprocali
 name: ComputeReciprocalI
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
-summary: Вычисление обратной величины 1/x для целого числа без знака x с использованием целочисленного деления. Результат, интерпретируемый как целое число, будет `floor(2^(2*n-1) / x)`.
+summary: Вычисление обратной величины 1/x для целого числа без знака x с использованием целочисленного деления. Результат, интерпретируемый как целое число, будет иметь `floor(2^(2*n-1) / x)`значение.
 remarks: Для входных данных x = 0 выходные данные будут содержать все объекты.
 syntax: 'operation ComputeReciprocalI (xs : Microsoft.Quantum.Arithmetic.LittleEndian, result : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
@@ -13,7 +13,7 @@ input:
     summary: n-разрядное целое число без знака
     uid: microsoft.quantum.arithmetic.littleendian
   - name: result
-    summary: 2N-разрядные выходные данные должны быть в $ \кет{0}$ изначально.
+    summary: 2N-разрядный выход должен быть в $ \кет{0}$ изначально.
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Unit
@@ -24,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 91999bd0be10e1e77fb5d1daa88e34373eb83b9f
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b371c7c1e7442e49aab01793fdaa9c99bcafa35d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221054"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679718"

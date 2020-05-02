@@ -7,7 +7,7 @@ summary: >-
   Увеличивает значение регистра неподписанного такта на классическое целое число с использованием ротаций фазы.
 
 
-  Предположим, что `target` кодирует целое число без знака $x $ в кодировке с прямым порядком байтов, а `increment` равно $a $.
+  Предположим, `target` что кодирует целое число без знака $x $ в кодировке с прямым порядком байтов `increment` и равно $a $.
 
   Затем эта операция реализует единую $ \кет{КС} \мапсто \кет{КС + a} $, где сложение выполняется по модулю $2 ^ n $, где $n = \Тексттт{ленгс (Target!)} $.
 remarks: >-
@@ -21,7 +21,7 @@ input:
   content: '(increment : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
   types:
   - name: increment
-    summary: Целое число, на которое увеличивается `target`.
+    summary: Целое число, на `target` которое увеличивается значение.
     isPrimitive: true
     uid: Int
   - name: target
@@ -39,9 +39,9 @@ seeAlso:
 - incrementbyintegerbe
 - incrementbyintegerle
 metadata:
-  ms.openlocfilehash: 379e643826ca54e123c8b855f4bba48a9d79a137
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2893d432b4043bbacb425f3ae42cbbdd3d4dc225
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219048"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679521"

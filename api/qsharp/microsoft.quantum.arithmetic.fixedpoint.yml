@@ -6,9 +6,9 @@ namespace: Microsoft.Quantum.Arithmetic
 summary: Представляет регистр Кубитс кодирования числа с фиксированной запятой. Состоит из целого числа, равного числу Кубитс слева от двоичной точки, т. е. Кубитс весовой коэффициент больше или равен 1, и регистр такта.
 syntax: newtype FixedPoint = (Int, Qubit[]);
 metadata:
-  ms.openlocfilehash: 4ab209ab14486893ea3b23b32e14e6c8a05da514
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a7dfac25f4a35bea5ef11cff090a8619f0457ce2
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219082"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679617"
