@@ -4,7 +4,7 @@ name: OracleToDiscrete
 type: function
 namespace: Microsoft.Quantum.Oracles
 summary: При наличии операции, представляющей "черный ящик" Oracle, возвращает отдельную репликацию Oracle, которая представляет "черный ящик", повторяющийся несколько раз.
-examples: '`OracleToDiscrete(U)(3, target)` эквивалентно `U(target)` повторяется три раза.'
+examples: '`OracleToDiscrete(U)(3, target)`эквивалентно `U(target)` повторяется три раза.'
 syntax: 'function OracleToDiscrete (blackBoxOracle : (Qubit[] => Unit is Adj + Ctl)) : Microsoft.Quantum.Oracles.DiscreteOracle'
 input:
   content: '(blackBoxOracle : (Qubit[] => Unit is Adj + Ctl))'
@@ -30,9 +30,9 @@ output:
   - summary: Операция частично применена к "черному ящику" Oracle, представляющему Дискретное время Oracle
     uid: microsoft.quantum.oracles.discreteoracle
 metadata:
-  ms.openlocfilehash: e82c2f3a9d606b1e5316c45aaceeff702d067258
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b7361693d14245fcb99be5fa36d20d2f332ded0a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73230897"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681216"
