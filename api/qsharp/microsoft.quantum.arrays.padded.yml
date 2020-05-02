@@ -23,7 +23,7 @@ input:
   content: "(nElementsTotal : Int, defaultElement : 'T, inputArray : 'T[])"
   types:
   - name: nElementsTotal
-    summary: Длина заполненного массива. Если это положительный результат, `inputArray` заполняется в головном офисе. Если это отрицательное значение, `inputArray` дополняются с конца.
+    summary: Длина заполненного массива. Если это положительное значение `inputArray` , то оно дополняется заголовком. Если это отрицательное значение `inputArray` , то оно дополняется на хвосте.
     isPrimitive: true
     uid: Int
   - name: defaultElement
@@ -38,7 +38,7 @@ input:
 output:
   content: "'T[]"
   types:
-  - summary: Массив `output`, который является `inputArray`ом, дополненным в заголовке, до `defaultElement`s, пока `output` имеет длину `nElementsTotal`
+  - summary: Массив `output` , являющийся дополнением `inputArray` к заголовку с `defaultElement`s до длины `output``nElementsTotal`
     isArray: true
     uid: "'T"
     isLocal: true
@@ -46,9 +46,9 @@ typeParameters:
 - uid: "'T"
   summary: Тип элементов массива.
 metadata:
-  ms.openlocfilehash: 3fb999af73e68de9143ddc051b8a43247f5282f0
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6fafc015026ca9b369e23fda702af172867444ca
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218062"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680892"

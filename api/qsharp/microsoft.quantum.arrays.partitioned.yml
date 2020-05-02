@@ -29,16 +29,16 @@ input:
 output:
   content: "'T[][]"
   types:
-  - summary: Несколько массивов, в которых первый массив является первым `nElements[0]` `arr`, а второй массив является следующим `nElements[1]` `arr` и т. д. Последний массив будет содержать все оставшиеся элементы.
+  - summary: Несколько массивов, в которых первый массив является `nElements[0]` первым `arr` , а второй массив — рядом `nElements[1]` и `arr` т. д. Последний массив будет содержать все оставшиеся элементы.
     isArray: true
     types:
     - isArray: true
       uid: "'T"
       isLocal: true
 metadata:
-  ms.openlocfilehash: 6e26d4d49f50c8e9ee4c18681f88272a45d2ef20
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 319147f72f0ef13a942ab5440a51f60d6f2bae1f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218096"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680884"

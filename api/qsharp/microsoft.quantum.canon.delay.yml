@@ -9,7 +9,7 @@ summary: >-
 
   При наличии операции и входных данных для этой операции применяет операцию, когда предоставляется дополнительный ввод.
 
-  В частности, выражение `Delay(op, arg, _)` — это операция, которая применяет `op` к `arg` при вызове.
+  В частности, выражение `Delay(op, arg, _)` является операцией, которая применяется `op` к `arg` при вызове.
 
   Выражение `Delay(op,arg,_)` позволяет отложить применение `op`.
 syntax: "operation Delay (op : ('T => 'U), arg : 'T, aux : Unit) : 'U"
@@ -51,9 +51,9 @@ seeAlso:
 - microsoft.quantum.canon.delayca
 - microsoft.quantum.canon.delayed
 metadata:
-  ms.openlocfilehash: 1759670182cff1153859c62e9c95d1be1f998674
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d6e9c821bdb21714ee914bc908f6f93222b5c3b6
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226120"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680201"
