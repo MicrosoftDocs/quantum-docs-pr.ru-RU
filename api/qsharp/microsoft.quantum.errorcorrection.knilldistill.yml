@@ -20,20 +20,20 @@ input:
   content: '(roughMagic : Qubit[])'
   types:
   - name: roughMagic
-    summary: Регистр пятнадцать Кубитс, содержащий приблизительные копии волшебного состояния. После применения этой процедуры перенастройки `roughMagic[0]` будет содержать одну копию более высокого качества, а оставшаяся часть регистра вернется к состоянию $ \ket{00\cdots 0} $.
+    summary: Регистр пятнадцать Кубитс, содержащий приблизительные копии волшебного состояния. После применения этой процедуры перенастройки `roughMagic[0]` будет содержаться одна копия высокого качества, а оставшаяся часть регистра вернется к состоянию $ \ket{00\cdots 0} $.
     isArray: true
     isPrimitive: true
     uid: Qubit
 output:
   content: Bool
   types:
-  - summary: Если `true`, процедура прошла удачно и должна быть принята копия более высокого качества. Если `false`, процедура завершилась ошибкой, а состояние регистра должно считаться неопределенным.
+  - summary: Если `true`значение равно, то процедура прошла удачно и будет принята копия более высокого качества. Если `false`значение равно, то процедура завершилась ошибкой, а состояние регистра должно считаться неопределенным.
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 81d87b3dcd6f669a63847e331865b1f2c389f3ce
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5a8e4c43ff21491b35efedb8f60717979e44f0ed
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226732"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682359"

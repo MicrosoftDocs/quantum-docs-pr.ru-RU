@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Environment
 summary: >-
   Возвращает количество Кубитс, доступных в данный момент для займа.
 
-  Сюда входят неиспользуемые Кубитс; Это относится к Кубитс, возвращаемому `GetQubitsAvailableToUse`.
+  Сюда входят неиспользуемые Кубитс; Это относится к Кубитс, возвращенному `GetQubitsAvailableToUse`.
 syntax: 'operation GetQubitsAvailableToBorrow () : Int'
 input:
   content: ()
@@ -15,17 +15,17 @@ output:
   content: Int
   types:
   - summary: >-
-      Число Кубитс, которое может быть выделено в операторе `borrowing`.
+      Число Кубитс, которое может быть выделено в `borrowing` инструкции.
 
-      Если используемый целевой компьютер не предоставляет эти сведения, возвращается `-1`.
+      Если используемый целевой компьютер не предоставляет эти сведения, `-1` возвращается.
     isPrimitive: true
     uid: Int
 seeAlso:
 - getqubitsavailabletouse
 metadata:
-  ms.openlocfilehash: c0caf866ad9a8773aa11ee7c6951ca3acc60cbaa
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 99dd2afb66c334b112a2ee511b0437281da6b888
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73230489"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682408"

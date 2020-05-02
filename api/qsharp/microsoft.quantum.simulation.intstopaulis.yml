@@ -9,21 +9,21 @@ input:
   content: '(ints : Int[])'
   types:
   - name: ints
-    summary: Массив целых чисел в диапазоне `0..3` для преобразования в операторы Паули.
+    summary: Массив целых чисел в диапазоне `0..3` , который должен быть преобразован в операторы Паули.
     isArray: true
     isPrimitive: true
     uid: Int
 output:
   content: Pauli[]
   types:
-  - summary: Массив `paulis` операторов Паули `Pauli[]` той же длины, что и `ints` такие, что `paulis[idxPauli]` равно элементу `[PauliI, PauliX, PauliY, PauliZ]`, заданному `ints[idxPauli]`.
+  - summary: '`paulis` Массив `Pauli[]` операторов Паули имеет одинаковую длину `ints` , `paulis[idxPauli]` равную элементу, `[PauliI, PauliX, PauliY, PauliZ]` заданному параметром. `ints[idxPauli]`'
     isArray: true
     isPrimitive: true
     uid: Pauli
 metadata:
-  ms.openlocfilehash: 407ad1481c220f390fffb5f1b59f0968d6d6570c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1159e3db02663b0588d12ea9d297e055be84ac4a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066988"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682618"

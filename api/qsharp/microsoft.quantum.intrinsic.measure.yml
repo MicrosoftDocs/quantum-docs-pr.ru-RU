@@ -7,7 +7,7 @@ summary: >-
   Выполняет совместное измерение одного или нескольких Кубитс в указанных базовых базах Паули.
 
 
-  Результат получается в результате распределения: \бегин{алигн} \Пр (\Тексттт{зеро} | \кет{\пси}) = \frac12 \бракет{\пси \мид | \лефт (\болдоне + P_0 \отимес P_1 \otimes \cdots \otimes P_ {N-1} \right) \mid | \psi}, \end{align}, где $P _i $ — это $i $ TH `bases`и где $N = \texttt{Length} (\texttt{bases}) $.
+  Результат получается в результате распределения: \бегин{алигн} \Пр (\Тексттт{зеро} | \кет{\пси}) = \frac12 \бракет{\пси \мид | \лефт (\болдоне + P_0 \отимес P_1 \otimes \cdots \otimes P_ {N-1} \right) \mid | \psi}, \end{align}, где $P _i $ — это $i $ TH `bases`, и WHERE $N = \texttt{Length} (\texttt{bases}) $.
 
   То есть измерение возвращает `Result` $d $ таким, что еиженвалуе наблюдаемый результат измерения равен $ (-1) ^ d $.
 remarks: Если базовый массив и массив кубит имеют разную длину, операция завершится ошибкой.
@@ -28,13 +28,13 @@ input:
 output:
   content: Result
   types:
-  - summary: '`Zero`, если еиженвалуе $ + $1, и `One`, если наблюдается еиженвалуе $-$1.'
+  - summary: '`Zero`Если обнаружено значение $ + $1 еиженвалуе, а `One` также значение $-$1 еиженвалуе.'
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 65390f851d82eb579d89072dc770f3ce077ce515
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a2f89d1eea48ac0a4dab7e35ef661d89a40ae84a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73234110"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682853"
