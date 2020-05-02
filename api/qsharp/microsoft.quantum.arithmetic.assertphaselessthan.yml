@@ -3,18 +3,18 @@ uid: microsoft.quantum.arithmetic.assertphaselessthan
 name: AssertPhaseLessThan
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
-summary: Утверждает, что `number`, закодированный в Фаселиттлиндиан, меньше `value`.
+summary: Утверждает, что `number` кодировка в фаселиттлиндиан меньше `value`.
 remarks: Контролируемая версия этой операции не учитывает элементы управления.
 syntax: 'operation AssertPhaseLessThan (value : Int, number : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
 input:
   content: '(value : Int, number : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
   types:
   - name: value
-    summary: '`number` должно быть меньше этого.'
+    summary: '`number`должно быть меньше этого.'
     isPrimitive: true
     uid: Int
   - name: number
-    summary: Целое число без знака, которое сравнивается с `value`.
+    summary: Целое число без знака, сравниваемое `value`с.
     uid: microsoft.quantum.arithmetic.phaselittleendian
 output:
   content: Unit
@@ -25,9 +25,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 391e90783666da5d1549a26f2ad828863aa7dd3b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f5943bf2275cf3e94037113595686dd04f12b38e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221428"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679872"

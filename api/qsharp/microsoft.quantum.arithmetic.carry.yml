@@ -3,7 +3,7 @@ uid: microsoft.quantum.arithmetic.carry
 name: Carry
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
-summary: Реализует обратимый вентиль. Учитывая, что в кубит `carryIn` и два слагаемомуных бита, закодированные в `summand1` и `summand2`, вычисляются побитовое исключающее не`carryIn`, `summand1` и `summand2` в кубит `summand2`, а в ксоред кубит `carryOut`.
+summary: Реализует обратимый вентиль. `carryIn` Учитывая поразрядность `carryIn`, закодированную в кубит и два слагаемому бит, закодированные в `summand1` и `summand2`, вычисляют побитовое исключающее `summand1` XOR `summand2` , а в `summand2` кубит, а также ксоред в кубит `carryOut`.
 syntax: 'operation Carry (carryIn : Qubit, summand1 : Qubit, summand2 : Qubit, carryOut : Qubit) : Unit'
 input:
   content: '(carryIn : Qubit, summand1 : Qubit, summand2 : Qubit, carryOut : Qubit)'
@@ -17,7 +17,7 @@ input:
     isPrimitive: true
     uid: Qubit
   - name: summand2
-    summary: Второй слагаемому кубит заменяется нижним битом суммы `summand1` и `summand2`.
+    summary: Второй слагаемому кубит заменяется нижним битом суммы `summand1` и. `summand2`
     isPrimitive: true
     uid: Qubit
   - name: carryOut
@@ -33,9 +33,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 6736bc62db7d8ac1952bf74617bd8764702bd8b3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3fa18b56fb242e76a88a23af02b3ebe7e5cc57d4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221343"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679839"

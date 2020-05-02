@@ -7,13 +7,13 @@ summary: >-
   Выполняет модульное увеличение регистра кубит с помощью целочисленной константы.
 
 
-  Отметим, `increment` $a $, `modulus` $N $ и целое число в `target` $y $.
+  Отметим `increment` , что $a $, `modulus` $N $ и целое число, закодированные `target` $y $.
 
   Затем операция выполняет следующее преобразование: \бегин{алигн} \кет{и} \мапсто \кет{(y + a) \операторнаме{мод} N} \енд{алигн} целые числа кодируются в формате с прямым порядком байтов.
 remarks: >-
   Предполагается, что начальное значение целевого объекта меньше $N $, а шаг приращения $a $ меньше $N $.
 
-  Обратите внимание, что <xref:microsoft.quantum.arithmetic.incrementphasebymodularinteger> реализует ту же операцию на основе `PhaseLittleEndian`.
+  Обратите <xref:microsoft.quantum.arithmetic.incrementphasebymodularinteger> внимание, что реализует ту же `PhaseLittleEndian` операцию на основе.
 syntax: 'operation IncrementByModularInteger (increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -27,7 +27,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: target
-    summary: Целочисленное $y $ в формате `LittleEndian`, к которому добавляется `increment` $a $.
+    summary: Целочисленный $y $ `LittleEndian` в формате `increment` , к которому добавляется $a $.
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Unit
@@ -40,9 +40,9 @@ functors:
 seeAlso:
 - microsoft.quantum.arithmetic.incrementphasebymodularinteger
 metadata:
-  ms.openlocfilehash: 975d4548eadbc61f8174b6719d067ffed32797dd
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 53faa65d67629d0e4c73efc03724cb4b4b30675d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871606"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679541"
