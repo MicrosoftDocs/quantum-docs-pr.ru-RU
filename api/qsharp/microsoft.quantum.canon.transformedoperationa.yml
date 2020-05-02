@@ -5,7 +5,7 @@ type: function
 namespace: Microsoft.Quantum.Canon
 summary: При наличии функции и операции возвращает новую операцию, входные данные которой преобразуются в заданную функцию.
 examples: >-
-  Следующий вызов использует @"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian" для преобразования операции, предназначенной для @"Microsoft.Quantum.Arithmetic.BigEndian" входных данных, в операцию, которая принимает входные данные типа @"Microsoft.Quantum.Arithmetic.LittleEndian":
+  Следующий вызов использует @"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian" для преобразования операции, предназначенной для @"Microsoft.Quantum.Arithmetic.BigEndian" входных данных, в операцию, которая принимает @"Microsoft.Quantum.Arithmetic.LittleEndian"входные данные типа:
 
 
   ```qsharp
@@ -44,7 +44,7 @@ input:
 output:
   content: ('U => Unit is Adj)
   types:
-  - summary: Новая операция тбат вызывает `fn` со своими входными данными, а затем передает полученный результат в `op`.
+  - summary: Новая операция, тбат, `fn` вызывает с входными данными, а затем передает полученный результат в `op`.
     isOperation: true
     input:
       types:
@@ -63,9 +63,9 @@ seeAlso:
 - applywithinputtransformation
 - compose
 metadata:
-  ms.openlocfilehash: ba4c22476bb1784a42ecb049fa0470204e81fa9e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f4cb96f3dac9c540131f04cd1b24449f78a26ef2
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217076"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678056"

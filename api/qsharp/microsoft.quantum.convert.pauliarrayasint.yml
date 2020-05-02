@@ -10,7 +10,7 @@ remarks: >-
   \енд{алигн} $ $
 
 
-  При наличии массива Паули операторов `[P0, ..., Pn]`эта функция возвращает целое число с расширением binary, сформированное путем сцепления сопоставлений каждого оператора Паули в порядке с обратным порядком байтов `bits(Pn) ... bits(P0)`.
+  При наличии массива операторов `[P0, ..., Pn]`Паули эта функция возвращает целое число с расширением binary, сформированное путем сцепления сопоставлений каждого оператора Паули в порядке `bits(Pn) ... bits(P0)`с обратным порядком байтов.
 syntax: 'function PauliArrayAsInt (paulis : Pauli[]) : Int'
 input:
   content: '(paulis : Pauli[])'
@@ -23,13 +23,13 @@ input:
 output:
   content: Int
   types:
-  - summary: Целое число, однозначно идентифицирующее `paulis`, как описано ниже.
+  - summary: Целое число, `paulis`однозначно идентифицирующее, как описано ниже.
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 0c211075d07147b1c1392fe3f3e4ceb110364bb3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 170218ccf1ec4ee1183a7a69ff1e0969f595cac4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73230761"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677397"

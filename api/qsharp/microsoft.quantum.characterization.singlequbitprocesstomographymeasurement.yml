@@ -32,15 +32,15 @@ output:
   content: Result
   types:
   - summary: >-
-      Результат `Zero` с вероятностью $ $ \бегин{алигн} \Пр (\Тексттт{зеро} | \Ламбда; P, Q) = \Операторнаме{ТР}\лефт (\фрак{\болдоне + Q}{2} \Ламбда\лефт [\фрак{\болдоне + P}{2} \ригхт] \ригхт).
+      Результат `Zero` с вероятностью $ $ \бегин{алигн} \Пр (\Тексттт{зеро} | \ламбда; P, Q) = \Операторнаме{ТР}\лефт (\фрак{\болдоне + Q}{2} \ламбда\лефт [\Фрак{\болдоне + P}{2} \ригхт] \ригхт).
 
       \енд{алигн} $ $
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 48da4cd4d16a3466591c0c93710eed6b27a68fab
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f554910a414666c6d61a96932a932b9320426360
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229027"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677588"
