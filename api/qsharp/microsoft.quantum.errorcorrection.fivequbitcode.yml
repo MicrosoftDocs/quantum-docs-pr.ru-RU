@@ -8,9 +8,9 @@ remarks: >-
   Этот код был найден независимо в следующих двух документах:
 
 
-  - C. З. Беннет, D. Дивинцензо, J. A. Смолин и W. K. Вуттерс, "смешанное состояние замкнутые и исправление ошибок такта", "инвентаризационная. Rev. A, 54 (1996) pp. 3824-3851; https://arxiv.org/abs/quant-ph/9604024 и
+  - В. З. Беннет, D. Дивинцензо, J. A. Смолин и W. K. Вуттерс, "смешанное состояние замкнутые и исправление ошибок такта", "инвентаризационная. Rev. A, 54 (1996) pp. 3824-3851; https://arxiv.org/abs/quant-ph/9604024 и
 
-  - Тайлер Крой (Tyler Croy), ЛаФламме, C. Микуел, J. P. Пас и W. H. Зурек, «отличный код исправления тактовой ошибки», «инвентаризационная. Rev. Летт. 77 (1996) pp. 198-201; https://arxiv.org/abs/quant-ph/9602019
+  - Ф. ЛаФламме, C. Микуел, J. P. Пас и W. H. Зурек, «отличный код исправления тактовой ошибки», «инвентаризационная. Rev. Летт. 77 (1996) pp. 198-201;https://arxiv.org/abs/quant-ph/9602019
 syntax: 'function FiveQubitCode () : Microsoft.Quantum.ErrorCorrection.QECC'
 input:
   content: ()
@@ -18,12 +18,12 @@ input:
 output:
   content: Microsoft.Quantum.ErrorCorrection.QECC
   types:
-  - summary: Возвращает реализацию кода исправления ошибок такта, указывая тип `QECC`.
+  - summary: Возвращает реализацию кода исправления ошибки такта путем указания `QECC` типа.
     uid: microsoft.quantum.errorcorrection.qecc
 metadata:
-  ms.openlocfilehash: 1865ededef3e3ada743a49ef81141aeffdcfed0a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 39bd3adacd0f8e872d682d0df0bf81a3f1e1d8f0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220408"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684945"
