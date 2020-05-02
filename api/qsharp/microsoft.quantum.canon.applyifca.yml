@@ -7,11 +7,11 @@ summary: >-
   Применяет единую операцию с условием на Классический бит.
 
 
-  При `op` операции и битовом значении `bit`применяет `op` к `target`, если `bit` — `true`. Если `false`, в `target`ничего не происходит.
+  При наличии операции `op` и битового значения `bit`применяется `op` к, `target` если `bit` имеет `true`значение. Если `false`значение равно, то `target`ничего не происходит с.
 
   Суффикс `CA` указывает, что применяемая операция является единой (управляемой и аджоинтабле).
 examples: >-
-  Следующий командлет готовит регистр Кубитс в вычислительное состояние, представленное классическим битом строки, заданным как массив значений `Bool`:
+  Следующий командлет готовит регистр Кубитс в вычислительное состояние, представленное классическим битом строки, заданным как массив `Bool` значений:
 
 
   ```Q#
@@ -67,9 +67,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifa
 - microsoft.quantum.canon.applyifca
 metadata:
-  ms.openlocfilehash: c78136688111a71e6a9a58972c9b9bb71603e0cf
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2b716ef4a7d429176aa1359fb22b3ce24be0d5f4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213761"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675046"
