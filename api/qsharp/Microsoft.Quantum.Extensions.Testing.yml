@@ -3,25 +3,25 @@ uid: microsoft.quantum.extensions.testing
 name: Microsoft.Quantum.Extensions.Testing
 operations:
 - uid: microsoft.quantum.extensions.testing.assertallzero
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерталлзеро является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertallzero\".\nСледует использовать @\"microsoft.quantum.diagnostics.assertallzero\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерталлзеро является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertallzero\".\nВзамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertallzero\"."
 - uid: microsoft.quantum.extensions.testing.assertallzerotol
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерталлзеротол является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertallzerowithintolerance\".\nСледует использовать @\"microsoft.quantum.diagnostics.assertallzerowithintolerance\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерталлзеротол является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertallzerowithintolerance\".\nВзамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertallzerowithintolerance\"."
 - uid: microsoft.quantum.extensions.testing.assertoperationsequalinplace
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертоператионсекуалинплаце является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertoperationsequalinplace\".\nСледует использовать @\"microsoft.quantum.diagnostics.assertoperationsequalinplace\".\nОбратите внимание, что порядок аргументов для этой операции изменился."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертоператионсекуалинплаце является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertoperationsequalinplace\".\nВзамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertoperationsequalinplace\".\nОбратите внимание, что порядок аргументов для этой операции изменился."
 - uid: microsoft.quantum.extensions.testing.assertoperationsequalinplacecompbasis
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертоператионсекуалинплацекомпбасис является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertoperationsequalinplacecompbasis\".\nСледует использовать @\"microsoft.quantum.diagnostics.assertoperationsequalinplaceCompBasis\".\nОбратите внимание, что порядок аргументов для этой операции изменился."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертоператионсекуалинплацекомпбасис является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertoperationsequalinplacecompbasis\".\nВзамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertoperationsequalinplaceCompBasis\".\nОбратите внимание, что порядок аргументов для этой операции изменился."
 - uid: microsoft.quantum.extensions.testing.assertoperationsequalreferenced
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертоператионсекуалреференцед является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertoperationsequalreferenced\".\nСледует использовать @\"microsoft.quantum.diagnostics.assertoperationsequalreferenced\".\nОбратите внимание, что порядок аргументов для этой операции изменился."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертоператионсекуалреференцед является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertoperationsequalreferenced\".\nВзамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertoperationsequalreferenced\".\nОбратите внимание, что порядок аргументов для этой операции изменился."
 - uid: microsoft.quantum.extensions.testing.assertqubit
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерткубит является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertqubit\".\nСледует использовать @\"microsoft.quantum.diagnostics.assertqubit\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерткубит является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertqubit\".\nВзамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertqubit\"."
 - uid: microsoft.quantum.extensions.testing.assertqubitstate
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерткубитстате является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance\".\nСледует использовать @\"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерткубитстате является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance\".\nВзамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance\"."
 - uid: microsoft.quantum.extensions.testing.assertqubittol
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерткубиттол является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertqubitwithintolerance\".\nСледует использовать @\"microsoft.quantum.diagnostics.assertqubitwithintolerance\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссерткубиттол является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertqubitwithintolerance\".\nВзамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertqubitwithintolerance\"."
 metadata:
-  ms.openlocfilehash: 0d06129c66f13c8c5ee9158ef6be41bf447791f9
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 2edd8b382cb62078188850d6810c26e4f3a8a901
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858420"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673247"

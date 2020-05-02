@@ -1,32 +1,32 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.extensions.convert
 name: Microsoft.Quantum.Extensions.Convert
-summary: " # <a name=\"summary\"></a>Резюме\n Это некоторые из функций из пространства имен System. Convert в среде CLR .NET, которые относятся к системе типов Q #.\n\n # <a name=\"remarks\"></a>Примечания\n Если существует несколько версий функции для типов bool, int и Double, соответствующие функции имеют суффикс B, I и D."
+summary: " # <a name=\"summary\"></a>Сводка\n Это некоторые из функций из пространства имен System. Convert в среде CLR .NET, которые относятся к системе типов Q #.\n\n # <a name=\"remarks\"></a>Примечания\n Если существует несколько версий функции для типов bool, int и Double, соответствующие функции имеют суффикс B, I и D."
 functions:
 - uid: microsoft.quantum.extensions.convert.biginttobools
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБигинттобулс является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.bigintasboolarray\".\nСледует использовать @\"microsoft.quantum.convert.bigintasboolarray\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБигинттобулс является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.bigintasboolarray\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.bigintasboolarray\"."
 - uid: microsoft.quantum.extensions.convert.boolstobigint
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБулстобигинт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.boolarrayasbigint\".\nСледует использовать @\"microsoft.quantum.convert.boolarrayasbigint\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nБулстобигинт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.boolarrayasbigint\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.boolarrayasbigint\"."
 - uid: microsoft.quantum.extensions.convert.pauliarraytoint
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПаулиаррайтоинт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.pauliarrayasint\".\nСледует использовать @\"microsoft.quantum.convert.pauliarrayasint\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПаулиаррайтоинт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.pauliarrayasint\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.pauliarrayasint\"."
 - uid: microsoft.quantum.extensions.convert.tobigint
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТобигинт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.intasbigint\".\nСледует использовать @\"microsoft.quantum.convert.intasbigint\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТобигинт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.intasbigint\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.intasbigint\"."
 - uid: microsoft.quantum.extensions.convert.todouble
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nToDouble является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.intasdouble\".\nСледует использовать @\"microsoft.quantum.convert.intasdouble\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nToDouble является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.intasdouble\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.intasdouble\"."
 - uid: microsoft.quantum.extensions.convert.tostringb
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТострингб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.boolasstring\".\nСледует использовать @\"microsoft.quantum.convert.boolasstring\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТострингб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.boolasstring\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.boolasstring\"."
 - uid: microsoft.quantum.extensions.convert.tostringd
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМетод ToString является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.doubleasstring\".\nСледует использовать @\"microsoft.quantum.convert.doubleasstring\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМетод ToString является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.doubleasstring\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.doubleasstring\"."
 - uid: microsoft.quantum.extensions.convert.tostringdformat
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТострингдформат является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.doubleasstringwithformat\".\nСледует использовать @\"microsoft.quantum.convert.doubleasstringwithformat\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТострингдформат является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.doubleasstringwithformat\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.doubleasstringwithformat\"."
 - uid: microsoft.quantum.extensions.convert.tostringi
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТостринги является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.intasstring\".\nСледует использовать @\"microsoft.quantum.convert.intasstring\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТостринги является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.intasstring\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.intasstring\"."
 - uid: microsoft.quantum.extensions.convert.tostringiformat
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТострингиформат является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.intasstringwithformat\".\nСледует использовать @\"microsoft.quantum.convert.intasstringwithformat\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nТострингиформат является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.convert.intasstringwithformat\".\nВзамен рекомендуется использовать @\"microsoft.quantum.convert.intasstringwithformat\"."
 metadata:
-  ms.openlocfilehash: 372c58096cab091560ae6d3bebc165f09e201b9c
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 8196882d8f7edf417f65bcd1651ecb770c4286f4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858315"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673292"
