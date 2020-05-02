@@ -3,9 +3,9 @@ uid: microsoft.quantum.chemistry.jordanwigner.optimizedbexy
 name: OptimizedBEXY
 type: operation
 namespace: Microsoft.Quantum.Chemistry.JordanWigner
-summary: Единая $U $, которая применяет строку Паули в $ (X ^ {z + 1}\_корр. {z}\_p) Z\_{p-1}... Z_0 $ on Кубитс $0.. p $ conditiond on a index $z \ин\{0, 1\}$ и $p $. То есть $ $ \бегин{алигн} У\кет {z} \ Сисакет {p} \ Сисакет {\ PSI} = \кет{з}\кет{п} (X ^ {z + 1}\_корректировка ^ {z}\_p) Z\_{p-1}... Z_0\ket {\ PSI} \енд{алигн} $ $
+summary: Единая $U $, которая применяет строку Паули в $ (X ^ {z +\_1} корр. {\_Z} p\_) z {p-1}... Z_0 $0.. p $ включено в индекс $z \ин\{0, 1\}$ и $p $. Т. е. $ $ \бегин{алигн} У\кет {z} \ Сисакет {p} \ Сисакет {\ PSI} = \кет{з}\кет{п} (X ^ {z + 1\_} корр. {z\_} p)\_z {p-1}... Z_0 \кет{\пси} \енд{алигн} $ $
 syntax: 'operation OptimizedBEXY (pauliBasis : Qubit, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[]) : Unit'
-references: '- Кодирование электронных спектра в тактовых каналах с помощью линейной T сложности Райан Баббуш, Крейг Гиднэй, Dominic W. Берри, (Nathan Виебе, Жаррод Астрид, Александру Палер, Остин Фаулер, Хартмут Невен https://arxiv.org/abs/1805.03662'
+references: '- Кодирование электронных спектра в тактовых каналах с помощью линейного T сложности Райан Баббуш, Крейг Гиднэй, Dominic W. Берри, (Nathan Виебе, Жаррод Астрид, Александру Палер, Остин Фаулер, Хартмут Невенhttps://arxiv.org/abs/1805.03662'
 input:
   content: '(pauliBasis : Qubit, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[])'
   types:
@@ -30,9 +30,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: e0ac3f2f050ed584053f7da7a310f1855e992141
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2208efefe094c472d4f179e3a75dae721c4ff211
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228466"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82665304"
