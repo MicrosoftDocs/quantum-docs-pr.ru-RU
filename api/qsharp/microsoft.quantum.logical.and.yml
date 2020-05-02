@@ -5,7 +5,7 @@ type: function
 namespace: Microsoft.Quantum.Logical
 summary: Возвращает логическое значение, умноженное на два значения.
 remarks: >-
-  В отличие от оператора `and`, эта функция не является сокращенной, так что оба входа полностью оцениваются.
+  В отличие от `and` оператора, эта функция не является сокращенной, так что оба входа полностью оцениваются.
 
 
   Ниже приведены эквивалентные действия для сокращенного поведения.
@@ -33,13 +33,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true` только в том случае, если `a` и `b` оба `true`.'
+  - summary: '`true`значение, только если `a` и `b` `true`.'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 22e884f8041ecd66aba875c38f0b8af234aee0e5
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 01c26ef3804d484d2cfbd6f54261ad80b8f66594
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73233379"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674091"

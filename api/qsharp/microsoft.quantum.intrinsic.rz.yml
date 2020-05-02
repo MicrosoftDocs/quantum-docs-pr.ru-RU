@@ -7,7 +7,7 @@ summary: >-
   Применяет поворот к $z $-оси на заданный угол.
 
 
-  \бегин{алигн} R_z (\сета) \масрел{: =} e ^ {-i \сета \ sigma_z/2} = \бегин{бматрикс} e ^ {-i \сета/2} & 0 \\\\ 0 & e ^ {i \сета/2} \енд{бматрикс}.
+  \бегин{алигн} R_z (\сета) \масрел{: =} e ^ {-i \сета \ sigma_z/2} = \бегин{бматрикс} e ^ {-i \сета/2} & 0 \\ \\ 0 & е ^ {i \сета/2} \енд{бматрикс}.
 
   \енд{алигн}
 remarks: >-
@@ -40,9 +40,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 3a1655e226a1f7ac9dafc2b7928de87ee2bd1173
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 8ab20bd25777abfcdef4ce79b112173d7de9ba4c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216379"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674117"

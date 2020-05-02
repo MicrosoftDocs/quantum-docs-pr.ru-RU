@@ -5,7 +5,7 @@ type: function
 namespace: Microsoft.Quantum.Logical
 summary: Возвращает одно из двух значений в зависимости от значения логического условия.
 remarks: >-
-  В отличие от оператора `?|`, эта функция не является сокращенной, так что оба входа полностью оцениваются.
+  В отличие от `?|` оператора, эта функция не является сокращенной, так что оба входа полностью оцениваются.
 
 
   Ниже приведены эквивалентные действия для сокращенного поведения.
@@ -27,23 +27,23 @@ input:
     isPrimitive: true
     uid: Bool
   - name: ifTrue
-    summary: Значение, возвращаемое, когда `condition` `true`.
+    summary: Значение, возвращаемое, если `condition` равно `true`.
     uid: "'T"
     isLocal: true
   - name: ifFalse
-    summary: Значение, возвращаемое, когда `condition` `false`.
+    summary: Значение, возвращаемое, если `condition` равно `false`.
     uid: "'T"
     isLocal: true
 output:
   content: "'T"
   types:
-  - summary: '`ifTrue`, если `condition` `true`и `ifFalse` в противном случае.'
+  - summary: '`ifTrue`Если `condition` имеет `true`значение, `ifFalse` и в противном случае —.'
     uid: "'T"
     isLocal: true
 metadata:
-  ms.openlocfilehash: f26e540b181ce405125dbf80cd97c3e177ad9531
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c5a255fe0434c7dfc9bf49f1a1c9c6be03cd8055
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73233345"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674084"
