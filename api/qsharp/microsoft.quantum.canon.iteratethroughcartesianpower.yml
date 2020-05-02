@@ -9,7 +9,7 @@ summary: >-
 
   Итеративно применяет операцию для каждого элемента декартовой мощности диапазона `0..(bound - 1)`.
 examples: >-
-  При `op`операции следующие два фрагмента эквивалентны:
+  При наличии операции `op`следующие два фрагмента эквивалентны:
 
 
   ```Q#
@@ -39,7 +39,7 @@ input:
   content: '(power : Int, bound : Int, op : (Int[] => Unit))'
   types:
   - name: power
-    summary: Постепенная декартка, в которую следует ВОЗ`0..(bound - 1)` диапазон.
+    summary: Постепенная декартка, `0..(bound - 1)` на которую должно быть вызвано значение диапазона.
     isPrimitive: true
     uid: Int
   - name: bound
@@ -66,9 +66,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.iteratethroughcartesianproduct
 metadata:
-  ms.openlocfilehash: 4679e1b569dab167eecbb22947543ab993d7fa8d
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: a6f2d0e1f99c6cf7038803271af974a1c5fca465
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870943"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679060"
