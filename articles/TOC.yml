@@ -17,15 +17,7 @@
     - name: Начало работы с QDK
       href: welcome.md
     - name: Установка Quantum Development Kit
-      items:
-        - name: Обзор установки
-          href: install-guide/index.md
-        - name: 'Q# +C#'
-          href: install-guide/csinstall.md
-        - name: 'Q# + Python'
-          href: install-guide/pyinstall.md
-        - name: 'Q# + Записные книжки Jupyter'
-          href: install-guide/qjupyter.md
+      href: install-guide/toc.yml
     - name: Обновление Quantum Development Kit
       href: install-guide/update.md
     - name: 'Как создать проект Q#'
