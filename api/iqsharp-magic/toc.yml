@@ -1,0 +1,28 @@
+- href: chemistry.broombridge.md
+  name: Магическая команда %chemistry.broombridge
+- href: chemistry.encode.md
+  name: Магическая команда %chemistry.encode
+- href: chemistry.fh.add_terms.md
+  name: Магическая команда %chemistry.fh.add_terms
+- href: chemistry.fh.load.md
+  name: Магическая команда %chemistry.fh.load
+- href: chemistry.inputstate.load.md
+  name: Магическая команда %chemistry.inputstate.load
+- href: config.md
+  name: Магическая команда %config
+- href: estimate.md
+  name: Магическая команда %estimate
+- href: lsmagic.md
+  name: Магическая команда %lsmagic
+- href: package.md
+  name: Магическая команда %package
+- href: performance.md
+  name: Магическая команда %performance
+- href: simulate.md
+  name: Магическая команда %simulate
+- href: toffoli.md
+  name: Магическая команда %toffoli
+- href: who.md
+  name: Магическая команда %who
+- href: workspace.md
+  name: Магическая команда %workspace
