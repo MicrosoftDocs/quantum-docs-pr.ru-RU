@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 84e5db17ab8d963a75c72da38d3e4487b89abc9d
-ms.sourcegitcommit: b6b8459eb654040f1e19f66411b29fc9e48e95c9
+ms.openlocfilehash: 91f12ef6bd15e27c8920471442c66ff3b1e71122
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82030605"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82677093"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -20,6 +20,21 @@ ms.locfileid: "82030605"
 См. [инструкции по установке](xref:microsoft.quantum.install).
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
+
+## <a name="version-01120042825"></a>Версия 0.11.2004.2825
+
+*Дата выпуска: 30 апреля 2020 г.*
+
+Этот выпуск включает следующие обновления:
+
+- Включена поддержка приложений командной строки Q#, для которых больше не требуется основной файл C# или Python. См. сведения о [начале работы с приложениями командной строки Q#](xref:microsoft.quantum.install.standalone).
+- Обновлено краткое руководство по квантовому генератору случайных чисел, для которого больше не требуется основной файл C# или Python. См. обновленное [краткое руководство](xref:microsoft.quantum.quickstarts.qrng).
+- Повышение производительности для образов Docker IQ#
+
+> [!NOTE]
+> Приложения командной строки Q#, использующие новый атрибут [`@EntryPoint()`](xref:microsoft.quantum.core.entrypoint), сейчас не могут вызываться из основных программ Python или .NET.
+> См. сведения о взаимодействии с [Python](xref:microsoft.quantum.install.python) и [.NET](xref:microsoft.quantum.install.cs).
+
 
 ## <a name="version-01120033107"></a>Версия 0.11.2003.3107
 

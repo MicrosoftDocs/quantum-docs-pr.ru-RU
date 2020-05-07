@@ -7,12 +7,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install
-ms.openlocfilehash: 5fafb736f34d27f9233370a0a8a66c0613606048
-ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
+ms.openlocfilehash: bca700660094b91f1c0dfa03f9bce1336073ca51
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77904780"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82680194"
 ---
 # <a name="install-the-microsoft-quantum-development-kit-qdk"></a>Установка пакета средств разработки Microsoft Quantum (QDK)
 
@@ -28,6 +28,7 @@ ms.locfileid: "77904780"
 
 QDK доступен для нескольких сред разработки. Выберите предпочитаемую настройку из следующих разделов:
 
-- [Установка Q# для C#:](xref:microsoft.quantum.install.cs) выберите эту среду, если вы хотите объединить C# и Q# для создания основной программы на C#, которая вызывает операции Q#.
-- [Установка Q# для Python:](xref:microsoft.quantum.install.python) выберите эту среду, если хотите объединить Python и Q# для создания основной программы Python, которая вызывает операции Q#.
-- [Установка Q# для Jupyter Notebook:](xref:microsoft.quantum.install.jupyter) выберите эту среду для выполнения кода Q# в ячейках с внедренным текстом или создайте интерактивные учебники по созданию квантовых вычислений. Не выбирайте эту среду, если хотите объединить Q# с внешней классической основной программой.
+- [Приложение командной строки Q#.](xref:microsoft.quantum.install.standalone) Выберите этот вариант, чтобы работать с Q# из командной строки. Для этого не требуется драйвер или основная программа, включая приведенные ниже варианты.
+- [Установка Q# для Jupyter Notebook:](xref:microsoft.quantum.install.jupyter) выберите эту среду для выполнения кода Q# в ячейках с внедренным текстом или создайте интерактивные учебники по созданию квантовых вычислений. 
+- [Разработка с помощью Q# и Python.](xref:microsoft.quantum.install.python) Выберите этот вариант, чтобы совместно использовать Python и Q# для создания основной программы Python, которая вызывает операции Q#.
+- [Разработка с помощью Q# и C# или F#.](xref:microsoft.quantum.install.cs) Выберите этот вариант, чтобы совместно использовать C# или F# и Q# для создания основной программы C#, которая вызывает операции Q#.

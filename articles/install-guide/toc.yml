@@ -1,0 +1,13 @@
+items:
+  - name: Обзор установки
+    href: index.md
+  - name: 'Приложения командной строки Q#'
+    href: standalone.md
+  - name: 'Q# + Записные книжки Jupyter'
+    href: qjupyter.md
+  - name: 'Использование Q# с другими языками'
+    items:
+      - name: 'Использование Q# с Python'
+        href: pyinstall.md
+      - name: 'Использование Q# с .NET'
+        href: csinstall.md
