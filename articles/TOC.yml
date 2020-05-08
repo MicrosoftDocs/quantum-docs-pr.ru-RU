@@ -1,6 +1,6 @@
 - name: Документация по Microsoft Quantum
   href: index.yml
-- name: Начало работы с квантовыми вычислениями
+- name: Обзор
   items:
     - name: Что такое квантовые вычисления?
       href: overview/what-is-quantum-computing.md
@@ -12,7 +12,7 @@
       href: overview/what-is-qsharp.md
     - name: Как получить дополнительную информацию?
       href: overview/how-to-learn-quantum-computing.md
-- name: Скачать Quantum Development Kit
+- name: Краткие руководства
   items:
     - name: Начало работы с QDK
       href: welcome.md
@@ -20,23 +20,19 @@
       href: install-guide/toc.yml
     - name: Обновление Quantum Development Kit
       href: install-guide/update.md
-    - name: 'Как создать проект Q#'
-      href: how-to-guides/create-qsharp-project.md
-- name: 'Учебные материалы по Q#'
+- name: Учебники
   items:
-    - name: Краткие руководства
-      items:
-        - name: Квантовый генератор случайных чисел
-          href: quickstarts/qrng.md
-        - name: 'Исследование запутанности с использованием Q#'
-          href: quickstart.md
-        - name: Реализация поиска по алгоритму Гровера
-          href: quickstarts/search.md
+    - name: Квантовый генератор случайных чисел
+      href: quickstarts/qrng.md
+    - name: 'Исследование запутанности с использованием Q#'
+      href: quickstart.md
+    - name: Реализация поиска по алгоритму Гровера
+      href: quickstarts/search.md
     - name: 'Изучение Q# с использованием Quantum Katas'
       href: intro-to-katas.md
     - name: 'Примеры кода на Q#'
       href: 'https://docs.microsoft.com/en-us/samples/browse/?languages=qsharp'
-- name: Подробное описание QDK
+- name: 'Руководство пользователя Q#'
   items:
     - name: Методики квантовой разработки
       topicHref: techniques/index.md
@@ -46,15 +42,21 @@
       href: language/toc.yml
     - name: Квантовые симуляторы и средства оценки ресурсов
       href: machines/toc.yml
-- name: 'Библиотеки Q#'
-  href: libraries/toc.yml
-- name: Концепции квантовых вычислений
-  href: concepts/toc.yml
-- name: Дополнительные материалы
-  href: for-more-info.md
-- name: Участие в разработке QDK
-  href: contributing/toc.yml
-  topicHref: contributing/index.md
-- name: Заметки о выпуске QDK
-  topicHref: relnotes/index.md
-  href: relnotes/toc.yml
+- name: Основные понятия
+  items:
+    - name: Концепции квантовых вычислений
+      href: concepts/toc.yml
+    - name: 'Библиотеки Q#'
+      href: libraries/toc.yml
+- name: Ресурсы
+  items:
+    - name: Глоссарий
+      href: concepts/Glossary.md
+    - name: Участие в разработке QDK
+      href: contributing/toc.yml
+      topicHref: contributing/index.md
+    - name: Заметки о выпуске QDK
+      topicHref: relnotes/index.md
+      href: relnotes/toc.yml
+    - name: Дополнительные материалы
+      href: for-more-info.md
