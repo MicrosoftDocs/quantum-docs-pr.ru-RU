@@ -6,29 +6,29 @@ ms.author: megbrow@microsoft.com
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
-ms.openlocfilehash: b9c8592b1296a7de1b9ad5d0538ad1972ec25e31
-ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
+ms.openlocfilehash: 5a433606f08f4c6a4ab7b5df67a7f0c30d2b3f0d
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77906990"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82683008"
 ---
-# <a name="quickstart-implement-a-quantum-random-number-generator-in-q"></a>Краткое руководство. Реализация квантового генератора случайных чисел на языке Q#
-Простой пример квантового алгоритма на языке Q#, который моделирует генератор случайных чисел. Этот алгоритм использует природу квантовой механики для получения случайного числа. 
+# <a name="quickstart-implement-a-quantum-random-number-generator-in-q"></a>Краткое руководство. Реализация квантового генератора случайных чисел на языке Q\#
+
+Простой пример квантового алгоритма на языке Q#, который моделирует генератор случайных чисел. Этот алгоритм использует природу квантовой механики для получения случайного числа.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 - [Microsoft Quantum Development Kit](xref:microsoft.quantum.install).
 - [Создание проекта Q#](xref:microsoft.quantum.howto.createproject)
 
-
 ## <a name="write-a-q-operation"></a>Создание операции Q#
 
 ### <a name="q-operation-code"></a>Код операции Q#
 
-1. Замените содержимое файла Operation.cs следующим кодом:
+1. Замените содержимое файла Program.qs следующим кодом:
 
- :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="3-14":::
+:::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="3-15,34":::
 
 Как упоминалось в статье [Сведения о квантовых вычислениях](xref:microsoft.quantum.overview.what), кубит представляет собой единицу квантовой информации и может находиться в состоянии суперпозиции. При измерении он всегда возвращает значение 0 или 1. Но во время выполнения состояние кубита отражает вероятность получить значение 0 или 1 при измерении. Такое вероятностное состояние называется суперпозицией. Эту вероятность мы можем применить для создания случайных чисел.
 
@@ -36,7 +36,7 @@ ms.locfileid: "77906990"
 
 С помощью операции `H` мы можем перевести `Qubit` в состояние суперпозиции. Чтобы измерить кубит, т. е. определить его значение, используется специальная операция `M`.
 
-Каждый раз, когда мы переводим `Qubit` в состояние суперпозиции и измеряем его, мы получаем разные значения. 
+Каждый раз, когда мы переводим `Qubit` в состояние суперпозиции и измеряем его, мы получаем разные значения.
 
 При отмене выделения `Qubit` необходимо явным образом вернуть ему состояние `Zero`. В противном случае симулятор вернет ошибку при выполнении. Для этого проще всего вызвать `Reset`.
 
@@ -52,52 +52,68 @@ ms.locfileid: "77906990"
 
 <img src="~/media/qrng-H.png" width="450" alt="Preparing a qubit in superposition">
 
-
 * Затем мы измерим состояние кубита и сохраним выходное значение:
 
 <img src="~/media/qrng-meas.png" width="450" alt="Measuring a qubit and saving the output">
 
 Так как исход этого измерения является полностью случайным, можно считать, что мы получили случайный бит. Вызывая эту операцию несколько раз, мы получим большое целое число. Например, три вызова этой операции возвращают три случайных бита, позволяя создать трехбитовое число (т. е. случайное число в диапазоне от 0 до 7).
 
-## <a name="creating-a-complete-random-number-generator-using-a-host-program"></a>Создание комплексного генератора случайных чисел с помощью основной программы
 
-Теперь, когда у нас есть операция Q#, создающая случайные биты, мы можем использовать ее для создания комплексного квантового генератора случайных чисел с помощью основной программы.
+## <a name="creating-a-complete-random-number-generator"></a>Создание комплексного генератора случайных чисел
 
- ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[Вызов Python из Visual Studio Code или командной строки](#tab/tabid-python)
- 
- Чтобы выполнить эту программу Q# из кода Python, сохраните следующий код в файл `host.py`:
- 
-:::code language="python" source="~/quantum/samples/getting-started/qrng/host.py" range="11-30":::
+Теперь, когда у нас есть операция Q#, создающая случайные биты, мы можем использовать ее для создания комплексного квантового генератора случайных чисел. Мы можем использовать приложения командной строки Q# или основную программу.
 
- Теперь вы сможете запустить основную программу Python из командной строки следующим образом:
- ```bash
- $ python host.py
- Preparing Q# environment...
- ..The random number generated is 42
- ```
- ### <a name="c-with-visual-studio-code-or-the-command-line"></a>[Вызов C# из Visual Studio Code или командной строки](#tab/tabid-csharp)
- 
- Чтобы выполнить эту программу Q# из кода C#, измените `Driver.cs`, включив в него следующий код:
- 
- :::code language="csharp" source="~/quantum/samples/getting-started/qrng/Host.cs" range="4-39":::
- 
- Теперь вы сможете запустить основную программу C# из командной строки следующим образом:
- 
- ```bash
- $ dotnet run
- The random number generated is 42
- ```
 
- ### <a name="c-with-visual-studio-2019"></a>[Вызов C# из Visual Studio 2019](#tab/tabid-vs2019)
 
- Чтобы выполнить эту программу Q# из кода C# в Visual Studio, измените `Driver.cs`, включив в него следующий код:
+### <a name="q-command-line-applications-with-visual-studio-or-visual-studio-code"></a>[Приложения командной строки Q# в Visual Studio или Visual Studio Code](#tab/tabid-qsharp)
 
- :::code language="csharp" source="~/quantum/samples/getting-started/qrng/Host.cs" range="4-39":::
+Чтобы создать полное приложение командной строки Q#, добавьте в программу Q# следующую точку входа: 
 
- Затем нажмите клавишу F5, чтобы запустить программу. Отобразится новое всплывающее окно со сгенерированным случайным числом: 
+:::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="17-33":::
 
- ```bash
- $ dotnet run
- The random number generated is 42
- ```
- ***
+Исполняемый файл будет выполнять операцию или функцию, помеченную атрибутом `@EntryPoint()`, в симуляторе или оценщике ресурсов в зависимости от конфигурации проекта и параметров командной строки.
+
+:::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="3-34":::
+
+В Visual Studio просто нажмите клавиши CTRL+F5, чтобы выполнить скрипт.
+
+При первом выполнении в VS Code нужно создать файл Program.qs. Для этого введите следующую команду в окне терминала:
+
+```dotnetcli
+dotnet build
+```
+
+Для последующих выполнений файл не нужно создавать повторно. Для выполнения введите следующую команду и нажмите клавишу ВВОД:
+
+```dotnetcli
+dotnet run --no-build
+```
+
+### <a name="python-with-visual-studio-code-or-the-command-line"></a>[Вызов Python из Visual Studio Code или командной строки](#tab/tabid-python)
+
+Чтобы выполнить эту программу Q# из кода Python, сохраните следующий код в файл `host.py`:
+
+:::code language="python" source="~/quantum/samples/interoperability/qrng/host.py" range="11-30":::
+
+Теперь вы сможете запустить основную программу Python из командной строки следующим образом:
+
+```bash
+$ python host.py
+Preparing Q# environment...
+..The random number generated is 42
+```
+
+### <a name="c-with-visual-studio-code-or-visual-studio"></a>[C# с Visual Studio Code или Visual Studio](#tab/tabid-csharp)
+
+Чтобы выполнить эту программу Q# из кода C#, измените `Driver.cs`, включив в него следующий код:
+
+:::code language="csharp" source="~/quantum/samples/interoperability/qrng/Host.cs" range="4-39":::
+
+Теперь вы сможете запустить основную программу C# из командной строки следующим образом (в Visual Studio можно нажать клавишу F5):
+
+```bash
+$ dotnet run
+The random number generated is 42
+```
+
+***
