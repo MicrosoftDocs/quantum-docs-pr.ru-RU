@@ -1,8 +1,0 @@
-- name: 'Модель типов Q#'
-  href: type-model.md
-- name: Выражения
-  href: expressions.md
-- name: Инструкции
-  href: statements.md
-- name: Структура файла
-  href: file-structure.md
