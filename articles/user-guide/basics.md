@@ -1,0 +1,115 @@
+---
+title: 'Основные сведения об Q #'
+description: 'Основные понятия Q #'
+author: gillenhaalb
+ms.author: a-gibec@microsoft.com
+ms.date: 02/28/2020
+ms.topic: article
+uid: microsoft.quantum.guide.basics
+ms.openlocfilehash: fd0ea47f00b1456ec460808ef7d451c8427677cd
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83431161"
+---
+# <a name="q-basics"></a><span data-ttu-id="64ae8-103">Основные сведения об Q #</span><span class="sxs-lookup"><span data-stu-id="64ae8-103">Q# Basics</span></span>
+
+<span data-ttu-id="64ae8-104">В этом разделе представлены краткие сведения о базовых стандартных блоках Q #.</span><span class="sxs-lookup"><span data-stu-id="64ae8-104">In this section we present a brief introduction to the basic building blocks of Q#.</span></span>
+
+<span data-ttu-id="64ae8-105">Краткий обзор того, что такое Q # и где он подходит в качестве фундаментального компонента пакета средств разработки тактов, можно узнать в статье [q #?](xref:microsoft.quantum.overview.q-sharp).</span><span class="sxs-lookup"><span data-stu-id="64ae8-105">For a quick overview of what Q# is and where it fits in as a fundamental component of the Quantum Development Kit, you can check out [What is Q#?](xref:microsoft.quantum.overview.q-sharp).</span></span> 
+
+## <a name="what-is-a-quantum-program"></a><span data-ttu-id="64ae8-106">Что такое тактовая программа?</span><span class="sxs-lookup"><span data-stu-id="64ae8-106">What is a quantum program?</span></span>
+
+<span data-ttu-id="64ae8-107">С технической точки зрения, тактовая программа может рассматриваться как определенный набор классических подпрограмм, которые при вызове выполняют определенные операции в тактовой системе.</span><span class="sxs-lookup"><span data-stu-id="64ae8-107">From a technical perspective, a quantum program can be seen as a particular set of classical subroutines which, when called, perform certain operations on a quantum system.</span></span>
+<span data-ttu-id="64ae8-108">Важным следствием этого представления является то, что программа, написанная в Q #, напрямую не моделирует Кубитс, а описывает, как классический контрольный компьютер взаимодействует с этими Кубитс.</span><span class="sxs-lookup"><span data-stu-id="64ae8-108">An important consequence of that view is that a program written in Q# does not directly model qubits themselves, but rather describes how a classical control computer interacts with those qubits.</span></span>
+<span data-ttu-id="64ae8-109">В соответствии с разработкой Q # не определяет состояния такта или другие свойства генератора тактов напрямую.</span><span class="sxs-lookup"><span data-stu-id="64ae8-109">By design, Q# thus does not define quantum states or other properties of quantum mechanics directly.</span></span>
+<span data-ttu-id="64ae8-110">Например, рассмотрим состояние $ \кет{+} = \лефт (\кет {0} + \кет {1} \ригхт)/\скрт {2} $, обсуждаемое в этом [Quantum Computing Concepts](xref:microsoft.quantum.concepts.intro) руководством.</span><span class="sxs-lookup"><span data-stu-id="64ae8-110">For instance, consider the state $\ket{+} = \left(\ket{0} + \ket{1}\right) / \sqrt{2}$ discussed in the [Quantum Computing Concepts](xref:microsoft.quantum.concepts.intro) guide.</span></span>
+<span data-ttu-id="64ae8-111">Чтобы подготовить это состояние в Q #, мы используем факты, которые Кубитс инициализируются в $ \кет {0} $ State и $ \кет{+} = х\кет {0} $, где $H $ является хадамард преобразованием, реализованным [ `H` Operation] (] (xref: Microsoft. тактов. внутренний. H):</span><span class="sxs-lookup"><span data-stu-id="64ae8-111">To prepare this state in Q#, we use the facts that the qubits are initialized in the $\ket{0}$ state, and that $\ket{+} = H\ket{0}$, where $H$ is the Hadamard transform, implemented by the [`H` operation](](xref:microsoft.quantum.intrinsic.h):</span></span>
+
+```qsharp
+using (qubit = Qubit()) {
+    // At this point, qubit is in the state |0⟩.
+    H(qubit);
+    // We've now applied H, such that our qubit is in H|0⟩ = |+⟩, as we wanted.
+}
+```
+
+## <a name="quantum-states-in-q"></a><span data-ttu-id="64ae8-112">Состояния тактов в Q #</span><span class="sxs-lookup"><span data-stu-id="64ae8-112">Quantum states in Q#</span></span>
+
+<span data-ttu-id="64ae8-113">Важно, что при написании приведенной выше программы мы не ссылались явно на состояние в Q #, а не описывали, как состояние было *преобразовано* нашей программой.</span><span class="sxs-lookup"><span data-stu-id="64ae8-113">Importantly, in writing the above program, we did not explicitly refer to the state within Q#, but rather described how the state was *transformed* by our program.</span></span>
+<span data-ttu-id="64ae8-114">Это позволяет нам полностью *не* зависеть от состояния такта, даже на каждом целевом компьютере, для которого в зависимости от компьютера могут использоваться разные интерпретации.</span><span class="sxs-lookup"><span data-stu-id="64ae8-114">This allows us to be entirely agnostic about what a quantum state even *is* on each target machine, which might have different interpretations depending on the machine.</span></span> 
+
+<span data-ttu-id="64ae8-115">Программа Q # не может интроспект в состояние кубит.</span><span class="sxs-lookup"><span data-stu-id="64ae8-115">A Q# program has no ability to introspect into the state of a qubit.</span></span>
+<span data-ttu-id="64ae8-116">Вместо этого программа может вызывать такие операции, как [`Measure`](xref:microsoft.quantum.intrinsic.measure) , чтобы получить сведения из кубит и вызвать операции, такие как [`X`](xref:microsoft.quantum.intrinsic.x) и, [`H`](xref:microsoft.quantum.intrinsic.h) чтобы действовать в состоянии кубит.</span><span class="sxs-lookup"><span data-stu-id="64ae8-116">Rather, a program can call operations such as [`Measure`](xref:microsoft.quantum.intrinsic.measure) to learn information from a qubit, and call operations such as [`X`](xref:microsoft.quantum.intrinsic.x) and [`H`](xref:microsoft.quantum.intrinsic.h) to act on the state of a qubit.</span></span>
+<span data-ttu-id="64ae8-117">*Фактически эти операции делаются* только на целевом компьютере, используемом для запуска конкретной программы Q #.</span><span class="sxs-lookup"><span data-stu-id="64ae8-117">What these operations actually *do* is only made concrete by the target machine we use to run the particular Q# program.</span></span>
+<span data-ttu-id="64ae8-118">Например, если запустить программу в [симуляторе полного состояния](xref:microsoft.quantum.machines.full-state-simulator), симулятор выполнит соответствующие математические операции в имитацию тактовой системы.</span><span class="sxs-lookup"><span data-stu-id="64ae8-118">For example, if running the program on our [full-state simulator](xref:microsoft.quantum.machines.full-state-simulator), the simulator will perform the corresponding mathematical operations to the simulated quantum system.</span></span>
+<span data-ttu-id="64ae8-119">Но в будущем, когда целевой компьютер является реальным компьютером-тактом, вызов таких операций в Q # направляет компьютер-такт для выполнения соответствующих *реальных* операций в *реальной* тактовой системе (например, для точного времени лазерных импульсов).</span><span class="sxs-lookup"><span data-stu-id="64ae8-119">But looking toward the future, when the target machine is a real quantum computer, calling such operations in Q# will direct the quantum computer to perform the corresponding *real* operations on the *real* quantum system (e.g. precisely timed laser pulses).</span></span>
+
+<span data-ttu-id="64ae8-120">Программа Q # повторно объединяет эти операции, как определено на целевом компьютере, для создания новых операций более высокого уровня для вычисления тактовых вычислений.</span><span class="sxs-lookup"><span data-stu-id="64ae8-120">A Q# program recombines these operations as defined by a target machine to create new, higher-level operations to express quantum computation.</span></span>
+<span data-ttu-id="64ae8-121">Таким образом, Q # упрощает выражать логику базового и гибридного такта, а также общие алгоритмы в отношении структуры целевого компьютера или симулятора.</span><span class="sxs-lookup"><span data-stu-id="64ae8-121">In this way, Q# makes it easy to express the logic underlying quantum and hybrid quantum–classical algorithms, while also being general with respect to the structure of a target machine or simulator.</span></span>
+
+## <a name="q-operations-and-functions"></a><span data-ttu-id="64ae8-122">Q # операции и функции</span><span class="sxs-lookup"><span data-stu-id="64ae8-122">Q# operations and functions</span></span>
+
+<span data-ttu-id="64ae8-123">Конкретная программа Q # состоит из *операций*, *функций*и любых определяемых пользователем типов.</span><span class="sxs-lookup"><span data-stu-id="64ae8-123">Concretely, a Q# program is comprised of *operations*, *functions*, and any user-defined types.</span></span> 
+
+<span data-ttu-id="64ae8-124">Операции используются для описания преобразований тактовых систем и являются наиболее базовым стандартным блоком программ Q #.</span><span class="sxs-lookup"><span data-stu-id="64ae8-124">Operations are used to describe the transformations of quantum systems and are the most basic building block of Q# programs.</span></span> <span data-ttu-id="64ae8-125">Каждая операция, определенная в Q #, может затем вызывать любое количество других операций.</span><span class="sxs-lookup"><span data-stu-id="64ae8-125">Each operation defined in Q# may then call any number of other operations.</span></span>
+
+<span data-ttu-id="64ae8-126">В отличие от операций, функции используются для описания чисто *детерминированного* классического поведения и не имеют каких либо эффектов, помимо вычисления классических значений.</span><span class="sxs-lookup"><span data-stu-id="64ae8-126">In contrast to operations, functions are used to describe purely *deterministic* classical behavior and do not have any effects besides computing classical values.</span></span> <span data-ttu-id="64ae8-127">Например, предположим, что мы хотим измерить Кубитс в конце программы и добавим результаты измерения в массив.</span><span class="sxs-lookup"><span data-stu-id="64ae8-127">For example, suppose we would like to measure our qubits at the end of a program, and add the measurement results to an array.</span></span>
+<span data-ttu-id="64ae8-128">В этом случае `Measure` является *операцией* , которая указывает целевому компьютеру выполнить измерение в (реальном или смоделированном) Кубитс, а классический процесс добавления возвращаемых результатов в массив будет обрабатываться *функциями*.</span><span class="sxs-lookup"><span data-stu-id="64ae8-128">In this case `Measure` is an *operation* which instructs the target machine to perform a measurement on the (real or simulated) qubits, and the classical process of adding the returned results to an array will be handled by *functions*.</span></span>
+
+<span data-ttu-id="64ae8-129">Вместе операции и функции называются *вызываемыми*, а их базовая структура и поведение представлены в [операциях и функциях на странице Q #](xref:microsoft.quantum.guide.operationsfunctions) .</span><span class="sxs-lookup"><span data-stu-id="64ae8-129">Together, operations and functions are referred to as *callables*, and their underlying structure and behavior is introduced on the [Operations and Functions in Q#](xref:microsoft.quantum.guide.operationsfunctions) page.</span></span>
+
+
+## <a name="q-syntax-overview"></a><span data-ttu-id="64ae8-130">Обзор синтаксиса Q #</span><span class="sxs-lookup"><span data-stu-id="64ae8-130">Q# syntax overview</span></span>
+
+<span data-ttu-id="64ae8-131">Синтаксис языка описывает различные сочетания символов, которые формируют синтаксическую правильную программу.</span><span class="sxs-lookup"><span data-stu-id="64ae8-131">The syntax of a language describes the different combinations of symbols that form a syntactically correct program.</span></span>
+<span data-ttu-id="64ae8-132">В Q # мы можем классифицировать элементы своего синтаксиса в трех разных группах: типы, выражения и операторы.</span><span class="sxs-lookup"><span data-stu-id="64ae8-132">In Q# we can classify the elements of its syntax in three different groups: types, expressions and statements.</span></span>
+
+### <a name="types"></a><span data-ttu-id="64ae8-133">Типы</span><span class="sxs-lookup"><span data-stu-id="64ae8-133">Types</span></span>
+<span data-ttu-id="64ae8-134">Q # является строго типизированным языком, поэтому использование типов может помочь компилятору обеспечить строгую гарантию для программ Q # во время компиляции.</span><span class="sxs-lookup"><span data-stu-id="64ae8-134">Q# is a strongly-typed language, such that careful use of types can help the compiler provide strong guarantees about Q# programs at compile time.</span></span>
+<span data-ttu-id="64ae8-135">Помимо стандартных и потактовых встроенных типов-примитивов (например,, `Int` , `Bool` `Qubit` и `Result` ), Q # обеспечивает поддержку определяемых пользователем типов.</span><span class="sxs-lookup"><span data-stu-id="64ae8-135">In addition to standard and quantum-specific built-in primitive types (e.g. `Int`, `Bool`, `Qubit`, and `Result`), Q# provides support for user-defined types.</span></span>
+<span data-ttu-id="64ae8-136">Все различные типы-примитивы Q # описаны на странице [типы в Q #](xref:microsoft.quantum.guide.types) , а также подробные сведения о типах массивов и кортежей и о том, как определять новые типы в файле Q #.</span><span class="sxs-lookup"><span data-stu-id="64ae8-136">All of Q#'s various primitive types are described on the [Types in Q#](xref:microsoft.quantum.guide.types) page, along with details on array and tuple types, as well as how to define new types within a Q# file.</span></span>
+
+### <a name="expressions"></a><span data-ttu-id="64ae8-137">Выражения</span><span class="sxs-lookup"><span data-stu-id="64ae8-137">Expressions</span></span>
+<span data-ttu-id="64ae8-138">Выражение в языке программирования — это сочетание одной или нескольких констант, переменных, операторов и функций, которые язык программирования интерпретирует и вычисляет в определенном значении.</span><span class="sxs-lookup"><span data-stu-id="64ae8-138">An expression in a programming language is a combination of one or more constants, variables, operators, and functions that the programming language interprets and evaluates to a specific value.</span></span>
+<span data-ttu-id="64ae8-139">Чаще всего для каждого типа в языке выражения этого типа могут быть либо *литералами* , либо символами, привязанными к значению этого типа.</span><span class="sxs-lookup"><span data-stu-id="64ae8-139">Most simply, for every type in a language, expressions of that type can be either *literals* or symbols bound to a value of that type.</span></span>
+<span data-ttu-id="64ae8-140">Например, `5` является `Int` литералом (то есть выражением типа `Int` ), и если символ `count` привязан к целому значению `5` , то `count` также является целочисленным выражением.</span><span class="sxs-lookup"><span data-stu-id="64ae8-140">For example, `5` is an `Int` literal (thus also an expression of type `Int`), and if the symbol `count` is bound to the integer value `5`, then `count` is also an integer expression.</span></span>
+
+<span data-ttu-id="64ae8-141">Кроме того, выражение может состоять из других выражений, Объединенных с определенными операторами.</span><span class="sxs-lookup"><span data-stu-id="64ae8-141">Additionally, an expression can consist of other expressions combined with certain operators.</span></span>
+<span data-ttu-id="64ae8-142">Поэтому еще один пример `Int` выражения, результатом которого является значение `5` `2+3` .</span><span class="sxs-lookup"><span data-stu-id="64ae8-142">Hence another example of an `Int` expression which evaluates to `5` is `2+3`.</span></span>
+
+<span data-ttu-id="64ae8-143">Возможные выражения типов в Q #, а также совместимые операторы, которые можно использовать для их формирования, подробно описаны в [выражениях типа на странице Q #](xref:microsoft.quantum.guide.expressions) .</span><span class="sxs-lookup"><span data-stu-id="64ae8-143">The possible expressions of types in Q#, as well as the compatible operators that can be used to form them, are detailed on the [Type Expressions in Q#](xref:microsoft.quantum.guide.expressions) page.</span></span> 
+
+### <a name="statements"></a><span data-ttu-id="64ae8-144">Инструкции</span><span class="sxs-lookup"><span data-stu-id="64ae8-144">Statements</span></span> 
+<span data-ttu-id="64ae8-145">Оператор — это Синтаксическая единица императивного языка программирования, который выражает определенное действие для выполнения. Операторы, которые отличаются от выражений в этих инструкциях, не возвращают результаты и выполняются исключительно для своих побочных эффектов, тогда как выражения всегда возвращают результат и часто не имеют побочных эффектов.</span><span class="sxs-lookup"><span data-stu-id="64ae8-145">A statement is a syntactic unit of an imperative programming language that expresses some action to be carried out. Statements contrast with expressions in that statements do not return results and are executed solely for their side effects, while expressions always return a result and often do not have side effects at all.</span></span>
+<span data-ttu-id="64ae8-146">Это различие часто наблюдается в словах: вычисляется выражение, в то время как выполняется инструкция.</span><span class="sxs-lookup"><span data-stu-id="64ae8-146">This distinction is frequently observed in wording: an expression is evaluated, whereas a statement is executed.</span></span>
+
+<span data-ttu-id="64ae8-147">Очень простой пример оператора в Q # — назначение символа выражению:</span><span class="sxs-lookup"><span data-stu-id="64ae8-147">A very basic example of a statement in Q# is assigning a symbol to an expression:</span></span>
+```qsharp
+let count = 5;
+```
+
+<span data-ttu-id="64ae8-148">Чуть более интересный пример — это `for` инструкция, которая поддерживает итерацию и включает *блок операторов*.</span><span class="sxs-lookup"><span data-stu-id="64ae8-148">A slightly more interesting example is the `for` statement which supports iteration and includes a *statement block*.</span></span>
+<span data-ttu-id="64ae8-149">Предположим, `qubits` символ привязан к регистру Кубитс (техническим типом `Qubit[]` , т. е. массивом `Qubit` типов).</span><span class="sxs-lookup"><span data-stu-id="64ae8-149">Suppose `qubits` is the symbol bound to a register of qubits (technically of type `Qubit[]`, i.e. an array of `Qubit` types).</span></span> <span data-ttu-id="64ae8-150">Следующее действие</span><span class="sxs-lookup"><span data-stu-id="64ae8-150">Then</span></span>
+```qsharp
+for (qubit in qubits) {
+    H(qubit);
+}
+```
+<span data-ttu-id="64ae8-151">Инструкция, которая выполняет итерацию каждого кубит в регистре, выполняя `H` операцию с каждым из них.</span><span class="sxs-lookup"><span data-stu-id="64ae8-151">is a statement which iterates over each qubit in the register, performing the `H` operation on each.</span></span> <span data-ttu-id="64ae8-152">Обратите внимание, что `H(qubit);` также является оператором.</span><span class="sxs-lookup"><span data-stu-id="64ae8-152">Note that `H(qubit);` is a statement in itself as well.</span></span>
+
+<span data-ttu-id="64ae8-153">Фактически любое выражение вызова типа `Unit` (те, которые не возвращают сведения) можно использовать в качестве инструкции.</span><span class="sxs-lookup"><span data-stu-id="64ae8-153">In fact, any call expression of type `Unit` (those callables that do not return any information) may be used as a statement.</span></span>
+<span data-ttu-id="64ae8-154">Это в первую очередь используется при вызове операций с Кубитс, которые возвращают, `Unit` поскольку целью инструкции является изменение неявного состояния такта.</span><span class="sxs-lookup"><span data-stu-id="64ae8-154">This is primarily of use when calling operations on qubits that return `Unit` because the purpose of the statement is to modify the implicit quantum state.</span></span>
+<span data-ttu-id="64ae8-155">Для операторов вычисления выражения требуется завершающая точка с запятой.</span><span class="sxs-lookup"><span data-stu-id="64ae8-155">Expression evaluation statements require a terminating semicolon.</span></span>
+
+<span data-ttu-id="64ae8-156">Практически все аспекты программы Q # создаются с помощью инструкций, поэтому ни одна страница не может охватывать всю информацию, относящуюся к ним.</span><span class="sxs-lookup"><span data-stu-id="64ae8-156">Nearly every aspect of a Q# program is built using statements, so no single page could encompass all the information relating to them.</span></span>
+<span data-ttu-id="64ae8-157">Однако их лексическая структура и форматирование описаны на странице [структуры файлов q #](xref:microsoft.quantum.guide.filestructure) , назначении привязки символов и области в [переменных в q #](xref:microsoft.quantum.guide.variables), а также в циклах потока управления, таких как `for` [поток управления в q #](xref:microsoft.quantum.guide.controlflow).</span><span class="sxs-lookup"><span data-stu-id="64ae8-157">However, their lexical structure and formatting is described on the [Q# File Structure](xref:microsoft.quantum.guide.filestructure) page, symbol binding assignment and scope at [Variables in Q#](xref:microsoft.quantum.guide.variables), and control flow loops such as `for` at [Control Flow in Q#](xref:microsoft.quantum.guide.controlflow).</span></span>
+
+
+## <a name="whats-next"></a><span data-ttu-id="64ae8-158">Что дальше?</span><span class="sxs-lookup"><span data-stu-id="64ae8-158">What's next?</span></span>
+<span data-ttu-id="64ae8-159">В оставшейся части этого руководства мы покажем, как использовать Q # для создания сложных тактовых программ с помощью основных стандартных блоков операций, функций и типов.</span><span class="sxs-lookup"><span data-stu-id="64ae8-159">Throughout the rest of this guide, we will show you how to use Q# to construct complex quantum programs through the basic building blocks of operations, functions, and types.</span></span>
+
+<span data-ttu-id="64ae8-160">Чтобы приступить к работе, можно приступить к изучению [типов в Q #](xref:microsoft.quantum.guide.types).</span><span class="sxs-lookup"><span data-stu-id="64ae8-160">To get started, you can start learning about [Types in Q#](xref:microsoft.quantum.guide.types).</span></span>
+
+<span data-ttu-id="64ae8-161">Если вы заинтересованы в изучении основ и мотивации по Q #, ознакомьтесь с тем, [Зачем нам нужно q #?](https://devblogs.microsoft.com/qsharp/why-do-we-need-q/).</span><span class="sxs-lookup"><span data-stu-id="64ae8-161">If you are interested in learning more about the foundations and motivation behind Q#, check out [Why do we need Q#?](https://devblogs.microsoft.com/qsharp/why-do-we-need-q/).</span></span>
