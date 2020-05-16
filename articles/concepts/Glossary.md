@@ -1,167 +1,167 @@
 ---
-title: Квантовые вычисления глоссарий
-description: Глоссарий общих терминов, действий и объектов, используемых в квантовых вычислениях.
+title: Глоссарий по тактовым вычислениям
+description: Глоссарий общих терминов, действий и объектов, используемых в тактовых вычислениях.
 author: QuantumWriter
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.glossary
-ms.openlocfilehash: ee78515a0f47730b7d3df10da0853c5b8a7f6624
-ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
+ms.openlocfilehash: cbc473eb14d8afd255a7072475dc054e18b98e3e
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81482237"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426706"
 ---
-# <a name="quantum-computing-glossary"></a>Квантовые вычисления глоссарий
+# <a name="quantum-computing-glossary"></a>Глоссарий по тактовым вычислениям
 
-## <a name="adjoint"></a>Адытковые
+## <a name="adjoint"></a>Прилегающий
 
-Комплекс сопряжения переноса [операции.](xref:microsoft.quantum.glossary#operation) Для операций, осуществляемых [унитарным](xref:microsoft.quantum.glossary#unitary-operator) оператором, присоединение является обратным для операции и указывается символом кинжала. Например, если `U` операция представляет унитарного `Adjoint U` оператора $U$, то представляет собой $U .dagger$. Для получения дополнительной информации, [см Adjoint](xref:microsoft.quantum.language.file-structure#adjoint).
+Комплексно сопряженное перестановка [операции](xref:microsoft.quantum.glossary#operation). Для операций, реализующих оператор с [единым](xref:microsoft.quantum.glossary#unitary-operator) , примыкающим является обратная операция и обозначается символом дагжер. Например, если операция представляет сам `U` оператор $U $, то `Adjoint U` представляет $U ^ \дагжер $. Дополнительные сведения см. в разделе [прилегающие](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations).
 
-## <a name="ancilla"></a>Ансилла
+## <a name="ancilla"></a>анЦилла
 
-[Кубит,](xref:microsoft.quantum.glossary#qubit) который служит временной памятью для квантового компьютера и выделяется и высвобождается по мере необходимости.  Для получения дополнительной [информации см.](xref:microsoft.quantum.concepts.multiple-qubits)
+[Кубит](xref:microsoft.quantum.glossary#qubit) , который служит временной памятью для тактового компьютера и выделяется и освобождается по мере необходимости.  Дополнительные сведения см. в разделе [несколько Кубитс](xref:microsoft.quantum.concepts.multiple-qubits).
 
-## <a name="bell-state"></a>Состояние колокола
+## <a name="bell-state"></a>Состояние колокольчика
 
-Один из четырех конкретных максимально [запутанных](xref:microsoft.quantum.glossary#entanglement) [квантовых состояний](xref:microsoft.quantum.glossary#quantum-state) двух кубитов. Четыре состояния определяются как «beta_ »зий» («математика» («время Хийз»{00} («Кет» и{11}«кет») /{2}«sqrt ».» Состояние Bell также известно как [пара EPR.](xref:microsoft.quantum.glossary#epr-pair)
+Одно из четырех конкретных [запутанными](xref:microsoft.quantum.glossary#entanglement) [состояний такта](xref:microsoft.quantum.glossary#quantum-state) двух Кубитс. Четыре состояния определяются как $ \кет{\ beta_ {ИЖ}} = (\Масбб{и} \отимес X ^ iZ ^ j) (\кет {00} + \кет {11} )/\скрт {2} $. Состояние колокольчика также называется [парой EPR](xref:microsoft.quantum.glossary#epr-pair).
 
-## <a name="bloch-sphere"></a>Сфера Блох
+## <a name="bloch-sphere"></a>БЛОЧ шар
 
-Графическое представление[однокубитового](xref:microsoft.quantum.glossary#qubit) [квантового состояния](xref:microsoft.quantum.glossary#quantum-state) как точки в трехмерной единой сфере. Для получения дополнительной информации [см. Визуализация Кубитс и Преобразований с помощью сферы Блох](xref:microsoft.quantum.concepts.qubit#visualizing-qubits-and-transformations-using-the-bloch-sphere).
+Графическое представление[однокубитного](xref:microsoft.quantum.glossary#qubit) [состояния такта](xref:microsoft.quantum.glossary#quantum-state) в виде точки трехмерной единичной сферы. Дополнительные сведения см. [в разделе визуализация Кубитс и преобразований с помощью сферы БЛОЧ](xref:microsoft.quantum.concepts.qubit#visualizing-qubits-and-transformations-using-the-bloch-sphere).
 
-## <a name="callable"></a>Вызываемые
+## <a name="callable"></a>Предназначен
 
-[Операция](xref:microsoft.quantum.glossary#operation) или [функция](xref:microsoft.quantum.glossary#function) на языке q. Для получения дополнительной информации [см.](xref:microsoft.quantum.language.type-model#operation-and-function-types)
+[Операция](xref:microsoft.quantum.glossary#operation) или [функция](xref:microsoft.quantum.glossary#function) в языке Q #. Дополнительные сведения см. в разделе [операции и функции](xref:microsoft.quantum.guide.operationsfunctions).
 
 ## <a name="clifford-group"></a>Группа Клиффорд
 
-Набор операций, которые занимают октаны [сферы Блох](xref:microsoft.quantum.glossary#bloch-sphere) и эффект перестановки [операторов Паули](xref:microsoft.quantum.glossary#pauli-operators). К ним относятся операции [$X $](xref:microsoft.quantum.intrinsic.x), [$Y $](xref:microsoft.quantum.intrinsic.y), [$Z $](xref:microsoft.quantum.intrinsic.z), [$H$](xref:microsoft.quantum.intrinsic.h) и [$S $](xref:microsoft.quantum.intrinsic.s).
+Набор операций, которые занимают октантс [БЛОЧ Sphere](xref:microsoft.quantum.glossary#bloch-sphere) и влияют на перестановки [операторов Паули](xref:microsoft.quantum.glossary#pauli-operators). К ним относятся операции [$X $](xref:microsoft.quantum.intrinsic.x), [$Y $](xref:microsoft.quantum.intrinsic.y), [$Z $](xref:microsoft.quantum.intrinsic.z), [$H $](xref:microsoft.quantum.intrinsic.h) и [$S $](xref:microsoft.quantum.intrinsic.s).
 
-## <a name="controlled"></a>Контролируемых
+## <a name="controlled"></a>Управляет
 
-Квантовая [операция,](xref:microsoft.quantum.glossary#operation) которая занимает один или несколько [кубитов](xref:microsoft.quantum.glossary#qubit) в качестве вспомогательного фактора для целевой операции. Для получения дополнительной информации [см.](xref:microsoft.quantum.language.type-model#controlled)
+[Операция](xref:microsoft.quantum.glossary#operation) -такт, которая принимает один или несколько [Кубитс](xref:microsoft.quantum.glossary#qubit) как созидателями для целевой операции. Дополнительные сведения см. в разделе [контролируемые и смежные операции](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations).
 
-## <a name="dirac-notation"></a>Нотация Дирака
+## <a name="dirac-notation"></a>Нотация Дирак
 
-Символическое сокращение, которое упрощает представление [квантовых состояний,](xref:microsoft.quantum.glossary#quantum-state)также называемое *обозначением бюстгальтер-кет.*  Часть *бюстгальтера* представляет собой вектор строки, например, «бра»А» » » » » » » » » » » » » » » & A »2 » (конец» bmatrix) $ и *кет-часть* представляет собой вектор столбца, $ »кет»B» » » » » » B1» \\ \\ B » Для получения дополнительной информации [см.](xref:microsoft.quantum.concepts.dirac)
+Символьная Краткая форма, упрощающая представление [состояний тактов](xref:microsoft.quantum.glossary#quantum-state), также называемая нотацией *неверное-Сисакет* .  *Неверное* часть представляет вектор строки, например $ \бра{а} = \бегин{бматрикс} a {_1} & {_2} \енд{бматрикс} $, а часть *Сисакет* представляет вектор столбца, $ \кет{б} = \бегин{бматрикс} B {_1} \\ \\ B {_2} \енд{бматрикс} $. Дополнительные сведения см. в разделе [Дирак Notation](xref:microsoft.quantum.concepts.dirac).
 
-## <a name="eigenvalue"></a>Эйгенвале
+## <a name="eigenvalue"></a>еиженвалуе
 
-Фактор, с помощью которого величина [эйгенвевеста](xref:microsoft.quantum.glossary#eigenvector) данной трансформации изменяется при применении преобразования.  Учитывая квадратную матрицу $M$ и eigenvector $v$, затем $Mv cv$, где $c $ является eigenvalue и может быть сложным числом любого аргумента. Для получения дополнительной [информации см.](xref:microsoft.quantum.concepts.matrix-advanced)
+Коэффициент, на который изменяется величина [еиженвектор](xref:microsoft.quantum.glossary#eigenvector) данного преобразования при преобразовании приложением преобразования.  При наличии квадратной матрицы $M $ и еиженвектор $v $, затем $Mv = ОПС $, где $c $ является еиженвалуе и может быть комплексным числом любого аргумента. Дополнительные сведения см. в разделе [Расширенные понятия матрицы](xref:microsoft.quantum.concepts.matrix-advanced).
 
-## <a name="eigenvector"></a>Эйгенвектор
+## <a name="eigenvector"></a>еиженвектор
 
-Вектор, направление которого не меняется в результате данной трансформации и величина которого изменяется коэффициентом, соответствующим [eigenvalue](xref:microsoft.quantum.glossary#eigenvalue)этого вектора. Учитывая квадратную матрицу $M$, а также eigenvalue $c$, то $Mv cv$, где $v$ является eigenvector матрицы и может быть сложным числом любого аргумента. Для получения дополнительной [информации см.](xref:microsoft.quantum.concepts.matrix-advanced)
+Вектор, направление которого не изменилось заданным преобразованием и величина которого изменяется коэффициентом, соответствующим [еиженвалуеу](xref:microsoft.quantum.glossary#eigenvalue)вектора. При наличии квадратной матрицы $M $ и еиженвалуе $c $, затем $Mv = ОПС $, где $v $ является еиженвектор матрицы и может быть комплексным числом любого аргумента. Дополнительные сведения см. в разделе [Расширенные понятия матрицы](xref:microsoft.quantum.concepts.matrix-advanced).
 
-## <a name="entanglement"></a>Запутанности
+## <a name="entanglement"></a>Замкнутые
 
-Квантовые частицы, такие как [кубиты,](xref:microsoft.quantum.glossary#qubit)могут быть соединены или *запутаны* таким образом, что они не могут быть описаны независимо друг от друга. Их результаты измерения коррелируют даже тогда, когда они разделены бесконечно далеко. Запутывание имеет важное значение для [измерения](xref:microsoft.quantum.glossary#measurement) [состояния](xref:microsoft.quantum.glossary#quantum-state) кубита.  Для получения дополнительной [информации см.](xref:microsoft.quantum.concepts.matrix-advanced)
+Частицы тактов, такие как [Кубитс](xref:microsoft.quantum.glossary#qubit), могут быть подключены или *запутанными* таким образом, что их нельзя описать независимо друг от друга. Результаты измерений сопоставлены, даже если они разделены бесконечно далеко. Замкнутые важно для [измерения](xref:microsoft.quantum.glossary#measurement) [состояния](xref:microsoft.quantum.glossary#quantum-state) кубит.  Дополнительные сведения см. в разделе [Расширенные понятия матрицы](xref:microsoft.quantum.concepts.matrix-advanced).
 
 ## <a name="epr-pair"></a>Пара EPR
 
-Один из четырех конкретных максимально запутанных [квантовых состояний](xref:microsoft.quantum.glossary#quantum-state) двух [кубитов.](xref:microsoft.quantum.glossary#qubit) Четыре состояния определяются как «beta_ »ij» («математика»{1} («олеты Хизёй»{00} (кет){11}/ «кверт» (кврт.) / «кврт» (кврт.).{2} Пара EPR также известна как [состояние Bell](xref:microsoft.quantum.glossary#bell-state)
+Одно из четырех конкретных запутанными [состояний такта](xref:microsoft.quantum.glossary#quantum-state) двух [Кубитс](xref:microsoft.quantum.glossary#qubit). Четыре состояния определяются как $ \кет{\ beta_ {ИЖ}} = (\масбб {1} \Отимес X ^ iz ^ j) (\кет {00} + \кет {11} )/\скрт {2} $. Пара EPR называется также [состоянием колокольчика](xref:microsoft.quantum.glossary#bell-state)
 
-## <a name="evolution"></a>Эволюции
+## <a name="evolution"></a>Результатом
 
-Как [квантовое состояние](xref:microsoft.quantum.glossary#quantum-state) изменяется с течением времени. Для получения дополнительной информации, см [Матрица экспоненциально .](xref:microsoft.quantum.concepts.matrix-advanced#matrix-exponentials)
+Изменение [состояния такта](xref:microsoft.quantum.glossary#quantum-state) со временем. Дополнительные сведения см. в разделе [экспонента матрицы](xref:microsoft.quantum.concepts.matrix-advanced#matrix-exponentials).
 
-## <a name="function"></a>Функция
-Тип подпрограммы на языке, который является чисто классическим (неквантовым). Хотя функции используются в квантовых алгоритмах, они не могут действовать на [кубитоты](xref:microsoft.quantum.glossary#qubit) или [операции](xref:microsoft.quantum.glossary#operation)вызова. Для получения дополнительной информации [см.](xref:microsoft.quantum.language.type-model#operation-and-function-types)
+## <a name="function"></a>Компонент
+Тип подпрограммы на языке Q #, который является чисто классическим (не в такте). Хотя функции используются в алгоритмах такта, они не могут действовать в [операциях](xref:microsoft.quantum.glossary#operation) [Кубитс](xref:microsoft.quantum.glossary#qubit) или Call. Дополнительные сведения см. в разделе [операции и функции](xref:microsoft.quantum.guide.operationsfunctions).
 
-## <a name="gate"></a>Ворота
+## <a name="gate"></a>Frame
 
-Наследие термин для квантовой [операции](xref:microsoft.quantum.glossary#operation), основанный на концепции классической логики ворот. [Квантовая цепь](xref:microsoft.quantum.glossary#quantum-circuit-diagram) представляет собой сеть ворот (или операций), основанную на аналогичной концепции классических логических схем.
+Устаревший термин для [операции](xref:microsoft.quantum.glossary#operation)с тактом, основанный на концепции классических логик шлюзов. [Тактовая цепь](xref:microsoft.quantum.glossary#quantum-circuit-diagram) — это сеть шлюзов (или операций), основанная на аналогичной концепции классических логических цепей.
 
-## <a name="global-phase"></a>Глобальная фаза
+## <a name="global-phase"></a>Глобальный этап
 
-Когда два [состояния](xref:microsoft.quantum.glossary#quantum-state) идентичны кратному сложному числу $e «зи»-фи»,, они, как говорят, отличаются до глобальной фазы. В отличие от локальных фаз, глобальные фазы не могут наблюдаться через любое [измерение.](xref:microsoft.quantum.glossary#measurement) Для получения дополнительной информации, [см.](xref:microsoft.quantum.concepts.qubit)
+Если два [состояния](xref:microsoft.quantum.glossary#quantum-state) идентичны нескольким комплексным числам $e ^ {и\фи} $, они говорят, что они отличаются от глобального этапа. В отличие от локальных фаз, глобальные фазы не могут быть просмотрены через любые [меасурмент](xref:microsoft.quantum.glossary#measurement). Дополнительные сведения см. [в разделе кубит](xref:microsoft.quantum.concepts.qubit).
 
 ## <a name="hadamard"></a>Hadamard
 
-Операция Хадамард (также именуемый воротами Хадамард или преобразование) действует на одном [кубите](xref:microsoft.quantum.glossary#qubit) и{1}помещает его в ровную [суперпозицию](xref:microsoft.quantum.glossary#superposition) в размере ${0}или $ кет $ , если кубит изначально находится в состоянии{0}$ $ . В q, эта операция применяется заранее определенной [`H`](xref:microsoft.quantum.intrinsic.h) операцией.
+Операция Хадамард (также называемая Хадамард Gate или Transform) действует на одном [кубит](xref:microsoft.quantum.glossary#qubit) и помещает ее в четное [Расположение](xref:microsoft.quantum.glossary#superposition) $ \кет {0} $ или $ \кет {1} $, если кубит изначально находится в состоянии $ \кет {0} $. В Q # эта операция применяется к предварительно определенной [`H`](xref:microsoft.quantum.intrinsic.h) операции.
 
-## <a name="immutable"></a>Постоянное
+## <a name="immutable"></a>Неизменяемые
 
-Переменная, значение которой не может быть изменено. Неизменяемая переменная в q `let` создается с помощью ключевого слова. Чтобы объявить переменные, которые *могут* быть изменены, `set` используйте [изменяемое](xref:microsoft.quantum.glossary#immutable) ключевое слово для декларировать и ключевое слово для изменения значения. 
+Переменная, значение которой нельзя изменить. Неизменяемая переменная в Q # создается с помощью `let` ключевого слова. Чтобы объявить переменные, которые *могут* быть изменены, используйте ключевое слово [mutable](xref:microsoft.quantum.glossary#immutable) для объявления и `set` ключевого слова для изменения значения. 
 
 ## <a name="measurement"></a>Измерения
 
-Манипуляция [кубитом](xref:microsoft.quantum.glossary#qubit) (или набором кубитов), который дает результат наблюдения, фактически получая классический бит. Для получения дополнительной информации, [см.](xref:microsoft.quantum.concepts.qubit#measuring-a-qubit)
+Обработка [кубит](xref:microsoft.quantum.glossary#qubit) (или набора Кубитс), которая дает результат наблюдения, в результате получения классического бита. Дополнительные сведения см. [в разделе кубит](xref:microsoft.quantum.concepts.qubit#measuring-a-qubit).
 
 ## <a name="mutable"></a>Изменяемый
 
-Переменная, значение которой может быть изменено после его создания. Изменяемая переменная в q `mutable` объявляется с помощью ключевого слова и модифицируется с помощью ключевого `set` слова. Переменные, созданные с помощью ключевого `let` слова, [неизменяемы,](xref:microsoft.quantum.glossary#immutable) и их значение не может быть изменено.
+Переменная, значение которой можно изменить после ее создания. Изменяемая переменная в Q # объявляется с помощью `mutable` ключевого слова и изменяется с помощью `set` ключевого слова. Переменные, созданные с помощью `let` ключевого слова, являются [неизменяемыми](xref:microsoft.quantum.glossary#immutable) , и их значения нельзя изменить.
 
 ## <a name="namespace"></a>Пространство имен
 
-Метка для коллекции связанных имен (т.е. [операций,](xref:microsoft.quantum.glossary#operation) [функций](xref:microsoft.quantum.glossary#function)и [типов, определяемых пользователем).](xref:microsoft.quantum.glossary#user-defined-type) Например, пространство имен [Microsoft.Quantum.Preparation](xref:microsoft.quantum.preparation) маркирует все символы, определенные в стандартной библиотеке, которые помогают при подготовке исходных состояний.
+Метка для коллекции связанных имен (т. е. [операций](xref:microsoft.quantum.glossary#operation), [функций](xref:microsoft.quantum.glossary#function)и [определяемых пользователем типов](xref:microsoft.quantum.glossary#user-defined-type)). Например, пространство имен [Microsoft. тактов. Подготовка](xref:microsoft.quantum.preparation) помечает все символы, определенные в стандартной библиотеке и помогающие при подготовке начальных состояний.
 
 ## <a name="operation"></a>Операция
 
-Основная единица квантового исполнения в кю. Это примерно эквивалентно функции в C, C или Python, или статического метода в C или Java. Для получения дополнительной информации [см.](xref:microsoft.quantum.language.type-model#operation-and-function-types)
+Базовая единица выполнения такта в Q #. Он примерно эквивалентен функции в C, C++ или Python или статическом методе в C# или Java. Дополнительные сведения см. в разделе [операции и функции](xref:microsoft.quantum.guide.operationsfunctions).
 
 ## <a name="operator-application"></a>Приложение оператора
 
-Выполнение квантовой операции. Это обычно применяет унитарную матрицу к текущему вектору состояния квантового состояния.
+Выполнение операции над тактом. Обычно это применяет единую матрицу к текущему вектору состояния такта.
 
 ## <a name="oracle"></a>Oracle;
 
-Подпрограммы, которая предоставляет зависимую от данных информацию квантовому алгоритму во время выполнения. Как правило, цель состоит в том, чтобы обеспечить [суперпозицию](xref:microsoft.quantum.glossary#superposition) выходов, соответствующих входным данным, которые находятся в суперпозиции. Для получения дополнительной [информации см.](xref:microsoft.quantum.libraries.data-structures#oracles)
+Подпрограммы, которая предоставляет зависящую от данных информацию в алгоритме такта во время выполнения. Как правило, целью является [предоставление части выходных](xref:microsoft.quantum.glossary#superposition) данных, соответствующих входным данным, находящимся в части. Дополнительные сведения см. в разделе [Oracle](xref:microsoft.quantum.libraries.data-structures#oracles).
 
-## <a name="partial-application"></a>Частичное применение
+## <a name="partial-application"></a>Частичное приложение
 
-Вызов [функции](xref:microsoft.quantum.glossary#function) или [операции](xref:microsoft.quantum.glossary#operation) без всех необходимых входов. Это возвращает новый [callable,](xref:microsoft.quantum.glossary#callable) что только необходимо недостающие параметры (указано подчеркнуть), которые будут поставлены во время будущего приложения. Например, с `MyFunc(x : int, y : int) : int {return x + y;}` учетом функции можно частично применить `let NewFunc = MyFunc(_, 3)`ее к новой функции. Затем можно позвонить в новую функцию `NewFunc(2)` позже с отсутствующим параметром, который возвращает значение *5.*  Для получения дополнительной информации [см.](xref:microsoft.quantum.language.expressions#partial-application)
+Вызов [функции](xref:microsoft.quantum.glossary#function) или [операции](xref:microsoft.quantum.glossary#operation) без всех необходимых входных данных. Он возвращает новый [вызываемый](xref:microsoft.quantum.glossary#callable) объект, которому требуются только отсутствующие параметры (обозначенные символом подчеркивания), которые должны быть предоставлены в будущем приложении. Например, при наличии функции `MyFunc(x : int, y : int) : int {return x + y;}` можно частично применить ее к новой функции `let NewFunc = MyFunc(_, 3)` . Затем можно вызвать новую функцию позднее с отсутствующим параметром, `NewFunc(2)` который возвращает значение *5*.  Дополнительные сведения см. в разделе [частичное применение](xref:microsoft.quantum.guide.operationsfunctions#partial-application).
 
 ## <a name="pauli-operators"></a>Операторы Паули
 
-Набор из трех 2 х 2 унитарных `Y` `Z` матриц, известных как `X`, и квантовых операций. Матрица идентификации, $I$, часто входит в набор также.  $I »начать »bmatrix» 1 \\ \\ & 0 0 & 1 «конец»bmatrix»$, $X \\ \\ »начать »bmatrix» 0 & 1 1 & 0 »конец \\ \\ »bmatrix» $, $Y »начало »bmatrix» 0 &-i i & 0 »конец »bmatrix» $, $Z »начать »bmatrix» 1 & 0 \\ \\ 0 & .1 »конец»bmatrix»   Для получения дополнительной информации [см.](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)
+Набор из трех одноединых матриц 2 x 2, которые называются `X` `Y` и `Z` тактовыми операциями. Матрица идентификаторов, $I $, часто также включается в набор.  $I = \бегин{бматрикс} 1 & 0 \\ \\ 0 & 1 \енд{бматрикс} $, $X = \бегин{бматрикс} 0 & 1 \\ \\ 1 & 0 \енд{бматрикс} $, $Y = \бегин{бматрикс} 0 &-i \\ \\ & 0 \енд{бматрикс} $, $Z = \begin{bmatrix} 1 & 0 \\ \\ 0 &-1 \end{bmatrix} $.   Дополнительные сведения см. в статье [Single-кубит Operations](xref:microsoft.quantum.concepts.qubit#single-qubit-operations).
 
-## <a name="quantum-circuit-diagram"></a>Схема квантовой цепи
+## <a name="quantum-circuit-diagram"></a>Схема тактовой цепи
 
-Метод для графического представления последовательности [операций](xref:microsoft.quantum.glossary#operation) (или [ворот)](xref:microsoft.quantum.glossary#gate) ![для простых](~/media/qpe.png)квантовых программ, например диаграммы схемы образца. Для получения дополнительной информации, см [Квантовая схемы](xref:microsoft.quantum.concepts.circuits).
+Метод для графического представления последовательности [операций](xref:microsoft.quantum.glossary#operation) (или [шлюзов](xref:microsoft.quantum.glossary#gate)) для простых тактовых программ, например ![ схемы схем ](~/media/qpe.png) . Дополнительные сведения см. в разделе [тактовые цепи](xref:microsoft.quantum.concepts.circuits).
 
-## <a name="quantum-libraries"></a>Квантовые библиотеки
+## <a name="quantum-libraries"></a>Библиотеки тактов
 
-Коллекции [операций,](xref:microsoft.quantum.glossary#operation) [функций](xref:microsoft.quantum.glossary#function) и [типов, определяемых пользователями,](xref:microsoft.quantum.glossary#user-defined-type) для создания программ. [Стандартная библиотека](xref:microsoft.quantum.libraries.standard.intro) устанавливается по умолчанию. Другие библиотеки доступны [библиотека химии,](xref:microsoft.quantum.chemistry.concepts.intro) [библиотека Numerics](xref:microsoft.quantum.numerics.intro) и [библиотека машинного обучения](xref:microsoft.quantum.machine-learning.concepts.intro).
+Коллекции [операций](xref:microsoft.quantum.glossary#operation), [функций](xref:microsoft.quantum.glossary#function) и [определяемых пользователем типов](xref:microsoft.quantum.glossary#user-defined-type) для создания программ Q #. [Стандартная библиотека](xref:microsoft.quantum.libraries.standard.intro) устанавливается по умолчанию. Доступны другие библиотеки: [Библиотека химия](xref:microsoft.quantum.chemistry.concepts.intro), [Библиотека числовых чисел](xref:microsoft.quantum.numerics.intro) и [Библиотека машинного обучения](xref:microsoft.quantum.machine-learning.concepts.intro).
 
-## <a name="quantum-state"></a>Квантовое состояние
+## <a name="quantum-state"></a>Состояние такта
 
-Точное состояние изолированной квантовой системы, из которой можно извлечь [вероятности](xref:microsoft.quantum.glossary#measurement) измерений. В квантовых вычислениях квантовый симулятор использует эту информацию для имитации реагирования кубитов на операции. Для получения дополнительной информации, [см.](xref:microsoft.quantum.concepts.qubit)
+Точное состояние изолированной тактовой системы, из которой можно извлечь вероятности [измерения](xref:microsoft.quantum.glossary#measurement) . В тактовых вычислениях имитатор тактовой частоты использует эти сведения для имитации реакции Кубитс на операции. Дополнительные сведения см. [в разделе кубит](xref:microsoft.quantum.concepts.qubit).
 
-## <a name="qubit"></a>Зубит
+## <a name="qubit"></a>кубит
 
-Основная единица квантовой информации, аналогичная *немного* в классических вычислениях. Для получения дополнительной информации, [см.](xref:microsoft.quantum.concepts.qubit)
+Базовая единица данных о такте, аналогичная *побиту* в классические вычисления. Дополнительные сведения см. [в разделе кубит](xref:microsoft.quantum.concepts.qubit).
 
-## <a name="repeat-until-success"></a>Повторите-до-успех
+## <a name="repeat-until-success"></a>Повторение до — успешное завершение
 
-Квантовый алгоритм, который, вероятно, преуспевает. После сбоя, рутина будет повторить попытку до тех пор, пока успешно (или предел был достигнут). Для получения дополнительной информации [см.](xref:microsoft.quantum.techniques.qubits#measurements)
+Алгоритм такта, probabilistically с ошибкой. При сбое подпрограммы повторит попытку до тех пор, пока не завершится успешно (или достигнут предел). Дополнительные сведения см. в разделе [повторение до успешного выполнения (RUS)](xref:microsoft.quantum.guide.controlflow#repeat-until-success-loop) .
 
 ## <a name="standard-libraries"></a>Стандартные библиотеки
 
-[Операции,](xref:microsoft.quantum.glossary#operation) [функции](xref:microsoft.quantum.glossary#function) и типы, определяемые [пользователем,](xref:microsoft.quantum.glossary#user-defined-type) которые устанавливаются вместе с компилятором во время установки. Стандартная реализация библиотеки агностична по отношению к целевым машинам. Для получения дополнительной информации [см.](xref:microsoft.quantum.libraries.standard.intro)
+[Операции](xref:microsoft.quantum.glossary#operation), [функции](xref:microsoft.quantum.glossary#function) и [определяемые пользователем типы](xref:microsoft.quantum.glossary#user-defined-type) , которые устанавливаются вместе с компилятором Q # во время установки. Реализация стандартной библиотеки не зависит от целевых компьютеров. Дополнительные сведения см. в разделе [Стандартные библиотеки](xref:microsoft.quantum.libraries.standard.intro).
 
 ## <a name="superposition"></a>Суперпозиции
 
-Концепция в квантовых вычислениях, что [кубит](xref:microsoft.quantum.glossary#qubit) представляет собой линейное сочетание двух состояний, $ кет-0 »$и $ 1 $, до тех пор, пока он [измеряется](xref:microsoft.quantum.glossary#measurement).  Для получения дополнительной информации, см [Что такое квантовые вычисления](xref:microsoft.quantum.overview.what).
+Концепция в тактовых вычислениях [кубит](xref:microsoft.quantum.glossary#qubit) представляет собой линейное сочетание двух Штатов, $ \ket{\0} $ и $ \ket{\1} $, пока оно не будет [измеряться](xref:microsoft.quantum.glossary#measurement).  Дополнительные сведения см. в разделе [Основные сведения о тактовых вычислениях](xref:microsoft.quantum.overview.understanding).
 
-## <a name="target-machine"></a>Целевая машина
+## <a name="target-machine"></a>Целевой компьютер
 
-Цель компиляции, которая понижает абстрактную квантовую программу к аппаратному или симуляции. Это обычно включает перезаписи для многих целей, включая замену ворот, кодирование для коррекции ошибок, геометрический макет и другие. Для получения дополнительной информации смотрите [квантовые симуляторы и принимающие приложения.](xref:microsoft.quantum.machines)
+Цель компиляции, которая понижает абстрактную тактовую программу для оборудования или моделирования. Обычно это включает повторную запись для многих целей, включая замену шлюза, кодирование для коррекции ошибок, геометрическую структуру и другие. Дополнительные сведения см. в разделе [тактовые имитаторы и ведущие приложения](xref:microsoft.quantum.machines).
 
 ## <a name="teleportation"></a>Телепортация
 
-Метод регенерации данных, или [квантовое состояние,](xref:microsoft.quantum.glossary#quantum-state)одного [кубита](xref:microsoft.quantum.glossary#qubit) из одного места в другое без физического перемещения кубита, используя [запутанность](xref:microsoft.quantum.glossary#entanglement) и [измерение.](xref:microsoft.quantum.glossary#measurement)  Для получения дополнительной информации, см [Квантовая схемы](xref:microsoft.quantum.concepts.circuits) и [положить все это вместе](xref:microsoft.quantum.techniques.puttingittogether).
+Метод повторного создания данных или [состояния такта](xref:microsoft.quantum.glossary#quantum-state)одного [кубит](xref:microsoft.quantum.glossary#qubit) из одного места в другое без физического перемещения кубит с использованием [замкнутые](xref:microsoft.quantum.glossary#entanglement) и [измерения](xref:microsoft.quantum.glossary#measurement).  Дополнительные сведения см. в разделе [тактовые цепи](xref:microsoft.quantum.concepts.circuits) и соответствующие Ката в [такте Катас](xref:microsoft.quantum.overview.katas).
 
 ## <a name="tuple"></a>Кортеж
 
-Коллекция значений, разделенных запятой, которая действует как единое значение. *Тип* тупл определяется типами значений, которые он содержит. В кью, tuples являются [неизменяемыми](xref:microsoft.quantum.glossary#immutable) и могут быть вложены, содержат массивы, или использоваться в массиве. Для получения дополнительной [Tuple types](xref:microsoft.quantum.language.type-model#tuple-types)информации см.
+Коллекция значений с разделителями-запятыми, которая выступает в качестве одного значения. *Тип* кортежа определяется типами содержащихся в нем значений. В Q # кортежи являются [неизменяемыми](xref:microsoft.quantum.glossary#immutable) и могут быть вложенными, содержать массивы или использоваться в массиве. Дополнительные сведения см. в разделе [типы кортежей](xref:microsoft.quantum.guide.types#tuple-types).
 
-## <a name="unitary-operator"></a>Унитарный оператор
+## <a name="unitary-operator"></a>Оператор с единым
 
-Оператор, обратная сторона которого равна его [аддукции,](xref:microsoft.quantum.glossary#adjoint)т.е. $UU «кинжал» и «ид»..
+Оператор, инверсия которого равен его [соседнему](xref:microsoft.quantum.glossary#adjoint)объекту, т. е. $uu ^ {\дагжер} = \ид $.
 
 ## <a name="user-defined-type"></a>Определяемый пользователем тип
 
-Коллекция встроенных или ранее определенных типов, которые могут быть отнесены к единой единице. Для получения дополнительной [User-defined types](xref:microsoft.quantum.language.type-model#user-defined-types)информации см.
+Коллекция встроенных или ранее определенных типов, на которые можно ссылаться как на один блок. Дополнительные сведения см. в разделе [определяемые пользователем типы](xref:microsoft.quantum.guide.types#user-defined-types).

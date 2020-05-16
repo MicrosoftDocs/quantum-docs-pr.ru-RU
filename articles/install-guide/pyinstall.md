@@ -1,19 +1,19 @@
 ---
-title: Разработка на Q# + Python
+title: 'Разработка с помощью Q # и Python'
 author: natke
 ms.author: nakersha
 ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
-ms.openlocfilehash: e1b8a0c68b3ac0c059c6de6e478593321764ff88
-ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+ms.openlocfilehash: a8c5b9c25c069f98ef8eefd6cfbc36bf3376931c
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82680146"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426363"
 ---
-# <a name="develop-with-q--python"></a>Разработка на Q# + Python
+# <a name="develop-with-q-and-python"></a>Разработка с помощью Q # и Python
 
 Установите КДК, чтобы разрабатывать ведущие программы Python для вызова операций Q #.
 
@@ -83,6 +83,6 @@ ms.locfileid: "82680146"
 > [!NOTE]
 > * Вы также можете использовать записные книжки Python Jupyter для написания классической программы Python и вызова операций Q # из ячеек. Код Python — это просто обычная программа Python.
 
-## <a name="whats-next"></a>Что дальше?
+## <a name="next-steps"></a>Следующие шаги
 
-После установки Quantum Development Kit в предпочитаемой среде вы можете написать и запустить [первую квантовую программу](xref:microsoft.quantum.write-program).
+После установки Quantum Development Kit в предпочитаемой среде вы можете написать и запустить [первую квантовую программу](xref:microsoft.quantum.quickstarts.qrng).
