@@ -1,10 +1,10 @@
 - name: Обзор
   href: index.md
-- name: Квантовый симулятор
+- name: Симулятор полного состояния
   href: full-state-simulator.md
 - name: Средство оценки ресурсов
   href: resources-estimator.md
-- name: Симулятор трассировки квантового компьютера
+- name: Симулятор трассировки
   topicHref: qc-trace-simulator/index.md
   href: qc-trace-simulator/toc.yml
 - name: Симулятор Тоффоли

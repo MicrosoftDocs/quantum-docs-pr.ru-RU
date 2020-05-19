@@ -9,35 +9,33 @@ metadata:
   ms.collection: collection
   author: cjgronlund
   ms.author: cgronlun
-  ms.date: 10/21/2019
-  ms.openlocfilehash: e21b191689c228fa3e7c0590ee2f79f625b3960d
-  ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
+  ms.date: 5/10/2020
+  ms.openlocfilehash: 7c0fdf596c3409f0e1db7773b079a258d14a7d9c
+  ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/13/2020
-  ms.locfileid: "80320827"
+  ms.lasthandoff: 05/15/2020
+  ms.locfileid: "83426894"
 landingContent:
 - title: Квантовые вычисления
   linkLists:
   - linkListType: learn
     links:
-    - text: Что такое квантовые вычисления?
-      url: overview/what-is-quantum-computing.md
-    - text: Возможности квантового компьютера
-      url: overview/quantum-computers.md
-    - text: Задачи изучения принципов квантовых вычислений
-      url: overview/why-learn-quantum-computing.md
+    - text: Общие сведения о квантовых вычислениях
+      url: overview/understanding-quantum-computing.md
+    - text: Квантовые компьютеры и квантовые симуляторы
+      url: overview/quantum-computers-and-simulators.md
     - text: Что такое Q# и QDK?
-      url: overview/what-is-qsharp.md
-    - text: Как получить дополнительную информацию?
-      url: overview/how-to-learn-quantum-computing.md
+      url: overview/what-is-qsharp-and-qdk.md
+    - text: Линейная алгебра для квантовых вычислений
+      url: overview/algebra-for-quantum-computing.md
   - linkListType: concept
     links:
     - text: Концепции квантовых вычислений
       url: concepts/index.md
-- title: Скачать Quantum Development Kit
+- title: Начало работы с пакетом средств разработки Quantum
   linkLists:
-  - linkListType: overview
+  - linkListType: get-started
     links:
     - text: Quantum Development Kit
       url: welcome.md
@@ -49,15 +47,13 @@ landingContent:
       url: install-guide/update.md
 - title: Язык программирования Q#
   linkLists:
-  - linkListType: overview
+  - linkListType: how-to-guide
     links:
-    - text: Общие сведения о языке Q#
-      url: language/index.md
-    - text: Методики разработки с помощью Q#
-      url: techniques/index.md
-    - text: Квантовые симуляторы и основные приложения
+    - text: Руководство пользователя Q#
+      url: user-guide/index.md
+    - text: Квантовые симуляторы и ведущие приложения
       url: machines/index.md
-  - linkListType: quickstart
+  - linkListType: tutorial
     links:
     - text: Создание квантового генератора случайных чисел
       url: quickstarts/qrng.md
