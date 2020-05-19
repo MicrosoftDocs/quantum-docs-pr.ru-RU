@@ -1,0 +1,12 @@
+- name: 'Структура файла в Q#'
+  href: file-structure.md
+- name: Операции и функции
+  href: operations-functions.md
+- name: Переменные
+  href: variables.md
+- name: Работа с кубитами
+  href: working-with-qubits.md
+- name: Поток управления
+  href: control-flow.md
+- name: Тестирование и отладка
+  href: testing-debugging.md

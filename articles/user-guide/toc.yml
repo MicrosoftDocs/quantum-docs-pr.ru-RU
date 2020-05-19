@@ -1,0 +1,12 @@
+- name: Обзор и содержание
+  href: index.md
+- name: 'Основные сведения о Q#'
+  href: basics.md
+- name: 'Язык Q#'
+  href: language/toc.yml
+- name: 'Использование Q#'
+  href: using-qsharp/toc.yml
+- name: Симуляторы и средства оценки ресурсов
+  href: ../machines/toc.yml
+- name: Краткий справочник
+  href: quickref/toc.yml

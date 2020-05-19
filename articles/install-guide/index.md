@@ -1,34 +1,38 @@
 ---
-title: Сведения об установке пакета средств разработки Microsoft Quantum (QDK)
-description: Как установить Microsoft Quantum Development Kit для сред C#, Python и Jupyter Notebook
+title: Установка пакета средств разработки Microsoft Quantum (QDK)
+description: Узнайте, как установить комплект SDK Microsoft Quantum (QDK) в разных средах.
 author: natke
 ms.author: nakersha
-ms.date: 9/30/2019
+ms.date: 5/8/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install
-ms.openlocfilehash: bca700660094b91f1c0dfa03f9bce1336073ca51
-ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+ms.openlocfilehash: 2041b90ba021b7640615d73c35841cc21f025ac0
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82680194"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426470"
 ---
-# <a name="install-the-microsoft-quantum-development-kit-qdk"></a><span data-ttu-id="32d28-103">Установка пакета средств разработки Microsoft Quantum (QDK)</span><span class="sxs-lookup"><span data-stu-id="32d28-103">Install the Microsoft Quantum Development Kit (QDK)</span></span>
+# <a name="install-the-microsoft-quantum-development-kit-qdk"></a><span data-ttu-id="e6cad-103">Установка пакета средств разработки Microsoft Quantum (QDK)</span><span class="sxs-lookup"><span data-stu-id="e6cad-103">Install the Microsoft Quantum Development Kit (QDK)</span></span>
 
-<span data-ttu-id="32d28-104">Узнайте, как установить пакет средств разработки Microsoft Quantum (QDK), чтобы приступить к работе с квантовым программированием.</span><span class="sxs-lookup"><span data-stu-id="32d28-104">Learn how to install the Microsoft Quantum Development Kit (QDK), so that you can get started with quantum programming.</span></span> <span data-ttu-id="32d28-105">QDK состоит из следующих компонентов:</span><span class="sxs-lookup"><span data-stu-id="32d28-105">The QDK consists of:</span></span>
+<span data-ttu-id="e6cad-104">Узнайте, как установить пакет средств разработки Microsoft Quantum (QDK), чтобы приступить к работе с квантовым программированием.</span><span class="sxs-lookup"><span data-stu-id="e6cad-104">Learn how to install the Microsoft Quantum Development Kit (QDK), so that you can get started with quantum programming.</span></span> <span data-ttu-id="e6cad-105">QDK состоит из следующих компонентов:</span><span class="sxs-lookup"><span data-stu-id="e6cad-105">The QDK consists of:</span></span>
 
-- <span data-ttu-id="32d28-106">язык программирования Q#;</span><span class="sxs-lookup"><span data-stu-id="32d28-106">the Q# programming language</span></span>
-- <span data-ttu-id="32d28-107">набор библиотек, абстрагирующих сложные функции в Q#;</span><span class="sxs-lookup"><span data-stu-id="32d28-107">a set of libraries that abstract complex functionality in Q#</span></span>
-- <span data-ttu-id="32d28-108">API-интерфейсы для Python и языков .NET (C#, F# и VB.NET) для запуска квантовых программ, написанных на Q#</span><span class="sxs-lookup"><span data-stu-id="32d28-108">APIs for Python and .NET languages (C#, F#, and VB.NET) for running quantum programs written in Q#</span></span>
-- <span data-ttu-id="32d28-109">средства для упрощения разработки.</span><span class="sxs-lookup"><span data-stu-id="32d28-109">tools to facilitate your development</span></span>
+- <span data-ttu-id="e6cad-106">Язык программирования Q#</span><span class="sxs-lookup"><span data-stu-id="e6cad-106">The Q# programming language</span></span>
+- <span data-ttu-id="e6cad-107">Набор библиотек, абстрагирующих сложные функции в Q#</span><span class="sxs-lookup"><span data-stu-id="e6cad-107">A set of libraries that abstract complex functionality in Q#</span></span>
+- <span data-ttu-id="e6cad-108">API-интерфейсы для Python и языков .NET (C#, F# и VB.NET) для запуска квантовых программ, написанных на Q#</span><span class="sxs-lookup"><span data-stu-id="e6cad-108">APIs for Python and .NET languages (C#, F#, and VB.NET) for running quantum programs written in Q#</span></span>
+- <span data-ttu-id="e6cad-109">Средства для упрощения разработки</span><span class="sxs-lookup"><span data-stu-id="e6cad-109">Tools to facilitate your development</span></span>
 
-<span data-ttu-id="32d28-110">Программы Q# часто связаны с основной программой, написанной на языке .NET (обычно C#) или Python.</span><span class="sxs-lookup"><span data-stu-id="32d28-110">Q# programs are often paired with a host program written in a .NET language (typically C#) or Python.</span></span> <span data-ttu-id="32d28-111">Это позволяет вызывать квантовые операции из классической программы.</span><span class="sxs-lookup"><span data-stu-id="32d28-111">This allows us to call quantum operations from inside a classical program.</span></span>
-<span data-ttu-id="32d28-112">Кроме того, QDK предоставляет поддержку Q# для Jupyter Notebook с ядром IQ# Jupyter.</span><span class="sxs-lookup"><span data-stu-id="32d28-112">In addition, the QDK provides Q# support for Jupyter Notebooks with the IQ# Jupyter kernel.</span></span>
+<span data-ttu-id="e6cad-110">Программы Q# можно запускать как автономные приложения с помощью Visual Studio Code или Visual Studio, а также через Jupyter Notebook с ядром Jupyter IQ#.</span><span class="sxs-lookup"><span data-stu-id="e6cad-110">Q# programs can run as standalone applications using Visual Studio Code or Visual Studio, or through Jupyter Notebooks with the IQ# Jupyter kernel.</span></span>
 
-<span data-ttu-id="32d28-113">QDK доступен для нескольких сред разработки.</span><span class="sxs-lookup"><span data-stu-id="32d28-113">The QDK is available for multiple development environments.</span></span> <span data-ttu-id="32d28-114">Выберите предпочитаемую настройку из следующих разделов:</span><span class="sxs-lookup"><span data-stu-id="32d28-114">Select your preferred setup from the sections below:</span></span>
+<span data-ttu-id="e6cad-111">Их также можно объединять с основным приложением на языке .NET (чаще всего это C#) или Python, что позволяет вызывать квантовые операции из классической программы.</span><span class="sxs-lookup"><span data-stu-id="e6cad-111">They can also be paired with a host program written in a .NET language (typically C#) or Python, enabling you to call quantum operations from inside a classical program.</span></span>
 
-- <span data-ttu-id="32d28-115">[Приложение командной строки Q#.](xref:microsoft.quantum.install.standalone) Выберите этот вариант, чтобы работать с Q# из командной строки.</span><span class="sxs-lookup"><span data-stu-id="32d28-115">[Q# command line application:](xref:microsoft.quantum.install.standalone) choose this approach if you want to work with Q# from the command line.</span></span> <span data-ttu-id="32d28-116">Для этого не требуется драйвер или основная программа, включая приведенные ниже варианты.</span><span class="sxs-lookup"><span data-stu-id="32d28-116">This does not require a driver or a host program like the below options.</span></span>
-- <span data-ttu-id="32d28-117">[Установка Q# для Jupyter Notebook:](xref:microsoft.quantum.install.jupyter) выберите эту среду для выполнения кода Q# в ячейках с внедренным текстом или создайте интерактивные учебники по созданию квантовых вычислений.</span><span class="sxs-lookup"><span data-stu-id="32d28-117">[Install Q# for Jupyter Notebooks:](xref:microsoft.quantum.install.jupyter) choose this environment to execute Q# code in cells with embedded text or create quantum computing interactive tutorials.</span></span> 
-- <span data-ttu-id="32d28-118">[Разработка с помощью Q# и Python.](xref:microsoft.quantum.install.python) Выберите этот вариант, чтобы совместно использовать Python и Q# для создания основной программы Python, которая вызывает операции Q#.</span><span class="sxs-lookup"><span data-stu-id="32d28-118">[Develop with Q# and Python:](xref:microsoft.quantum.install.python) if you want to combine Python and Q# to create a Python host program that calls Q# operations.</span></span>
-- <span data-ttu-id="32d28-119">[Разработка с помощью Q# и C# или F#.](xref:microsoft.quantum.install.cs) Выберите этот вариант, чтобы совместно использовать C# или F# и Q# для создания основной программы C#, которая вызывает операции Q#.</span><span class="sxs-lookup"><span data-stu-id="32d28-119">[Develop with Q# and C# or F#:](xref:microsoft.quantum.install.cs) if you want to combine C# or F# and Q# to create a .NET host program that calls Q# operations.</span></span>
+<span data-ttu-id="e6cad-112">QDK доступен для нескольких сред разработки.</span><span class="sxs-lookup"><span data-stu-id="e6cad-112">The QDK is available for multiple development environments.</span></span> <span data-ttu-id="e6cad-113">Вы можете выбрать любой из следующих вариантов.</span><span class="sxs-lookup"><span data-stu-id="e6cad-113">Select your preferred setup from:</span></span>
+
+<span data-ttu-id="e6cad-114">[**Разработка с помощью приложений командной строки Q#.** ](xref:microsoft.quantum.install.standalone) Этот вариант позволяет работать с Q# из командной строки.</span><span class="sxs-lookup"><span data-stu-id="e6cad-114">[**Develop with Q# command line applications**](xref:microsoft.quantum.install.standalone) - Choose this approach to work with Q# from the command line.</span></span> <span data-ttu-id="e6cad-115">Для этого не требуется драйвер или основная программа, включая приведенные ниже варианты.</span><span class="sxs-lookup"><span data-stu-id="e6cad-115">This does not require a driver or a host program like the below options.</span></span>
+
+<span data-ttu-id="e6cad-116">[**Разработка с помощью Jupyter Notebook для Q#.** ](xref:microsoft.quantum.install.jupyter) В этой среде можно выполнять код Q# в ячейках с внедренным текстом или создать интерактивные руководства по созданию квантовых вычислений.</span><span class="sxs-lookup"><span data-stu-id="e6cad-116">[**Develop with Q# Jupyter Notebooks**](xref:microsoft.quantum.install.jupyter) - Select this environment to run Q# code in cells with embedded text or create quantum computing interactive tutorials.</span></span> 
+
+<span data-ttu-id="e6cad-117">[**Разработка с помощью Q# и Python.** ](xref:microsoft.quantum.install.python) Этот вариант позволяет совместно использовать Q# и Python для создания основной программы Python, которая вызывает операции Q#.</span><span class="sxs-lookup"><span data-stu-id="e6cad-117">[**Develop with Q# and Python**](xref:microsoft.quantum.install.python) - Enables you to combine Python and Q# to create a Python host program that calls Q# operations.</span></span>
+
+<span data-ttu-id="e6cad-118">[**Разработка с помощью Q# и .NET.** ](xref:microsoft.quantum.install.cs) Этот вариант позволяет совместно использовать Q# и C#, F# или VB.NET для создания основной программы .NET, которая вызывает операции Q#.</span><span class="sxs-lookup"><span data-stu-id="e6cad-118">[**Develop with Q# and .NET**](xref:microsoft.quantum.install.cs) - Combine C#, F#, or VB.NET with Q# to create a .NET host program that calls Q# operations.</span></span>
