@@ -3,7 +3,7 @@ items:
     href: index.md
   - name: 'Приложения командной строки Q#'
     href: standalone.md
-  - name: 'Q# + Записные книжки Jupyter'
+  - name: 'Записные книжки Jupyter Notebook для Q#'
     href: qjupyter.md
   - name: 'Использование Q# с другими языками'
     items:
