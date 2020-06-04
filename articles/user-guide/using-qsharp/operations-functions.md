@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.operationsfunctions
-ms.openlocfilehash: bc9695b85b68807801225ccbc903a4622b450768
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 9e924b973c4f22a59dd862df3f4f0d70278a1b4e
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83431076"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327804"
 ---
 # <a name="operations-and-functions-in-q"></a>Операции и функции в Q #
 
@@ -426,7 +426,7 @@ function Square(x : Double) : (Double) {
 }
 ```
 
-or 
+или 
 
 ```qsharp
 function DotProduct(a : Double[], b : Double[]) : Double {
@@ -670,5 +670,6 @@ function SquareOperation(op : (Qubit => Unit)) : (Qubit => Unit) {
 - При выполнении на фактическом устройстве-такте пространство стека может быть ограничено, так что глубокая рекурсия может привести к ошибке времени выполнения.
   В частности, компилятор Q # и среда выполнения не выявляет и не оптимизируют заключительную рекурсию.
 
-## <a name="whats-next"></a>Дальнейшая работа
+## <a name="next-steps"></a>Дальнейшие действия
+
 Сведения о [переменных](xref:microsoft.quantum.guide.variables) в Q #.

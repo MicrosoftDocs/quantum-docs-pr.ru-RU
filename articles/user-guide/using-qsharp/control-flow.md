@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.controlflow
-ms.openlocfilehash: c534e016fcb8b50e66c11ca29c253ba0512acc6e
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 1f1b641563fe35879abeee32b4f0aeeb7001b1a0
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430957"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84326546"
 ---
 # <a name="control-flow-in-q"></a>Поток управления в Q #
 
@@ -44,7 +44,7 @@ ms.locfileid: "83430957"
 Обратите внимание, что любой блок выполняется в своей собственной области.
 Привязки, сделанные внутри `if` `elif` блока, или, `else` не видны после завершения.
 
-Например, примененная к объекту директива
+Например,
 
 ```qsharp
 if (result == One) {
@@ -54,7 +54,7 @@ if (result == One) {
 } 
 // n is not bound
 ```
-or
+или
 ```qsharp
 if (i == 1) {
     X(target);
@@ -174,15 +174,15 @@ while (index < Length(arr) && item < 0) {
 В операции отсутствует максимальное число инструкций Return.
 Компилятор может выдать предупреждение, если операторы следуют за оператором Return в блоке.
 
-Например, примененная к объекту директива
+Например,
 ```qsharp
 return 1;
 ```
-or
+или
 ```qsharp
 return ();
 ```
-or
+или
 ```qsharp
 return (results, qubits);
 ```
@@ -196,7 +196,7 @@ return (results, qubits);
 Количество инструкций Fail в операции не ограничено.
 Компилятор может выдать предупреждение, если операторы следуют за оператором Fail в блоке.
 
-Например, примененная к объекту директива
+Например,
 ```qsharp
 fail $"Impossible state reached";
 ```
@@ -329,5 +329,6 @@ operation PrepareStateUsingRUS(target : Qubit) : Unit {
 Дополнительные сведения об операциях и см. в разделе [тестирование и отладка](xref:microsoft.quantum.guide.testingdebugging) [`Assert`](xref:microsoft.quantum.intrinsic.assert) [`AssertProb`](xref:microsoft.quantum.intrinsic.assertprob) .
 
 
-## <a name="whats-next"></a>Дальнейшая работа
+## <a name="next-steps"></a>Дальнейшие действия
+
 Сведения о [тестировании и отладке](xref:microsoft.quantum.guide.testingdebugging) в Q #.

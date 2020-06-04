@@ -9,19 +9,19 @@ operations:
 - uid: microsoft.quantum.measurement.measurewithscratch
   summary: Измеряет заданный оператор Паули, используя явное значение "кубит" для выполнения измерения.
 - uid: microsoft.quantum.measurement.mresetx
-  summary: Измеряет один кубит в координате X и сбрасывает его в стандартное состояние "| 0 〉" после измерения.
+  summary: Измеряет один кубит в базе X и сбрасывает его в фиксированное начальное состояние после измерения.
 - uid: microsoft.quantum.measurement.mresety
-  summary: Измеряет один кубит в базе Y и сбрасывает его в стандартное состояние "| 0 〉" после измерения.
+  summary: Измеряет один кубит в базе Y и сбрасывает его в фиксированное начальное состояние после измерения.
 - uid: microsoft.quantum.measurement.mresetz
-  summary: Измеряет один кубит в `Z` базе и сбрасывает его в стандартное состояние "| 0 〉" после измерения.
+  summary: Измеряет один кубит в Z-координате и сбрасывает его в фиксированное начальное состояние после измерения.
 - uid: microsoft.quantum.measurement.multim
   summary: Измеряет каждый кубит в заданном массиве в стандартном уровне.
 - uid: microsoft.quantum.measurement.settobasisstate
   summary: Задает кубит для заданного вычислительного состояния, измеряя кубит и применяя бит отражения при необходимости.
 metadata:
-  ms.openlocfilehash: 8e0910bf53734ffe65aa12b06321ec9b3403133f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 894c0bb7f0b57e9fe04837b89cd57345745df6c5
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673146"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84326631"

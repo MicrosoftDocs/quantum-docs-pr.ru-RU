@@ -20,7 +20,7 @@ functions:
 - uid: microsoft.quantum.arrays.filtered
   summary: При наличии массива и предиката, определенного для элементов массива, возвращает массив, состоящий из элементов, которые соответствуют предикату.
 - uid: microsoft.quantum.arrays.fold
-  summary: Выполняет итерацию функции `f` через массив `array`, возвращая `f(f(f(initialState, array[0]), array[1]), ...)`.
+  summary: Выполняет итерацию функции `f` через массив `array` , возвращая `f(f(f(initialState, array[0]), array[1]), ...)` .
 - uid: microsoft.quantum.arrays.head
   summary: Возвращает первый элемент массива.
 - uid: microsoft.quantum.arrays.indexof
@@ -29,6 +29,8 @@ functions:
   summary: При наличии массива возвращает диапазон по индексам этого массива, который подходит для использования в цикле for.
 - uid: microsoft.quantum.arrays.isempty
   summary: Возвращает значение true только в том случае, если массив пуст.
+- uid: microsoft.quantum.arrays.ispermutation
+  summary: Выводит значение true только в том случае, если данный массив представляет перестановку.
 - uid: microsoft.quantum.arrays.lookupfunction
   summary: При наличии массива возвращает функцию, которая возвращает элементы этого массива.
 - uid: microsoft.quantum.arrays.mapped
@@ -69,9 +71,9 @@ operations:
 - uid: microsoft.quantum.arrays.foreach
   summary: При наличии массива и операции, определенной для элементов массива, возвращает новый массив, состоящий из изображений исходного массива в операции.
 metadata:
-  ms.openlocfilehash: a9088a037953f62ab7193ea525a6e71d43fe2fb2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 92eb956a1387a9765354f45e27eb084c6d73f51b
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673393"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84326716"

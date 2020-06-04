@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.filestructure
-ms.openlocfilehash: cbee92c6d7e765237a7a42532dd7012b51421708
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: b8c24dae6cc8d8f37ad4f1f74017c05cabe3a4b4
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430974"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327464"
 ---
 # <a name="q-file-structure"></a>Q # файл структура
 
@@ -152,5 +152,6 @@ operation ApplyTwice<'T>(op : ('T => Unit), target : 'T) : Unit {
 - **См. также**: список полных имен, указывающих связанные функции, операции или определяемые пользователем типы.
 - **Ссылки**: список ссылок и ссылок для задокументированного элемента.
 
-## <a name="whats-next"></a>Дальнейшая работа
+## <a name="next-steps"></a>Дальнейшие действия
+
 Сведения об [операциях и функциях](xref:microsoft.quantum.guide.operationsfunctions) в Q #.

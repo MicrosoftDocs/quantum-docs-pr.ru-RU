@@ -6,12 +6,12 @@ ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.glossary
-ms.openlocfilehash: cbc473eb14d8afd255a7072475dc054e18b98e3e
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 042e4e27ef4e42cfc0c24fbb0ae2232cf1bbfe36
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426706"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327617"
 ---
 # <a name="quantum-computing-glossary"></a>Глоссарий по тактовым вычислениям
 
@@ -55,7 +55,7 @@ ms.locfileid: "83426706"
 
 Вектор, направление которого не изменилось заданным преобразованием и величина которого изменяется коэффициентом, соответствующим [еиженвалуеу](xref:microsoft.quantum.glossary#eigenvalue)вектора. При наличии квадратной матрицы $M $ и еиженвалуе $c $, затем $Mv = ОПС $, где $v $ является еиженвектор матрицы и может быть комплексным числом любого аргумента. Дополнительные сведения см. в разделе [Расширенные понятия матрицы](xref:microsoft.quantum.concepts.matrix-advanced).
 
-## <a name="entanglement"></a>Замкнутые
+## <a name="entanglement"></a>Запутанность
 
 Частицы тактов, такие как [Кубитс](xref:microsoft.quantum.glossary#qubit), могут быть подключены или *запутанными* таким образом, что их нельзя описать независимо друг от друга. Результаты измерений сопоставлены, даже если они разделены бесконечно далеко. Замкнутые важно для [измерения](xref:microsoft.quantum.glossary#measurement) [состояния](xref:microsoft.quantum.glossary#quantum-state) кубит.  Дополнительные сведения см. в разделе [Расширенные понятия матрицы](xref:microsoft.quantum.concepts.matrix-advanced).
 
@@ -67,7 +67,7 @@ ms.locfileid: "83426706"
 
 Изменение [состояния такта](xref:microsoft.quantum.glossary#quantum-state) со временем. Дополнительные сведения см. в разделе [экспонента матрицы](xref:microsoft.quantum.concepts.matrix-advanced#matrix-exponentials).
 
-## <a name="function"></a>Компонент
+## <a name="function"></a>Функция
 Тип подпрограммы на языке Q #, который является чисто классическим (не в такте). Хотя функции используются в алгоритмах такта, они не могут действовать в [операциях](xref:microsoft.quantum.glossary#operation) [Кубитс](xref:microsoft.quantum.glossary#qubit) или Call. Дополнительные сведения см. в разделе [операции и функции](xref:microsoft.quantum.guide.operationsfunctions).
 
 ## <a name="gate"></a>Frame
@@ -106,7 +106,7 @@ ms.locfileid: "83426706"
 
 Выполнение операции над тактом. Обычно это применяет единую матрицу к текущему вектору состояния такта.
 
-## <a name="oracle"></a>Oracle;
+## <a name="oracle"></a>Oracle
 
 Подпрограммы, которая предоставляет зависящую от данных информацию в алгоритме такта во время выполнения. Как правило, целью является [предоставление части выходных](xref:microsoft.quantum.glossary#superposition) данных, соответствующих входным данным, находящимся в части. Дополнительные сведения см. в разделе [Oracle](xref:microsoft.quantum.libraries.data-structures#oracles).
 
@@ -120,7 +120,11 @@ ms.locfileid: "83426706"
 
 ## <a name="quantum-circuit-diagram"></a>Схема тактовой цепи
 
-Метод для графического представления последовательности [операций](xref:microsoft.quantum.glossary#operation) (или [шлюзов](xref:microsoft.quantum.glossary#gate)) для простых тактовых программ, например ![ схемы схем ](~/media/qpe.png) . Дополнительные сведения см. в разделе [тактовые цепи](xref:microsoft.quantum.concepts.circuits).
+Метод для графического представления последовательности [операций](xref:microsoft.quantum.glossary#operation) (или [шлюзов](xref:microsoft.quantum.glossary#gate)) для простых тактовых программ, например 
+
+![Образец схемы цепи](~/media/qpe.png). 
+
+Дополнительные сведения см. в разделе [тактовые цепи](xref:microsoft.quantum.concepts.circuits).
 
 ## <a name="quantum-libraries"></a>Библиотеки тактов
 
@@ -144,7 +148,7 @@ ms.locfileid: "83426706"
 
 ## <a name="superposition"></a>Суперпозиции
 
-Концепция в тактовых вычислениях [кубит](xref:microsoft.quantum.glossary#qubit) представляет собой линейное сочетание двух Штатов, $ \ket{\0} $ и $ \ket{\1} $, пока оно не будет [измеряться](xref:microsoft.quantum.glossary#measurement).  Дополнительные сведения см. в разделе [Основные сведения о тактовых вычислениях](xref:microsoft.quantum.overview.understanding).
+Концепция в тактовых вычислениях [кубит](xref:microsoft.quantum.glossary#qubit) представляет собой линейное сочетание двух Штатов, $ \кет {0} $ и $ \кет {1} $, пока оно не будет [измеряться](xref:microsoft.quantum.glossary#measurement).  Дополнительные сведения см. в разделе [Основные сведения о тактовых вычислениях](xref:microsoft.quantum.overview.understanding).
 
 ## <a name="target-machine"></a>Целевой компьютер
 

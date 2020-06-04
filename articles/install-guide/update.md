@@ -7,12 +7,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.update
-ms.openlocfilehash: 53f72f1d49ae32a5a8572a1cf68a66a1d9b45e4a
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 3245f587493ce12cfec15c8f932fd092d85f688e
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426909"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327580"
 ---
 # <a name="update-the-microsoft-quantum-development-kit-qdk"></a>Обновление Microsoft Quantum Development Kit (КДК)
 
@@ -21,8 +21,8 @@ ms.locfileid: "83426909"
 В этой статье предполагается, что у вас уже установлен КДК. Если вы устанавливаете в первый раз, обратитесь к [руководству по установке](xref:microsoft.quantum.install).
 
 Мы рекомендуем поддерживать последние версии КДК в актуальном состоянии. Следуйте этому руководству по обновлению, чтобы выполнить обновление до последней версии КДК. Процесс состоит из двух частей:
-1. Обновление существующих файлов Q # и проектов для согласования кода с любым обновленным синтаксисом
-2. Обновление самого КДК для выбранной среды разработки 
+1. Обновление существующих файлов Q # и проектов для согласования кода с любым обновленным синтаксисом.
+2. Обновление самого КДК для выбранной среды разработки.
 
 ## <a name="updating-q-projects"></a>Обновление проектов Q # 
 
@@ -39,8 +39,8 @@ ms.locfileid: "83426909"
 ### <a name="update-q-projects-in-visual-studio"></a>Обновление проектов Q # в Visual Studio
  
 1. Обновление до последней версии Visual Studio 2019. инструкции см. [здесь](https://docs.microsoft.com/visualstudio/install/update-visual-studio?view=vs-2019) .
-2. Открытие решения в Visual Studio
-3. В меню выберите **Сборка**  ->  **Очистить решение** .
+2. Откройте решение в Visual Studio.
+3. В меню выберите **Сборка**  ->  **Очистить решение**.
 4. В каждом из CSPROJ-файлов обновите целевую платформу до `netcoreapp3.1` (или, `netstandard2.1` если это проект библиотеки).
     То есть измените строки формы:
 
@@ -49,16 +49,30 @@ ms.locfileid: "83426909"
     ```
 
     Дополнительные сведения об указании целевых платформ можно найти [здесь](https://docs.microsoft.com/dotnet/standard/frameworks#how-to-specify-target-frameworks).
-5. Сохранение и закрытие всех файлов в решении
-6. Выберите **инструменты**  ->  **Командная строка**  ->  **Командная строка разработчика**
-7. Для каждого проекта в решении выполните следующую команду:
 
-    ```dotnetcli
-    dotnet add [project_name].csproj package Microsoft.Quantum.Development.Kit
+5. В каждом из файлов CSPROJ задайте для пакета SDK значение `Microsoft.Quantum.Sdk` , как указано в строке ниже. Обратите внимание, что номер версии должен быть последним доступным, и его можно определить, просмотрев [заметки о выпуске](https://docs.microsoft.com/quantum/relnotes/).
+
+    ```xml
+    <Project Sdk="Microsoft.Quantum.Sdk/0.11.2006.207">
     ```
 
-   Если в проектах используются любые другие пакеты Microsoft. тактов (например, Microsoft. тактов. numeric), выполните для них команду.
-8. Закройте командную строку и выберите **Сборка**сборка  ->  **решения** (не *not* выбирайте Перестроение решения).
+6. Сохраните и закройте все файлы в решении.
+
+7. Выберите **инструменты**  ->  **Командная строка**  ->  **Командная строка разработчика**. Кроме того, можно использовать консоль управления пакетами в Visual Studio.
+
+8. Для каждого проекта в решении выполните следующую команду, чтобы **Удалить** этот пакет:
+
+    ```dotnetcli
+    dotnet remove [project_name].csproj package Microsoft.Quantum.Development.Kit
+    ```
+
+   Если в проектах используются любые пакеты Microsoft. тактов или Microsoft. Azure. тактов (например, Microsoft. тактов. numeric), выполните команду **Add** , чтобы обновить используемую версию.
+
+    ```dotnetcli
+    dotnet add [project_name].csproj package [package_name]
+    ```
+
+9. Закройте командную строку и выберите **Сборка**сборка  ->  **решения** (не *not* выбирайте Перестроение решения).
 
 Теперь вы можете перейти к [обновлению расширения Visual Studio КДК](#update-visual-studio-qdk-extension).
 
@@ -66,35 +80,65 @@ ms.locfileid: "83426909"
 ### <a name="update-q-projects-in-visual-studio-code"></a>Обновление проектов Q # в Visual Studio Code
 
 1. В Visual Studio Code откройте папку, содержащую обновляемый проект.
-2. Выберите **терминал**  ->  **Новый терминал**
+2. Выберите **терминал**  ->  **Новый терминал**.
 3. Следуйте инструкциям по обновлению с помощью командной строки (непосредственно ниже).
 
 ### <a name="update-q-projects-using-the-command-line"></a>Обновление проектов Q # с помощью командной строки
 
-1. Перейдите к папке, содержащей файл проекта
+1. Перейдите к папке, содержащей основной файл проекта.
+
 2. Выполните следующую команду:
 
     ```dotnetcli
     dotnet clean [project_name].csproj
     ```
 
-3. В каждом из CSPROJ-файлов обновите целевую платформу до `netcoreapp3.1` (или, `netstandard2.1` если это проект библиотеки).
-    То есть измените строки формы:
+3. Определите текущую версию КДК. Чтобы найти его, ознакомьтесь с [заметками о выпуске](https://docs.microsoft.com/quantum/relnotes/). Версия будет иметь формат, аналогичный `0.11.2006.207` .
 
-    ```xml
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    ```
+4. В каждом из `.csproj` файлов выполните следующие действия.
 
-    Дополнительные сведения об указании целевых платформ можно найти [здесь](https://docs.microsoft.com/dotnet/standard/frameworks#how-to-specify-target-frameworks).
-4. Выполните следующую команду:
+    - Обновите целевую платформу до `netcoreapp3.1` (или, `netstandard2.1` если это проект библиотеки). То есть измените строки формы:
 
-    ```dotnetcli
-    dotnet add package Microsoft.Quantum.Development.Kit
-    ```
+        ```xml
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        ```
 
-    Если в проекте используются любые другие пакеты Microsoft. тактов (например, Microsoft. тактов. numeric), выполните для них команду.
-5. Сохраните и закройте все файлы.
-6. Повторите 1-4 для каждой зависимости проекта, а затем вернитесь к папке, содержащей основной проект, и выполните команду:
+        Дополнительные сведения об указании целевых платформ можно найти [здесь](https://docs.microsoft.com/dotnet/standard/frameworks#how-to-specify-target-frameworks).
+
+    - Замените ссылку на пакет SDK в определении проекта. Убедитесь, что номер версии соответствует значению, определенному на **шаге 3**.
+
+        ```xml
+        <Project Sdk="Microsoft.Quantum.Sdk/0.11.2006.207">
+        ```
+
+    - Удалите ссылку на пакет `Microsoft.Quantum.Development.Kit` , если он есть, который будет указан в следующей записи:
+
+        ```xml
+        <PackageReference Include="Microsoft.Quantum.Development.Kit" Version="0.10.1910.3107" />
+        ```
+
+    - Обновите версию всех пакетов Microsoft тактов до последней выпущенной версии КДК (определяется на **шаге 3**). Эти пакеты именуются со следующими шаблонами:
+
+        ```
+        Microsoft.Quantum.*
+        Microsoft.Azure.Quantum.*
+        ```
+    
+        Ссылки на пакеты имеют следующий формат:
+
+        ```xml
+        <PackageReference Include="Microsoft.Quantum.Compiler" Version="0.11.2006.207" />
+        ```
+
+    - Сохраните обновленный файл.
+
+    - Восстановите зависимости проекта, выполнив следующие действия.
+
+        ```dotnetcli
+        dotnet restore [project_name].csproj
+        ```
+
+4. Вернитесь к папке, содержащей основной проект, и выполните команду:
 
     ```dotnetcli
     dotnet build [project_name].csproj
@@ -129,7 +173,7 @@ ms.locfileid: "83426909"
     dotnet iqsharp --version
     ```
 
-    Должны выводиться следующие данные:
+    Вы должны увидеть следующий результат.
 
     ```bash
     iqsharp: 0.10.1912.501
@@ -150,7 +194,7 @@ ms.locfileid: "83426909"
     pip show qsharp
     ```
 
-    Должны выводиться следующие данные:
+    Вы должны увидеть следующий результат.
 
     ```bash
     Name: qsharp

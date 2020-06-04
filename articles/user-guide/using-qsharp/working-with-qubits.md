@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.qubits
-ms.openlocfilehash: e89b9ccfe2a0796e01eedfc99f7ce71038d85f38
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 0deb0729a88c49798f32a22a943b935d383c570b
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430940"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327549"
 ---
 # <a name="working-with-qubits"></a>Работа с кубитами
 
@@ -30,7 +30,7 @@ ms.locfileid: "83430940"
 Привязка соответствует тому же шаблону, что и `let` инструкции: один символ или кортеж символов, за которым следует знак равенства `=` и одно значение или соответствующий кортеж *инициализаторов*.
 
 Инициализаторы доступны для одного кубит, обозначенного как `Qubit()` , или массива Кубитс, `Qubit[n]` , где `n` является `Int` выражением.
-Например, примененная к объекту директива
+Например,
 
 ```qsharp
 using (qubit = Qubit()) {
@@ -59,7 +59,7 @@ using ((auxiliary, register) = (Qubit(), Qubit[5])) {
 Они часто называются «грязными» Кубитс, так как их состояние неизвестно и даже может быть запутанными с другими частями памяти компьютера-такта.
 
 Привязка соответствует тому же шаблону и правилам, что и в `using` операторе.
-Например, примененная к объекту директива
+Например,
 ```qsharp
 borrowing (qubit = Qubit()) {
     // ...
@@ -221,5 +221,6 @@ is Adj + Ctl {
 
 Рекомендуется сравнить этот код с другой функцией Canon `MultiControlledXClean` , которая достигает той же цели реализации `X` операции, управляемой операцией умножения, но и использует несколько чистых Кубитс с помощью `using` механизма. 
 
-## <a name="whats-next"></a>Дальнейшая работа
+## <a name="next-steps"></a>Дальнейшие действия
+
 Дополнительные сведения о [потоке управления](xref:microsoft.quantum.guide.controlflow) в Q #.

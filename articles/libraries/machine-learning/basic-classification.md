@@ -6,12 +6,12 @@ ms.author: v-edsanc@microsoft.com
 ms.date: 02/16/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.basics
-ms.openlocfilehash: f42e3e4492f934d7a8f03d4fec6fa0de765401d7
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: ddd889fdfabb505d7118c1eff551a6fbfa757309
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77909931"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327651"
 ---
 # <a name="basic-classification-classify-data-with-the-qdk"></a>Простая классификация: классификация данных с помощью КДК
 
@@ -19,10 +19,10 @@ ms.locfileid: "77909931"
 
 В этом пошаговом окне мы будем использовать набор данных половинной Луны, используя структуру классификатора, определенную в Q #.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 - [Microsoft Quantum Development Kit](xref:microsoft.quantum.install).
-- [Создание проекта Q#](xref:microsoft.quantum.howto.createproject)
+- Создайте проект Q # для [хост-программы Python](xref:microsoft.quantum.install.python) или [управляющей программы C#](xref:microsoft.quantum.install.cs).
 
 ## <a name="host-program"></a>Ведущее приложение
 
@@ -34,7 +34,7 @@ ms.locfileid: "77909931"
 
     ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[Вызов Python из Visual Studio Code или командной строки](#tab/tabid-python)
 
-    Чтобы запустить из Python классификатор Q #, сохраните следующий код как `host.py`. Помните, что вам также потребуется файл Q # `Training.qs`, который объясняется далее в этом руководстве.
+    Чтобы запустить из Python классификатор Q #, сохраните следующий код как `host.py` . Помните, что вам также нужен файл Q # `Training.qs` , описанный далее в этом руководстве.
 
     :::code language="python" source="~/quantum/samples/machine-learning/half-moons/host.py" range="3-42":::
 
@@ -49,7 +49,7 @@ ms.locfileid: "77909931"
 
     ### <a name="c-with-visual-studio-code-or-the-command-line"></a>[Вызов C# из Visual Studio Code или командной строки](#tab/tabid-csharp)
 
-    Чтобы запустить, что вы являетесь классификатором Q # C#из, сохраните следующий код как `Host.cs`. Помните, что вам также потребуется файл Q # `Training.qs`, который объясняется далее в этом руководстве.
+    Чтобы запустить вас в качестве классификатора Q # из C#, сохраните следующий код как `Host.cs` . Помните, что вам также нужен файл Q # `Training.qs` , описанный далее в этом руководстве.
 
     :::code language="csharp" source="~/quantum/samples/machine-learning/half-moons/Host.cs" range="4-86":::
 
@@ -63,7 +63,7 @@ ms.locfileid: "77909931"
 
     ### <a name="c-with-visual-studio-2019"></a>[Вызов C# из Visual Studio 2019](#tab/tabid-vs2019)
 
-    Чтобы запустить новую программу Q # из C# в Visual Studio, измените `Host.cs`, включив в него следующий C# код. Помните, что вам также потребуется файл Q # `Training.qs`, который объясняется далее в этом руководстве.
+    Чтобы запустить новую программу Q # из C# в Visual Studio, измените `Host.cs` для включения следующего кода c#. Помните, что вам также нужен файл Q # `Training.qs` , описанный далее в этом руководстве.
 
     :::code language="csharp" source="~/quantum/samples/machine-learning/half-moons/Host.cs" range="4-86":::
 
@@ -76,17 +76,17 @@ ms.locfileid: "77909931"
     ```
     ***
 
-## <a name="q-classifier-code"></a>Q\# код классификатора
+## <a name="q-classifier-code"></a>\#Код классификатора Q
 
 Теперь давайте посмотрим, как операции, вызываемые ведущим приложением, определяются в Q #.
-Мы сохраняем следующий код в файле с именем `Training.qs`.
+Мы сохраняем следующий код в файле с именем `Training.qs` .
 
 :::code language="qsharp" source="~/quantum/samples/machine-learning/half-moons/Training.qs" range="4-116":::
 
 Наиболее важными функциями и операциями, определенными в приведенном выше коде, являются:
 
 - `ClassifierStructure() : ControlledRotation[]`. в этой функции мы устанавливаем структуру модели канала, добавляя уровни контролируемого шлюза, который мы будем рассматривать. Этот шаг аналогичен объявлению уровней нейронов в последовательной модели глубокого обучения.
-- `TrainHalfMoonModel() : TrainWineModel() : (Double[], Double)`: Эта операция является основной частью кода и определяет обучение. Здесь мы загружаем образцы из набора данных, входящего в библиотеку, мы устанавливаем параметры Hyper и начальные параметры для обучения, а также начнем обучение, вызвав операцию `TrainSequentialClassifier`, которая включена в библиотеку. Он выводит параметры и сдвиг, определяющие классификатор.
+- `TrainHalfMoonModel() : TrainWineModel() : (Double[], Double)`: Эта операция является основной частью кода и определяет обучение. Здесь мы загружаем образцы из набора данных, входящего в библиотеку, мы устанавливаем параметры Hyper и начальные параметры для обучения и начнем обучение, вызывая операцию, `TrainSequentialClassifier` входящую в библиотеку. Он выводит параметры и сдвиг, определяющие классификатор.
 - `ValidateHalfMoonModel(parameters : Double[], bias : Double) : Int`: Эта операция определяет процесс проверки для оценки модели. Здесь мы загружаем примеры для проверки, количество измерений на выборку и допуск. Он выводит количество неправильной классификации для выбранного пакета выборки для проверки.
 
 ## <a name="next-steps"></a>Дальнейшие действия
