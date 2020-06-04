@@ -4,13 +4,13 @@ name: Microsoft.Quantum.Arithmetic
 summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен содержит функции и операции, используемые для согласованного вычисления арифметических вычислений."
 functions:
 - uid: microsoft.quantum.arithmetic.bigendianaslittleendian
-  summary: Преобразует регистр `BigEndian` кубит в регистр `LittleEndian` кубит, отменяя порядок кубит.
+  summary: Преобразует `BigEndian` регистр кубит в `LittleEndian` регистр кубит, отменяя порядок кубит.
 - uid: microsoft.quantum.arithmetic.identicalformatfactfxp
   summary: Утверждает, что все числа с фиксированной запятой в предоставленном массиве имеют одинаковые положения точек и кубит числа.
 - uid: microsoft.quantum.arithmetic.identicalpointposfactfxp
   summary: Утверждает, что все числа с фиксированной запятой в предоставленном массиве имеют одинаковые позиции точек при подсчете из наименьшего значащих битов. Т. е. количество битов минус позиции точки должно быть константой для всех чисел с фиксированной запятой в массиве.
 - uid: microsoft.quantum.arithmetic.littleendianasbigendian
-  summary: Преобразует регистр `LittleEndian` кубит в регистр `BigEndian` кубит, отменяя порядок кубит.
+  summary: Преобразует `LittleEndian` регистр кубит в `BigEndian` регистр кубит, отменяя порядок кубит.
 - uid: microsoft.quantum.arithmetic.reversedopbe
   summary: При выполнении операции, которая принимает входные данные с обратным порядком байтов, возвращает новую операцию, которая принимает прямой порядок байтов.
 - uid: microsoft.quantum.arithmetic.reversedopbea
@@ -33,19 +33,19 @@ operations:
 - uid: microsoft.quantum.arithmetic.addfxp
   summary: Добавляет два числа с фиксированной запятой, хранящихся в тактовых регистрах.
 - uid: microsoft.quantum.arithmetic.addi
-  summary: Автоматически выбирает между добавлением и без, в зависимости от размера регистра `ys`.
+  summary: Автоматически выбирает между добавлением и без, в зависимости от размера регистра `ys` .
 - uid: microsoft.quantum.arithmetic.applyleoperationonphasele
-  summary: Применяет операцию, которая <xref:microsoft.quantum.arithmetic.phaselittleendian> принимает регистрацию в качестве входных данных для целевого <xref:microsoft.quantum.arithmetic.littleendian>регистра типа.
+  summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.phaselittleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.littleendian> .
 - uid: microsoft.quantum.arithmetic.applyleoperationonphaselea
-  summary: Применяет операцию, которая <xref:microsoft.quantum.arithmetic.phaselittleendian> принимает регистрацию в качестве входных данных для целевого <xref:microsoft.quantum.arithmetic.littleendian>регистра типа.
+  summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.phaselittleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.littleendian> .
 - uid: microsoft.quantum.arithmetic.applyleoperationonphaselec
-  summary: Применяет операцию, которая <xref:microsoft.quantum.arithmetic.phaselittleendian> принимает регистрацию в качестве входных данных для целевого <xref:microsoft.quantum.arithmetic.littleendian>регистра типа.
+  summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.phaselittleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.littleendian> .
 - uid: microsoft.quantum.arithmetic.applyleoperationonphaseleca
-  summary: Применяет операцию, которая <xref:microsoft.quantum.arithmetic.phaselittleendian> принимает регистрацию в качестве входных данных для целевого <xref:microsoft.quantum.arithmetic.littleendian>регистра типа.
+  summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.phaselittleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.littleendian> .
 - uid: microsoft.quantum.arithmetic.applymajorityinplace
   summary: Применяет кубитную операцию "большинство" на месте к регистру Кубитс.
 - uid: microsoft.quantum.arithmetic.applyphaseleoperationonle
-  summary: Применяет операцию, которая <xref:microsoft.quantum.arithmetic.littleendian> принимает регистрацию в качестве входных данных для целевого <xref:microsoft.quantum.arithmetic.phaselittleendian>регистра типа.
+  summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.littleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.phaselittleendian> .
 - uid: microsoft.quantum.arithmetic.applyphaseleoperationonlea
   summary: ''
 - uid: microsoft.quantum.arithmetic.applyphaseleoperationonlec
@@ -71,34 +71,29 @@ operations:
 - uid: microsoft.quantum.arithmetic.applyxorinplace
   summary: Применяет операцию побитового исключающего XOR между классическим целым числом и целым числом, представленным регистром Кубитс.
 - uid: microsoft.quantum.arithmetic.assertallzerofxp
-  summary: Вспомогательная функция для подтверждения того, что число с фиксированной запятой такта инициализируется нулем, т. е. все Кубитс находятся в{0}состоянии $ \кет $.
+  summary: Вспомогательная функция для подтверждения того, что число с фиксированной запятой такта инициализируется нулем, т. е. все Кубитс находятся в состоянии $ \кет {0} $.
 - uid: microsoft.quantum.arithmetic.assertmostsignificantbit
   summary: Утверждает, что наиболее значимые кубит регистра кубит, представляющие целое число без знака, находятся в определенном состоянии.
 - uid: microsoft.quantum.arithmetic.assertphaselessthan
-  summary: Утверждает, что `number` кодировка в фаселиттлиндиан меньше `value`.
+  summary: Утверждает, что `number` Кодировка в фаселиттлиндиан меньше `value` .
 - uid: microsoft.quantum.arithmetic.assertprobint
   summary: Утверждает, что вероятность определенного состояния регистра такта имеет ожидаемое значение.
 - uid: microsoft.quantum.arithmetic.carry
-  summary: Реализует обратимый вентиль. `carryIn` Учитывая поразрядность `carryIn`, закодированную в кубит и два слагаемому бит, закодированные в `summand1` и `summand2`, вычисляют побитовое исключающее `summand1` XOR `summand2` , а в `summand2` кубит, а также ксоред в кубит `carryOut`.
-- uid: microsoft.quantum.arithmetic.cascadeccnot
-  summary: >-
-    Реализует каскадный шлюз ККНОТ, управляемый по соответствующим битам двух регистров кубит, который действует на следующий кубит одного из регистров.
-
-    Начиная с Кубитс в позиции 0 в обоих регистрах как элементы управления, ККНОТ применяется к кубит в позиции 1 целевого регистра, затем управляется Кубитс в позиции 1, действующей на кубит в позиции 2 в целевой регистрации, и т. д., заканчивая действием на целевом кубит в позиции `Length(nQubits)-1`.
+  summary: Реализует обратимый вентиль. Учитывая поразрядность, закодированную в кубит `carryIn` и два слагаемому бит, закодированные в `summand1` и `summand2` , вычисляют побитовое исключающее XOR `carryIn` , `summand1` а `summand2` в кубит, `summand2` а также ксоред в кубит `carryOut` .
 - uid: microsoft.quantum.arithmetic.comparegreaterthanfxp
   summary: Сравнивает два числа с фиксированной запятой, хранящихся в тактовых регистрах, и управляет отражением результата.
 - uid: microsoft.quantum.arithmetic.comparegti
-  summary: Оболочка для сравнения целых `result = x > y`чисел:.
+  summary: 'Оболочка для сравнения целых чисел: `result = x > y` .'
 - uid: microsoft.quantum.arithmetic.comparegtsi
-  summary: Оболочка для сравнения целых чисел `result = xs > ys`со знаком:.
+  summary: 'Оболочка для сравнения целых чисел со знаком: `result = xs > ys` .'
 - uid: microsoft.quantum.arithmetic.compareusingripplecarry
   summary: Эта операция проверяет, имеет ли целое число, представленное регистром Кубитс, больше другого целого числа, применяя XOR результата к выходному кубит.
 - uid: microsoft.quantum.arithmetic.computereciprocalfxp
   summary: Вычисление $1/x $ для числа с фиксированной запятой $x $.
 - uid: microsoft.quantum.arithmetic.computereciprocali
-  summary: Вычисление обратной величины 1/x для целого числа без знака x с использованием целочисленного деления. Результат, интерпретируемый как целое число, будет иметь `floor(2^(2*n-1) / x)`значение.
+  summary: Вычисление обратной величины 1/x для целого числа без знака x с использованием целочисленного деления. Результат, интерпретируемый как целое число, будет иметь значение `floor(2^(2*n-1) / x)` .
 - uid: microsoft.quantum.arithmetic.copymostsignificantbit
-  summary: Копирует наиболее значащий бит регистра `from` кубит, представляющий целое число без знака, в кубит. `target`
+  summary: Копирует наиболее значащий бит регистра кубит `from` , представляющий целое число без знака, в кубит `target` .
 - uid: microsoft.quantum.arithmetic.dividei
   summary: Делит два целочисленных целых числа.
 - uid: microsoft.quantum.arithmetic.evaluateevenpolynomialfxp
@@ -124,7 +119,7 @@ operations:
 - uid: microsoft.quantum.arithmetic.measurefxp
   summary: Измерьте число с фиксированной запятой, возвращает его значение типа Double и сбрасывает все регистры в ноль.
 - uid: microsoft.quantum.arithmetic.measureinteger
-  summary: Измеряет содержимое регистра такта и преобразует его в целое число. Измерение выполняется в соответствии со стандартной вычислительной единицей, т. е. еиженбасис `PauliZ`.
+  summary: Измеряет содержимое регистра такта и преобразует его в целое число. Измерение выполняется в соответствии со стандартной вычислительной единицей, т. е. еиженбасис `PauliZ` .
 - uid: microsoft.quantum.arithmetic.multiplyandaddbymodularinteger
   summary: Выполняет модульные целочисленные константы умножения и добавления в регистре кубит.
 - uid: microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger
@@ -134,9 +129,9 @@ operations:
 - uid: microsoft.quantum.arithmetic.multiplyfxp
   summary: Умножает два числа с фиксированной запятой в тактовые регистры.
 - uid: microsoft.quantum.arithmetic.multiplyi
-  summary: Умножьте целое `xs` число `ys` на целое и сохраните `result`результат в, который должен быть равен нулю изначально.
+  summary: Умножьте целое число `xs` на целое `ys` и сохраните результат в `result` , который должен быть равен нулю изначально.
 - uid: microsoft.quantum.arithmetic.multiplysi
-  summary: Выполните умножение `xs` целого числа `ys` со знаком на целое `result`число и сохраните результат в, который должен быть равен нулю изначально.
+  summary: Выполните умножение целого числа со `xs` знаком на целое число `ys` и сохраните результат в `result` , который должен быть равен нулю изначально.
 - uid: microsoft.quantum.arithmetic.preparefxp
   summary: Инициализируйте число с фиксированной запятой такта до классической константы.
 - uid: microsoft.quantum.arithmetic.reflectaboutinteger
@@ -147,22 +142,22 @@ operations:
   summary: >-
     Обратимое выполнение — добавление двух целых чисел.
 
-    Учитывая два $n $-разрядных целых чисел, закодированных в `xs` регистрах литтлиндиан и `ys`, и кубит, операция вычисляет сумму двух целых чисел, в `ys` которых $n $ наименьшие значащие биты результата, а бит выполнения — ксоред кубит. `carry`
+    Учитывая два $n $-разрядных целых чисел, закодированных в регистрах Литтлиндиан `xs` и `ys` , и кубит, операция вычисляет сумму двух целых чисел, в которых $n $ наименьшие значащие биты результата, `ys` а бит выполнения — ксоред кубит `carry` .
 - uid: microsoft.quantum.arithmetic.ripplecarryaddernocarryttk
   summary: Обратимое выполнение — добавление двух целых чисел без выполнения.
 - uid: microsoft.quantum.arithmetic.ripplecarryadderttk
   summary: >-
     Обратимое выполнение — добавление двух целых чисел.
 
-    Учитывая два $n $-разрядных целых чисел, закодированных в `xs` регистрах литтлиндиан и `ys`, и кубит, операция вычисляет сумму двух целых чисел, в `ys` которых $n $ наименьшие значащие биты результата, а бит выполнения — ксоред кубит. `carry`
+    Учитывая два $n $-разрядных целых чисел, закодированных в регистрах Литтлиндиан `xs` и `ys` , и кубит, операция вычисляет сумму двух целых чисел, в которых $n $ наименьшие значащие биты результата, `ys` а бит выполнения — ксоред кубит `carry` .
 - uid: microsoft.quantum.arithmetic.squarefxp
   summary: Квадраты — число с фиксированной запятой.
 - uid: microsoft.quantum.arithmetic.squarei
-  summary: Вычисляет квадрат целого числа `xs` в `result`, который должен быть равен нулю изначально.
+  summary: Вычисляет квадрат целого числа `xs` в `result` , который должен быть равен нулю изначально.
 - uid: microsoft.quantum.arithmetic.squaresi
-  summary: Квадратное целое число `xs` со знаком и `result`сохранение результата в, который должен быть равен нулю изначально.
+  summary: Квадратное целое число со знаком `xs` и сохранение результата в `result` , который должен быть равен нулю изначально.
 - uid: microsoft.quantum.arithmetic.sum
-  summary: Реализует шлюз обратимой суммы. `carryIn` Учитывая поразрядность `carryIn`, `summand1` закодированную в `summand2` кубит и два бита слагаемому, закодированные в `summand1` и `summand2`, выполняет побитовую операцию XOR и в кубит `summand2`.
+  summary: Реализует шлюз обратимой суммы. Учитывая поразрядность, закодированную в кубит `carryIn` и два бита слагаемому, закодированные в `summand1` и `summand2` , выполняет побитовую операцию XOR `carryIn` `summand1` и `summand2` в кубит `summand2` .
 newtypes:
 - uid: microsoft.quantum.arithmetic.bigendian
   summary: Регистрация, которая кодирует целое число без знака в порядке с обратным порядком байтов. Кубит с индексом `0` кодирует наибольший бит целого числа без знака.
@@ -179,9 +174,9 @@ newtypes:
 - uid: microsoft.quantum.arithmetic.signedlittleendian
   summary: Тип целого числа со знаком, хранящегося с прямым порядком байтов (см. Литтлиндиан).
 metadata:
-  ms.openlocfilehash: eda1d6d9037caecd7a2f0d91acdc0e59d34efe41
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6e43f31c738b48413ead40e16fbbfe4185b8a57d
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675492"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84326733"
