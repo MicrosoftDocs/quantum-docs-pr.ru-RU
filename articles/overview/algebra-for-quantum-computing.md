@@ -6,12 +6,12 @@ ms.author: bradben
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.algebra
-ms.openlocfilehash: 9f156a3cc092e295317061dda5e8aa29e9d5ca1e
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 4750643d16ad8af6240df42c1b93353565561429
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430855"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327600"
 ---
 # <a name="linear-algebra-for-quantum-computing"></a>Линейная алгебра для квантовых вычислений
 
@@ -67,7 +67,7 @@ $$
 
 Результатом является четырехмерная матрица, в которой каждый элемент представляет вероятность. Так, $ac$ — это вероятность коллапса обоих кубитов к состояниям 0 и 0, $ad$ — к состояниям 0 и 1 и т. д. 
 
-Как и для состояния отдельного кубита $\begin{bmatrix} a \\\\  b \end{bmatrix}$, когда должно выполняться условие $|a|^2 + |b|^2 = 1$ для представления его квантового состояния, для состояния двух кубитов $\begin{bmatrix} ac \\\\  ad \\\\  bc \\\\  bd \end{bmatrix}$ должно выполняться условие $|a|^2 + |b|^2 + |c|^2+ |d|^2 = 1$.
+Как и для состояния отдельного кубита $\begin{bmatrix} a \\\\  b \end{bmatrix}$, когда должно выполняться условие $|a|^2 + |b|^2 = 1$ для представления его квантового состояния, для состояния двух кубитов $\begin{bmatrix} ac \\\\  ad \\\\  bc \\\\  bd \end{bmatrix}$ должно выполняться условие $|ac|^2 + |ad|^2 + |bc|^2+ |bd|^2 = 1$.
 
 ## <a name="summary"></a>Сводка
 
@@ -75,5 +75,4 @@ $$
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-> [!div class="nextstepaction"]
-> [Установка QDK](xref:microsoft.quantum.install)
+[Установка QDK](xref:microsoft.quantum.install)

@@ -6,12 +6,12 @@ ms.author: chgranad@microsoft.com
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
-ms.openlocfilehash: 9562e1937a2cac49d682cc0524d8fb29e276d95c
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 9e4c53b4d5159cf07f0654603c1d477ad09eb7c6
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426809"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327413"
 ---
 # <a name="tutorial-implement-grovers-search-algorithm-in-q"></a>Руководство по Реализация поиска по алгоритму Гровера на Q\#
 
@@ -39,7 +39,7 @@ ms.locfileid: "83426809"
 
 ## <a name="write-the-code"></a>Написание кода
 
-1. Используя Quantum Development Kit, [создайте новый проект Q#](xref:microsoft.quantum.howto.createproject) с именем `Grover` в любой удобной среде разработки.
+1. Используя пакет средств разработки Quantum, [создайте новый проект Q# для приложения командной строки](xref:microsoft.quantum.install.standalone). Присвойте проекту имя `Grover`.
 
 1. В файл `Program.qs` этого проекта добавьте следующий код:
 

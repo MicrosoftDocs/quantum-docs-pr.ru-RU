@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 10/06/2019
 uid: microsoft.quantum.circuit-tutorial
 ms.topic: tutorial
-ms.openlocfilehash: f0b87936c9baf07555e76f295da58c0a6b9ecd17
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+ms.openlocfilehash: 05d3292e1c6e3c8c1163c460f2aaa51c591aa1d5
+ms.sourcegitcommit: 8d9d392bf5e114ae223e6f689ba80d25866ff586
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84328601"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84422246"
 ---
 # <a name="tutorial-write-and-simulate-qubit-level-programs-in-q"></a>Учебник. Создание и имитация программ уровня кубит в Q\#
 
@@ -386,7 +386,7 @@ After:
 * **`    ---`**— Графическое представление фазы амплитуды.
 * **`[ 0.0000 rad ]`**: числовое значение этапа (в радианах).
 
-Как величина, так и фаза отображаются с графическим представлением. Представление величины является простым: оно показывает полоску `*` , а чем выше вероятность, тем больше будет полоска. Сведения о возможных представлениях символов, основанных на диапазонах углов, см. в разделе Думпмачине [здесь](xref:microsoft.quantum.techniques.testing-and-debugging#dump-functions) .
+Как величина, так и фаза отображаются с графическим представлением. Представление величины является простым: оно показывает полоску `*` , а чем выше вероятность, тем больше будет полоска. Для этапа см. раздел [тестирование и отладка. функции дампа](xref:microsoft.quantum.guide.testingdebugging#dump-functions) для возможных представлений символов на основе диапазонов угла.
 
 
 Таким образом, выводимые данные показывают, что наши запрограммированные Шлюзы преобразуют состояние из

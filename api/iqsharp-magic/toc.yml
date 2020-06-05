@@ -1,3 +1,5 @@
+- href: check_kata.md
+  name: Магическая команда %check_kata
 - href: chemistry.broombridge.md
   name: Магическая команда %chemistry.broombridge
 - href: chemistry.encode.md
@@ -12,6 +14,8 @@
   name: Магическая команда %config
 - href: estimate.md
   name: Магическая команда %estimate
+- href: kata.md
+  name: Магическая команда %kata
 - href: lsmagic.md
   name: Магическая команда %lsmagic
 - href: package.md

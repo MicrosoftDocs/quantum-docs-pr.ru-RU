@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: f365d471d9af73828b78c4fab8579557310a5288
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: ec5b3b26102df6ecc19d89b41c7fd8938b34e761
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426769"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327770"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -20,6 +20,19 @@ ms.locfileid: "83426769"
 См. [инструкции по установке](xref:microsoft.quantum.install).
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
+
+## <a name="version-0112006207"></a>Версия 0.11.2006.207
+
+*Дата выпуска: 3 июня 2020 г.*
+
+Этот выпуск включает следующие обновления:
+
+- Работа записных книжек Q# и основных программ Python больше не будет завершаться сбоем, если существует точка входа Q#.
+- Обновления [стандартной библиотеки](xref:microsoft.quantum.libraries.standard.intro) для использования модификаторов доступа.
+- Теперь компилятор разрешает использовать подключаемый модуль для перезаписи между встроенными действиями перезаписи.
+- Некоторые устаревшие функции и операции были удалены согласно расписанию, приведенному в описании [принципов API](xref:microsoft.quantum.contributing.api-design). Программы и библиотеки Q#, которые выполняют сборку без предупреждений в версии 0.11.2004.2825, продолжат работать без изменений.
+
+См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed), [IQ#](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) и [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
 
 ## <a name="version-01120042825"></a>Версия 0.11.2004.2825
 
@@ -34,7 +47,6 @@ ms.locfileid: "83426769"
 > [!NOTE]
 > Приложения командной строки Q#, использующие новый атрибут [`@EntryPoint()`](xref:microsoft.quantum.core.entrypoint), сейчас не могут вызываться из основных программ Python или .NET.
 > См. сведения о взаимодействии с [Python](xref:microsoft.quantum.install.python) и [.NET](xref:microsoft.quantum.install.cs).
-
 
 ## <a name="version-01120033107"></a>Версия 0.11.2003.3107
 
