@@ -7,12 +7,12 @@ ms.date: 10/19/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.howto.createproject
-ms.openlocfilehash: 8019b32a3290e2d45124ebb1eb75395f6cb758db
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+ms.openlocfilehash: 8af8e3288aab731520ede984d5f89644de292385
+ms.sourcegitcommit: c8ebc5d7d8581444754f5d7bfaca2f25601f1b14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327532"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84578217"
 ---
 # <a name="create-a-q-project-in-your-development-environment"></a>Создание проекта Q # в среде разработки
 
@@ -36,7 +36,7 @@ ms.locfileid: "84327532"
 
 1. Создайте папку для проекта и перейдите к этой папке.
 
-1. Создайте файл Q # с именем `Operation.qs` и добавьте в него код q #. Пример:
+1. Создайте файл Q # с именем `Operation.qs` и добавьте в него код q #. Пример.
 
     ```qsharp
     namespace HelloWorld {
@@ -50,7 +50,7 @@ ms.locfileid: "84327532"
     }
     ```
 
-1. Создайте файл узла Python с именем `host.py` для вызова операции Q #. Пример:
+1. Создайте файл узла Python с именем `host.py` для вызова операции Q #. Пример.
 
     ```python
     import qsharp
@@ -62,13 +62,13 @@ ms.locfileid: "84327532"
 
 1. Запустите программу.
 
-    ```bash
+    ```
     python host.py
     ```
 
 1. Проверьте выходные данные. Программа должна вывести следующие строки:
 
-    ```bash
+    ```
     Hello from quantum world!
     0
     ```
@@ -83,7 +83,7 @@ ms.locfileid: "84327532"
 
 1. Выполните следующую команду, чтобы запустить сервер записных книжек.
 
-    ```bash
+    ```
     jupyter notebook
     ```
 
@@ -179,7 +179,7 @@ ms.locfileid: "84327532"
 
 1. Перейдите в новый каталог приложения
 
-    ```bash
+    ```
     cd <project name>
     ```
 
@@ -195,6 +195,6 @@ ms.locfileid: "84327532"
 
 Теперь вы можете продолжить разработку тактов с помощью средств командной строки.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 После создания проекта в предпочитаемой среде можно продолжить разработку тактов.

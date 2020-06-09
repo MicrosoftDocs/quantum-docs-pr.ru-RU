@@ -6,12 +6,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
-ms.openlocfilehash: 35499daae0cd0ae329e39b43b0d8dd5a00183871
-ms.sourcegitcommit: 328f45a0b64cb6b325fa9d3b3ddb74a6a7a97ee9
+ms.openlocfilehash: f18d005012dc1c52aab456f1c7b194d182cab786
+ms.sourcegitcommit: c8ebc5d7d8581444754f5d7bfaca2f25601f1b14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83660730"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84578170"
 ---
 # <a name="develop-with-q-and-python"></a>Разработка с помощью Q # и Python
 
@@ -26,13 +26,13 @@ ms.locfileid: "83660730"
 
 1. Установите `qsharp` пакет, пакет Python, который обеспечивает взаимодействие между Q # и Python.
 
-    ```bash
+    ```
     pip install qsharp
     ```
 
 1. Установите IQ #, ядро, используемое Jupyter и Python, которое предоставляет основные функциональные возможности для компиляции и выполнения операций Q #.
 
-    ```bash
+    ```dotnetcli
     dotnet tool install -g Microsoft.Quantum.IQSharp
     dotnet iqsharp install
     ```
@@ -69,20 +69,20 @@ ms.locfileid: "83660730"
 
     - Запустите программу.
 
-        ```bash
+        ```
         python hello_world.py
         ```
 
     - Проверьте выходные данные. Программа должна вывести следующие строки:
 
-        ```bash
+        ```
         Hello from quantum world!
-       ```
+        ```
 
 
 > [!NOTE]
 > * Вы также можете использовать записные книжки Python Jupyter для написания классической программы Python и вызова операций Q # из ячеек. Код Python — это просто обычная программа Python.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 После установки Quantum Development Kit в предпочитаемой среде вы можете написать и запустить [первую квантовую программу](xref:microsoft.quantum.quickstarts.qrng).
