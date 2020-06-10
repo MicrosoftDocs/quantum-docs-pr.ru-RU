@@ -6,18 +6,18 @@ ms.date: 4/24/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.standalone
-ms.openlocfilehash: e829862521951c50cb42eebf261c803071a95275
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 4311ebf9f72254485a20ba721ea2ce19163f4371
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426440"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84630261"
 ---
 # <a name="develop-with-q-command-line-applications"></a>Разработка с помощью Q # приложения командной строки
 
 Программы Q # могут выполняться самостоятельно, без драйвера на основном языке, например C#, F # или Python.
 
-## <a name="pre-requisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 - [Пакет SDK для .NET Core 3.1 или более поздней версии](https://www.microsoft.com/net/download).
 
@@ -84,6 +84,6 @@ ms.locfileid: "83426440"
 > Если в одном решении Visual Studio имеется несколько проектов, все проекты, содержащиеся в решении, должны находиться в той же папке, что и решение, или в одной из вложенных папок.  
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 После установки Quantum Development Kit в предпочитаемой среде вы можете написать и запустить [первую квантовую программу](xref:microsoft.quantum.quickstarts.qrng).

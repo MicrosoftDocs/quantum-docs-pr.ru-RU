@@ -6,18 +6,89 @@ ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.glossary
-ms.openlocfilehash: 042e4e27ef4e42cfc0c24fbb0ae2232cf1bbfe36
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+no-loc:
+- $
+- $
+- '\cdots'
+- bmatrix
+- '\ddots'
+- '\equiv'
+- '\sum'
+- '\begin'
+- '\end'
+- '\sqrt'
+- '\otimes'
+- '{'
+- '}'
+- '\text'
+- '\phi'
+- '\kappa'
+- '\psi'
+- '\alpha'
+- '\beta'
+- '\gamma'
+- '\delta'
+- '\omega'
+- '\bra'
+- '\ket'
+- '\boldone'
+- '\\\\'
+- '\\'
+- =
+- '\frac'
+- '\text'
+- '\mapsto'
+- '\dagger'
+- '\to'
+- "\begin{cases}"
+- "\end{cases}"
+- '\operatorname'
+- '\braket'
+- '\id'
+- '\expect'
+- '\defeq'
+- '\variance'
+- '\dd'
+- '&'
+- "\begin{align}"
+- "\end{align}"
+- '\Lambda'
+- '\lambda'
+- '\Omega'
+- '\mathrm'
+- '\left'
+- '\right'
+- '\qquad'
+- '\times'
+- '\big'
+- '\langle'
+- '\rangle'
+- '\bigg'
+- '\Big'
+- '|'
+- '\mathbb'
+- '\vec'
+- '\in'
+- '\texttt'
+- '\ne'
+- <
+- '>'
+- '\leq'
+- '\geq'
+- ~~
+- "~"
+ms.openlocfilehash: 2a3b1fe480b9886d0c11255bb1b1e01402dce4f7
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327617"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84630090"
 ---
 # <a name="quantum-computing-glossary"></a>Глоссарий по тактовым вычислениям
 
 ## <a name="adjoint"></a>Прилегающий
 
-Комплексно сопряженное перестановка [операции](xref:microsoft.quantum.glossary#operation). Для операций, реализующих оператор с [единым](xref:microsoft.quantum.glossary#unitary-operator) , примыкающим является обратная операция и обозначается символом дагжер. Например, если операция представляет сам `U` оператор $U $, то `Adjoint U` представляет $U ^ \дагжер $. Дополнительные сведения см. в разделе [прилегающие](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations).
+Комплексно сопряженное перестановка [операции](xref:microsoft.quantum.glossary#operation). Для операций, реализующих оператор с [единым](xref:microsoft.quantum.glossary#unitary-operator) , примыкающим является обратная операция и обозначается символом дагжер. Например, если операция `U` представляет собой оператор $U $ , то `Adjoint U` представляет $U ^ \дагжер $ . Дополнительные сведения см. в разделе [прилегающие](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations).
 
 ## <a name="ancilla"></a>анЦилла
 
@@ -25,7 +96,7 @@ ms.locfileid: "84327617"
 
 ## <a name="bell-state"></a>Состояние колокольчика
 
-Одно из четырех конкретных [запутанными](xref:microsoft.quantum.glossary#entanglement) [состояний такта](xref:microsoft.quantum.glossary#quantum-state) двух Кубитс. Четыре состояния определяются как $ \кет{\ beta_ {ИЖ}} = (\Масбб{и} \отимес X ^ iZ ^ j) (\кет {00} + \кет {11} )/\скрт {2} $. Состояние колокольчика также называется [парой EPR](xref:microsoft.quantum.glossary#epr-pair).
+Одно из четырех конкретных [запутанными](xref:microsoft.quantum.glossary#entanglement) [состояний такта](xref:microsoft.quantum.glossary#quantum-state) двух Кубитс. Четыре состояния определяются как $ \кет { \ beta_ {ИЖ } } = (\Масбб{и } \Отимес X ^ iz ^ j) (\ket{00 } + \ket{11 } )/\sqrt{2 } $. Состояние колокольчика также называется [парой EPR](xref:microsoft.quantum.glossary#epr-pair).
 
 ## <a name="bloch-sphere"></a>БЛОЧ шар
 
@@ -37,7 +108,7 @@ ms.locfileid: "84327617"
 
 ## <a name="clifford-group"></a>Группа Клиффорд
 
-Набор операций, которые занимают октантс [БЛОЧ Sphere](xref:microsoft.quantum.glossary#bloch-sphere) и влияют на перестановки [операторов Паули](xref:microsoft.quantum.glossary#pauli-operators). К ним относятся операции [$X $](xref:microsoft.quantum.intrinsic.x), [$Y $](xref:microsoft.quantum.intrinsic.y), [$Z $](xref:microsoft.quantum.intrinsic.z), [$H $](xref:microsoft.quantum.intrinsic.h) и [$S $](xref:microsoft.quantum.intrinsic.s).
+Набор операций, которые занимают октантс [БЛОЧ Sphere](xref:microsoft.quantum.glossary#bloch-sphere) и влияют на перестановки [операторов Паули](xref:microsoft.quantum.glossary#pauli-operators). К ним относятся операции [$X $ ](xref:microsoft.quantum.intrinsic.x), [$Y $ ](xref:microsoft.quantum.intrinsic.y), [$Z $ ](xref:microsoft.quantum.intrinsic.z), [$H $ ](xref:microsoft.quantum.intrinsic.h) и [$S $ ](xref:microsoft.quantum.intrinsic.s).
 
 ## <a name="controlled"></a>Управляет
 
@@ -45,15 +116,15 @@ ms.locfileid: "84327617"
 
 ## <a name="dirac-notation"></a>Нотация Дирак
 
-Символьная Краткая форма, упрощающая представление [состояний тактов](xref:microsoft.quantum.glossary#quantum-state), также называемая нотацией *неверное-Сисакет* .  *Неверное* часть представляет вектор строки, например $ \бра{а} = \бегин{бматрикс} a {_1} & {_2} \енд{бматрикс} $, а часть *Сисакет* представляет вектор столбца, $ \кет{б} = \бегин{бматрикс} B {_1} \\ \\ B {_2} \енд{бматрикс} $. Дополнительные сведения см. в разделе [Дирак Notation](xref:microsoft.quantum.concepts.dirac).
+Символьная Краткая форма, упрощающая представление [состояний тактов](xref:microsoft.quantum.glossary#quantum-state), также называемая нотацией *неверное-Сисакет* .  *Неверное* часть представляет вектор строки, например $ \бра{а } = \бегин{ bmatrix } a {_1 } & a {_2 } \енд{ bmatrix } $, а часть *Сисакет* представляет вектор столбца, $ \кет{б } = \бегин{ bmatrix } B {_1 } \\ \\ b {_2 } \енд{ bmatrix } $. Дополнительные сведения см. в разделе [Дирак Notation](xref:microsoft.quantum.concepts.dirac).
 
 ## <a name="eigenvalue"></a>еиженвалуе
 
-Коэффициент, на который изменяется величина [еиженвектор](xref:microsoft.quantum.glossary#eigenvector) данного преобразования при преобразовании приложением преобразования.  При наличии квадратной матрицы $M $ и еиженвектор $v $, затем $Mv = ОПС $, где $c $ является еиженвалуе и может быть комплексным числом любого аргумента. Дополнительные сведения см. в разделе [Расширенные понятия матрицы](xref:microsoft.quantum.concepts.matrix-advanced).
+Коэффициент, на который изменяется величина [еиженвектор](xref:microsoft.quantum.glossary#eigenvector) данного преобразования при преобразовании приложением преобразования.  При наличии квадратной матрицы $M $ и $v еиженвектор $ , затем $MV = ОПС $ , где $c $ является еиженвалуе и может быть комплексным числом любого аргумента. Дополнительные сведения см. в разделе [Расширенные понятия матрицы](xref:microsoft.quantum.concepts.matrix-advanced).
 
 ## <a name="eigenvector"></a>еиженвектор
 
-Вектор, направление которого не изменилось заданным преобразованием и величина которого изменяется коэффициентом, соответствующим [еиженвалуеу](xref:microsoft.quantum.glossary#eigenvalue)вектора. При наличии квадратной матрицы $M $ и еиженвалуе $c $, затем $Mv = ОПС $, где $v $ является еиженвектор матрицы и может быть комплексным числом любого аргумента. Дополнительные сведения см. в разделе [Расширенные понятия матрицы](xref:microsoft.quantum.concepts.matrix-advanced).
+Вектор, направление которого не изменилось заданным преобразованием и величина которого изменяется коэффициентом, соответствующим [еиженвалуеу](xref:microsoft.quantum.glossary#eigenvalue)вектора. При наличии квадратной матрицы $M $ и $c еиженвалуе $ , затем $MV = ОПС $ , где $v $ является еиженвектор матрицы и может быть комплексным числом любого аргумента. Дополнительные сведения см. в разделе [Расширенные понятия матрицы](xref:microsoft.quantum.concepts.matrix-advanced).
 
 ## <a name="entanglement"></a>Запутанность
 
@@ -61,13 +132,13 @@ ms.locfileid: "84327617"
 
 ## <a name="epr-pair"></a>Пара EPR
 
-Одно из четырех конкретных запутанными [состояний такта](xref:microsoft.quantum.glossary#quantum-state) двух [Кубитс](xref:microsoft.quantum.glossary#qubit). Четыре состояния определяются как $ \кет{\ beta_ {ИЖ}} = (\масбб {1} \Отимес X ^ iz ^ j) (\кет {00} + \кет {11} )/\скрт {2} $. Пара EPR называется также [состоянием колокольчика](xref:microsoft.quantum.glossary#bell-state)
+Одно из четырех конкретных запутанными [состояний такта](xref:microsoft.quantum.glossary#quantum-state) двух [Кубитс](xref:microsoft.quantum.glossary#qubit). Четыре состояния определяются как $ \кет { \ beta_ {ИЖ } } = (\Mathbb{1 } \Отимес X ^ iz ^ j) (\ket{00 } + \ket{11 } )/\sqrt{2 } $. Пара EPR называется также [состоянием колокольчика](xref:microsoft.quantum.glossary#bell-state)
 
 ## <a name="evolution"></a>Результатом
 
 Изменение [состояния такта](xref:microsoft.quantum.glossary#quantum-state) со временем. Дополнительные сведения см. в разделе [экспонента матрицы](xref:microsoft.quantum.concepts.matrix-advanced#matrix-exponentials).
 
-## <a name="function"></a>Функция
+## <a name="function"></a>Компонент
 Тип подпрограммы на языке Q #, который является чисто классическим (не в такте). Хотя функции используются в алгоритмах такта, они не могут действовать в [операциях](xref:microsoft.quantum.glossary#operation) [Кубитс](xref:microsoft.quantum.glossary#qubit) или Call. Дополнительные сведения см. в разделе [операции и функции](xref:microsoft.quantum.guide.operationsfunctions).
 
 ## <a name="gate"></a>Frame
@@ -76,11 +147,11 @@ ms.locfileid: "84327617"
 
 ## <a name="global-phase"></a>Глобальный этап
 
-Если два [состояния](xref:microsoft.quantum.glossary#quantum-state) идентичны нескольким комплексным числам $e ^ {и\фи} $, они говорят, что они отличаются от глобального этапа. В отличие от локальных фаз, глобальные фазы не могут быть просмотрены через любые [меасурмент](xref:microsoft.quantum.glossary#measurement). Дополнительные сведения см. [в разделе кубит](xref:microsoft.quantum.concepts.qubit).
+Если два [состояния](xref:microsoft.quantum.glossary#quantum-state) идентичны нескольким комплексным числам $e ^ {i \phi } $, говорят, что они отличаются от глобального этапа. В отличие от локальных фаз, глобальные фазы не могут быть просмотрены через любые [меасурмент](xref:microsoft.quantum.glossary#measurement). Дополнительные сведения см. [в разделе кубит](xref:microsoft.quantum.concepts.qubit).
 
 ## <a name="hadamard"></a>Hadamard
 
-Операция Хадамард (также называемая Хадамард Gate или Transform) действует на одном [кубит](xref:microsoft.quantum.glossary#qubit) и помещает ее в четное [Расположение](xref:microsoft.quantum.glossary#superposition) $ \кет {0} $ или $ \кет {1} $, если кубит изначально находится в состоянии $ \кет {0} $. В Q # эта операция применяется к предварительно определенной [`H`](xref:microsoft.quantum.intrinsic.h) операции.
+Операция Хадамард (также называемая Хадамард Gate или Transform) действует на одном [кубит](xref:microsoft.quantum.glossary#qubit) и помещает ее в четное [Расположение](xref:microsoft.quantum.glossary#superposition) $ \ket{0 } $ или $ \ket{1 } $, если кубит изначально находится в состоянии $ \ket{0 } $. В Q # эта операция применяется к предварительно определенной [`H`](xref:microsoft.quantum.intrinsic.h) операции.
 
 ## <a name="immutable"></a>Неизменяемые
 
@@ -106,7 +177,7 @@ ms.locfileid: "84327617"
 
 Выполнение операции над тактом. Обычно это применяет единую матрицу к текущему вектору состояния такта.
 
-## <a name="oracle"></a>Oracle
+## <a name="oracle"></a>Oracle;
 
 Подпрограммы, которая предоставляет зависящую от данных информацию в алгоритме такта во время выполнения. Как правило, целью является [предоставление части выходных](xref:microsoft.quantum.glossary#superposition) данных, соответствующих входным данным, находящимся в части. Дополнительные сведения см. в разделе [Oracle](xref:microsoft.quantum.libraries.data-structures#oracles).
 
@@ -116,7 +187,7 @@ ms.locfileid: "84327617"
 
 ## <a name="pauli-operators"></a>Операторы Паули
 
-Набор из трех одноединых матриц 2 x 2, которые называются `X` `Y` и `Z` тактовыми операциями. Матрица идентификаторов, $I $, часто также включается в набор.  $I = \бегин{бматрикс} 1 & 0 \\ \\ 0 & 1 \енд{бматрикс} $, $X = \бегин{бматрикс} 0 & 1 \\ \\ 1 & 0 \енд{бматрикс} $, $Y = \бегин{бматрикс} 0 &-i \\ \\ & 0 \енд{бматрикс} $, $Z = \begin{bmatrix} 1 & 0 \\ \\ 0 &-1 \end{bmatrix} $.   Дополнительные сведения см. в статье [Single-кубит Operations](xref:microsoft.quantum.concepts.qubit#single-qubit-operations).
+Набор из трех одноединых матриц 2 x 2, которые называются `X` `Y` и `Z` тактовыми операциями. Матрица идентификаторов, $I $ , часто также включается в набор.  $I = \бегин{ bmatrix } 1 & 0 \\ \\ 0 & 1 \енд{ bmatrix } $, $X = \бегин{ bmatrix } 0 & 1 \\ \\ 1 & 0 \енд{ bmatrix } $, $Y = \бегин{ bmatrix } 0 &-i \\ \\ & 0 \енд{ bmatrix } $, $Z = \бегин{ bmatrix } 1 & 0 \\ \\ 0 &-1 \енд{ bmatrix } $.   Дополнительные сведения см. в статье [Single-кубит Operations](xref:microsoft.quantum.concepts.qubit#single-qubit-operations).
 
 ## <a name="quantum-circuit-diagram"></a>Схема тактовой цепи
 
@@ -148,7 +219,7 @@ ms.locfileid: "84327617"
 
 ## <a name="superposition"></a>Суперпозиции
 
-Концепция в тактовых вычислениях [кубит](xref:microsoft.quantum.glossary#qubit) представляет собой линейное сочетание двух Штатов, $ \кет {0} $ и $ \кет {1} $, пока оно не будет [измеряться](xref:microsoft.quantum.glossary#measurement).  Дополнительные сведения см. в разделе [Основные сведения о тактовых вычислениях](xref:microsoft.quantum.overview.understanding).
+Концепция в тактовых вычислениях [кубит](xref:microsoft.quantum.glossary#qubit) представляет собой линейное сочетание двух Штатов, $ \ket{0 } $ и $ \ket{1 } $, пока оно не будет [измеряться](xref:microsoft.quantum.glossary#measurement).  Дополнительные сведения см. в разделе [Основные сведения о тактовых вычислениях](xref:microsoft.quantum.overview.understanding).
 
 ## <a name="target-machine"></a>Целевой компьютер
 
@@ -164,7 +235,7 @@ ms.locfileid: "84327617"
 
 ## <a name="unitary-operator"></a>Оператор с единым
 
-Оператор, инверсия которого равен его [соседнему](xref:microsoft.quantum.glossary#adjoint)объекту, т. е. $uu ^ {\дагжер} = \ид $.
+Оператор, инверсия которого равен его [соседнему](xref:microsoft.quantum.glossary#adjoint)объекту, т. е. $uu ^ {\дагжер } = \ид $ .
 
 ## <a name="user-defined-type"></a>Определяемый пользователем тип
 

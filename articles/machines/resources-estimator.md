@@ -6,12 +6,12 @@ ms.author: anpaz@microsoft.com
 ms.date: 1/22/2019
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: 01d242ed405bdd326f65e534f82ff378a464ee7d
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: b0c800c3946d2e4ba4457127fb9495dc9dcf2934
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426880"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84630134"
 ---
 # <a name="the-resources-estimator-target-machine"></a>Целевой компьютер оценщика ресурсов
 
@@ -42,7 +42,7 @@ namespace Quantum.MyProgram
 }
 ```
 
-Как показано в примере, `ResourcesEstimator` предоставляет `ToTSV()` метод для создания таблицы с разделенными табуляциями ЗНАЧЕНИЯМИ (TSV), которые можно сохранить в файл или записать в консоль для анализа. Выходные данные приведенной выше программы должны выглядеть примерно так:
+Как показано в примере, объект `ResourcesEstimator` предоставляет `ToTSV()` метод для создания таблицы с разделенными табуляциями ЗНАЧЕНИЯМИ (TSV), которые можно сохранить в файл или записать в консоль для анализа. Выходные данные приведенной выше программы должны выглядеть примерно так:
 
 ```Output
 Metric          Sum
@@ -130,7 +130,7 @@ operation Teleport(source : Qubit, target : Qubit) : Unit {
 Когда `ResourcesEstimator` встретится `AssertProb` , он запишет эту измерение `PauliZ` на `source` и `q` должен получить результат `Zero` с вероятностью 0,5. При `M` последующем выполнении он найдет записанные значения вероятностей результата и `M` возвратит значение `Zero` или `One` с вероятностью 0,5.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 `ResourcesEstimator`Компонент построен на основе [симулятора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro)компьютерных тактов, который предоставляет более широкий набор метрик, возможность создания отчетов о метриках на полном графе вызовов и таких функций, как [средство проверки различных входных данных](xref:microsoft.quantum.machines.qc-trace-simulator.distinct-inputs) , для поиска ошибок в программах Q #. Дополнительные сведения см. в документации по [симулятору трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro) .
 

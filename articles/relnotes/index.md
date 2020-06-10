@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 9a54c1d7a4403a98f945181fdad8ba8a7fdb1175
-ms.sourcegitcommit: 8d9d392bf5e114ae223e6f689ba80d25866ff586
+ms.openlocfilehash: 6b24ebe9f0b5fd3318e8adfe1a62bafaf9d1961e
+ms.sourcegitcommit: c8ebc5d7d8581444754f5d7bfaca2f25601f1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84422229"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84578140"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -25,6 +25,12 @@ ms.locfileid: "84422229"
 
 *Дата выпуска: 4 июня 2020 г.*
 
+В этом выпуске исправлена ошибка, влияющая на компиляцию проектов Q#.
+
+## <a name="version-0112006207"></a>Версия 0.11.2006.207
+
+*Дата выпуска: 3 июня 2020 г.*
+
 Этот выпуск включает следующие обновления:
 
 - Работа записных книжек Q# и основных программ Python больше не будет завершаться сбоем, если существует точка входа Q#.
@@ -33,6 +39,9 @@ ms.locfileid: "84422229"
 - Некоторые устаревшие функции и операции были удалены согласно расписанию, приведенному в описании [принципов API](xref:microsoft.quantum.contributing.api-design). Программы и библиотеки Q#, которые выполняют сборку без предупреждений в версии 0.11.2004.2825, продолжат работать без изменений.
 
 См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed), [IQ#](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) и [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
+
+> [!NOTE]
+> Эта версия содержит ошибку, влияющую на компиляцию проектов Q#. Рекомендуем выполнить обновление до более новой версии.
 
 ## <a name="version-01120042825"></a>Версия 0.11.2004.2825
 

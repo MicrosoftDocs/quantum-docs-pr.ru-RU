@@ -6,12 +6,12 @@ ms.author: mamykhai@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.guide.testingdebugging
-ms.openlocfilehash: 374ac42255ab6b2c5eff8ab7879b3a5103181f7f
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: dd6c7ae8a016423f26c37f3eedf0ae9c1d126b78
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430923"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84630027"
 ---
 # <a name="testing-and-debugging"></a>Тестирование и отладка
 
@@ -27,7 +27,7 @@ Q # поддерживает создание модульных тестов д
 
 ### <a name="creating-a-test-project"></a>Создание тестового проекта
 
-#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 Запустите Visual Studio 2019. Перейдите в `File` меню и выберите `New`  >  `Project...` .
 В верхнем правом углу найдите `Q#` и выберите `Q# Test Project` шаблон.
@@ -71,7 +71,7 @@ $ code . # To open in Visual Studio Code
 
 ### <a name="running-q-unit-tests"></a>Выполнение модульных тестов Q #
 
-#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 В качестве одноразовой настройки для каждого решения перейдите в `Test` меню и выберите `Test Settings`  >  `Default Processor Architecture`  >  `X64` .
 
@@ -123,7 +123,7 @@ $ dotnet test --filter "Name=AllocateQubit"
 
 Встроенная функция <xref:microsoft.quantum.intrinsic.message> имеет тип `(String -> Unit)` и позволяет создавать сообщения диагностики.
 
-#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 После выполнения теста в обозревателе тестов и нажатия кнопки тест появится панель со сведениями о выполнении теста: состояние пройдено/неудачно, затраченное время и ссылка "выходные данные". Если щелкнуть ссылку "выходные данные", тестовый вывод откроется в новом окне.
 
@@ -218,7 +218,7 @@ using (register = Qubit())
 
 * **`∣0❭:`** Эта строка соответствует `0` состоянию вычислительного основания
 * **`0.707107 +  0.000000 i`**: амплитуда вероятности в формате Декарт.
-* **` == `**: `equal` знак разписывает оба эквивалентных представления.
+* **` == `**: `equal` знак разделяет оба эквивалентных представления.
 * **`**********  `**: Графическое представление величины, количество `*` пропорционально вероятности измерения этого вектора состояния.
 * **`[ 0.500000 ]`**: числовое значение величины.
 * **`    ---`**: Графическое представление фазы амплитуды (см. ниже).
@@ -285,7 +285,7 @@ using (register = Qubit())
   > Идентификатор кубит назначается во время выполнения и не обязательно соответствует порядку выделения кубит или его позиции в кубит регистре.
 
 
-#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
   > [!TIP]
   > Чтобы определить идентификатор кубит в Visual Studio, поместите точку останова в код и проверьте значение переменной кубит, например:
