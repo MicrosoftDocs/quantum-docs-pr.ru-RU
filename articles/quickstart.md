@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 05/29/2020
 ms.topic: tutorial
 uid: microsoft.quantum.write-program
-ms.openlocfilehash: 989080e7d9979bb87d14b2580d28732bb1092eb1
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+ms.openlocfilehash: 271eb7f496835f152573be930d0fe24e59f2d15d
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327379"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84630078"
 ---
 # <a name="tutorial-explore-entanglement-with-q"></a>Руководство по Исследование запутанности с использованием Q\#
 
@@ -21,7 +21,7 @@ ms.locfileid: "84327379"
 В результате у вас получится приложение Bell, которое демонстрирует квантовую запутанность.
 Имя Bell — это отсылка к состоянию Белла, которое обозначает особые квантовые состояния двух кубитов с простейшими примерами эффектов суперпозиции и квантовой запутанности.
 
-## <a name="pre-requisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 Если вы готовы писать код, выполните следующие действия, прежде чем продолжать: 
 
@@ -59,7 +59,7 @@ ms.locfileid: "84327379"
 
 1. Создайте проект Q#.
 
-    ```bash
+    ```
     dotnet new console -lang Q# --output Bell
     cd Bell
     ```
@@ -68,7 +68,7 @@ ms.locfileid: "84327379"
 
 1. Переименование файла Q#
 
-    ```bash
+    ```
     mv Operation.qs Bell.qs
     ```
 
@@ -282,7 +282,7 @@ Init:1    0s=0    1s=1000
 
 1. В окне терминала выполните следующую команду:
 
-    ```bash
+    ```dotnetcli
     dotnet run
     ```
 
