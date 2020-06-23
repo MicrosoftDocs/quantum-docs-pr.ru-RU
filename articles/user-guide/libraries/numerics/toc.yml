@@ -1,0 +1,4 @@
+- name: Установка и проверка
+  href: installation.md
+- name: Использование библиотеки числовых значений
+  href: numerics.md

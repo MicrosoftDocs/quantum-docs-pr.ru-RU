@@ -10,12 +10,12 @@ metadata:
   author: cjgronlund
   ms.author: cgronlun
   ms.date: 5/10/2020
-  ms.openlocfilehash: e36a289f17d56a4a8edae71b9a3194a144767dd4
-  ms.sourcegitcommit: 4da99168479f96f408b984279a5a7eabcda752db
+  ms.openlocfilehash: 313ee49f4e6ad25e57c47a9d95a1617326af3bec
+  ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/20/2020
-  ms.locfileid: "83708707"
+  ms.lasthandoff: 06/23/2020
+  ms.locfileid: "85269530"
 landingContent:
 - title: Квантовые вычисления
   linkLists:
@@ -40,13 +40,13 @@ landingContent:
   - linkListType: get-started
     links:
     - text: Quantum Development Kit
-      url: welcome.md
+      url: quickstarts/get-started.md
   - linkListType: download
     links:
     - text: Установка Quantum Development Kit
-      url: install-guide/index.md
+      url: quickstarts/index.md
     - text: Обновление Quantum Development Kit
-      url: install-guide/update.md
+      url: quickstarts/update.md
 - title: Язык программирования Q#
   linkLists:
   - linkListType: how-to-guide
@@ -54,19 +54,19 @@ landingContent:
     - text: Руководство пользователя Q#
       url: user-guide/index.md
     - text: Квантовые симуляторы и ведущие приложения
-      url: machines/index.md
+      url: user-guide/machines/index.md
   - linkListType: tutorial
     links:
     - text: Создание квантового генератора случайных чисел
-      url: quickstarts/qrng.md
+      url: tutorials/quantum-random-number-generator.md
     - text: Исследование запутанности с использованием Q#
-      url: quickstart.md
+      url: tutorials/explore-entanglement.md
     - text: 'Квантовое ускорение: алгоритм Гровера для поиска'
-      url: quickstarts/search.md
+      url: tutorials/search.md
   - linkListType: learn
     links:
     - text: Обучение с помощью Quantum Katas
-      url: intro-to-katas.md
+      url: tutorials/intro-to-katas.md
     - text: Обзор примеров кода на Q#
       url: https://docs.microsoft.com/samples/browse/?languages=qsharp
 - title: Сообщество и вклад
@@ -74,7 +74,7 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: Приглашаем к участию в разработке QDK
-      url: contributing/index.md
+      url: resources/contributing/index.md
     - text: Загляните в блог Microsoft Quantum
       url: https://cloudblogs.microsoft.com/quantum
 - title: Библиотеки Q#
@@ -82,10 +82,10 @@ landingContent:
   - linkListType: reference
     links:
     - text: Стандартные библиотеки
-      url: libraries/standard/index.md
+      url: user-guide/libraries/standard/index.md
     - text: Библиотека для химии
-      url: libraries/chemistry/index.md
+      url: user-guide/libraries/chemistry/index.md
     - text: Библиотека для машинного обучения
-      url: libraries/machine-learning/index.md
+      url: user-guide/libraries/machine-learning/index.md
     - text: Числовая библиотека
-      url: libraries/numerics/index.md
+      url: user-guide/libraries/numerics/index.md
