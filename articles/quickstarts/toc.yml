@@ -1,0 +1,20 @@
+expanded: true
+items:
+  - name: Начало работы с QDK
+    href: get-started.md
+  - name: Установка Quantum Development Kit
+    items:
+      - name: Обзор установки
+        href: index.md
+      - name: Приложения командной строки Q#
+        href: install-command-line.md
+      - name: Записные книжки Jupyter Notebook для Q#
+        href: install-jupyter.md
+      - name: Использование Q# с другими языками
+        items:
+          - name: Использование Q# с Python
+            href: install-python.md
+          - name: Использование Q# с .NET
+            href: install-cs.md
+  - name: Обновление Quantum Development Kit
+    href: update.md
