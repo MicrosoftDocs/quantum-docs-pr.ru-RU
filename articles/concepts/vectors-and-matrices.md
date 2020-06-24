@@ -9,6 +9,10 @@ ms.topic: article
 no-loc:
 - $
 - $
+- $
+- $
+- $
+- $
 - '\cdots'
 - bmatrix
 - '\ddots'
@@ -77,12 +81,15 @@ no-loc:
 - '\geq'
 - ~~
 - "~"
-ms.openlocfilehash: 6c09531cd8bee8f5efb472c95c575daed04d3040
-ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
+- "\begin{bmatrix}"
+- "\end{bmatrix}"
+- '\_'
+ms.openlocfilehash: f9d4e14742b7d06a6e90af0902b31fbdf17aedab
+ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84630205"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269547"
 ---
 # <a name="vectors-and-matrices"></a>Векторы и матрицы
 
@@ -189,9 +196,9 @@ $M матрицы $ говорят, что это [*хермитиан*](https:/
 \бегин{bmatrix}
         a \\ \\ b \енд{ bmatrix } \отимес \бегин{ bmatrix } c \\ \\ d \\ \\ e \енд{ bmatrix } = \бегин{bmatrix}
         a \бегин{ bmatrix } c \\ \\ d \\ \\ e \енд{bmatrix}
-        \\\\[1,5 EM] b \бегин{ bmatrix } c \\ \\ d \\ \\ e \end {bmatrix}
+        \\\\[1,5 EM] b \бегин{ bmatrix } c \\ \\ d \\ \\ e\end{bmatrix}
     концеbmatrix}
-    = \бегин{ bmatrix } a c \\ \\ a d \\ \\ e \\ \\ b c \\ \\ b d \\ \\ \endbmatrix}
+    = \бегин{ bmatrix } a c \\ \\ a d \\ \\ e \\ \\ b c \\ \\ b d \\ \\\end{bmatrix}
 $$
 
 и
@@ -201,13 +208,13 @@ $$
     \отимес \бегин{bmatrix}
         e \ f \\ \\ g \ h \енд{bmatrix}
      = \бегин{bmatrix}
-    a \begin {bmatrix}
+    конкретного\begin{bmatrix}
     e \ f \\\\ g \ h \енд{bmatrix}
-    b \begin {bmatrix}
+    &\begin{bmatrix}
     e \ f \\\\ g \ h \енд{bmatrix}
-    \\\\[1em] c \begin {bmatrix}
+    \\\\[1em] c\begin{bmatrix}
     e \ f \\\\ g \ h \енд{bmatrix}
-    г \begin {bmatrix}
+    четырехмерного\begin{bmatrix}
     e \ f \\\\ g \ h \енд{bmatrix}
     концеbmatrix}
     = \бегин{bmatrix}
@@ -217,5 +224,5 @@ $$
 Последнее полезное соглашение об обозначении, окружающее продукты тензорные, заключается в том, что для любого векторного $v $ или $M матрицы $ $v ^ {\отимес n } $ или $M ^ {\отимес n } $ является короткой рукой для $ повторяющегося тензорныеного продукта $n.  Пример:
 
 \бегин{алигн}
-& \бегин{ bmatrix } 1 \\ \\ 0 \енд{ bmatrix } ^ {\отимес 1 } = \бегин{ bmatrix } 1 \\ \\ 0 \енд{ bmatrix } , \ккуад \begin { bmatrix } 1 \\ \\ 0 \енд{ bmatrix } ^ {\отимес 2 } = \бегин{ bmatrix } 1 \\ \\ 0 0 \\ \\ \\ \\ 0 \енд{ bmatrix } , \ккуад \begin { bmatrix } 1 \\ \\ -1 \енд{ bmatrix } ^ {\отимес 2 } = \begin{ bmatrix } 1 \\ \\ -1 \\ \\ -1 \\ \\ 1 \end{ bmatrix } , \\ \\ & \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 1 } = \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } , \qquad \begin { bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 2 } = \begin{ bmatrix } 0 &0&0&1 \\ \\ 0 &0&1&0 \\ \\ 0 &1&0&0 \\\\ 1 &0&0&0 \end { bmatrix } .
+& \бегин{ bmatrix } 1 \\ \\ 0 \енд{ bmatrix } ^ {\отимес 1 } = \бегин{ bmatrix } 1 \\ \\ 0 \енд{ bmatrix } , \ккуад \begin{bmatrix} 1 \\ \\ 0 \енд{ bmatrix } ^ {\отимес 2 } = \бегин{ bmatrix } 1 \\ \\ 0 0 \\ \\ \\ \\ 0 \енд{ bmatrix } , \ккуад \begin{bmatrix} 1 \\ \\ -1 \енд{ bmatrix } ^ {\отимес 2 } = \begin{ bmatrix } 1 \\ \\ -1 \\ \\ -1 \\ \\ 1 \end{ bmatrix } , \\ \\ & \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 1 } = \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } , \qquad \begin{bmatrix} 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 2 } = \begin{ bmatrix } 0 &0&0&1 \\ \\ 0 &0&1&0 \\ \\ 0 &1&\\\\ \end{bmatrix} 0&0 1 &0&0&0.
 \енд{алигн}

@@ -9,6 +9,13 @@ ms.topic: article
 no-loc:
 - $
 - $
+- $
+- $
+- $
+- $
+- $$
+- $$
+- $$
 - '\cdots'
 - bmatrix
 - '\ddots'
@@ -77,12 +84,15 @@ no-loc:
 - '\geq'
 - ~~
 - "~"
-ms.openlocfilehash: 8d3c646715f13c454e51b9295cbfdabf6a236ffc
-ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
+- "\begin{bmatrix}"
+- "\end{bmatrix}"
+- '\_'
+ms.openlocfilehash: 71923247121eae6a1d4e26d2664d8e547370ba3a
+ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84630154"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269462"
 ---
 # <a name="advanced-matrix-concepts"></a>Дополнительные понятия матрицы #
 
@@ -104,7 +114,7 @@ $$
 
 Векторы
 
-$ $ \бегин{ bmatrix } 1 \\ \\ 0 \\ \\ 0 \енд{ bmatrix } , \бегин{ bmatrix } 0 \\ \\ 1 \\ \\ 0 \end { bmatrix } и \бегин{ bmatrix } 0 \\ \\ 0 \\ \\ 1 \end {bmatrix}$$
+$ $ \бегин{ bmatrix } 1 \\ \\ 0 \\ \\ 0 \енд{ bmatrix } , \бегин{ bmatrix } 0 \\ \\ 1 \\ \\ 0 \end{bmatrix} и \бегин{ bmatrix } 0 \\ \\ 0 \\ \\ 1\end{bmatrix}$$
 
 основе собственных векторов этой матрицей с еиженвалуес $d _1 $ , $d _2 $ и $d _3 $ соответственно. Если $d _1 $ , $d _2 $ и $d _3 $ являются разными числами, то эти векторы (и их кратные) являются единственным основе собственных векторов $D матрицы $ . Как правило, для диагональной матрицы легко читать еиженвалуес и основе собственных векторов. Еиженвалуес — это все числа, отображаемые по диагонали, а их соответствующие основе собственных векторов — это векторы единиц с одной записью, равной $1, $ а оставшиеся записи равны $0 $ .
 
