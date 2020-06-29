@@ -6,12 +6,12 @@ ms.author: anpaz@microsoft.com
 ms.date: 1/22/2019
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: b0c800c3946d2e4ba4457127fb9495dc9dcf2934
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: cbb1c274b64738cc4b47869563d7d02eb717afbc
+ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275548"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415269"
 ---
 # <a name="the-resources-estimator-target-machine"></a>Целевой компьютер оценщика ресурсов
 
@@ -98,8 +98,8 @@ namespace Quantum.MyProgram
 * __Мера__: количество всех выполненных измерений.
 * __R__: количество всех выполненных поворотов кубит, исключая T, Клиффорд и Паули Gates.
 * __T__: число t шлюзов и их сопряжений, включая t gate, T_x = H. t. H, и T_y = Хи. t. Хи, выполняется.
-* __Depth__: глубина тактовой цепи, выполненной операцией Q #. По умолчанию в глубину учитываются только T шлюзов, дополнительные сведения см. в разделе [счетчик глубины](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter) .
-* __Width__: максимальное число Кубитс, выделенных во время выполнения операции Q #.
+* __Глубина__: Нижняя граница глубины тактовой цепи, выполняемой операцией Q #. По умолчанию в глубину учитываются только T шлюзов, дополнительные сведения см. в разделе [счетчик глубины](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter) .
+* __Width__: Нижняя граница максимального числа Кубитс, выделенного во время выполнения операции Q #. При этом может оказаться невозможным одновременное достижение нижней границы __глубины__ и __ширины__ .
 * __Борроведвидс__: максимальное число Кубитс, заимствованных в операции Q #.
 
 
