@@ -6,12 +6,12 @@ ms.author: bradben
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.algebra
-ms.openlocfilehash: 4750643d16ad8af6240df42c1b93353565561429
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+ms.openlocfilehash: 4cf6cce870c7661a7fffc21dcb60dd53cf281ddd
+ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327600"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415448"
 ---
 # <a name="linear-algebra-for-quantum-computing"></a>Линейная алгебра для квантовых вычислений
 
@@ -62,8 +62,7 @@ $$\frac{1}{\sqrt{2}}\begin{bmatrix}1 &1\\\\ 1 &-1\end{bmatrix}\begin{bmatrix} 1 
 
 Помните, что каждый кубит является векторным пространством, поэтому его нельзя просто умножить. Вместо этого используется **тензорное произведение** — связанная операция, которая создает новое векторное пространство из отдельных векторных пространств. Оно представлено символом $\otimes$. Например, тензорное произведение двух состояний кубит $\begin{bmatrix} a \\\\  b \end{bmatrix}$ и $\begin{bmatrix} c \\\\  d \end{bmatrix}$ рассчитывается так:
 
-$$ \begin{bmatrix} a \\\\  b \end{bmatrix} \otimes \begin{bmatrix} c \\\\  d \end{bmatrix} =\begin{bmatrix} a \begin{bmatrix} c \\\\  d \end{bmatrix} \\\\ b \begin{bmatrix}c \\\\  d \end{bmatrix} \end{bmatrix} = \begin{bmatrix} ac \\\\  ad \\\\  bc \\\\  bd \end{bmatrix}.
-$$
+$$ \begin{bmatrix} a \\\\  b \end{bmatrix} \otimes \begin{bmatrix} c \\\\  d \end{bmatrix} =\begin{bmatrix} a \begin{bmatrix} c \\\\  d \end{bmatrix} \\\\ b \begin{bmatrix}c \\\\  d \end{bmatrix} \end{bmatrix} = \begin{bmatrix} ac \\\\  ad \\\\  bc \\\\  bd \end{bmatrix}. $$
 
 Результатом является четырехмерная матрица, в которой каждый элемент представляет вероятность. Так, $ac$ — это вероятность коллапса обоих кубитов к состояниям 0 и 0, $ad$ — к состояниям 0 и 1 и т. д. 
 
