@@ -6,12 +6,12 @@ uid: microsoft.quantum.more-information
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: bcc26f66a4ba3e861800ceca122b38b8d3ef6ad5
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: d3c252c6579e1286aae71a0f18ac7b6b02a5c1ed
+ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275372"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85884140"
 ---
 # <a name="more-quantum-computing-learning-resources"></a>Дополнительные учебные ресурсы по обработке тактов
 
@@ -24,6 +24,14 @@ ms.locfileid: "85275372"
 + Китаев, A. Y., Shen), A. & Вяли, M. N. (2002). Классический и тактовый вычисления (Vol. 47). Провиденце: Американский математический общество.
 + Кайе, P., ЛаФламме, R., & Моска, M. (2007). Введение в тактовые вычисления. Oxford университет.
 + Риеффел, E. G., & Полак, W. H. (2011). Тактовые вычисления: введение в доброй. Пресса MIT.
++ Сара C. Кайзера и Кристофер E. Гранаде (Manning ранний доступ программы начали 2019 публикации в 2020). [Познакомьтесь с тактовыми вычислениями на Python и Q # — практический подход](https://www.manning.com/books/learn-quantum-computing-with-python-and-q-sharp).
+
+## <a name="online-courses"></a>Онлайн-курсы ##
+
++ [Модули для вычислений в такте MS](https://docs.microsoft.com/users/buildcollections2020-6557/collections/1o2iogrmn8x4r) Пошаговое руководство по концепциям и методикам использования тактовых вычислений. 
++ [Тактовые вычисления — яркий курс](https://brilliant.org/courses/quantum-computing/). Узнайте, как создавать алгоритмы такта с нуля с помощью тактового компьютера, смоделированного в браузере.
++ [Введение в тактовые вычисления — LinkedIn Learning](https://www.linkedin.com/learning/introduction-to-quantum-computing). Введение в 1h25m видео. 
++ [Тактовые вычисления через комиксы](https://hackaday.io/project/168554-introduction-to-quantum-computing). Воскресенье еженедельных практических занятий на класс Community. 
 
 ## <a name="elementary-techniques-for-building-controlled-gates"></a>Простые методы создания управляемых шлюзов ##
 
