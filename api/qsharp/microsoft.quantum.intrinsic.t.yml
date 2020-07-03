@@ -4,10 +4,10 @@ name: T
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
 summary: >-
-  Применяет шлюз π/8 к одному кубит.
+  Применяет T-шлюз к одному кубит.
 
 
-  \бегин{алигн} T \масрел{: =} \бегин{бматрикс} 1 & 0 \\ \\ 0 & e ^ {i \пи/4} \енд{бматрикс}.
+  Эта операция может быть смоделирована единой матрицей \бегин{алигн} T \масрел{: =} \бегин{бматрикс} 1 & 0 \\ \\ 0 & e ^ {i \пи/4} \енд{бматрикс}.
 
   \енд{алигн}
 syntax: 'operation T (qubit : Qubit) : Unit'
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: f654748925ec76cfececadd9fe2de8698449f6f8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d149038bea705d10a67197e0eeece33ef98e6c36
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685427"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885690"

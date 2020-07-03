@@ -3,42 +3,26 @@ uid: microsoft.quantum.intrinsic.assertprob
 name: AssertProb
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
-summary: Утверждения, измеряющие заданный Кубитс в данной Паулиной базе, будут иметь заданный результат с заданной вероятностью в пределах некоторой допустимости.
-remarks: Обратите внимание, что смежная и контролируемая версии этой операции не будут проверять условие.
-examples: >-
-  ```qsharp
-
-  using (register = Qubit()) {
-      H(register);
-      AssertProb([PauliZ], [register], One, 0.5,
-          "Measuring in conjugate basis did not give 50/50 results.", 1e-5);
-  }
-
-  ```
+summary: Ассертпроб является устаревшим. Взамен рекомендуется использовать @"microsoft.quantum.diagnostics.assertmeasurementprobability".
 syntax: 'operation AssertProb (bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double) : Unit'
 input:
   content: '(bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double)'
   types:
   - name: bases
-    summary: Результат измерения для утверждения вероятности, выраженный как кубит оператор Паули.
     isArray: true
     isPrimitive: true
     uid: Pauli
   - name: qubits
-    summary: Регистр, для которого необходимо выполнить утверждение.
     isArray: true
     isPrimitive: true
     uid: Qubit
   - name: result
-    summary: Ожидаемый результат `Measure(bases, qubits)`.
     isPrimitive: true
     uid: Result
   - name: prob
-    summary: Вероятность, с которой ожидается данный результат.
     isPrimitive: true
     uid: Double
   - name: msg
-    summary: Сообщение, которое необходимо сообщить, если утверждение не выполняется.
     isPrimitive: true
     uid: String
   - name: tol
@@ -52,12 +36,10 @@ output:
 functors:
 - Adjoint
 - Controlled
-seeAlso:
-- assert
 metadata:
-  ms.openlocfilehash: 6317476e89feb3a5fecac15afd52541859fc2f21
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: db29d52b79b1e7b5a980f3e3196c5b2547132103
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674159"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885725"

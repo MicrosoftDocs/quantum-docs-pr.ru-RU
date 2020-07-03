@@ -39,6 +39,10 @@ operations:
   summary: Утверждение, что все заданные Кубитс находятся в $ \кет {0} $ штате.
 - uid: microsoft.quantum.diagnostics.assertallzerowithintolerance
   summary: Утверждение о том, что все заданные Кубитс находятся в состоянии $ \кет {0} $ вплоть до заданного допуска.
+- uid: microsoft.quantum.diagnostics.assertmeasurement
+  summary: Утверждения, которые измеряют данный Кубитс в заданной Паули базисе, всегда будут иметь заданный результат.
+- uid: microsoft.quantum.diagnostics.assertmeasurementprobability
+  summary: Утверждения, измеряющие заданный Кубитс в данной Паулиной базе, будут иметь заданный результат с заданной вероятностью в пределах некоторой допустимости.
 - uid: microsoft.quantum.diagnostics.assertoperationsequalinplace
   summary: >-
     Учитывая две операции, утверждает, что они действуют одинаково для всех входных состояний.
@@ -81,12 +85,12 @@ newtypes:
 - uid: microsoft.quantum.diagnostics.enabletestingvianame
   summary: Распознанный компилятором атрибут, с помощью которого можно определить альтернативное имя, которое может использоваться при загрузке типа или вызываемого для целей тестирования.
 - uid: microsoft.quantum.diagnostics.test
-  summary: Распознанный компилятором атрибут, используемый для обозначения модульного теста.
+  summary: Распознанный компилятором атрибут, используемый для пометки модульного теста.
 summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен содержит функции и операции, полезные для диагностики, в том числе операции Assert и функции утверждения."
 metadata:
-  ms.openlocfilehash: 2c619ac283653d87f2917d7c780ed9fe6ccfa965
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: c8e1cd7f3458e736a47749dd057174eb4961c31d
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326597"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85884565"

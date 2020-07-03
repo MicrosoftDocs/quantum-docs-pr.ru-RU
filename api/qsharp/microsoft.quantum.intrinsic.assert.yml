@@ -3,28 +3,23 @@ uid: microsoft.quantum.intrinsic.assert
 name: Assert
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
-summary: Утверждения, которые измеряют данный Кубитс в заданной Паули базисе, всегда будут иметь заданный результат.
-remarks: Обратите внимание, что смежная и контролируемая версии этой операции не будут проверять условие.
+summary: Утверждение не рекомендуется к использованию. Взамен рекомендуется использовать @"microsoft.quantum.diagnostics.assertmeasurement".
 syntax: 'operation Assert (bases : Pauli[], qubits : Qubit[], result : Result, msg : String) : Unit'
 input:
   content: '(bases : Pauli[], qubits : Qubit[], result : Result, msg : String)'
   types:
   - name: bases
-    summary: Результат измерения для утверждения вероятности, выраженный как кубит оператор Паули.
     isArray: true
     isPrimitive: true
     uid: Pauli
   - name: qubits
-    summary: Регистр, для которого необходимо выполнить утверждение.
     isArray: true
     isPrimitive: true
     uid: Qubit
   - name: result
-    summary: Ожидаемый результат `Measure(bases, qubits)`.
     isPrimitive: true
     uid: Result
   - name: msg
-    summary: Сообщение, которое необходимо сообщить, если утверждение не выполняется.
     isPrimitive: true
     uid: String
 output:
@@ -35,12 +30,10 @@ output:
 functors:
 - Adjoint
 - Controlled
-seeAlso:
-- assertprob
 metadata:
-  ms.openlocfilehash: ececd74240ef9340666795142719faeeb0cbef7b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 56e41923bfeaa5ecf10bd47130260c78fbce7970
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674173"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885742"

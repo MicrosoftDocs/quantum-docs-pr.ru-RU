@@ -1,0 +1,60 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.synthesis.applyxcontrolledontruthtable
+name: ApplyXControlledOnTruthTable
+type: operation
+namespace: Microsoft.Quantum.Synthesis
+summary: >-
+  Применяет @"microsoft.quantum.intrinsic.x" операцию к `target` , если логическая функция `func` возвращает значение true для классического назначения в `controlRegister` .
+
+
+  Операция реализует единую операцию \бегин{алигн} У\кет {x} \ Сисакет {y} = \кет{КС}\кет{и \оплус f (x)} \енд{алигн}, где $x $ and $y $ представляют `controlRegister` и `target` соответственно.
+
+
+  Логическая функция $f $ представлена в виде таблицы истинности с точки зрения длинного целого числа.
+
+  Например, функция большинства для трех входов представлена битстринг `11101000` , где наиболее значащий бит `1` соответствует назначению ввода `(1, 1, 1)` , а наименее значащий бит `0` соответствует назначению ввода `(0, 0, 0)` .
+
+  Оно может представляться большим целым числом `0xE8L` в шестнадцатеричной нотации или `232L` в виде десятичной нотации.  `L`Суффикс указывает, что константа имеет тип `BigInt` .
+
+  Дополнительные сведения об этом представлении можно найти в [таблице истинности Ката](https://github.com/microsoft/QuantumKatas/tree/master/TruthTables).
+
+
+  В реализации используются @"microsoft.quantum.intrinsic.cnot" @"microsoft.quantum.intrinsic.r1" шлюзы и.
+syntax: 'operation ApplyXControlledOnTruthTable (func : BigInt, controlRegister : Qubit[], target : Qubit) : Unit'
+references: >-
+  - [*N. счуч*, *J. сиеверт*, прл 91, No 027902, 2003, арксив: Куант-pH/0303063](https://arxiv.org/abs/quant-ph/0303063)
+
+  - [*Матиас соекен*, *Мартен роеттелер*, арксив: 2005.12310](https://arxiv.org/abs/2005.12310)
+input:
+  content: '(func : BigInt, controlRegister : Qubit[], target : Qubit)'
+  types:
+  - name: func
+    summary: Логическая таблица истинности, представленная как большое целое число
+    isPrimitive: true
+    uid: BigInt
+  - name: controlRegister
+    summary: Регистрация элемента управления Кубитс
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: target
+    summary: Целевой кубит
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.synthesis.applyxcontrolledontruthtablewithcleantarget
+metadata:
+  ms.openlocfilehash: c15037917da8101270d3888ec0f335ad7986cbf2
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85887078"
