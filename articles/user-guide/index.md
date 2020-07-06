@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide
-ms.openlocfilehash: c5611f3e2907791f2dfc1644be0a45515d50dfd7
-ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
+ms.openlocfilehash: 078d86c808b26c7f0b7b2577020cd9cef9491a9d
+ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415376"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85885015"
 ---
 # <a name="the-q-user-guide"></a>Руководство пользователя Q#
 
@@ -22,6 +22,8 @@ ms.locfileid: "85415376"
 ## <a name="user-guide-contents"></a>Содержимое руководства пользователя
 
 - [Основы Q#.](xref:microsoft.quantum.guide.basics) Вводные сведения о назначении и функциональных возможностях языка Q#. 
+
+- [Способы запуска программы Q#](xref:microsoft.quantum.guide.host-programs): описывает ход выполнения программы Q#, а также включает обзор различных способов, с помощью которых можно вызвать программу — из командной строки, в записных книжках Jupyter Notebook с Q# или из классической основной программы, написанной на Python или a .NET.
 
 ### <a name="q-language"></a>Язык Q#
 

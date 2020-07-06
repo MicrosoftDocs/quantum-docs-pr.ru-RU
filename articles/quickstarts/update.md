@@ -7,12 +7,12 @@ ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.update
-ms.openlocfilehash: 8d39716c4d4c96ad87862b4b185895aab66cd210
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 457083ea4756d64375834e5a276c2d91031138fe
+ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274142"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85885154"
 ---
 # <a name="update-the-microsoft-quantum-development-kit-qdk"></a>Обновление пакета средств разработки Microsoft Quantum Development Kit (QDK)
 
@@ -151,14 +151,32 @@ ms.locfileid: "85274142"
 Процесс обновления QDK зависит от языка и среды разработки.
 Выберите среду разработки ниже.
 
-* [Python: обновление расширения IQ#](#update-iq-for-python)
-* [Записные книжки Jupyter Notebook: обновление расширения IQ#](#update-iq-for-jupyter-notebooks)
+* [Python: обновление пакета `qsharp`](#update-the-qsharp-python-package)
+* [Записные книжки Jupyter: обновление ядра IQ#](#update-the-iq-jupyter-kernel)
 * [Visual Studio: обновление расширения QDK](#update-visual-studio-qdk-extension)
 * [VS Code: обновление расширения QDK](#update-vs-code-qdk-extension)
 * [Командная строка и C#: обновление шаблонов проектов](#c-using-the-dotnet-command-line-tool)
 
 
-### <a name="update-iq-for-python"></a>Обновление IQ# для Python
+### <a name="update-the-qsharp-python-package"></a>Обновление пакета Python `qsharp`
+
+Процедура обновления зависит от того, была ли изначально установка выполнена с помощью conda или с помощью .NET CLI и pip.
+
+#### <a name="update-using-conda-recommended"></a>[Обновление с использованием conda (рекомендуется)](#tab/tabid-conda)
+
+1. Активируйте среду conda, в которой установлен пакет `qsharp`, а затем выполните следующую команду, чтобы обновить ее:
+
+    ```
+    conda update -c quantum-engineering qsharp
+    ```
+
+1. Запустите выполнение следующей команды из расположения файлов `.qs`:
+
+    ```
+    python -c "import qsharp; qsharp.reload()"
+    ```
+
+#### <a name="update-using-net-cli-and-pip-advanced"></a>[Обновление с использованием .NET CLI и pip (расширенное)](#tab/tabid-dotnetcli)
 
 1. Обновите ядро `iqsharp`. 
 
@@ -167,7 +185,7 @@ ms.locfileid: "85274142"
     dotnet iqsharp install
     ```
 
-2. Проверьте версию `iqsharp`.
+1. Проверьте версию `iqsharp`.
 
     ```dotnetcli
     dotnet iqsharp --version
@@ -176,19 +194,19 @@ ms.locfileid: "85274142"
     Вы должны увидеть следующий результат.
 
     ```
-    iqsharp: 0.10.1912.501
-    Jupyter Core: 1.2.20112.0
+    iqsharp: 0.12.20070124
+    Jupyter Core: 1.4.0.0
     ```
 
-    Не волнуйтесь, если версия `iqsharp` выше, она должна быть [новейшей](xref:microsoft.quantum.relnotes).
+    Не беспокойтесь, если ваша версия `iqsharp` выше. Она должна соответствовать [последнему выпуску](xref:microsoft.quantum.relnotes).
 
-3. Обновите пакет `qsharp`.
+1. Обновите версию пакета `qsharp`:
 
     ```
     pip install qsharp --upgrade
     ```
 
-4. Проверьте версию `qsharp`.
+1. Проверьте версию `qsharp`:
 
     ```
     pip show qsharp
@@ -198,29 +216,49 @@ ms.locfileid: "85274142"
 
     ```
     Name: qsharp
-    Version: 0.10.1912.501
+    Version: 0.12.20070124
     Summary: Python client for Q#, a domain-specific quantum programming language
     ...
     ```
 
-5. Запустите выполнение следующей команды из расположения файлов `.qs`.
+1. Запустите выполнение следующей команды из расположения файлов `.qs`:
 
     ```
     python -c "import qsharp; qsharp.reload()"
     ```
 
-6. Теперь вы можете использовать обновленную версию QDK для выполнения имеющихся квантовых программ.
+***
 
-### <a name="update-iq-for-jupyter-notebooks"></a>Обновление IQ# для записных книжек Jupyter Notebook
+Теперь вы можете использовать обновленную версию пакета Python `qsharp` для выполнения имеющихся квантовых программ.
 
-1. Обновите ядро `iqsharp`.
+### <a name="update-the-iq-jupyter-kernel"></a>Обновление версии ядра IQ# для Jupyter
+
+Процедура обновления зависит от того, была ли изначально установка выполнена с помощью conda или с помощью .NET CLI и pip.
+
+#### <a name="update-using-conda-recommended"></a>[Обновление с использованием conda (рекомендуется)](#tab/tabid-conda)
+
+1. Активируйте среду conda, в которой установлен пакет `qsharp`, а затем выполните следующую команду, чтобы обновить ее:
+
+    ```
+    conda update -c quantum-engineering qsharp
+    ```
+
+1. Выполните следующую команду из ячейки в каждой из существующих записных книжек Jupyter Notebook с Q#:
+
+    ```
+    %workspace reload
+    ```
+
+#### <a name="update-using-net-cli-and-pip-advanced"></a>[Обновление с использованием .NET CLI и pip (расширенное)](#tab/tabid-dotnetcli)
+
+1. Обновите версию пакета `Microsoft.Quantum.IQSharp`:
 
     ```dotnetcli
     dotnet tool update -g Microsoft.Quantum.IQSharp
     dotnet iqsharp install
     ```
 
-2. Проверьте версию `iqsharp`.
+1. Проверьте версию `iqsharp`:
 
     ```dotnetcli
     dotnet iqsharp --version
@@ -229,19 +267,21 @@ ms.locfileid: "85274142"
     Вывод приложения должен быть аналогичен приведенному ниже:
 
     ```
-    iqsharp: 0.10.1912.501
-    Jupyter Core: 1.2.20112.0
+    iqsharp: 0.12.20070124
+    Jupyter Core: 1.4.0.0
     ```
 
-    Не волнуйтесь, если версия `iqsharp` выше, она должна быть [новейшей](xref:microsoft.quantum.relnotes).
+    Не беспокойтесь, если ваша версия `iqsharp` выше. Она должна соответствовать [последнему выпуску](xref:microsoft.quantum.relnotes).
 
-3. Запустите выполнение следующей команды в ячейке Jupyter Notebook:
+1. Выполните следующую команду из ячейки в каждой из существующих записных книжек Jupyter Notebook с Q#:
 
     ```
     %workspace reload
     ```
 
-4. Теперь можно открыть имеющуюся записную книжку Jupyter Notebook и запустить ее выполнение с помощью обновленного пакета QDK.
+***
+
+Теперь вы можете использовать обновленное ядро IQ# для запуска существующих записных книжек Jupyter с Q#.
 
 ### <a name="update-visual-studio-qdk-extension"></a>Обновление расширения QDK для Visual Studio
 

@@ -2,6 +2,13 @@
 
 | Магические команды | Сводка |
 |---------------|---------|
+| [`%azure.connect`](xref:microsoft.quantum.iqsharp.magic-ref.azure.connect) | Подключается к рабочей области Azure Quantum или отображает текущее состояние подключения. |
+| [`%azure.execute`](xref:microsoft.quantum.iqsharp.magic-ref.azure.execute) | Выполняет задание в рабочей области Azure Quantum. |
+| [`%azure.jobs`](xref:microsoft.quantum.iqsharp.magic-ref.azure.jobs) | Отображает список заданий в текущей рабочей области Azure Quantum. |
+| [`%azure.output`](xref:microsoft.quantum.iqsharp.magic-ref.azure.output) | Отображает результаты для задания в текущей рабочей области Azure Quantum. |
+| [`%azure.status`](xref:microsoft.quantum.iqsharp.magic-ref.azure.status) | Отображает состояние для задания в текущей рабочей области Azure Quantum. |
+| [`%azure.submit`](xref:microsoft.quantum.iqsharp.magic-ref.azure.submit) | Отправляет задание в рабочую область Azure Quantum. |
+| [`%azure.target`](xref:microsoft.quantum.iqsharp.magic-ref.azure.target) | Задает или отображает активную цель выполнения для отправки задания Q# в рабочей области Azure Quantum. |
 | [`%check_kata`](xref:microsoft.quantum.iqsharp.magic-ref.check_kata) | Проверяет эталонную реализацию теста для одного задания. |
 | [`%chemistry.broombridge`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.broombridge) | Загружает и возвращает представление проблемы, связанной с электронной структурой Брумбриджа, из заданного YAML-файла. |
 | [`%chemistry.encode`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.encode) | Кодирует гамильтоново представление фермиона в формат, поддерживаемый в Q#. |
@@ -12,9 +19,9 @@
 | [`%estimate`](xref:microsoft.quantum.iqsharp.magic-ref.estimate) | Выполняет заданную функцию или операцию на целевом компьютере ResourcesEstimator. |
 | [`%kata`](xref:microsoft.quantum.iqsharp.magic-ref.kata) | Выполняет один тест. |
 | [`%lsmagic`](xref:microsoft.quantum.iqsharp.magic-ref.lsmagic) | Возвращает список всех доступных магических команд. |
-| [`%package`](xref:microsoft.quantum.iqsharp.magic-ref.package) | Разрешает загружать пакет NuGet. Пакет должен быть доступным в списке источников NuGet (обычно это nuget.org). |
+| [`%package`](xref:microsoft.quantum.iqsharp.magic-ref.package) | Разрешает загружать пакет NuGet. |
 | [`%performance`](xref:microsoft.quantum.iqsharp.magic-ref.performance) | Предоставляет текущие метрики производительности для этого ядра. |
 | [`%simulate`](xref:microsoft.quantum.iqsharp.magic-ref.simulate) | Выполняет заданную функцию или операцию на целевом компьютере QuantumSimulator. |
 | [`%toffoli`](xref:microsoft.quantum.iqsharp.magic-ref.toffoli) | Выполняет заданную функцию или операцию на целевом компьютере ToffoliSimulator. |
-| [`%who`](xref:microsoft.quantum.iqsharp.magic-ref.who) | Предоставляет действия, связанные с текущей рабочей областью. |
-| [`%workspace`](xref:microsoft.quantum.iqsharp.magic-ref.workspace) | Возвращает список всех операций и функций, определенных в текущем сеансе, интерактивно или после загрузки из текущей рабочей области. |
+| [`%who`](xref:microsoft.quantum.iqsharp.magic-ref.who) | Выводит список операций Q#, доступных в текущем сеансе. |
+| [`%workspace`](xref:microsoft.quantum.iqsharp.magic-ref.workspace) | Предоставляет действия, связанные с текущей рабочей областью. |
