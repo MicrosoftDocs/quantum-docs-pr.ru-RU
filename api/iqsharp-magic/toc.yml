@@ -1,3 +1,17 @@
+- href: azure.connect.md
+  name: Магическая команда %azure.connect
+- href: azure.execute.md
+  name: Магическая команда %azure.execute
+- href: azure.jobs.md
+  name: Магическая команда %azure.jobs
+- href: azure.output.md
+  name: Магическая команда %azure.output
+- href: azure.status.md
+  name: Магическая команда %azure.status
+- href: azure.submit.md
+  name: Магическая команда %azure.submit
+- href: azure.target.md
+  name: Магическая команда %azure.target
 - href: check_kata.md
   name: Магическая команда %check_kata
 - href: chemistry.broombridge.md
