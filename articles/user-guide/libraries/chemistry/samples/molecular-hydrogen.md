@@ -3,20 +3,22 @@ title: Получение оценок энергетических уровне
 description: 'Рассмотрим пример программы Q #, которая оценивает значения уровня энергии молекулярное водорода.'
 author: guanghaolow
 ms.author: gulow
-ms.date: 10/23/2018
+ms.date: 07/02/2020
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.energyestimate
-ms.openlocfilehash: 3242d8c6dc6fad2bd99055027dd7ce4ec3510ff4
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: b26538980366cf4cbe01fc2ef59580ae182f1e8a
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85276056"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871574"
 ---
 # <a name="obtaining-energy-level-estimates"></a>Получение оценок энергетических уровней
-Оценка значений уровня энергии является одним из основных приложений тактовой химия. Здесь показано, как это можно сделать для канонического примера молекулярное водорода. Образец, указанный в этом разделе, находится `MolecularHydrogen` в репозитории примеров химия. Более наглядным примером, который отображает выходные данные, является `MolecularHydrogenGUI` демонстрация.
+Оценка значений уровня энергии является одним из основных приложений тактовой химия. В этой статье описано, как это сделать для канонического примера водомолекулярное. Образец, указанный в этом разделе, находится [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogen) в репозитории примеров химия. Более наглядным примером, который отображает выходные данные, является [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogenGUI) демонстрация.
 
-Первым шагом является создание Хамилтониан, представляющего молекулярное водорода. Хотя это можно сделать с помощью средства Нвчем, мы вручную добавили термины Хамилтониан для краткости в этом примере.
+## <a name="estimating-the-energy-values-of-molecular-hydrogen"></a>Оценка значений энергии для молекулярное водорода
+
+Первым шагом является создание Хамилтониан, представляющего молекулярное водорода. Хотя это можно создать с помощью средства Нвчем, для краткости в этом примере термины Хамилтониан добавляются вручную.
 
 ```csharp
     // These orbital integrals are represented using the OrbitalIntegral
@@ -35,11 +37,11 @@ ms.locfileid: "85276056"
         new OrbitalIntegral(new int[] { }, energyOffset)
     };
 
-    // We initialize a fermion Hamiltonian data structure and add terms to it.
+    // Initialize a fermion Hamiltonian data structure and add terms to it.
     var fermionHamiltonian = new OrbitalIntegralHamiltonian(orbitalIntegrals).ToFermionHamiltonian();
 ```
 
-Для имитации Хамилтониан необходимо преобразовать операторы фермион в операторы кубит. Это преобразование выполняется с помощью Вигнер кодирования следующим образом.
+Для имитации Хамилтониан необходимо преобразовать операторы фермион в операторы кубит. Это преобразование выполняется с помощью Вигнер кодирования следующим образом:
 
 ```csharp
     // The Jordan-Wigner encoding converts the fermion Hamiltonian, 
@@ -49,8 +51,8 @@ ms.locfileid: "85276056"
     // computer.
     var jordanWignerEncoding = fermionHamiltonian.ToPauliHamiltonian(Pauli.QubitEncoding.JordanWigner);
 
-    // We also need to create an input quantum state to this Hamiltonian.
-    // Let us use the Hartree-Fock state.
+    // You also need to create an input quantum state to this Hamiltonian.
+    // Use the Hartree-Fock state.
     var fermionWavefunction = fermionHamiltonian.CreateHartreeFockState(nElectrons);
 
     // This Jordan-Wigner data structure also contains a representation 
@@ -60,7 +62,7 @@ ms.locfileid: "85276056"
     var qSharpData = QSharpFormat.Convert.ToQSharpFormat(qSharpHamiltonianData, qSharpWavefunctionData);
 ```
 
-Теперь мы передаем `qSharpData` хамилтониан, представляющий функцию, `TrotterStepOracle` в [имитацию хамилтониан Dynamics](xref:microsoft.quantum.libraries.standard.algorithms). `TrotterStepOracle`Возвращает операцию с тактом, которая приблизительно является развитием Хамилтониан в реальном времени.
+Затем Pass `qSharpData` , который представляет хамилтониан, для `TrotterStepOracle` функции. `TrotterStepOracle`Возвращает операцию такта, которая приблизительно соответствует эволюции Хамилтониан в реальном времени. Дополнительные сведения см. в разделе [имитация хамилтониан Dynamics](xref:microsoft.quantum.chemistry.concepts.simulationalgorithms).
 
 ```qsharp
 // qSharpData passed from driver
@@ -74,13 +76,13 @@ let integratorOrder = 4;
 
 // `oracle` is an operation that applies a single time-step of evolution for duration `stepSize`.
 // `rescale` is just `1.0/stepSize` -- the number of steps required to simulate unit-time evolution.
-// `nQubits` is the number of qubits that must be allocated to run the `oracle` operatrion.
+// `nQubits` is the number of qubits that must be allocated to run the `oracle` operation.
 let (nQubits, (rescale, oracle)) =  TrotterStepOracle (qSharpData, stepSize, integratorOrder);
 ```
 
-Теперь мы можем использовать алгоритмы оценки этапа стандартной библиотеки для изучения энергии в состоянии заземления с помощью описанной выше модели. Для этого необходимо подготовить хорошее приближение к состоянию земли в такте. В схеме предусмотрены предложения для таких приближений `Broombridge` , но отсутствуют эти предложения. подход по умолчанию добавляет ряд `hamiltonian.NElectrons` электронов в гридили, чтобы сократить силы по диагонали на один электрон. Функции и операции оценки этапа находятся в [пространстве имен Microsoft. такт. character](xref:microsoft.quantum.characterization in DocFX notation).
+На этом этапе можно использовать [алгоритмы оценки этапа](xref:microsoft.quantum.libraries.characterization) стандартной библиотеки для изучения энергии в состоянии заземления с помощью предыдущего моделирования. Для этого необходимо подготовить хорошее приближение к состоянию земли в такте. В схеме представлены предложения по подобным приближениям [`Broombridge`](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) . Однако в отсутствие этих предложений подход по умолчанию добавляет ряд `hamiltonian.NElectrons` электронов в гридили, чтобы сократить силы по диагонали на один электрон. Функции и операции оценки этапа предоставляются в нотации DocFX в пространстве имен [Microsoft. тактов. character](xref:microsoft.quantum.characterization) .
 
-В следующем фрагменте кода показано, как в реальном времени с помощью библиотеки моделирования химия можно интегрировать результаты оценки тактовой фазы.
+В следующем фрагменте кода показано, как в режиме реального времени результаты развития библиотеки моделирования химия интегрируются с оценкой фазы такта.
 
 ```qsharp
 operation GetEnergyByTrotterization (
@@ -93,42 +95,42 @@ operation GetEnergyByTrotterization (
     // `qSharpData`
     let (nSpinOrbitals, fermionTermData, statePrepData, energyOffset) = qSharpData!;
     
-    // We use a Product formula, also known as `Trotterization` to
+    // Using a Product formula, also known as `Trotterization`, to
     // simulate the Hamiltonian.
     let (nQubits, (rescaleFactor, oracle)) = 
         TrotterStepOracle(qSharpData, trotterStepSize, trotterOrder);
     
-    // The operation that creates the trial state is defined below.
+    // The operation that creates the trial state is defined here.
     // By default, greedy filling of spin-orbitals is used.
     let statePrep = PrepareTrialState(statePrepData, _);
     
-    // We use the Robust Phase Estimation algorithm
+    // Using the Robust Phase Estimation algorithm
     // of Kimmel, Low and Yoder.
     let phaseEstAlgorithm = RobustPhaseEstimation(nBitsPrecision, _, _);
     
     // This runs the quantum algorithm and returns a phase estimate.
     let estPhase = EstimateEnergy(nQubits, statePrep, oracle, phaseEstAlgorithm);
     
-    // We obtain the energy estimate by rescaling the phase estimate
+    // Now, obtain the energy estimate by rescaling the phase estimate
     // with the trotterStepSize. We also add the constant energy offset
     // to the estimated energy.
     let estEnergy = estPhase * rescaleFactor + energyOffset;
     
-    // We return both the estimated phase, and the estimated energy.
+    // Return both the estimated phase and the estimated energy.
     return (estPhase, estEnergy);
 }
 ```
 
-Этот код Q # теперь можно вызывать из программы драйвера. В следующем примере мы создадим симулятор с полным состоянием и выполняем `GetEnergyByTrotterization` для получения энергии в состоянии "Земля".
+Теперь можно вызвать код Q # из основной программы. В следующем коде C# создается симулятор с полным состоянием и выполняется `GetEnergyByTrotterization` для получения энергии в состоянии заземления.
 
 ```csharp
 using (var qsim = new QuantumSimulator())
 {
-    // We specify the bits of precision desired in the phase estimation 
+    // Specify the bits of precision desired in the phase estimation 
     // algorithm
     var bits = 7;
 
-    // We specify the step-size of the simulated time-evolution. This needs to
+    // Specify the step size of the simulated time evolution. The step size needs to
     // be small enough to avoid aliasing of phases, and also to control the
     // error of simulation.
     var trotterStep = 0.4;
@@ -136,10 +138,10 @@ using (var qsim = new QuantumSimulator())
     // Choose the Trotter integrator order
     Int64 trotterOrder = 1;
 
-    // As the quantum algorithm is probabilistic, let us run a few trials.
+    // As the quantum algorithm is probabilistic, run a few trials.
 
     // This may be compared to true value of
-    Console.WriteLine("Exact molecular Hydrogen ground state energy: -1.137260278.\n");
+    Console.WriteLine("Exact molecular hydrogen ground state energy: -1.137260278.\n");
     Console.WriteLine("----- Performing quantum energy estimation by Trotter simulation algorithm");
     for (int i = 0; i < 5; i++)
     {
@@ -149,4 +151,7 @@ using (var qsim = new QuantumSimulator())
 }
 ```
 
-Обратите внимание, что возвращаются два параметра. `energyEst`представляет собой оценку энергии в состоянии "Земля" и должно быть `-1.137` в среднем. `phaseEst`— Это необработанный этап, возвращенный алгоритмом оценки этапа. он полезен для диагностики, когда происходит присвоение псевдонимов из-за `trotterStep` слишком большого размера.
+Операция возвращает два параметра: 
+
+- `energyEst`является оценкой энергии в состоянии "Земля" и должно быть близко к `-1.137` среднему значению. 
+- `phaseEst`— Это необработанный этап, возвращенный алгоритмом оценки этапа. Это полезно для диагностики псевдонимов, когда это происходит из-за `trotterStep` слишком большого значения.

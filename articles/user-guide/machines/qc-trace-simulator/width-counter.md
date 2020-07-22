@@ -1,22 +1,35 @@
 ---
-title: Счетчик ширины
-description: Сведения о счетчике ширины Microsoft КДК, который подсчитывает количество Кубитс, выделенных и заимствованных каждой операцией в тактовой программе.
+title: Счетчик ширины — пакет разработки тактов
+description: 'Сведения о счетчике ширины Microsoft КДК, который использует симулятор трассировки тактов для подсчета количества Кубитс, выделенных и заимствованных операциями в программе Q #.'
 author: vadym-kl
 ms.author: vadym@microsoft.com
-ms.date: 12/11/2017
+ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.width-counter
-ms.openlocfilehash: a76292222950310acc90dded02980e4a5b792e76
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: af8609dc5c05f7a19b8d21755281427feb29b84c
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275564"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871527"
 ---
-# <a name="width-counter"></a>Счетчик ширины
+# <a name="quantum-trace-simulator-width-counter"></a>Симулятор тактовой трассировки: Счетчик ширины
 
-`Width Counter`Подсчитывает количество Кубитс, выделенных и заимствованных каждой операцией.
-Все операции из `Microsoft.Quantum.Intrinsic` пространства имен выражаются в виде однокубитных поворотов, T-шлюзов, одного кубит Клиффорд Gates, ШЛЮЗОВ кнот и измерений Multi-кубит Паули observable. Некоторые примитивные операции могут выделить дополнительные Кубитс. Например, перемножьте контролируемые `X` шлюзы или контролируемые `T` шлюзы. Давайте вычислим количество дополнительных Кубитс, выделенных реализацией шлюза, управляемого умножением `X` :
+Счетчик ширины является частью [имитатора тактовой трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro)пакета разработки тактов. Его можно использовать для подсчета количества Кубитс, выделенных и заимствованных каждой операцией в программе Q #. Некоторые примитивные операции могут выделять дополнительные Кубитс, например, умножение управляемых `X` операций или контролируемых `T` операций.
+
+## <a name="invoking-the-width-counter"></a>Вызов счетчика ширины
+
+Чтобы запустить симулятор трассировки тактов с счетчиком Width, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, установить `UseWidthCounter` свойство в **значение true**, а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра. 
+
+```csharp
+var config = new QCTraceSimulatorConfiguration();
+config.UseWidthCounter = true;
+var sim = new QCTraceSimulator(config);
+```
+
+## <a name="using-the-width-counter-in-a-c-host-program"></a>Использование счетчика ширины в управляющей программе C#
+
+В примере C#, приведенном в этом разделе, вычисляется количество дополнительных Кубитс, выделенных реализацией операции умножения <xref:microsoft.quantum.intrinsic.x> , на основе следующего кода Q #:
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;
@@ -28,13 +41,11 @@ operation ApplyMultiControlledX( numberOfQubits : Int ) : Unit {
 }
 ```
 
-## <a name="using-width-counter-within-a-c-program"></a>Использование счетчика ширины в программе C#
-
-Умножение `X` на 5 Кубитс выделит 2 дополнительных Кубитс, и его входная ширина будет равна 5. Чтобы убедиться, что это так, можно использовать следующую программу C#:
+Операция умножения выполняется <xref:microsoft.quantum.intrinsic.x> для всего пяти Кубитс, выделяет два [вспомогательных Кубитс](xref:microsoft.quantum.glossary#ancilla)и имеет ширину ввода **5**. Используйте следующую программу C# для проверки счетчиков:
 
 ```csharp 
 var config = new QCTraceSimulatorConfiguration();
-config.useWidthCounter = true;
+config.UseWidthCounter = true;
 var sim = new QCTraceSimulator(config);
 int totalNumberOfQubits = 5;
 var res = ApplyMultiControlledX.Run(sim, totalNumberOfQubits).Result;
@@ -50,13 +61,16 @@ double inputWidth =
         functor: OperationFunctor.Controlled);
 ```
 
-Выполняется первая часть программы `ApplyMultiControlledX` . Во второй части мы используем метод, `QCTraceSimulator.GetMetric` чтобы получить количество выделенных Кубитс, а также число Кубитс, контролируемых `X` в качестве входных данных. 
+Первая часть программы выполняет `ApplyMultiControlledX` операцию. Во второй части используется [`QCTraceSimulator.GetMetric`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulator.getmetric) метод для получения количества выделенных Кубитс, а также количества Кубитс, которые `Controlled X` операция получает в качестве входных данных. 
 
-Наконец, чтобы вывести всю статистику, собранную счетчиком ширины, в формате CSV, можно использовать следующее:
+Наконец, можно вывести всю статистику, собранную счетчиком ширины, в формате CSV, используя следующую команду:
 ```csharp
 string csvSummary = sim.ToCSV()[MetricsCountersNames.widthCounter];
 ```
 
-## <a name="see-also"></a>См. также ##
+## <a name="see-also"></a>См. также статью
 
-- Обзор [имитатора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro) компьютерных тактов.
+- Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>Справочник по API.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.MetricsNames.WidthCounter>Справочник по API.

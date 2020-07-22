@@ -1,21 +1,25 @@
 ---
-title: Средство проверки различных значений
-description: 'Сведения о проверке различных входных данных Microsoft КДК, которая проверяет код Q # на наличие потенциальных конфликтов с общим Кубитс.'
+title: Средство проверки различных входов — пакет средств разработки тактов
+description: 'Сведения о проверке различных входных данных Microsoft КДК, которая использует симулятор трассировки тактов для проверки кода Q # для потенциальных конфликтов с общими Кубитс.'
 author: vadym-kl
 ms.author: vadym@microsoft.com
-ms.date: 12/11/2017
+ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.distinct-inputs
-ms.openlocfilehash: 11a0573242c8afb12f242aa3be5f9cff18290452
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 49a1ccc5f37acfeaa1ee08bd974be45a40a76f93
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275619"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871150"
 ---
-# <a name="distinct-inputs-checker"></a>Средство проверки различных значений
+# <a name="quantum-trace-simulator-distinct-inputs-checker"></a>Симулятор трассировки тактов: отдельный модуль проверки входных данных
 
-`Distinct Inputs Checker`Компонент является частью [имитатора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro)компьютерных тактов. Он предназначен для обнаружения потенциальных ошибок в коде. Рассмотрим следующий фрагмент кода Q #, чтобы продемонстрировать проблемы, обнаруженные этим пакетом:
+Средство проверки индивидуальных входных значений входит в состав [симулятора тактовой](xref:microsoft.quantum.machines.qc-trace-simulator.intro)программы пакета разработки тактов. Его можно использовать для обнаружения потенциальных ошибок в коде, вызванных конфликтами с Shared Кубитс. 
+
+## <a name="conflicts-with-shared-qubits"></a>Конфликты с общими Кубитс
+
+Рассмотрим следующий фрагмент кода Q #, чтобы продемонстрировать проблемы, обнаруженные при проверке различных входных значений:
 
 ```qsharp
 operation ApplyBoth(
@@ -29,7 +33,9 @@ operation ApplyBoth(
 }
 ```
 
-Когда пользователь просматривает эту программу, предполагается, что порядок, в котором `op1` и `op2` они вызываются, не имеет значения, поскольку `q1` и `q2` являются различными Кубитс и операциями, работающими с различными кубитсми. Теперь рассмотрим пример, в котором используется эта операция:
+При просмотре этой программы можно предположить, что порядок, в котором она вызывает и не `op1` `op2` имеет значения, так как `q1` и `q2` является различными Кубитс и операциями, работающими с различными кубитсми. 
+
+Теперь рассмотрим следующий пример:
 
 ```qsharp
 operation ApplyWithNonDistinctInputs() : Unit {
@@ -41,11 +47,21 @@ operation ApplyWithNonDistinctInputs() : Unit {
 }
 ```
 
-Теперь `op1` и `op2` получаются с помощью частичного приложения и совместно используют кубит. Когда пользователь вызывает в приведенном `ApplyBoth` выше примере, результат операции будет зависеть от порядка `op1` и `op2` внутри `ApplyBoth` . Это, безусловно, не то, что может произойти пользователю. `Distinct Inputs Checker`Определяет такие ситуации, когда включен и выдает исключение `DistinctInputsCheckerException` . Дополнительные сведения см. в документации по API в [дистинктинпутсчеккерексцептион](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException) .
+Обратите внимание, что `op1` и `op2` они получаются с помощью частичного приложения и совместно используют кубит. При вызове `ApplyBoth` в этом примере результат операции зависит от порядка следования `op1` и `op2` внутреннего результата `ApplyBoth` . При включении проверки различных входных параметров обнаруживает такие ситуации и создает исключение `DistinctInputsCheckerException` . Дополнительные сведения см <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException> . в разделе библиотеки API Q #.
 
-## <a name="using-the-distinct-inputs-checker-in-your-c-program"></a>Использование средства проверки различных входных данных в программе C#
+## <a name="invoking-the-distinct-inputs-checker"></a>Вызов средства проверки различных значений
 
-Ниже приведен пример кода драйвера C# для использования имитатора трассировки тактов компьютера с `Distinct Inputs Checker` включенным:
+Чтобы запустить симулятор трассировки тактов с помощью средства проверки различных входных данных, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, присвоить `UseDistinctInputsChecker` свойству **значение true**, а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра. 
+
+```csharp
+var config = new QCTraceSimulatorConfiguration();
+config.UseDistinctInputsChecker = true;
+var sim = new QCTraceSimulator(config);
+```
+
+## <a name="using-the-distinct-inputs-checker-in-a-c-host-program"></a>Использование средства проверки различных входных значений в управляющей программе C#
+
+Ниже приведен пример основной программы C#, которая использует симулятор трассировки тактов с включенным средством проверки различных входных значений:
 
 ```csharp
 using Microsoft.Quantum.Simulation.Core;
@@ -59,7 +75,7 @@ namespace Quantum.MyProgram
         static void Main(string[] args)
         {
             var traceSimCfg = new QCTraceSimulatorConfiguration();
-            traceSimCfg.useDistinctInputsChecker = true; //enables distinct inputs checker
+            traceSimCfg.UseDistinctInputsChecker = true; //enables distinct inputs checker
             QCTraceSimulator sim = new QCTraceSimulator(traceSimCfg);
             var res = MyQuantumProgram.Run().Result;
             System.Console.WriteLine("Press any key to continue...");
@@ -69,8 +85,9 @@ namespace Quantum.MyProgram
 }
 ```
 
-Класс `QCTraceSimulatorConfiguration` хранит конфигурацию симулятора трассировки компьютерных тактов и может быть предоставлена в качестве аргумента для `QCTraceSimulator` конструктора. Если параметр `useDistinctInputsChecker` имеет значение true, `Distinct Inputs Checker` включен. Дополнительные сведения см. в документации по API на [кктрацесимулатор](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator) и [кктрацесимулаторконфигуратион](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration?) .
+## <a name="see-also"></a>См. также статью
 
-## <a name="see-also"></a>См. также
-
-- Обзор [имитатора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro) компьютерных тактов.
+- Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>Справочник по API.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException>Справочник по API.

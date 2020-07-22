@@ -1,21 +1,25 @@
 ---
-title: Средство проверки недействительных кубитов
-description: 'Сведения о проверке подлинности Microsoft КДК unvalidateed Кубитс, которая проверяет код Q # для потенциально недействительного Кубитс.'
+title: Недействительная Проверка использования Кубитс-пакет разработки тактов
+description: 'Узнайте о недействительности Кубитс Microsoft КДК, которая использует симулятор трассировки тактов для проверки кода Q # для потенциально недействительного Кубитс.'
 author: vadym-kl
 ms.author: vadym@microsoft.com
-ms.date: 12/11/2017
+ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits
-ms.openlocfilehash: e2bbb12448e27f28db030a0084302fb24f46f26b
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: fccf6d5784b587f4ad9b659e23027619acd06ffa
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275571"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871099"
 ---
-# <a name="invalidated-qubits-use-checker"></a>Недействительная Проверка использования Кубитс
+# <a name="quantum-trace-simulator-invalidated-qubits-use-checker"></a>Симулятор трассировки тактов: недействительная Проверка использования Кубитс
 
-`Invalidated Qubits Use Checker`Компонент является частью тактового компьютера [трацесимулатор](xref:microsoft.quantum.machines.qc-trace-simulator.intro) , предназначенного для обнаружения потенциальных ошибок в коде. Рассмотрим следующий фрагмент кода Q #, чтобы продемонстрировать проблемы, обнаруженные компонентом `Invalidated Qubits Use Checker` .
+Недействительная Проверка использования Кубитс является частью [симулятора отслеживания тактов](xref:microsoft.quantum.machines.qc-trace-simulator.intro)пакета разработки тактов. Его можно использовать для обнаружения потенциальных ошибок в коде, вызванных недопустимым Кубитс. 
+
+## <a name="invalid-qubits"></a>Недопустимый Кубитс
+
+Рассмотрим следующий фрагмент кода Q #, чтобы продемонстрировать проблемы, обнаруженные недействительным Кубитс использованием проверки подлинности.
 
 ```qsharp
 operation UseReleasedQubit() : Unit {
@@ -27,12 +31,22 @@ operation UseReleasedQubit() : Unit {
 }
 ```
 
-Когда `H` применяется к, `q[0]` он указывает на уже выпущенную кубит. Это может привести к неопределенному поведению. Если параметр `Invalidated Qubits Use Checker` включен, то исключение `InvalidatedQubitsUseCheckerException` будет создано, если операция применяется к уже выпущенному кубит. Дополнительные сведения см. в документации по API в [инвалидатедкубитсусечеккерексцептион](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.InvalidatedQubitsUseCheckerException) .
+При применении `H` операции к `q[0]` она указывает на уже выпущенную кубит, которая может привести к неопределенному поведению. Если функция проверки использования непроверенных Кубитс включена, она создает исключение, `InvalidatedQubitsUseCheckerException` Если программа применяет операцию к уже выпущенной кубит. Для получения дополнительной информации см. <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.InvalidatedQubitsUseCheckerException>.
 
-## <a name="using-the-invalidated-qubits-use-checker-in-your-c-program"></a>Использование недействительной проверки использования Кубитс в программе C#
+## <a name="invoking-the-invalidated-qubits-use-checker"></a>Вызов проверки непроверенного использования Кубитс
 
-Ниже приведен пример кода драйвера C# для использования тактового компьютера `Trace
-Simulator` с `Invalidated Qubits Use Checker` включенным: 
+Чтобы запустить симулятор трассировки тактов с проверкой непроверенного использования Кубитс, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, присвоить `UseInvalidatedQubitsUseChecker` свойству **значение true**, а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра. 
+
+```csharp
+var config = new QCTraceSimulatorConfiguration();
+config.UseInvalidatedQubitsUseChecker = true;
+var sim = new QCTraceSimulator(config);
+```
+
+
+## <a name="using-the-invalidated-qubits-use-checker-in-a-c-host-program"></a>Использование недействительной проверки использования Кубитс в основной программе C#
+
+Ниже приведен пример ведущих программ C#, использующих симулятор трассировки тактов с включенной проверкой подлинности Кубитс. 
 
 ```csharp
 using Microsoft.Quantum.Simulation.Core;
@@ -46,7 +60,7 @@ namespace Quantum.MyProgram
         static void Main(string[] args)
         {
             var traceSimCfg = new QCTraceSimulatorConfiguration();
-            traceSimCfg.useInvalidatedQubitsUseChecker = true; // enables useInvalidatedQubitsUseChecker
+            traceSimCfg.UseInvalidatedQubitsUseChecker = true; // enables UseInvalidatedQubitsUseChecker
             QCTraceSimulator sim = new QCTraceSimulator(traceSimCfg);
             var res = MyQuantumProgram.Run().Result;
             System.Console.WriteLine("Press any key to continue...");
@@ -56,8 +70,9 @@ namespace Quantum.MyProgram
 }
 ```
 
-Класс `QCTraceSimulatorConfiguration` хранит конфигурацию симулятора трассировки компьютерных тактов и может быть предоставлена в качестве аргумента для `QCTraceSimulator` конструктора. Если параметр `useInvalidatedQubitsUseChecker` имеет значение true, `Invalidated Qubits Use Checker` включен. Дополнительные сведения см. в документации по API на [кктрацесимулатор](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator) и [кктрацесимулаторконфигуратион](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration) .
+## <a name="see-also"></a>См. также статью
 
-## <a name="see-also"></a>См. также ##
-
-- Обзор [имитатора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro) компьютерных тактов.
+- Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>Справочник по API.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.InvalidatedQubitsUseCheckerException>Справочник по API.

@@ -6,12 +6,12 @@ ms.author: bradben
 ms.date: 5/30/2020
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: d10f81a1e49235be8e02661dcd6d3c839485af6e
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+ms.openlocfilehash: 4b5e7b657f0e11fb4a14308c20859f4007729146
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85885048"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871560"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -21,6 +21,17 @@ ms.locfileid: "85885048"
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
 
+
+## <a name="version-01220072031"></a>Версия 0.12.20072031
+
+*Дата выпуска: 21 июля 2020 г.*
+
+Этот выпуск включает следующие обновления:
+
+- Открытые пространства имен в записных книжках Q # теперь доступны для всех последующих выполнений ячеек. Это позволяет, например, открывать пространства имен один раз в ячейке в верхней части записной книжки вместо того, чтобы открывать соответствующие пространства имен в каждой ячейке кода. Новая `%lsopen` Волшебная команда отображает список открытых в настоящее время пространств имен.
+
+См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed), [IQ#](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) и [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
+
 ## <a name="version-01220070124"></a>Версия 0.12.20070124
 
 *Дата выпуска: 2 июля 2020 г.*
@@ -28,7 +39,7 @@ ms.locfileid: "85885048"
 Этот выпуск включает следующие обновления:
 
 - Новое `qdk-chem` средство для преобразования устаревших форматов сериализации проблем в электронных структурах (например: фЦидумп) в [брумбридже](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)
-- Новые функции и операции в [ `Microsoft.Quantum.Synthesis` пространстве имен](xref:microsoft.quantum.synthesis) для согласованного применения классических баз данных Oracle с помощью алгоритмов синтеза и декомпозиции на основе преобразований.
+- Новые функции и операции в [`Microsoft.Quantum.Synthesis`](xref:microsoft.quantum.synthesis) пространстве имен для согласованного применения классических баз данных Oracle с помощью алгоритмов синтеза и декомпозиции на основе преобразований.
 - В IQ # теперь разрешены аргументы для `%simulate` , `%estimate` и других волшебных команд. Дополнительные сведения см. в [ `%simulate` справочнике по командам Magic](xref:microsoft.quantum.iqsharp.magic-ref.simulate) .
 - Новые параметры представления этапа в IQ #. Дополнительные сведения см. в [ `%config` справочнике по командам Magic](xref:microsoft.quantum.iqsharp.magic-ref.config) .
 - IQ # и `qsharp` пакет Python теперь предоставляются через пакеты conda ([кшарп](https://anaconda.org/quantum-engineering/qsharp) и [икшарп](https://anaconda.org/quantum-engineering/iqsharp)), чтобы упростить локальную установку Q # Jupyter и функциональность Python в среде conda. Дополнительные сведения см. в руководстве по установке [q # Jupyter Notebooks](xref:microsoft.quantum.install.jupyter) и [q # with Python](xref:microsoft.quantum.install.python) .
@@ -446,7 +457,7 @@ ms.locfileid: "85885048"
 
 *Дата выпуска: 22 июня 2018 г.*
 
-Этот выпуск включает несколько вкладов сообщества, а также улучшенные возможности для отладки и оптимизации производительности.  В частности, внесены следующие изменения.
+Этот выпуск включает несколько вкладов сообщества, а также улучшенные возможности для отладки и оптимизации производительности.  В частности:
 
 * Повышение производительности моделирования разного масштаба на целевом компьютере QuantumSimulator.
 * Усовершенствованы функции отладки.

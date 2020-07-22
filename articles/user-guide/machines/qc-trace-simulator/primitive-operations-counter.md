@@ -1,21 +1,37 @@
 ---
-title: Счетчик примитивных операций
-description: Сведения о счетчике Microsoft КДК-примитивных операций, который отслеживает количество простых выполнений, используемых операциями в тактовой программе.
+title: Счетчик примитивных операций — пакет средств разработки тактов
+description: 'Сведения о счетчике Microsoft КДК-примитивных операций, который использует симулятор трассировки тактов для отслеживания выполнения примитивов, используемых операциями в программе Q #.'
 author: vadym-kl
 ms.author: vadym@microsoft.com
-ms.date: 12/11/2017
+ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.primitive-counter
-ms.openlocfilehash: 8bdb0aed370e72b58b23025f1685ad7ce1a77a43
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: ea022d499354f7cefd60da690466496e0ce7c336
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275555"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871031"
 ---
-# <a name="primitive-operations-counter"></a>Счетчик примитивных операций  
+# <a name="quantum-trace-simulator-primitive-operations-counter"></a>Симулятор трассировки тактов: Счетчик примитивных операций
 
-`Primitive Operations Counter`Компонент является частью [имитатора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro)компьютерных тактов. Он подсчитывает количество простых выполнений, используемых каждой операцией, вызванной в тактовой программе. Все операции из `Microsoft.Quantum.Intrinsic` выражаются в виде однокубитных поворотов, T-шлюзов, одного кубит Клиффорд Гейтсов, шлюзов кнот и измерений Multi-кубит Паули observable. Собранные статистические данные суммируются по краям графа вызовов операций. Теперь давайте подсчитани количество `T` шлюзов, необходимых для реализации `CCNOT` операции. 
+Счетчик операции примитива является частью [имитатора тактовой трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro)пакета разработки тактов. Он подсчитывает количество простых выполнений, используемых каждой операцией, вызванной в тактовой программе. 
+
+Все <xref:microsoft.quantum.intrinsic> операции выражаются с точки зрения однокубитного вращения, T Operations, кубит Клиффорд Operations, кнот операций и измерений Multi-кубит Паули observable. Счетчик примитивных операций выполняет статистическую обработку и собирает статистические данные по всем краям [графа вызовов](https://en.wikipedia.org/wiki/Call_graph)операции.
+
+## <a name="invoking-the-primitive-operation-counter"></a>Вызов счетчика примитивной операции
+
+Чтобы запустить симулятор трассировки тактов со счетчиком операций-примитивов, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, присвоить `UsePrimitiveOperationsCounter` свойству **значение true**, а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра.
+
+```csharp
+var config = new QCTraceSimulatorConfiguration();
+config.UsePrimitiveOperationsCounter = true;
+var sim = new QCTraceSimulator(config);
+```
+
+## <a name="using-the-primitive-operation-counter-in-a-c-host-program"></a>Использование счетчика примитивных операций в основной программе C#
+
+В примере C#, приведенном в этом разделе, подсчитывается количество <xref:microsoft.quantum.intrinsic.t> операций, необходимых для реализации <xref:microsoft.quantum.intrinsic.ccnot> операции, на основе следующего кода в Q #:
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;
@@ -24,19 +40,17 @@ operation ApplySampleWithCCNOT() : Unit {
     using (qubits = Qubit[3]) {
         CCNOT(qubits[0], qubits[1], qubits[2]);
         T(qubits[0]);
-    } 
+    }
 }
 ```
 
-## <a name="using-the-primitive-operations-counter-within-a-c-program"></a>Использование счетчика примитивных операций в программе C#
-
-Чтобы убедиться, что в `CCNOT` действительно требуется 7 `T` шлюзов и `ApplySampleWithCCNOT` выполняется 8 `T` шлюзов, можно использовать следующий код C#:
+Чтобы проверить, `CCNOT` требуется ли семь `T` операций и которые `ApplySampleWithCCNOT` выполняют восемь `T` операций, используйте следующий код C#:
 
 ```csharp 
 // using Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators;
 // using System.Diagnostics;
 var config = new QCTraceSimulatorConfiguration();
-config.usePrimitiveOperationsCounter = true;
+config.UsePrimitiveOperationsCounter = true;
 var sim = new QCTraceSimulator(config);
 var res = ApplySampleWithCCNOT.Run(sim).Result;
 
@@ -44,25 +58,23 @@ double tCountAll = sim.GetMetric<ApplySampleWithCCNOT>(PrimitiveOperationsGroups
 double tCount = sim.GetMetric<Primitive.CCNOT, ApplySampleWithCCNOT>(PrimitiveOperationsGroupsNames.T);
 ```
 
-Выполняется первая часть программы `ApplySampleWithCCNOT` . Во второй части мы используем метод `QCTraceSimulator.GetMetric` для получения числа T Gates, выполненных `ApplySampleWithCCNOT` : 
+Запускается первая часть программы `ApplySampleWithCCNOT` . Во второй части используется [`QCTraceSimulator.GetMetric`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulator.getmetric) метод для получения количества `T` операций, выполняемых `ApplySampleWithCCNOT` : 
 
-```csharp
-double tCount = sim.GetMetric<Primitive.CCNOT, ApplySampleWithCCNOT>(PrimitiveOperationsGroupsNames.T);
-double tCountAll = sim.GetMetric<ApplySampleWithCCNOT>(PrimitiveOperationsGroupsNames.T);
-```
+При вызове `GetMetric` с двумя параметрами типа он возвращает значение метрики, связанной с данным ребром графа вызовов. В предыдущем примере программа вызывает `Primitive.CCNOT` операцию в `ApplySampleWithCCNOT` и, следовательно, граф вызовов содержит ребро `<Primitive.CCNOT, ApplySampleWithCCNOT>` . 
 
-Когда `GetMetric` вызывается с двумя параметрами типа, он возвращает значение метрики, связанной с данным ребром графа вызова. В нашем примере операции `Primitive.CCNOT` вызывается внутри `ApplySampleWithCCNOT` и, следовательно, граф вызовов содержит ребро `<Primitive.CCNOT, ApplySampleWithCCNOT>` . 
-
-Чтобы получить количество `CNOT` используемых шлюзов, можно добавить следующую строку:
+Чтобы получить количество `CNOT` используемых операций, добавьте следующую строку:
 ```csharp
 double cxCount = sim.GetMetric<Primitive.CCNOT, ApplySampleWithCCNOT>(PrimitiveOperationsGroupsNames.CX);
 ```
 
-Наконец, чтобы вывести всю статистику, собранную счетчиком шлюзов в формате CSV, можно использовать следующее:
+Наконец, можно вывести всю статистику, собранную счетчиком примитивных операций в формате CSV, с помощью следующей команды:
 ```csharp
 string csvSummary = sim.ToCSV()[MetricsCountersNames.primitiveOperationsCounter];
 ```
 
-## <a name="see-also"></a>См. также ##
+## <a name="see-also"></a>См. также статью
 
-- Обзор [имитатора трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro) компьютерных тактов.
+- Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>Справочник по API.
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.PrimitiveOperationsGroupsNames>Справочник по API.

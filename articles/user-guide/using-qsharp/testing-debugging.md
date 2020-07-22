@@ -6,12 +6,12 @@ ms.author: mamykhai@microsoft.com
 ms.date: 06/01/2020
 ms.topic: article
 uid: microsoft.quantum.guide.testingdebugging
-ms.openlocfilehash: cd619607af9e2b601f3bec1304c5729d84312f35
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+ms.openlocfilehash: db6e49e94e5ceb3b1b0b2d6ab57391618084072b
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85884089"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86870980"
 ---
 # <a name="testing-and-debugging"></a>Тестирование и отладка
 
@@ -50,7 +50,7 @@ $ code . # To open in Visual Studio Code
     operation AllocateQubit () : Unit {
 
         using (qubit = Qubit()) {
-            Assert([PauliZ], [qubit], Zero, "Newly allocated qubit must be in the |0⟩ state.");
+            AssertMeasurement([PauliZ], [qubit], Zero, "Newly allocated qubit must be in the |0⟩ state.");
         }
         
         Message("Test passed");
@@ -177,7 +177,7 @@ operation AssertQubitsAreAvailable() : Unit
 Так как это зависит от глобального состояния программы и среды выполнения, наше определение `AssertQubitsAreAvailable` должно также быть операцией.
 Однако можно использовать это глобальное состояние, чтобы получить простое значение в `Bool` качестве входных данных для `Fact` функции.
 
-[Версионного](xref:microsoft.quantum.libraries.standard.prelude), основываясь на этих идеях, предлагает два особенно полезных утверждения, <xref:microsoft.quantum.intrinsic.assert> которые <xref:microsoft.quantum.intrinsic.assertprob> моделируются как операции `()` . Каждый из этих утверждений принимает Оператор Паули, описывающий определенное измерение интересов, тактовый регистр, на котором выполняется измерение, и гипотетический результат.
+[Версионного](xref:microsoft.quantum.libraries.standard.prelude), основываясь на этих идеях, предлагает два особенно полезных утверждения, <xref:microsoft.quantum.diagnostics.assertmeasurement> которые <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> моделируются как операции `()` . Каждый из этих утверждений принимает Оператор Паули, описывающий определенное измерение интересов, тактовый регистр, на котором выполняется измерение, и гипотетический результат.
 Целевые компьютеры, работающие с имитацией, не привязаны [к Теорема без клонирования](https://en.wikipedia.org/wiki/No-cloning_theorem)и могут выполнять такие измерения, не нарушая регистр, который передается в такие утверждения.
 Симулятор может, как и `PositivityFact` функция Previous, прекращать вычисление, если гипотетический результат не наблюдается на практике:
 
@@ -185,14 +185,14 @@ operation AssertQubitsAreAvailable() : Unit
 using (register = Qubit()) 
 {
     H(register);
-    Assert([PauliX], [register], Zero);
+    AssertMeasurement([PauliX], [register], Zero);
     // Even though we do not have access to states in Q#,
     // we know by the anthropic principle that the state
     // of register at this point is |+〉.
 }
 ```
 
-На оборудовании физического такта, где Теорема без клонирования предотвращает исследование состояния такта, `Assert` операции и просто возвращают без какого-либо `AssertProb` `()` другого действия.
+На оборудовании физического такта, где Теорема без клонирования предотвращает исследование состояния такта, `AssertMeasurement` операции и просто возвращают без какого-либо `AssertMeasurementProbability` `()` другого действия.
 
 <xref:microsoft.quantum.diagnostics>Пространство имен предоставляет несколько дополнительных функций `Assert` семейства, с помощью которых можно проверить более сложные условия. 
 
