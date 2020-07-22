@@ -1,5 +1,5 @@
 - name: Знакомство с квантовым машинным обучением
-  href: introduction.md
+  href: intro.md
 - name: Базовая классификация
   href: basic-classification.md
 - name: Проектирование собственного классификатора
