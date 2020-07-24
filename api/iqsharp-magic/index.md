@@ -1,5 +1,18 @@
+---
+title: Магические команды IQ#
+author: rmshaffer
+uid: microsoft.quantum.iqsharp.magic-ref.index
+ms.author: rmshaffer
+ms.date: 07/21/2020
+ms.topic: article
+ms.openlocfilehash: 971787adae03af35d2e5b408fb88356a8b7df90a
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86870708"
+---
 # <a name="iq-magic-commands"></a>Магические команды IQ#
-
 | Магические команды | Сводка |
 |---------------|---------|
 | [`%azure.connect`](xref:microsoft.quantum.iqsharp.magic-ref.azure.connect) | Подключается к рабочей области Azure Quantum или отображает текущее состояние подключения. |
@@ -19,6 +32,7 @@
 | [`%estimate`](xref:microsoft.quantum.iqsharp.magic-ref.estimate) | Выполняет заданную функцию или операцию на целевом компьютере ResourcesEstimator. |
 | [`%kata`](xref:microsoft.quantum.iqsharp.magic-ref.kata) | Выполняет один тест. |
 | [`%lsmagic`](xref:microsoft.quantum.iqsharp.magic-ref.lsmagic) | Возвращает список всех доступных магических команд. |
+| [`%lsopen`](xref:microsoft.quantum.iqsharp.magic-ref.lsopen) | Содержит список открытых пространств имен и их псевдонимов. |
 | [`%package`](xref:microsoft.quantum.iqsharp.magic-ref.package) | Разрешает загружать пакет NuGet. |
 | [`%performance`](xref:microsoft.quantum.iqsharp.magic-ref.performance) | Предоставляет текущие метрики производительности для этого ядра. |
 | [`%simulate`](xref:microsoft.quantum.iqsharp.magic-ref.simulate) | Выполняет заданную функцию или операцию на целевом компьютере QuantumSimulator. |

@@ -32,6 +32,8 @@
   name: Магическая команда %kata
 - href: lsmagic.md
   name: Магическая команда %lsmagic
+- href: lsopen.md
+  name: Магическая команда %lsopen
 - href: package.md
   name: Магическая команда %package
 - href: performance.md
