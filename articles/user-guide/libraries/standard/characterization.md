@@ -6,12 +6,12 @@ uid: microsoft.quantum.libraries.characterization
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 7ed92c29020ccf389faa099f5bd80516af525578
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 9d763d11ef9c08cc0941cade217dbb2942ef4bf9
+ms.sourcegitcommit: 2f4c637e194dc2b5d18539469ed37444e2800199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275763"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87436538"
 ---
 # <a name="quantum-characterization-and-statistics"></a>Посимвольная и статистика тактовой задержки #
 
@@ -96,7 +96,7 @@ ms.locfileid: "85275763"
 Чтобы увидеть это, мы хотели бы изучить $n $-разрядную переменную $x $.
 В предыдущем дистрибутиве $ \Пр (x) $ предусмотрена поддержка более чем $2 ^ n $ гипотетических значений $x $.
 Это означает, что если нам требуется очень точная оценка $x $, оценка фазы Байеса может потребовать недостаточного объема памяти и времени обработки.
-Хотя для некоторых приложений, таких как моделирование такта, требуемая точность лимиттед не исключает такие методы, как алгоритмы Шор, не может использовать точное определение Байеса на этапе оценки этапа.  По этой причине мы также предоставляем реализации для приблизительных методов Байеса, таких как [Оценка этапа случайного анализа (рвпе)](xref:microsoft.quantum.research.randomwalkphaseestimation.randomwalkphaseestimation) , а также небайеса подходов, таких как [устойчивая Оценка этапа](xref:microsoft.quantum.characterization.robustphaseestimation).
+Хотя для некоторых приложений, таких как моделирование такта, требуемая точность лимиттед не исключает такие методы, как алгоритмы Шор, не может использовать точное определение Байеса на этапе оценки этапа.  По этой причине мы также предоставляем реализации для приблизительных методов Байеса, таких как [Оценка этапа случайного анализа (рвпе)](xref:microsoft.quantum.research.characterization.randomwalkphaseestimation) , а также небайеса подходов, таких как [устойчивая Оценка этапа](xref:microsoft.quantum.characterization.robustphaseestimation).
 
 ### <a name="robust-phase-estimation"></a>Надежная оценка этапа ###
 
