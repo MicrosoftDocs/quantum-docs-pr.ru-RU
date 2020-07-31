@@ -6,12 +6,12 @@ ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
-ms.openlocfilehash: ec5e66e0c85d89888a8ff1e7d6bf18bf89ff44ac
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+ms.openlocfilehash: 4d148435f01d975e690828dd02335758fc71dfe4
+ms.sourcegitcommit: 2f4c637e194dc2b5d18539469ed37444e2800199
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871592"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87436557"
 ---
 # <a name="develop-with-q-and-python"></a>Разработка на Q# и Python
 
@@ -97,7 +97,7 @@ ms.locfileid: "86871592"
     import qsharp
     from Qrng import SampleQuantumRandomNumberGenerator
 
-    SampleQuantumRandomNumberGenerator.simulate()
+    print(SampleQuantumRandomNumberGenerator.simulate())
     ```
 
 1. В созданной во время установки среде (т. е. в среде conda или Python, где вы установили `qsharp`) выполните следующую программу:
@@ -106,7 +106,7 @@ ms.locfileid: "86871592"
     python host.py
     ```
 
-1. Вы должны увидеть результат вызванной операции. В этом случае (так как операция выдает случайный результат) вы увидите на экране `Zero` или `One`. Если выполнять программу повторно, каждый результат будет отображаться примерно в половине случаев.
+1. Вы должны увидеть результат вызванной операции. В этом случае (так как операция выдает случайный результат) вы увидите на экране `0` или `1`. Если выполнять программу повторно, каждый результат будет отображаться примерно в половине случаев.
 
 > [!NOTE]
 > * Код Python — это просто обычная программа Python. Вы можете использовать любую среду Python, в т. ч. записные книжки Jupyter Notebook с Python, для написания программы Python и вызова операций Q#. Программа Python может импортировать операции Q# из любых файлов QS, расположенных в той же папке, что и код Python.
