@@ -6,12 +6,15 @@ ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.loadhamiltonian
-ms.openlocfilehash: 715dbcefc10ecc5af45f2bdd228890f1cb28886b
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 57e25bf55009797b01695cef0f3d29b94662ccc0
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275244"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869245"
 ---
 # <a name="loading-a-hamiltonian-from-file"></a>Загрузка гамильтонова представления из файла
 Ранее мы создали Хамилтонианс, добавив в него отдельные термины. Хотя это и удобно для небольших примеров, тактовая химия в масштабе требует Хамилтонианс с миллионами или миллиардами терминов. Такие Хамилтонианс, созданные пакетами химия, такими как Нвчем, слишком велики для импорта вручную. В этом примере показано, как `FermionHamiltonian` экземпляр может быть автоматически создан из молекулы, представленной [схемой брумбридже](xref:microsoft.quantum.libraries.chemistry.schema.broombridge). Для справки можно проверить предоставленный `LithiumHydrideGUI` образец или `RunSimulation` образец. Ограниченная поддержка также доступна для импорта из формата, используемого [ликуи |>](https://www.microsoft.com/en-us/research/project/language-integrated-quantum-operations-liqui/).
@@ -40,7 +43,7 @@ var fermionHamiltonian = orbitalIntegralHamiltonian.ToFermionHamiltonian(IndexCo
 var jordanWignerEncoding = fermionHamiltonian.ToPauliHamiltonian(Pauli.QubitEncoding.JordanWigner);
 ```
 
-Схема Брумбридже также содержит предложения по подготовке первоначального состояния. Метки, например `"|G⟩"` или `"|E1⟩"` , для этих состояний можно просмотреть, изучив файл. Для подготовки этих начальных состояний `qSharpData` алгоритм тактовой задержки (Q #) получается аналогично [предыдущему разделу](xref:microsoft.quantum.chemistry.examples.energyestimate), но с дополнительным параметром, который выбирает нужное начальное состояние. Например,
+Схема Брумбридже также содержит предложения по подготовке первоначального состояния. Метки, например `"|G⟩"` или `"|E1⟩"` , для этих состояний можно просмотреть, изучив файл. Чтобы подготовить эти начальные состояния, объект, `qSharpData` потребляемый Q# алгоритмами тактовой задержки, получается аналогично [предыдущему разделу](xref:microsoft.quantum.chemistry.examples.energyestimate), но с дополнительным параметром, который выбирает нужное начальное состояние. Например,
 ```csharp
 // The desired initial state, assuming that a description of it is present in the
 // Broombridge schema.

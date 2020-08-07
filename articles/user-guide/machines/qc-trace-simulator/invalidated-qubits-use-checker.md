@@ -1,17 +1,20 @@
 ---
 title: Недействительная Проверка использования Кубитс-пакет разработки тактов
-description: 'Узнайте о недействительности Кубитс Microsoft КДК, которая использует симулятор трассировки тактов для проверки кода Q # для потенциально недействительного Кубитс.'
+description: Узнайте о недействительности Кубитс Microsoft КДК, которая использует симулятор трассировки тактов для проверки Q# кода на наличие потенциально недействительного Кубитс.
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits
-ms.openlocfilehash: fccf6d5784b587f4ad9b659e23027619acd06ffa
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: c451747badba03801bd4ecd419420f131ac502d6
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871099"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868293"
 ---
 # <a name="quantum-trace-simulator-invalidated-qubits-use-checker"></a>Симулятор трассировки тактов: недействительная Проверка использования Кубитс
 
@@ -19,7 +22,7 @@ ms.locfileid: "86871099"
 
 ## <a name="invalid-qubits"></a>Недопустимый Кубитс
 
-Рассмотрим следующий фрагмент кода Q #, чтобы продемонстрировать проблемы, обнаруженные недействительным Кубитс использованием проверки подлинности.
+Рассмотрим следующий фрагмент кода, Q# чтобы продемонстрировать проблемы, обнаруженные недействительным Кубитс использованием средства проверки.
 
 ```qsharp
 operation UseReleasedQubit() : Unit {
@@ -70,7 +73,7 @@ namespace Quantum.MyProgram
 }
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.

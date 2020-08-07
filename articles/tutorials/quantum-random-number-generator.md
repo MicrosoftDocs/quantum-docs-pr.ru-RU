@@ -1,30 +1,33 @@
 ---
 title: Создание квантового генератора случайных чисел
-description: Создайте проект Q#, который демонстрирует фундаментальные квантовые понятия, например суперпозицию, на примере квантового генератора случайных чисел.
+description: Создайте Q# проект, демонстрирующий фундаментальные понятия о такте, такие как "геоположение", создав генератор тактов случайных чисел.
 author: bromeg
 ms.author: megbrow@microsoft.com
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
-ms.openlocfilehash: 18e8975e513a87c0a67a6dbb5586cc7dab5a93fb
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 8db892091794cb1166e41744572d8938d975abf2
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275283"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869772"
 ---
 # <a name="tutorial-implement-a-quantum-random-number-generator-in-q"></a>Руководство по Реализация квантового генератора случайных чисел на языке Q\#
 
-Простой пример квантового алгоритма на языке Q#, который моделирует генератор случайных чисел. Этот алгоритм использует природу квантовой механики для получения случайного числа.
+Простым примером алгоритма такта, написанного на Q# , является генератор тактовых случайных чисел. Этот алгоритм использует природу квантовой механики для получения случайного числа.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 - [Microsoft Quantum Development Kit](xref:microsoft.quantum.install).
-- Создайте проект Q#, используя [Q# из командной строки](xref:microsoft.quantum.install.standalone) либо основную программу [Python](xref:microsoft.quantum.install.python) или [C#](xref:microsoft.quantum.install.cs).
+- Создайте Q# проект для [использования Q# из командной строки](xref:microsoft.quantum.install.standalone)или с [ведущим приложением Python](xref:microsoft.quantum.install.python) или [ведущим приложением C#](xref:microsoft.quantum.install.cs).
 
-## <a name="write-a-q-operation"></a>Создание операции Q#
+## <a name="write-a-no-locq-operation"></a>Запись Q# операции
 
-### <a name="q-operation-code"></a>Код операции Q#
+### <a name="no-locq-operation-code"></a>Q#код операции
 
 1. Замените содержимое файла Program.qs следующим кодом:
 
@@ -32,13 +35,13 @@ ms.locfileid: "85275283"
 
 Как упоминалось в статье [Основные сведения о квантовых вычислениях](xref:microsoft.quantum.overview.understanding), кубит представляет собой единицу квантовой информации и может находиться в состоянии суперпозиции. При измерении он всегда возвращает значение 0 или 1. Но во время выполнения состояние кубита отражает вероятность получить значение 0 или 1 при измерении. Такое вероятностное состояние называется суперпозицией. Эту вероятность мы можем применить для создания случайных чисел.
 
-Мы создадим операцию Q#, в которой используется тип данных `Qubit`,уникальный для языка Q#. `Qubit` можно выделить инструкцией `using`. Только что выделенный кубит всегда находится в состоянии `Zero`. 
+В нашей Q# операции мы представляем `Qubit` тип данных Native в Q# . `Qubit` можно выделить инструкцией `using`. Только что выделенный кубит всегда находится в состоянии `Zero`. 
 
 С помощью операции `H` мы можем перевести `Qubit` в состояние суперпозиции. Чтобы измерить кубит, т. е. определить его значение, используется специальная операция `M`.
 
 Каждый раз, когда мы переводим `Qubit` в состояние суперпозиции и измеряем его, мы получаем разные значения.
 
-При `Qubit` освобождении объект должен быть явно установлен в `Zero` состояние, в противном случае симулятор сообщит об ошибке времени выполнения. Для этого проще всего вызвать `Reset`.
+При отмене выделения `Qubit` необходимо явным образом вернуть ему состояние `Zero`. В противном случае симулятор вернет ошибку при выполнении. Для этого проще всего вызвать `Reset`.
 
 ### <a name="visualizing-the-code-with-the-bloch-sphere"></a>Визуализация кода в формате сферы Блоха
 
@@ -61,13 +64,13 @@ ms.locfileid: "85275283"
 
 ## <a name="creating-a-complete-random-number-generator"></a>Создание комплексного генератора случайных чисел
 
-Теперь, когда у нас есть операция Q#, создающая случайные биты, мы можем использовать ее для создания комплексного квантового генератора случайных чисел. Мы можем использовать приложения командной строки Q# или основную программу.
+Теперь, когда у нас есть Q# операция, создающая случайные биты, мы можем использовать ее для создания полноценного генератора случайных чисел такта. Мы можем использовать Q# приложения командной строки или использовать управляющую программу.
 
 
 
-### <a name="q-command-line-applications-with-visual-studio-or-visual-studio-code"></a>[Приложения командной строки Q# в Visual Studio или Visual Studio Code](#tab/tabid-qsharp)
+### <a name="no-locq-command-line-applications-with-visual-studio-or-visual-studio-code"></a>[Q#приложения командной строки с Visual Studio или Visual Studio Code](#tab/tabid-qsharp)
 
-Чтобы создать полное приложение командной строки Q#, добавьте в программу Q# следующую точку входа: 
+Чтобы создать Q# приложение командной строки Full, добавьте в программу следующую точку входа Q# : 
 
 :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="17-33":::
 
@@ -91,7 +94,7 @@ dotnet run --no-build
 
 ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[Вызов Python из Visual Studio Code или командной строки](#tab/tabid-python)
 
-Чтобы выполнить эту программу Q# из кода Python, сохраните следующий код в файл `host.py`:
+Чтобы запустить новую Q# программу из Python, сохраните следующий код `host.py` :
 
 :::code language="python" source="~/quantum/samples/interoperability/qrng/host.py" range="11-30":::
 
@@ -105,7 +108,7 @@ Preparing Q# environment...
 
 ### <a name="c-with-visual-studio-code-or-visual-studio"></a>[C# с Visual Studio Code или Visual Studio](#tab/tabid-csharp)
 
-Чтобы выполнить эту программу Q# из кода C#, измените `Driver.cs`, включив в него следующий код:
+Чтобы запустить новую Q# программу из c#, измените, `Driver.cs` включив в нее следующий код c#:
 
 :::code language="csharp" source="~/quantum/samples/interoperability/qrng/Host.cs" range="4-39":::
 

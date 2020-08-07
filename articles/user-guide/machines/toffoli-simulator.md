@@ -6,12 +6,15 @@ ms.author: ageller@microsoft.com
 ms.date: 6/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.toffoli-simulator
-ms.openlocfilehash: a6ceee592e628215511ec83475d9e25bf54674f7
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 8a981645703423856e667be7c3dccf5270a5885f
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86870623"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868106"
 ---
 # <a name="quantum-development-kit-qdk-toffoli-simulator"></a>Симулятор Тоффоли для пакета разработки такта (КДК)
 
@@ -21,13 +24,13 @@ ms.locfileid: "86870623"
 
 ## <a name="invoking-the-toffoli-simulator"></a>Вызов симулятора Тоффоли
 
-Вы предоставляете симулятор Тоффоли через `ToffoliSimulator` класс. Дополнительные сведения см. в разделе [способы запуска программы Q #](xref:microsoft.quantum.guide.host-programs).
+Вы предоставляете симулятор Тоффоли через `ToffoliSimulator` класс. Дополнительные сведения см. [в статье способы запуска Q# программы](xref:microsoft.quantum.guide.host-programs).
 
 ### <a name="invoking-the-toffoli-simulator-from-c"></a>Вызов симулятора Тоффоли из C #
 
-Как и в случае с другими целевыми компьютерами, сначала необходимо создать экземпляр `ToffoliSimulator` класса, а затем передать его в качестве первого параметра метода операции `Run` .
+Как и в случае с другими целевыми компьютерами, вам сначала нужно создать экземпляр класса `ToffoliSimulator`, а затем передать его в качестве первого параметра метода `Run` операции.
 
-Обратите внимание, что, в отличие от `QuantumSimulator` класса, `ToffoliSimulator` класс не реализует <xref:System.IDisposable> интерфейс, поэтому вам не нужно заключать его в `using` оператор.
+Учтите, что в отличие от класса `QuantumSimulator` класс `ToffoliSimulator` не реализует интерфейс <xref:System.IDisposable>, поэтому вам не нужно заключать его в оператор `using`.
 
 ```csharp
     var sim = new ToffoliSimulator();
@@ -37,7 +40,7 @@ ms.locfileid: "86870623"
 
 ### <a name="invoking-the-toffoli-simulator-from-python"></a>Вызов симулятора Тоффоли из Python
 
-Используйте метод [toffoli_simulate ()](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable) из библиотеки Python с импортированной операцией Q #:
+Используйте метод [toffoli_simulate ()](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable) из библиотеки Python с импортированной Q# операцией:
 
 ```python
 qubit_result = myOperation.toffoli_simulate()
@@ -45,7 +48,7 @@ qubit_result = myOperation.toffoli_simulate()
 
 ### <a name="invoking-the-toffoli-simulator-from-the-command-line"></a>Вызов симулятора Тоффоли из командной строки
 
-При выполнении программы Q # из командной строки используйте параметр **--симулятор** (или **-s** ), чтобы указать целевой компьютер имитатора Тоффоли. Следующая команда запускает программу с помощью средства оценки ресурсов: 
+При запуске Q# программы из командной строки используйте параметр **--симулятор** (или **-s** ), чтобы указать целевой компьютер имитатора Тоффоли. Следующая команда запускает программу с помощью средства оценки ресурсов: 
 
 ```dotnetcli
 dotnet run -s ToffoliSimulator
@@ -53,7 +56,7 @@ dotnet run -s ToffoliSimulator
 
 ### <a name="invoking-the-toffoli-simulator-from-juptyer-notebooks"></a>Вызов симулятора Тоффоли из записных книжек Жуптер
 
-Используйте команду IQ # Magic [% Тоффоли](xref:microsoft.quantum.iqsharp.magic-ref.toffoli) , чтобы выполнить операцию Q #.
+Используйте команду I Q# Magic [% Тоффоли](xref:microsoft.quantum.iqsharp.magic-ref.toffoli) для выполнения Q# операции.
 
 ```
 %toffoli myOperation

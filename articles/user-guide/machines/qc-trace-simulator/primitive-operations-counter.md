@@ -1,17 +1,20 @@
 ---
 title: Счетчик примитивных операций — пакет средств разработки тактов
-description: 'Сведения о счетчике Microsoft КДК-примитивных операций, который использует симулятор трассировки тактов для отслеживания выполнения примитивов, используемых операциями в программе Q #.'
+description: Сведения о счетчике Microsoft КДК-примитивных операций, который использует симулятор трассировки тактов для отслеживания выполнения примитивов, используемых операциями в Q# программе.
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.primitive-counter
-ms.openlocfilehash: ea022d499354f7cefd60da690466496e0ce7c336
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: ceb70cef6dc0a4530b992b5a529248a8b283c17f
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871031"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868242"
 ---
 # <a name="quantum-trace-simulator-primitive-operations-counter"></a>Симулятор трассировки тактов: Счетчик примитивных операций
 
@@ -31,7 +34,7 @@ var sim = new QCTraceSimulator(config);
 
 ## <a name="using-the-primitive-operation-counter-in-a-c-host-program"></a>Использование счетчика примитивных операций в основной программе C#
 
-В примере C#, приведенном в этом разделе, подсчитывается количество <xref:microsoft.quantum.intrinsic.t> операций, необходимых для реализации <xref:microsoft.quantum.intrinsic.ccnot> операции, на основе следующего кода в Q #:
+В примере C#, приведенном в этом разделе, подсчитывается количество <xref:microsoft.quantum.intrinsic.t> операций, необходимых для реализации <xref:microsoft.quantum.intrinsic.ccnot> операции, на основе следующего Q# примера кода:
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;
@@ -72,7 +75,7 @@ double cxCount = sim.GetMetric<Primitive.CCNOT, ApplySampleWithCCNOT>(PrimitiveO
 string csvSummary = sim.ToCSV()[MetricsCountersNames.primitiveOperationsCounter];
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.

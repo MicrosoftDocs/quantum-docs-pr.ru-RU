@@ -1,17 +1,20 @@
 ---
 title: Получение оценок энергетических уровней
-description: 'Рассмотрим пример программы Q #, которая оценивает значения уровня энергии молекулярное водорода.'
+description: Пошаговое руководство по примерам Q# программы, которая оценивает значения уровня энергии молекулярное водорода.
 author: guanghaolow
 ms.author: gulow
 ms.date: 07/02/2020
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.energyestimate
-ms.openlocfilehash: b26538980366cf4cbe01fc2ef59580ae182f1e8a
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: a2df4b829a3f4946c6de6e6b80ad72a5bc192b2c
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871574"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869211"
 ---
 # <a name="obtaining-energy-level-estimates"></a>Получение оценок энергетических уровней
 Оценка значений уровня энергии является одним из основных приложений тактовой химия. В этой статье описано, как это сделать для канонического примера водомолекулярное. Образец, указанный в этом разделе, находится [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogen) в репозитории примеров химия. Более наглядным примером, который отображает выходные данные, является [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogenGUI) демонстрация.
@@ -121,7 +124,7 @@ operation GetEnergyByTrotterization (
 }
 ```
 
-Теперь можно вызвать код Q # из основной программы. В следующем коде C# создается симулятор с полным состоянием и выполняется `GetEnergyByTrotterization` для получения энергии в состоянии заземления.
+Теперь можно вызвать Q# код из основной программы. В следующем коде C# создается симулятор с полным состоянием и выполняется `GetEnergyByTrotterization` для получения энергии в состоянии заземления.
 
 ```csharp
 using (var qsim = new QuantumSimulator())

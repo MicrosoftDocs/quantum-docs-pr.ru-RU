@@ -1,17 +1,20 @@
 ---
 title: Средство проверки различных входов — пакет средств разработки тактов
-description: 'Сведения о проверке различных входных данных Microsoft КДК, которая использует симулятор трассировки тактов для проверки кода Q # для потенциальных конфликтов с общими Кубитс.'
+description: Сведения о проверке различных входных данных Microsoft КДК, которая использует симулятор трассировки тактов для проверки Q# кода на наличие потенциальных конфликтов с общими Кубитс.
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.distinct-inputs
-ms.openlocfilehash: 49a1ccc5f37acfeaa1ee08bd974be45a40a76f93
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 750c94e7f861678d37f051619ff5b29bf4fd3d3e
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871150"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868276"
 ---
 # <a name="quantum-trace-simulator-distinct-inputs-checker"></a>Симулятор трассировки тактов: отдельный модуль проверки входных данных
 
@@ -19,7 +22,7 @@ ms.locfileid: "86871150"
 
 ## <a name="conflicts-with-shared-qubits"></a>Конфликты с общими Кубитс
 
-Рассмотрим следующий фрагмент кода Q #, чтобы продемонстрировать проблемы, обнаруженные при проверке различных входных значений:
+Рассмотрим следующий фрагмент кода, Q# чтобы продемонстрировать проблемы, обнаруженные при проверке различных входных значений:
 
 ```qsharp
 operation ApplyBoth(
@@ -47,7 +50,7 @@ operation ApplyWithNonDistinctInputs() : Unit {
 }
 ```
 
-Обратите внимание, что `op1` и `op2` они получаются с помощью частичного приложения и совместно используют кубит. При вызове `ApplyBoth` в этом примере результат операции зависит от порядка следования `op1` и `op2` внутреннего результата `ApplyBoth` . При включении проверки различных входных параметров обнаруживает такие ситуации и создает исключение `DistinctInputsCheckerException` . Дополнительные сведения см <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException> . в разделе библиотеки API Q #.
+Обратите внимание, что `op1` и `op2` они получаются с помощью частичного приложения и совместно используют кубит. При вызове `ApplyBoth` в этом примере результат операции зависит от порядка следования `op1` и `op2` внутреннего результата `ApplyBoth` . При включении проверки различных входных параметров обнаруживает такие ситуации и создает исключение `DistinctInputsCheckerException` . Дополнительные сведения см <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException> . в разделе Q# библиотеки API.
 
 ## <a name="invoking-the-distinct-inputs-checker"></a>Вызов средства проверки различных значений
 
@@ -85,7 +88,7 @@ namespace Quantum.MyProgram
 }
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.

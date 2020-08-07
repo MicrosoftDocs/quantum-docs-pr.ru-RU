@@ -1,25 +1,28 @@
 ---
 title: Эмулятор полного состояния — пакет разработки тактов
-description: 'Узнайте, как запускать программы Q # на Microsoft Quantum Development Kit симуляторе полного состояния.'
+description: Узнайте, как запускать Q# программы на Microsoft Quantum Development Kit симуляторе полного состояния.
 author: anpaz-msft
 ms.author: anpaz@microsoft.com
 ms.date: 06/26/2020
 ms.topic: article
 uid: microsoft.quantum.machines.full-state-simulator
-ms.openlocfilehash: 563fdbd2a45461d112e4c46651eddd75c6fc3db2
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: b15af66123dadae09815cde1966c69b3ce2e9e64
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871184"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868344"
 ---
 # <a name="quantum-development-kit-qdk-full-state-simulator"></a>Симулятор полного состояния пакета средств разработки такта (КДК)
 
-КДК предоставляет симулятор с полным состоянием, который имитирует тактовый автомат на локальном компьютере. Имитатор полного состояния можно использовать для запуска и отладки алгоритмов тактовой задержки, написанных в Q #, с использованием до 30 Кубитс. Имитатор полного состояния аналогичен имитатору такта, который используется в платформе [ликв $ UI | \рангле $](http://stationq.github.io/Liquid/) в Microsoft Research.
+КДК предоставляет симулятор с полным состоянием, который имитирует тактовый автомат на локальном компьютере. Имитатор полного состояния можно использовать для запуска и отладки алгоритмов такта, написанных в Q# , с использованием до 30 Кубитс. Имитатор полного состояния аналогичен имитатору такта, который используется в платформе [ликв $ UI | \рангле $](http://stationq.github.io/Liquid/) в Microsoft Research.
 
 ## <a name="invoking-and-running-the-full-state-simulator"></a>Вызов и запуск симулятора полного состояния
 
-Вы предоставляете симулятор полного состояния через `QuantumSimulator` класс. Дополнительные сведения см. в разделе [способы запуска программы Q #](xref:microsoft.quantum.guide.host-programs).
+Вы предоставляете симулятор полного состояния через `QuantumSimulator` класс. Дополнительные сведения см. [в статье способы запуска Q# программы](xref:microsoft.quantum.guide.host-programs).
 
 ### <a name="invoking-the-simulator-from-c"></a>Вызов симулятора из C #
 
@@ -36,7 +39,7 @@ ms.locfileid: "86871184"
 
 ### <a name="invoking-the-simulator-from-python"></a>Вызов симулятора из Python
 
-Используйте метод [имитировать ()](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable) из библиотеки q # Python с импортированной операцией q #:
+Используйте метод [имитировать ()](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable) из Q# библиотеки Python с импортированной Q# операцией:
 
 ```python
 qubit_result = myOperation.simulate()
@@ -44,7 +47,7 @@ qubit_result = myOperation.simulate()
 
 ### <a name="invoking-the-simulator-from-the-command-line"></a>Вызов симулятора из командной строки
 
-При выполнении программы Q # из командной строки симулятор полного состояния является целевым компьютером по умолчанию. При необходимости можно использовать параметр **--симулятор** (или **-s** ), чтобы указать требуемый целевой компьютер. Обе следующие команды запускают программу с помощью симулятора полного состояния. 
+При запуске Q# программы из командной строки симулятор полного состояния является целевым компьютером по умолчанию. При необходимости можно использовать параметр **--симулятор** (или **-s** ), чтобы указать требуемый целевой компьютер. Обе следующие команды запускают программу с помощью симулятора полного состояния. 
 
 ```dotnetcli
 dotnet run
@@ -53,7 +56,7 @@ dotnet run -s QuantumSimulator
 
 ### <a name="invoking-the-simulator-from-juptyer-notebooks"></a>Вызов симулятора из записных книжек Жуптер
 
-Используйте команду IQ # Magic [% имитиру](xref:microsoft.quantum.iqsharp.magic-ref.simulate) , чтобы выполнить операцию Q #.
+Используйте команду "I Q# Magic" [% имитируйте](xref:microsoft.quantum.iqsharp.magic-ref.simulate) , чтобы выполнить Q# операцию.
 
 ```
 %simulate myOperation
@@ -74,8 +77,8 @@ dotnet run -s QuantumSimulator
 
 Имитатор полного состояния использует [OpenMP](http://www.openmp.org/) для параллелизации линейной пере, необходимой. По умолчанию в OpenMP используются все доступные аппаратные потоки, что означает, что программы с небольшим количеством Кубитс часто работают медленно, так как требуется координация, дварфс фактическую работу. Это можно исправить, присвоив переменной среды `OMP_NUM_THREADS` небольшое число. Как правило, настройте один поток для до четырех Кубитс, а затем один дополнительный поток на кубит. Может потребоваться изменить переменную в зависимости от алгоритма.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
-- [Оценщик ресурсов такта](xref:microsoft.quantum.machines.resources-estimator)
-- [Имитатор тактовой Тоффоли](xref:microsoft.quantum.machines.toffoli-simulator)
+- [Квантовый оценщик ресурсов](xref:microsoft.quantum.machines.resources-estimator)
+- [Квантовый симулятор Тоффоли](xref:microsoft.quantum.machines.toffoli-simulator)
 - [Симулятор трассировки тактов](xref:microsoft.quantum.machines.qc-trace-simulator.intro)

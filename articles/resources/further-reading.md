@@ -6,12 +6,15 @@ uid: microsoft.quantum.more-information
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: d3c252c6579e1286aae71a0f18ac7b6b02a5c1ed
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 7c5063fccbe73478aeb917e0cd2fe2f7fe51c070
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85884140"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866848"
 ---
 # <a name="more-quantum-computing-learning-resources"></a>Дополнительные учебные ресурсы по обработке тактов
 
@@ -24,7 +27,7 @@ ms.locfileid: "85884140"
 + Китаев, A. Y., Shen), A. & Вяли, M. N. (2002). Классический и тактовый вычисления (Vol. 47). Провиденце: Американский математический общество.
 + Кайе, P., ЛаФламме, R., & Моска, M. (2007). Введение в тактовые вычисления. Oxford университет.
 + Риеффел, E. G., & Полак, W. H. (2011). Тактовые вычисления: введение в доброй. Пресса MIT.
-+ Сара C. Кайзера и Кристофер E. Гранаде (Manning ранний доступ программы начали 2019 публикации в 2020). [Познакомьтесь с тактовыми вычислениями на Python и Q # — практический подход](https://www.manning.com/books/learn-quantum-computing-with-python-and-q-sharp).
++ Сара C. Кайзера и Кристофер E. Гранаде (Manning ранний доступ программы начали 2019 публикации в 2020). [Познакомьтесь с тактовыми вычислениями на Python и Q# практическим подходом](https://www.manning.com/books/learn-quantum-computing-with-python-and-q-sharp).
 
 ## <a name="online-courses"></a>Онлайн-курсы ##
 

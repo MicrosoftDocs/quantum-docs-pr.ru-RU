@@ -5,19 +5,22 @@ author: cgranade
 ms.author: chgranad@microsoft.com
 ms.date: 10/23/2018
 uid: microsoft.quantum.chemistry.examples.endtoend
-ms.openlocfilehash: 7605676e05ee352e47791657eeaafceef5dbb493
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 78d6488ed5e3972f85f1e6cf1ba2d197596c4cc3
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85275260"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869313"
 ---
 # <a name="end-to-end-with-nwchem"></a>Полный цикл работы с NWChem #
 
 В этой статье вы узнаете пример получения счетчиков шлюзов для моделирования тактовой химия, начиная с колоды входных данных [нвчем](http://www.nwchem-sw.org/index.php/Main_Page) .
 Прежде чем продолжить работу с этим примером, убедитесь, что вы установили DOCKER, следуя [инструкциям по установке и проверке](xref:microsoft.quantum.chemistry.concepts.installation).
 
-Дополнительные сведения
+Дополнительные сведения:
 - [Структура Нвчем входных колод](https://github.com/nwchemgit/nwchem/wiki/Getting-Started#input-file-structure)
     - [Команды колоды ввода для использования с пакетом разработки тактов](https://github.com/nwchemgit/nwchem/tree/master/contrib/quasar)
 - [Установка библиотеки и зависимостей химия](xref:microsoft.quantum.chemistry.concepts.installation)
