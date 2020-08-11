@@ -6,12 +6,15 @@ ms.author: bradben
 ms.date: 05/05/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.introduction
-ms.openlocfilehash: 7c55420bd35f9b6e0e7ec80ddffe8a861cb7df39
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 59cb595ac207d6e84358fc6ba742e0e0019c76f9
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430787"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866984"
 ---
 # <a name="introduction-to-quantum-computing-and-the-quantum-development-kit"></a>Введение в квантовые вычисления и пакет средств разработки Quantum
 
@@ -62,7 +65,7 @@ ms.locfileid: "83430787"
 
 Пакет средств разработки Quantum содержит [библиотеку квантового машинного обучения](xref:microsoft.quantum.machine-learning.concepts.intro), которая позволяет выполнять гибридные квантовые и классические эксперименты машинного обучения. Библиотека включает примеры и руководства, а также предоставляет необходимые инструменты для реализации нового гибридного алгоритма квантовых и классических вычислений (квантового классификатора, ориентированного на схемы) для решения задач контролируемой классификации.
 
-## <a name="q-and-the-microsoft-quantum-development-kit-qdk"></a>Q# и пакет средств разработки Microsoft Quantum (QDK)
+## <a name="no-locq-and-the-microsoft-quantum-development-kit-qdk"></a>Q# и пакет средств разработки Microsoft Quantum (QDK)
 
 Q# — это язык программирования с открытым кодом, созданный корпорацией Майкрософт для разработки и выполнения квантовых алгоритмов. Он является частью [QDK](https://docs.microsoft.com/quantum/) — полнофункционального пакета средств разработки для Q#, который можно использовать с традиционными инструментами и языками для разработки квантовых приложений и их запуска в различных средах, включая встроенный квантовый симулятор полного состояния.
 

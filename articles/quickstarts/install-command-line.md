@@ -6,14 +6,17 @@ ms.date: 4/24/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.standalone
-ms.openlocfilehash: 3d70838289e72afdd0a48bbdff0bec407428d125
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 630dc7b8acf2dd8f258eb27dfbc367b812cd1c19
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871439"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867613"
 ---
-# <a name="develop-with-q-command-line-applications"></a>Разработка приложений Q# для командной строки
+# <a name="develop-with-no-locq-command-line-applications"></a>Разработка приложений Q# для командной строки
 
 Программы Q# могут выполняться самостоятельно (без драйвера) на основном языке, например C#, F# или Python.
 
@@ -48,7 +51,7 @@ ms.locfileid: "86871439"
 dotnet new -i Microsoft.Quantum.ProjectTemplates
 ```
 
-## <a name="develop-with-q"></a>Разработка на Q#
+## <a name="develop-with-no-locq"></a>Разработка на Q#
 
 Следуйте инструкциям на вкладке для вашей среды.
 
@@ -70,13 +73,13 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 
 
 > [!NOTE]
-> Сейчас рабочие области с несколькими корневыми папками не поддерживаются в расширении Q# для VS Code. Если в одной рабочей области VS Code несколько проектов, все проекты нужно разместить в одной корневой папке.
+> В настоящее время рабочие области с несколькими корневыми папками не поддерживаются в расширении Q# для VS Code. Если в одной рабочей области VS Code несколько проектов, все проекты нужно разместить в одной корневой папке.
 
 ### <a name="visual-studio"></a>[Visual Studio](#tab/tabid-vs)
 
 Проверьте установку Visual Studio, создав приложение `Hello World` на Q#.
 
-Чтобы создать приложение на Q#, выполните следующие действия.
+Чтобы создать приложение на Q#:
 1. Откройте Visual Studio и щелкните **Файл** -> **Создать** -> **Проект**.
 2. Введите `Q#` в поле поиска, выберите **Q# Application** (Приложение Q#) и щелкните **Далее**.
 3. Введите имя и расположение приложения и щелкните **Создать**.

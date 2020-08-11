@@ -1,17 +1,20 @@
 ---
 title: Квантовый симулятор трассировки — пакет средств разработки Quantum
-description: Узнайте, как с помощью симулятора трассировки квантового компьютера от Майкрософт выполнять отладку классического кода и оценивать требования к ресурсам для программы Q#.
+description: Сведения о том, как с помощью симулятора трассировки квантового компьютера от Майкрософт выполнять отладку классического кода и оценивать требования к ресурсам для программы Q#.
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.intro
-ms.openlocfilehash: c01f01973ea08153cbfa35d87a588a4eae46f1b7
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 5d5efef037ff236bd040dfd88e94f7f3dd331aef
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871116"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868225"
 ---
 # <a name="microsoft-quantum-development-kit-qdk-quantum-trace-simulator"></a>Пакет средств разработки Microsoft Quantum (QDK) — квантовый симулятор трассировки
 

@@ -6,12 +6,15 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing
-ms.openlocfilehash: c5acd6c2b3163488a9b4c6e52e6d34489a8f4056
-ms.sourcegitcommit: 2f4c637e194dc2b5d18539469ed37444e2800199
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 0fbbe127b9f4c6b98bdc2cf0e46098bf40a816e3
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87436567"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866865"
 ---
 # <a name="contributing-to-the-quantum-development-kit"></a>Участие в развитии Microsoft Quantum Development Kit
 
@@ -53,9 +56,9 @@ ms.locfileid: "87436567"
 - [**microsoft/Quantum**](https://github.com/Microsoft/Quantum): Примеры и средства, которые помогут приступить к работе с пакетом Quantum Development Kit.
 - [**microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries): стандартные и предметно-ориентированные библиотеки для пакета Quantum Development Kit.
 - [**microsoft/QuantumKatas**](https://github.com/Microsoft/QuantumKatas): практические занятия по программированию для изучения квантовых вычислений и языка программирования Q#.
-- [**microsoft/qsharp-compiler**](https://github.com/microsoft/qsharp-compiler): компилятор Q#, расширение Visual Studio и Visual Studio Code.
+- [**microsoft/qsharp-compiler**](https://github.com/microsoft/qsharp-compiler): компилятор Q#, расширение Visual Studio и расширение Visual Studio Code.
 - [**microsoft/qsharp-runtime**](https://github.com/microsoft/qsharp-runtime): инфраструктура моделирования, создание кода и целевые компьютеры моделирования для пакета Quantum Development Kit.
-- [**microsoft/iqsharp**](https://github.com/microsoft/iqsharp): ядро Jupyter и функции узла Python для Q#, а также образы Docker для использования IQ# в облачных средах.
+- [**microsoft/iqsharp**](https://github.com/microsoft/iqsharp): ядро Jupyter и функции ведущей программы Python для Q#, а также образы Docker для использования IQ# в облачных средах.
 - [**MicrosoftDocs/quantum-docs-pr**](https://github.com/MicrosoftDocs/quantum-docs-pr): исходный код для документации, опубликованной на странице https://docs.microsoft.com/quantum.
 
 > [!NOTE]

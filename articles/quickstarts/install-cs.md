@@ -6,34 +6,37 @@ ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.cs
-ms.openlocfilehash: 714c15d9589095f0fe395fcd6941672167879dca
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 13d73bdf0287941c89e03ba63869095e5fca4e70
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85885498"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867562"
 ---
-# <a name="develop-with-q-and-net"></a>Разработка на Q# в среде .NET
+# <a name="develop-with-no-locq-and-net"></a>Разработка на Q# в среде .NET
 
 Язык Q# прекрасно сочетается с языками .NET, например C# и F#.
-В этом руководстве мы покажем, как использовать Q# с основной программой, написанной на языке .NET.
+В этом руководстве мы покажем, как использовать Q# с ведущей программой, написанной на языке .NET.
 
-Сначала мы создадим приложение Q# и узел .NET, а затем покажем, как вызвать код Q# из узла.
+Сначала мы создадим приложение Q# и ведущую программу .NET, а затем покажем, как вызвать код Q# из ведущей программы.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Установите Quantum Development Kit [для использования с проектами командной строки Q#](xref:microsoft.quantum.install.standalone).
 
-## <a name="creating-a-q-library-and-a-net-host"></a>Создание библиотеки Q# и узла .NET
+## <a name="creating-a-no-locq-library-and-a-net-host"></a>Создание библиотеки Q# и ведущей программы .NET
 
-Первый шаг — создать проекты для библиотеки Q# и узла .NET, который будет вызывать операции и функции, определенные в библиотеке Q#.
+Первый шаг — создать проекты для библиотеки Q# и ведущей программы .NET, которая будет вызывать операции и функции, определенные в библиотеке Q#.
 
 Следуйте инструкциям на вкладке для вашей среды разработки.
 Если вы используете редактор, отличный от Visual Studio или VS Code, просто выполните действия из командной строки.
 
 ### <a name="visual-studio-code-or-command-line"></a>[Visual Studio Code или командная строка](#tab/tabid-cmdline)
 
-- Создайте библиотеку Q#.
+- Создайте новую библиотеку Q#:
 
   ```dotnetcli
   dotnet new classlib -lang Q# -o quantum
@@ -45,7 +48,7 @@ ms.locfileid: "85885498"
   dotnet new console -lang C# -o host  
   ```
 
-- Добавьте библиотеку Q# в качестве ссылки из основной программы.
+- Добавьте библиотеку Q# в качестве ссылки из ведущей программы:
 
   ```dotnetcli
   cd host
@@ -62,10 +65,10 @@ ms.locfileid: "85885498"
 
 ### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
-- Создайте библиотеку Q#.
+- Создайте новую библиотеку Q#:
   - Выберите **Файл** -> **Создать** -> **Проект**.
-  - Введите "Q#" в поле поиска.
-  - Выберите **Библиотека Q#** .
+  - Введите "Q#"в поле поиска:
+  - Выберите **библиотеку Q#** :
   - Щелкните **Далее**.
   - Выберите имя и расположение библиотеки.
   - Убедитесь, что флажок "Поместить решение и проект в одной папке" **снят**.
@@ -80,16 +83,16 @@ ms.locfileid: "85885498"
 
 ***
 
-## <a name="calling-into-q-from-net"></a>Вызов Q# из .NET
+## <a name="calling-into-no-locq-from-net"></a>Вызов Q# из .NET
 
 После выполнения приведенных выше инструкций по настройке проекта вы можете вызвать Q# из консольного приложения .NET.
 Компилятор Q# будет создавать классы .NET для каждой операции и функции Q#, что позволит запускать в симуляторе квантовые программы.
 
-Например, [пример взаимодействия с .NET](https://github.com/microsoft/Quantum/tree/master/samples/interoperability/dotnet) содержит следующий пример операции Q#:
+[Пример взаимодействия с .NET](https://github.com/microsoft/Quantum/tree/master/samples/interoperability/dotnet) содержит следующий пример операции Q#:
 
 :::code language="qsharp" source="~/quantum/samples/interoperability/dotnet/qsharp/Operations.qs" range="67-75":::
 
-Чтобы вызвать эту операцию из .NET в квантовом симуляторе, можно использовать метод `Run` класса .NET `RunAlgorithm`, созданный компилятором Q#.
+Чтобы вызвать эту операцию из .NET в квантовом симуляторе, можно использовать метод `Run` класса .NET `RunAlgorithm`, созданный компилятором Q#:
 
 ### <a name="c"></a>[C#](#tab/tabid-csharp)
 
@@ -103,4 +106,4 @@ ms.locfileid: "85885498"
     
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Теперь, когда у вас настроен пакет Quantum Development Kit для программ командной строки Q# и для взаимодействия с .NET, вы можете написать и запустить свою [первую квантовую программу](xref:microsoft.quantum.quickstarts.qrng).
+Теперь, когда у вас настроен пакет Quantum Development Kit для программ командной строки Q# и для взаимодействия с .NET, вы можете написать и запустить [свою первую квантовую программу](xref:microsoft.quantum.quickstarts.qrng).

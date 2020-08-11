@@ -6,12 +6,15 @@ ms.author: Alan.Geller@microsoft.com
 ms.date: 6/17/2020
 ms.topic: article
 uid: microsoft.quantum.machines
-ms.openlocfilehash: c81226ba3e50b65cb1012e885866bd6fcc3764d7
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 77401ca3642b89d708f338f852dc60bf7346b87b
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871167"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868310"
 ---
 # <a name="quantum-simulators"></a>Квантовые симуляторы
 
@@ -49,6 +52,6 @@ QDK включает несколько классов квантовых ком
 
 Квантовые машины — это экземпляры обычных классов .NET, поэтому они создаются путем вызова своего конструктора, как любой другой класс .NET. Как вы это будете делать, зависит от способа выполнения программы Q#.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * Сведения о том, как вызывать целевые компьютеры для программ Q# в разных средах, см. в статье [Способы выполнения программы Q#](xref:microsoft.quantum.guide.host-programs).
