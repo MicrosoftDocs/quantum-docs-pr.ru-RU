@@ -1,0 +1,44 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.random.continuousuniformdistribution
+name: ContinuousUniformDistribution
+type: function
+namespace: Microsoft.Quantum.Random
+summary: Возвращает равномерное распределение по заданному инклюзивному интервалу.
+remarks: Завершается ошибкой `max <= min` , если.
+examples: >-
+  Следующий фрагмент Q # случайным образом рисует угол между $0 $ и $2 \пи $:
+
+
+  ```Q#
+
+  let angleDistribution = ContinuousUniformDistribution(0.0, 2.0 * PI());
+
+  let angle = angleDistribution::Sample();
+
+  ```
+syntax: 'function ContinuousUniformDistribution (min : Double, max : Double) : Microsoft.Quantum.Random.ContinuousDistribution'
+input:
+  content: '(min : Double, max : Double)'
+  types:
+  - name: min
+    summary: Наименьшее вещественное число для рисования.
+    isPrimitive: true
+    uid: Double
+  - name: max
+    summary: Максимальное вещественное число для рисования.
+    isPrimitive: true
+    uid: Double
+output:
+  content: Microsoft.Quantum.Random.ContinuousDistribution
+  types:
+  - summary: Распределение, случайные вариатес которых являются реальными числами в инклюзивном интервале от `min` до `max` с равномерным значением вероятности.
+    uid: microsoft.quantum.random.continuousdistribution
+seeAlso:
+- microsoft.quantum.drawrandomdouble
+metadata:
+  ms.openlocfilehash: ac2f90f2793cf6a94fbb50bdac1d05f3790efa1e
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88864560"

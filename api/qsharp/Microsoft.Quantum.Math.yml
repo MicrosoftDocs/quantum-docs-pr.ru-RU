@@ -53,9 +53,9 @@ functions:
 - uid: microsoft.quantum.math.complexpolarascomplex
   summary: Преобразует комплексное число типа `ComplexPolar` в комплексное число типа `Complex` .
 - uid: microsoft.quantum.math.continuedfractionconvergenti
-  summary: Находит непрерывные дроби, наиболее близкие к `fraction` знаменателю меньше или равно`denominatorBound`
+  summary: Находит непрерывные дроби, наиболее близкие к `fraction` знаменателю меньше или равно `denominatorBound`
 - uid: microsoft.quantum.math.continuedfractionconvergentl
-  summary: Находит непрерывные дроби, наиболее близкие к `fraction` знаменателю меньше или равно`denominatorBound`
+  summary: Находит непрерывные дроби, наиболее близкие к `fraction` знаменателю меньше или равно `denominatorBound`
 - uid: microsoft.quantum.math.cos
   summary: Возвращает косинус указанного угла.
 - uid: microsoft.quantum.math.cosh
@@ -240,20 +240,20 @@ newtypes:
     Полярное представление комплексного числа имеет $c = r e ^ {i t} $.
 - uid: microsoft.quantum.math.fraction
   summary: Представляет рациональное число в форме `p/q` . Integer `p` — это первый элемент кортежа, который `q` является вторым элементом кортежа.
-summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен содержит классические математические функции и типы данных."
+summary: " # <a name=\"summary\"></a>Итоги\n Это пространство имен содержит классические математические функции и типы данных."
 operations:
 - uid: microsoft.quantum.math.randomint
-  summary: Создает одинаковое случайное целое число, которое больше или равно нулю и меньше, чем предоставленная верхняя граница.
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРандоминт является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.random.drawrandomint\"."
 - uid: microsoft.quantum.math.randomintpow2
-  summary: Создает случайное целое число выборки из всех целых чисел, которые могут быть представлены в заданном количестве битов.
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nRandomIntPow2 является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.random.drawrandomint\"."
 - uid: microsoft.quantum.math.randomreal
-  summary: Возвращает случайное вещественное число в интервале, которое больше или равно нулю и меньше единицы.
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРандомреал является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.random.drawrandomdouble\"."
 - uid: microsoft.quantum.math.randomsinglequbitpauli
-  summary: Возвращает один из операторов Single-кубит Паули по крайней мере в случайном порядке.
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРандомсинглекубитпаули является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.random.drawrandompauli\"."
 metadata:
-  ms.openlocfilehash: 03b75e3dbaa8be699e58fcbcd13db4fbf1c82f12
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 9df4513399d0b2d1ac534c7ba106189483ef49cc
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326504"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863063"

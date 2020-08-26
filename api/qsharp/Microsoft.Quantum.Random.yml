@@ -1,0 +1,45 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.random
+name: Microsoft.Quantum.Random
+functions:
+- uid: microsoft.quantum.random.categoricaldistribution
+  summary: Возвращает дискретное распределение по категориям, в котором явно задана вероятность для каждого конечного списка заданных результатов.
+- uid: microsoft.quantum.random.continuousuniformdistribution
+  summary: Возвращает равномерное распределение по заданному инклюзивному интервалу.
+- uid: microsoft.quantum.random.discreteuniformdistribution
+  summary: Возвращает равномерное распределение по заданному инклюзивному диапазону.
+- uid: microsoft.quantum.random.normaldistribution
+  summary: Возвращает нормальное распределение с заданным средним и дисперсией.
+- uid: microsoft.quantum.random.standardnormaldistribution
+  summary: Возвращает нормальное распределение с средним 0 и дисперсией 1.
+- uid: microsoft.quantum.random.transformedcontinuousdistribution
+  summary: При наличии непрерывного распределения возвращает новое распределение, которое преобразует оригинал с помощью заданной функции.
+operations:
+- uid: microsoft.quantum.random.drawcategorical
+  summary: Рисует случайную выборку из распределения по категориям, заданному списком пробаблитиес.
+- uid: microsoft.quantum.random.drawrandombool
+  summary: Учитывая вероятность успеха, возвращает одну пробную версию Бернулли, которая имеет значение true с заданной вероятностью.
+- uid: microsoft.quantum.random.drawrandomdouble
+  summary: Рисует случайное вещественное число в заданном инклюзивном интервале.
+- uid: microsoft.quantum.random.drawrandomint
+  summary: Рисует случайное целое число в заданном инклюзивном диапазоне.
+- uid: microsoft.quantum.random.drawrandompauli
+  summary: Рисует случайное значение Паули.
+- uid: microsoft.quantum.random.maybechooseelement
+  summary: При наличии массива данных и распределения по индексам пытается выбрать элемент в случайном порядке.
+newtypes:
+- uid: microsoft.quantum.random.bigdiscretedistribution
+  summary: Представляет распределение вероятности унивариате по целочисленным значениям произвольного размера.
+- uid: microsoft.quantum.random.complexdistribution
+  summary: Представляет распределение вероятности унивариате по комплексным числам.
+- uid: microsoft.quantum.random.continuousdistribution
+  summary: Представляет распределение вероятности унивариате по вещественным числам.
+- uid: microsoft.quantum.random.discretedistribution
+  summary: Представляет распределение вероятности унивариате по целочисленным значениям.
+metadata:
+  ms.openlocfilehash: 04ceecba6c304e33452dd5eac014f59522a76e91
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88864387"

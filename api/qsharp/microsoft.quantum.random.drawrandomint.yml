@@ -1,0 +1,43 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.random.drawrandomint
+name: DrawRandomInt
+type: operation
+namespace: Microsoft.Quantum.Random
+summary: Рисует случайное целое число в заданном инклюзивном диапазоне.
+remarks: Завершается ошибкой `max <= min` , если.
+examples: >-
+  Следующий фрагмент Q # случайным образом выполняет откат шести костей:
+
+
+  ```Q#
+
+  let roll = DrawRandomInt(1, 6);
+
+  ```
+syntax: 'operation DrawRandomInt (min : Int, max : Int) : Int'
+input:
+  content: '(min : Int, max : Int)'
+  types:
+  - name: min
+    summary: Наименьшее целое число для рисования.
+    isPrimitive: true
+    uid: Int
+  - name: max
+    summary: Максимальное отображаемое целое число.
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: Целое число в инклюзивном диапазоне от `min` до `max` с равномерным значением вероятности.
+    isPrimitive: true
+    uid: Int
+seeAlso:
+- microsoft.quantum.discreteuniformdistribution
+metadata:
+  ms.openlocfilehash: cb80cacff95dac9e4cecc5717124c20909a56ca0
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88864480"

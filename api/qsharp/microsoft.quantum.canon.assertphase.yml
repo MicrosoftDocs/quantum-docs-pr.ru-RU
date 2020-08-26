@@ -3,42 +3,18 @@ uid: microsoft.quantum.canon.assertphase
 name: AssertPhase
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  Утверждает, что фаза равного пресостояния перестановки имеет ожидаемое значение.
-
-
-  В частности, утверждает, что фаза $ \фи $ состояния такта, которая может быть выражена как $ \фрак{е ^ {i t}} {{2}\скрт} (e ^ {и\фи} \{0} Сисакет + e ^ {-и\фи} \{1}Сисакет) $ для некоторых произвольных реальных t, имеет ожидаемое значение.
-examples: >-
-  Следующее утверждение выполнено: `qubit` находится в состоянии $ \кет{\пси} = e ^ {i 0,5} \ sqrt {1/2} \ Сисакет{0}+ e ^ {i 0,5} \ sqrt {1/2} \ Сисакет{1}$;
-
-
-  - `AssertPhase(0.0,qubit,10e-10);`
-
-
-  `qubit`находится в состоянии $ \кет{\пси} = e ^ {i 0,5} \ sqrt {1/2} \ Сисакет{0}+ e ^ {-i 0,5} \ sqrt {1/2} \ Сисакет{1}$;
-
-
-  - `AssertPhase(0.5,qubit,10e-10);`
-
-
-  `qubit`находится в состоянии $ \кет{\пси} = e ^ {-i 2.2} \ корень {1/2} \ Сисакет{0}+ e ^ {i 0,2} \ sqrt {1/2} \ Сисакет{1}$;
-
-
-  - `AssertPhase(-1.2,qubit,10e-10);`
+summary: Ассертфасе является устаревшим. Взамен рекомендуется использовать @"microsoft.quantum.diagnostics.assertphase".
 syntax: 'operation AssertPhase (expected : Double, qubit : Qubit, tolerance : Double) : Unit'
 input:
   content: '(expected : Double, qubit : Qubit, tolerance : Double)'
   types:
   - name: expected
-    summary: Ожидаемое значение $ \фи \ин (-\пи, \пи] $.
     isPrimitive: true
     uid: Double
   - name: qubit
-    summary: Кубит, в котором хранится ожидаемое состояние.
     isPrimitive: true
     uid: Qubit
   - name: tolerance
-    summary: Абсолютная погрешность разности между фактическим и ожидаемым.
     isPrimitive: true
     uid: Double
 output:
@@ -47,9 +23,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: ecfc39806fb1ffe504c76889fb36949b4fee2ed4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 17fa383f5fd8e710f8c83920abe0727663506bfb
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674316"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863290"

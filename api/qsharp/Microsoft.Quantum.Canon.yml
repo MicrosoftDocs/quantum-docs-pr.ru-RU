@@ -450,11 +450,7 @@ operations:
 - uid: microsoft.quantum.canon.assertlessthanphasele
   summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертлесссанфаселе является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.arithmetic.assertphaselessthan\".\nИспользуйте @\"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan\"."
 - uid: microsoft.quantum.canon.assertphase
-  summary: >-
-    Утверждает, что фаза равного пресостояния перестановки имеет ожидаемое значение.
-
-
-    В частности, утверждает, что фаза $ \фи $ состояния такта, которая может быть выражена как $ \фрак{е ^ {i t}} {\скрт {2} } (e ^ {и\фи} \ Сисакет {0} + e ^ {-и\фи} \ Сисакет {1} ) $ для некоторых произвольных реальных t, имеет ожидаемое значение.
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАссертфасе является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.diagnostics.assertphase\"."
 - uid: microsoft.quantum.canon.cascadeccnot
   summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКаскадеккнот является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.canon.applyccnotchain\"."
 - uid: microsoft.quantum.canon.cascadecnot
@@ -585,9 +581,9 @@ newtypes:
 - uid: microsoft.quantum.canon.resultstack
   summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРесултстакк является устаревшим."
 metadata:
-  ms.openlocfilehash: ab6e8a58dd163e4a9b2ea299e544a4e487d61e23
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 72e806d0a44fdcc372ab0d10edcaceb501713180
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85884667"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88862951"

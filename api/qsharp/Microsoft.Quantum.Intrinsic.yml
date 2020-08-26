@@ -86,12 +86,7 @@ operations:
 
     > Эта операция использует **противоположное** соглашение о знаках из @"microsoft.quantum.intrinsic.r" и не включает фактор $1/2 $, включенный в @"microsoft.quantum.intrinsic.r1" .
 - uid: microsoft.quantum.intrinsic.random
-  summary: >-
-    Случайная операция принимает массив значений типа Double в качестве входных данных и возвращает в массиве в качестве указателя случайный выбор `Int` .
-
-    Вероятность выбора определенного индекса пропорциональна значению элемента массива в этом индексе.
-
-    Элементы массива, равные нулю, игнорируются, и их индексы никогда не возвращаются. Если какой-либо элемент массива меньше нуля или если ни один элемент массива больше нуля, операция завершается ошибкой.
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФункция Random устарела. Взамен рекомендуется использовать @\"microsoft.quantum.random.drawcategorical\"."
 - uid: microsoft.quantum.intrinsic.reset
   summary: Учитывая один кубит, измеряет его и гарантирует, что он находится в состоянии | 0 ⟩, чтобы его можно было безопасно освободить.
 - uid: microsoft.quantum.intrinsic.resetall
@@ -157,9 +152,9 @@ operations:
 
     \енд{алигн}
 metadata:
-  ms.openlocfilehash: c0be1da035393f32fa2949214d79ecb8a4c5ccb3
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 87002c73fd66a4b05e690daec1bed37d09708118
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885235"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88862712"
