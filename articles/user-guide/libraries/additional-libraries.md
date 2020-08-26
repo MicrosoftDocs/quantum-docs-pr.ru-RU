@@ -9,20 +9,20 @@ uid: microsoft.quantum.libraries.using
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ef88ca765a394a7092eb0a60bf6f3615c082ef6a
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: c558e25bf0d906ba6480cd7c41d3ece4ea97c2d1
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869585"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863090"
 ---
 # <a name="using-additional-no-locq-libraries"></a>Использование дополнительных Q# библиотек
 
 Пакет средств разработки тактов предоставляет дополнительные функции, зависящие от домена, с помощью _пакетов NuGet_ , которые можно добавить в Q# проекты.
 
-| Q#Библиотечная  | Пакет NuGet | Примечания |
+| Q# Библиотечная  | Пакет NuGet | Примечания |
 |---------|---------|--------|
-| [Q#Стандартная библиотека](xref:microsoft.quantum.libraries.standard.intro) | [**Microsoft. тактов. Standard**](https://www.nuget.org/packages/Microsoft.Quantum.Standard) | Включено по умолчанию |
+| [Q# Стандартная библиотека](xref:microsoft.quantum.libraries.standard.intro) | [**Microsoft. тактов. Standard**](https://www.nuget.org/packages/Microsoft.Quantum.Standard) | Включено по умолчанию |
 | [Библиотека квантовой химии](xref:microsoft.quantum.chemistry.concepts.intro) | [**Microsoft.Quantum.Chemistry**](https://www.nuget.org/packages/Microsoft.Quantum.Chemistry) | |
 | [Квантовая библиотека числовых значений](xref:microsoft.quantum.numerics.intro) | [**Значения Microsoft. тактов. numeric**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) | |
 | [Библиотека квантового машинного обучения](xref:microsoft.quantum.libraries.machine-learning.intro) | [**Microsoft.Quantum.MachineLearning**](https://www.nuget.org/packages/Microsoft.Quantum.MachineLearning) | |
@@ -33,7 +33,7 @@ ms.locfileid: "87869585"
 > Некоторые Q# библиотеки могут хорошо работать с дополнительными инструментами, которые работают вместе Q# с программами или интегрируются с ведущими приложениями.
 > Например, инструкции по [установке библиотеки химия](xref:microsoft.quantum.chemistry.concepts.installation) описывают, как использовать [пакет **Microsoft. такт. Химия** ](https://www.nuget.org/packages/Microsoft.Quantum.Chemistry) вместе с платформой вычислительной химия нвчем и как установить `qdk-chem` программы командной строки для работы с данными такта химия.
 
-## <a name="no-locq-command-line-applications-or-net-interopability"></a>[Q#приложения командной строки или взаимодействие с .NET](#tab/tabid-csproj)
+## <a name="no-locq-applications-or-net-interopability"></a>[Q# взаимодействие приложений или .NET](#tab/tabid-csproj)
 
 **Командная строка или Visual Studio Code:** Используя командную строку самостоятельно или в Visual Studio Code, можно использовать `dotnet` команду, чтобы добавить ссылку на пакет NuGet в проект.
 Например, чтобы добавить пакет [**Microsoft. такт. Numerics**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) , выполните следующую команду:

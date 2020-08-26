@@ -9,12 +9,12 @@ uid: microsoft.quantum.quickstarts.search
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 5c23d71209eb484a510f102e8b581ba4ec21829a
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: f2ae56bdca893e8a317c16d0a993da15b9f021b5
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869670"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863122"
 ---
 # <a name="tutorial-implement-grovers-search-algorithm-in-q"></a>Руководство по Реализация поиска по алгоритму Гровера на Q\#
 
@@ -42,7 +42,7 @@ ms.locfileid: "87869670"
 
 ## <a name="write-the-code"></a>Написание кода
 
-1. С помощью пакета средств разработки такта [Создайте новый Q# проект для приложения командной строки](xref:microsoft.quantum.install.standalone). Присвойте проекту имя `Grover`.
+1. С помощью пакета средств разработки такта [Создайте новый Q# проект для приложения](xref:microsoft.quantum.install.standalone). Присвойте проекту имя `Grover`.
 
 1. В файл `Program.qs` этого проекта добавьте следующий код:
 
@@ -56,7 +56,7 @@ ms.locfileid: "87869670"
 
 1. Затем запустите новую программу, Q# чтобы найти элемент, помеченный `ReflectAboutMarked` .
 
-### <a name="no-locq-command-line-applications-with-visual-studio-or-visual-studio-code"></a>Q#приложения командной строки с Visual Studio или Visual Studio Code
+### <a name="no-locq-applications-with-visual-studio-or-visual-studio-code"></a>Q# приложения с Visual Studio или Visual Studio Code
 
 Исполняемый файл будет выполнять операцию или функцию, помеченную атрибутом `@EntryPoint()`, в симуляторе или оценщике ресурсов в зависимости от конфигурации проекта и параметров командной строки.
 

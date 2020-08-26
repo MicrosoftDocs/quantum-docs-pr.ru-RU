@@ -1,0 +1,63 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.dumpoperation
+name: DumpOperation
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: При наличии операции отображает диагностику операции, которая стала доступной для текущего целевого объекта выполнения.
+remarks: >-
+  Вызов этой операции не имеет наблюдаемого воздействия в Q #. Точная диагностика, отображаемая при их наличии, зависит от текущего целевого объекта выполнения и среды редактора.
+
+  Например, при использовании в симуляторе с полным состоянием отображается единая матрица, используемая для представления `op` .
+
+
+  Обратите внимание, что при запуске в симуляторах, которые приводят к неоднозначности глобального этапа (например, симулятор с полным состоянием), возвращаемые представления могут отличаться до глобального этапа.
+
+
+  Аналогичным образом, упорядочивание матричных представлений строк и столбцов может отличаться от соглашений, используемых каждым симулятором, поддерживающим эту операцию.
+examples: >-
+  При запуске на целевом объекте такта имитатора следующий фрагмент выводит матрицу $ $ \бегин{алигнед} \лефт (\бегин{Матрикс} 1 & 0 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 1 & 0 & 0 \енд{Матрикс}\ригхт) \енд{алигнед}.
+
+  $$
+
+
+  ```Q#
+
+  operation DumpCnot() : Unit {
+      DumpOperation(2, ApplyToFirstTwoQubitsCA(CNOT, _));
+  }
+
+  ```
+syntax: 'operation DumpOperation (nQubits : Int, op : (Qubit[] => Unit is Adj)) : Unit'
+input:
+  content: '(nQubits : Int, op : (Qubit[] => Unit is Adj))'
+  types:
+  - name: nQubits
+    summary: Число Кубитс, на которых действует данная операция.
+    isPrimitive: true
+    uid: Int
+  - name: op
+    summary: Операция, которую необходимо диагностировать.
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+metadata:
+  ms.openlocfilehash: ba2e3c4dd42faa0919b5777a6db82ce787acb80a
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88864395"

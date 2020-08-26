@@ -8,22 +8,24 @@ uid: microsoft.quantum.guide.quickref.iqsharp
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: fb7b5543ef9222e6bab2b1cbbc7e3ebb54863438
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 1d2d092588e1a5c69d12e5d50377e3e26412c094
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867987"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863697"
 ---
 # <a name="ino-locq-magic-commands"></a>Я Q# волшебю команды
 
-### <a name="general"></a>Общие
+### <a name="general"></a>Общие сведения
 
 - [`%config`](xref:microsoft.quantum.iqsharp.magic-ref.config): Разрешает задавать параметры конфигурации или выполнять запросы к ним.
 - [`%estimate`](xref:microsoft.quantum.iqsharp.magic-ref.estimate): Выполняет заданную функцию или операцию на целевом компьютере Ресаурцесестиматор.
 - [`%lsmagic`](xref:microsoft.quantum.iqsharp.magic-ref.lsmagic)— Возвращает список всех доступных в настоящее время команд Magic.
+- [`%lsopen`](xref:microsoft.quantum.iqsharp.magic-ref.lsopen): Список пространств имен, открытых в настоящее время, и их псевдонимов.
 - [`%package`](xref:microsoft.quantum.iqsharp.magic-ref.package)— Предоставляет возможность загрузки пакета NuGet.
 - [`%performance`](xref:microsoft.quantum.iqsharp.magic-ref.performance): Сообщает текущие метрики производительности для этого ядра.
+- [`%project`](xref:microsoft.quantum.iqsharp.magic-ref.project): Предоставляет возможность просмотра или добавления Q# ссылок на проекты. 
 - [`%simulate`](xref:microsoft.quantum.iqsharp.magic-ref.simulate): Выполняет заданную функцию или операцию на целевом компьютере Куантумсимулатор.
 - [`%toffoli`](xref:microsoft.quantum.iqsharp.magic-ref.toffoli): Выполняет заданную функцию или операцию на целевом компьютере Тоффолисимулатор.
 - [`%who`](xref:microsoft.quantum.iqsharp.magic-ref.who): Перечисляет Q# операции, доступные в текущем сеансе.

@@ -9,12 +9,12 @@ uid: microsoft.quantum.quickstarts.qrng
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8db892091794cb1166e41744572d8938d975abf2
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: d80f1c640ac7ddb0104ccbbb6de6d0e26ba05fd6
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869772"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863627"
 ---
 # <a name="tutorial-implement-a-quantum-random-number-generator-in-q"></a>Руководство по Реализация квантового генератора случайных чисел на языке Q\#
 
@@ -23,11 +23,11 @@ ms.locfileid: "87869772"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - [Microsoft Quantum Development Kit](xref:microsoft.quantum.install).
-- Создайте Q# проект для [использования Q# из командной строки](xref:microsoft.quantum.install.standalone)или с [ведущим приложением Python](xref:microsoft.quantum.install.python) или [ведущим приложением C#](xref:microsoft.quantum.install.cs).
+- Создайте Q# проект для [ Q# приложения](xref:microsoft.quantum.install.standalone), с [ведущим приложением Python](xref:microsoft.quantum.install.python)или [ведущим приложением C#](xref:microsoft.quantum.install.cs).
 
 ## <a name="write-a-no-locq-operation"></a>Запись Q# операции
 
-### <a name="no-locq-operation-code"></a>Q#код операции
+### <a name="no-locq-operation-code"></a>Q# код операции
 
 1. Замените содержимое файла Program.qs следующим кодом:
 
@@ -64,13 +64,13 @@ ms.locfileid: "87869772"
 
 ## <a name="creating-a-complete-random-number-generator"></a>Создание комплексного генератора случайных чисел
 
-Теперь, когда у нас есть Q# операция, создающая случайные биты, мы можем использовать ее для создания полноценного генератора случайных чисел такта. Мы можем использовать Q# приложения командной строки или использовать управляющую программу.
+Теперь, когда у нас есть Q# операция, создающая случайные биты, мы можем использовать ее для создания полноценного генератора случайных чисел такта. Мы можем использовать Q# приложение или использовать управляющую программу.
 
 
 
-### <a name="no-locq-command-line-applications-with-visual-studio-or-visual-studio-code"></a>[Q#приложения командной строки с Visual Studio или Visual Studio Code](#tab/tabid-qsharp)
+### <a name="no-locq-applications-with-visual-studio-or-visual-studio-code"></a>[Q# приложения с Visual Studio или Visual Studio Code](#tab/tabid-qsharp)
 
-Чтобы создать Q# приложение командной строки Full, добавьте в программу следующую точку входа Q# : 
+Чтобы создать полное Q# приложение, добавьте в программу следующую точку входа Q# : 
 
 :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="17-33":::
 
@@ -92,13 +92,13 @@ dotnet build
 dotnet run --no-build
 ```
 
-### <a name="python-with-visual-studio-code-or-the-command-line"></a>[Вызов Python из Visual Studio Code или командной строки](#tab/tabid-python)
+### <a name="python-with-visual-studio-code-or-the-command-prompt"></a>[Python с Visual Studio Code или из командной строки](#tab/tabid-python)
 
 Чтобы запустить новую Q# программу из Python, сохраните следующий код `host.py` :
 
 :::code language="python" source="~/quantum/samples/interoperability/qrng/host.py" range="11-30":::
 
-Теперь вы сможете запустить основную программу Python из командной строки следующим образом:
+Затем можно запустить ведущее приложение Python из командной строки:
 
 ```bash
 $ python host.py
@@ -112,7 +112,7 @@ Preparing Q# environment...
 
 :::code language="csharp" source="~/quantum/samples/interoperability/qrng/Host.cs" range="4-39":::
 
-Теперь вы сможете запустить основную программу C# из командной строки следующим образом (в Visual Studio можно нажать клавишу F5):
+Затем можно запустить ведущее приложение C# из командной строки (в Visual Studio следует нажать клавишу F5):
 
 ```bash
 $ dotnet run
