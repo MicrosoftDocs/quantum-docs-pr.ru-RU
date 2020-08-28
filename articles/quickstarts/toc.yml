@@ -6,7 +6,7 @@ items:
     items:
       - name: Обзор установки
         href: index.md
-      - name: Приложения командной строки Q#
+      - name: Приложения Q#
         href: install-command-line.md
       - name: Записные книжки Jupyter Notebook для Q#
         href: install-jupyter.md
