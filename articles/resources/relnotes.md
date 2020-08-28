@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f94c20281c5a242aac6a731a5091264dc2847712
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 70d0c9b61e49d4ee6142edbe2767310403885f01
+ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863768"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88992264"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -32,7 +32,7 @@ ms.locfileid: "88863768"
 
 - Новое [пространство имен Microsoft. тактов. Random](xref:microsoft.quantum.random), предоставляющее более удобный способ выборки случайных значений в Q# программах. ([Куантумлибрариес # 311](https://github.com/microsoft/QuantumLibraries/pull/311), [кшарп-Runtime # 328](https://github.com/microsoft/qsharp-runtime/pull/328))
 - Улучшено [пространство имен Microsoft. тактов. Diagnostics](xref:microsoft.quantum.diagnostics) с новой [ `DumpOperation` операцией](xref:microsoft.quantum.diagnostics.dumpoperation), а также новые операции для сужения распределения кубит и вызовов Oracle. ([Куантумлибрариес # 302](https://github.com/microsoft/QuantumLibraries/pull/302))
-- Новая [ `%project` команда Magic](xref:microsoft.quantum.iqsharp.magic-ref.project) в I Q# и [ `qsharp.projects` API](https://docs.microsoft.com/python/qsharp/qsharp.projects.projects) в Python для поддержки ссылок на Q# проекты вне текущей папки рабочей области. Текущие ограничения этой функции см. в разделе [икшарп # 277](https://github.com/microsoft/iqsharp/issues/277) . 
+- Новая [ `%project` команда Magic](xref:microsoft.quantum.iqsharp.magic-ref.project) в I Q# и [ `qsharp.projects` API](https://docs.microsoft.com/python/qsharp-core/qsharp.projects.projects) в Python для поддержки ссылок на Q# проекты вне текущей папки рабочей области. Текущие ограничения этой функции см. в разделе [икшарп # 277](https://github.com/microsoft/iqsharp/issues/277) . 
 - Поддержка автоматической загрузки `.csproj` файлов для Q# /Писон узлов, что позволяет загружать во время инициализации внешний проект или ссылки на пакеты. Дополнительные сведения см. в инструкции по использованию [ Q# записных книжек Python и Jupyter](xref:microsoft.quantum.guide.host-programs) .
 - Добавлен пример Ерроркорректион. синдром.
 - Добавлена Настраиваемая связь с Симплеисинг.

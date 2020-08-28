@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.resources-estimator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: d5338eb740716d9d7f408703347f572688bbccb2
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 1892431c3e332385a5bcefa357eb64a9fac3f381
+ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868191"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88992247"
 ---
 # <a name="quantum-development-kit-qdk-resources-estimator"></a>Оценщик ресурсов пакета средств разработки такта (КДК)
 
@@ -69,7 +69,7 @@ BorrowedWidth   0
 
 ### <a name="invoking-the-resources-estimator-from-python"></a>Вызов средства оценки ресурсов из Python
 
-Используйте метод [estimate_resources ()](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable) из библиотеки Python с импортированной Q# операцией:
+Используйте метод [estimate_resources ()](https://docs.microsoft.com/python/qsharp-core/qsharp.loader.qsharpcallable) из библиотеки Python с импортированной Q# операцией:
 
 ```python
 qubit_result = myOperation.estimate_resources()
@@ -127,7 +127,7 @@ namespace Quantum.MyProgram
 |----|----|
 |__CNOT__    |Число запусков `CNOT` операций (также известных как контролируемые операции Паули X).|
 |__кубитклиффорд__ |Число запусков отдельных операций кубит Клиффорд и Паули.|
-|__Measure__ (мера).    |Количество запусков любых измерений.  |
+|__Мера__    |Количество запусков любых измерений.  |
 |__R__    |Число запусков однокубитных поворотов, исключая `T` , Клиффорд и Паули операции.  |
 |__T__    |Число запусков `T` операций и их сопряжений, включая `T` операции, T_x = H. t. H и T_y = Хи. T. Хи.  |
 |__Depth__|Нижняя граница глубины тактовой цепи, выполняемой Q# операцией. По умолчанию метрика глубины подсчитывает только `T` шлюзы. Дополнительные сведения см. в разделе [счетчик глубины](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter).   |

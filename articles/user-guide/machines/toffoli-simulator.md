@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.toffoli-simulator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8a981645703423856e667be7c3dccf5270a5885f
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 6a0885035c12a99ae43533f04cdc95c5c529380a
+ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868106"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88992219"
 ---
 # <a name="quantum-development-kit-qdk-toffoli-simulator"></a>Симулятор Тоффоли для пакета разработки такта (КДК)
 
@@ -40,7 +40,7 @@ ms.locfileid: "87868106"
 
 ### <a name="invoking-the-toffoli-simulator-from-python"></a>Вызов симулятора Тоффоли из Python
 
-Используйте метод [toffoli_simulate ()](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable) из библиотеки Python с импортированной Q# операцией:
+Используйте метод [toffoli_simulate ()](https://docs.microsoft.com/python/qsharp-core/qsharp.loader.qsharpcallable) из библиотеки Python с импортированной Q# операцией:
 
 ```python
 qubit_result = myOperation.toffoli_simulate()
