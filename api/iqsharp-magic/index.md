@@ -3,14 +3,14 @@ title: Магические команды IQ#
 author: rmshaffer
 uid: microsoft.quantum.iqsharp.magic-ref.index
 ms.author: rmshaffer
-ms.date: 07/21/2020
+ms.date: 08/25/2020
 ms.topic: article
-ms.openlocfilehash: 971787adae03af35d2e5b408fb88356a8b7df90a
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+ms.openlocfilehash: d6bf8407e40be092689b38cf90514c88f798cc2f
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86870708"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88862963"
 ---
 # <a name="iq-magic-commands"></a>Магические команды IQ#
 | Магические команды | Сводка |
@@ -35,7 +35,9 @@ ms.locfileid: "86870708"
 | [`%lsopen`](xref:microsoft.quantum.iqsharp.magic-ref.lsopen) | Содержит список открытых пространств имен и их псевдонимов. |
 | [`%package`](xref:microsoft.quantum.iqsharp.magic-ref.package) | Разрешает загружать пакет NuGet. |
 | [`%performance`](xref:microsoft.quantum.iqsharp.magic-ref.performance) | Предоставляет текущие метрики производительности для этого ядра. |
+| [`%project`](xref:microsoft.quantum.iqsharp.magic-ref.project) | Позволяет просматривать и добавлять ссылки на проекты Q#. |
 | [`%simulate`](xref:microsoft.quantum.iqsharp.magic-ref.simulate) | Выполняет заданную функцию или операцию на целевом компьютере QuantumSimulator. |
 | [`%toffoli`](xref:microsoft.quantum.iqsharp.magic-ref.toffoli) | Выполняет заданную функцию или операцию на целевом компьютере ToffoliSimulator. |
+| [`%trace`](xref:microsoft.quantum.iqsharp.magic-ref.trace) | Визуализирует путь выполнения указанной операции. |
 | [`%who`](xref:microsoft.quantum.iqsharp.magic-ref.who) | Выводит список операций Q#, доступных в текущем сеансе. |
 | [`%workspace`](xref:microsoft.quantum.iqsharp.magic-ref.workspace) | Предоставляет действия, связанные с текущей рабочей областью. |
