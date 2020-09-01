@@ -9,12 +9,12 @@ ms.topic: overview
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ff5eb9984da0b22a65f3919599ee18605a206fa0
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 06198f3b5b806bab49abf9fca38b5d2f15cfb65f
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867527"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863740"
 ---
 # <a name="get-started-with-the-quantum-development-kit-qdk"></a>Начало работы с Quantum Development Kit (QDK)
 
@@ -36,7 +36,7 @@ Quantum Development Kit предоставляет множество спосо
 * [Исследование запутанности с использованием Q#](xref:microsoft.quantum.write-program). Это руководство поможет вам написать программу на Q#, которая демонстрирует некоторые важнейшие понятия квантового программирования.
     Если вы не готовы работать с кодом, просто прочитайте эти материалы, не устанавливая QDK, чтобы узнать больше о языке программирования Q# и важнейших понятиях квантовых вычислений.
 * [Использование алгоритма поиска Гровера](xref:microsoft.quantum.quickstarts.search). Изучите этот пример программы Q#, которая демонстрирует возможности Q# для выражения квантовых алгоритмов с абстрагированием низкоуровневых квантовых операций.
-    В этом руководстве описывается, как разработать приложение командной строки на Q# с помощью Visual Studio или Visual Studio Code.
+    В этом руководстве описывается, как разработать приложение на Q# с помощью Visual Studio или Visual Studio Code.
 
 ### <a name="learning-further"></a>Дополнительные ресурсы для обучения
 * С помощью [модулей Microsoft Learn, посвященным квантовым вычислениям](https://docs.microsoft.com/learn/browse/?term=quantum), вы можете освоить основные принципы в своем темпе и в удобное для вас время. С основами создания квантовых программ с помощью QDK вы можете ознакомиться, пройдя наш [первый модуль](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/).

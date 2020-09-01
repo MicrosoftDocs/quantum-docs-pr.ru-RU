@@ -9,12 +9,12 @@ uid: microsoft.quantum.install.cs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 13d73bdf0287941c89e03ba63869095e5fca4e70
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 24318380e0e63957a51961762a33446fe0121b21
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867562"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863671"
 ---
 # <a name="develop-with-no-locq-and-net"></a>Разработка на Q# в среде .NET
 
@@ -25,7 +25,7 @@ ms.locfileid: "87867562"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Установите Quantum Development Kit [для использования с проектами командной строки Q#](xref:microsoft.quantum.install.standalone).
+- Установите пакет средств разработки Quantum [для использования с проектами Q#](xref:microsoft.quantum.install.standalone).
 
 ## <a name="creating-a-no-locq-library-and-a-net-host"></a>Создание библиотеки Q# и ведущей программы .NET
 
@@ -34,7 +34,7 @@ ms.locfileid: "87867562"
 Следуйте инструкциям на вкладке для вашей среды разработки.
 Если вы используете редактор, отличный от Visual Studio или VS Code, просто выполните действия из командной строки.
 
-### <a name="visual-studio-code-or-command-line"></a>[Visual Studio Code или командная строка](#tab/tabid-cmdline)
+### <a name="visual-studio-code-or-command-prompt"></a>[Visual Studio Code или командная строка](#tab/tabid-cmdline)
 
 - Создайте новую библиотеку Q#:
 
@@ -106,4 +106,4 @@ ms.locfileid: "87867562"
     
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Теперь, когда у вас настроен пакет Quantum Development Kit для программ командной строки Q# и для взаимодействия с .NET, вы можете написать и запустить [свою первую квантовую программу](xref:microsoft.quantum.quickstarts.qrng).
+Теперь, когда у вас настроен пакет средств разработки Quantum для приложений Q# и для взаимодействия с .NET, вы можете написать и запустить [свою первую квантовую программу](xref:microsoft.quantum.quickstarts.qrng).

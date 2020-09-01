@@ -10,12 +10,12 @@ uid: microsoft.quantum.update
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: dd7360961aa728a6aa63b8d8c4e4840f5bf2afe8
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 84782d1628dd100c0939b2b12aa0a9aa8ab2b80e
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866763"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863640"
 ---
 # <a name="update-the-microsoft-quantum-development-kit-qdk"></a>Обновление пакета средств разработки Microsoft Quantum Development Kit (QDK)
 
@@ -84,9 +84,9 @@ ms.locfileid: "87866763"
 
 1. В Visual Studio Code откройте папку с проектом, который необходимо обновить.
 2. Выберите **Терминал** -> **Создать терминал**.
-3. Выполните инструкции по обновлению с помощью командной строки (приведены ниже).
+3. Выполните инструкции по обновлению с помощью командной строки (см. ниже).
 
-### <a name="update-no-locq-projects-using-the-command-line"></a>Обновление проектов Q# с помощью командной строки
+### <a name="update-no-locq-projects-using-the-command-prompt"></a>Обновление проектов Q# с помощью командной строки
 
 1. Перейдите к папке, содержащей основной файл проекта.
 
@@ -309,13 +309,13 @@ ms.locfileid: "87866763"
 
 1. Обновите шаблоны проектов Quantum для .NET.
 
-    Из командной строки.
+    Из командной строки:
 
     ```dotnetcli
     dotnet new -i Microsoft.Quantum.ProjectTemplates
     ```
 
-   Кроме того, если предполагается использовать шаблоны командной строки и у вас уже установлено расширение QDK VS Code, можно обновить шаблоны проектов из самого расширения.
+   Кроме того, если предполагается использовать шаблоны командной строки и у вас уже установлено расширение QDK VS Code, можно обновить шаблоны проектов из самого расширения:
 
    - [Обновить расширение QDK](#update-vs-code-qdk-extension)
    - В VS Code выберите **Представление** -> **Палитра команд**.

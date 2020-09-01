@@ -1,5 +1,5 @@
 ---
-title: Разработка приложений Q# для командной строки
+title: Разработка приложений Q#
 author: KittyYeungQ
 ms.author: kitty
 ms.date: 4/24/2020
@@ -9,14 +9,14 @@ uid: microsoft.quantum.install.standalone
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 630dc7b8acf2dd8f258eb27dfbc367b812cd1c19
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 6a287dd76162a05d72af7e9d1e46533425283e2a
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867613"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863665"
 ---
-# <a name="develop-with-no-locq-command-line-applications"></a>Разработка приложений Q# для командной строки
+# <a name="develop-with-no-locq-applications"></a>Разработка приложений Q#
 
 Программы Q# могут выполняться самостоятельно (без драйвера) на основном языке, например C#, F# или Python.
 
@@ -26,7 +26,7 @@ ms.locfileid: "87867613"
 
 ## <a name="installation"></a>Установка
 
-Вы можете создавать приложения Q# для командной строки в любой интегрированной среде разработки. Но мы рекомендуем использовать для локальной разработки приложений Q# интегрированную среду разработки Visual Studio Code (VS Code) или Visual Studio. Для разработки в облаке с помощью веб-браузера мы рекомендуем использовать Visual Studio Codespaces. При разработке в таких средах вам доступны широкие возможности расширения QDK, такие как предупреждения, выделение синтаксиса, шаблоны проектов и многие другие. 
+Вы можете создавать приложения Q# в любой интегрированной среде разработки. Но мы рекомендуем использовать для локальной разработки приложений Q# интегрированную среду разработки Visual Studio Code (VS Code) или Visual Studio. Для разработки в облаке с помощью веб-браузера мы рекомендуем использовать Visual Studio Codespaces. При разработке в таких средах вам доступны широкие возможности расширения QDK, такие как предупреждения, выделение синтаксиса, шаблоны проектов и многие другие. 
 
 Чтобы настроить VS Code, выполните следующие действия.
 
@@ -94,7 +94,7 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 > [!NOTE]
 > Если в одном решении Visual Studio несколько проектов, все включенные в него проекты нужно разместить в той же папке, что и решение, или в одной из вложенных в нее папок.  
 
-### <a name="other-editors-with-the-command-line"></a>[Другие редакторы с командной строкой](#tab/tabid-cmdline)
+### <a name="other-editors-with-the-command-prompt"></a>[Другие редакторы с командной строкой](#tab/tabid-cmdline)
 
 Проверьте установку, создав на Q# приложение `Hello World`.
 
