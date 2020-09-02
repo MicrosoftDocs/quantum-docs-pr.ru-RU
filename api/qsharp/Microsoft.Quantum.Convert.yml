@@ -18,9 +18,9 @@ functions:
 - uid: microsoft.quantum.convert.boolarrayaspauli
   summary: При наличии битовой строки возвращает оператор Multi-кубит Паули, представленный в виде массива операторов с одним кубит Паули.
 - uid: microsoft.quantum.convert.boolarrayasresultarray
-  summary: Преобразует `Bool[]` `Result[]` тип в тип, где `true` сопоставляется с `One` и `false` сопоставляется с. `Zero`
+  summary: Преобразует `Bool[]` тип в `Result[]` тип, где `true` сопоставляется с `One` и `false` сопоставляется с `Zero` .
 - uid: microsoft.quantum.convert.boolasresult
-  summary: Преобразует `Bool` `Result` тип в тип, где `true` сопоставляется с `One` и `false` сопоставляется с. `Zero`
+  summary: Преобразует `Bool` тип в `Result` тип, где `true` сопоставляется с `One` и `false` сопоставляется с `Zero` .
 - uid: microsoft.quantum.convert.boolasstring
   summary: Преобразует заданное логическое значение в эквивалентное строковое представление.
 - uid: microsoft.quantum.convert.doubleasstring
@@ -49,18 +49,18 @@ functions:
 - uid: microsoft.quantum.convert.rangeasintarray
   summary: Создает массив `arr` целых чисел, перечисленных с помощью Start.. шаг.. конце.
 - uid: microsoft.quantum.convert.resultarrayasboolarray
-  summary: Преобразует `Result[]` `Bool[]` тип в тип, где `One` сопоставляется с `true` и `Zero` сопоставляется с. `false`
+  summary: Преобразует `Result[]` тип в `Bool[]` тип, где `One` сопоставляется с `true` и `Zero` сопоставляется с `false` .
 - uid: microsoft.quantum.convert.resultarrayasint
   summary: Возвращает положительное целое число из строки результатов в формате с прямым порядком байтов.
 - uid: microsoft.quantum.convert.resultasbool
-  summary: Преобразует `Result` `Bool` тип в тип, где `One` сопоставляется с `true` и `Zero` сопоставляется с. `false`
+  summary: Преобразует `Result` тип в `Bool` тип, где `One` сопоставляется с `true` и `Zero` сопоставляется с `false` .
 operations:
 - uid: microsoft.quantum.convert.call
   summary: Вызывает функцию с заданным входным параметром.
 metadata:
-  ms.openlocfilehash: d435979692fe94efb64af82f4a7a949cb2341ef8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7ab5e02631823dcf4dee36f98c14212b43381b74
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677000"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341366"

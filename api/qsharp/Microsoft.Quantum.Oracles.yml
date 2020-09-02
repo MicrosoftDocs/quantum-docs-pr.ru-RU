@@ -4,15 +4,15 @@ name: Microsoft.Quantum.Oracles
 summary: " # <a name=\"summary\"></a>Сводка\n Эти пространства имен предоставляют определяемые пользователем типы для украшения различных видов Oracle по их предполагаемому использованию в алгоритмах такта, таких как Оценка этапа и усиление амплитуды."
 functions:
 - uid: microsoft.quantum.oracles.deterministicstateoraclefromstateoracle
-  summary: Преобразует Oracle типа `StateOracle` в `DeterministicStateOracle`.
+  summary: Преобразует Oracle типа `StateOracle` в `DeterministicStateOracle` .
 - uid: microsoft.quantum.oracles.obliviousoraclefromdeterministicstateoracle
-  summary: Объединяет Oracle `DeterministicStateOracle` и `ObliviousOracle`.
+  summary: Объединяет Oracle `DeterministicStateOracle` и `ObliviousOracle` .
 - uid: microsoft.quantum.oracles.oracletodiscrete
   summary: При наличии операции, представляющей "черный ящик" Oracle, возвращает отдельную репликацию Oracle, которая представляет "черный ящик", повторяющийся несколько раз.
 - uid: microsoft.quantum.oracles.reflectionoraclefromdeterministicstateoracle
   summary: Конструирует отражение о заданном состоянии из Oracle.
 - uid: microsoft.quantum.oracles.stateoraclefromdeterministicstateoracle
-  summary: Преобразует Oracle типа `DeterministicStateOracle` в `StateOracle`.
+  summary: Преобразует Oracle типа `DeterministicStateOracle` в `StateOracle` .
 newtypes:
 - uid: microsoft.quantum.oracles.continuousoracle
   summary: >-
@@ -28,7 +28,7 @@ newtypes:
     Входные данные для Oracle $O $:
 
 
-    - Регистр, в котором будет храниться требуемое состояние такта $ \кет{\пси}\_s $.
+    - Регистр, в котором будет храниться требуемое состояние такта $ \кет{\пси} \_ s $.
 - uid: microsoft.quantum.oracles.discreteoracle
   summary: >-
     Представляет отдельный часовой объект Oracle.
@@ -45,7 +45,7 @@ newtypes:
 
     - АнЦилла Register $a $, с которым $O $ работает.
 
-    - Системная регистрация $s $, к которой применяется требуемая единая $U $, после выбора зарегистрировать $a $ в состоянии $ \кет{т}\_a $.
+    - Системная регистрация $s $, к которой применяется требуемая единая $U $, после выбора зарегистрировать $a $ в состоянии $ \кет{т} \_ a $.
 - uid: microsoft.quantum.oracles.reflectionoracle
   summary: >-
     Представляет Oracle отражения.
@@ -67,11 +67,11 @@ newtypes:
 
     - Целочисленное индексирование флага кубит $f $.
 
-    - Система регистрирует $s $, которая будет хранить требуемое состояние такта $\_\кет{\пси} s $.
+    - Система регистрирует $s $, которая будет хранить требуемое состояние такта $ \кет{\пси} \_ s $.
 metadata:
-  ms.openlocfilehash: c1f364d74aab6d318e7b6db078d5532aeae57bcd
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 100ea34895b343c8b24ef4f584bbf534acd9d6ff
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673109"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340958"

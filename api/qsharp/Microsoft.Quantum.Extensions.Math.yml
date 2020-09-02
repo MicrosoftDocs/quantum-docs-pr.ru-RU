@@ -3,81 +3,81 @@ uid: microsoft.quantum.extensions.math
 name: Microsoft.Quantum.Extensions.Math
 functions:
 - uid: microsoft.quantum.extensions.math.absb
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАбсб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.absl\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.absl\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАбсб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.absl\".\nИспользуйте @\"microsoft.quantum.math.absl\"."
 - uid: microsoft.quantum.extensions.math.absd
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАбсд является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.absd\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.absd\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАбсд является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.absd\".\nИспользуйте @\"microsoft.quantum.math.absd\"."
 - uid: microsoft.quantum.extensions.math.absi
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАбси является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.absi\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.absi\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАбси является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.absi\".\nИспользуйте @\"microsoft.quantum.math.absi\"."
 - uid: microsoft.quantum.extensions.math.arccos
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАрккос является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.arccos\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.arccos\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nАрккос является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.arccos\".\nИспользуйте @\"microsoft.quantum.math.arccos\"."
 - uid: microsoft.quantum.extensions.math.arcsin
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНе рекомендуется использовать дуги. Взамен рекомендуется использовать @\"microsoft.quantum.math.arcsin\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.arcsin\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНе рекомендуется использовать дуги. Взамен рекомендуется использовать @\"microsoft.quantum.math.arcsin\".\nИспользуйте @\"microsoft.quantum.math.arcsin\"."
 - uid: microsoft.quantum.extensions.math.arctan
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nArcTan является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.arctan\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.arctan\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nArcTan является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.arctan\".\nИспользуйте @\"microsoft.quantum.math.arctan\"."
 - uid: microsoft.quantum.extensions.math.arctan2
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nArcTan2 является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.arctan2\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.arctan2\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nArcTan2 является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.arctan2\".\nИспользуйте @\"microsoft.quantum.math.arctan2\"."
 - uid: microsoft.quantum.extensions.math.ceiling
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nCEILING является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.ceiling\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.ceiling\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nCEILING является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.ceiling\".\nИспользуйте @\"microsoft.quantum.math.ceiling\"."
 - uid: microsoft.quantum.extensions.math.cos
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФункция COS устарела. Взамен рекомендуется использовать @\"microsoft.quantum.math.cos\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.cos\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФункция COS устарела. Взамен рекомендуется использовать @\"microsoft.quantum.math.cos\".\nИспользуйте @\"microsoft.quantum.math.cos\"."
 - uid: microsoft.quantum.extensions.math.cosh
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nCosh является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.cosh\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.cosh\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nCosh является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.cosh\".\nИспользуйте @\"microsoft.quantum.math.cosh\"."
 - uid: microsoft.quantum.extensions.math.divremb
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nДивремб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.divreml\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.divreml\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nДивремб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.divreml\".\nИспользуйте @\"microsoft.quantum.math.divreml\"."
 - uid: microsoft.quantum.extensions.math.e
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nE является устаревшим. Используйте@\"microsoft.quantum.math.e\" .\nВзамен рекомендуется использовать @\"microsoft.quantum.math.e\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nE является устаревшим. Используйте @\"microsoft.quantum.math.e\" .\nИспользуйте @\"microsoft.quantum.math.e\"."
 - uid: microsoft.quantum.extensions.math.expd
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЕкспд является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.expd\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.expd\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЕкспд является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.expd\".\nИспользуйте @\"microsoft.quantum.math.expd\"."
 - uid: microsoft.quantum.extensions.math.floor
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЭтаж является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.floor\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.floor\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЭтаж является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.floor\".\nИспользуйте @\"microsoft.quantum.math.floor\"."
 - uid: microsoft.quantum.extensions.math.ieeeremainder
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИиеремаиндер является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.ieeeremainder\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.ieeeremainder\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИиеремаиндер является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.ieeeremainder\".\nИспользуйте @\"microsoft.quantum.math.ieeeremainder\"."
 - uid: microsoft.quantum.extensions.math.log
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЖурнал устарел. Взамен рекомендуется использовать @\"microsoft.quantum.math.log\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.log\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЖурнал устарел. Взамен рекомендуется использовать @\"microsoft.quantum.math.log\".\nИспользуйте @\"microsoft.quantum.math.log\"."
 - uid: microsoft.quantum.extensions.math.log10
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nLOG10 является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.log10\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.log10\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nLOG10 является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.log10\".\nИспользуйте @\"microsoft.quantum.math.log10\"."
 - uid: microsoft.quantum.extensions.math.maxb
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМаксб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.maxl\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.maxl\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМаксб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.maxl\".\nИспользуйте @\"microsoft.quantum.math.maxl\"."
 - uid: microsoft.quantum.extensions.math.maxd
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМаксд является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.maxd\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.maxd\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМаксд является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.maxd\".\nИспользуйте @\"microsoft.quantum.math.maxd\"."
 - uid: microsoft.quantum.extensions.math.maxi
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМакси является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.maxi\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.maxi\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМакси является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.maxi\".\nИспользуйте @\"microsoft.quantum.math.maxi\"."
 - uid: microsoft.quantum.extensions.math.minb
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМИнБ является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.minl\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.minl\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМИнБ является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.minl\".\nИспользуйте @\"microsoft.quantum.math.minl\"."
 - uid: microsoft.quantum.extensions.math.mind
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПомните, что это не рекомендуется. Взамен рекомендуется использовать @\"microsoft.quantum.math.mind\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.mind\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПомните, что это не рекомендуется. Взамен рекомендуется использовать @\"microsoft.quantum.math.mind\".\nИспользуйте @\"microsoft.quantum.math.mind\"."
 - uid: microsoft.quantum.extensions.math.mini
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМини-версия устарела. Взамен рекомендуется использовать @\"microsoft.quantum.math.mini\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.mini\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМини-версия устарела. Взамен рекомендуется использовать @\"microsoft.quantum.math.mini\".\nИспользуйте @\"microsoft.quantum.math.mini\"."
 - uid: microsoft.quantum.extensions.math.modpowb
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМодповб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.modpowl\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.modpowl\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМодповб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.modpowl\".\nИспользуйте @\"microsoft.quantum.math.modpowl\"."
 - uid: microsoft.quantum.extensions.math.pi
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nPI является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.pi\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.pi\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nPI является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.pi\".\nИспользуйте @\"microsoft.quantum.math.pi\"."
 - uid: microsoft.quantum.extensions.math.powd
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПОВД является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.powd\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.powd\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПОВД является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.powd\".\nИспользуйте @\"microsoft.quantum.math.powd\"."
 - uid: microsoft.quantum.extensions.math.round
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФункция Round является устаревшей. Взамен рекомендуется использовать @\"microsoft.quantum.math.round\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.round\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФункция Round является устаревшей. Взамен рекомендуется использовать @\"microsoft.quantum.math.round\".\nИспользуйте @\"microsoft.quantum.math.round\"."
 - uid: microsoft.quantum.extensions.math.signb
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСигнб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.signl\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.signl\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСигнб является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.signl\".\nИспользуйте @\"microsoft.quantum.math.signl\"."
 - uid: microsoft.quantum.extensions.math.signd
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПодписание устарело. Взамен рекомендуется использовать @\"microsoft.quantum.math.signd\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.signd\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nПодписание устарело. Взамен рекомендуется использовать @\"microsoft.quantum.math.signd\".\nИспользуйте @\"microsoft.quantum.math.signd\"."
 - uid: microsoft.quantum.extensions.math.signi
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСигни является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.signi\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.signi\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nСигни является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.signi\".\nИспользуйте @\"microsoft.quantum.math.signi\"."
 - uid: microsoft.quantum.extensions.math.sin
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФункция SIN устарела. Взамен рекомендуется использовать @\"microsoft.quantum.math.sin\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.sin\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФункция SIN устарела. Взамен рекомендуется использовать @\"microsoft.quantum.math.sin\".\nИспользуйте @\"microsoft.quantum.math.sin\"."
 - uid: microsoft.quantum.extensions.math.sinh
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nSinh является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.sinh\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.sinh\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nSinh является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.sinh\".\nИспользуйте @\"microsoft.quantum.math.sinh\"."
 - uid: microsoft.quantum.extensions.math.sqrt
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФункция SQRT устарела. Взамен рекомендуется использовать @\"microsoft.quantum.math.sqrt\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.sqrt\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nФункция SQRT устарела. Взамен рекомендуется использовать @\"microsoft.quantum.math.sqrt\".\nИспользуйте @\"microsoft.quantum.math.sqrt\"."
 - uid: microsoft.quantum.extensions.math.tan
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nTan является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.tan\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.tan\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nTan является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.tan\".\nИспользуйте @\"microsoft.quantum.math.tan\"."
 - uid: microsoft.quantum.extensions.math.tanh
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nTanh является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.tanh\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.tanh\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nTanh является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.math.tanh\".\nИспользуйте @\"microsoft.quantum.math.tanh\"."
 - uid: microsoft.quantum.extensions.math.truncate
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nУсечение не рекомендуется к использованию. Взамен рекомендуется использовать @\"microsoft.quantum.math.truncate\".\nВзамен рекомендуется использовать @\"microsoft.quantum.math.truncate\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nУсечение не рекомендуется к использованию. Взамен рекомендуется использовать @\"microsoft.quantum.math.truncate\".\nИспользуйте @\"microsoft.quantum.math.truncate\"."
 metadata:
-  ms.openlocfilehash: b94b4c7aa1523d9f3e8b42359e759ffa356b25ea
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f5896e114085169670eddd1f768f38ec89ce8b7a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673258"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340975"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.characterization.singlequbitprocesstomographymeasurement
 name: SingleQubitProcessTomographyMeasurement
 type: operation
-namespace: Microsoft.Quantum.Characterization
+namespace: microsoft.quantum.characterization
 summary: Выполняет кубит процесс томографи измерения на основе Паули, учитывая конкретный интересующий Вас канал.
 remarks: Распределение по результатам, возвращаемым этой операцией, является особым случаем для двух кубит состояния томографи. Let $ \рхо = J (\Ламбда)/$2 должно быть Чои – Жамиłковски для $ \Ламбда $. Затем приведенный выше дистрибутив идентичен $ $ \бегин{алигн} \Пр (\Тексттт{зеро} | \рхо; M) = \Операторнаме{ТР} (M \рхо), \енд{алигн} $ $ WHERE $M = 2 (\болдоне + P) ^ \Масрм{т}/2 \кдот (\болдоне + Q)/$2 — это эффективное измерение, соответствующее $P $ и $Q $.
 syntax: 'operation SingleQubitProcessTomographyMeasurement (preparation : Pauli, measurement : Pauli, channel : (Qubit => Unit)) : Result'
@@ -32,15 +32,15 @@ output:
   content: Result
   types:
   - summary: >-
-      Результат `Zero` с вероятностью $ $ \бегин{алигн} \Пр (\Тексттт{зеро} | \ламбда; P, Q) = \Операторнаме{ТР}\лефт (\фрак{\болдоне + Q}{2} \ламбда\лефт [\Фрак{\болдоне + P}{2} \ригхт] \ригхт).
+      Результат `Zero` с вероятностью $ $ \Бегин{алигн} \пр (\тексттт{зеро} | \ламбда; P, Q) = \Операторнаме{ТР}\лефт (\фрак{\болдоне + Q} {2} \ламбда\лефт [\фрак{\болдоне + P} {2} \ригхт] \ригхт).
 
       \енд{алигн} $ $
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: f554910a414666c6d61a96932a932b9320426360
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 030ca1ba45df6ea1fc37b994c30bd4f862a6b923
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677588"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354252"
