@@ -2,18 +2,18 @@
 uid: microsoft.quantum.arithmetic.incrementbymodularinteger
 name: IncrementByModularInteger
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   Выполняет модульное увеличение регистра кубит с помощью целочисленной константы.
 
 
-  Отметим `increment` , что $a $, `modulus` $N $ и целое число, закодированные `target` $y $.
+  Отметим, `increment` что $a $, `modulus` $N $ и целое число, закодированные `target` $y $.
 
   Затем операция выполняет следующее преобразование: \бегин{алигн} \кет{и} \мапсто \кет{(y + a) \операторнаме{мод} N} \енд{алигн} целые числа кодируются в формате с прямым порядком байтов.
 remarks: >-
   Предполагается, что начальное значение целевого объекта меньше $N $, а шаг приращения $a $ меньше $N $.
 
-  Обратите <xref:microsoft.quantum.arithmetic.incrementphasebymodularinteger> внимание, что реализует ту же `PhaseLittleEndian` операцию на основе.
+  Обратите внимание, что <xref:microsoft.quantum.arithmetic.incrementphasebymodularinteger> реализует ту же операцию на `PhaseLittleEndian` основе.
 syntax: 'operation IncrementByModularInteger (increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -27,7 +27,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: target
-    summary: Целочисленный $y $ `LittleEndian` в формате `increment` , к которому добавляется $a $.
+    summary: Целочисленный $y $ в `LittleEndian` формате, `increment` к которому добавляется $a $.
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Unit
@@ -40,9 +40,9 @@ functors:
 seeAlso:
 - microsoft.quantum.arithmetic.incrementphasebymodularinteger
 metadata:
-  ms.openlocfilehash: 53faa65d67629d0e4c73efc03724cb4b4b30675d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2f91365a06304e6e4e6b71783a941192f4a7121e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679541"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342879"
