@@ -2,12 +2,12 @@
 uid: microsoft.quantum.canon.applyifoneca
 name: ApplyIfOneCA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   Применяет единую операцию с условием для классического результирующего значения One.
 
 
-  При наличии операции `op` и результирующего значения `result`применяется `op` к, `target` если `result` имеет `One`значение. Если `Zero`значение равно, то `target`ничего не происходит с.
+  При наличии операции `op` и результирующего значения `result` применяется `op` к, `target` Если имеет `result` значение `One` . Если значение `Zero` равно, то ничего не происходит с `target` .
 
   Суффикс `CA` указывает, что применяемая операция является единой (управляемой и аджоинтабле).
 syntax: "operation ApplyIfOneCA (result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T)) : Unit"
@@ -52,9 +52,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifonea
 - microsoft.quantum.canon.applyifoneca
 metadata:
-  ms.openlocfilehash: f8837e549ec1fc70b76e8151a211c4bf9f71168e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1e4aa4a8b7d4947ee72b322aaccb0b360992f1f9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672652"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89358213"

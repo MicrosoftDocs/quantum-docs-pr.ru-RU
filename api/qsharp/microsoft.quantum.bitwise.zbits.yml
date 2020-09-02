@@ -2,7 +2,7 @@
 uid: microsoft.quantum.bitwise.zbits
 name: ZBits
 type: function
-namespace: Microsoft.Quantum.Bitwise
+namespace: microsoft.quantum.bitwise
 summary: Возвращает целое число, представляющее Z бит массива операторов Паули.
 remarks: Функция вызывает исключение, если длина `paulis` массива больше 63.
 syntax: 'function ZBits (paulis : Pauli[]) : Int'
@@ -17,15 +17,15 @@ input:
 output:
   content: Int
   types:
-  - summary: Целочисленное $x $ с двоичным представлением ${62}\,({61}\,P_\,P_ \дотс p_0) $, где $p _i = `paulis[i]` $0 `PauliI` , `PauliX` если имеет значение или и, где `paulis[i]` $p `PauliY` _i `PauliZ`= $1, если имеет значение или.
+  - summary: Целочисленное $x $ с двоичным представлением $ (p_ {62} \, p_ {61} \, \дотс \, p_0) $, где $p _i = $0, если `paulis[i]` имеет значение `PauliI` или `PauliX` и, где $p _i = $1, если `paulis[i]` имеет значение `PauliY` или `PauliZ` .
     isPrimitive: true
     uid: Int
 seeAlso:
 - xbits
 metadata:
-  ms.openlocfilehash: d7605a48451292792a97e9049125674c6716780f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 38515f1ad8e6f4a11161f4bea0604a21a61c7546
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676424"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350920"
