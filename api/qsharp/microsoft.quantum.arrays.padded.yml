@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.padded
 name: Padded
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: Возвращает массив, дополненный с указанными значениями вплоть до указанной длины.
 examples: >-
   ```qsharp
@@ -23,7 +23,7 @@ input:
   content: "(nElementsTotal : Int, defaultElement : 'T, inputArray : 'T[])"
   types:
   - name: nElementsTotal
-    summary: Длина заполненного массива. Если это положительное значение `inputArray` , то оно дополняется заголовком. Если это отрицательное значение `inputArray` , то оно дополняется на хвосте.
+    summary: Длина заполненного массива. Если это положительное значение, `inputArray` то оно дополняется заголовком. Если это отрицательное значение, `inputArray` то оно дополняется на хвосте.
     isPrimitive: true
     uid: Int
   - name: defaultElement
@@ -38,7 +38,7 @@ input:
 output:
   content: "'T[]"
   types:
-  - summary: Массив `output` , являющийся дополнением `inputArray` к заголовку с `defaultElement`s до длины `output``nElementsTotal`
+  - summary: Массив `output` , являющийся `inputArray` дополнением к заголовку с `defaultElement` s до `output` длины `nElementsTotal`
     isArray: true
     uid: "'T"
     isLocal: true
@@ -46,9 +46,9 @@ typeParameters:
 - uid: "'T"
   summary: Тип элементов массива.
 metadata:
-  ms.openlocfilehash: 6fafc015026ca9b369e23fda702af172867444ca
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 37b2f4bae9b5f055762ac1d84fef30d13f35a741
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680892"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351923"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.filtered
 name: Filtered
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: При наличии массива и предиката, определенного для элементов массива, возвращает массив, состоящий из элементов, которые соответствуют предикату.
 remarks: Функция определена для универсальных типов, т. е. при наличии массива `'T[]` и предиката `'T -> Bool` можно фильтровать элементы.
 examples: >-
@@ -44,7 +44,7 @@ input:
       - isPrimitive: true
         uid: Bool
   - name: array
-    summary: Массив элементов `'T`.
+    summary: Массив элементов `'T` .
     isArray: true
     uid: "'T"
     isLocal: true
@@ -59,9 +59,9 @@ typeParameters:
 - uid: "'T"
   summary: Тип `array` элементов.
 metadata:
-  ms.openlocfilehash: 6aa19a279425672675182f3c8098e7c47fb5cce6
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3b586b356e18c71f1721fbce0ec26e2ea37bfd73
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676465"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352297"

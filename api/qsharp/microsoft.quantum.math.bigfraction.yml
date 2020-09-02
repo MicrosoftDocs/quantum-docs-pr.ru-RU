@@ -2,13 +2,13 @@
 uid: microsoft.quantum.math.bigfraction
 name: BigFraction
 type: newtype
-namespace: Microsoft.Quantum.Math
-summary: Представляет рациональное число в форме `p/q`. Integer `p` — это первый элемент кортежа, `q` который является вторым элементом кортежа.
+namespace: microsoft.quantum.math
+summary: Представляет рациональное число в форме `p/q` . Integer `p` — это первый элемент кортежа, который `q` является вторым элементом кортежа.
 syntax: newtype BigFraction = (BigInt, BigInt);
 metadata:
-  ms.openlocfilehash: d9da825f0317e9c51dd78f90ec7ee5b087d5dd43
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3ae7d6cf0f9bd200c0620caf8bce93403e18f9cf
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684238"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344426"
