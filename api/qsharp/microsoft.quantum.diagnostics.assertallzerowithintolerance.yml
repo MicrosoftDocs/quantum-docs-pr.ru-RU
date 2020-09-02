@@ -2,19 +2,19 @@
 uid: microsoft.quantum.diagnostics.assertallzerowithintolerance
 name: AssertAllZeroWithinTolerance
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
-summary: Утверждение о том, что все заданные Кубитс{0}находятся в состоянии $ \кет $ вплоть до заданного допуска.
+namespace: microsoft.quantum.diagnostics
+summary: Утверждение о том, что все заданные Кубитс находятся в состоянии $ \кет {0} $ вплоть до заданного допуска.
 syntax: 'operation AssertAllZeroWithinTolerance (qubits : Qubit[], tolerance : Double) : Unit'
 input:
   content: '(qubits : Qubit[], tolerance : Double)'
   types:
   - name: qubits
-    summary: Кубитс, которые подтверждаются в $ \кет{0}$ State.
+    summary: Кубитс, которые подтверждаются в $ \кет {0} $ State.
     isArray: true
     isPrimitive: true
     uid: Qubit
   - name: tolerance
-    summary: Точность, с которой состояние должно находиться в $ \кет{0}$ State
+    summary: Точность, с которой состояние должно находиться в $ \кет {0} $ State
     isPrimitive: true
     uid: Double
 output:
@@ -28,9 +28,9 @@ functors:
 seeAlso:
 - assertqubitwithintolerance
 metadata:
-  ms.openlocfilehash: ae55998333d6bc3a4d8b41341842147d80dcd183
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 547180aac49fde1525a7477d9ec75b302912fe2b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677292"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337584"
