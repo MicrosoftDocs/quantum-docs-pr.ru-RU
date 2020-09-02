@@ -2,26 +2,26 @@
 uid: microsoft.quantum.arithmetic.compareusingripplecarry
 name: CompareUsingRippleCarry
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   Эта операция проверяет, имеет ли целое число, представленное регистром Кубитс, больше другого целого числа, применяя XOR результата к выходному кубит.
 
 
-  При наличии двух целых `x` чисел `y` и хранении в регистрах кубит одинакового размера эта операция проверяет, `x > y`соответствуют ли они. Если значение равно true, 1 Ксоред в выходной кубит. В противном случае 0 Ксоред в выходной кубит.
+  При наличии двух целых чисел `x` и `y` хранении в регистрах кубит одинакового размера эта операция проверяет, соответствуют ли они `x > y` . Если значение равно true, 1 Ксоред в выходной кубит. В противном случае 0 Ксоред в выходной кубит.
 
   Иными словами, эта операция может быть представлена единой $ $ \бегин{алигн} У\кет {x} \ Сисакет {y} \ Сисакет {z} = \кет{КС}\кет{и}\кет{з\оплус (x>y)}.
 
   \енд{алигн} $ $
 syntax: 'operation CompareUsingRippleCarry (x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit) : Unit'
-references: '- Новый такт Ripple — Добавление Андрея A. Куккаро, Томас G. Драпер, Самуел A. Кутин, Дэвид Петрие Маултонhttps://arxiv.org/abs/quant-ph/0410184'
+references: '- Новый такт Ripple — Добавление Андрея A. Куккаро, Томас G. Драпер, Самуел A. Кутин, Дэвид Петрие Маултон https://arxiv.org/abs/quant-ph/0410184'
 input:
   content: '(x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit)'
   types:
   - name: x
-    summary: Первое число для сравнения, хранимое `LittleEndian` в формате в регистре кубит.
+    summary: Первое число для сравнения, хранимое в `LittleEndian` формате в регистре кубит.
     uid: microsoft.quantum.arithmetic.littleendian
   - name: y
-    summary: Второе число для сравнения, сохраненное `LittleEndian` в формате в регистре кубит.
+    summary: Второе число для сравнения, сохраненное в `LittleEndian` формате в регистре кубит.
     uid: microsoft.quantum.arithmetic.littleendian
   - name: output
     summary: Кубит, в котором хранится результат сравнения $x>y $.
@@ -36,9 +36,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 08cff4d874060fce0b461c7eeadfdcadf6fa1453
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 374b1611c7bf34f11ab8a8c3f11fad951e288565
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679763"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89327375"
