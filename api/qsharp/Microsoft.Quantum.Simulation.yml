@@ -4,49 +4,49 @@ name: Microsoft.Quantum.Simulation
 summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен содержит функции и операции для согласованной имитации Dynamics тактовых систем."
 functions:
 - uid: microsoft.quantum.simulation.addgeneratorsystems
-  summary: Добавляет две `GeneratorSystem`s для создания нового `GeneratorSystem`.
+  summary: Добавляет две `GeneratorSystem` s для создания нового `GeneratorSystem` .
 - uid: microsoft.quantum.simulation.blockencodingbylcu
   summary: >-
-    Кодирует интересующий оператор в `BlockEncoding`.
+    Кодирует интересующий оператор в `BlockEncoding` .
 
 
-    Создается `BlockEncoding` единая $U = П\кдот в\кдот P ^ \дагжер $, которая кодирует некоторый оператор $H = \ sum_ {j} | \ alpha_j | U_j $, представляющая собой линейное сочетание унитариес. Как правило, $P $ является подготовкой состояния, таким,{0}\_что $P \кет a = \ sum_j\|\скрт{\\|\_alpha_j/\век\алфа\_2} \кет{ж} a $ и $V = \ sum_ {j\_} \кет{ж}\бра{ж} а\отимес U_j $.
+    Создается `BlockEncoding` единая $U = П\кдот В\кдот P ^ \дагжер $, которая кодирует некоторый оператор $H = \ sum_ {j} | \ alpha_j | U_j $, представляющая собой линейное сочетание унитариес. Как правило, $P $ является подготовкой состояния, таким, что $P \кет {0} \_ a = \ sum_j \скрт{\ alpha_j/ \| \век\алфа \| \_ 2} \кет{ж} \_ a $ и $V = \ sum_ {j} \кет{ж}\бра{ж} \_ а\отимес U_j $.
 - uid: microsoft.quantum.simulation.blockencodingreflectionbylcu
   summary: >-
-    Кодирует интересующий оператор в `BlockEncodingReflection`.
+    Кодирует интересующий оператор в `BlockEncodingReflection` .
 
 
-    Создается `BlockEncodingReflection` единая $U = П\кдот в\кдот P ^ \дагжер $, которая кодирует некоторый оператор $H = \ sum_ {j} | \ alpha_j | U_j $, представляющая собой линейное сочетание унитариес. Как правило, $P $ является подготовкой состояния, таким,{0}\_что $P \кет a \ sum_j\|alpha_j\|\_\скрт{\/\век\алфа\_2} \кет{ж} a $ и $V = \ sum_ {j\_} \кет{ж}\бра{ж} а\отимес U_j $.
+    Создается `BlockEncodingReflection` единая $U = П\кдот В\кдот P ^ \дагжер $, которая кодирует некоторый оператор $H = \ sum_ {j} | \ alpha_j | U_j $, представляющая собой линейное сочетание унитариес. Как правило, $P $ является подготовкой состояния, таким, что $P \кет {0} \_ a \ sum_j alpha_j \скрт{\/ \| \век\алфа \| \_ 2} \кет{ж} \_ a $ и $V = \ sum_ {j} \кет{ж}\бра{ж} \_ а\отимес U_j $.
 - uid: microsoft.quantum.simulation.blockencodingtoreflection
   summary: >-
-    Преобразует `BlockEncoding` в эквивалентный `BLockEncodingReflection`.
+    Преобразует `BlockEncoding` в эквивалентный `BLockEncodingReflection` .
 
 
-    То есть, учитывая `BlockEncoding` единое $U $, которое кодирует некоторый оператор $H $ of, преобразует его в `BlockEncodingReflection` $U "$, который кодирует тот же оператор, но также удовлетворяет $U" ^ \дагжер = U "$.
+    То есть, учитывая `BlockEncoding` единое $U $, которое кодирует некоторый оператор $H $ of, преобразует его в `BlockEncodingReflection` $U "$, который кодирует тот же оператор, но также удовлетворяет $U" ^ \Дагжер = U "$.
 
     Это увеличивает размер дополнительного регистра $U $ на один кубит.
 - uid: microsoft.quantum.simulation.getgeneratorsystemfunction
-  summary: Извлекает `GeneratorIndex` функцию в `GeneratorSystem`.
+  summary: Извлекает `GeneratorIndex` функцию в `GeneratorSystem` .
 - uid: microsoft.quantum.simulation.getgeneratorsystemnterms
-  summary: Извлекает количество терминов в `GeneratorSystem`.
+  summary: Извлекает количество терминов в `GeneratorSystem` .
 - uid: microsoft.quantum.simulation.identitygeneratorindex
-  summary: Возвращает индекс генератора, совместимый с нулевым Хамилтониан `H = 0`, который соответствует операции эволюции идентификаторов.
+  summary: Возвращает индекс генератора, совместимый с нулевым Хамилтониан, `H = 0` который соответствует операции эволюции идентификаторов.
 - uid: microsoft.quantum.simulation.identitygeneratorsystem
-  summary: Возвращает систему генератора, совместимую с нулевым `H = 0`хамилтониан, которая соответствует операции эволюции идентификаторов.
+  summary: Возвращает систему генератора, совместимую с нулевым Хамилтониан `H = 0` , которая соответствует операции эволюции идентификаторов.
 - uid: microsoft.quantum.simulation.identitytimedependentgeneratorsystem
-  summary: Возвращает систему генератора, зависящую от времени, в `H(s) = 0`соответствии с хамилтониан.
+  summary: Возвращает систему генератора, зависящую от времени, в соответствии с Хамилтониан `H(s) = 0` .
 - uid: microsoft.quantum.simulation.interpolatedevolution
   summary: Выполняет интерполяцию между двумя генераторами с единым расписанием, возвращая операцию, которая применяет смоделированное развитие в рамках генератора, зависящего от времени, к кубит регистру.
 - uid: microsoft.quantum.simulation.interpolategeneratorsystems
-  summary: Возвращает значение `TimeDependentGeneratorSystem` , представляющее линейную интерполяцию `GeneratorSystem`между двумя s.
+  summary: Возвращает значение, `TimeDependentGeneratorSystem` представляющее линейную интерполяцию между двумя `GeneratorSystem` s.
 - uid: microsoft.quantum.simulation.intstopaulis
   summary: Преобразует массив целых чисел в массив однокубитных операторов Паули.
 - uid: microsoft.quantum.simulation.inttopauli
   summary: Преобразует целое число в один кубит Паули оператор.
 - uid: microsoft.quantum.simulation.multiplygeneratorindex
-  summary: Умножает коэффициент в `GeneratorIndex`.
+  summary: Умножает коэффициент в `GeneratorIndex` .
 - uid: microsoft.quantum.simulation.multiplygeneratorsystem
-  summary: Умножает коэффициент всех терминов в `GeneratorSystem`.
+  summary: Умножает коэффициент всех терминов в `GeneratorSystem` .
 - uid: microsoft.quantum.simulation.pauliblockencoding
   summary: >-
     Создает единое блочное кодирование для Хамилтониан.
@@ -54,40 +54,40 @@ functions:
 
     Хамилтониан $H = \ sum_ {j} \ alpha_j P_j $ описывается суммой Паулиных терминов $P _j $, каждый с действительным коэффициентом $ \ alpha_j $.
 - uid: microsoft.quantum.simulation.paulicoefficientfromgenidx
-  summary: Извлекает коэффициент Паули термина, описываемого `GeneratorIndex`.
+  summary: Извлекает коэффициент Паули термина, описываемого `GeneratorIndex` .
 - uid: microsoft.quantum.simulation.paulievolutionfunction
   summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Паули.
 - uid: microsoft.quantum.simulation.paulievolutionset
   summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Паули.
 - uid: microsoft.quantum.simulation.paulistringfromgenidx
-  summary: Извлекает строку Паули и ее индексы кубит для термина Паули, описанного в `GeneratorIndex`.
+  summary: Извлекает строку Паули и ее индексы кубит для термина Паули, описанного в `GeneratorIndex` .
 - uid: microsoft.quantum.simulation.quantumwalkbyqubitization
   summary: Преобразует отражение кодирования блока в проход такта.
 - uid: microsoft.quantum.simulation.sumgeneratorsystems
-  summary: Добавляет несколько `GeneratorSystem`объектов для создания нового женераторсистем.
+  summary: Добавляет несколько объектов `GeneratorSystem` для создания нового женераторсистем.
 - uid: microsoft.quantum.simulation.timedependenttrottersimulationalgorithm
-  summary: '`TimeDependentSimulationAlgorithm`функция, использующая декомпозицию Троттер – Сузуки для приближения единого оператора, который решает, зависящее от времени Счродинжер уравнение.'
+  summary: '`TimeDependentSimulationAlgorithm` функция, использующая декомпозицию Троттер – Сузуки для приближения единого оператора, который решает, зависящее от времени Счродинжер уравнение.'
 - uid: microsoft.quantum.simulation.trottersimulationalgorithm
-  summary: '`SimulationAlgorithm`функция, использующая декомпозицию Троттер – Сузуки для приближения оператора времени _(-ИХТ)_.'
+  summary: '`SimulationAlgorithm` функция, использующая декомпозицию Троттер – Сузуки для приближения оператора времени _(-ИХТ)_.'
 - uid: microsoft.quantum.simulation.trotterstep
-  summary: Реализует однократный шаг за пределом времени с `EvolutionGenerator` помощью системы, описанной в с использованием декомпозиции Троттер – Сузуки.
+  summary: Реализует однократный шаг за пределом времени с помощью системы, описанной в `EvolutionGenerator` с использованием декомпозиции Троттер – Сузуки.
 operations:
 - uid: microsoft.quantum.simulation.adiabaticstateenergyunitary
-  summary: Выполняет подготовку состояния, применяя `statePrepUnitary` к входному состоянию, за которым следует подготовка состояния `adiabaticUnitary`адиабатик с помощью, и, наконец, `qpeUnitary`Оценка этапа с учетом состояния `phaseEstAlgorithm`с помощью.
+  summary: Выполняет подготовку состояния, применяя к `statePrepUnitary` входному состоянию, за которым следует подготовка состояния адиабатик с помощью `adiabaticUnitary` , и, наконец, Оценка этапа с учетом `qpeUnitary` состояния с помощью `phaseEstAlgorithm` .
 - uid: microsoft.quantum.simulation.estimateenergy
-  summary: Выполняет подготовку состояния, применяя к `statePrepUnitary` выводимой оценке этапа входного состояния по `qpeUnitary`отношению к результирующему состоянию `phaseEstAlgorithm`с помощью.
+  summary: Выполняет подготовку состояния, применяя к `statePrepUnitary` выводимой оценке этапа входного состояния по отношению к `qpeUnitary` результирующему состоянию с помощью `phaseEstAlgorithm` .
 - uid: microsoft.quantum.simulation.estimateenergywithadiabaticevolution
-  summary: Выполняет подготовку состояния, `statePrepUnitary` применяя к автоматически выделенному входному состоянию, за которым следует подготовка `adiabaticUnitary`состояния адиабатик с помощью, и, наконец `qpeUnitary`, Оценка этапа по отношению к `phaseEstAlgorithm`результирующему состоянию с помощью.
+  summary: Выполняет подготовку состояния, применяя к `statePrepUnitary` автоматически выделенному входному состоянию, за которым следует подготовка состояния адиабатик с помощью `adiabaticUnitary` , и, наконец, Оценка этапа по отношению к `qpeUnitary` результирующему состоянию с помощью `phaseEstAlgorithm` .
 newtypes:
 - uid: microsoft.quantum.simulation.blockencoding
   summary: >-
     Представляет собой единое место кодирования произвольного оператора в верхнем левом блоке.
 
 
-    То есть, `BlockEncoding` представляет собой единое $U $, где произвольный оператор $H $, который действует на системный регистр `s` , кодируется в верхнем левом блоке, соответствующем вспомогательному состоянию ${0}\кет _A $. Это означает следующее:
+    То есть, `BlockEncoding` представляет собой единое $U $, где произвольный оператор $H $, который действует на системный регистр, `s` кодируется в верхнем левом блоке, соответствующем вспомогательному состоянию $ \кет {0} _A $. Это означает следующее:
 
 
-    $ $ \бегин{алигн} (\бра{0}_a \отимес I_s) U (\кет{0}_A \Отимес I_s) = H \енд{алигн} $ $.
+    $ $ \бегин{алигн} (\бра {0} _A \отимес I_s) U (\кет {0} _a \отимес I_s) = H \енд{алигн} $ $.
 - uid: microsoft.quantum.simulation.blockencodingreflection
   summary: Представляет объект `BlockEncoding` , который также является отражением.
 - uid: microsoft.quantum.simulation.evolutiongenerator
@@ -101,13 +101,13 @@ newtypes:
     Представляет динамический генератор, зависящий от времени.
 
 
-    `Double` Параметр — это расписание в $ [0, 1] $.
+    `Double`Параметр — это расписание в $ [0, 1] $.
 - uid: microsoft.quantum.simulation.evolutionset
   summary: >-
     Представляет набор шлюзов, которые можно легко реализовать и использовать для реализации алгоритмов моделирования.
 
 
-    Элементы в наборе индексируются по <xref:microsoft.quantum.simulation.generatorindex>, а каждый набор описывается функцией из `GeneratorIndex` в <xref:microsoft.quantum.simulation.evolutionunitary>, что представляет собой операции, параметризованные вещественным числом, представляющим время.
+    Элементы в наборе индексируются по  <xref:microsoft.quantum.simulation.generatorindex> , а каждый набор описывается функцией из `GeneratorIndex` в  <xref:microsoft.quantum.simulation.evolutionunitary> , что представляет собой операции, параметризованные вещественным числом, представляющим время.
 - uid: microsoft.quantum.simulation.evolutionunitary
   summary: >-
     Представляет отдельный оператор времени развития.
@@ -116,13 +116,13 @@ newtypes:
     Первый параметр — это длительность развития времени, а второй параметр — кубит регистр, который зависит от единой.
 - uid: microsoft.quantum.simulation.generatorindex
   summary: >-
-    Представляет один примитивный термин в наборе всех динамических генераторов, например операторы Хермитиан, для которых существует соответствие от этого генератора до времени развития этого генератора с помощью `EvolutionSet`.
+    Представляет один примитивный термин в наборе всех динамических генераторов, например операторы Хермитиан, для которых существует соответствие от этого генератора до времени развития этого генератора с помощью `EvolutionSet` .
 
 
     Первый элемент (int [], double []) — это индексы, в которых один термин — например, Паули строка КСКСИ с коэффициентом 0,5 будет индексироваться по ([1, 1, 2], [0,5]). Кроме того, Хамилтонианс, параметризованный с помощью непрерывной переменной, например X cos φ + Y Sin φ, может представлять экземпляр ([], [φ]). Второй элемент индексирует подсистему, в которой работает генератор.
 - uid: microsoft.quantum.simulation.generatorsystem
   summary: >-
-    Представляет коллекцию `GeneratorIndex`ES.
+    Представляет коллекцию `GeneratorIndex` ES.
 
 
     Мы перебираем эту коллекцию с помощью целого числа с одним индексом, и размер коллекции считается известным.
@@ -131,7 +131,7 @@ newtypes:
     Представляет алгоритм моделирования, не зависящий от времени.
 
 
-    Метод моделирования, не зависящий от времени, преобразует<xref:microsoft.quantum.simulation.evolutiongenerator>
+    Метод моделирования, не зависящий от времени, преобразует <xref:microsoft.quantum.simulation.evolutiongenerator>
 
     на единое время развития в течение некоторого интервала времени.
 - uid: microsoft.quantum.simulation.timedependentblockencoding
@@ -139,10 +139,10 @@ newtypes:
     Представляет объект `BlockEncoding` , который управляется регистром часов.
 
 
-    То есть, `TimeDependentBlockEncoding` представляет собой единое $U $, управляемое состоянием $ \кет{к} _d $ в регистре `d` часов таким образом, что произвольный оператор $H _k $, который действует на системный `s` регистр, кодируется в верхнем левом блоке, соответствующем вспомогательному состоянию $ \кет{0}_A $. Это означает следующее:
+    То есть, `TimeDependentBlockEncoding` представляет собой единое $U $, управляемое состоянием $ \кет{к} _d $ в регистре часов `d` таким образом, что произвольный оператор $H _k $, который действует на системный регистр, `s` кодируется в верхнем левом блоке, соответствующем вспомогательному состоянию $ \кет {0} _A $. Это означает следующее:
 
 
-    $ $ \бегин{алигн} (\бра{0}\_а\отимес I_ {DS}) U (\кет{0}\_а\отимес I_ {DS}) = \ sum_ {k} \кет{к}\бра{к}\_д\отимес H_k.
+    $ $ \бегин{алигн} (\бра {0} \_ а\отимес I_ {DS}) U (\кет {0} \_ а\отимес I_ {DS}) = \ sum_ {k} \кет{к}\бра{к} \_ д\отимес H_k.
 
     \енд{алигн} $ $.
 - uid: microsoft.quantum.simulation.timedependentgeneratorsystem
@@ -152,15 +152,15 @@ newtypes:
     Представляет алгоритм моделирования, зависящий от времени.
 
 
-    Метод моделирования, зависящий от времени, преобразует<xref:microsoft.quantum.simulation.evolutionschedule>
+    Метод моделирования, зависящий от времени, преобразует <xref:microsoft.quantum.simulation.evolutionschedule>
 
     на единое время – развитие времени в течение некоторого интервала времени.
 - uid: microsoft.quantum.simulation.unitary
   summary: Представляет развитие по единому оператору.
 metadata:
-  ms.openlocfilehash: cdcfc7e688b576d0e7941695ad0a63b030bb5692
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 74d082bba204cc4d162aa30b6ccc5b8ec402a17c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675461"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340771"

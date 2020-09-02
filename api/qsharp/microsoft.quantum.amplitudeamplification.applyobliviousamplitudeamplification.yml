@@ -2,15 +2,15 @@
 uid: microsoft.quantum.amplitudeamplification.applyobliviousamplitudeamplification
 name: ApplyObliviousAmplitudeAmplification
 type: operation
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: Усиление амплитуды очевидным путем указания частичных отражений.
 remarks: >-
-  Учитывая определенное вспомогательное состояние запуска $ \кет{\текст{старт}}\_$, определенное вспомогательное\_состояние $ \кет{\текст{таржет}}\_a $ и любое состояние системы $ \кет{\пси} s $, предположим, что \бегин{алигн} о\кет {\ Text {Start}}\_а\кет {\ PSI}\_s = \ламбда\кет{\текст{таржет}}\_a U \ket{\psi}\_s + \sqrt{1-| \lambda | ^ 2} \ket{\Text{Target} ^ \perp}\_a\cdots \end{align} для $U $.
+  Учитывая определенное вспомогательное состояние запуска $ \кет{\текст{старт}} \_ $, определенное вспомогательное состояние $ \кет{\текст{таржет}} \_ a $ и любое состояние системы $ \кет{\пси} \_ s $, предположим, что \бегин{алигн} о\кет {\ Text {Start}} \_ а\кет {\ PSI} \_ s = \ламбда\кет{\текст{таржет}} \_ a U \ket{\psi} \_ s + \sqrt{1-| \lambda | ^ 2} \ket{\Text{Target} ^ \perp} \_ a\cdots \end{align} для $U $.
 
-  По последовательности отражений состояний запуска и целевого объекта вспомогательной ККМ, `signalOracle` которая загружается приложениями и соседними, вероятность успешного применения U может быть изменена.
+  По последовательности отражений состояний запуска и целевого объекта вспомогательной ККМ, которая загружается приложениями `signalOracle` и соседними, вероятность успешного применения U может быть изменена.
 
 
-  В большинстве случаев `auxiliaryRegister` инициализируется в состоянии $ \кет{\текст{старт}}\_a $.
+  В большинстве случаев `auxiliaryRegister` инициализируется в состоянии $ \кет{\текст{старт}} \_ a $.
 syntax: 'operation ApplyObliviousAmplitudeAmplification (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, auxiliaryRegister : Qubit[], systemRegister : Qubit[]) : Unit'
 references: >-
   См.
@@ -32,7 +32,7 @@ input:
     summary: Оператор отражения о целевом состоянии дополнительного регистра
     uid: microsoft.quantum.oracles.reflectionoracle
   - name: signalOracle
-    summary: Единая база данных Oracle $O `ObliviousOracle` $ типа, которая взаимодействует с вспомогательными и системными регистрами.
+    summary: Единая база данных Oracle $O $ типа `ObliviousOracle` , которая взаимодействует с вспомогательными и системными регистрами.
     uid: microsoft.quantum.oracles.obliviousoracle
   - name: auxiliaryRegister
     summary: Дополнительный регистр
@@ -53,9 +53,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 7452686a76d9ff89c0eb79290e7dae23347778ac
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 21bdb88716a07c32673425fd4f5276559b56d266
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672947"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340533"

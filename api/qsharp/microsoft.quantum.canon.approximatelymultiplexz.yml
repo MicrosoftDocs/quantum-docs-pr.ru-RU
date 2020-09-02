@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.approximatelymultiplexz
 name: ApproximatelyMultiplexZ
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   Применяет поворот Паули Z к массиву Кубитс, округляя небольшие углы вращения в соответствии с заданным отклонением.
 
@@ -15,9 +15,9 @@ summary: >-
   $ $ \бегин{алигн} U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж} \отимес e ^ {i Z \ theta_j}.
 
   \енд{алигн} $ $
-remarks: '`coefficients`будет дополнен элементами $ \ theta_j = $0,0, если указано меньше $2 ^ n $.'
+remarks: '`coefficients` будет дополнен элементами $ \ theta_j = $0,0, если указано меньше $2 ^ n $.'
 syntax: 'operation ApproximatelyMultiplexZ (tolerance : Double, coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
-references: '- Синтез каналов логики тактов Вивек V. Шенде, Стивен S. Буллокк, Игорь L. марковскойhttps://arxiv.org/abs/quant-ph/0406176'
+references: '- Синтез каналов логики тактов Вивек V. Шенде, Стивен S. Буллокк, Игорь L. марковской https://arxiv.org/abs/quant-ph/0406176'
 input:
   content: '(tolerance : Double, coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
   types:
@@ -48,9 +48,9 @@ functors:
 seeAlso:
 - multiplexz
 metadata:
-  ms.openlocfilehash: 0c544983871e9b88acb87ddf387700edf0ad7024
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b06121839035fc0bdaef2f59298e30fe0fd75390
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674439"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357057"
