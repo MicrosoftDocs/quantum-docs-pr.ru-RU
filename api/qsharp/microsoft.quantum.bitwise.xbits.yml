@@ -2,7 +2,7 @@
 uid: microsoft.quantum.bitwise.xbits
 name: XBits
 type: function
-namespace: Microsoft.Quantum.Bitwise
+namespace: microsoft.quantum.bitwise
 summary: Возвращает целое число, представляющее X бит массива операторов Паули.
 remarks: Функция вызывает исключение, если длина `paulis` массива больше 63.
 syntax: 'function XBits (paulis : Pauli[]) : Int'
@@ -17,15 +17,15 @@ input:
 output:
   content: Int
   types:
-  - summary: Целочисленное $x $ с двоичным представлением ${62}\,({61}\,P_\,P_ \дотс p_0) $, где $p _i = `paulis[i]` $0 `PauliI` , `PauliZ` если имеет значение или и, где `paulis[i]` $p `PauliX` _i `PauliY`= $1, если имеет значение или.
+  - summary: Целочисленное $x $ с двоичным представлением $ (p_ {62} \, p_ {61} \, \дотс \, p_0) $, где $p _i = $0, если `paulis[i]` имеет значение `PauliI` или `PauliZ` и, где $p _i = $1, если `paulis[i]` имеет значение `PauliX` или `PauliY` .
     isPrimitive: true
     uid: Int
 seeAlso:
 - zbits
 metadata:
-  ms.openlocfilehash: 0dccf94d895984b3661790b44f10455fce35331d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 386db905e433b5ab424eae80209ac9907ba3ed8c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680568"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351022"
