@@ -2,22 +2,22 @@
 uid: microsoft.quantum.canon.applyifelsebca
 name: ApplyIfElseBCA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   Применяет одну из двух операций в зависимости от значения классического бита.
 
 
-  Учитывая бит `bit`, применяет операцию `trueOp` с `trueInput` в качестве входных `bit` данных `true`, если имеет `falseOp(falseInput)` значение `bit` , `false`и применяется, если имеет значение.
+  Учитывая бит `bit` , применяет операцию `trueOp` с в `trueInput` качестве входных данных `bit` , если имеет значение `true` , и применяется, `falseOp(falseInput)` Если `bit` имеет значение `false` .
 syntax: "operation ApplyIfElseBCA (bit : Bool, (trueOp : ('T => Unit is Adj + Ctl), trueInput : 'T), (falseOp : ('U => Unit is Adj + Ctl), falseInput : 'U)) : Unit"
 input:
   content: "(bit : Bool, (trueOp : ('T => Unit is Adj + Ctl), trueInput : 'T), (falseOp : ('U => Unit is Adj + Ctl), falseInput : 'U))"
   types:
   - name: bit
-    summary: Логическое значение, используемое для определения `trueOp` того `falseOp` , применяется ли оператор или.
+    summary: Логическое значение, используемое для определения того, применяется ли оператор `trueOp` или `falseOp` .
     isPrimitive: true
     uid: Bool
   - name: trueOp
-    summary: Единая операция, применяемая, `bit` если `true`имеет значение.
+    summary: Единая операция, применяемая, если `bit` имеет значение `true` .
     isOperation: true
     input:
       types:
@@ -31,11 +31,11 @@ input:
     - Adjoint
     - Controlled
   - name: trueInput
-    summary: Входные данные, которые должны `trueOp` быть `bit` предоставлены, если имеет значение `true`.
+    summary: Входные данные, которые должны быть предоставлены, `trueOp` Если `bit` имеет значение `true` .
     uid: "'T"
     isLocal: true
   - name: falseOp
-    summary: Единая операция, применяемая, `bit` если `false`имеет значение.
+    summary: Единая операция, применяемая, если `bit` имеет значение `false` .
     isOperation: true
     input:
       types:
@@ -49,7 +49,7 @@ input:
     - Adjoint
     - Controlled
   - name: falseInput
-    summary: Входные данные, которые должны `falseOp` быть `bit` предоставлены, если имеет значение `false`.
+    summary: Входные данные, которые должны быть предоставлены, `falseOp` Если `bit` имеет значение `false` .
     uid: "'U"
     isLocal: true
 output:
@@ -72,9 +72,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifelsera
 - microsoft.quantum.canon.applyifelserca
 metadata:
-  ms.openlocfilehash: 3f0d704d33fc1d3e964e804c2ff68cb893069445
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 608808f776ac0d187571adc415abc0c7d1666ef9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672767"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350359"

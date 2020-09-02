@@ -2,26 +2,26 @@
 uid: microsoft.quantum.preparation.blochspherecoordinates
 name: BlochSphereCoordinates
 type: function
-namespace: Microsoft.Quantum.Preparation
+namespace: microsoft.quantum.preparation
 summary: >-
   Выполняет вычисление координат БЛОЧ-сферы для одного кубит состояния.
 
 
-  Учитывая два комплексных числа $a 0, a1 $, которые представляют состояние кубит, рассчитывает координаты в блочной сфере, что $a 0{0} \кет + a1{1} \кет = r e ^ {IT} (e ^ {-i \фи/2}\cos{(\ тета/2)}{0}\кет + e ^ {i \фи/2}\sin{(\ тета/2)}{1}\кет) $.
+  Учитывая два комплексных числа $a 0, a1 $, которые представляют состояние кубит, рассчитывает координаты в блочной сфере, что $a 0 \кет {0} + a1 \кет {1} = r e ^ {IT} (e ^ {-i \фи/2}\cos{(\ тета/2)} \кет {0} + e ^ {i \фи/2}\sin{(\ тета/2)} \кет {1} ) $.
 syntax: 'function BlochSphereCoordinates (a0 : Microsoft.Quantum.Math.ComplexPolar, a1 : Microsoft.Quantum.Math.ComplexPolar) : (Microsoft.Quantum.Math.ComplexPolar, Double, Double)'
 input:
   content: '(a0 : Microsoft.Quantum.Math.ComplexPolar, a1 : Microsoft.Quantum.Math.ComplexPolar)'
   types:
   - name: a0
-    summary: Сложный коэффициент состояния $ \кет{0}$.
+    summary: Сложный коэффициент состояния $ \кет {0} $.
     uid: microsoft.quantum.math.complexpolar
   - name: a1
-    summary: Сложный коэффициент состояния $ \кет{1}$.
+    summary: Сложный коэффициент состояния $ \кет {1} $.
     uid: microsoft.quantum.math.complexpolar
 output:
   content: (Microsoft.Quantum.Math.ComplexPolar, Double, Double)
   types:
-  - summary: Кортеж, содержащий `(ComplexPolar(r, t), phi, theta)`.
+  - summary: Кортеж, содержащий `(ComplexPolar(r, t), phi, theta)` .
     types:
     - uid: microsoft.quantum.math.complexpolar
     - isPrimitive: true
@@ -29,9 +29,9 @@ output:
     - isPrimitive: true
       uid: Double
 metadata:
-  ms.openlocfilehash: 98d543849be177941a0c346c1de6b5b6930e783e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a1bf578d2dc6c45d553bff503385f7760a08458d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683226"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331710"
