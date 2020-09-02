@@ -2,10 +2,10 @@
 uid: microsoft.quantum.arrays.equala
 name: EqualA
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: При наличии двух массивов одного типа и предиката, определенного для пар элементов массивов, проверяет, равны ли массивы.
 remarks: >-
-  Эта функция определена для универсальных типов; Например, если у нас есть два массива `'T[]` и функция `equal: ('T, 'T) -> Bool`, эта функция возвращает `Bool` значение, указывающее, равны ли массивы.
+  Эта функция определена для универсальных типов; Например, если у нас есть два массива `'T[]` и функция `equal: ('T, 'T) -> Bool` , эта функция возвращает `Bool` значение, указывающее, равны ли массивы.
 
   Чтобы два массива считались равными, они должны иметь одинаковую длину, а элементы в одинаковых позициях массивов должны быть равны.
 examples: >-
@@ -59,18 +59,18 @@ output:
   content: Bool
   types:
   - summary: >-
-      Значение `true` , если и только если `array1` и `array2` равны.
+      Значение, `true` если и только если `array1` и `array2` равны.
 
-      То есть, если оба массива имеют одинаковую длину, и все элементы равны, как определено `equal`в.
+      То есть, если оба массива имеют одинаковую длину, и все элементы равны, как определено в `equal` .
     isPrimitive: true
     uid: Bool
 typeParameters:
 - uid: "'T"
   summary: Тип элементов каждого массива.
 metadata:
-  ms.openlocfilehash: d2af5ff8e2d66e6162c73c3854670451a00dcf50
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 9f3083483b7720efb4f8eda89d2de224543c236e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676498"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352382"
