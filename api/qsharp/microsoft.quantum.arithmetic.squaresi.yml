@@ -2,8 +2,8 @@
 uid: microsoft.quantum.arithmetic.squaresi
 name: SquareSI
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
-summary: Квадратное целое число `xs` со знаком и `result`сохранение результата в, который должен быть равен нулю изначально.
+namespace: microsoft.quantum.arithmetic
+summary: Квадратное целое число со знаком `xs` и сохранение результата в `result` , который должен быть равен нулю изначально.
 remarks: Реализация основывается на Интежерскуаре.
 syntax: 'operation SquareSI (xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian, result : Microsoft.Quantum.Arithmetic.SignedLittleEndian) : Unit'
 input:
@@ -13,7 +13,7 @@ input:
     summary: n-разрядное целое число в квадрат (Сигнедлиттлиндиан)
     uid: microsoft.quantum.arithmetic.signedlittleendian
   - name: result
-    summary: 2N-разрядный результат (Сигнедлиттлиндиан) должен находиться в состоянии $ \кет{0}$ изначально.
+    summary: 2N-разрядный результат (Сигнедлиттлиндиан) должен находиться в состоянии $ \кет {0} $ изначально.
     uid: microsoft.quantum.arithmetic.signedlittleendian
 output:
   content: Unit
@@ -24,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: e4a212094c38d370e2489b586ee8014131bef9dc
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ee4e8a7ad27fdfb03f590f229a1c0e344a985ff6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676605"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352671"

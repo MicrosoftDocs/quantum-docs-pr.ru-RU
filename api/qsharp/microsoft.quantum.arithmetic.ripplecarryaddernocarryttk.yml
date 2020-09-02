@@ -2,12 +2,12 @@
 uid: microsoft.quantum.arithmetic.ripplecarryaddernocarryttk
 name: RippleCarryAdderNoCarryTTK
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   Обратимое выполнение — добавление двух целых чисел без выполнения.
 
 
-  При наличии двух $n $- `xs` разрядных целых чисел `ys`, закодированных в регистрах литтлиндиан, операция вычисляет сумму двух целочисленных целых чисел от 2 до n $, где $n $ — это разрядный размер входных данных `xs` и `ys`. Он не выполняет вычисление бита выполнения.
+  При наличии двух $n $-разрядных целых чисел, закодированных в регистрах Литтлиндиан `xs` `ys` , операция вычисляет сумму двух целочисленных целых чисел от 2 до n $, где $n $ — это разрядный размер входных данных `xs` и `ys` . Он не выполняет вычисление бита выполнения.
 remarks: Эта операция имеет те же функции, что и Рипплекарряддерттк, но не возвращает допустимый бит.
 syntax: 'operation RippleCarryAdderNoCarryTTK (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 references: >-
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: cf6855325edc354d22b0324f5949a435a11ce8bb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 88ebe0e7799d446d4a3ff668a9abe8dd71601642
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676679"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352807"

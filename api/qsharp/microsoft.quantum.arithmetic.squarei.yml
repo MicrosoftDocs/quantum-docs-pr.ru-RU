@@ -2,8 +2,8 @@
 uid: microsoft.quantum.arithmetic.squarei
 name: SquareI
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
-summary: Вычисляет квадрат целого числа `xs` в `result`, который должен быть равен нулю изначально.
+namespace: microsoft.quantum.arithmetic
+summary: Вычисляет квадрат целого числа `xs` в `result` , который должен быть равен нулю изначально.
 remarks: Использует стандартный подход Shift и-Add для расчета квадрата. Сохраняет $n-$1 Кубитс по сравнению с прямым решением, которое сначала копирует XS перед применением обычного множителя, а затем отменяет операцию копирования.
 syntax: 'operation SquareI (xs : Microsoft.Quantum.Arithmetic.LittleEndian, result : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
@@ -13,7 +13,7 @@ input:
     summary: $n $-разрядное число в квадрат (Литтлиндиан)
     uid: microsoft.quantum.arithmetic.littleendian
   - name: result
-    summary: $2N $-bit Result (Литтлиндиан) должен находиться в состоянии $ \кет{0}$ изначально.
+    summary: $2N $-bit Result (Литтлиндиан) должен находиться в состоянии $ \кет {0} $ изначально.
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Unit
@@ -24,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: eedc2536da0fd75712929af44f5167d3fc73add3
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 4b001663d1d4f863d0b597e31bec87c65871ebc1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676610"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352705"
