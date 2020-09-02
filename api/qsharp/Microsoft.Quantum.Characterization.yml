@@ -8,9 +8,9 @@ operations:
 - uid: microsoft.quantum.characterization.discretephaseestimationiteration
   summary: Выполняет одну итерацию итеративного (классического) алгоритма оценки фазы с помощью целочисленных степеней единой Oracle.
 - uid: microsoft.quantum.characterization.estimatefrequency
-  summary: При подготовке и измерении оценивается частота, с которой измерение завершается (Возвращает `Zero`), выполняя заданное число испытаний.
+  summary: При подготовке и измерении оценивается частота, с которой измерение завершается (Возвращает `Zero` ), выполняя заданное число испытаний.
 - uid: microsoft.quantum.characterization.estimatefrequencya
-  summary: Учитывая аджоинтабле и измерение подготовки, вы оцениваете частоту, с которой измерение завершается (Возвращает `Zero`), выполняя заданное число испытаний.
+  summary: Учитывая аджоинтабле и измерение подготовки, вы оцениваете частоту, с которой измерение завершается (Возвращает `Zero` ), выполняя заданное число испытаний.
 - uid: microsoft.quantum.characterization.estimateimagoverlapbetweenstates
   summary: При наличии двух операций, каждый из которых подготавливает копии состояния, оценивает мнимую часть перекрытия между состояниями, подготовленными каждой операцией.
 - uid: microsoft.quantum.characterization.estimateoverlapbetweenstates
@@ -18,19 +18,19 @@ operations:
 - uid: microsoft.quantum.characterization.estimaterealoverlapbetweenstates
   summary: При наличии двух операций, каждый из которых подготавливает копии состояния, оценивает реальную часть перекрытия между состояниями, подготовленными каждой операцией.
 - uid: microsoft.quantum.characterization.measureallz
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМеасуреаллз является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.measurement.measureallz\".\nВзамен рекомендуется использовать @\"microsoft.quantum.measurement.measureAllZ\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nМеасуреаллз является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.measurement.measureallz\".\nИспользуйте @\"microsoft.quantum.measurement.measureAllZ\"."
 - uid: microsoft.quantum.characterization.measureidentity
   summary: Измеряет оператор Identity в регистре Кубитс.
 - uid: microsoft.quantum.characterization.quantumphaseestimation
-  summary: Выполняет алгоритм оценки тактовой фазы для заданного Oracle `U` и `targetState`считывает его в реестр такта с обратным порядком байтов.
+  summary: Выполняет алгоритм оценки тактовой фазы для заданного Oracle `U` и `targetState` считывает его в реестр такта с обратным порядком байтов.
 - uid: microsoft.quantum.characterization.robustphaseestimation
-  summary: Выполняет устойчивый алгоритм оценки неитеративного тактового этапа для заданных `U` Oracle и еиженстате и предоставляет единую оценку этапа с масштабированием в пределах Гейзенбега.
+  summary: Выполняет устойчивый алгоритм оценки неитеративного тактового этапа для заданных Oracle `U` и еиженстате и предоставляет единую оценку этапа с масштабированием в пределах Гейзенбега.
 - uid: microsoft.quantum.characterization.singlequbitprocesstomographymeasurement
   summary: Выполняет кубит процесс томографи измерения на основе Паули, учитывая конкретный интересующий Вас канал.
 metadata:
-  ms.openlocfilehash: 2ae4ee28cf6e87a3fde1f8107194760c388b462c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b8b7c1b7e6fc3dad00e62d7722ef4cb38b96b82f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673354"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341485"

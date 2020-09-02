@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.core
 name: Microsoft.Quantum.Core
-summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен включает основные функции и операции Q #.\n\n # <a name=\"remarks\"></a>Примечания\n Это пространство имен открывается компилятором Q # автоматически, поэтому все элементы этого пространства имен всегда доступны."
+summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен включает основные функции и операции Q #.\n\n # <a name=\"remarks\"></a>Remarks\n Это пространство имен открывается компилятором Q # автоматически, поэтому все элементы этого пространства имен всегда доступны."
 functions:
 - uid: microsoft.quantum.core.default
   summary: Возвращает экземпляр заданного типа по умолчанию.
@@ -23,9 +23,9 @@ newtypes:
 - uid: microsoft.quantum.core.entrypoint
   summary: Распознанный компилятором атрибут, используемый для обозначения точки входа исполняемого файла.
 metadata:
-  ms.openlocfilehash: 7533708473cff8902745ed67c235244ea9b2234b
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 354a8e2c221007f27ff409dc4b75b0d5953d9f67
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885269"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341264"

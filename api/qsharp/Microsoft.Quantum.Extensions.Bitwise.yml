@@ -3,23 +3,23 @@ uid: microsoft.quantum.extensions.bitwise
 name: Microsoft.Quantum.Extensions.Bitwise
 functions:
 - uid: microsoft.quantum.extensions.bitwise.and
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИ не рекомендуется к использованию. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.and\".\nВзамен рекомендуется использовать @\"microsoft.quantum.bitwise.and\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИ не рекомендуется к использованию. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.and\".\nИспользуйте @\"microsoft.quantum.bitwise.and\"."
 - uid: microsoft.quantum.extensions.bitwise.not
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНе является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.not\".\nВзамен рекомендуется использовать @\"microsoft.quantum.bitwise.not\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНе является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.not\".\nИспользуйте @\"microsoft.quantum.bitwise.not\"."
 - uid: microsoft.quantum.extensions.bitwise.or
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИли является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.or\".\nВзамен рекомендуется использовать @\"microsoft.quantum.bitwise.or\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nИли является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.or\".\nИспользуйте @\"microsoft.quantum.bitwise.or\"."
 - uid: microsoft.quantum.extensions.bitwise.parity
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЧетность устарела. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.parity\".\nВзамен рекомендуется использовать @\"microsoft.quantum.bitwise.parity\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЧетность устарела. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.parity\".\nИспользуйте @\"microsoft.quantum.bitwise.parity\"."
 - uid: microsoft.quantum.extensions.bitwise.xbits
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКсбитс является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.xbits\".\nВзамен рекомендуется использовать @\"microsoft.quantum.bitwise.xbits\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nКсбитс является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.xbits\".\nИспользуйте @\"microsoft.quantum.bitwise.xbits\"."
 - uid: microsoft.quantum.extensions.bitwise.xor
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНе рекомендуется использовать XOR. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.xor\".\nВзамен рекомендуется использовать @\"microsoft.quantum.bitwise.xor\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nНе рекомендуется использовать XOR. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.xor\".\nИспользуйте @\"microsoft.quantum.bitwise.xor\"."
 - uid: microsoft.quantum.extensions.bitwise.zbits
-  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЗбитс является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.zbits\".\nВзамен рекомендуется использовать @\"microsoft.quantum.bitwise.zbits\"."
+  summary: "\n> [!WARNING]\n> Не рекомендуется\n\nЗбитс является устаревшим. Взамен рекомендуется использовать @\"microsoft.quantum.bitwise.zbits\".\nИспользуйте @\"microsoft.quantum.bitwise.zbits\"."
 metadata:
-  ms.openlocfilehash: 9c5cdc98558deeff0ae92c86abfca1840c568233
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: da1e62f5a6ef09dd6b00ebf7bc59595cb154c536
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673318"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341111"
