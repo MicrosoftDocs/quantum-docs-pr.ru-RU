@@ -2,22 +2,22 @@
 uid: microsoft.quantum.canon.applyifelser
 name: ApplyIfElseR
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   Применяет одну из двух операций в зависимости от значения классического результата.
 
 
-  Учитывая `result`результат, применяет операцию `zeroOp` с `zeroInput` в качестве входных `result` данных `Zero`, если равен, и `oneOp(oneInput)` применяется `result == One`, когда.
+  Учитывая результат `result` , применяет операцию `zeroOp` с в `zeroInput` качестве входных данных, если равен `result` `Zero` , и применяется, `oneOp(oneInput)` когда `result == One` .
 syntax: "operation ApplyIfElseR (result : Result, (zeroOp : ('T => Unit), zeroInput : 'T), (oneOp : ('U => Unit), oneInput : 'U)) : Unit"
 input:
   content: "(result : Result, (zeroOp : ('T => Unit), zeroInput : 'T), (oneOp : ('U => Unit), oneInput : 'U))"
   types:
   - name: result
-    summary: Результат измерения, используемый для определения применения `zeroOp` или `oneOp` .
+    summary: Результат измерения, используемый для определения `zeroOp` применения или `oneOp` .
     isPrimitive: true
     uid: Result
   - name: zeroOp
-    summary: Операция, которая должна быть применена, когда `result == Zero`.
+    summary: Операция, которая должна быть применена, когда `result == Zero` .
     isOperation: true
     input:
       types:
@@ -28,11 +28,11 @@ input:
       - isPrimitive: true
         uid: Unit
   - name: zeroInput
-    summary: Входные данные, которые должны `zeroOp` быть `result == Zero`предоставлены в When.
+    summary: Входные данные, которые должны быть предоставлены в `zeroOp` when `result == Zero` .
     uid: "'T"
     isLocal: true
   - name: oneOp
-    summary: Операция, которая должна быть применена, когда `result == One`.
+    summary: Операция, которая должна быть применена, когда `result == One` .
     isOperation: true
     input:
       types:
@@ -43,7 +43,7 @@ input:
       - isPrimitive: true
         uid: Unit
   - name: oneInput
-    summary: Входные данные, которые должны `oneOp` быть `result == One`предоставлены в When.
+    summary: Входные данные, которые должны быть предоставлены в `oneOp` when `result == One` .
     uid: "'U"
     isLocal: true
 output:
@@ -63,9 +63,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifelsera
 - microsoft.quantum.canon.applyifelserca
 metadata:
-  ms.openlocfilehash: 4623c321aa2b802b8f27f6a3ec8e65463083b314
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1614a00214bdebe8d5b761cc8ca0732d76a919f7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672744"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350257"
