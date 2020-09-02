@@ -2,12 +2,12 @@
 uid: microsoft.quantum.arithmetic.incrementbyinteger
 name: IncrementByInteger
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   Увеличивает значение регистра неподписанного такта на классическое целое число с использованием ротаций фазы.
 
 
-  Предположим, `target` что кодирует целое число без знака $x $ в кодировке с прямым порядком байтов `increment` и равно $a $.
+  Предположим, что `target` кодирует целое число без знака $x $ в кодировке с прямым порядком байтов и `increment` равно $a $.
 
   Затем эта операция реализует единую $ \кет{КС} \мапсто \кет{КС + a} $, где сложение выполняется по модулю $2 ^ n $, где $n = \Тексттт{ленгс (Target!)} $.
 syntax: 'operation IncrementByInteger (increment : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
@@ -15,7 +15,7 @@ input:
   content: '(increment : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
   types:
   - name: increment
-    summary: Целое число, на `target` которое увеличивается значение.
+    summary: Целое число, на которое `target` увеличивается значение.
     isPrimitive: true
     uid: Int
   - name: target
@@ -30,9 +30,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: c07015f69d9cab08b287c383230fe79b5d67d6a0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ecd059d615d6e6888807e9ba0afdbeaf422de423
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679555"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342233"

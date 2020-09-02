@@ -2,16 +2,16 @@
 uid: microsoft.quantum.arithmetic.assertprobint
 name: AssertProbInt
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   Утверждает, что вероятность определенного состояния регистра такта имеет ожидаемое значение.
 
 
   Учитывая $n $-кубит State $ \кет{\пси} = \сум ^ {2 ^ n-1} _ {j = 0} \ alpha_j \кет{ж} $, утверждает, что вероятность $ | \ alpha_j | ^ 2 $ из состояния $ \кет{ж} $, индексируемого $j $, имеет ожидаемое значение.
 examples: >-
-  Предположим, что `qubits` регистр кодирует 3-кубитное состояние такта $ \кет{\пси} = \ sqrt {1/8} \ Сисакет{0}+ \ sqrt {7/8} \ Сисакет{6}$ в формате с прямым порядком байтов.
+  Предположим, что `qubits` регистр кодирует 3-кубитное состояние такта $ \кет{\пси} = \ sqrt {1/8} \ Сисакет {0} + \ sqrt {7/8} \ Сисакет {6} $ в формате с прямым порядком байтов.
 
-  Это означает, что число состояний $ \кет{0}\екуив\кет{0}\кет{0}\кет{0}$ и $ \кет{6}\екуив\кет{0}\кет{1}\кет{1}$. Затем выполняются следующие утверждения:
+  Это означает, что число состояний $ \кет {0} \екуив\кет {0} \кет {0} \кет {0} $ и $ \кет {6} \екуив\кет {0} \кет {1} \кет {1} $. Затем выполняются следующие утверждения:
 
 
   - `AssertProbInt(0,0.125,qubits,10e-10);`
@@ -42,9 +42,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 247dcb78921bfe5df96c56b74e251d0413cfab3d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e5269b46849da17602447491e77e756e999cb3d9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675249"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342335"
