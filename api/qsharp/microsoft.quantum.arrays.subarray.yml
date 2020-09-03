@@ -2,17 +2,17 @@
 uid: microsoft.quantum.arrays.subarray
 name: Subarray
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: Принимает массив и список расположений и создает новый массив, сформированный из элементов исходного массива, которые соответствуют заданным местам.
 remarks: >-
-  Функция определена для универсальных типов, т. е. при наличии массива `'T[]` и списка расположений `Int[]` , определяющих этот подмассив.
+  Функция определена для универсальных типов, т. е. при наличии массива `'T[]` и списка расположений, `Int[]` определяющих этот подмассив.
 
   Построение подмассива основано на создании новой глубокой копии заданного массива, а не на обслуживании ссылок.
 
 
-  Если `Length(indices) < Length(array)`значение равно, эта функция вернет подмножество `array`. С другой стороны, если `indices` содержит повторяющиеся элементы, соответствующие элементы `array` будут также повторяться.
+  Если значение равно `Length(indices) < Length(array)` , эта функция вернет подмножество `array` . С другой стороны, если `indices` содержит повторяющиеся элементы, соответствующие элементы `array` будут также повторяться.
 
-  Если `indices` и `array` имеют одинаковую длину, эта функция предоставляет перестановки `array`.
+  Если `indices` и `array` имеют одинаковую длину, эта функция предоставляет перестановки `array` .
 syntax: "function Subarray (indices : Int[], array : 'T[]) : 'T[]"
 input:
   content: "(indices : Int[], array : 'T[])"
@@ -23,14 +23,14 @@ input:
     isPrimitive: true
     uid: Int
   - name: array
-    summary: Массив элементов `'T`.
+    summary: Массив элементов `'T` .
     isArray: true
     uid: "'T"
     isLocal: true
 output:
   content: "'T[]"
   types:
-  - summary: Массив `out` элементов, индексы которых соответствуют подмассиву `out[idx] == array[indices[idx]]`.
+  - summary: Массив `out` элементов, индексы которых соответствуют подмассиву `out[idx] == array[indices[idx]]` .
     isArray: true
     uid: "'T"
     isLocal: true
@@ -38,9 +38,9 @@ typeParameters:
 - uid: "'T"
   summary: Тип `array` элементов.
 metadata:
-  ms.openlocfilehash: 2740a39d1b7c1c56aed4f9107c65d339c5fb4c1a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1d5739f49e32ec4548cb24df2106dec0866a94cb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675115"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351634"
