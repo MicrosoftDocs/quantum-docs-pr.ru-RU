@@ -2,10 +2,10 @@
 uid: microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger
 name: MultiplyAndAddPhaseByModularInteger
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: То же, что и Мултипляндаддбимодуларинтежер, но предполагает, что слагаемому кодирует целые числа в Кфт.
 remarks: >-
-  Предполагается `phaseSummand` , что имеет наивысший бит, равный 0.
+  Предполагается, что `phaseSummand` имеет наивысший бит, равный 0.
 
   Также предполагается, что значение `phaseSummand` меньше $N $.
 syntax: 'operation MultiplyAndAddPhaseByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, phaseSummand : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
@@ -20,7 +20,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: multiplier
-    summary: Регистр такта, представляющий целое число без знака, значение которого добавляется к каждой метке состояния базы `summand`.
+    summary: Регистр такта, представляющий целое число без знака, значение которого добавляется к каждой метке состояния базы `summand` .
     uid: microsoft.quantum.arithmetic.littleendian
   - name: phaseSummand
     summary: Регистр такта, представляющий целое число без знака, которое будет использоваться в качестве целевого объекта для данной операции.
@@ -36,9 +36,9 @@ functors:
 seeAlso:
 - microsoft.quantum.arithmetic.multiplyandaddbymodularinteger
 metadata:
-  ms.openlocfilehash: 029ff8fb767ae018b7462f19a5fe09e83e606c6e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c1a7fd9523ee9056215cfbd5f2c89134f250bf1c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672799"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353555"
