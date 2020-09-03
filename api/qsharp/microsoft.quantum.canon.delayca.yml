@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.delayca
 name: DelayCA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   Применяет заданную операцию с задержкой.
 
@@ -11,7 +11,7 @@ summary: >-
 
   В частности, выражение `Delay(op, arg, _)` является операцией, которая применяется `op` к `arg` при вызове.
 
-  Выражение `Delay(op,arg,_)` позволяет отложить применение `op`.
+  Выражение `Delay(op,arg,_)` позволяет отложить применение `op` .
 syntax: "operation DelayCA (op : ('T => Unit is Ctl + Adj), arg : 'T, aux : Unit) : Unit"
 input:
   content: "(op : ('T => Unit is Ctl + Adj), arg : 'T, aux : Unit)"
@@ -53,9 +53,9 @@ seeAlso:
 - microsoft.quantum.canon.delay
 - microsoft.quantum.canon.delayed
 metadata:
-  ms.openlocfilehash: 71dae781438d07344b3c11da14e8eb323cd2073c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ce0e59509f38abee66c4ed095a8e569cc8be1a64
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675684"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356462"
