@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.research.chemistry
 name: Microsoft.Quantum.Research.Chemistry
-summary: " # <a name=\"summary\"></a>Сводка\n Это пространство имен предоставляет методы расширенного исследования для имитации тактовой химия.\n\n # <a name=\"references\"></a>Ссылки\n - Улучшение алгоритмов такта для тактовой химия, M. B. Хастингс, D. Веккер, B. Бауер, M. Тройер, https://arxiv.org/abs/1403.1539"
+summary: " # <a name=\"summary\"></a>Итоги\n Это пространство имен предоставляет методы расширенного исследования для имитации тактовой химия.\n\n # <a name=\"references\"></a>Ссылки\n - Улучшение алгоритмов такта для тактовой химия, M. B. Хастингс, D. Веккер, B. Бауер, M. Тройер, https://arxiv.org/abs/1403.1539"
 functions:
 - uid: microsoft.quantum.research.chemistry.jordanwigneroptimizedfermionevolutionset
   summary: Представляет динамический генератор как набор моделирующих шлюзов и расширение на основе Паули.
