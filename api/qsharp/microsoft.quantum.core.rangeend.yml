@@ -2,10 +2,10 @@
 uid: microsoft.quantum.core.rangeend
 name: RangeEnd
 type: function
-namespace: Microsoft.Quantum.Core
+namespace: microsoft.quantum.core
 summary: Возвращает определенное конечное значение заданного диапазона, которое не обязательно является последним элементом последовательности.
 remarks: >-
-  `start`Первым элементом выражения диапазона является, второй элемент `start+step`—, третий элемент — `start+step+step`и т. д., пока `end` не будет передан.
+  Первым элементом выражения диапазона является `start` , второй элемент —, `start+step` третий элемент — и `start+step+step` т. д., пока `end` не будет передан.
 
 
   Обратите внимание, что определенное конечное значение диапазона может отличаться от последнего элемента последовательности, заданной диапазоном. Например, в диапазоне 0.. 2.. 5 последний элемент — 4, а конечное значение — 5.
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 85e9006f73cd5f7b5a78b57148cbd7ad5b764878
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 08a7e70a8e12ef85902f03d7e24f99d3b5082f38
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82657639"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338000"

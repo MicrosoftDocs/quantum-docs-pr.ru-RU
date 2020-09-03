@@ -2,7 +2,7 @@
 uid: microsoft.quantum.convert.pauliarrayasint
 name: PauliArrayAsInt
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: Кодирует оператор Multi-кубит Паули, представленный в виде массива операторов с одним кубит Паули в целое число.
 remarks: >-
   Каждый оператор Паули может быть закодирован с использованием двух битов: $ $ \бегин{алигн} \болдоне \мапсто 00, \куад X \мапсто 01, \куад Y \мапсто 11, \куад Z \мапсто 10.
@@ -10,7 +10,7 @@ remarks: >-
   \енд{алигн} $ $
 
 
-  При наличии массива операторов `[P0, ..., Pn]`Паули эта функция возвращает целое число с расширением binary, сформированное путем сцепления сопоставлений каждого оператора Паули в порядке `bits(Pn) ... bits(P0)`с обратным порядком байтов.
+  При наличии массива операторов Паули `[P0, ..., Pn]` Эта функция возвращает целое число с расширением binary, сформированное путем сцепления сопоставлений каждого оператора Паули в порядке с обратным порядком байтов `bits(Pn) ... bits(P0)` .
 syntax: 'function PauliArrayAsInt (paulis : Pauli[]) : Int'
 input:
   content: '(paulis : Pauli[])'
@@ -23,13 +23,13 @@ input:
 output:
   content: Int
   types:
-  - summary: Целое число, `paulis`однозначно идентифицирующее, как описано ниже.
+  - summary: Целое число, однозначно идентифицирующее `paulis` , как описано ниже.
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 170218ccf1ec4ee1183a7a69ff1e0969f595cac4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e0ec584f77489d019a501ff31074e730152218f7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677397"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338301"

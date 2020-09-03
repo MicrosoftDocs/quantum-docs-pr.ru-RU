@@ -2,8 +2,8 @@
 uid: microsoft.quantum.arithmetic.measureinteger
 name: MeasureInteger
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
-summary: Измеряет содержимое регистра такта и преобразует его в целое число. Измерение выполняется в соответствии со стандартной вычислительной единицей, т. е. еиженбасис `PauliZ`.
+namespace: microsoft.quantum.arithmetic
+summary: Измеряет содержимое регистра такта и преобразует его в целое число. Измерение выполняется в соответствии со стандартной вычислительной единицей, т. е. еиженбасис `PauliZ` .
 remarks: Эта операция сбрасывает регистр входных данных в состояние $ \ket{00\cdots 0} $, подходящее для освобождения на целевом компьютере.
 syntax: 'operation MeasureInteger (target : Microsoft.Quantum.Arithmetic.LittleEndian) : Int'
 input:
@@ -15,15 +15,15 @@ input:
 output:
   content: Int
   types:
-  - summary: Целое число без знака, содержащее измеряемое значение `target`.
+  - summary: Целое число без знака, содержащее измеряемое значение `target` .
     isPrimitive: true
     uid: Int
 seeAlso:
 - microsoft.quantum.canon.measureintegerbe
 metadata:
-  ms.openlocfilehash: cb7432ccf4c66b4f508b182e8c96bd73b13e2f08
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e89e30375be30508652f285295bcf79f2a5de919
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676771"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353589"

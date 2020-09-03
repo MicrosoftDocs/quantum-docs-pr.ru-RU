@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.modulusl
 name: ModulusL
 type: function
-namespace: Microsoft.Quantum.Math
-summary: Вычисление канонического ресидуе `value` остатка `modulus`от деления.
-remarks: 'Эта функция ведет себя иначе, чем оператор `%` в C# и Q #, как в результате, всегда является положительным целым числом от 0 до `modulus - 1`, даже если значение отрицательное.'
+namespace: microsoft.quantum.math
+summary: Вычисление канонического ресидуе `value` остатка от деления `modulus` .
+remarks: 'Эта функция ведет себя иначе, чем оператор `%` в C# и Q #, как в результате, всегда является положительным целым числом от 0 до `modulus - 1` , даже если значение отрицательное.'
 syntax: 'function ModulusL (value : BigInt, modulus : BigInt) : BigInt'
 input:
   content: '(value : BigInt, modulus : BigInt)'
@@ -20,13 +20,13 @@ input:
 output:
   content: BigInt
   types:
-  - summary: Целое число $r $ от `modulus - 1` 0 до `value - r` значения, кратного модулю
+  - summary: Целое число $r $ от 0 до значения `modulus - 1` , `value - r` кратного модулю
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: c4a9403cc5c2bf62e43b5cc248fb9502f15818e8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 04dfee46752af759bc7d686b58bb6e9c3793c8d4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686629"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334022"
