@@ -2,9 +2,9 @@
 uid: microsoft.quantum.intrinsic.r1frac
 name: R1Frac
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: >-
-  Применяет поворот к состоянию{1}$ \кет $ на угол, заданный как дробь ДЯДИК.
+  Применяет поворот к {1} состоянию $ \кет $ на угол, заданный как дробь ДЯДИК.
 
 
   \бегин{алигн} R_1 (n, k) \масрел{: =} \операторнаме{диаг} (1, e ^ {i \пи k/2 ^ n}).
@@ -14,7 +14,7 @@ summary: >-
 
   > [!WARNING]
 
-  > Эта операция использует **противоположное** соглашение о знаках из @"microsoft.quantum.intrinsic.r"и не включает фактор $1/2 $, @"microsoft.quantum.intrinsic.r1"включенный в.
+  > Эта операция использует **противоположное** соглашение о знаках из @"microsoft.quantum.intrinsic.r" и не включает фактор $1/2 $, включенный в @"microsoft.quantum.intrinsic.r1" .
 remarks: >-
   Эквивалентно:
 
@@ -51,9 +51,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 45fa756e94be8b580c909004016e0f40861111c1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1cfaf195a3c811d43df50548771759f6dbf3fdc6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683735"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346755"

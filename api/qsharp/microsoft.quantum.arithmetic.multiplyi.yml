@@ -2,8 +2,8 @@
 uid: microsoft.quantum.arithmetic.multiplyi
 name: MultiplyI
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
-summary: Умножьте целое `xs` число `ys` на целое и сохраните `result`результат в, который должен быть равен нулю изначально.
+namespace: microsoft.quantum.arithmetic
+summary: Умножьте целое число `xs` на целое `ys` и сохраните результат в `result` , который должен быть равен нулю изначально.
 remarks: >-
   Использует стандартный подход Shift и-Add для реализации умножения.
 
@@ -19,7 +19,7 @@ input:
     summary: $n $-разрядный множитель (Литтлиндиан)
     uid: microsoft.quantum.arithmetic.littleendian
   - name: result
-    summary: $2N $-bit Result (Литтлиндиан) должен находиться в состоянии $ \кет{0}$ изначально.
+    summary: $2N $-bit Result (Литтлиндиан) должен находиться в состоянии $ \кет {0} $ изначально.
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Unit
@@ -30,9 +30,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: fcb55b47c0d5ca82736e8c3da14190daffd2b414
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 67e1ef577bf36cf524d2468bc191d2b381c800df
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679485"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353385"
