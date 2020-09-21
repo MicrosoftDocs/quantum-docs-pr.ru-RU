@@ -2,19 +2,19 @@
 title: Запуск алгоритма поиска Гровер в Q# -тактовой среде
 description: Создайте Q# проект, демонстрирующий алгоритм Гровер, один из канонических алгоритмов такта.
 author: cgranade
-ms.author: chgranad@microsoft.com
+ms.author: chgranad
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f2ae56bdca893e8a317c16d0a993da15b9f021b5
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 86c6a651a117b788eb4c8fdd805ead7ab8f54dd7
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863122"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834811"
 ---
 # <a name="tutorial-implement-grovers-search-algorithm-in-q"></a>Руководство по Реализация поиска по алгоритму Гровера на Q\#
 
@@ -58,9 +58,9 @@ ms.locfileid: "88863122"
 
 ### <a name="no-locq-applications-with-visual-studio-or-visual-studio-code"></a>Q# приложения с Visual Studio или Visual Studio Code
 
-Исполняемый файл будет выполнять операцию или функцию, помеченную атрибутом `@EntryPoint()`, в симуляторе или оценщике ресурсов в зависимости от конфигурации проекта и параметров командной строки.
+Программа запустит операцию или функцию, помеченную `@EntryPoint()` атрибутом для симулятора или оценщика ресурсов, в зависимости от конфигурации проекта и параметров командной строки.
 
-В Visual Studio просто нажмите клавиши CTRL+F5, чтобы выполнить скрипт.
+В Visual Studio просто нажмите клавиши CTRL + F5, чтобы запустить сценарий.
 
 При первом выполнении в VS Code нужно создать файл `Program.qs`. Для этого введите следующую команду в окне терминала:
 
@@ -89,7 +89,7 @@ operations.qs [options] [command]
 Commands:
 ```
 
-Это связано с тем, что вы не указали нужное количество кубитов. Поэтому терминал сообщает о командах, доступных для исполняемого файла. Если мы хотим использовать 5 кубитов, нужно ввести следующее:
+Это связано с тем, что вы не указали нужное количество Кубитс, поэтому терминал отображает команды, доступные для исполняемой программы. Если мы хотим использовать 5 Кубитс, необходимо ввести:
 
 ```Command line
 dotnet run --n-qubits 5
@@ -110,7 +110,7 @@ Reflecting about marked state...
 Если вы понравилась вам в этом руководстве, ознакомьтесь с некоторыми из приведенных ниже ресурсов, чтобы узнать больше о том, как можно использовать Q# для написания собственных приложений для работы с тактами:
 
 - [Вернуться руководству по началу работы с QDK](xref:microsoft.quantum.welcome)
-- Попробуйте изучить более общий алгоритм поиска Гровера из [этого примера](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/database-search).
+- Попробуйте изучить более общий алгоритм поиска Гровера из [этого примера](https://github.com/microsoft/Quantum/tree/main/samples/algorithms/database-search).
 - [Более подробное знакомство с алгоритмом поиска Гровера в Quantum Katas](xref:microsoft.quantum.overview.katas)
 - См. сведения о методике [усиления амплитуды][amplitude-amplification] в квантовых вычислениях, на которой основан алгоритм поиска Гровера.
 - [Концепции квантовых вычислений](xref:microsoft.quantum.concepts.intro)

@@ -8,21 +8,21 @@ uid: microsoft.quantum.chemistry.examples.endtoend
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 78d6488ed5e3972f85f1e6cf1ba2d197596c4cc3
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 528c34ea9b28b2f9b8f9a8bad681557f44bfcdaa
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869313"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759721"
 ---
 # <a name="end-to-end-with-nwchem"></a>Полный цикл работы с NWChem #
 
 В этой статье вы узнаете пример получения счетчиков шлюзов для моделирования тактовой химия, начиная с колоды входных данных [нвчем](http://www.nwchem-sw.org/index.php/Main_Page) .
 Прежде чем продолжить работу с этим примером, убедитесь, что вы установили DOCKER, следуя [инструкциям по установке и проверке](xref:microsoft.quantum.chemistry.concepts.installation).
 
-Дополнительные сведения:
+Дополнительные сведения
 - [Структура Нвчем входных колод](https://github.com/nwchemgit/nwchem/wiki/Getting-Started#input-file-structure)
-    - [Команды колоды ввода для использования с пакетом разработки тактов](https://github.com/nwchemgit/nwchem/tree/master/contrib/quasar)
+    - [Команды колоды ввода для использования с пакетом разработки тактов](https://github.com/nwchemgit/nwchem/tree/main/contrib/quasar)
 - [Установка библиотеки и зависимостей химия](xref:microsoft.quantum.chemistry.concepts.installation)
 - [Подсчет ресурсов](xref:microsoft.quantum.chemistry.examples.resourcecounts)
 
@@ -65,7 +65,7 @@ Get-Command -Module InvokeNWChem
 ```
 
 Далее мы импортируем `Get-GateCount` команду, предоставленную в примере **жетгатекаунт** .
-Полные сведения см. в [инструкциях, приведенных в примере](https://github.com/Microsoft/Quantum/tree/master/samples/chemistry/GetGateCount).
+Полные сведения см. в [инструкциях, приведенных в примере](https://github.com/Microsoft/Quantum/tree/main/samples/chemistry/GetGateCount).
 Затем выполните следующую команду, заменив на `<runtime>` `win10-x64` , `osx-x64` или `linux-x64` , в зависимости от операционной системы:
 
 ```powershell
@@ -95,7 +95,7 @@ Get-Command Get-GateCount
 git clone https://github.com/nwchemgit/nwchem --depth 1
 ```
 
-`nwchemgit/nwchem`Репозиторий поставляется с различными колодами входных данных, предназначенными для использования с пакетом средств разработки тактов, которые перечислены в [ `QA/chem_library_tests` папке](https://github.com/nwchemgit/nwchem/tree/master/QA/chem_library_tests).
+`nwchemgit/nwchem`Репозиторий поставляется с различными колодами входных данных, предназначенными для использования с пакетом средств разработки тактов, которые перечислены в [ `QA/chem_library_tests` папке](https://github.com/nwchemgit/nwchem/tree/main/QA/chem_library_tests).
 В этом примере мы будем использовать `H4` колоду входных данных:
 
 ```powershell
@@ -167,7 +167,7 @@ ElapsedMilliseconds : 721
 - Попробуйте использовать различные предопределенные колоды ввода, например, путем изменения параметра `alpha` в `h4_sto6g_alpha.nw` , 
 - Попробуйте изменить колоды, изменив Нвчем колоды напрямую, например, просмотрев `STO-nG` модели для различных вариантов выбора n, 
 - Опробуйте другие предопределенные Нвчем входные колоды, доступные в `nwchem/qa/chem_library_tests` ,
-- Испытайте набор предопределенных тестов производительности Брумбридже YAML, созданных из Нвчем и доступных в составе [репозитория Microsoft/такта](https://github.com/Microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML). Ниже перечислены эти тесты производительности. 
+- Испытайте набор предопределенных тестов производительности Брумбридже YAML, созданных из Нвчем и доступных в составе [репозитория Microsoft/такта](https://github.com/Microsoft/Quantum/tree/main/samples/chemistry/IntegralData/YAML). Ниже перечислены эти тесты производительности. 
     - небольшие молекулы, такие как молекулярное водо(H2), БериллиУМ (быть), литий хидриде (лих),
     - более крупные молекулы, такие как озоне (O3), Beta-каротене, цитосине и многие другие. 
 - Испытайте графические [стрелки емсл](https://arrows.emsl.pnnl.gov/api/qsharp_chem) , которые применяют интерфейс к Microsoft Quantum Development Kit. 
@@ -180,7 +180,7 @@ ElapsedMilliseconds : 721
 > [!NOTE]
 > Для запуска стрелок ЕМСЛ в веб-браузере необходимо включить JavaScript. Дополнительные сведения о включении JavaScript в браузере см. в этих [инструкциях](https://www.enable-javascript.com/) . 
 
-Сначала введите молекулу в поле запроса с текстом``Enter an esmiles, esmiles reaction, or other Arrows input, then push the "Run Arrows" button.`` 
+Сначала введите молекулу в поле запроса с текстом ``Enter an esmiles, esmiles reaction, or other Arrows input, then push the "Run Arrows" button.`` 
 
 Можно ввести множество молекул по имени разговорной речи, например "каффеине" вместо "1, 3, 7-Тримесилксансине". 
 

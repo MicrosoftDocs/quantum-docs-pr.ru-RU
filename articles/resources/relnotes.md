@@ -2,19 +2,19 @@
 title: Заметки о выпуске пакета средств разработки Microsoft Quantum
 description: Узнайте о последних обновлениях предварительной версии Microsoft Quantum Development Kit.
 author: bradben
-ms.author: bradben
-ms.date: 5/30/2020
+ms.author: v-benbra
+ms.date: 8/30/2020
 ms.topic: article
 uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 70d0c9b61e49d4ee6142edbe2767310403885f01
-ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
+ms.openlocfilehash: 5036b4d401bb775a7fee2252ca26e7725bc19004
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88992264"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834148"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -48,7 +48,7 @@ ms.locfileid: "88992264"
 
 Этот выпуск включает следующие обновления:
 
-- Открытые пространства имен в Q# записных книжках теперь доступны для всех последующих выполнений ячеек. Это позволяет, например, открывать пространства имен один раз в ячейке в верхней части записной книжки вместо того, чтобы открывать соответствующие пространства имен в каждой ячейке кода. Новая `%lsopen` Волшебная команда отображает список открытых в настоящее время пространств имен.
+- Открытые пространства имен в Q# записных книжках теперь доступны для всех будущих вычислений ячеек. Это позволяет, например, открывать пространства имен один раз в ячейке в верхней части записной книжки вместо того, чтобы открывать соответствующие пространства имен в каждой ячейке кода. Новая `%lsopen` Волшебная команда отображает список открытых в настоящее время пространств имен.
 
 См. полный список закрытых вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed), [I Q# ](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) и [Катас](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
 
@@ -132,7 +132,7 @@ ms.locfileid: "88992264"
 
 Этот выпуск включает следующие обновления:
 
-- Новая библиотека квантового машинного обучения. Дополнительные сведения см. на нашей [странице с документации по QML](https://docs.microsoft.com/quantum/libraries/machine-learning/?view=qsharp-preview).
+- Новая библиотека квантового машинного обучения. Дополнительные сведения см. на нашей [странице с документации по QML](xref:microsoft.quantum.machine-learning.concepts.intro).
 - Я Q# исправлять ошибки, что приводит к увеличению 10x производительности при загрузке пакетов NuGet.
 
 См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed) и [ката](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
@@ -144,7 +144,7 @@ ms.locfileid: "88992264"
 Этот выпуск включает следующие обновления:
 
 - Новый пакет NuGet Microsoft.Quantum.SDK, который заменит пакет NuGet Microsoft.Quantum.Development.Kit при создании новых проектов. Пакет NuGet Microsoft.Quantum.Development.Kit будет по-прежнему поддерживаться для существующих проектов. 
-- Поддержка Q# расширений компилятора, включенных новым пакетом NuGet пакета для Microsoft. тактов. SDK, дополнительные сведения см. в [документации на сайте GitHub](https://github.com/microsoft/qsharp-compiler/tree/master/src/QuantumSdk#extending-the-q-compiler), в [образце расширений компилятора](https://github.com/microsoft/qsharp-compiler/tree/master/examples/CompilerExtensions) и в [ Q# блоге разработчиков](https://devblogs.microsoft.com/qsharp/extending-the-q-compiler/) .
+- Поддержка Q# расширений компилятора, включенных новым пакетом NuGet пакета для Microsoft. тактов. SDK, дополнительные сведения см. в [документации на сайте GitHub](https://github.com/microsoft/qsharp-compiler/tree/main/src/QuantumSdk#extending-the-q-compiler), в [образце расширений компилятора](https://github.com/microsoft/qsharp-compiler/tree/main/examples/CompilerExtensions) и в [ Q# блоге разработчиков](https://devblogs.microsoft.com/qsharp/extending-the-q-compiler/) .
 - Добавлена поддержка .NET Core 3.1. При этом настоятельно рекомендуется установить версию 3.1.100, так как при выполнении сборки с более старыми версиями пакета SDK для .NET Core могут возникать проблемы.
 - Новые преобразования компилятора, доступные в Microsoft.Quantum.QsCompiler.Experimental
 - Новые функции для предоставления векторов состояния вывода в виде HTML-кода в IQ#
@@ -182,7 +182,7 @@ ms.locfileid: "88992264"
 
 Этот выпуск включает следующие обновления:
 
-- Обновления расширений Visual Studio Code и Visual Studio для развертывания языкового сервера в виде автономного исполняемого файла с исключением зависимости версии пакета SDK для .NET Core  
+- Обновления Visual Studio Code & расширения Visual Studio для развертывания языкового сервера в виде автономного исполняемого файла, исключая зависимость версии пакет SDK для .NET Core  
 - Миграция в .NET Core 3.0
 - Критическое изменение в Microsoft.Quantum.Simulation.Core.IOperationFactory с введением нового метода `Fail`. Оно влияет только на пользовательские симуляторы, которые не расширяют SimulatorBase. См. сведения в [запросе на вытягивание в GitHub](https://github.com/microsoft/qsharp-runtime/pull/59).
 - Возобновление поддержки устаревших атрибутов
@@ -224,7 +224,7 @@ ms.locfileid: "88992264"
 Этот выпуск включает следующие обновления:
 
 - Добавлены расположения индексирования для массивов срезов (см. сведения в [справочнике по языку программирования](xref:microsoft.quantum.guide.expressions#array-slices)).
-- Добавлены Dockerfile, размещенные в [реестре контейнеров Microsoft](https://github.com/microsoft/ContainerRegistry), см. [ Q# Дополнительные сведения в репозитории I](https://github.com/microsoft/iqsharp/blob/master/README.md) .
+- Добавлены Dockerfile, размещенные в [реестре контейнеров Microsoft](https://github.com/microsoft/ContainerRegistry), см. [ Q# Дополнительные сведения в репозитории I](https://github.com/microsoft/iqsharp/blob/main/README.md) .
 - Критическое изменение в [симуляторе трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro); изменены параметры конфигурации и имена (см. сведения о [средстве просмотра API .NET](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulatorconfiguration)).
 
 См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed) и [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed).  
@@ -252,14 +252,14 @@ ms.locfileid: "88992264"
 
 ### <a name="library"></a>Библиотека 
 
-В этом выпуске добавлена библиотека числовых значений. Узнайте о том, как [использовать новую библиотеку числовых значений](xref:microsoft.quantum.numerics.usage) и испытайте [новые примеры](https://github.com/microsoft/quantum/tree/master/Numerics).  [PR №102](https://github.com/Microsoft/QuantumLibraries/pull/102).  
+В этом выпуске добавлена библиотека числовых значений. Узнайте о том, как [использовать новую библиотеку числовых значений](xref:microsoft.quantum.numerics.usage) и испытайте [новые примеры](https://github.com/microsoft/quantum/tree/main/Numerics).  [PR №102](https://github.com/Microsoft/QuantumLibraries/pull/102).  
 
 В этом выпуске переработана, расширена и обновлена библиотека для химической отрасли.
 * Улучшена модульность компонентов, расширяемость, а также в целом очищен код.  [PR №58](https://github.com/microsoft/QuantumLibraries/pull/58).
 * Добавлена поддержка [волновых функций с несколькими опорными сигналами](xref:microsoft.quantum.chemistry.concepts.multireference), в том числе разреженных волновых функций с несколькими опорными сигналами и единых связанных кластеров.  [PR №110](https://github.com/Microsoft/QuantumLibraries/pull/110).
 * Благодарим участника [1QBit](https://1qbit.com) ([@valentinS4t1qbit](https://github.com/ValentinS4t1qbit)). Оценка энергопотребления с использованием вариативного подхода. [PR №120](https://github.com/Microsoft/QuantumLibraries/pull/120).
 * Обновлена схема [Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) до новой [версии 0.2](xref:microsoft.quantum.libraries.chemistry.schema.spec_v_0_2), которая добавляет спецификацию единого связанного кластера. [Проблема №65](https://github.com/microsoft/QuantumLibraries/issues/65)
-* Добавлена возможность взаимодействия Python с функциями из библиотеки для химической отрасли. Опробуйте [этот пример](https://github.com/microsoft/Quantum/tree/master/Chemistry/PythonIntegration). [Проблема № 53](https://github.com/microsoft/QuantumLibraries/issues/53) [PR № 110](https://github.com/Microsoft/QuantumLibraries/pull/110).
+* Добавлена возможность взаимодействия Python с функциями из библиотеки для химической отрасли. Опробуйте [этот пример](https://github.com/microsoft/Quantum/tree/main/Chemistry/PythonIntegration). [Проблема № 53](https://github.com/microsoft/QuantumLibraries/issues/53) [PR № 110](https://github.com/Microsoft/QuantumLibraries/pull/110).
 
 ## <a name="version-061905"></a>Версия 0.6.1905
 
@@ -349,7 +349,7 @@ ms.locfileid: "88992264"
 
 - Добавлена поддержка Jupyter Notebook, которая предоставляет отличный способ изучения Q# .  [Ознакомьтесь с новыми примерами для Jupyter Notebook и узнайте, как создавать собственные записные книжки](xref:microsoft.quantum.install). 
 
-- Добавлена арифметика целочисленного сложения в библиотеку Quantum Canon.  См. сведения в записной книжке Jupyter, где [описано применение нового блока целочисленного сложения](https://github.com/microsoft/Quantum/blob/master/samples/arithmetic/AdderExample.ipynb).
+- Добавлена арифметика целочисленного сложения в библиотеку Quantum Canon.  См. сведения в записной книжке Jupyter, где [описано применение нового блока целочисленного сложения](https://github.com/microsoft/Quantum/blob/main/samples/arithmetic/AdderExample.ipynb).
 
 - Исправлена ошибка, приводящая к проблеме с DumpRegister, о которой сообщило сообщество ([#148](https://github.com/Microsoft/Quantum/issues/148)).
 

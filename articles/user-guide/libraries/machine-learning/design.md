@@ -9,12 +9,12 @@ uid: microsoft.quantum.libraries.machine-learning.design
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 60e694e9f7c2f01a6679ef960f5a7774c8bd6a62
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: c87a84654cda04f81115a83684f0e125d23a77bc
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868952"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759227"
 ---
 # <a name="design-your-own-classifier"></a>Проектирование собственного классификатора
 
@@ -30,7 +30,7 @@ ms.locfileid: "87868952"
 
 Чтобы создать классификатор, мы будем объединять управляемые параметризованнымные вращения в нашей модели канала. Для этого можно использовать тип, [`ControlledRotation`](xref:microsoft.quantum.machinelearning.controlledrotation) определенный в библиотеке тактов машинное обучение. Этот тип принимает четыре аргумента, которые определяют: индекс целевого кубит, массив индексов элемента управления Кубитс, ось вращения и индекс связанного параметра в массиве параметров, определяющих модель.
 
-Рассмотрим пример классификатора. В [примере половинной Луны](https://github.com/microsoft/Quantum/tree/master/samples/machine-learning/half-moons)мы можем найти следующий классификатор, определенный в файле `Training.qs` .
+Рассмотрим пример классификатора. В [примере половинной Луны](https://github.com/microsoft/Quantum/tree/main/samples/machine-learning/half-moons)мы можем найти следующий классификатор, определенный в файле `Training.qs` .
 
 ```qsharp
     function ClassifierStructure() : ControlledRotation[] {
@@ -61,6 +61,6 @@ ms.locfileid: "87868952"
 
 Мы рекомендуем изучить Справочник по [API-интерфейсу машинное обучение библиотеки тактов](xref:microsoft.quantum.machinelearning) , чтобы найти все средства, доступные для упрощения проектирования цепи.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
  Попробуйте использовать различные структуры в примерах, представленных в примерах. Отображаются ли изменения в производительности модели? В следующем руководстве [`Load your own datasets`](xref:microsoft.quantum.libraries.machine-learning.load) вы узнаете, как загружать наборы данных для попыток и исследовать новые архитектуры классификаторов.

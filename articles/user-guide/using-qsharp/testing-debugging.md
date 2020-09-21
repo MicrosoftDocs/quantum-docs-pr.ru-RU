@@ -2,19 +2,19 @@
 title: Тестирование и отладка
 description: Узнайте, как использовать модульные тесты, факты и утверждения и функции дампа для тестирования и отладки тактовых программ.
 author: tcNickolas
-ms.author: mamykhai@microsoft.com
+ms.author: mamykhai
 ms.date: 06/01/2020
 ms.topic: article
 uid: microsoft.quantum.guide.testingdebugging
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2b5276da594ba263177d435c1153f6d96e29c4e8
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 2f2181d388a59c1c6c5a0f13c9aa49d5fa1e51ae
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867919"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833176"
 ---
 # <a name="testing-and-debugging"></a>Тестирование и отладка
 
@@ -26,7 +26,7 @@ ms.locfileid: "87867919"
 Одним из распространенных подходов к тестированию классических программ является написание небольших программ, именуемых *модульными тестами*, которые выполняют код в библиотеке и сравнивают выходные данные с ожидаемыми выходными данными.
 Например, можно гарантировать, что `Square(2)` возвраты будут возвращаться, `4` так как вы узнали *приори* , что $2 ^ 2 = $4.
 
-Q#поддерживает создание модульных тестов для тактовых программ и может выполняться как тесты в среде модульного тестирования [xUnit](https://xunit.github.io/) .
+Q# поддерживает создание модульных тестов для тактовых программ и может выполняться как тесты в среде модульного тестирования [xUnit](https://xunit.github.io/) .
 
 ### <a name="creating-a-test-project"></a>Создание тестового проекта
 
@@ -69,7 +69,7 @@ $ code . # To open in Visual Studio Code
 ```
 Сохраните файл и выполните все тесты. Теперь должно быть два модульных теста: один, где `AllocateQubit` выполняется в `QuantumSimulator` , и один, где он выполняется в `ResourcesEstimator` . 
 
-Q#Компилятор распознает встроенные целевые объекты `"QuantumSimulator"` , `"ToffoliSimulator"` и `"ResourcesEstimator"` в качестве допустимых целевых объектов выполнения для модульных тестов. Можно также указать любое полное имя для определения пользовательского целевого объекта выполнения. 
+Q#Компилятор распознает встроенные целевые объекты `"QuantumSimulator"` , `"ToffoliSimulator"` и `"ResourcesEstimator"` в качестве допустимых целевых объектов запуска для модульных тестов. Можно также указать любое полное имя для определения настраиваемого целевого объекта запуска. 
 
 ### <a name="running-no-locq-unit-tests"></a>Выполнение Q# модульных тестов
 
@@ -113,7 +113,7 @@ Test Run Successful.
 Test execution time: 1.9607 Seconds
 ```
 
-Модульные тесты можно фильтровать в соответствии с их именем или целевым объектом выполнения:
+Модульные тесты можно фильтровать в соответствии с их именем или целевым объектом запуска:
 
 ```bash 
 $ dotnet test --filter "Target=QuantumSimulator"
@@ -127,7 +127,7 @@ $ dotnet test --filter "Name=AllocateQubit"
 
 #### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
-После запуска теста в обозревателе тестов и нажатия кнопки тест отображается панель со сведениями о выполнении теста: состояние передачи/сбоя, затраченное время и ссылка на выходные данные. Нажмите кнопку **выходные данные** , чтобы открыть тестовый вывод в новом окне.
+После запуска теста в обозревателе тестов и нажатия кнопки тест отображается панель со сведениями о тестовом запуске: состояние успешного выполнения или сбоя, затраченное время и ссылка на выходные данные. Нажмите кнопку **выходные данные** , чтобы открыть тестовый вывод в новом окне.
 
 ![выходные данные теста](~/media/unit-test-output.png)
 
@@ -314,7 +314,7 @@ using (register = Qubit())
 
 ***
 
-Поскольку <xref:microsoft.quantum.diagnostics.dumpmachine> является частью <xref:microsoft.quantum.diagnostics> пространства имен, необходимо добавить `open` оператор для доступа к нему:
+Поскольку <xref:microsoft.quantum.diagnostics.dumpmachine> является частью  <xref:microsoft.quantum.diagnostics> пространства имен, необходимо добавить `open` оператор для доступа к нему:
 
 ```qsharp
 namespace Samples {
@@ -333,7 +333,7 @@ namespace Samples {
 
 ### <a name="dumpregister"></a>DumpRegister
 
-<xref:microsoft.quantum.diagnostics.dumpregister>работает <xref:microsoft.quantum.diagnostics.dumpmachine> , как, за исключением того, что он также принимает массив Кубитс, чтобы ограничить объем информации, относящейся только к соответствующему Кубитс.
+<xref:microsoft.quantum.diagnostics.dumpregister> работает <xref:microsoft.quantum.diagnostics.dumpmachine> , как, за исключением того, что он также принимает массив Кубитс, чтобы ограничить объем информации, относящейся только к соответствующему Кубитс.
 
 Как и в <xref:microsoft.quantum.diagnostics.dumpmachine> случае, сведения, созданные в, <xref:microsoft.quantum.diagnostics.dumpregister> зависят от целевого компьютера. Для имитатора с полным состоянием он записывает в файл функцию Wave вплоть до глобального этапа подсистемы такта, созданной предоставленным Кубитс в том же формате, что и <xref:microsoft.quantum.diagnostics.dumpmachine> .  Например, повторите попытку на компьютере с двумя выделенными Кубитс и в состоянии такта $ $ \бегин{алигн} \кет{\пси} = \фрак {1} {\скрт {2} } \кет {00} -\фрак{(1 + i)} {2} \кет {10} =-e ^ {-i \ PI/4} ((\фрак {1} {\скрт {2} } \кет {0} -\фрак{(1 + i)} {2} \кет {1} ) \otimes \frac{-(1 + i)} {\sqrt {2} } \ket {0} ). \end{align} $ $ вызов метода <xref:microsoft.quantum.diagnostics.dumpregister> для `qubit[0]` создает следующий результат:
 
@@ -384,6 +384,6 @@ namespace app
 
 ## <a name="debugging"></a>Отладка
 
-Поверх `Assert` функций и `Dump` операций, Q# поддерживает подмножество стандартных возможностей отладки Visual Studio: [Задание точек останова в строке](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints), [пошаговое выполнение кода с помощью F10](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger), а также [Проверка значений классических переменных](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows) во время выполнения кода в симуляторе.
+Поверх `Assert` функций и `Dump` операций, Q# поддерживает подмножество стандартных возможностей отладки Visual Studio: [Задание точек останова в строке](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints), [пошаговое выполнение кода с помощью F10](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger), а также [Проверка значений классических переменных](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows) при выполнении кода в симуляторе.
 
 Отладка в Visual Studio Code использует возможности отладки, предоставляемые C# для Visual Studio Code расширения на базе OmniSharp и требует установки [последней версии](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). 

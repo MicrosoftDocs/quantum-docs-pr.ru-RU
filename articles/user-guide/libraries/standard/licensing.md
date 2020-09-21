@@ -2,30 +2,30 @@
 title: Лицензирование с открытым исходным кодом для КДК
 description: Узнайте о лицензировании использования и участии в Q# стандартных библиотеках Майкрософт — лицензировании и участии.
 author: martinro
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 2/16/2018
 ms.topic: article
 uid: microsoft.quantum.libraries.licensing
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f964d5f4a4c20c8d53ceb4375c869030cd53ff07
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 4531d8c19e35f48f6e4c3cc2cebe3d82d6fa1025
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868463"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833677"
 ---
 # <a name="licensing"></a>Лицензирование #
 
-Пакет разработки такта предоставляется с обширным набором функций и операций с открытым исходным кодом, лицензированных по [лицензии MIT](https://github.com/Microsoft/Quantum/blob/master/LICENSE.txt).
+Пакет разработки такта предоставляется с обширным набором функций и операций с открытым исходным кодом, лицензированных по [лицензии MIT](https://github.com/Microsoft/Quantum/blob/main/LICENSE.txt).
 Части стандартной библиотеки, переносимые на целевые компьютеры, можно получить из репозитория [Microsoft/куантумлибрариес](https://github.com/Microsoft/QuantumLibraries) на сайте GitHub, а также с другими библиотеками, такими как и другие библиотеки, такие как [Библиотека тактов химия](xref:microsoft.quantum.chemistry.concepts.intro).
 
-Пакет Microsoft для разработки тактов также предоставляет специализированные функции и операции библиотеки, лицензированные по [лицензии на исследование Майкрософт](https://github.com/Microsoft/Quantum-NC/blob/master/LICENSE).
+Пакет Microsoft для разработки тактов также предоставляет специализированные функции и операции библиотеки, лицензированные по [лицензии на исследование Майкрософт](https://github.com/Microsoft/Quantum-NC/blob/main/LICENSE).
 Их можно получить из репозитория [Microsoft/тактов-NC](https://github.com/microsoft/quantum-nc) в GitHub.
 
 Кроме того, существует множество примеров, которые объясняют и иллюстрируют использование функций и операций из стандартной библиотеки и других библиотек.
-Эти примеры лицензированы по [лицензии MIT](https://github.com/Microsoft/Quantum/blob/master/LICENSE.txt).
+Эти примеры лицензированы по [лицензии MIT](https://github.com/Microsoft/Quantum/blob/main/LICENSE.txt).
 Примеры можно получить из репозитория [Майкрософт или такта](https://github.com/Microsoft/Quantum) на сайте GitHub.
 
 ## <a name="contributing"></a>Участие ##

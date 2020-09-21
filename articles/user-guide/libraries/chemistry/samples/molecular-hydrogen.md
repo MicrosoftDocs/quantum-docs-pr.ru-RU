@@ -9,15 +9,15 @@ uid: microsoft.quantum.chemistry.examples.energyestimate
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a2df4b829a3f4946c6de6e6b80ad72a5bc192b2c
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 05506f4099de754cd02d81fbd9200f2de091e37e
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869211"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759738"
 ---
 # <a name="obtaining-energy-level-estimates"></a>Получение оценок энергетических уровней
-Оценка значений уровня энергии является одним из основных приложений тактовой химия. В этой статье описано, как это сделать для канонического примера водомолекулярное. Образец, указанный в этом разделе, находится [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogen) в репозитории примеров химия. Более наглядным примером, который отображает выходные данные, является [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogenGUI) демонстрация.
+Оценка значений уровня энергии является одним из основных приложений тактовой химия. В этой статье описано, как это сделать для канонического примера водомолекулярное. Образец, указанный в этом разделе, находится [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogen) в репозитории примеров химия. Более наглядным примером, который отображает выходные данные, является [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogenGUI) демонстрация.
 
 ## <a name="estimating-the-energy-values-of-molecular-hydrogen"></a>Оценка значений энергии для молекулярное водорода
 
@@ -65,7 +65,7 @@ ms.locfileid: "87869211"
     var qSharpData = QSharpFormat.Convert.ToQSharpFormat(qSharpHamiltonianData, qSharpWavefunctionData);
 ```
 
-Затем Pass `qSharpData` , который представляет хамилтониан, для `TrotterStepOracle` функции. `TrotterStepOracle`Возвращает операцию такта, которая приблизительно соответствует эволюции Хамилтониан в реальном времени. Дополнительные сведения см. в разделе [имитация хамилтониан Dynamics](xref:microsoft.quantum.chemistry.concepts.simulationalgorithms).
+Затем Pass `qSharpData` , который представляет хамилтониан, для `TrotterStepOracle` функции. `TrotterStepOracle` Возвращает операцию такта, которая приблизительно соответствует эволюции Хамилтониан в реальном времени. Дополнительные сведения см. в разделе [имитация хамилтониан Dynamics](xref:microsoft.quantum.chemistry.concepts.simulationalgorithms).
 
 ```qsharp
 // qSharpData passed from driver
@@ -156,5 +156,5 @@ using (var qsim = new QuantumSimulator())
 
 Операция возвращает два параметра: 
 
-- `energyEst`является оценкой энергии в состоянии "Земля" и должно быть близко к `-1.137` среднему значению. 
-- `phaseEst`— Это необработанный этап, возвращенный алгоритмом оценки этапа. Это полезно для диагностики псевдонимов, когда это происходит из-за `trotterStep` слишком большого значения.
+- `energyEst` является оценкой энергии в состоянии "Земля" и должно быть близко к `-1.137` среднему значению. 
+- `phaseEst` — Это необработанный этап, возвращенный алгоритмом оценки этапа. Это полезно для диагностики псевдонимов, когда это происходит из-за `trotterStep` слишком большого значения.

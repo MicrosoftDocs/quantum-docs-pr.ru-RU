@@ -1,6 +1,6 @@
 ---
 Title: векторы и матрицы в описании тактовых вычислений: Изучите основы работы с векторами и матрицами.
-Автор: Куантумвритер UID: Microsoft. тактов. Основные понятия. Vectors MS. author: nawiebe@microsoft.com MS. Дата: 12/11/2017 MS. Topic: статья No-Loc:
+Автор: Куантумвритер UID: Microsoft. тактов. Основные понятия. Vectors MS. author: v-бенбра MS. Дата: 12/11/2017 MS. Topic: статья No-Loc:
 - "Q#"
 - "$$v"
 - "$$"
@@ -93,7 +93,7 @@ $$v =\begin{bmatrix}
 v_1\\\\
 v_2\\\\
 \вдотс\\\\
-v_n\end{bmatrix}$$
+v_n \end{bmatrix}$$
 
 Норма вектора $ v $ определяется как $ \sqrt { \sum \_ i | v \_ i | ^ 2 } $ . Говорят, что вектор является нормой единицы (или же он называется [*вектором*](https://en.wikipedia.org/wiki/Unit_vector)), если его значение равно $ 1 $ . [*Смежная часть вектора*](https://en.wikipedia.org/wiki/Adjoint_matrix) $ v $ обозначается $ v ^ \dagger $ и определяется как следующий вектор строки $ \* $ , где обозначает комплексно сопряженный,
 
@@ -114,12 +114,12 @@ u_1\\\\
 u_2\\\\
 \вдотс\\\\
 u_n \end{bmatrix} ~ \mathrm { и}~
-3,3=\begin{bmatrix}
+3,3 =\begin{bmatrix}
     v_1\\\\
     v_2\\\\
     \вдотс\\\\
     v_n \end{bmatrix} , ~ \mathrm { затем}~
-Au + BV=\begin{bmatrix}
+Au + BV =\begin{bmatrix}
 au_1 + bv_1\\\\
 au_2 + bv_2\\\\
 \вдотс\\\\
@@ -128,7 +128,7 @@ $$
 
 [*Матрица*](https://en.wikipedia.org/wiki/Matrix_(mathematics)) размером $ m \times n $ представляет собой коллекцию $ $ комплексных чисел MN, упорядоченных в $ m $ строках и $ n $ столбцов, как показано ниже:
 
-$$Пн= 
+$$Пн = 
 \begin{bmatrix}
 M_ { 11 } ~~ M_ { 12 } ~~ \cdots ~~ M_ { 1N}\\\\
 M_ { 21 } ~~ M_ { 22 } ~~ \cdots ~~ M_ { 2N}\\\\
@@ -183,7 +183,7 @@ $$\langlev, v v \rangle = ^ \dagger v ^ = u ^ \dagger { -1 } U v = v ^ \dagger u
 Наконец, [*продукт тензорные*](https://en.wikipedia.org/wiki/Tensor_product) (или кронеккер продукт) двух матриц $ M $ размером $ m \times n $ и $ n $ из размера $ p \times q $ — это более крупная матрица $ p = M n с \otimes $ размером $ MP \times НК $ , и она получается из $ M $ и $ n $ следующим образом:
 
 \begin{align}
-    M \otimes N&=
+    M \otimes N &=
     \begin{bmatrix}
         M_ { 11 } ~~ \cdots ~~ M_ { 1N }\\\\
         \ddots\\\\
@@ -211,7 +211,7 @@ $$
     \begin{bmatrix}
         a \\\\ b \end{bmatrix} \otimes \begin{bmatrix} c \\\\ d \\\\ е \end{bmatrix}=
     \begin{bmatrix}
-        a \begin{bmatrix} c \\\\ d \\\\ e\end{bmatrix}
+        a \begin{bmatrix} c \\\\ d \\\\ e \end{bmatrix}
         \\\\[1,5 EM] b \begin{bmatrix} c \\\\ d \\\\ e\end{bmatrix}
     \end{bmatrix}
     =a б a b \begin{bmatrix} \\\\ \\\\ \\\\ c \\\\ б \\\\\end{bmatrix}
@@ -221,26 +221,26 @@ $$
 
 $$
     \begin{bmatrix}
-        a \ b \\\\ c \ d\end{bmatrix}
+        a \ b \\\\ c \ d \end{bmatrix}
     \otimes 
     \begin{bmatrix}
-        e \ f \\\\ g \ h\end{bmatrix}
+        e \ f \\\\ g \ h \end{bmatrix}
      =
     \begin{bmatrix}
     конкретного\begin{bmatrix}
-    e \ f \\\\ g \ h\end{bmatrix}
+    e \ f \\\\ g \ h \end{bmatrix}
     &\begin{bmatrix}
-    e \ f \\\\ g \ h\end{bmatrix}
+    e \ f \\\\ g \ h \end{bmatrix}
     \\\\[1em] c\begin{bmatrix}
-    e \ f \\\\ g \ h\end{bmatrix}
+    e \ f \\\\ g \ h \end{bmatrix}
     четырехмерного\begin{bmatrix}
-    e \ f \\\\ g \ h\end{bmatrix}
+    e \ f \\\\ g \ h \end{bmatrix}
     \end{bmatrix}
     =
     \begin{bmatrix}
-    AE \ AF \ BF\\\\
-    AG \ AH \ BG \ BH\\\\
-    CE \ CF \ de \ DF\\\\
+    AE \ AF \ BF \\\\
+    AG \ AH \ BG \ BH \\\\
+    CE \ CF \ de \ DF \\\\
     CG \ CH \ \end{bmatrix} , DH.
 $$
 

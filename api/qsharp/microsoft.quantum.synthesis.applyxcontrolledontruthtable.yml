@@ -16,7 +16,7 @@ summary: >-
 
   Оно может представляться большим целым числом `0xE8L` в шестнадцатеричной нотации или `232L` в виде десятичной нотации.  `L`Суффикс указывает, что константа имеет тип `BigInt` .
 
-  Дополнительные сведения об этом представлении можно найти в [таблице истинности Ката](https://github.com/microsoft/QuantumKatas/tree/master/TruthTables).
+  Дополнительные сведения об этом представлении можно найти в [таблице истинности Ката](https://github.com/microsoft/QuantumKatas/tree/main/TruthTables).
 
 
   В реализации используются @"microsoft.quantum.intrinsic.cnot" @"microsoft.quantum.intrinsic.r1" шлюзы и.
@@ -52,9 +52,9 @@ functors:
 seeAlso:
 - microsoft.quantum.synthesis.applyxcontrolledontruthtablewithcleantarget
 metadata:
-  ms.openlocfilehash: 782833d34462056413628504cca92f5333a04659
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: d07c1ae20f133d1215d1f6b0cdbd07a635039dda
+  ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89328001"
+  ms.lasthandoff: 09/17/2020
+  ms.locfileid: "90759362"

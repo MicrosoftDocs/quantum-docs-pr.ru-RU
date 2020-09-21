@@ -9,12 +9,12 @@ uid: microsoft.quantum.overview.katas
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: b2a3b25bf90109468f02c98c6c687befb83648bc
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 780f04aa941d416032ea3e50b05769f93fae769f
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869687"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759397"
 ---
 # <a name="learn-quantum-computing-with-the-quantum-katas"></a>Изучение квантовых вычислений с помощью Quantum Katas
 
@@ -39,52 +39,52 @@ ms.locfileid: "87869687"
 
 ### <a name="introduction-to-quantum-computing-concepts"></a>Сведения о концепциях квантовых вычислений
 
-| ката | Описание: |
+| ката | Описание |
 |:-----|-------------|
-|[Сложные арифметические действия](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic)|В этом учебнике рассматривается часть математического фона, необходимого для работы с тактовыми вычислениями, например мнимые и комплексные числа.|
-|[Линейная алгебра](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra)|Линейная переработа используется для представления состояний тактов и операций в тактовых вычислениях. В этом учебнике рассматриваются основные принципы, включая матрицы и векторы.|
-|[Концепция кубита](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/Qubit)|Узнайте о Кубитс — одной из основных концепций тактовых вычислений. |
-|[Квантовые вентили с одним кубитом](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates)|В этом руководстве представлено несколько кубит тактов, которые действуют как стандартные блоки алгоритмов тактов и преобразовывают кубит состояния такта различными способами.|
-|[Системы с несколькими кубитами](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/MultiQubitSystems)|В этом руководстве рассматриваются кубит системы, их представление в математической нотации и в Q# коде, а также понятие замкнутые.|
-|[Многокубитный тактовый шлюз](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/MultiQubitGates)|В этом учебнике рассматривается руководство по [кубит тактовым генераторам](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates) , а также приводятся инструкции по применению тактового шлюза к системам с несколькими кубитами.|
+|[Сложные арифметические действия](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ComplexArithmetic)|В этом учебнике рассматривается часть математического фона, необходимого для работы с тактовыми вычислениями, например мнимые и комплексные числа.|
+|[Линейная алгебра](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/LinearAlgebra)|Линейная переработа используется для представления состояний тактов и операций в тактовых вычислениях. В этом учебнике рассматриваются основные принципы, включая матрицы и векторы.|
+|[Концепция кубита](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/Qubit)|Узнайте о Кубитс — одной из основных концепций тактовых вычислений. |
+|[Квантовые вентили с одним кубитом](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/SingleQubitGates)|В этом руководстве представлено несколько кубит тактов, которые действуют как стандартные блоки алгоритмов тактов и преобразовывают кубит состояния такта различными способами.|
+|[Системы с несколькими кубитами](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/MultiQubitSystems)|В этом руководстве рассматриваются кубит системы, их представление в математической нотации и в Q# коде, а также понятие замкнутые.|
+|[Многокубитный тактовый шлюз](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/MultiQubitGates)|В этом учебнике рассматривается руководство по [кубит тактовым генераторам](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/SingleQubitGates) , а также приводятся инструкции по применению тактового шлюза к системам с несколькими кубитами.|
 
 ### <a name="quantum-computing-fundamentals"></a>Основы квантовых вычислений
 
-| ката | Описание: |
+| ката | Описание |
 |:-----|-------------|
-|[Определение квантовых вентилей](https://github.com/microsoft/QuantumKatas/tree/master/BasicGates)|Ряд упражнений, которые помогут вам ознакомиться с основными шлюзовыми шлюзами в Q# . Включает в себя упражнения для основных кубит и многокубитных шлюзов, смежных и контролируемых шлюзов, а также использование шлюзов для изменения состояния кубит.|
-|[Создание квантовой суперпозиции](https://github.com/microsoft/QuantumKatas/tree/master/Superposition)|Используйте эти упражнения, чтобы ознакомиться с концепцией и программированием в Q# . Включает в себя упражнения для основных кубит и многокубитных шлюзов, а также управления потоком и рекурсии в Q# .|
-|[Дифференциация квантовых состояний путем измерений](https://github.com/microsoft/QuantumKatas/tree/master/Measurements)|Эти упражнения помогут вам в изучении измерения такта и ортогональных и неортогональных состояний. |
-|[Связанные измерения](https://github.com/microsoft/QuantumKatas/tree/master/JointMeasurements)|Сведения об Объединенных измерениях четности и об использовании операции [измерения](xref:microsoft.quantum.intrinsic.measure) для различения состояний тактов.|
+|[Определение квантовых вентилей](https://github.com/microsoft/QuantumKatas/tree/main/BasicGates)|Ряд упражнений, которые помогут вам ознакомиться с основными шлюзовыми шлюзами в Q# . Включает в себя упражнения для основных кубит и многокубитных шлюзов, смежных и контролируемых шлюзов, а также использование шлюзов для изменения состояния кубит.|
+|[Создание квантовой суперпозиции](https://github.com/microsoft/QuantumKatas/tree/main/Superposition)|Используйте эти упражнения, чтобы ознакомиться с концепцией и программированием в Q# . Включает в себя упражнения для основных кубит и многокубитных шлюзов, а также управления потоком и рекурсии в Q# .|
+|[Дифференциация квантовых состояний путем измерений](https://github.com/microsoft/QuantumKatas/tree/main/Measurements)|Эти упражнения помогут вам в изучении измерения такта и ортогональных и неортогональных состояний. |
+|[Связанные измерения](https://github.com/microsoft/QuantumKatas/tree/main/JointMeasurements)|Сведения об Объединенных измерениях четности и об использовании операции [измерения](xref:microsoft.quantum.intrinsic.measure) для различения состояний тактов.|
 
 ### <a name="algorithms"></a>Алгоритмы
 
-| ката | Описание: |
+| ката | Описание |
 |:-----|-------------|
-|[Квантовая телепортация](https://github.com/microsoft/QuantumKatas/tree/master/Teleportation)|В этой Ката рассматривается протокол, который позволяет обмениваться данными с состоянием такта, используя только классический обмен данными и ранее общий тактовый замкнутые.|
-|[Сверхплотное кодирование](https://github.com/microsoft/QuantumKatas/tree/master/SuperdenseCoding)|Очень плотная кодировка — это протокол, который позволяет передавать два бита классической информации путем отправки всего одного кубит с помощью ранее созданного такта замкнутые.  |
-|[Алгоритм Дойча — Йожи](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm)|Этот алгоритм является знаменитым в качестве одного из первых примеров алгоритма такта, который экспоненциально работает по сравнению с любым детерминированным классическим алгоритмом.|
-|[Изучение высокоуровневых свойств алгоритма поиска Гровера](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringGroversAlgorithm)|Высокоуровневое введение в один из наиболее известных алгоритмов в тактовых вычислениях. Она решает проблему поиска входных данных для черного ящика (Oracle), который создает определенный результат. |
-|[Реализация алгоритма поиска Гровера](https://github.com/microsoft/QuantumKatas/tree/master/GroversAlgorithm)|Этот Ката подробно более глубоко в алгоритм поиска Гровер и посвящен написанию Oracle, выполнению действий алгоритма и, наконец, объединению.|
-|[Решение реальных проблем с помощью алгоритма Гровер: проблемы с проблемами](https://github.com/microsoft/QuantumKatas/tree/master/SolveSATWithGrover)|Ряд упражнений, использующих алгоритм Гровер для решения реалистичных проблем, в качестве примера — использование [логических проблем, связанных с удовлетворенностью](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) (сб).  |
-|[Решение реальных проблем с помощью алгоритма Гровер: проблемы цветового выделения графа](https://github.com/microsoft/QuantumKatas/tree/master/GraphColoring)| Этот Ката дополнительно изучает алгоритм Гровер, на этот раз, чтобы решить [проблемы, связанные с удовлетворенностью ограничений](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem), с помощью проблемы цветового выделения графа в качестве примера. |
+|[Квантовая телепортация](https://github.com/microsoft/QuantumKatas/tree/main/Teleportation)|В этой Ката рассматривается протокол, который позволяет обмениваться данными с состоянием такта, используя только классический обмен данными и ранее общий тактовый замкнутые.|
+|[Сверхплотное кодирование](https://github.com/microsoft/QuantumKatas/tree/main/SuperdenseCoding)|Очень плотная кодировка — это протокол, который позволяет передавать два бита классической информации путем отправки всего одного кубит с помощью ранее созданного такта замкнутые.  |
+|[Алгоритм Дойча — Йожи](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm)|Этот алгоритм является знаменитым в качестве одного из первых примеров алгоритма такта, который экспоненциально работает по сравнению с любым детерминированным классическим алгоритмом.|
+|[Изучение высокоуровневых свойств алгоритма поиска Гровера](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringGroversAlgorithm)|Высокоуровневое введение в один из наиболее известных алгоритмов в тактовых вычислениях. Она решает проблему поиска входных данных для черного ящика (Oracle), который создает определенный результат. |
+|[Реализация алгоритма поиска Гровера](https://github.com/microsoft/QuantumKatas/tree/main/GroversAlgorithm)|Этот Ката подробно более глубоко в алгоритм поиска Гровер и посвящен написанию Oracle, выполнению действий алгоритма и, наконец, объединению.|
+|[Решение реальных проблем с помощью алгоритма Гровер: проблемы с проблемами](https://github.com/microsoft/QuantumKatas/tree/main/SolveSATWithGrover)|Ряд упражнений, использующих алгоритм Гровер для решения реалистичных проблем, в качестве примера — использование [логических проблем, связанных с удовлетворенностью](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) (сб).  |
+|[Решение реальных проблем с помощью алгоритма Гровер: проблемы цветового выделения графа](https://github.com/microsoft/QuantumKatas/tree/main/GraphColoring)| Этот Ката дополнительно изучает алгоритм Гровер, на этот раз, чтобы решить [проблемы, связанные с удовлетворенностью ограничений](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem), с помощью проблемы цветового выделения графа в качестве примера. |
 
 ### <a name="protocols-and-libraries"></a>Протоколы и библиотеки
 
-| ката | Описание: |
+| ката | Описание |
 |:-----|-------------|
-|[Протокол BB84 для распространения квантовых ключей](https://github.com/microsoft/QuantumKatas/tree/master/KeyDistribution_BB84)|Узнайте о и реализуйте протокол распределения тактовых ключей [BB84](https://en.wikipedia.org/wiki/BB84), используя Кубитс для обмена ключами шифрования. |
-|[Побитовое отражение ошибки исправления кода](https://github.com/microsoft/QuantumKatas/tree/master/QEC_BitFlipCode)|Изучите исправление ошибок такта с помощью простейших кодов ошибок в такте (Кек) — три-кубит-разрядный код отражения.|
-|[Оценка квантовых фаз](https://github.com/microsoft/QuantumKatas/blob/master/PhaseEstimation)|Алгоритмы оценки этапа — это некоторые из самых основных строительных блоков тактовых вычислений. Узнайте об оценке этапа с помощью этих упражнений, охватывающих оценку тактовой фазы и подготовку и запуск подпрограмм оценки этапа в Q# .|
-|[Тактовая арифметика: создание Ripple — выполнение методах](https://github.com/microsoft/QuantumKatas/blob/master/RippleCarryAdder)|Подробные серии упражнений, в которых рассматривается незначительное [Добавление на](https://en.wikipedia.org/wiki/Adder_(electronics)#Ripple-carry_adder) тактовый компьютер. Создайте adderй такт на месте, разверните его с помощью другого алгоритма и, наконец, создайте поддатчик на месте.   |
+|[Протокол BB84 для распространения квантовых ключей](https://github.com/microsoft/QuantumKatas/tree/main/KeyDistribution_BB84)|Узнайте о и реализуйте протокол распределения тактовых ключей [BB84](https://en.wikipedia.org/wiki/BB84), используя Кубитс для обмена ключами шифрования. |
+|[Побитовое отражение ошибки исправления кода](https://github.com/microsoft/QuantumKatas/tree/main/QEC_BitFlipCode)|Изучите исправление ошибок такта с помощью простейших кодов ошибок в такте (Кек) — три-кубит-разрядный код отражения.|
+|[Оценка квантовых фаз](https://github.com/microsoft/QuantumKatas/blob/main/PhaseEstimation)|Алгоритмы оценки этапа — это некоторые из самых основных строительных блоков тактовых вычислений. Узнайте об оценке этапа с помощью этих упражнений, охватывающих оценку тактовой фазы и подготовку и запуск подпрограмм оценки этапа в Q# .|
+|[Тактовая арифметика: создание Ripple — выполнение методах](https://github.com/microsoft/QuantumKatas/blob/main/RippleCarryAdder)|Подробные серии упражнений, в которых рассматривается незначительное [Добавление на](https://en.wikipedia.org/wiki/Adder_(electronics)#Ripple-carry_adder) тактовый компьютер. Создайте adderй такт на месте, разверните его с помощью другого алгоритма и, наконец, создайте поддатчик на месте.   |
 
 ### <a name="entanglement-games"></a>Игры с запутанностью
 
-| ката | Описание: |
+| ката | Описание |
 |:-----|-------------|
-|[Игра CHSH](https://github.com/microsoft/QuantumKatas/tree/master/CHSHGame)|Изучите тактовую замкнутые с реализацией игры [ЧШ](https://en.wikipedia.org/wiki/CHSH_inequality) . Эта [Нелокальная](https://en.wikipedia.org/wiki/Quantum_refereed_game) игра показывает, как можно использовать тактовый замкнутые, чтобы увеличить вероятность игрока, за исключением того, что было бы возможно благодаря чисто классической стратегии.|
-|[Игра GHZ](https://github.com/microsoft/QuantumKatas/tree/master/GHZGame)|Игра с частотой ГГц является другой нелокальной игрой, но включает три игрока.|
-|[Игра "Волшебный квадрат" Мермина — Переса](https://github.com/microsoft/QuantumKatas/tree/master/MagicSquareGame)|Серия упражнений, использующих серию [псевдо-](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy#The_Mermin%E2%80%93Peres_magic_square_game) трансляций для решения волшебной квадратной игры.  |
+|[Игра CHSH](https://github.com/microsoft/QuantumKatas/tree/main/CHSHGame)|Изучите тактовую замкнутые с реализацией игры [ЧШ](https://en.wikipedia.org/wiki/CHSH_inequality) . Эта [Нелокальная](https://en.wikipedia.org/wiki/Quantum_refereed_game) игра показывает, как можно использовать тактовый замкнутые, чтобы увеличить вероятность игрока, за исключением того, что было бы возможно благодаря чисто классической стратегии.|
+|[Игра GHZ](https://github.com/microsoft/QuantumKatas/tree/main/GHZGame)|Игра с частотой ГГц является другой нелокальной игрой, но включает три игрока.|
+|[Игра "Волшебный квадрат" Мермина — Переса](https://github.com/microsoft/QuantumKatas/tree/main/MagicSquareGame)|Серия упражнений, использующих серию [псевдо-](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy#The_Mermin%E2%80%93Peres_magic_square_game) трансляций для решения волшебной квадратной игры.  |
 
 ## <a name="resources"></a>Ресурсы
 

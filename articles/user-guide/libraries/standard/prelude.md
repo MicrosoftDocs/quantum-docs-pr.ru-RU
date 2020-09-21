@@ -2,19 +2,19 @@
 title: Встроенные операции и функции в КДК
 description: Сведения о внутренних операциях и функциях в КДК, включая классические функции и единые операции поворота и измерения.
 author: QuantumWriter
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.libraries.standard.prelude
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 4eb10e82a64381c503703be440be90e60f3a8622
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: dd507d0c644ae711a5e5a1dff9156f571cb0fa92
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863726"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833553"
 ---
 # <a name="the-prelude"></a>Версионного #
 
@@ -215,7 +215,7 @@ $T $ Gate в свою очередь реализуется <xref:microsoft.quan
 Для удобства версионного также предоставляет две другие операции для измерения Кубитс.
 Во-первых, поскольку выполнение однокубитных измерений довольно распространено, версионного определяет сокращение для этого случая.
 <xref:microsoft.quantum.intrinsic.m>Операция измеряет оператор паули $Z $ в одном кубит и имеет сигнатуру `(Qubit => Result)` .
-`M(q)` эквивалентно правилу `Measure([PauliZ], [q])`.
+`M(q)` равно `Measure([PauliZ], [q])`.
 
 <xref:microsoft.quantum.measurement.multim>Оператор паули $Z $ измеряется *отдельно* для каждого массива Кубитс, возвращая *массив* `Result` значений, полученных для каждого кубит.
 В некоторых случаях это можно оптимизировать. Он имеет подпись ( `Qubit[] => Result[])` .
@@ -240,7 +240,7 @@ return rs;
 
 ### <a name="math"></a>Математический ###
 
-<xref:microsoft.quantum.math>Пространство имен предоставляет множество полезных функций из [ `System.Math` класса](https://docs.microsoft.com/dotnet/api/system.math?view=netframework-4.7.1)библиотеки базовых классов .NET.
+<xref:microsoft.quantum.math>Пространство имен предоставляет множество полезных функций из [ `System.Math` класса](https://docs.microsoft.com/dotnet/api/system.math?view=netframework-4.7.1&preserve-view=true)библиотеки базовых классов .NET.
 Эти функции можно использовать так же, как и любые другие Q# функции:
 
 ```qsharp

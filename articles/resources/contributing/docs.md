@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing.docs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 1110f32a6486de1a346b115fa928a098749b6690
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 20e9f8126a290f52701b6b0e525d7669a605d4c9
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866882"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759685"
 ---
 # <a name="improving-documentation"></a>Улучшение документации
 
@@ -52,7 +52,7 @@ ms.locfileid: "87866882"
 :::code language="qsharp" source="~/quantum/samples/algorithms/chsh-game/Game.qs" range="4-8":::
 ```
 
-Эта команда импортирует строки 4 – 8 [ `Game.qs` файла из `chsh-game` примера](https://github.com/microsoft/Quantum/blob/master/samples/algorithms/chsh-game/Game.qs), помечая их как Q# код для выделения синтаксиса.
+Эта команда импортирует строки 4 – 8 [ `Game.qs` файла из `chsh-game` примера](https://github.com/microsoft/Quantum/blob/main/samples/algorithms/chsh-game/Game.qs), помечая их как Q# код для выделения синтаксиса.
 С помощью этой команды можно избежать дублирования кода между концептуальными статьями и репозиторием примеров, чтобы образец кода в документации всегда был как можно более актуальным.
 
 ## <a name="contributing-to-the-api-references"></a>Дополнение к ссылкам на API
