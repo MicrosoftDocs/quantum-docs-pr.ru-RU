@@ -9,12 +9,12 @@ ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 222fa7d0d33d4ac6c15e9ee9e6e97f380867a145
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 332d9f3134f2b69113668629857af32c814d3263
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868530"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759890"
 ---
 # <a name="data-structures-and-modeling"></a>Структуры и моделирование данных #
 
@@ -160,8 +160,8 @@ is Adj + Ctl {
 
 > [!TIP]
 > В примерах рассматриваются оба типа Oracle, описанные ниже.
-> Дополнительные сведения о Oracle с непрерывным запросом см. в [примере **фасистиматион** ](https://github.com/microsoft/Quantum/tree/master/samples/characterization/phase-estimation).
-> Дополнительные сведения о дискретных запросах Oracle см. в примере [ **исингфасистиматион** ](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/phase-estimation).
+> Дополнительные сведения о Oracle с непрерывным запросом см. в [примере **фасистиматион** ](https://github.com/microsoft/Quantum/tree/main/samples/characterization/phase-estimation).
+> Дополнительные сведения о дискретных запросах Oracle см. в примере [ **исингфасистиматион** ](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/phase-estimation).
 
 Первый тип Oracle, который вызывает дискретный запрос Oracle и представлен с определяемым пользователем типом <xref:microsoft.quantum.oracles.discreteoracle> , просто включает в себя единую матрицу.
 Если $U $ является единым, для которой мы хотим оценить, то Oracle для $U $ является просто подподпрограммой, реализующей $U $.
@@ -211,8 +211,8 @@ $ $ \бегин{алигн} U (t) & = \лефт (e ^ {-iH \_ 0 t/r} e ^ {-IH \_ 
 Библиотека динамического моделирования генератора предоставляет платформу для систематической кодирования сложных генераторов с точки зрения более простых генераторов. Такое описание может затем передаваться, скажем, в библиотеку моделирования, чтобы реализовать развитие времени с помощью выбранного алгоритма моделирования с множеством деталей, которые автоматически позаботится.
 
 > [!TIP]
-> Библиотека динамического генератора, описанная ниже, рассматривается в примерах. Пример, основанный на модели Исинг, см. в примере [ **исингженераторс** ](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/generators).
-> Пример, основанный на молекулярное водорода, см. в примерах [**H2SimulationCmdLine**](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/command-line) и [**H2SimulationGUI**](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/gui) .
+> Библиотека динамического генератора, описанная ниже, рассматривается в примерах. Пример, основанный на модели Исинг, см. в примере [ **исингженераторс** ](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/generators).
+> Пример, основанный на молекулярное водорода, см. в примерах [**H2SimulationCmdLine**](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/command-line) и [**H2SimulationGUI**](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/gui) .
 
 ### <a name="complete-description-of-a-generator"></a>Полное описание генератора ###
 

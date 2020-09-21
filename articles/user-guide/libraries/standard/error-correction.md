@@ -3,18 +3,18 @@ title: Исправление ошибок в Q# стандартных библ
 description: Узнайте, как использовать коды исправления ошибок в программах, Q# защищая состояние Кубитс.
 author: QuantumWriter
 uid: microsoft.quantum.libraries.error-correction
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8b1f008793281121bc547d1a6ac3b960feb082ab
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: dad0db4d2aab27e5ae46d4df10ee050f785d8bb8
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868497"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835559"
 ---
 # <a name="error-correction"></a>Исправление ошибок #
 
@@ -78,7 +78,7 @@ Q#Платформа Canon предоставляет платформу для 
 > Полное введение в стабилизер formal выходит за рамки этого раздела.
 > Мы будем называть читателей, заинтересованных в изучении более [готтесман 2009](https://arxiv.org/abs/0904.2557).
 
-## <a name="representing-error-correcting-codes-in-no-locq"></a>Представление кодов коррекции ошибок вQ# ##
+## <a name="representing-error-correcting-codes-in-no-locq"></a>Представление кодов коррекции ошибок в Q# ##
 
 Чтобы помочь указать коды исправления ошибок, в Q# Canon предусмотрено несколько различных определяемых пользователем типов:
 
@@ -120,6 +120,6 @@ using (scratch = Qubit[nScratch]) {
 }
 ```
 
-Мы подробно рассмотрим это в [примере кода побитового отражения](https://github.com/microsoft/Quantum/tree/master/samples/error-correction/bit-flip-code).
+Мы подробно рассмотрим это в [примере кода побитового отражения](https://github.com/microsoft/Quantum/tree/main/samples/error-correction/bit-flip-code).
 
 Помимо кода для побитового отражения, Q# Canon предоставляется с реализациями [кубит идеального кода](https://arxiv.org/abs/quant-ph/9602019)и [семи кубит кодом](https://arxiv.org/abs/quant-ph/9705052), оба из которых могут исправить произвольную ошибку с одним кодом кубит.

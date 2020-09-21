@@ -1,24 +1,24 @@
 ---
-title: Переменные вQ#
-description: Описание заливки
+title: Переменные в Q#
+description: Узнайте, как работать с различными переменными в Q#
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.variables
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 00af0989cd5a1f9ccc7d9f2545acd0d256bc7eb9
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: bb87f36d3c9b7df195f64e85151e833d494ea945
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867851"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835882"
 ---
-# <a name="variables-in-no-locq"></a>Переменные вQ#
+# <a name="variables-in-no-locq"></a>Переменные в Q#
 
-Q#различает изменяемые и неизменяемые символы или *переменные*, которые привязаны к выражениям или присвоены им.
+Q# различает изменяемые и неизменяемые символы или *переменные*, которые привязаны к выражениям или присвоены им.
 Как правило, использование неизменяемых символов рекомендуется, поскольку оно позволяет компилятору выполнять более оптимизацию.
 
 Левая часть привязки состоит из кортежа символов и правого края выражения.
@@ -58,7 +58,7 @@ let measurementOperator = [PauliX, PauliZ, PauliZ, PauliX, PauliI];
 
 #### <a name="apply-and-reassign-statements"></a>Операторы применения и повторного назначения
 
-Конкретный разновидность `set` оператора *Apply-and-reassignя* предоставляет удобный способ объединения, если правая часть состоит из приложения бинарного оператора, и результат должен быть повторно привязан к оператору слева. например следующие.
+Конкретный разновидность `set` оператора *Apply-and-reassignя* предоставляет удобный способ объединения, если правая часть состоит из приложения бинарного оператора, и результат должен быть повторно привязан к оператору слева. Например, примененная к объекту директива
 
 ```qsharp
 mutable counter = 0;
@@ -237,6 +237,6 @@ if (a == b) {
 ...
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [работе с Кубитс](xref:microsoft.quantum.guide.qubits) в Q# .

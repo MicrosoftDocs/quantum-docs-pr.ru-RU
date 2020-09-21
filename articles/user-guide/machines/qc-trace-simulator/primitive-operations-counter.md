@@ -1,24 +1,24 @@
 ---
 title: Счетчик примитивных операций — пакет средств разработки тактов
-description: Сведения о счетчике Microsoft КДК-примитивных операций, который использует симулятор трассировки тактов для отслеживания выполнения примитивов, используемых операциями в Q# программе.
+description: Сведения о счетчике примитивных операций Microsoft КДК, который использует симулятор трассировки тактов для отслеживания простых процессов, используемых операциями в Q# программе.
 author: vadym-kl
-ms.author: vadym@microsoft.com
+ms.author: vadym
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.primitive-counter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ceb70cef6dc0a4530b992b5a529248a8b283c17f
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 8ee9ce25e680112e2f3c68d82ae9267c1b0fb355
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868242"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835984"
 ---
 # <a name="quantum-trace-simulator-primitive-operations-counter"></a>Симулятор трассировки тактов: Счетчик примитивных операций
 
-Счетчик операции примитива является частью [имитатора тактовой трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro)пакета разработки тактов. Он подсчитывает количество простых выполнений, используемых каждой операцией, вызванной в тактовой программе. 
+Счетчик операции примитива является частью [имитатора тактовой трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro)пакета разработки тактов. Он подсчитывает количество простых процессов, используемых каждой операцией, вызванной в тактовой программе. 
 
 Все <xref:microsoft.quantum.intrinsic> операции выражаются с точки зрения однокубитного вращения, T Operations, кубит Клиффорд Operations, кнот операций и измерений Multi-кубит Паули observable. Счетчик примитивных операций выполняет статистическую обработку и собирает статистические данные по всем краям [графа вызовов](https://en.wikipedia.org/wiki/Call_graph)операции.
 

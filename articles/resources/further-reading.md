@@ -1,20 +1,20 @@
 ---
 title: Учебные материалы по тактовым вычислениям | Документация Майкрософт
 description: Список ссылок с подробными сведениями о работе с тактовыми вычислениями, если вы хотите узнать больше о программировании на тактовом компьютере.
-author: QuantumWriter
+author: bradben
 uid: microsoft.quantum.more-information
-ms.author: nawiebe@microsoft.com
+ms.author: v-benbra
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 7c5063fccbe73478aeb917e0cd2fe2f7fe51c070
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 91b4c052fd7f20906433a4bb481f113acbe789ea
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866848"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834182"
 ---
 # <a name="more-quantum-computing-learning-resources"></a>Дополнительные учебные ресурсы по обработке тактов
 

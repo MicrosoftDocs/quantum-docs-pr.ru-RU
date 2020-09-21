@@ -2,19 +2,19 @@
 title: Имитатор Тоффоли Simulator — пакет средств разработки тактов
 description: Сведения о симуляторе Тоффоли Microsoft КДК — имитаторе Специального целевого симулятора, который можно использовать с миллионами Кубитс.
 author: alan-geller
-ms.author: ageller@microsoft.com
+ms.author: ageller
 ms.date: 6/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.toffoli-simulator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 6a0885035c12a99ae43533f04cdc95c5c529380a
-ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
+ms.openlocfilehash: 82882f01d1b5c036faee71f18a18b2595107ddb7
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88992219"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835916"
 ---
 # <a name="quantum-development-kit-qdk-toffoli-simulator"></a>Симулятор Тоффоли для пакета разработки такта (КДК)
 

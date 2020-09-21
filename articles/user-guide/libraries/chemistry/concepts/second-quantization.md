@@ -1,20 +1,20 @@
 ---
 title: Второй дискретизация
 description: Узнайте о втором дискретизация подходе к моделированию электронных структур в процессе программирования.
-author: nathanwiebe2
-ms.author: nawiebe@microsoft.com
+author: bradben
+ms.author: v-benbra
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.secondquantization
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ba77c499d6830b1f78bba39e20b15c4ebe9433fc
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 6becd348f7b3957cb60b16bbd5a28228527e1d4c
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869466"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835814"
 ---
 # <a name="second-quantization"></a>Второй дискретизация
 
@@ -77,7 +77,7 @@ ms.locfileid: "87869466"
 ```
 
 Для систем фермионик принцип исключения Паули предотвращает присутствие более одного электронного представления в каком-Орбитал в то же время.
-Это означает, что можно написать два юридических состояния для $ \ psi_1 $ AS \бегин{екуатион} \ psi_1 \ригхтарров \бегин{Касес} \кет {0} _1 & \текст{ИФ $ \ psi_1 $ не занят,}\\\
+Это означает, что можно написать два юридических состояния для $ \ psi_1 $ AS \бегин{екуатион} \ psi_1 \ригхтарров \бегин{Касес} \кет {0} _1 & \текст{ИФ $ \ psi_1 $ не занят,} \\\
 \кет {1} _1 & \текст{ИФ $ \ psi_1 $ занято.} \енд{Касес} \енд{екуатион} эта кодировка отлично подходит для тактовых компьютеров, так как это означает, что мы можем хранить электронную должность как один тактовый бит.
 
 Состояния профессий для орбит $2N $ Spin также могут храниться в $2N $ Кубитс.
