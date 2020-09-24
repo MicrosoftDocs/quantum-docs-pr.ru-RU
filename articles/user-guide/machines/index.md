@@ -2,19 +2,19 @@
 title: Квантовые симуляторы и программы Q#
 description: Описание квантовых симуляторов, доступных в качестве целевых компьютеров для программ Q#.
 author: QuantumWriter
-ms.author: Alan.Geller@microsoft.com
+ms.author: v-benbra
 ms.date: 6/17/2020
 ms.topic: article
 uid: microsoft.quantum.machines
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 77401ca3642b89d708f338f852dc60bf7346b87b
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 6a2a4bb829301f9db9bd14f3240556a403b9a54f
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868310"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833425"
 ---
 # <a name="quantum-simulators"></a>Квантовые симуляторы
 
@@ -24,7 +24,7 @@ ms.locfileid: "87868310"
 
 ## <a name="the-quantum-development-kit-qdk-quantum-simulators"></a>Пакет средств разработки Quantum (QDK) — квантовые симуляторы
 
-Квантовый симулятор выполняет реализации квантовых примитивов для алгоритма. Сюда входят такие примитивные операции, такие как `H`, `CNOT` и `Measure`, а также управление кубитами и их отслеживание. QDK включает разные классы квантовых симуляторов, которые представляют разные модели выполнения для одного и того же квантового алгоритма. 
+Квантовый симулятор выполняет реализации квантовых примитивов для алгоритма. Сюда входят такие примитивные операции, такие как `H`, `CNOT` и `Measure`, а также управление кубитами и их отслеживание. Пакет QDK включает разные классы квантовых симуляторов, которые представляют разные модели выполнения для одного и того же квантового алгоритма. 
 
 
 Каждый тип квантового симулятора может предоставлять различные реализации этих примитивов. Например, [симулятор полного состояния](xref:microsoft.quantum.machines.full-state-simulator) выполняет квантовый алгоритм путем полной имитации [вектора квантового состояния](xref:microsoft.quantum.glossary#quantum-state), в то время как [симулятор трассировки квантового компьютера](xref:microsoft.quantum.machines.qc-trace-simulator.intro) не учитывает фактическое квантовое состояние. Вместо этого он отслеживает использование шлюза, кубита и других ресурсов для алгоритма.

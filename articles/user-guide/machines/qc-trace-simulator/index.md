@@ -2,19 +2,19 @@
 title: Квантовый симулятор трассировки — пакет средств разработки Quantum
 description: Сведения о том, как с помощью симулятора трассировки квантового компьютера от Майкрософт выполнять отладку классического кода и оценивать требования к ресурсам для программы Q#.
 author: vadym-kl
-ms.author: vadym@microsoft.com
+ms.author: vadym
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 5d5efef037ff236bd040dfd88e94f7f3dd331aef
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 54a1f63461cfcc8146f7dc4d18d321238d77454d
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868225"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833356"
 ---
 # <a name="microsoft-quantum-development-kit-qdk-quantum-trace-simulator"></a>Пакет средств разработки Microsoft Quantum (QDK) — квантовый симулятор трассировки
 
@@ -86,7 +86,7 @@ QDK включает пять средств, которые можно испо
 |-----| -----|
 |[Средство проверки уникальных значений](xref:microsoft.quantum.machines.qc-trace-simulator.distinct-inputs) |Проверяет наличие потенциальных конфликтов с использованием общих кубитов. |
 |[Средство проверки недействительных кубитов](xref:microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits)  |Проверяет, применяет ли программа операцию к кубиту, который уже выпущен. |
-|[Счетчик примитивных операций](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter)  | Подсчитывает количество примитивных выполнений, используемых каждой операцией, вызываемой в квантовой программе.  |
+|[Счетчик примитивных операций](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter)  | Подсчитывает количество примитивных процессов, которые используются каждой операцией, вызываемой в квантовой программе.  |
 |[Измеритель глубины](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)  |Собирает счетчики, представляющие нижнюю границу глубины каждой операции, вызываемой в квантовой программе.   |
 |[Измеритель ширины](xref:microsoft.quantum.machines.qc-trace-simulator.width-counter)  |Подсчитывает количество кубитов, выделенных и заимствованных каждой операцией в квантовой программе. |
 
