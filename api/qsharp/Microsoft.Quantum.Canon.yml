@@ -387,6 +387,22 @@ operations:
     Применяет операцию к первым двум Кубитс в регистре.
 
     Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applytohead
+  summary: Применяет операцию к первому элементу массива.
+- uid: microsoft.quantum.canon.applytoheada
+  summary: Применяет операцию к первому элементу массива.
+- uid: microsoft.quantum.canon.applytoheadc
+  summary: Применяет операцию к первому элементу массива.
+- uid: microsoft.quantum.canon.applytoheadca
+  summary: Применяет операцию к первому элементу массива.
+- uid: microsoft.quantum.canon.applytomost
+  summary: Применяет операцию ко всему элементу массива, кроме последнего.
+- uid: microsoft.quantum.canon.applytomosta
+  summary: Применяет операцию ко всему элементу массива, кроме последнего.
+- uid: microsoft.quantum.canon.applytomostc
+  summary: Применяет операцию ко всему элементу массива, кроме последнего.
+- uid: microsoft.quantum.canon.applytomostca
+  summary: Применяет операцию ко всему элементу массива, кроме последнего.
 - uid: microsoft.quantum.canon.applytopartition
   summary: Применяет пару операций к заданному разделу регистра на две части.
 - uid: microsoft.quantum.canon.applytopartitiona
@@ -404,6 +420,14 @@ operations:
     Применяет пару операций к заданному разделу регистра на две части.
 
     Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applytorest
+  summary: Применяет операцию ко всему элементу массива, кроме первого элемента.
+- uid: microsoft.quantum.canon.applytoresta
+  summary: Применяет операцию ко всему элементу массива, кроме первого элемента.
+- uid: microsoft.quantum.canon.applytorestc
+  summary: Применяет операцию ко всему элементу массива, кроме первого элемента.
+- uid: microsoft.quantum.canon.applytorestca
+  summary: Применяет операцию ко всему элементу массива, кроме первого элемента.
 - uid: microsoft.quantum.canon.applytosubregister
   summary: Применяет операцию к подрегистру регистра с Кубитс, заданным массивом своих индексов.
 - uid: microsoft.quantum.canon.applytosubregistera
@@ -421,6 +445,14 @@ operations:
     Применяет операцию к подрегистру регистра с Кубитс, заданным массивом своих индексов.
 
     Модификатор `CA` указывает, что операция является управляемой и аджоинтабле.
+- uid: microsoft.quantum.canon.applytotail
+  summary: Применяет операцию к последнему элементу массива.
+- uid: microsoft.quantum.canon.applytotaila
+  summary: Применяет операцию к последнему элементу массива.
+- uid: microsoft.quantum.canon.applytotailc
+  summary: Применяет операцию к последнему элементу массива.
+- uid: microsoft.quantum.canon.applytotailca
+  summary: Применяет операцию к последнему элементу массива.
 - uid: microsoft.quantum.canon.applywith
   summary: При выполнении двух операций применяется одна, как сопряженная с другой.
 - uid: microsoft.quantum.canon.applywitha
@@ -581,9 +613,9 @@ newtypes:
 - uid: microsoft.quantum.canon.resultstack
   summary: "\n> [!WARNING]\n> Не рекомендуется\n\nРесултстакк является устаревшим."
 metadata:
-  ms.openlocfilehash: 969eec6767f3323e0470b0e968051bafb92d29ae
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 7346d86d3ff9db2146f37a3f402b60faebe442b7
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89341570"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91464442"
