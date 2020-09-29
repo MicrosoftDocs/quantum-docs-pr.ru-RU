@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 5036b4d401bb775a7fee2252ca26e7725bc19004
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 28e880445bf61150d7940730009a5482298adae2
+ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834148"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91492359"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -23,6 +23,24 @@ ms.locfileid: "90834148"
 См. [инструкции по установке](xref:microsoft.quantum.install).
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
+
+## <a name="version-01220092803"></a>Версия 0.12.20092803
+
+*Дата выпуска: 29 сентября 2020 г.*
+
+Этот выпуск включает следующие обновления:
+
+- Объявление и черновик [промежуточного представления такта (Кир)](https://github.com/microsoft/qsharp-language/tree/main/Specifications/QIR#quantum-intermediate-representation-qir) , предназначенного для общего формата в разных внешних и серверных интерфейсах. См. также нашу запись в [блоге](https://devblogs.microsoft.com/qsharp/introducing-quantum-intermediate-representation-qir) по Кир.
+- Откройте наш новый [ Q# репозиторий языка](https://github.com/microsoft/qsharp-language) , содержащий также полную [ Q# документацию](https://github.com/microsoft/qsharp-language/tree/main/Specifications/Language#q-language).
+- Улучшения производительности для Куантумсимулатор для программ, включающих большое количество Кубитс: лучшее применение решений по слиянию в условии. Улучшенная параллелизации в системе Linux; Добавлено интеллектуальное планирование выполнения шлюза; исправления ошибок.
+- Функции IntelliSense теперь поддерживаются для Q# файлов в Visual Studio и Visual Studio Code даже без файла проекта.
+- Различные Q# улучшения взаимодействия с/Писон и исправления ошибок, в том числе улучшенная поддержка типов данных NumPy.
+- Усовершенствования пространства имен Microsoft. тактов. Arrays (см. раздел [Microsoft/куантумлибрариес # 313](https://github.com/microsoft/QuantumLibraries/issues/313)).
+- Добавлен новый [Пример повтора до успешного выполнения](https://github.com/microsoft/Quantum/tree/main/samples/algorithms/repeat-until-success) , использующий только два Кубитс.
+
+С момента последнего выпуска ветвь по умолчанию в каждом репозитории с открытым исходным кодом переименована в `main` .
+
+См. полный список закрытых вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+closed%3A2020-08-24..2020-09-24), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+closed%3A2020-08-24..2020-09-24), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+closed%3A2020-08-24..2020-09-24), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+closed%3A2020-08-24..2020-09-24), [I Q# ](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+closed%3A2020-08-24..2020-09-24) и [Катас](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+closed%3A2020-08-24..2020-09-24).
 
 ## <a name="version-01220082513"></a>Версия 0.12.20082513
 
