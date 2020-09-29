@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.zipped
+name: Zipped
+type: function
+namespace: microsoft.quantum.arrays
+summary: При наличии двух массивов возвращает новый массив пар, в котором каждая пара содержит элемент из каждого исходного массива.
+examples: >-
+  ```qsharp
+
+  let left = [1, 3, 71];
+
+  let right = [false, true];
+
+  let pairs = Zipped(left, right); // [(1, false), (3, true)]
+
+  ```
+syntax: "function Zipped (left : 'T[], right : 'U[]) : ('T, 'U)[]"
+input:
+  content: "(left : 'T[], right : 'U[])"
+  types:
+  - name: left
+    summary: Массив, содержащий значения для первого элемента каждого кортежа.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+  - name: right
+    summary: Массив, содержащий значения для второго элемента каждого кортежа.
+    isArray: true
+    uid: "'U"
+    isLocal: true
+output:
+  content: ('T, 'U)[]
+  types:
+  - summary: Массив, содержащий пары форм `(left[idx], right[idx])` для каждого из них `idx` . Если два массива не имеют одинаковую длину, выходные данные будут иметь длину до более короткой из входных значений.
+    isArray: true
+    types:
+    - uid: "'T"
+      isLocal: true
+    - uid: "'U"
+      isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: Тип элементов левого массива.
+- uid: "'U"
+  summary: Тип правых элементов массива.
+seeAlso:
+- microsoft.quantum.arrays.zipped3
+- microsoft.quantum.arrays.zipped4
+- microsoft.quantum.arrays.unzipped
+metadata:
+  ms.openlocfilehash: 933bf0d7f80436f0e942f84ad89b05ccd5c91620
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91494526"

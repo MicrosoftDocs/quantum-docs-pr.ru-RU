@@ -1,0 +1,81 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.sorted
+name: Sorted
+type: function
+namespace: microsoft.quantum.arrays
+summary: При наличии массива возвращает элементы этого массива, отсортированные по заданной функции сравнения.
+remarks: >-
+  `comparison`Предполагается, что функция является транзитивным, например, если `comparison(a, b)` `comparison(b, c)` `comparison(a, c)` предполагается и. Если это свойство не удерживает, выходные данные этой функции могут быть неправильными.
+
+
+  Так как это функция, результаты полностью детерминированные, даже если два элемента считаются равными по отношению к, `comparison` то есть когда `comparison(a, b)` и `comparison(b, a)` оба являются `true` .
+
+  В частности, сортировка, выполняемая этой функцией, гарантированно стабильной, поэтому если два элемента `a` и `b` выполняются в этом порядке в `array` и считаются равными в `comparison` , то `a` `b` в выходных данных также будет появляться.
+
+
+  Пример:
+
+
+  ```Q#
+
+  function LastDigitLessThanOrEqual(left : Int, right : Int) : Bool {
+      return LessThanOrEqualI(
+          left % 10, right % 10
+      );
+  }
+
+
+  function SortedByLastDigit() : Int[] {
+      return Sorted(LastDigitLessThanOrEqual, [3, 37, 11, 17]);
+  }
+
+  // returns [11, 3, 37, 17].
+
+  ```
+examples: >-
+  Следующий фрагмент кода сортирует массив целых чисел в возрастающем порядке:
+
+
+  ```Q#
+
+  let sortedArray = Sorted(LessThanOrEqualI, [3, 17, 11, -201, -11]);
+
+  ```
+syntax: "function Sorted (comparison : (('T, 'T) -> Bool), array : 'T[]) : 'T[]"
+input:
+  content: "(comparison : (('T, 'T) -> Bool), array : 'T[])"
+  types:
+  - name: comparison
+    summary: Функция, которая сравнивает два элемента, которые `a` считаются меньше или равными, `b` Если `comparison(a, b)` имеет значение `true` .
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+  - name: array
+    summary: Массив для сортировки.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: Тип каждого элемента `array` .
+metadata:
+  ms.openlocfilehash: d20fad7286845f21dbb7e609d2bec37ee14adb90
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91494593"
