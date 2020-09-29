@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.mappedoverrange
+name: MappedOverRange
+type: function
+namespace: microsoft.quantum.arrays
+summary: При наличии диапазона и функции, принимающей в качестве входных данных целое число, возвращает новый массив, состоящий из изображений значений диапазона в функции.
+remarks: "Функция определена для универсальных типов, т. е. каждый раз, когда у нас есть функция, `mapper: Int -> 'T` можно сопоставлять значения диапазона и создавать массив типа `'T[]` ."
+examples: >-
+  В этом примере добавляется 1 к диапазону четных чисел:
+
+
+  ```Q#
+
+  let numbers = MappedOverRange(PlusI(1, _), 0..2..10);
+
+  // numbers = [1, 3, 5, 7, 9, 11]
+
+  ```
+syntax: "function MappedOverRange (mapper : (Int -> 'T), range : Range) : 'T[]"
+input:
+  content: "(mapper : (Int -> 'T), range : Range)"
+  types:
+  - name: mapper
+    summary: Функция из `Int` в `'T` , используемая для отображения значений диапазона.
+    isFunction: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Int
+    output:
+      types:
+      - uid: "'T"
+        isLocal: true
+  - name: range
+    summary: Диапазон целых чисел.
+    isPrimitive: true
+    uid: Range
+output:
+  content: "'T[]"
+  types:
+  - summary: Массив `'T[]` элементов, сопоставленных с `mapper` функцией.
+    isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: Тип результата `mapper` функции.
+seeAlso:
+- microsoft.quantum.arrays.mapped
+metadata:
+  ms.openlocfilehash: fe918a8f7e74d49834f992442344e99dbcd33422
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91494626"

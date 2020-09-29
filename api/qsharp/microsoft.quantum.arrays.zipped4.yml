@@ -1,0 +1,63 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.zipped4
+name: Zipped4
+type: function
+namespace: microsoft.quantum.arrays
+summary: При наличии четырех массивов возвращает новый массив из 4 кортежей таким, что каждый 4 кортежа содержит элемент из каждого исходного массива.
+syntax: "function Zipped4 (first : 'T1[], second : 'T2[], third : 'T3[], fourth : 'T4[]) : ('T1, 'T2, 'T3, 'T4)[]"
+input:
+  content: "(first : 'T1[], second : 'T2[], third : 'T3[], fourth : 'T4[])"
+  types:
+  - name: first
+    summary: Массив, содержащий значения для первого элемента каждого кортежа.
+    isArray: true
+    uid: "'T1"
+    isLocal: true
+  - name: second
+    summary: Массив, содержащий значения для второго элемента каждого кортежа.
+    isArray: true
+    uid: "'T2"
+    isLocal: true
+  - name: third
+    summary: Массив, содержащий значения для третьего элемента каждого кортежа.
+    isArray: true
+    uid: "'T3"
+    isLocal: true
+  - name: fourth
+    summary: Массив, содержащий значения для четвертого элемента каждого кортежа.
+    isArray: true
+    uid: "'T4"
+    isLocal: true
+output:
+  content: ('T1, 'T2, 'T3, 'T4)[]
+  types:
+  - summary: Массив, содержащий 4 кортежа формы `(first[idx], second[idx], third[idx], fourth[idx])` для каждого из них `idx` . Если четыре массива не имеют одинаковую длину, выходные данные будут иметь длину до более короткой из входных значений.
+    isArray: true
+    types:
+    - uid: "'T1"
+      isLocal: true
+    - uid: "'T2"
+      isLocal: true
+    - uid: "'T3"
+      isLocal: true
+    - uid: "'T4"
+      isLocal: true
+typeParameters:
+- uid: "'T1"
+  summary: Тип первого элемента массива.
+- uid: "'T2"
+  summary: Тип второго элемента массива.
+- uid: "'T3"
+  summary: Тип третьего элемента массива.
+- uid: "'T4"
+  summary: Тип четвертых элементов массива.
+seeAlso:
+- microsoft.quantum.arrays.zipped
+- microsoft.quantum.arrays.zipped3
+metadata:
+  ms.openlocfilehash: 12c6501fd173798718b2ab14d14d93b5d53361b6
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91494516"
