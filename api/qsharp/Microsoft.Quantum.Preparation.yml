@@ -85,16 +85,16 @@ operations:
     Он подготавливает заданный кубит в состоянии $ \болдоне/$2, применяя канал деполаризинг $ $ \бегин{алигн} \Омега (\рхо) \масрел{: =} \фрак {1} {4} \ sum_ {\му \ин \{ 0, 1, 2, 3 \} } \сигма \_ {\му} \rho \sigma \_ {\mu} ^ {\dagger}, \end{align} $ $, где $ \sigma \_ i $ — $i $ TH Pauli, где $ \rho $ — оператор плотности, представляющий смешанное состояние.
 - uid: microsoft.quantum.preparation.prepareuniformsuperposition
   summary: >-
-    Создает равномерное перестановку по состояниям, закодированным с 0 по `nIndices` .
+    Создает равномерное перестановку по состояниям, закодированным с 0 по `nIndices - 1` .
 
 
     То есть, это единое $U $ создает равномерное перестановку для всех состояний $0 $ в $M-$1, учитывая входное состояние $ \ket{0\cdots 0} $. Иными словами, $ $ \бегин{алигн} У\кет {0} = \фрак {1} {\скрт{м}}\ sum_ {j = 0} ^ {M-1} \кет{ж}.
 
     \енд{алигн} $ $.
 metadata:
-  ms.openlocfilehash: 46bed785972355044c9ef9765ab957ca6d31e5f1
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 35645ba3566dbe0b8e9efa76fa4c3316ce7d5e47
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89339887"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91464323"

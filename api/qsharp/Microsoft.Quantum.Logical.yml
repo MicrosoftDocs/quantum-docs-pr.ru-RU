@@ -45,6 +45,8 @@ functions:
   summary: Возвращает значение true только в том случае, если число меньше или равно другому числу.
 - uid: microsoft.quantum.logical.lessthanorequall
   summary: Возвращает значение true только в том случае, если число меньше или равно другому числу.
+- uid: microsoft.quantum.logical.lexographiccomparison
+  summary: При наличии функции сравнения возвращает новую функцию, лексографикалли сравнение двух массивов.
 - uid: microsoft.quantum.logical.nearlyequald
   summary: Возвращает значение true только в том случае, если два входных значения почти равны (то есть в пределах допустимого диапазона 1E-12).
 - uid: microsoft.quantum.logical.not
@@ -70,9 +72,9 @@ functions:
 - uid: microsoft.quantum.logical.xor
   summary: Возвращает логическое исключающее сложение двух значений.
 metadata:
-  ms.openlocfilehash: 0ab7077bc2cdf9bc76f3da701a88869f8bb9bf85
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 006100b659daedbcca30fe443756a185a965ee1e
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89340108"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91464340"
