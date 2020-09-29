@@ -2,23 +2,23 @@
 title: Общие сведения о языке программирования Q# и пакете QDK
 description: Сведения о пакете Microsoft Quantum Development Kit, языке программирования Q# и о том, как создавать программы для квантовых вычислений.
 author: bradben
-ms.author: bradben
+ms.author: v-benbra
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.q-sharp
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 5db574b0380ffa1616cb3959d84925854df4e321
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 21adfcc1c5321d87665adb39a3c838bbda0b8861
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863780"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834573"
 ---
 # <a name="what-are-the-no-locq-programming-language-and-qdk"></a>Общие сведения о языке программирования Q# и пакете QDK
 
-Q# — это язык программирования с открытым кодом, созданный корпорацией Майкрософт для разработки и выполнения квантовых алгоритмов. Он является частью пакета средств разработки Quantum (QDK), который также содержит [библиотеки Q#](xref:microsoft.quantum.libraries), [квантовые симуляторы](xref:microsoft.quantum.machines), [расширения для других сред программирования](xref:microsoft.quantum.install) и [документацию по API](xref:microsoft.quantum.standardlibsintro). Кроме стандартной библиотеки Q#, пакет включает библиотеки для квантовой химии, машинного обучения и числовых расчетов.
+Q# — это язык программирования с открытым кодом, созданный корпорацией Майкрософт для разработки и выполнения квантовых алгоритмов. Он является частью пакета средств разработки Quantum (QDK), который также содержит [библиотеки Q#](xref:microsoft.quantum.libraries), [квантовые симуляторы](xref:microsoft.quantum.machines), [расширения для других сред программирования](xref:microsoft.quantum.install) и [документацию по API](xref:microsoft.quantum.apiref-intro). Кроме стандартной библиотеки Q#, пакет включает библиотеки для квантовой химии, машинного обучения и числовых расчетов.
 
 В Q# используются знакомые вам элементы Python, C# и F#. Язык поддерживает базовую процедурную модель для написания программ с циклами, операторами if/then и общими типами данных. В нем также представлены новые структуры данных и операции, характерные для квантовых вычислений.
 

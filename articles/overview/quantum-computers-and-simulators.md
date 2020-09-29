@@ -2,19 +2,19 @@
 title: Квантовые компьютеры и квантовые симуляторы
 description: Узнайте о квантовом оборудовании, симуляторах и принципах квантовых операций.
 author: bradben
-ms.author: bradben
+ms.author: v-benbra
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.simulators
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 299baea75865a4f0ece6b490cef3301dd2a672ac
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 8691838b2d6c54baa40042245eee8c901a7ca965
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867715"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835015"
 ---
 # <a name="quantum-computers-and-quantum-simulators"></a>Квантовые компьютеры и квантовые симуляторы
 
@@ -33,7 +33,7 @@ ms.locfileid: "87867715"
 
 ## <a name="quantum-simulators"></a>Квантовые симуляторы
 
-Квантовые симуляторы, работающие на обычных компьютерах, позволяют имитировать выполнение квантовых алгоритмов в квантовой системе.  Пакет средств разработки Quantum (QDK) содержит симулятор векторов всех состояний и другие специализированные квантовые симуляторы.
+Квантовые симуляторы, работающие на классических компьютерах, позволяют имитировать выполнение квантовых алгоритмов в квантовой системе.  Пакет средств разработки Quantum (QDK) содержит симулятор векторов всех состояний и другие специализированные квантовые симуляторы.
 
 ## <a name="topological-qubit"></a>Топологический кубит
 

@@ -1,20 +1,21 @@
 ---
 title: Разработка на Q# и Python
+description: Узнайте, как создавать приложения Q# с помощью Python.
 author: bradben
-ms.author: bradben
-ms.date: 5/30/2020
+ms.author: v-benbra
+ms.date: 8/20/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 01a5c31a7a920a69f4f90701d370f3a772d2c4d2
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: f6a2a7d1888cfe458fa3989a27d71fcdeed0f01f
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866746"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834165"
 ---
 # <a name="develop-with-no-locq-and-python"></a>Разработка на Q# и Python
 
@@ -73,7 +74,7 @@ ms.locfileid: "87866746"
     
 ***
 
-Вот и все! Теперь у вас есть пакет Python `qsharp` и ядро IQ# для Jupyter, которое предоставляет основные функции для компиляции и выполнения операций Q# с помощью Python и позволяет использовать записные книжки Jupyter Notebook для Q#.
+Вот и все! Теперь у вас есть пакет Python `qsharp` и ядро IQ# для Jupyter, которое предоставляет основные функции для компиляции и выполнения операций Q# с помощью Python и позволяет применять записные книжки Jupyter Notebook для Q#.
 
 ## <a name="choose-your-ide"></a>Выбор среды IDE
 
@@ -116,4 +117,4 @@ ms.locfileid: "87866746"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Установив пакет Quantum Development Kit в используемой вами среде, вы можете выполнить инструкции из этого руководства, чтобы написать и запустить [свою первую квантовую программу](xref:microsoft.quantum.quickstarts.qrng).
+Протестировав работу пакета средств разработки Quantum в используемой вами среде, вы можете выполнить инструкции из этого руководства, чтобы написать и запустить [свою первую квантовую программу](xref:microsoft.quantum.quickstarts.qrng).
