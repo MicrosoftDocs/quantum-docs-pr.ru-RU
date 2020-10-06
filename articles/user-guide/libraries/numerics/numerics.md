@@ -9,12 +9,12 @@ uid: microsoft.quantum.numerics.usage
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 474fc74b9c92fbf28c0618a3090905d025699d32
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: dfcb8e9e5a15d0881750d67cf58d7ad47cbecd3a
+ms.sourcegitcommit: 897ace8b506adb2331e911ee5633dceced566174
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868803"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91764128"
 ---
 # <a name="using-the-numerics-library"></a>Использование библиотеки числовых средств
 
@@ -37,9 +37,9 @@ open Microsoft.Quantum.Arithmetic;
 
 1. **`LittleEndian`**: Массив кубит `qArr : Qubit[]` , представляющий целое число, где `qArr[0]` обозначает наименее значащий бит.
 1. **`SignedLittleEndian`**: То же `LittleEndian` , что и за исключением того, что он представляет целое число со знаком, хранящееся в дополнениех двух.
-1. **`FixedPoint`**— Представляет вещественное число, состоящее из массива кубит `qArr2 : Qubit[]` и позиции двоичной точки `pos` , которая подсчитывает количество двоичных разрядов слева от двоичной точки. `qArr2`хранится так же, как и `SignedLittleEndian` .
+1. **`FixedPoint`**— Представляет вещественное число, состоящее из массива кубит `qArr2 : Qubit[]` и позиции двоичной точки `pos` , которая подсчитывает количество двоичных разрядов слева от двоичной точки. `qArr2` хранится так же, как и `SignedLittleEndian` .
 
-## <a name="operations"></a>Operations
+## <a name="operations"></a>Операции
 
 Для каждого из трех перечисленных выше типов доступны различные операции:
 
@@ -120,7 +120,7 @@ EvaluateOddPolynomialFxP([1.0, 2.0], x, y);
 
 ```bash
 git clone https://github.com/Microsoft/Quantum.git
-cd Quantum/Numerics
+cd Quantum/samples/numerics
 ```
 
 Затем `cd` в один из примеров папок и запустите пример с помощью
