@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.qc-trace-simulator.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 54a1f63461cfcc8146f7dc4d18d321238d77454d
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 7f5e25aa7b58277642783e03d03854cd75ff4ca3
+ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833356"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91771293"
 ---
 # <a name="microsoft-quantum-development-kit-qdk-quantum-trace-simulator"></a>Пакет средств разработки Microsoft Quantum (QDK) — квантовый симулятор трассировки
 
@@ -86,7 +86,7 @@ QDK включает пять средств, которые можно испо
 |-----| -----|
 |[Средство проверки уникальных значений](xref:microsoft.quantum.machines.qc-trace-simulator.distinct-inputs) |Проверяет наличие потенциальных конфликтов с использованием общих кубитов. |
 |[Средство проверки недействительных кубитов](xref:microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits)  |Проверяет, применяет ли программа операцию к кубиту, который уже выпущен. |
-|[Счетчик примитивных операций](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter)  | Подсчитывает количество примитивных процессов, которые используются каждой операцией, вызываемой в квантовой программе.  |
+|[Счетчик примитивных операций](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter)  | Подсчитывает число примитивов, которые используются каждой операцией, вызываемой в квантовой программе.  |
 |[Измеритель глубины](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)  |Собирает счетчики, представляющие нижнюю границу глубины каждой операции, вызываемой в квантовой программе.   |
 |[Измеритель ширины](xref:microsoft.quantum.machines.qc-trace-simulator.width-counter)  |Подсчитывает количество кубитов, выделенных и заимствованных каждой операцией в квантовой программе. |
 
