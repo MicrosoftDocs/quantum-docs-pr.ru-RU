@@ -9,12 +9,12 @@ uid: microsoft.quantum.overview.simulators
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8691838b2d6c54baa40042245eee8c901a7ca965
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 714d8163a66feea2766a71886c6d07275098ac2f
+ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835015"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91771367"
 ---
 # <a name="quantum-computers-and-quantum-simulators"></a>Квантовые компьютеры и квантовые симуляторы
 
@@ -33,7 +33,7 @@ ms.locfileid: "90835015"
 
 ## <a name="quantum-simulators"></a>Квантовые симуляторы
 
-Квантовые симуляторы, работающие на классических компьютерах, позволяют имитировать выполнение квантовых алгоритмов в квантовой системе.  Пакет средств разработки Quantum (QDK) содержит симулятор векторов всех состояний и другие специализированные квантовые симуляторы.
+Квантовые симуляторы, работающие на обычных компьютерах, позволяют имитировать выполнение квантовых алгоритмов в квантовой системе.  Пакет средств разработки Quantum (QDK) содержит симулятор векторов всех состояний и другие специализированные квантовые симуляторы.
 
 ## <a name="topological-qubit"></a>Топологический кубит
 
