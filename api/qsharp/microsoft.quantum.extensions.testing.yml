@@ -1,0 +1,100 @@
+### YamlMime:QSharpNamespace
+functions: []
+name: Microsoft.Quantum.Extensions.Testing
+newtypes: []
+operations:
+- summary: >+
+    > [!WARNING]
+
+    > Ассерталлзеро является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertAllZero>.
+
+    >
+
+    > Используйте @"microsoft.quantum.diagnostics.assertallzero".
+
+  uid: Microsoft.Quantum.Extensions.Testing.AssertAllZero
+- summary: >+
+    > [!WARNING]
+
+    > Ассерталлзеротол является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertAllZeroWithinTolerance>.
+
+    >
+
+    > Используйте @"microsoft.quantum.diagnostics.assertallzerowithintolerance".
+
+  uid: Microsoft.Quantum.Extensions.Testing.AssertAllZeroTol
+- summary: >+
+    > [!WARNING]
+
+    > Ассертоператионсекуалинплаце является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertOperationsEqualInPlace>.
+
+    >
+
+    > Используйте @"microsoft.quantum.diagnostics.assertoperationsequalinplace".
+
+    > Обратите внимание, что порядок аргументов для этой операции изменился.
+
+  uid: Microsoft.Quantum.Extensions.Testing.AssertOperationsEqualInPlace
+- summary: >+
+    > [!WARNING]
+
+    > Ассертоператионсекуалинплацекомпбасис является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertOperationsEqualInPlaceCompBasis>.
+
+    >
+
+    > Используйте @"microsoft.quantum.diagnostics.assertoperationsequalinplaceCompBasis".
+
+    > Обратите внимание, что порядок аргументов для этой операции изменился.
+
+  uid: Microsoft.Quantum.Extensions.Testing.AssertOperationsEqualInPlaceCompBasis
+- summary: >+
+    > [!WARNING]
+
+    > Ассертоператионсекуалреференцед является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertOperationsEqualReferenced>.
+
+    >
+
+    > Используйте @"microsoft.quantum.diagnostics.assertoperationsequalreferenced".
+
+    > Обратите внимание, что порядок аргументов для этой операции изменился.
+
+  uid: Microsoft.Quantum.Extensions.Testing.AssertOperationsEqualReferenced
+- summary: >+
+    > [!WARNING]
+
+    > Ассерткубит является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertQubit>.
+
+    >
+
+    > Используйте @"microsoft.quantum.diagnostics.assertqubit".
+
+  uid: Microsoft.Quantum.Extensions.Testing.AssertQubit
+- summary: >+
+    > [!WARNING]
+
+    > Ассерткубитстате является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertQubitIsInStateWithinTolerance>.
+
+    >
+
+    > Используйте @"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance".
+
+  uid: Microsoft.Quantum.Extensions.Testing.AssertQubitState
+- summary: >+
+    > [!WARNING]
+
+    > Ассерткубиттол является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertQubitWithinTolerance>.
+
+    >
+
+    > Используйте @"microsoft.quantum.diagnostics.assertqubitwithintolerance".
+
+  uid: Microsoft.Quantum.Extensions.Testing.AssertQubitTol
+summary: ''
+uid: Microsoft.Quantum.Extensions.Testing
+metadata:
+  ms.openlocfilehash: 717665e821b4e56b01664e6e0ed940cacd2a485c
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92712094"

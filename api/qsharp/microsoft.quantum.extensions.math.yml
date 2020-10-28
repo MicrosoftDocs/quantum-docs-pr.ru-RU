@@ -1,0 +1,374 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: >+
+    > [!WARNING]
+
+    > Абсб является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.AbsL>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.absl".
+
+  uid: Microsoft.Quantum.Extensions.Math.AbsB
+- summary: >+
+    > [!WARNING]
+
+    > Абсд является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.AbsD>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.absd".
+
+  uid: Microsoft.Quantum.Extensions.Math.AbsD
+- summary: >+
+    > [!WARNING]
+
+    > Абси является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.AbsI>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.absi".
+
+  uid: Microsoft.Quantum.Extensions.Math.AbsI
+- summary: >+
+    > [!WARNING]
+
+    > Арккос является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.ArcCos>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.arccos".
+
+  uid: Microsoft.Quantum.Extensions.Math.ArcCos
+- summary: >+
+    > [!WARNING]
+
+    > Не рекомендуется использовать дуги. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.ArcSin>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.arcsin".
+
+  uid: Microsoft.Quantum.Extensions.Math.ArcSin
+- summary: >+
+    > [!WARNING]
+
+    > ArcTan является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.ArcTan>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.arctan".
+
+  uid: Microsoft.Quantum.Extensions.Math.ArcTan
+- summary: >+
+    > [!WARNING]
+
+    > ArcTan2 является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.ArcTan2>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.arctan2".
+
+  uid: Microsoft.Quantum.Extensions.Math.ArcTan2
+- summary: >+
+    > [!WARNING]
+
+    > CEILING является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Ceiling>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.ceiling".
+
+  uid: Microsoft.Quantum.Extensions.Math.Ceiling
+- summary: >+
+    > [!WARNING]
+
+    > Функция COS устарела. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Cos>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.cos".
+
+  uid: Microsoft.Quantum.Extensions.Math.Cos
+- summary: >+
+    > [!WARNING]
+
+    > Cosh является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Cosh>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.cosh".
+
+  uid: Microsoft.Quantum.Extensions.Math.Cosh
+- summary: >+
+    > [!WARNING]
+
+    > Дивремб является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.DivRemL>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.divreml".
+
+  uid: Microsoft.Quantum.Extensions.Math.DivRemB
+- summary: >+
+    > [!WARNING]
+
+    > E является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.E>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.e".
+
+  uid: Microsoft.Quantum.Extensions.Math.E
+- summary: >+
+    > [!WARNING]
+
+    > Експд является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.ExpD>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.expd".
+
+  uid: Microsoft.Quantum.Extensions.Math.ExpD
+- summary: >+
+    > [!WARNING]
+
+    > Этаж является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Floor>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.floor".
+
+  uid: Microsoft.Quantum.Extensions.Math.Floor
+- summary: >+
+    > [!WARNING]
+
+    > Ииеремаиндер является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.IEEERemainder>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.ieeeremainder".
+
+  uid: Microsoft.Quantum.Extensions.Math.IEEERemainder
+- summary: >+
+    > [!WARNING]
+
+    > Журнал устарел. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Log>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.log".
+
+  uid: Microsoft.Quantum.Extensions.Math.Log
+- summary: >+
+    > [!WARNING]
+
+    > LOG10 является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Log10>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.log10".
+
+  uid: Microsoft.Quantum.Extensions.Math.Log10
+- summary: >+
+    > [!WARNING]
+
+    > Максб является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.MaxL>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.maxl".
+
+  uid: Microsoft.Quantum.Extensions.Math.MaxB
+- summary: >+
+    > [!WARNING]
+
+    > Максд является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.MaxD>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.maxd".
+
+  uid: Microsoft.Quantum.Extensions.Math.MaxD
+- summary: >+
+    > [!WARNING]
+
+    > Макси является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.MaxI>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.maxi".
+
+  uid: Microsoft.Quantum.Extensions.Math.MaxI
+- summary: >+
+    > [!WARNING]
+
+    > МИнБ является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.MinL>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.minl".
+
+  uid: Microsoft.Quantum.Extensions.Math.MinB
+- summary: >+
+    > [!WARNING]
+
+    > Помните, что это не рекомендуется. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.MinD>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.mind".
+
+  uid: Microsoft.Quantum.Extensions.Math.MinD
+- summary: >+
+    > [!WARNING]
+
+    > Мини-версия устарела. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.MinI>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.mini".
+
+  uid: Microsoft.Quantum.Extensions.Math.MinI
+- summary: >+
+    > [!WARNING]
+
+    > Модповб является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.ModPowL>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.modpowl".
+
+  uid: Microsoft.Quantum.Extensions.Math.ModPowB
+- summary: >+
+    > [!WARNING]
+
+    > PI является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.PI>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.pi".
+
+  uid: Microsoft.Quantum.Extensions.Math.PI
+- summary: >+
+    > [!WARNING]
+
+    > ПОВД является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.PowD>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.powd".
+
+  uid: Microsoft.Quantum.Extensions.Math.PowD
+- summary: >+
+    > [!WARNING]
+
+    > Функция Round является устаревшей. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Round>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.round".
+
+  uid: Microsoft.Quantum.Extensions.Math.Round
+- summary: >+
+    > [!WARNING]
+
+    > Сигнб является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.SignL>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.signl".
+
+  uid: Microsoft.Quantum.Extensions.Math.SignB
+- summary: >+
+    > [!WARNING]
+
+    > Подписание устарело. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.SignD>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.signd".
+
+  uid: Microsoft.Quantum.Extensions.Math.SignD
+- summary: >+
+    > [!WARNING]
+
+    > Сигни является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.SignI>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.signi".
+
+  uid: Microsoft.Quantum.Extensions.Math.SignI
+- summary: >+
+    > [!WARNING]
+
+    > Функция SIN устарела. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Sin>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.sin".
+
+  uid: Microsoft.Quantum.Extensions.Math.Sin
+- summary: >+
+    > [!WARNING]
+
+    > Sinh является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Sinh>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.sinh".
+
+  uid: Microsoft.Quantum.Extensions.Math.Sinh
+- summary: >+
+    > [!WARNING]
+
+    > Функция SQRT устарела. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Sqrt>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.sqrt".
+
+  uid: Microsoft.Quantum.Extensions.Math.Sqrt
+- summary: >+
+    > [!WARNING]
+
+    > Tan является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Tan>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.tan".
+
+  uid: Microsoft.Quantum.Extensions.Math.Tan
+- summary: >+
+    > [!WARNING]
+
+    > Tanh является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Tanh>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.tanh".
+
+  uid: Microsoft.Quantum.Extensions.Math.Tanh
+- summary: >+
+    > [!WARNING]
+
+    > Усечение не рекомендуется к использованию. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Math.Truncate>.
+
+    >
+
+    > Используйте @"microsoft.quantum.math.truncate".
+
+  uid: Microsoft.Quantum.Extensions.Math.Truncate
+name: Microsoft.Quantum.Extensions.Math
+newtypes: []
+operations: []
+summary: ''
+uid: Microsoft.Quantum.Extensions.Math
+metadata:
+  ms.openlocfilehash: c07f137eaca95237d581691008c614025dd35a1d
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92712093"
