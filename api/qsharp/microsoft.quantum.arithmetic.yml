@@ -1,0 +1,187 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: Преобразует `BigEndian` регистр кубит в `LittleEndian` регистр кубит, отменяя порядок кубит.
+  uid: Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian
+- summary: Если значение — true, включает дополнительные утверждения, которые являются дорогостоящими, но полезны для отладки использования арифметических функций.
+  uid: Microsoft.Quantum.Arithmetic.ExtraArithmeticAssertionsEnabled
+- summary: Утверждает, что все числа с фиксированной запятой в предоставленном массиве имеют одинаковые положения точек и кубит числа.
+  uid: Microsoft.Quantum.Arithmetic.IdenticalFormatFactFxP
+- summary: Утверждает, что все числа с фиксированной запятой в предоставленном массиве имеют одинаковые позиции точек при подсчете из наименьшего значащих битов. Т. е. количество битов минус позиции точки должно быть константой для всех чисел с фиксированной запятой в массиве.
+  uid: Microsoft.Quantum.Arithmetic.IdenticalPointPosFactFxP
+- summary: Преобразует `LittleEndian` регистр кубит в `BigEndian` регистр кубит, отменяя порядок кубит.
+  uid: Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian
+- summary: При выполнении операции, которая принимает входные данные с обратным порядком байтов, возвращает новую операцию, которая принимает прямой порядок байтов.
+  uid: Microsoft.Quantum.Arithmetic.ReversedOpBE
+- summary: При выполнении операции, которая принимает входные данные с обратным порядком байтов, возвращает новую операцию, которая принимает прямой порядок байтов.
+  uid: Microsoft.Quantum.Arithmetic.ReversedOpBEA
+- summary: При выполнении операции, которая принимает входные данные с обратным порядком байтов, возвращает новую операцию, которая принимает прямой порядок байтов.
+  uid: Microsoft.Quantum.Arithmetic.ReversedOpBEC
+- summary: При выполнении операции, которая принимает входные данные с обратным порядком байтов, возвращает новую операцию, которая принимает прямой порядок байтов.
+  uid: Microsoft.Quantum.Arithmetic.ReversedOpBECA
+- summary: При наличии операции, которая принимает прямой ввод с обратным порядком байтов, возвращает новую операцию, принимающую входные данные с обратным порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ReversedOpLE
+- summary: При наличии операции, которая принимает прямой ввод с обратным порядком байтов, возвращает новую операцию, принимающую входные данные с обратным порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ReversedOpLEA
+- summary: При наличии операции, которая принимает прямой ввод с обратным порядком байтов, возвращает новую операцию, принимающую входные данные с обратным порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ReversedOpLEC
+- summary: При наличии операции, которая принимает прямой ввод с обратным порядком байтов, возвращает новую операцию, принимающую входные данные с обратным порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ReversedOpLECA
+name: Microsoft.Quantum.Arithmetic
+newtypes:
+- summary: Регистрация, которая кодирует целое число без знака в порядке с обратным порядком байтов. Кубит с индексом `0` кодирует наибольший бит целого числа без знака.
+  uid: Microsoft.Quantum.Arithmetic.BigEndian
+- summary: Представляет регистр Кубитс кодирования числа с фиксированной запятой. Состоит из целого числа, равного числу Кубитс слева от двоичной точки, т. е. Кубитс весовой коэффициент больше или равен 1, и регистр такта.
+  uid: Microsoft.Quantum.Arithmetic.FixedPoint
+- summary: Регистр кодирует целое число без знака в порядке с прямым порядком байтов. Кубит с индексом `0` кодирует наименьший бит целого числа без знака.
+  uid: Microsoft.Quantum.Arithmetic.LittleEndian
+- summary: >-
+    Целые числа без знака с прямым порядком байтов на основе Кфт.
+
+    Например, если $ \кет{КС} $ является обратно-байтовым кодированием целого числа $x $ в вычислительной базе, то $ \Операторнаме{кфтле} \кет{КС} $ является кодировкой $x $ в базе Кфт.
+  uid: Microsoft.Quantum.Arithmetic.PhaseLittleEndian
+- summary: Тип целого числа со знаком, хранящегося с прямым порядком байтов (см. Литтлиндиан).
+  uid: Microsoft.Quantum.Arithmetic.SignedLittleEndian
+operations:
+- summary: Добавляет классическую константу в число с фиксированной запятой в такте.
+  uid: Microsoft.Quantum.Arithmetic.AddConstantFxP
+- summary: Добавляет два числа с фиксированной запятой, хранящихся в тактовых регистрах.
+  uid: Microsoft.Quantum.Arithmetic.AddFxP
+- summary: Автоматически выбирает между добавлением и без, в зависимости от размера регистра `ys` .
+  uid: Microsoft.Quantum.Arithmetic.AddI
+- summary: Реализует функцию внутреннего сложения для операции Рипплекарряддерттк. Это внутренняя операция, которая сопряжена с внешней операцией для создания полной Adder.
+  uid: Microsoft.Quantum.Arithmetic.ApplyInnerTTKAdder
+- summary: Реализует функцию внутреннего сложения для операции Рипплекарряддернокарриттк. Это внутренняя операция, которая сопряжена с внешней операцией для создания полной Adder.
+  uid: Microsoft.Quantum.Arithmetic.ApplyInnerTTKAdderWithoutCarry
+- summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.phaselittleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.littleendian> .
+  uid: Microsoft.Quantum.Arithmetic.ApplyLEOperationOnPhaseLE
+- summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.phaselittleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.littleendian> .
+  uid: Microsoft.Quantum.Arithmetic.ApplyLEOperationOnPhaseLEA
+- summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.phaselittleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.littleendian> .
+  uid: Microsoft.Quantum.Arithmetic.ApplyLEOperationOnPhaseLEC
+- summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.phaselittleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.littleendian> .
+  uid: Microsoft.Quantum.Arithmetic.ApplyLEOperationOnPhaseLECA
+- summary: Применяет кубитную операцию "большинство" на месте к регистру Кубитс.
+  uid: Microsoft.Quantum.Arithmetic.ApplyMajorityInPlace
+- summary: Обратимая операция "Ripple" на месте, которая используется в операции сложения целых чисел, Рипплекарряддеркдкм ниже. Учитывая два регистра кубит `xs` и `ys` одинаковую длину, операция применяет последовательность колебаний кнот и ккнот Gates с Кубитс в и, `xs` `ys` как элементы управления и Кубитс в `xs` качестве целевых объектов.
+  uid: Microsoft.Quantum.Arithmetic.ApplyOuterCDKMAdder
+- summary: Реализует внешнюю операцию для Рипплекарряддерттк для сопряжения внутренней операции с построением полного Adder.
+  uid: Microsoft.Quantum.Arithmetic.ApplyOuterTTKAdder
+- summary: Применяет операцию, которая принимает <xref:microsoft.quantum.arithmetic.littleendian> регистрацию в качестве входных данных для целевого регистра типа <xref:microsoft.quantum.arithmetic.phaselittleendian> .
+  uid: Microsoft.Quantum.Arithmetic.ApplyPhaseLEOperationOnLE
+- summary: ''
+  uid: Microsoft.Quantum.Arithmetic.ApplyPhaseLEOperationOnLEA
+- summary: ''
+  uid: Microsoft.Quantum.Arithmetic.ApplyPhaseLEOperationOnLEC
+- summary: ''
+  uid: Microsoft.Quantum.Arithmetic.ApplyPhaseLEOperationOnLECA
+- summary: Применяет операцию, которая принимает входные данные с обратным порядком байтов в кодировку для кодирования целого числа без знака, используя формат с прямым порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ApplyReversedOpBE
+- summary: Применяет операцию, которая принимает входные данные с обратным порядком байтов в кодировку для кодирования целого числа без знака, используя формат с прямым порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ApplyReversedOpBEA
+- summary: Применяет операцию, которая принимает входные данные с обратным порядком байтов в кодировку для кодирования целого числа без знака, используя формат с прямым порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC
+- summary: Применяет операцию, которая принимает входные данные с обратным порядком байтов в кодировку для кодирования целого числа без знака, используя формат с прямым порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ApplyReversedOpBECA
+- summary: Применяет операцию, принимающую обратный ввод с прямым порядком байтов в кодировку для кодирования целого числа без знака с использованием формата с обратным порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ApplyReversedOpLE
+- summary: Применяет операцию, принимающую обратный ввод с прямым порядком байтов в кодировку для кодирования целого числа без знака с использованием формата с обратным порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ApplyReversedOpLEA
+- summary: Применяет операцию, принимающую обратный ввод с прямым порядком байтов в кодировку для кодирования целого числа без знака с использованием формата с обратным порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC
+- summary: Применяет операцию, принимающую обратный ввод с прямым порядком байтов в кодировку для кодирования целого числа без знака с использованием формата с обратным порядком байтов.
+  uid: Microsoft.Quantum.Arithmetic.ApplyReversedOpLECA
+- summary: Применяет операцию побитового исключающего XOR между классическим целым числом и целым числом, представленным регистром Кубитс.
+  uid: Microsoft.Quantum.Arithmetic.ApplyXorInPlace
+- summary: Вспомогательная функция для подтверждения того, что число с фиксированной запятой такта инициализируется нулем, т. е. все Кубитс находятся в состоянии $ \кет {0} $.
+  uid: Microsoft.Quantum.Arithmetic.AssertAllZeroFxP
+- summary: Утверждает, что наиболее значимые кубит регистра кубит, представляющие целое число без знака, находятся в определенном состоянии.
+  uid: Microsoft.Quantum.Arithmetic.AssertMostSignificantBit
+- summary: Утверждает, что `number` Кодировка в фаселиттлиндиан меньше `value` .
+  uid: Microsoft.Quantum.Arithmetic.AssertPhaseLessThan
+- summary: Утверждает, что вероятность определенного состояния регистра такта имеет ожидаемое значение.
+  uid: Microsoft.Quantum.Arithmetic.AssertProbInt
+- summary: Реализует обратимый вентиль. Учитывая поразрядность, закодированную в кубит `carryIn` и два слагаемому бит, закодированные в `summand1` и `summand2` , вычисляют побитовое исключающее XOR `carryIn` , `summand1` а `summand2` в кубит, `summand2` а также ксоред в кубит `carryOut` .
+  uid: Microsoft.Quantum.Arithmetic.Carry
+- summary: Основная операция в Рипплекарряддеркдкм, используемая с приведенной выше операцией Апплйоутеркдкмаддер, которая была сопряжена с этой операцией для получения внутренней операции Рипплекарряддеркдкм. Эта операция выполняет вычисление кубит и применяет последовательность нешлюзов для части входных данных `ys` .
+  uid: Microsoft.Quantum.Arithmetic.CarryOutCoreCDKM
+- summary: 'Оболочка для сравнения целых чисел: `result = x > y` .'
+  uid: Microsoft.Quantum.Arithmetic.CompareGTI
+- summary: 'Оболочка для сравнения целых чисел со знаком: `result = xs > ys` .'
+  uid: Microsoft.Quantum.Arithmetic.CompareGTSI
+- summary: Сравнивает два числа с фиксированной запятой, хранящихся в тактовых регистрах, и управляет отражением результата.
+  uid: Microsoft.Quantum.Arithmetic.CompareGreaterThanFxP
+- summary: Эта операция проверяет, имеет ли целое число, представленное регистром Кубитс, больше другого целого числа, применяя XOR результата к выходному кубит.
+  uid: Microsoft.Quantum.Arithmetic.CompareUsingRippleCarry
+- summary: Вычисление $1/x $ для числа с фиксированной запятой $x $.
+  uid: Microsoft.Quantum.Arithmetic.ComputeReciprocalFxP
+- summary: Вычисление обратной величины 1/x для целого числа без знака x с использованием целочисленного деления. Результат, интерпретируемый как целое число, будет иметь значение `floor(2^(2*n-1) / x)` .
+  uid: Microsoft.Quantum.Arithmetic.ComputeReciprocalI
+- summary: Копирует наиболее значащий бит регистра кубит `from` , представляющий целое число без знака, в кубит `target` .
+  uid: Microsoft.Quantum.Arithmetic.CopyMostSignificantBit
+- summary: Делит два целочисленных целых числа.
+  uid: Microsoft.Quantum.Arithmetic.DivideI
+- summary: Вычисляет четность в представлении с фиксированной запятой.
+  uid: Microsoft.Quantum.Arithmetic.EvaluateEvenPolynomialFxP
+- summary: Вычисляет нечетный полином в представлении с фиксированной запятой.
+  uid: Microsoft.Quantum.Arithmetic.EvaluateOddPolynomialFxP
+- summary: Вычисляет значение полинома в представлении с фиксированной запятой.
+  uid: Microsoft.Quantum.Arithmetic.EvaluatePolynomialFxP
+- summary: Применяет сравнение типа "больше" между двумя целыми числами, закодированными в регистры кубит, зеркальное отображение целевого кубит на основе результата сравнения.
+  uid: Microsoft.Quantum.Arithmetic.GreaterThan
+- summary: Увеличивает значение регистра неподписанного такта на классическое целое число с использованием ротаций фазы.
+  uid: Microsoft.Quantum.Arithmetic.IncrementByInteger
+- summary: Выполняет модульное увеличение регистра кубит с помощью целочисленной константы.
+  uid: Microsoft.Quantum.Arithmetic.IncrementByModularInteger
+- summary: Увеличивает значение регистра неподписанного такта на классическое целое число с использованием ротаций фазы.
+  uid: Microsoft.Quantum.Arithmetic.IncrementPhaseByInteger
+- summary: Выполняет модульное увеличение регистра кубит с помощью целочисленной константы.
+  uid: Microsoft.Quantum.Arithmetic.IncrementPhaseByModularInteger
+- summary: Инвертирует дополнение заданного целочисленного модуля 2.
+  uid: Microsoft.Quantum.Arithmetic.Invert2sSI
+- summary: Это применяет операцию большинства "на месте" к 3 Кубитс.
+  uid: Microsoft.Quantum.Arithmetic.MAJ
+- summary: Измерьте число с фиксированной запятой, возвращает его значение типа Double и сбрасывает все регистры в ноль.
+  uid: Microsoft.Quantum.Arithmetic.MeasureFxP
+- summary: Измеряет содержимое регистра такта и преобразует его в целое число. Измерение выполняется в соответствии со стандартной вычислительной единицей, т. е. еиженбасис `PauliZ` .
+  uid: Microsoft.Quantum.Arithmetic.MeasureInteger
+- summary: Выполняет модульные целочисленные константы умножения и добавления в регистре кубит.
+  uid: Microsoft.Quantum.Arithmetic.MultiplyAndAddByModularInteger
+- summary: То же, что и Мултипляндаддбимодуларинтежер, но предполагает, что слагаемому кодирует целые числа в Кфт.
+  uid: Microsoft.Quantum.Arithmetic.MultiplyAndAddPhaseByModularInteger
+- summary: Выполняет модульное умножение с помощью целочисленной константы в регистре кубит.
+  uid: Microsoft.Quantum.Arithmetic.MultiplyByModularInteger
+- summary: Умножает два числа с фиксированной запятой в тактовые регистры.
+  uid: Microsoft.Quantum.Arithmetic.MultiplyFxP
+- summary: Умножьте целое число `xs` на целое `ys` и сохраните результат в `result` , который должен быть равен нулю изначально.
+  uid: Microsoft.Quantum.Arithmetic.MultiplyI
+- summary: Выполните умножение целого числа со `xs` знаком на целое число `ys` и сохраните результат в `result` , который должен быть равен нулю изначально.
+  uid: Microsoft.Quantum.Arithmetic.MultiplySI
+- summary: Инициализируйте число с фиксированной запятой такта до классической константы.
+  uid: Microsoft.Quantum.Arithmetic.PrepareFxP
+- summary: Отражает тактовый регистр относительно заданного классического целого числа.
+  uid: Microsoft.Quantum.Arithmetic.ReflectAboutInteger
+- summary: Обратимое выполнение — добавление двух целых чисел.
+  uid: Microsoft.Quantum.Arithmetic.RippleCarryAdderCDKM
+- summary: Обратимое выполнение — добавление двух целых чисел. Учитывая два $n $-разрядных целых чисел, закодированных в регистрах Литтлиндиан `xs` и `ys` , и кубит, операция вычисляет сумму двух целых чисел, в которых $n $ наименьшие значащие биты результата, `ys` а бит выполнения — ксоред кубит `carry` .
+  uid: Microsoft.Quantum.Arithmetic.RippleCarryAdderD
+- summary: Обратимое выполнение — добавление двух целых чисел без выполнения.
+  uid: Microsoft.Quantum.Arithmetic.RippleCarryAdderNoCarryTTK
+- summary: Обратимое выполнение — добавление двух целых чисел. Учитывая два $n $-разрядных целых чисел, закодированных в регистрах Литтлиндиан `xs` и `ys` , и кубит, операция вычисляет сумму двух целых чисел, в которых $n $ наименьшие значащие биты результата, `ys` а бит выполнения — ксоред кубит `carry` .
+  uid: Microsoft.Quantum.Arithmetic.RippleCarryAdderTTK
+- summary: Квадраты — число с фиксированной запятой.
+  uid: Microsoft.Quantum.Arithmetic.SquareFxP
+- summary: Вычисляет квадрат целого числа `xs` в `result` , который должен быть равен нулю изначально.
+  uid: Microsoft.Quantum.Arithmetic.SquareI
+- summary: Квадратное целое число со знаком `xs` и сохранение результата в `result` , который должен быть равен нулю изначально.
+  uid: Microsoft.Quantum.Arithmetic.SquareSI
+- summary: Реализует шлюз обратимой суммы. Учитывая поразрядность, закодированную в кубит `carryIn` и два бита слагаемому, закодированные в `summand1` и `summand2` , выполняет побитовую операцию XOR `carryIn` `summand1` и `summand2` в кубит `summand2` .
+  uid: Microsoft.Quantum.Arithmetic.Sum
+summary: ''
+uid: Microsoft.Quantum.Arithmetic
+metadata:
+  ms.openlocfilehash: 73e3ac964e19ce4613c9426bfc09a39aff4228cf
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92730761"
