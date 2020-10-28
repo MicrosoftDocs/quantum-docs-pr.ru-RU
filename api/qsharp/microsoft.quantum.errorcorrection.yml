@@ -1,0 +1,92 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: Возвращает значение КЕКК, представляющее кодировщик ⟦ 3, 1, 1 ⟧ битного отражения кода и декодер с измерением синдром на месте.
+  uid: Microsoft.Quantum.ErrorCorrection.BitFlipCode
+- summary: Функция для операций восстановления Паули для заданного измерения синдром путем уточняющего запроса таблицы для ⟦ 3, 1, 1 ⟧ разрядного кода отражения.
+  uid: Microsoft.Quantum.ErrorCorrection.BitFlipRecoveryFn
+- summary: Возвращает значение КЕКК, представляющее ⟦ 5, 1, 3 ⟧ кодировщика кода и декодер с измерением синдром "на месте".
+  uid: Microsoft.Quantum.ErrorCorrection.FiveQubitCode
+- summary: Функция возвращает функцию, которая сопоставляет измерения Error синдром с соответствующими операторами Паули с ошибками по таблице уточняющих запросов для ⟦ 5, 1, 3 ⟧ тактового кода.
+  uid: Microsoft.Quantum.ErrorCorrection.FiveQubitCodeRecoveryFn
+- summary: Возвращает значение CSS, представляющее кодировщик кода ⟦ 7, 1, 3 ⟧ Стеане и декодер с измерением синдром на месте.
+  uid: Microsoft.Quantum.ErrorCorrection.SteaneCode
+- summary: Декодер для Объединенных X-и Z-частей стабилизер группы ⟦ 7, 1, 3 ⟧ Стеане.
+  uid: Microsoft.Quantum.ErrorCorrection.SteaneCodeRecoveryFns
+- summary: Декодер для X-части группы стабилизер ⟦ 7, 1, 3 ⟧ Стеане.
+  uid: Microsoft.Quantum.ErrorCorrection.SteaneCodeRecoveryX
+- summary: Декодер для Z-части группы стабилизер ⟦ 7, 1, 3 ⟧ Стеане.
+  uid: Microsoft.Quantum.ErrorCorrection.SteaneCodeRecoveryZ
+- summary: Для заданной таблицы операций Паули с заданным регистром Кубитс эта функция возвращает объект типа `RecoveryFn` , который содержит всю информацию, необходимую для декодирования уточняющего запроса таблицы по отношению к заданному массиву операций Паули.
+  uid: Microsoft.Quantum.ErrorCorrection.TableLookupRecovery
+- summary: ''
+  uid: Microsoft.Quantum.ErrorCorrection.TableLookupRecoveryImpl
+name: Microsoft.Quantum.ErrorCorrection
+newtypes:
+- summary: Представляет код Калдербанк – Шор – Стеане (CSS) в соответствии с определением кодировщика, декодера и его процедур измерения синдром для `X` и `Z` ошибок соответственно.
+  uid: Microsoft.Quantum.ErrorCorrection.CSS
+- summary: >-
+    Представляет операцию, которая декодирует закодированный регистр в физический регистр и Кубитс, используемый для записи синдром.
+
+    Аргумент для Декодеоп совпадает с возвращаемым из Енкодеоп, и наоборот.
+  uid: Microsoft.Quantum.ErrorCorrection.DecodeOp
+- summary: >-
+    Представляет операцию, которая кодирует физическую регистрацию в логическую регистрацию с помощью предоставленного вспомогательного Кубитс.
+
+    Первый аргумент принимается в качестве физического регистра, который будет кодироваться, а второй аргумент является временным регистром, который будет использоваться.
+  uid: Microsoft.Quantum.ErrorCorrection.EncodeOp
+- summary: Тип для регистрации физического Кубитс `Qubit[]` , который кодирует логический Кубитс.
+  uid: Microsoft.Quantum.ErrorCorrection.LogicalRegister
+- summary: Представляет код исправления ошибок в соответствии с определением процедуры измерения кодировщика, декодера и синдром.
+  uid: Microsoft.Quantum.ErrorCorrection.QECC
+- summary: Тип для функции, которая сопоставляет ошибку синдром с последовательностью `Pauli[]` операций, исправлять обнаруженную ошибку.
+  uid: Microsoft.Quantum.ErrorCorrection.RecoveryFn
+- summary: Введите результаты измерения `Result[]` , определяющие ошибку синдром в коде такта.
+  uid: Microsoft.Quantum.ErrorCorrection.Syndrome
+- summary: Представляет операцию, используемую для измерения синдром блока кода исправления ошибок.
+  uid: Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp
+operations:
+- summary: >-
+    Закрытая операция, используемая для реализации кодировщика и декодера битовой перелистывания.
+
+    Обратите внимание, что этот кодировщик может использовать восстановление с согласованием на месте, в этом случае это вызовет ошибку, описанную в начальном состоянии `auxQubits` . В частности, если `auxQubits` изначально находится в состоянии $ \кет {10} $, это вызовет ошибку $X _1 $ в кодированном кубит.
+  uid: Microsoft.Quantum.ErrorCorrection.ApplyBitFlipEncoder
+- summary: Декодирования из кода [3, 1, 3]/⟦ 3, 1, 1 ⟧ bit-переворот Code.
+  uid: Microsoft.Quantum.ErrorCorrection.DecodeFromBitFlipCode
+- summary: Декодирует код такта ⟦ 5, 1, 3 ⟧.
+  uid: Microsoft.Quantum.ErrorCorrection.DecodeFromFiveQubitCode
+- summary: Операция обратной кодировки, которая сопоставляет незакодированный регистр такта с закодированным регистром такта в коде такта ⟦ 7, 1, 3 ⟧ Стеане.
+  uid: Microsoft.Quantum.ErrorCorrection.DecodeFromSteaneCode
+- summary: Кодирует в код [3, 1, 3]/⟦ 3, 1, 1 ⟧ bit-переворот.
+  uid: Microsoft.Quantum.ErrorCorrection.EncodeIntoBitFlipCode
+- summary: Кодирует в код такта ⟦ 5, 1, 3 ⟧.
+  uid: Microsoft.Quantum.ErrorCorrection.EncodeIntoFiveQubitCode
+- summary: Операция кодирования, которая сопоставляет незакодированный регистр такта с закодированным регистром такта в коде такта ⟦ 7, 1, 3 ⟧ Стеане.
+  uid: Microsoft.Quantum.ErrorCorrection.EncodeIntoSteaneCode
+- summary: Закрытая операция, используемая для реализации кодировщика и декодера 5 кубит.
+  uid: Microsoft.Quantum.ErrorCorrection.FiveQubitCodeEncoderImpl
+- summary: Поворачивает один кубит в π/4 о оси Y.
+  uid: Microsoft.Quantum.ErrorCorrection.InjectPi4YRotation
+- summary: Реализует алгоритм Книлл "волшебного" состояния Magic.
+  uid: Microsoft.Quantum.ErrorCorrection.KnillDistill
+- summary: Измеряет заданный набор генераторов группы стабилизер.
+  uid: Microsoft.Quantum.ErrorCorrection.MeasureStabilizerGenerators
+- summary: Выполняет единичное округление исправления ошибки с помощью кода такта, описанного `QECC` типом.
+  uid: Microsoft.Quantum.ErrorCorrection.Recover
+- summary: Выполняет единичное округление исправления ошибки с помощью кода такта, описанного `CSS` типом.
+  uid: Microsoft.Quantum.ErrorCorrection.RecoverCSS
+- summary: Закрытая операция, используемая для реализации кодировщика кода Стеане и декодера.
+  uid: Microsoft.Quantum.ErrorCorrection.SteaneCodeEncoderImpl
+- summary: >-
+    Синдром измерение и обратное внедрение.
+
+    $X $-and $Z $-стабилизерс не обрабатываются одинаково, что обусловлено определенным выбором канала кодирования. Эта асимметрию приводит к другой подпрограммы извлечения синдром. Можно измерить синдром, изменив оператор Multi-кубит Паули непосредственно в состоянии кода, но для цели «по-прежнему» логическая кубит возвращается в один кубит, в рамках которого измерения синдром могут быть выполнены без дополнительных анЦиллас.
+  uid: Microsoft.Quantum.ErrorCorrection._ExtractLogicalQubitFromSteaneCode
+summary: Это пространство имен содержит функции, операции и определяемые пользователем типы для исправления ошибок такта.
+uid: Microsoft.Quantum.ErrorCorrection
+metadata:
+  ms.openlocfilehash: ba16a793fc9389c7102047a6664c0338ea11314d
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92712542"

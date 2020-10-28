@@ -1,0 +1,32 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: Возвращает экземпляр заданного типа по умолчанию.
+  uid: Microsoft.Quantum.Core.Default
+- summary: Возвращает количество элементов в массиве.
+  uid: Microsoft.Quantum.Core.Length
+- summary: Возвращает определенное конечное значение заданного диапазона, которое не обязательно является последним элементом последовательности.
+  uid: Microsoft.Quantum.Core.RangeEnd
+- summary: Возвращает новый диапазон, являющийся обратным по отношению к входному диапазону.
+  uid: Microsoft.Quantum.Core.RangeReverse
+- summary: Возвращает заданное начальное значение заданного диапазона.
+  uid: Microsoft.Quantum.Core.RangeStart
+- summary: Возвращает целое число, указывающее, как вычисляется следующее значение диапазона.
+  uid: Microsoft.Quantum.Core.RangeStep
+name: Microsoft.Quantum.Core
+newtypes:
+- summary: Распознанный компилятором атрибут, используемый для пометки определяемых пользователем типов как атрибутов.
+  uid: Microsoft.Quantum.Core.Attribute
+- summary: Распознанный компилятором атрибут, используемый для пометки типа или вызываемого как нерекомендуемый.
+  uid: Microsoft.Quantum.Core.Deprecated
+- summary: Распознанный компилятором атрибут, используемый для обозначения точки входа исполняемого файла.
+  uid: Microsoft.Quantum.Core.EntryPoint
+operations: []
+summary: 'Это пространство имен включает основные функции и операции Q #.'
+uid: Microsoft.Quantum.Core
+metadata:
+  ms.openlocfilehash: 12de9824c55c72651f5b29cc806058be14343ec5
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92713704"
