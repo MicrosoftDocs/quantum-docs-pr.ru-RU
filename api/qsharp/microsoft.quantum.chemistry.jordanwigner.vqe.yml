@@ -1,0 +1,24 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: Развертывает компактное представление Jordan-Wigner коэффициенты для получения однозначного сопоставления между этими и Паули терминами.
+  uid: Microsoft.Quantum.Chemistry.JordanWigner.VQE.ExpandedCoefficients
+- summary: Вычисление всех операторов измерения, необходимых для расчета ожидания Jordan-Wigner термина.
+  uid: Microsoft.Quantum.Chemistry.JordanWigner.VQE.MeasurementOperators
+name: Microsoft.Quantum.Chemistry.JordanWigner.VQE
+newtypes: []
+operations:
+- summary: Оценивает энергию молекулы, суммируя энергию за отдельные условия Jordan-Wigner.
+  uid: Microsoft.Quantum.Chemistry.JordanWigner.VQE.EstimateEnergy
+- summary: Вычисление энергии, связанной с заданным Jordan-Wignerным термином Хамилтониан
+  uid: Microsoft.Quantum.Chemistry.JordanWigner.VQE.EstimateTermExpectation
+- summary: Частная оболочка вокруг Препаретриалстате, чтобы обеспечить совместимость с Естиматефрекуенциа путем определения примыкающего. Естиматефрекуенциа имеет встроенную функцию эмуляции, предназначенную для Куантумсимулатор, которая ускоряет выполнение.
+  uid: Microsoft.Quantum.Chemistry.JordanWigner.VQE._prepareTrialStateWrapper
+summary: ''
+uid: Microsoft.Quantum.Chemistry.JordanWigner.VQE
+metadata:
+  ms.openlocfilehash: 6c99da452067d5e8902e05e53cabd70ca910cd60
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92714110"
