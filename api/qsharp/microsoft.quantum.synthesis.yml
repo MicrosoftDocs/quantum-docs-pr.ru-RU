@@ -1,0 +1,71 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: Разделяет перестановку на переменную
+  uid: Microsoft.Quantum.Synthesis.DecomposedOn
+- summary: Кодирование таблицы истинности в {1,-1} коде
+  uid: Microsoft.Quantum.Synthesis.Encoded
+- summary: Расширяет спектр по инвертированным коэффициентам
+  uid: Microsoft.Quantum.Synthesis.Extended
+- summary: Вычисление Хадамард преобразования логической функции в {-1,1} кодировке с помощью метода Йейтса
+  uid: Microsoft.Quantum.Synthesis.FastHadamardTransformed
+- summary: Конструирует тип Мкмтмаск как одноэлементный массив, если целевые объекты не равны 0, в противном случае возвращает пустой массив.
+  uid: Microsoft.Quantum.Synthesis.GateMask
+- summary: Выполняет вычисление до двух масок МКМТ для преобразования y в x.
+  uid: Microsoft.Quantum.Synthesis.GateMasksForAssignment
+- summary: Возвращает все позиции, в которых заданы биты целого числа.
+  uid: Microsoft.Quantum.Synthesis.IntegerBits
+- summary: Преобразование маски элемента управления и целевого бита в пару элементов управления Кубитс и Target Кубитс
+  uid: Microsoft.Quantum.Synthesis.MaskToQubitsPair
+- summary: '{-1,1} кодирование логического значения истинности'
+  uid: Microsoft.Quantum.Synthesis.RMEncoding
+- summary: Корректирует истинную таблицу от массива логических значений в соответствии с количеством переменных, возвращаемых новым массивом `2^numVars` , возможно, требуется расширить `table` размер с помощью `false` записей или усечь его для `2^numVars` элементов.
+  uid: Microsoft.Quantum.Synthesis.SizeAdjustedTruthTable
+- summary: Вычислить маски шлюзов для синтезирования перестановки.
+  uid: Microsoft.Quantum.Synthesis.TBSMain
+- summary: Вычисление масок шлюзов для преобразования разрешений [x] в x и обновление текущей перестановки.
+  uid: Microsoft.Quantum.Synthesis.TBSStep
+- summary: Собирайте все функции для контролируемых шлюзов путем свертывания всех переменных индексов.
+  uid: Microsoft.Quantum.Synthesis.TruthTablesFromPermutation
+- summary: Логика декомпозиции для одного индекса переменной
+  uid: Microsoft.Quantum.Synthesis.TruthTablesFromPermutationFolder
+- summary: Обновление шаблона вывода в соответствии с маской шлюза.
+  uid: Microsoft.Quantum.Synthesis.UpdatedOutputPattern
+- summary: Изменение перестановки на основе маски шлюза.
+  uid: Microsoft.Quantum.Synthesis.UpdatedPermutation
+- summary: Вставить 0-разрядное значение в целое число
+  uid: Microsoft.Quantum.Synthesis.WithZeroInsertedAt
+name: Microsoft.Quantum.Synthesis
+newtypes:
+- summary: Состояние во время декомпозиции на основе индексов переменных
+  uid: Microsoft.Quantum.Synthesis.DecompositionState
+- summary: >-
+    Тип для представления многоцелевого шлюза Тоффоли с несколькими управляемыми.
+
+    Первое целое число является битовой маской для управляющих линий.  Битовые индексы, которые установлены в соответствии с индексами строк управления.
+
+    Второе целое число является битовой маской для целевых строк.  Битовые индексы, которые заданы, соответствуют индексам целевой строки.
+
+    Битовые индексы обоих целых чисел должны быть несвязанными.
+  uid: Microsoft.Quantum.Synthesis.MCMTMask
+operations:
+- summary: Пермутес амплитуды в состоянии такта, учитывая перестановку с помощью синтеза на основе декомпозиции.
+  uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingDecomposition
+- summary: Пермутес амплитуды в состоянии такта, учитывая перестановку с помощью синтеза на основе декомпозиции.
+  uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingDecompositionWithVariableOrder
+- summary: Пермутес амплитуды в состоянии такта, учитывая перестановку с помощью синтеза на основе преобразования.
+  uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingTransformation
+- summary: ''
+  uid: Microsoft.Quantum.Synthesis.ApplyTransposition
+- summary: Применяет @"microsoft.quantum.intrinsic.x" операцию к `target` , если логическая функция `func` возвращает значение true для классического назначения в `controlRegister` .
+  uid: Microsoft.Quantum.Synthesis.ApplyXControlledOnTruthTable
+- summary: Применяет @"microsoft.quantum.intrinsic.x" операцию к `target` , если логическая функция `func` возвращает значение true для классического назначения в `controlRegister` .
+  uid: Microsoft.Quantum.Synthesis.ApplyXControlledOnTruthTableWithCleanTarget
+summary: Это пространство имен содержит функции и операции для синтезирования тактовых операций на основе перестановок и логических функций.
+uid: Microsoft.Quantum.Synthesis
+metadata:
+  ms.openlocfilehash: 2f92f4662252148ff0e093f5392f5f00f26b661f
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92734201"
