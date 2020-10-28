@@ -1,0 +1,54 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: Возвращает дискретное распределение по категориям, в котором явно задана вероятность для каждого конечного списка заданных результатов.
+  uid: Microsoft.Quantum.Random.CategoricalDistribution
+- summary: Возвращает равномерное распределение по заданному инклюзивному интервалу.
+  uid: Microsoft.Quantum.Random.ContinuousUniformDistribution
+- summary: Возвращает равномерное распределение по заданному инклюзивному диапазону.
+  uid: Microsoft.Quantum.Random.DiscreteUniformDistribution
+- summary: Возвращает нормальное распределение с заданным средним и дисперсией.
+  uid: Microsoft.Quantum.Random.NormalDistribution
+- summary: Возвращает нормальное распределение с средним 0 и дисперсией 1.
+  uid: Microsoft.Quantum.Random.StandardNormalDistribution
+- summary: ''
+  uid: Microsoft.Quantum.Random.StandardTransformation
+- summary: При наличии непрерывного распределения возвращает новое распределение, которое преобразует оригинал с помощью заданной функции.
+  uid: Microsoft.Quantum.Random.TransformedContinuousDistribution
+name: Microsoft.Quantum.Random
+newtypes:
+- summary: Представляет распределение вероятности унивариате по целочисленным значениям произвольного размера.
+  uid: Microsoft.Quantum.Random.BigDiscreteDistribution
+- summary: Представляет распределение вероятности унивариате по комплексным числам.
+  uid: Microsoft.Quantum.Random.ComplexDistribution
+- summary: Представляет распределение вероятности унивариате по вещественным числам.
+  uid: Microsoft.Quantum.Random.ContinuousDistribution
+- summary: Представляет распределение вероятности унивариате по целочисленным значениям.
+  uid: Microsoft.Quantum.Random.DiscreteDistribution
+operations:
+- summary: ''
+  uid: Microsoft.Quantum.Random.Delay
+- summary: Рисует случайную выборку из распределения по категориям, заданному списком пробаблитиес.
+  uid: Microsoft.Quantum.Random.DrawCategorical
+- summary: Учитывая вероятность успеха, возвращает одну пробную версию Бернулли, которая имеет значение true с заданной вероятностью.
+  uid: Microsoft.Quantum.Random.DrawRandomBool
+- summary: Рисует случайное вещественное число в заданном инклюзивном интервале.
+  uid: Microsoft.Quantum.Random.DrawRandomDouble
+- summary: Рисует случайное целое число в заданном инклюзивном диапазоне.
+  uid: Microsoft.Quantum.Random.DrawRandomInt
+- summary: Рисует случайное значение Паули.
+  uid: Microsoft.Quantum.Random.DrawRandomPauli
+- summary: ''
+  uid: Microsoft.Quantum.Random.DrawStandardNormalVariate
+- summary: При наличии массива данных и распределения по индексам пытается выбрать элемент в случайном порядке.
+  uid: Microsoft.Quantum.Random.MaybeChooseElement
+- summary: Операция, предназначенная только для выборки из преобразованных распределений. Следует использовать только через частичное приложение.
+  uid: Microsoft.Quantum.Random.SampleTransformedContinuousDistribution
+summary: ''
+uid: Microsoft.Quantum.Random
+metadata:
+  ms.openlocfilehash: 1504b9ae9ffc21a7684a45b58f56f138068beb67
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92711492"

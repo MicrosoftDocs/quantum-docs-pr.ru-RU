@@ -1,0 +1,114 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: >+
+    > [!WARNING]
+
+    > Бигинттобулс является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.BigIntAsBoolArray>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.bigintasboolarray".
+
+  uid: Microsoft.Quantum.Extensions.Convert.BigIntToBools
+- summary: >+
+    > [!WARNING]
+
+    > Булстобигинт является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.BoolArrayAsBigInt>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.boolarrayasbigint".
+
+  uid: Microsoft.Quantum.Extensions.Convert.BoolsToBigInt
+- summary: >+
+    > [!WARNING]
+
+    > Паулиаррайтоинт является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.PauliArrayAsInt>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.pauliarrayasint".
+
+  uid: Microsoft.Quantum.Extensions.Convert.PauliArrayToInt
+- summary: >+
+    > [!WARNING]
+
+    > Тобигинт является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.IntAsBigInt>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.intasbigint".
+
+  uid: Microsoft.Quantum.Extensions.Convert.ToBigInt
+- summary: >+
+    > [!WARNING]
+
+    > ToDouble является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.IntAsDouble>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.intasdouble".
+
+  uid: Microsoft.Quantum.Extensions.Convert.ToDouble
+- summary: >+
+    > [!WARNING]
+
+    > Тострингб является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.BoolAsString>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.boolasstring".
+
+  uid: Microsoft.Quantum.Extensions.Convert.ToStringB
+- summary: >+
+    > [!WARNING]
+
+    > Метод ToString является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.DoubleAsString>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.doubleasstring".
+
+  uid: Microsoft.Quantum.Extensions.Convert.ToStringD
+- summary: >+
+    > [!WARNING]
+
+    > Тострингдформат является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.DoubleAsStringWithFormat>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.doubleasstringwithformat".
+
+  uid: Microsoft.Quantum.Extensions.Convert.ToStringDFormat
+- summary: >+
+    > [!WARNING]
+
+    > Тостринги является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.IntAsString>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.intasstring".
+
+  uid: Microsoft.Quantum.Extensions.Convert.ToStringI
+- summary: >+
+    > [!WARNING]
+
+    > Тострингиформат является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Convert.IntAsStringWithFormat>.
+
+    >
+
+    > Используйте @"microsoft.quantum.convert.intasstringwithformat".
+
+  uid: Microsoft.Quantum.Extensions.Convert.ToStringIFormat
+name: Microsoft.Quantum.Extensions.Convert
+newtypes: []
+operations: []
+summary: 'Это некоторые из функций из пространства имен System. Convert в среде CLR .NET, которые относятся к системе типов Q #.'
+uid: Microsoft.Quantum.Extensions.Convert
+metadata:
+  ms.openlocfilehash: 1d03a685b323a4424055da4c10137af78268bb5f
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92711044"
