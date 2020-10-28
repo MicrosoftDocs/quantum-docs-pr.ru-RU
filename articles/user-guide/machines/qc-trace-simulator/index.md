@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.qc-trace-simulator.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 7f5e25aa7b58277642783e03d03854cd75ff4ca3
-ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
+ms.openlocfilehash: 2e2d9f8494d8709fba34123793cecce4011b609a
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91771293"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92690836"
 ---
 # <a name="microsoft-quantum-development-kit-qdk-quantum-trace-simulator"></a>Пакет средств разработки Microsoft Quantum (QDK) — квантовый симулятор трассировки
 
@@ -55,7 +55,7 @@ namespace Quantum.MyProgram
 
 Так как квантовый симулятор трассировки не имитирует фактическое квантовое состояние, он не может вычислить вероятность результатов измерения в операции. 
 
-Таким образом, если операция включает измерения, необходимо явно предоставить эти вероятности с помощью операции <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> из пространства имен <xref:microsoft.quantum.diagnostics>. Проиллюстрируем это на примере.
+Таким образом, если операция включает измерения, необходимо явно предоставить эти вероятности с помощью операции <xref:Microsoft.Quantum.Diagnostics.AssertMeasurementProbability> из пространства имен <xref:Microsoft.Quantum.Diagnostics>. Проиллюстрируем это на примере.
 
 ```qsharp
 operation TeleportQubit(source : Qubit, target : Qubit) : Unit {
@@ -74,7 +74,7 @@ operation TeleportQubit(source : Qubit, target : Qubit) : Unit {
 }
 ```
 
-Когда квантовый симулятор трассировки вычисляет `AssertMeasurementProbability`, он записывает измерение `PauliZ` в `source`, и ожидается, что `q` выдаст результат `Zero` с вероятностью **0,5**. При выполнении операции `M` в дальнейшем он находит записанные значения вероятностей результата, и `M` возвращает `Zero` или `One` с вероятностью **0,5**. Если один и тот же код выполняется в симуляторе, который отслеживает квантовое состояние, такой симулятор проверяет правильность предоставленных вероятностей в `AssertMeasurementProbability`.
+Когда квантовый симулятор трассировки вычисляет `AssertMeasurementProbability`, он записывает измерение `PauliZ` в `source`, и ожидается, что `q` выдаст результат `Zero` с вероятностью **0,5** . При выполнении операции `M` в дальнейшем он находит записанные значения вероятностей результата, и `M` возвращает `Zero` или `One` с вероятностью **0,5** . Если один и тот же код выполняется в симуляторе, который отслеживает квантовое состояние, такой симулятор проверяет правильность предоставленных вероятностей в `AssertMeasurementProbability`.
 
 Учтите, что, если есть хотя бы одна операция измерения, не помеченная с помощью `AssertMeasurementProbability`, симулятор выдаст [`UnconstrainedMeasurementException`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.unconstrainedmeasurementexception).
 
