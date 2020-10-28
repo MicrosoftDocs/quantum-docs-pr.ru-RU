@@ -8,18 +8,18 @@ ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 55b1ef70eed1eb47ab0c6b30e2b8203c38c9a67a
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 6de1574341d67c569cd2f040ec533e263fdd386e
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833606"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92692063"
 ---
 # <a name="classical-mathematical-functions"></a>Классические математические функции #
 
 Эти функции в основном используются для работы со Q# встроенными типами данных `Int` , `Double` и `Range` .
 
-<xref:microsoft.quantum.intrinsic.random>Операция имеет подпись `(Double[] => Int)` .
+<xref:Microsoft.Quantum.Intrinsic.Random>Операция имеет подпись `(Double[] => Int)` .
 Он принимает массив значений типа Double в качестве входных данных и возвращает в массиве индекс в виде случайного выбора `Int` .
 Вероятность выбора определенного индекса пропорциональна значению элемента массива в этом индексе. n элементов массива, равных нулю, пропускаются, и их индексы никогда не возвращаются.
 Если какой-либо элемент массива меньше нуля или если ни один элемент массива больше нуля, операция завершается ошибкой.
