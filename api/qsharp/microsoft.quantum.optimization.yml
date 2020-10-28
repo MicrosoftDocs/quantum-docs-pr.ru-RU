@@ -1,0 +1,24 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: Возвращает локальное минимальное значение для функции унивариате через ограниченный интервал при помощи золотого интервала поиска.
+  uid: Microsoft.Quantum.Optimization.LocalUnivariateMinimum
+- summary: Возвращает среднюю точку для интервала.
+  uid: Microsoft.Quantum.Optimization.Midpoint
+- summary: При наличии интервала Возвращает интервал пробы, который в течение заданного интервала передается на коэффициент золотого соотношения.
+  uid: Microsoft.Quantum.Optimization.Probe
+- summary: Возвращает ширину интервала.
+  uid: Microsoft.Quantum.Optimization.Width
+name: Microsoft.Quantum.Optimization
+newtypes:
+- summary: Представляет результат оптимизации функции унивариате.
+  uid: Microsoft.Quantum.Optimization.UnivariateOptimizationResult
+operations: []
+summary: Содержит функции и оптимизации для поиска прыжка.
+uid: Microsoft.Quantum.Optimization
+metadata:
+  ms.openlocfilehash: 0271a658d625f9781b12a9659c80495200a9ba54
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92732872"

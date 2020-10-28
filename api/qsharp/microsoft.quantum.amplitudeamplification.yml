@@ -1,0 +1,139 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: >+
+    > [!WARNING]
+
+    > Ампампбйоракле является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.AmplitudeAmplification.StandardAmplitudeAmplification>.
+
+    >
+
+    > Используйте @"microsoft.quantum.amplitudeamplification.standardamplitudeamplification".
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpByOracle
+- summary: >+
+    > [!WARNING]
+
+    > Ампампбйораклефасес является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromStatePreparation>.
+
+    >
+
+    > Используйте @"microsoft.quantum.amplitudeamplification.amplitudeamplificationfromstatepreparation".
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpByOraclePhases
+- summary: >+
+    > [!WARNING]
+
+    > Ампампбирефлектионфасес является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromPartialReflections>.
+
+    >
+
+    > Используйте @"microsoft.quantum.amplitudeamplification.amplitudeamplificationfrompartialreflections".
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpByReflectionPhases
+- summary: >+
+    > [!WARNING]
+
+    > Ампампобливиаусбйораклефасес является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromStatePreparation>.
+
+    >
+
+    > Используйте @"microsoft.quantum.amplitudeamplification.obliviousamplitudeamplificationfromstatepreparation".
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpObliviousByOraclePhases
+- summary: >+
+    > [!WARNING]
+
+    > Ампампобливиаусбирефлектионфасес является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromPartialReflections>.
+
+    >
+
+    > Используйте @"microsoft.quantum.amplitudeamplification.obliviousamplitudeamplificationfrompartialreflections".
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpObliviousByReflectionPhases
+- summary: >+
+    > [!WARNING]
+
+    > Ампампфасесфикседпоинт является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.AmplitudeAmplification.FixedPointReflectionPhases>.
+
+    >
+
+    > Используйте @"microsoft.quantum.amplitudeamplification.fixedpointreflectionphases".
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpPhasesFixedPoint
+- summary: >+
+    > [!WARNING]
+
+    > Ампампфасесстандард является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.AmplitudeAmplification.StandardReflectionPhases>.
+
+    >
+
+    > Используйте @"microsoft.quantum.amplitudeamplification.standardreflectionphases".
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpPhasesStandard
+- summary: >+
+    > [!WARNING]
+
+    > Ампампротатионторефлектионфасес является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.AmplitudeAmplification.RotationPhasesAsReflectionPhases>.
+
+    >
+
+    > Используйте @"microsoft.quantum.amplitudeamplification.rotationphasesasreflectionphases".
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpRotationToReflectionPhases
+- summary: Усиление амплитуды путем частичной отражения.
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromPartialReflections
+- summary: Усиление амплитуды по Oracle для частичных отражений.
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromStatePreparation
+- summary: Вычисление этапов частичного отражения для усиления амплитуды с фиксированной точкой.
+  uid: Microsoft.Quantum.AmplitudeAmplification.FixedPointReflectionPhases
+- summary: Возвращает значение типа, которое реализует усиление амплитуды очевидным путем указания для частичных отражений.
+  uid: Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromPartialReflections
+- summary: Усиление амплитуды очевидным по Oracle для частичных отражений.
+  uid: Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromStatePreparation
+- summary: Конструирует отражение относительно нулевой строки | 0... 0 〉, которая является стандартным входным состоянием для усиления амплитуды.
+  uid: Microsoft.Quantum.AmplitudeAmplification.ReflectionStart
+- summary: Преобразует этапы, указанные в виде однокубитных поворотов, на фазы, указанные как частичные отражения.
+  uid: Microsoft.Quantum.AmplitudeAmplification.RotationPhasesAsReflectionPhases
+- summary: Стандартный алгоритм усиления амплитуды
+  uid: Microsoft.Quantum.AmplitudeAmplification.StandardAmplitudeAmplification
+- summary: Вычисление этапов частичного отражения для стандартного усиления амплитуды.
+  uid: Microsoft.Quantum.AmplitudeAmplification.StandardReflectionPhases
+- summary: >-
+    Конструирует `ReflectionOracle` о целевом состоянии, уникально помеченном флагом кубит.
+
+    Целевое состояние имеет одно значение кубит, равное 1, и все остальные 0: $ \кет {1} _f $.
+  uid: Microsoft.Quantum.AmplitudeAmplification.TargetStateReflectionOracle
+name: Microsoft.Quantum.AmplitudeAmplification
+newtypes:
+- summary: Этапы последовательности частичных отражений в усилении амплитуды.
+  uid: Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases
+- summary: Фазы для последовательности однокубитных поворотов в усилении амплитуды.
+  uid: Microsoft.Quantum.AmplitudeAmplification.RotationPhases
+operations:
+- summary: >+
+    > [!WARNING]
+
+    > Ампампрусбйоракле является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.AmplitudeAmplification.ApplyFixedPointAmplification>.
+
+    >
+
+    > Используйте @"microsoft.quantum.amplitudeamplification.applyfixedpointamplification".
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpRUSByOracle
+- summary: Применяет усиление амплитуды к заданному регистру, используя заданный набор фаз и Oracle, чтобы отражать начальное и конечное состояния.
+  uid: Microsoft.Quantum.AmplitudeAmplification.ApplyAmplitudeAmplification
+- summary: Fixed-Point алгоритм усиления амплитуды
+  uid: Microsoft.Quantum.AmplitudeAmplification.ApplyFixedPointAmplification
+- summary: Усиление амплитуды очевидным путем указания частичных отражений.
+  uid: Microsoft.Quantum.AmplitudeAmplification.ApplyObliviousAmplitudeAmplification
+- summary: Реализация метода <xref:microsoft.quantum.canon.targetstatereflectionoracle>.
+  uid: Microsoft.Quantum.AmplitudeAmplification.ApplyTargetStateReflectionOracle
+summary: Это пространство имен содержит функции и операции для выполнения усиления амплитуды.
+uid: Microsoft.Quantum.AmplitudeAmplification
+metadata:
+  ms.openlocfilehash: 7b95624eba1215e6b8be8f247c25a3931336b5fb
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92732329"
