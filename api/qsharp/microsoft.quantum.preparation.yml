@@ -1,0 +1,107 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: >-
+    Выполняет вычисление координат БЛОЧ-сферы для одного кубит состояния.
+
+    Учитывая два комплексных числа $a 0, a1 $, которые представляют состояние кубит, рассчитывает координаты в блочной сфере, что $a 0 \кет {0} + a1 \кет {1} = r e ^ {IT} (e ^ {-i \фи/2}\cos{(\ тета/2)} \кет {0} + e ^ {i \фи/2}\sin{(\ тета/2)} \кет {1} ) $.
+  uid: Microsoft.Quantum.Preparation.BlochSphereCoordinates
+- summary: >-
+    Использует методику такта для представления заданной матрицы плотности.
+
+    Учитывая список коэффициентов $N $ alpha_j $, он возвращает единую $U $, которая использует методику такта для подготовки приближения $ \тилде\рхо\ sum_ {j = 0} ^ {N-1} p_j \кет{ж}\бра{ж} $ пурификатион матрицы плотности $ \рхо = \ sum_ {j = 0} ^ {N-1} \фрак{| alpha_j |} {\ sum_k | \ alpha_k |} \кет{ж}\бра{ж} $. В этом приближении ошибка $ \епсилон $ заключается в том, что $ | p_j-\фрак{| alpha_j |} {\ sum_k | \ alpha_k |} | \ле \епсилон/N $ and $ \| \тилде\рхо-\рхо \| \ле \епсилон $. Иными словами, $ $ \бегин{алигн} У\кет {0} ^ {\лцеил\ Log_2 н\рцеил} \ Сисакет {0} ^ {m} = \ sum_ {j = 0} ^ {N-1} \скрт{p_j} \кет{ж}\кет{\текст{гарбаже} _j}. \енд{алигн} $ $
+  uid: Microsoft.Quantum.Preparation.QuantumROM
+- summary: ''
+  uid: Microsoft.Quantum.Preparation.QuantumROMBitStringWriterByIndex
+- summary: Возвращает общее число Кубитс, которые должны быть выделены операции, возвращенной `QuantumROM` .
+  uid: Microsoft.Quantum.Preparation.QuantumROMQubitCount
+- summary: ''
+  uid: Microsoft.Quantum.Preparation.RangeLength
+- summary: ''
+  uid: Microsoft.Quantum.Preparation.RoundedDiscretizationCoefficients
+- summary: >-
+    Возвращает операцию, которая готовит определенное состояние такта.
+
+    Возвращенная операция $U $ подготавливает произвольное состояние такта $ \кет{\пси} $ с сложными коэффициентами $r _j e ^ {i t_j} $ из $n $-кубит вычислительного состояния $ \ket{0...0} $.
+
+    Действие U для вновь выделенной регистрации задается параметром $ $ \бегин{алигн} У\кет {0... 0} = \кет{\пси} = \фрак{\ sum_ {j = 0} ^ {2 ^ n-1} r_j e ^ {i t_j} \кет{ж}}{\скрт{\ sum_ {j = 0} ^ {2 ^ n-1} | r_j | ^ 2}}. \енд{алигн} $ $
+  uid: Microsoft.Quantum.Preparation.StatePreparationComplexCoefficients
+- summary: >-
+    Возвращает операцию, которая готовит заданное состояние такта.
+
+    Возвращаемая операция, $U $, подготавливает произвольное состояние такта $ \ alpha_j \же $0 из $n $-кубит вычислительного состояния $ \ket{0...0} $.
+
+    Действие U для вновь выделенной регистрации задается параметром $ $ \бегин{алигн} U \ket{0\cdots 0} = \кет{\пси} = \фрак{\ sum_ {j = 0} ^ {2 ^ n-1} \ alpha_j \кет{ж}}{\скрт{\ sum_ {j = 0} ^ {2 ^ n-1} | \ alpha_j | ^ 2}}. \енд{алигн} $ $
+  uid: Microsoft.Quantum.Preparation.StatePreparationPositiveCoefficients
+- summary: Этап реализации процедуры подготовки произвольного состояния.
+  uid: Microsoft.Quantum.Preparation._ApproximatelyUnprepareArbitraryStatePlan
+- summary: ''
+  uid: Microsoft.Quantum.Preparation._CompileApproximateArbitraryStatePreparation
+- summary: ''
+  uid: Microsoft.Quantum.Preparation._QuantumROMDiscretization
+- summary: ''
+  uid: Microsoft.Quantum.Preparation._QuantumROMQubitManager
+- summary: Этап реализации процедуры подготовки произвольного состояния.
+  uid: Microsoft.Quantum.Preparation._StatePreparationSBMComputeCoefficients
+name: Microsoft.Quantum.Preparation
+newtypes: []
+operations:
+- summary: ''
+  uid: Microsoft.Quantum.Preparation.ApplyGlobalRotationStep
+- summary: ''
+  uid: Microsoft.Quantum.Preparation.ApplyMultiplexStep
+- summary: Применяет операцию к базовому Кубитс, делая регистр с прямым порядком байтов. Эта операция помечена как внутренняя, так как регистр с прямым порядком байтов должен быть "непрозрачным", так что это только деталь реализации.
+  uid: Microsoft.Quantum.Preparation.ApplyToLittleEndian
+- summary: Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает состояние для этой регистрации, описываемое заданным коэффициентом, вплоть до заданного допустимого значения приближения.
+  uid: Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryState
+- summary: Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает к этому регистру состояние, описываемое заданным коэффициентом.
+  uid: Microsoft.Quantum.Preparation.PrepareArbitraryState
+- summary: Подготавливает состояние Чои – Жамиłковски для данной операции к указанным ссылочным и целевым регистрам.
+  uid: Microsoft.Quantum.Preparation.PrepareChoiState
+- summary: Подготавливает состояние Чои – Жамиłковски для данной операции с примыкающим вариантом к заданным ссылочным и целевым регистрам.
+  uid: Microsoft.Quantum.Preparation.PrepareChoiStateA
+- summary: Подготавливает состояние Чои – Жамиłковски для данной операции с контролируемым вариантом на заданный эталонный и целевой регистр.
+  uid: Microsoft.Quantum.Preparation.PrepareChoiStateC
+- summary: Подготавливает состояние Чои – Жамиłковски для заданной операции с управляемыми и соседними вариантами на заданный эталонный и целевой регистры.
+  uid: Microsoft.Quantum.Preparation.PrepareChoiStateCA
+- summary: >-
+    Парные ентанглес два регистра кубит.
+
+    Это значит, что при наличии двух регистров подготавливается максимальное запутанными State $ \фрак {1} {\скрт {2} } \лефт (\кет {00} + \кет {11} \ригхт) $ между каждой парой Кубитс в соответствующих регистрах, предполагая, что каждый регистр начинается в состоянии $ \ket{0\cdots 0} $.
+  uid: Microsoft.Quantum.Preparation.PrepareEntangledState
+- summary: >-
+    При наличии регистра подготавливает эту регистрацию в максимальном смешанном состоянии.
+
+    Регистрация подготавливается в состоянии $ \болдоне/2 ^ N $, применяя полный канал деполаризинг к каждому кубит, где $N $ — это длина регистра.
+  uid: Microsoft.Quantum.Preparation.PrepareIdentity
+- summary: ''
+  uid: Microsoft.Quantum.Preparation.PrepareQuantumROMState
+- summary: >-
+    Подготавливает кубит в еиженстате + 1 ( `Zero` ) для данного оператора Паули. Если указан оператор Identity, кубит подготавливается в максимально смешанном состоянии.
+
+    Если кубит изначально находится в состоянии $ \кет {0} $, эта операция подготавливает кубит в еиженстате $ + $1 для данного оператора Паули или, для `PauliI` , в максимально смешанном состоянии (см <xref:microsoft.quantum.preparation.preparesinglequbitidentity> .).
+
+    Если кубит находится в состоянии, отличном от $ \кет {0} $, эта операция применяет следующие шлюзы: $H $ for `PauliX` , $HS $ для `PauliY` , $I $ for `PauliZ` и <xref:microsoft.quantum.preparation.preparesinglequbitidentity> для `PauliI` .
+  uid: Microsoft.Quantum.Preparation.PrepareQubit
+- summary: >-
+    Подготавливает кубит в максимально смешанном состоянии.
+
+    Он подготавливает заданный кубит в состоянии $ \болдоне/$2, применяя канал деполаризинг $ $ \бегин{алигн} \Омега (\рхо) \масрел{: =} \фрак {1} {4} \ sum_ {\му \ин \{ 0, 1, 2, 3 \} } \сигма \_ {\му} \rho \sigma \_ {\mu} ^ {\dagger}, \end{align} $ $, где $ \sigma \_ i $ — $i $ TH Pauli, где $ \rho $ — оператор плотности, представляющий смешанное состояние.
+  uid: Microsoft.Quantum.Preparation.PrepareSingleQubitIdentity
+- summary: >-
+    Создает равномерное перестановку по состояниям, закодированным с 0 по `nIndices - 1` .
+
+    То есть, это единое $U $ создает равномерное перестановку для всех состояний $0 $ в $M-$1, учитывая входное состояние $ \ket{0\cdots 0} $. Иными словами, $ $ \бегин{алигн} У\кет {0} = \фрак {1} {\скрт{м}}\ sum_ {j = 0} ^ {M-1} \кет{ж}. \енд{алигн} $ $.
+  uid: Microsoft.Quantum.Preparation.PrepareUniformSuperposition
+- summary: Этап реализации <xref:microsoft.quantum.canon.prepareuniformsuperposition>
+  uid: Microsoft.Quantum.Preparation.PrepareUniformSuperposition_
+- summary: ''
+  uid: Microsoft.Quantum.Preparation.WriteQuantumROMBitString
+summary: Это пространство имен содержит функции и операции для подготовки Кубитс к произвольным начальным состояниям.
+uid: Microsoft.Quantum.Preparation
+metadata:
+  ms.openlocfilehash: f8dc07d5fe1073f626eea41e6291d8cc919d93b6
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92732848"
