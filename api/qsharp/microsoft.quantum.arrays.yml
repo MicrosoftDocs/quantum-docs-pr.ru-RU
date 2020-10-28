@@ -1,0 +1,166 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: При наличии массива и предиката, определенного для элементов массива, и проверяет, удовлетворяет ли предикату все элементы массива.
+  uid: Microsoft.Quantum.Arrays.All
+- summary: При наличии массива и предиката, определенного для элементов массива, проверяет, удовлетворяет ли предикату хотя бы один элемент массива.
+  uid: Microsoft.Quantum.Arrays.Any
+- summary: Разделяет массив на несколько частей равной длины.
+  uid: Microsoft.Quantum.Arrays.Chunks
+- summary: Извлекает столбец из матрицы.
+  uid: Microsoft.Quantum.Arrays.ColumnAt
+- summary: Эта функция не проверяет фигуру матрицы
+  uid: Microsoft.Quantum.Arrays.ColumnAtUnchecked
+- summary: Создает массив заданной длины со всеми элементами, равными заданному значению.
+  uid: Microsoft.Quantum.Arrays.ConstantArray
+- summary: При наличии массива и предиката, определенного для элементов массива, возвращает число элементов массива, состоящего из элементов, которые соответствуют предикату.
+  uid: Microsoft.Quantum.Arrays.Count
+- summary: Объединяет сопоставленные и объединенные в одну функцию
+  uid: Microsoft.Quantum.Arrays.CumulativeFolded
+- summary: Возвращает массив диагональных элементов двухмерного массива
+  uid: Microsoft.Quantum.Arrays.Diagonal
+- summary: Возвращает объект по указанному индексу массива.
+  uid: Microsoft.Quantum.Arrays.ElementAt
+- summary: ''
+  uid: Microsoft.Quantum.Arrays.ElementAtDiagonal
+- summary: Возвращает элементы массива в заданном диапазоне индексов.
+  uid: Microsoft.Quantum.Arrays.ElementsAt
+- summary: Возвращает пустой массив заданного типа.
+  uid: Microsoft.Quantum.Arrays.EmptyArray
+- summary: При наличии массива возвращает новый массив, содержащий элементы исходного массива вместе с индексами каждого элемента.
+  uid: Microsoft.Quantum.Arrays.Enumerated
+- summary: При наличии двух массивов одного типа и предиката, определенного для пар элементов массивов, проверяет, равны ли массивы.
+  uid: Microsoft.Quantum.Arrays.EqualA
+- summary: Возвращает массив, содержащий элементы другого массива, за исключением элементов в указанном списке индексов.
+  uid: Microsoft.Quantum.Arrays.Exclude
+- summary: Возвращает массив, содержащий элементы другого массива, за исключением элементов в указанном списке индексов.
+  uid: Microsoft.Quantum.Arrays.Excluding
+- summary: При наличии массива и предиката, определенного для элементов массива, возвращает массив, состоящий из элементов, которые соответствуют предикату.
+  uid: Microsoft.Quantum.Arrays.Filtered
+- summary: При наличии массива и функции, которая сопоставляет элемент массива с каким-либо выходным массивом, возвращает объединенные выходные массивы для каждого элемента массива.
+  uid: Microsoft.Quantum.Arrays.FlatMapped
+- summary: При наличии массива массивов возвращает объединение всех массивов.
+  uid: Microsoft.Quantum.Arrays.Flattened
+- summary: Выполняет итерацию функции `f` через массив `array` , возвращая `f(f(f(initialState, array[0]), array[1]), ...)` .
+  uid: Microsoft.Quantum.Arrays.Fold
+- summary: Возвращает первый элемент массива.
+  uid: Microsoft.Quantum.Arrays.Head
+- summary: Возвращает кортеж из первого и всех остальных элементов массива.
+  uid: Microsoft.Quantum.Arrays.HeadAndRest
+- summary: ''
+  uid: Microsoft.Quantum.Arrays.Identity
+- summary: Возвращает первый индекс первого элемента в массиве, удовлетворяющего заданному предикату. Если такого элемента не существует, возвращает значение-1.
+  uid: Microsoft.Quantum.Arrays.IndexOf
+- summary: При наличии массива возвращает диапазон по индексам этого массива, который подходит для использования в цикле for.
+  uid: Microsoft.Quantum.Arrays.IndexRange
+- summary: Покидает два массива (почти) одинакового размера.
+  uid: Microsoft.Quantum.Arrays.Interleaved
+- summary: Возвращает значение true только в том случае, если массив пуст.
+  uid: Microsoft.Quantum.Arrays.IsEmpty
+- summary: Выводит значение true только в том случае, если данный массив представляет перестановку.
+  uid: Microsoft.Quantum.Arrays.IsPermutation
+- summary: При наличии массива возвращает значение, указывающее, сортируется ли этот массив как определенный данной функцией сравнения.
+  uid: Microsoft.Quantum.Arrays.IsSorted
+- summary: ''
+  uid: Microsoft.Quantum.Arrays.IsValuePresent
+- summary: При наличии массива возвращает функцию, которая возвращает элементы этого массива.
+  uid: Microsoft.Quantum.Arrays.LookupFunction
+- summary: При наличии массива и функции, определенной для элементов массива, возвращает новый массив, состоящий из изображений исходного массива в функции.
+  uid: Microsoft.Quantum.Arrays.Mapped
+- summary: При наличии массива и функции, определенной для индексированных элементов массива, возвращает новый массив, состоящий из изображений исходного массива в функции.
+  uid: Microsoft.Quantum.Arrays.MappedByIndex
+- summary: При наличии диапазона и функции, принимающей в качестве входных данных целое число, возвращает новый массив, состоящий из изображений значений диапазона в функции.
+  uid: Microsoft.Quantum.Arrays.MappedOverRange
+- summary: При наличии двух отсортированных массивов возвращает один массив, содержащий элементы обоих элементов в отсортированном порядке. Используется для внутренних целей при сортировке слиянием.
+  uid: Microsoft.Quantum.Arrays.Merged
+- summary: Создает массив, равный входному массиву, за исключением того, что последний элемент массива удален.
+  uid: Microsoft.Quantum.Arrays.Most
+- summary: Возвращает кортеж всех, кроме одного и последнего элемента массива.
+  uid: Microsoft.Quantum.Arrays.MostAndTail
+- summary: Возвращает массив, дополненный с указанными значениями вплоть до указанной длины.
+  uid: Microsoft.Quantum.Arrays.Padded
+- summary: Разделяет массив на несколько частей.
+  uid: Microsoft.Quantum.Arrays.Partitioned
+- summary: ''
+  uid: Microsoft.Quantum.Arrays.Prefix
+- summary: При наличии массива возвращает все его префиксы.
+  uid: Microsoft.Quantum.Arrays.Prefixes
+- summary: Представляет условие, в котором двухмерный массив имеет прямоугольную фигуру
+  uid: Microsoft.Quantum.Arrays.RectangularArrayFact
+- summary: Создает массив, равный входному массиву, за исключением того, что первый элемент массива удаляется.
+  uid: Microsoft.Quantum.Arrays.Rest
+- summary: Создайте массив, содержащий те же элементы, что и входной массив, но в обратный порядок.
+  uid: Microsoft.Quantum.Arrays.Reversed
+- summary: Получение массива целых чисел в заданном интервале.
+  uid: Microsoft.Quantum.Arrays.SequenceI
+- summary: Получение массива целых чисел в заданном интервале.
+  uid: Microsoft.Quantum.Arrays.SequenceL
+- summary: При наличии массива возвращает элементы этого массива, отсортированные по заданной функции сравнения.
+  uid: Microsoft.Quantum.Arrays.Sorted
+- summary: Представляет условие, которое двумерный массив имеет квадратную фигуру
+  uid: Microsoft.Quantum.Arrays.SquareArrayFact
+- summary: Принимает массив и список расположений и создает новый массив, сформированный из элементов исходного массива, которые соответствуют заданным местам.
+  uid: Microsoft.Quantum.Arrays.Subarray
+- summary: Применяет перестановку двух элементов в массиве.
+  uid: Microsoft.Quantum.Arrays.Swapped
+- summary: Возвращает последний элемент массива.
+  uid: Microsoft.Quantum.Arrays.Tail
+- summary: Возвращает перестановку матрицы, представленной в виде массива массивов.
+  uid: Microsoft.Quantum.Arrays.Transposed
+- summary: Включает список из двух кортежей в вложенный массив.
+  uid: Microsoft.Quantum.Arrays.TupleArrayAsNestedArray
+- summary: Возвращает новый массив, у которого нет равных смежных элементов.
+  uid: Microsoft.Quantum.Arrays.Unique
+- summary: При наличии массива из двух кортежей функция возвращает кортеж с двумя массивами, каждый из которых содержит элементы кортежей входного массива.
+  uid: Microsoft.Quantum.Arrays.Unzipped
+- summary: При наличии предиката и массива возвращает индексы этого массива, где предикат имеет значение true.
+  uid: Microsoft.Quantum.Arrays.Where
+- summary: Возвращает все последовательные подмассивы длины `size` .
+  uid: Microsoft.Quantum.Arrays.Windows
+- summary: >-
+    > [!WARNING]
+
+    > ZIP является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Arrays.Zipped>.
+
+
+    При наличии двух массивов возвращает новый массив пар, в котором каждая пара содержит элемент из каждого исходного массива.
+  uid: Microsoft.Quantum.Arrays.Zip
+- summary: >-
+    > [!WARNING]
+
+    > Zip3 является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Arrays.Zipped3>.
+
+
+    При наличии трех массивов возвращает новый массив из трех кортежей, в которых каждый кортеж из трех элементов содержит элемент из каждого исходного массива.
+  uid: Microsoft.Quantum.Arrays.Zip3
+- summary: >-
+    > [!WARNING]
+
+    > Zip4 является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Arrays.Zipped4>.
+
+
+    При наличии четырех массивов возвращает новый массив из 4 кортежей таким, что каждый 4 кортежа содержит элемент из каждого исходного массива.
+  uid: Microsoft.Quantum.Arrays.Zip4
+- summary: При наличии двух массивов возвращает новый массив пар, в котором каждая пара содержит элемент из каждого исходного массива.
+  uid: Microsoft.Quantum.Arrays.Zipped
+- summary: При наличии трех массивов возвращает новый массив из трех кортежей, в которых каждый кортеж из трех элементов содержит элемент из каждого исходного массива.
+  uid: Microsoft.Quantum.Arrays.Zipped3
+- summary: При наличии четырех массивов возвращает новый массив из 4 кортежей таким, что каждый 4 кортежа содержит элемент из каждого исходного массива.
+  uid: Microsoft.Quantum.Arrays.Zipped4
+- summary: Возвращает порядок элементов в массиве, который должен быть переключен для создания упорядоченного массива. Предполагается, что происходит переключение на месте.
+  uid: Microsoft.Quantum.Arrays._SwapOrderToPermuteArray
+name: Microsoft.Quantum.Arrays
+newtypes: []
+operations:
+- summary: Повторяет операцию для заданного числа выборок, собирая выходные данные в массиве.
+  uid: Microsoft.Quantum.Arrays.DrawMany
+- summary: При наличии массива и операции, определенной для элементов массива, возвращает новый массив, состоящий из изображений исходного массива в операции.
+  uid: Microsoft.Quantum.Arrays.ForEach
+summary: Это пространство имен содержит функции для создания массивов данных и управления ими.
+uid: Microsoft.Quantum.Arrays
+metadata:
+  ms.openlocfilehash: aa551a5e9372bd63335a3a9ae3d817628722c09d
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92730353"

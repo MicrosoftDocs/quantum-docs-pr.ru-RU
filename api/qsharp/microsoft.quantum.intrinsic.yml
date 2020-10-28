@@ -1,0 +1,135 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: Записывает в журнал сообщение.
+  uid: Microsoft.Quantum.Intrinsic.Message
+name: Microsoft.Quantum.Intrinsic
+newtypes: []
+operations:
+- summary: >+
+    > [!WARNING]
+
+    > Утверждение не рекомендуется к использованию. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertMeasurement>.
+
+  uid: Microsoft.Quantum.Intrinsic.Assert
+- summary: >+
+    > [!WARNING]
+
+    > Ассертпроб является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Diagnostics.AssertMeasurementProbability>.
+
+  uid: Microsoft.Quantum.Intrinsic.AssertProb
+- summary: Применяет шлюз удвоенной управляемости — не (ККНОТ) к трем Кубитс.
+  uid: Microsoft.Quantum.Intrinsic.CCNOT
+- summary: >-
+    Применяет шлюз управляемого объекта (кнот) к паре Кубитс.
+
+    \бегин{алигн} \Операторнаме{кнот} \масрел{: =} \бегин{бматрикс} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \енд{бматрикс}, \енд{алигн}, где строки и столбцы упорядочиваются как в разделе "Основные понятия о такте".
+  uid: Microsoft.Quantum.Intrinsic.CNOT
+- summary: >-
+    Применяет экспоненту оператора Multi-кубит Паули.
+
+    \бегин{алигн} e ^ {i \сета [P_0 \отимес P_1 \кдотс P_ {N-1}]}, \енд{алигн}, где $P _i $ — это $i $ TH элемент `paulis` , а $N = $ `Length(paulis)` .
+  uid: Microsoft.Quantum.Intrinsic.Exp
+- summary: >-
+    Применяет экспоненту оператора Multi-кубит Паули с аргументом, заданным в дробной части ДЯДИК.
+
+    \бегин{алигн} e ^ {i \пи k [P_0 \отимес P_1 \кдотс P_ {N-1}]/2 ^ N}, \енд{алигн}, где $P _i $ — это $i $ th элемента `paulis` , где $N = $ `Length(paulis)` .
+  uid: Microsoft.Quantum.Intrinsic.ExpFrac
+- summary: >-
+    Применяет преобразование Хадамард к одному кубит.
+
+    \бегин{алигн} H \масрел{: =} \фрак {1} {\скрт {2} } \бегин{бматрикс} 1 & 1 \\ \\ 1 &-1 \енд{бматрикс}. \енд{алигн}
+  uid: Microsoft.Quantum.Intrinsic.H
+- summary: Выполняет операцию идентификации (No-op) в одном кубит.
+  uid: Microsoft.Quantum.Intrinsic.I
+- summary: >-
+    Выполняет измерение отдельного кубита в Паули $Z $.
+
+    Результат вывода задается параметром Distribution \бегин{алигн} \Пр (\Тексттт{зеро} | \кет{\пси}) = \бракет{\пси | 0} \braket{0 | \пси}. \енд{алигн}
+  uid: Microsoft.Quantum.Intrinsic.M
+- summary: >-
+    Выполняет совместное измерение одного или нескольких Кубитс в указанных базовых базах Паули.
+
+    Результат получается в результате распределения: \бегин{алигн} \Пр (\Тексттт{зеро} | \кет{\пси}) = \frac12 \бракет{\пси \мид | \лефт (\болдоне + P_0 \отимес P_1 \otimes \cdots \otimes P_ {N-1} \right) \mid | \psi}, \end{align}, где $P _i $ — это $i $ TH `bases` , и where $N = \texttt{Length} (\texttt{bases}) $. То есть измерение возвращает `Result` $d $ таким, что еиженвалуе наблюдаемый результат измерения равен $ (-1) ^ d $.
+  uid: Microsoft.Quantum.Intrinsic.Measure
+- summary: >-
+    Применяет поворот к заданной оси Паули.
+
+    \бегин{алигн} R_ {\му} (\сета) \масрел{: =} e ^ {-i \сета \ sigma_ {\му}/2}, \енд{алигн}, где $ \му \ин \{ i, X, Y, Z \} $.
+  uid: Microsoft.Quantum.Intrinsic.R
+- summary: >-
+    Применяет поворот к {1} состоянию $ \кет $ на заданный угол.
+
+    \бегин{алигн} R_1 (\сета) \масрел{: =} \операторнаме{диаг} (1, e ^ {и\сета}). \енд{алигн}
+  uid: Microsoft.Quantum.Intrinsic.R1
+- summary: >-
+    Применяет поворот к {1} состоянию $ \кет $ на угол, заданный как дробь ДЯДИК.
+
+    \бегин{алигн} R_1 (n, k) \масрел{: =} \операторнаме{диаг} (1, e ^ {i \пи k/2 ^ n}). \енд{алигн}
+
+    > [!WARNING] > эта операция использует **противоположное** соглашение о знаках от > @"microsoft.quantum.intrinsic.r" и не включает в себя > фактор $1/2 $, включенный в @"microsoft.quantum.intrinsic.r1" .
+  uid: Microsoft.Quantum.Intrinsic.R1Frac
+- summary: >-
+    Применяет поворот к заданной оси Паули на угол, заданный как дробь ДЯДИК.
+
+    \бегин{алигн} R_ {\му} (n, k) \масрел{: =} e ^ {i \пи n \ sigma_ {\му}/2 ^ k}, \енд{алигн}, где $ \му \ин \{ i, X, Y, Z \} $.
+
+    > [!WARNING] > эта операция использует **противоположное** соглашение о знаках из > @"microsoft.quantum.intrinsic.r" .
+  uid: Microsoft.Quantum.Intrinsic.RFrac
+- summary: >+
+    > [!WARNING]
+
+    > Функция Random устарела. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Random.DrawCategorical>.
+
+  uid: Microsoft.Quantum.Intrinsic.Random
+- summary: Учитывая один кубит, измеряет его и гарантирует, что он находится в состоянии | 0 ⟩, чтобы его можно было безопасно освободить.
+  uid: Microsoft.Quantum.Intrinsic.Reset
+- summary: Учитывая массив Кубитс, измерьте их и убедитесь, что они находятся в состоянии | 0 ⟩, чтобы их можно было безопасно освободить.
+  uid: Microsoft.Quantum.Intrinsic.ResetAll
+- summary: >-
+    Применяет поворот к $x $-оси на заданный угол.
+
+    \бегин{алигн} R_x (\сета) \масрел{: =} e ^ {-i \сета \ sigma_x/2} = \бегин{бматрикс} \кос \фрак{\сета} {2} &-и\син \фрак{\сета} {2} \\ \\ -i\sin \frac{\theta} {2} & \cos \frac{\theta} {2} \end{bmatrix}.   \енд{алигн}
+  uid: Microsoft.Quantum.Intrinsic.Rx
+- summary: >-
+    Применяет поворот к $y $-оси на заданный угол.
+
+    \бегин{алигн} R_y (\сета) \масрел{: =} e ^ {-i \сета \ sigma_y/2} = \бегин{бматрикс} \кос \фрак{\сета} {2} &-\син \фрак{\сета} {2} \\ \\ \sin \frac{\theta} {2} & \cos \frac{\theta} {2} \end{bmatrix}.   \енд{алигн}
+  uid: Microsoft.Quantum.Intrinsic.Ry
+- summary: >-
+    Применяет поворот к $z $-оси на заданный угол.
+
+    \бегин{алигн} R_z (\сета) \масрел{: =} e ^ {-i \сета \ sigma_z/2} = \бегин{бматрикс} e ^ {-i \сета/2} & 0 \\ \\ 0 & е ^ {i \сета/2} \енд{бматрикс}. \енд{алигн}
+  uid: Microsoft.Quantum.Intrinsic.Rz
+- summary: Применяет шлюз S к одному кубит.
+  uid: Microsoft.Quantum.Intrinsic.S
+- summary: >-
+    Применяет шлюз подкачки к паре Кубитс.
+
+    \бегин{алигн} \Операторнаме{СВАП} \масрел{: =} \бегин{бматрикс} 1 & 0 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \енд{бматрикс}, \енд{алигн}, где строки и столбцы упорядочиваются как в разделе "Основные понятия о такте".
+  uid: Microsoft.Quantum.Intrinsic.SWAP
+- summary: Применяет T-шлюз к одному кубит.
+  uid: Microsoft.Quantum.Intrinsic.T
+- summary: >-
+    Применяет шлюз Паули $X $.
+
+    \бегин{алигн} \ sigma_x \масрел{: =} \бегин{бматрикс} 0 & 1 \\ \\ 1 & 0 \енд{бматрикс}. \енд{алигн}
+  uid: Microsoft.Quantum.Intrinsic.X
+- summary: >-
+    Применяет шлюз Паули $Y $.
+
+    \бегин{алигн} \ sigma_y \масрел{: =} \бегин{бматрикс} 0 &-i \\ \\ & 0 \енд{бматрикс}. \енд{алигн}
+  uid: Microsoft.Quantum.Intrinsic.Y
+- summary: >-
+    Применяет шлюз Паули $Z $.
+
+    \бегин{алигн} \ sigma_z \масрел{: =} \бегин{бматрикс} 1 & 0 \\ \\ 0 &-1 \енд{бматрикс}. \енд{алигн}
+  uid: Microsoft.Quantum.Intrinsic.Z
+summary: ''
+uid: Microsoft.Quantum.Intrinsic
+metadata:
+  ms.openlocfilehash: b88a931baa553d2e075bec01ce112b58b4fc913c
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92731704"
