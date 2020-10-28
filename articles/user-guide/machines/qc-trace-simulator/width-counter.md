@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.qc-trace-simulator.width-counter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 701c36dd8c8b087a2728cd935aee0c2ffc4f59f9
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: e54e92cc4a76ce9f9c5aead84f2b64320d6b4f1c
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835950"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691127"
 ---
 # <a name="quantum-trace-simulator-width-counter"></a>Симулятор тактовой трассировки: Счетчик ширины
 
@@ -22,7 +22,7 @@ ms.locfileid: "90835950"
 
 ## <a name="invoking-the-width-counter"></a>Вызов счетчика ширины
 
-Чтобы запустить симулятор трассировки тактов с счетчиком Width, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, установить `UseWidthCounter` свойство в **значение true**, а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра. 
+Чтобы запустить симулятор трассировки тактов с счетчиком Width, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, установить `UseWidthCounter` свойство в **значение true** , а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра. 
 
 ```csharp
 var config = new QCTraceSimulatorConfiguration();
@@ -32,7 +32,7 @@ var sim = new QCTraceSimulator(config);
 
 ## <a name="using-the-width-counter-in-a-c-host-program"></a>Использование счетчика ширины в управляющей программе C#
 
-В примере C#, приведенном ниже в этом разделе, вычисляется количество дополнительных Кубитс, выделенных реализацией операции умножения <xref:microsoft.quantum.intrinsic.x> , на основе следующего Q# примера кода:
+В примере C#, приведенном ниже в этом разделе, вычисляется количество дополнительных Кубитс, выделенных реализацией операции умножения <xref:Microsoft.Quantum.Intrinsic.X> , на основе следующего Q# примера кода:
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;
@@ -44,7 +44,7 @@ operation ApplyMultiControlledX( numberOfQubits : Int ) : Unit {
 }
 ```
 
-Операция умножения выполняется <xref:microsoft.quantum.intrinsic.x> для всего пяти Кубитс, выделяет два [вспомогательных Кубитс](xref:microsoft.quantum.glossary#ancilla)и имеет ширину ввода **5**. Используйте следующую программу C# для проверки счетчиков:
+Операция умножения выполняется <xref:Microsoft.Quantum.Intrinsic.X> для всего пяти Кубитс, выделяет два [вспомогательных Кубитс](xref:microsoft.quantum.glossary#ancilla)и имеет ширину ввода **5** . Используйте следующую программу C# для проверки счетчиков:
 
 ```csharp 
 var config = new QCTraceSimulatorConfiguration();
@@ -71,7 +71,7 @@ double inputWidth =
 string csvSummary = sim.ToCSV()[MetricsCountersNames.widthCounter];
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.

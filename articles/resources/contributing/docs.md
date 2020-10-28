@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing.docs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 20e9f8126a290f52701b6b0e525d7669a605d4c9
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 2debef858c38b9a8f11264858130ed7cb41543ae
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759685"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691794"
 ---
 # <a name="improving-documentation"></a>Улучшение документации
 
@@ -46,7 +46,7 @@ ms.locfileid: "90759685"
 
 ### <a name="referencing-sample-code-from-conceptual-articles"></a>Создание ссылок на примеры кода из концептуальных статей
 
-Если вы хотите включить код из [репозитория Samples](https://github.com/Microsoft/Quantum), это можно сделать с помощью специальной команды Markdown DocFX:
+Если вы хотите включить код из [репозитория Samples](https://github.com/Microsoft/Quantum), это можно сделать с помощью специальной команды DocFX-Flavored Markdown:
 
 ```markdown
 :::code language="qsharp" source="~/quantum/samples/algorithms/chsh-game/Game.qs" range="4-8":::
@@ -138,7 +138,7 @@ ms.locfileid: "90759685"
  }
 ```
 
-Отображаемую версию кода, приведенную выше, можно увидеть в [документации по API для `ControlledOnBitString` функции](xref:microsoft.quantum.canon.controlledonbitstring).
+Отображаемую версию кода, приведенную выше, можно увидеть в [документации по API для `ControlledOnBitString` функции](xref:Microsoft.Quantum.Canon.ControlledOnBitString).
 
 В дополнение к общей практике написания документации по написанию комментариев к документации по API он помогает в уме некоторые моменты.
 

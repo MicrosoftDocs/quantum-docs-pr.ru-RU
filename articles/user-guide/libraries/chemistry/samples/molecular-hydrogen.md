@@ -9,12 +9,12 @@ uid: microsoft.quantum.chemistry.examples.energyestimate
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 05506f4099de754cd02d81fbd9200f2de091e37e
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 81fba0c52c854d61f9143659795fb4d3c3cee8b9
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759738"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691537"
 ---
 # <a name="obtaining-energy-level-estimates"></a>Получение оценок энергетических уровней
 Оценка значений уровня энергии является одним из основных приложений тактовой химия. В этой статье описано, как это сделать для канонического примера водомолекулярное. Образец, указанный в этом разделе, находится [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogen) в репозитории примеров химия. Более наглядным примером, который отображает выходные данные, является [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogenGUI) демонстрация.
@@ -44,7 +44,7 @@ ms.locfileid: "90759738"
     var fermionHamiltonian = new OrbitalIntegralHamiltonian(orbitalIntegrals).ToFermionHamiltonian();
 ```
 
-Для имитации Хамилтониан необходимо преобразовать операторы фермион в операторы кубит. Это преобразование выполняется с помощью Вигнер кодирования следующим образом:
+Для имитации Хамилтониан необходимо преобразовать операторы фермион в операторы кубит. Это преобразование выполняется с помощью Jordan-Wigner кодирования следующим образом:
 
 ```csharp
     // The Jordan-Wigner encoding converts the fermion Hamiltonian, 
@@ -83,7 +83,7 @@ let integratorOrder = 4;
 let (nQubits, (rescale, oracle)) =  TrotterStepOracle (qSharpData, stepSize, integratorOrder);
 ```
 
-На этом этапе можно использовать [алгоритмы оценки этапа](xref:microsoft.quantum.libraries.characterization) стандартной библиотеки для изучения энергии в состоянии заземления с помощью предыдущего моделирования. Для этого необходимо подготовить хорошее приближение к состоянию земли в такте. В схеме представлены предложения по подобным приближениям [`Broombridge`](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) . Однако в отсутствие этих предложений подход по умолчанию добавляет ряд `hamiltonian.NElectrons` электронов в гридили, чтобы сократить силы по диагонали на один электрон. Функции и операции оценки этапа предоставляются в нотации DocFX в пространстве имен [Microsoft. тактов. character](xref:microsoft.quantum.characterization) .
+На этом этапе можно использовать [алгоритмы оценки этапа](xref:microsoft.quantum.libraries.characterization) стандартной библиотеки для изучения энергии в состоянии заземления с помощью предыдущего моделирования. Для этого необходимо подготовить хорошее приближение к состоянию земли в такте. В схеме представлены предложения по подобным приближениям [`Broombridge`](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) . Однако в отсутствие этих предложений подход по умолчанию добавляет ряд `hamiltonian.NElectrons` электронов в гридили, чтобы сократить силы по диагонали на один электрон. Функции и операции оценки этапа предоставляются в нотации DocFX в пространстве имен [Microsoft. тактов. character](xref:Microsoft.Quantum.Characterization) .
 
 В следующем фрагменте кода показано, как в режиме реального времени результаты развития библиотеки моделирования химия интегрируются с оценкой фазы такта.
 

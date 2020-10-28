@@ -9,12 +9,12 @@ uid: microsoft.quantum.overview.katas
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 097d7f70088b6ee84a1e91ee99be59149dd9e15b
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 6b2eff2a457b809bd168b9b59ab013b7fc7541e6
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834828"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691642"
 ---
 # <a name="learn-quantum-computing-with-the-quantum-katas"></a>Изучение квантовых вычислений с помощью Quantum Katas
 
@@ -55,7 +55,7 @@ ms.locfileid: "90834828"
 |[Определение квантовых вентилей](https://github.com/microsoft/QuantumKatas/tree/main/BasicGates)|Ряд упражнений, которые помогут вам ознакомиться с основными шлюзовыми шлюзами в Q# . Включает в себя упражнения для основных кубит и многокубитных шлюзов, смежных и контролируемых шлюзов, а также использование шлюзов для изменения состояния кубит.|
 |[Создание квантовой суперпозиции](https://github.com/microsoft/QuantumKatas/tree/main/Superposition)|Используйте эти упражнения, чтобы ознакомиться с концепцией и программированием в Q# . Включает в себя упражнения для основных кубит и многокубитных шлюзов, а также управления потоком и рекурсии в Q# .|
 |[Дифференциация квантовых состояний путем измерений](https://github.com/microsoft/QuantumKatas/tree/main/Measurements)|Эти упражнения помогут вам в изучении измерения такта и ортогональных и неортогональных состояний. |
-|[Связанные измерения](https://github.com/microsoft/QuantumKatas/tree/main/JointMeasurements)|Сведения об Объединенных измерениях четности и об использовании операции [измерения](xref:microsoft.quantum.intrinsic.measure) для различения состояний тактов.|
+|[Связанные измерения](https://github.com/microsoft/QuantumKatas/tree/main/JointMeasurements)|Сведения об Объединенных измерениях четности и об использовании операции [измерения](xref:Microsoft.Quantum.Intrinsic.Measure) для различения состояний тактов.|
 
 ### <a name="algorithms"></a>Алгоритмы
 

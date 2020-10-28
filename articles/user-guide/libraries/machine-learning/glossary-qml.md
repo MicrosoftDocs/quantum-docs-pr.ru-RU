@@ -9,12 +9,12 @@ uid: microsoft.quantum.libraries.machine-learning.training
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 39974af0121a5167f1965e508cd595535178548b
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 476e93e3737dee6ad8f3a97e8ffbcfb9b0012ee1
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833899"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691511"
 ---
 # <a name="quantum-machine-learning-glossary"></a>Глоссарий Машинное обучение
 
@@ -30,7 +30,7 @@ ms.locfileid: "90833899"
 
 ## <a name="hyperparameters"></a>Гиперпараметров
 
-Процесс обучения модели регулируется определенными предварительно заданными значениями, которые называются *параметрами*.
+Процесс обучения модели регулируется определенными предварительно заданными значениями, которые называются *параметрами* .
 
 ### <a name="learning-rate"></a>Скорость обучения
 
@@ -56,9 +56,10 @@ ms.locfileid: "90833899"
 
 #### <a name="how-to-modify-the-hyperparameters"></a>Изменение параметров
 
-В библиотеке КМЛ наилучшим способом изменения параметров является переопределение значений определяемого пользователем типа по умолчанию [`TrainingOptions`](xref:microsoft.quantum.machinelearning.trainingoptions) . Для этого мы вызываем его с помощью функции [`DefaultTrainingOptions`](xref:microsoft.quantum.machinelearning.defaulttrainingoptions) и применяем оператор `w/` для переопределения значений по умолчанию. Например, чтобы использовать измерения 100 000 и частоту обучения 0,01:
- ```qsharp
+В библиотеке КМЛ наилучшим способом изменения параметров является переопределение значений определяемого пользователем типа по умолчанию [`TrainingOptions`](xref:Microsoft.Quantum.MachineLearning.TrainingOptions) . Для этого мы вызываем его с помощью функции [`DefaultTrainingOptions`](xref:Microsoft.Quantum.MachineLearning.DefaultTrainingOptions) и применяем оператор `w/` для переопределения значений по умолчанию. Например, чтобы использовать измерения 100 000 и частоту обучения 0,01:
+
+```qsharp
 let options = DefaultTrainingOptions()
 w/ LearningRate <- 0.01
 w/ NMeasurements <- 100000;
- ```
+```

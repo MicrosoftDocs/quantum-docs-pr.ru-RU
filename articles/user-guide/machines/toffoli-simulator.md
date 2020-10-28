@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.toffoli-simulator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 82882f01d1b5c036faee71f18a18b2595107ddb7
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 036896a33fa02db671a5fd07421160df164bd41d
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835916"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92690791"
 ---
 # <a name="quantum-development-kit-qdk-toffoli-simulator"></a>Симулятор Тоффоли для пакета разработки такта (КДК)
 
@@ -67,7 +67,7 @@ dotnet run -s ToffoliSimulator
 Имитатор Тоффоли поддерживает:
 
 * Повороты и возведен пол, например `R` и `Exp` , когда итоговая операция равна `X` или матрица идентификаторов.
-* Операции измерения и [утверждения](xref:microsoft.quantum.diagnostics.assertmeasurement) , но только на основе Паули `Z` . Обратите внимание, что вероятность операции измерения всегда равна **0** или **1**. в симуляторе Тоффоли нет случайных значений.
+* Операции измерения и [утверждения](xref:Microsoft.Quantum.Diagnostics.AssertMeasurement) , но только на основе Паули `Z` . Обратите внимание, что вероятность операции измерения всегда равна **0** или **1** . в симуляторе Тоффоли нет случайных значений.
 * `DumpMachine``DumpRegister`функции и.
 Обе функции выводят текущее `Z` состояние каждого кубит, по одному кубит на строку.
 
