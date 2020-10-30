@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 0fbbe127b9f4c6b98bdc2cf0e46098bf40a816e3
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: a8a527df59bd7ee038de71e04003cf456b094afb
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866865"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691777"
 ---
 # <a name="contributing-to-the-quantum-development-kit"></a>Участие в развитии Microsoft Quantum Development Kit
 
@@ -59,6 +59,7 @@ ms.locfileid: "87866865"
 - [**microsoft/qsharp-compiler**](https://github.com/microsoft/qsharp-compiler): компилятор Q#, расширение Visual Studio и расширение Visual Studio Code.
 - [**microsoft/qsharp-runtime**](https://github.com/microsoft/qsharp-runtime): инфраструктура моделирования, создание кода и целевые компьютеры моделирования для пакета Quantum Development Kit.
 - [**microsoft/iqsharp**](https://github.com/microsoft/iqsharp): ядро Jupyter и функции ведущей программы Python для Q#, а также образы Docker для использования IQ# в облачных средах.
+- [**microsoft/qsharp-language**](https://github.com/microsoft/qsharp-language): здесь разрабатываются и указываются новые функции Q#, и здесь вы можете делиться своими идеями и предложениями по улучшению языка Q# и его основных библиотек.
 - [**MicrosoftDocs/quantum-docs-pr**](https://github.com/MicrosoftDocs/quantum-docs-pr): исходный код для документации, опубликованной на странице https://docs.microsoft.com/quantum.
 
 > [!NOTE]

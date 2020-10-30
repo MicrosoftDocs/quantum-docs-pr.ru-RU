@@ -1,22 +1,23 @@
 ---
 title: Магические команды IQ#
+description: Список магических команд, доступных в ядре IQ# для Jupyter.
 author: rmshaffer
 uid: microsoft.quantum.iqsharp.magic-ref.index
-ms.author: rmshaffer
-ms.date: 09/29/2020
+ms.author: ryansha
+ms.date: 10/26/2020
 ms.topic: article
-ms.openlocfilehash: 934ab18b667797d09d2c8188f727e64b0017e1d5
-ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+ms.openlocfilehash: a615c6dac6cdb80ff84cec2b0a3c99fc700efb8e
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91464680"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691141"
 ---
 # <a name="iq-magic-commands"></a>Магические команды IQ#
 | Магические команды | Сводка |
 |---------------|---------|
 | [`%azure.connect`](xref:microsoft.quantum.iqsharp.magic-ref.azure.connect) | Подключается к рабочей области Azure Quantum или отображает текущее состояние подключения. |
-| [`%azure.execute`](xref:microsoft.quantum.iqsharp.magic-ref.azure.execute) | Выполняет задание в рабочей области Azure Quantum. |
+| [`%azure.execute`](xref:microsoft.quantum.iqsharp.magic-ref.azure.execute) | Отправляет задание в рабочую область Azure Quantum и ожидает его завершения. |
 | [`%azure.jobs`](xref:microsoft.quantum.iqsharp.magic-ref.azure.jobs) | Отображает список заданий в текущей рабочей области Azure Quantum. |
 | [`%azure.output`](xref:microsoft.quantum.iqsharp.magic-ref.azure.output) | Отображает результаты для задания в текущей рабочей области Azure Quantum. |
 | [`%azure.status`](xref:microsoft.quantum.iqsharp.magic-ref.azure.status) | Отображает состояние для задания в текущей рабочей области Azure Quantum. |
@@ -29,6 +30,7 @@ ms.locfileid: "91464680"
 | [`%chemistry.fh.load`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.fh.load) | Загружает гамильтоново представление фермиона для проблемы, связанной с электронной структурой. Проблема загружается из файла или передается в качестве аргумента. |
 | [`%chemistry.inputstate.load`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.inputstate.load) | Загружает проблему, связанную с электронной структурой Брумбриджа, и возвращает состояние выбранного входа. |
 | [`%config`](xref:microsoft.quantum.iqsharp.magic-ref.config) | Разрешает настройку или запрашивание параметров конфигурации. |
+| [`%debug`](xref:microsoft.quantum.iqsharp.magic-ref.debug) | Перемещает на один шаг выполнение указанной операции или функции Q#. |
 | [`%estimate`](xref:microsoft.quantum.iqsharp.magic-ref.estimate) | Выполняет заданную функцию или операцию на целевом компьютере ResourcesEstimator. |
 | [`%kata`](xref:microsoft.quantum.iqsharp.magic-ref.kata) | Выполняет один тест. |
 | [`%lsmagic`](xref:microsoft.quantum.iqsharp.magic-ref.lsmagic) | Возвращает список всех доступных магических команд. |
