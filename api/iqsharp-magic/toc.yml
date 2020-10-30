@@ -26,6 +26,8 @@
   name: Магическая команда %chemistry.inputstate.load
 - href: config.md
   name: Магическая команда %config
+- href: debug.md
+  name: Магическая команда %debug
 - href: estimate.md
   name: Магическая команда %estimate
 - href: kata.md
