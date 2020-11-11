@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: fae603a81f8edc23ab8dc14277c5e3c4699f2cee
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d38482be17e67f180441440ee8ccc7f1f64ebc9d
+ms.sourcegitcommit: fb75d8f30f1d91f644b2a594f46867eb5968cfda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691687"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94448350"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -23,6 +23,12 @@ ms.locfileid: "92691687"
 См. [инструкции по установке](xref:microsoft.quantum.install).
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
+
+## <a name="version-01320111004"></a>Версия 0.13.20111004
+
+*Дата выпуска: 10 ноября, 2020*
+
+Этот выпуск отключает функции IntelliSense для Q# файлов в Visual Studio и Visual Studio Code, если файл проекта отсутствует. Это устраняет проблему, из-за которой функции IntelliSense могут перестать работать после добавления нового Q# файла в проект (см. [кшарп-Compiler # 720](https://github.com/microsoft/qsharp-compiler/issues/720)).
 
 ## <a name="version-01320102604"></a>Версия 0.13.20102604
 
@@ -103,7 +109,7 @@ ms.locfileid: "92691687"
 - Перемещенные операции:
   - `Microsoft.Quantum.Intrinsic.Assert` изменено на `Microsoft.Quantum.Diagnostics.AssertMeasurement`.
   - `Microsoft.Quantum.Intrinsic.AssertProb` изменено на `Microsoft.Quantum.Diagnostics.AssertMeasurementProbability`.
-- Исправления ошибок 
+- Исправленные ошибки 
 
 См. полный список закрытых вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed), [I Q# ](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) и [Катас](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
 
@@ -366,7 +372,7 @@ ms.locfileid: "92691687"
 > * В выпуске 0.6 языковой сервер из пакета Quantum Development Kit не поддерживает несколько рабочих областей.
 > * Чтобы работать с проектом в Visual Studio Code, откройте корневую папку с самим проектом и всеми проектами, на которые он ссылается.   
 > * Для работы с решением в Visual Studio все проекты, включенные в решение, нужно разместить в той же папке, что и решение, или в одной из вложенных в нее папок.  
-> * Ссылки между проектами, перенесенными на версию 0.6 и более поздние версии из старых версий пакета, **не поддерживаются** .
+> * Ссылки между проектами, перенесенными на версию 0.6 и более поздние версии из старых версий пакета, **не поддерживаются**.
 
 ## <a name="version-051904"></a>Версия 0.5.1904
 
@@ -526,7 +532,7 @@ ms.locfileid: "92691687"
 В этом обновлении добавлены новые функции отладки:
 * Добавлены две новые операции @"microsoft.quantum.extensions.diagnostics.dumpmachine" и @"microsoft.quantum.extensions.diagnostics.dumpregister", которые выводят в виде волновой функции сведения о целевом квантовом компьютере на определенный момент времени.  
 * В Visual Studio теперь для целевого компьютера QuantumSimulator в окне отладки автоматически отображается вероятность измерения $\ket{1}$ для одного кубита.
-* В Visual Studio улучшено отображение свойств переменных в окнах отладки **Видимые** и **Локальные** . 
+* В Visual Studio улучшено отображение свойств переменных в окнах отладки **Видимые** и **Локальные**. 
 
 См. сведения о [тестировании и отладке](xref:microsoft.quantum.guide.testingdebugging).
 
