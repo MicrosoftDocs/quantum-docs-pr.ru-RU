@@ -1,14 +1,14 @@
 ---
-title: 'Исправление ошибок в :::no-loc(Q#)::: стандартных библиотеках'
-description: 'Узнайте, как использовать коды исправления ошибок в программах, :::no-loc(Q#)::: защищая состояние Кубитс.'
+title: 'Исправление ошибок в Q# стандартных библиотеках'
+description: 'Узнайте, как использовать коды исправления ошибок в программах, Q# защищая состояние Кубитс.'
 author: QuantumWriter
 uid: microsoft.quantum.libraries.error-correction
 ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 94251e185cea65c5fc08ed70d5fba9b7b19501e3
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -51,7 +51,7 @@ ms.locfileid: "92692036"
 <span data-ttu-id="3d798-139">С другой стороны, $Z _0 Z_1 \кет {100} =-\кет {100} $ and $Z _0 Z_1 \кет {011} =-\кет {011} $, поэтому результат измерения $Z _0 Z_1 $ раскрывает полезную информацию о том, какая ошибка произошла.</span><span class="sxs-lookup"><span data-stu-id="3d798-139">On the other hand, $Z_0 Z_1 \ket{100} = - \ket{100}$ and $Z_0 Z_1 \ket{011} = -\ket{011}$, so the result of measuring $Z_0 Z_1$ reveals useful information about which error occurred.</span></span>
 
 <span data-ttu-id="3d798-140">Чтобы подчеркнуть это, мы повторяем приведенную выше таблицу, но добавим результаты измерения $Z _0 Z_1 $ and $Z _1 Z_2 $ в каждой строке.</span><span class="sxs-lookup"><span data-stu-id="3d798-140">To emphasize this, we repeat the table above, but add the results of measuring $Z_0 Z_1$ and $Z_1 Z_2$ on each row.</span></span>
-<span data-ttu-id="3d798-141">Мы обносим результаты каждого измерения по знаку еиженвалуе, который наблюдается: $ + $ или $-$, соответствующее :::no-loc(Q#)::: `Result` значениям `Zero` и `One` соответственно.</span><span class="sxs-lookup"><span data-stu-id="3d798-141">We denote the results of each measurement by the sign of the eigenvalue that is observed, either $+$ or $-$, corresponding to the :::no-loc(Q#)::: `Result` values of `Zero` and `One`, respectively.</span></span>
+<span data-ttu-id="3d798-141">Мы обносим результаты каждого измерения по знаку еиженвалуе, который наблюдается: $ + $ или $-$, соответствующее Q# `Result` значениям `Zero` и `One` соответственно.</span><span class="sxs-lookup"><span data-stu-id="3d798-141">We denote the results of each measurement by the sign of the eigenvalue that is observed, either $+$ or $-$, corresponding to the Q# `Result` values of `Zero` and `One`, respectively.</span></span>
 
 | <span data-ttu-id="3d798-142">Ошибка $E $</span><span class="sxs-lookup"><span data-stu-id="3d798-142">Error $E$</span></span> | <span data-ttu-id="3d798-143">$E \кет{\оверлине {0} } $</span><span class="sxs-lookup"><span data-stu-id="3d798-143">$E\ket{\overline{0}}$</span></span> | <span data-ttu-id="3d798-144">$E \кет{\оверлине {1} } $</span><span class="sxs-lookup"><span data-stu-id="3d798-144">$E\ket{\overline{1}}$</span></span> | <span data-ttu-id="3d798-145">Результат $Z _0 Z_1 $</span><span class="sxs-lookup"><span data-stu-id="3d798-145">Result of $Z_0 Z_1$</span></span> | <span data-ttu-id="3d798-146">Результат $Z _1 Z_2 $</span><span class="sxs-lookup"><span data-stu-id="3d798-146">Result of $Z_1 Z_2$</span></span> |
 | --- | --- | --- | --- | --- |
@@ -71,16 +71,16 @@ ms.locfileid: "92692036"
 > <span data-ttu-id="3d798-165">Более того, коды можно создавать для поддержки большего количества ошибок, а также для решения $Z $ Errors и $X $ Errors.</span><span class="sxs-lookup"><span data-stu-id="3d798-165">More generally, codes can be created to handle larger number of errors, and to handle $Z$ errors as well as $X$ errors.</span></span>
 
 <span data-ttu-id="3d798-166">Понимание того, что мы можем описать измерения в исправлении ошибок такта, которые работают одинаково во всех состояниях кода, является сутью *формального стабилизер* .</span><span class="sxs-lookup"><span data-stu-id="3d798-166">The insight that we can describe measurements in quantum error correction that act the same way on all code states, is the essence of the *stabilizer formalism* .</span></span>
-<span data-ttu-id="3d798-167">:::no-loc(Q#):::Платформа Canon предоставляет платформу для описания кодировки и декодирования из кодов стабилизер, а также для описания того, как один из них восстанавливается из ошибок.</span><span class="sxs-lookup"><span data-stu-id="3d798-167">The :::no-loc(Q#)::: canon provides a framework for describing encoding into and decoding from stabilizer codes, and for describing how one recovers from errors.</span></span>
+<span data-ttu-id="3d798-167">Q#Платформа Canon предоставляет платформу для описания кодировки и декодирования из кодов стабилизер, а также для описания того, как один из них восстанавливается из ошибок.</span><span class="sxs-lookup"><span data-stu-id="3d798-167">The Q# canon provides a framework for describing encoding into and decoding from stabilizer codes, and for describing how one recovers from errors.</span></span>
 <span data-ttu-id="3d798-168">В этом разделе мы описываем эту платформу и ее приложение на несколько простых кодов коррекции ошибок в такте.</span><span class="sxs-lookup"><span data-stu-id="3d798-168">In this section, we describe this framework and its application to a few simple quantum error-correcting codes.</span></span>
 
 > [!TIP]
 > <span data-ttu-id="3d798-169">Полное введение в стабилизер formal выходит за рамки этого раздела.</span><span class="sxs-lookup"><span data-stu-id="3d798-169">A full introduction to the stabilizer formalism is beyond the scope of this section.</span></span>
 > <span data-ttu-id="3d798-170">Мы будем называть читателей, заинтересованных в изучении более [готтесман 2009](https://arxiv.org/abs/0904.2557).</span><span class="sxs-lookup"><span data-stu-id="3d798-170">We refer readers interested in learning more to [Gottesman 2009](https://arxiv.org/abs/0904.2557).</span></span>
 
-## <a name="representing-error-correcting-codes-in-no-locq"></a><span data-ttu-id="3d798-171">Представление кодов коррекции ошибок в :::no-loc(Q#):::</span><span class="sxs-lookup"><span data-stu-id="3d798-171">Representing Error Correcting Codes in :::no-loc(Q#):::</span></span> ##
+## <a name="representing-error-correcting-codes-in-no-locq"></a><span data-ttu-id="3d798-171">Представление кодов коррекции ошибок в Q#</span><span class="sxs-lookup"><span data-stu-id="3d798-171">Representing Error Correcting Codes in Q#</span></span> ##
 
-<span data-ttu-id="3d798-172">Чтобы помочь указать коды исправления ошибок, в :::no-loc(Q#)::: Canon предусмотрено несколько различных определяемых пользователем типов:</span><span class="sxs-lookup"><span data-stu-id="3d798-172">To help specify error correcting codes, the :::no-loc(Q#)::: canon provides several distinct user-defined types:</span></span>
+<span data-ttu-id="3d798-172">Чтобы помочь указать коды исправления ошибок, в Q# Canon предусмотрено несколько различных определяемых пользователем типов:</span><span class="sxs-lookup"><span data-stu-id="3d798-172">To help specify error correcting codes, the Q# canon provides several distinct user-defined types:</span></span>
 
 - <span data-ttu-id="3d798-173"><xref:Microsoft.Quantum.ErrorCorrection.LogicalRegister>`= Qubit[]`: Указывает, что регистр Кубитс должен интерпретироваться как блок кода исправления ошибок.</span><span class="sxs-lookup"><span data-stu-id="3d798-173"><xref:Microsoft.Quantum.ErrorCorrection.LogicalRegister> `= Qubit[]`: Denotes that a register of qubits should be interpreted as the code block of an error-correcting code.</span></span>
 - <span data-ttu-id="3d798-174"><xref:Microsoft.Quantum.ErrorCorrection.Syndrome>`= Result[]`: Указывает, что массив результатов измерения должен интерпретироваться как синдром, измеряемый в блоке кода.</span><span class="sxs-lookup"><span data-stu-id="3d798-174"><xref:Microsoft.Quantum.ErrorCorrection.Syndrome> `= Result[]`: Denotes that an array of measurement results should be interpreted as the syndrome measured on a code block.</span></span>
@@ -122,4 +122,4 @@ using (scratch = Qubit[nScratch]) {
 
 <span data-ttu-id="3d798-185">Мы подробно рассмотрим это в [примере кода побитового отражения](https://github.com/microsoft/Quantum/tree/main/samples/error-correction/bit-flip-code).</span><span class="sxs-lookup"><span data-stu-id="3d798-185">We explore this in more detail in the [bit flip code sample](https://github.com/microsoft/Quantum/tree/main/samples/error-correction/bit-flip-code).</span></span>
 
-<span data-ttu-id="3d798-186">Помимо кода для побитового отражения, :::no-loc(Q#)::: Canon предоставляется с реализациями [кубит идеального кода](https://arxiv.org/abs/quant-ph/9602019)и [семи кубит кодом](https://arxiv.org/abs/quant-ph/9705052), оба из которых могут исправить произвольную ошибку с одним кодом кубит.</span><span class="sxs-lookup"><span data-stu-id="3d798-186">Aside from the bit-flip code, the :::no-loc(Q#)::: canon is provided with implementations of the [five-qubit perfect code](https://arxiv.org/abs/quant-ph/9602019), and the [seven-qubit code](https://arxiv.org/abs/quant-ph/9705052), both of which can correct an arbitrary single-qubit error.</span></span>
+<span data-ttu-id="3d798-186">Помимо кода для побитового отражения, Q# Canon предоставляется с реализациями [кубит идеального кода](https://arxiv.org/abs/quant-ph/9602019)и [семи кубит кодом](https://arxiv.org/abs/quant-ph/9705052), оба из которых могут исправить произвольную ошибку с одним кодом кубит.</span><span class="sxs-lookup"><span data-stu-id="3d798-186">Aside from the bit-flip code, the Q# canon is provided with implementations of the [five-qubit perfect code](https://arxiv.org/abs/quant-ph/9602019), and the [seven-qubit code](https://arxiv.org/abs/quant-ph/9705052), both of which can correct an arbitrary single-qubit error.</span></span>
