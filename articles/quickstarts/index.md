@@ -10,12 +10,12 @@ uid: microsoft.quantum.install
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 74b9b3d8f694072f5b5f4d0eb520263387de8919
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: f0c3df1998f9b64ff6544867b83a7afe52b6f46d
+ms.sourcegitcommit: fd57a845d013ae4578715d04b1ed1edc1c8ff6b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834488"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94870868"
 ---
 # <a name="setting-up-the-microsoft-quantum-development-kit-qdk"></a>Настройка пакета средств разработки Microsoft Quantum (QDK)
 
@@ -40,12 +40,48 @@ QDK можно использовать тремя способами:
 
 Вы можете создавать код Q# в большинстве популярных интегрированных сред разработки, а также интегрировать Q# с другими языками, например Python и .NET (C#, F#).
 
-|&nbsp; | **VS Code<br>(2019 или более поздней версии)**| **Visual Studio<br>(2019 или более поздней версии)** | **Jupyter Notebook** | **Командная строка**|
-|:-----|:-----:|:-----:|:-----:|:-----:|
-|**Операционная система** |Windows, macOS, Linux |Только в Windows |Windows, macOS, Linux |Windows, macOS, Linux |
-|<br>**Q# (изолированный)** |<br>[Установка](xref:microsoft.quantum.install.standalone) |<br> [Установка](xref:microsoft.quantum.install.standalone)  |<br> [Установка](xref:microsoft.quantum.install.jupyter) |<br>[Установка](xref:microsoft.quantum.install.standalone)|
-|**Q# и Python** |[Установка](xref:microsoft.quantum.install.python) |[Установка](xref:microsoft.quantum.install.python) |[Установка](xref:microsoft.quantum.install.jupyter) |[Установка](xref:microsoft.quantum.install.python) |
-|**Q# и .NET (C#, F#)**|[Установка](xref:microsoft.quantum.install.cs) |[Установка](xref:microsoft.quantum.install.cs)|&#10006; |[Установка](xref:microsoft.quantum.install.cs) |
+<table>
+    <tr>
+        <th width=10%>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th align="center" width=18%><img src="~/media/vs_code.png" alt="VS Code" width="50"/><br><b>VS Code<br>(2019 и более поздней версии)</b></th>
+        <th align="center" width=18%><img src="~/media/vs_studio.png" alt="VS Studio" width="50"/><br><b>VS Studio<br>(2019 и более поздней версии)</b></th>
+        <th align="center" width=18%><img src="~/media/jupyter-wht.png" alt="jupyter install" width="65"/><br><b>Jupyter Notebook</b></th>
+        <th align="center" width=18%><img src="~/media/blank.png" alt="blank spacer" width="65"/><br><b>Командная строка</b></th>
+    </tr>
+    <tr>
+        <th>&nbsp;</th>
+        <td align="left"><b>Поддержка ОС:</b></td>
+        <td align="center">Windows, macOS, Linux</td>
+        <td align="center">Только в Windows</td>
+        <td align="center">Windows, macOS, Linux</td>
+        <td align="center">Windows, macOS, Linux</td>
+    </tr>
+    <tr>
+        <td align="right"><img src="~/media/quantum-wht.png" alt="QDK" width="60"/></td>
+        <td align="left"><b>Q# (изолированный)</b></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.standalone">Установка</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.standalone">Установка</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.jupyter">Установка</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.standalone">Установка</a></td>
+    </tr>
+    <tr>
+        <td align="right"><img src="~/media/python.png" alt="python install" width="50"/></td>
+        <td align="left"><b>Q# и Python</b></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.python">Установка</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.python">Установка</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.jupyter">Установка</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.python">Установка</a></td>
+    </tr>
+    <tr>
+        <td align="right"><img src="~/media/dot_net.png" alt="dotnet install" width="50"/></td>
+        <td align="left"><b>Q# и .NET (C#, F#)</b></td> 
+        <td align="center"><a href="xref:microsoft.quantum.install.cs">Установка</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.cs">Установка</a></td>
+        <td align="center">&#10006;</td>
+        <td align="center"><a href="xref:microsoft.quantum.install.cs">Установка</a></td>
+   </tr>
+</table>
 
 ## <a name="use-the-qdk-online"></a>Использование QDK по сети
 
