@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math.ModulusL
 title: Функция модуля
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ModulusL
 qsharp.summary: Computes the canonical residue of `value` modulo `modulus`.
-ms.openlocfilehash: e7e692059051fde295634c37892ec54e2cf1b095
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 5c9a8ceceac5d2cdac6b82f7f74a85e9443382a2
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733848"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96194939"
 ---
 # <a name="modulusl-function"></a>Функция модуля
 
 Пространство имен: [Microsoft. тактов. Math](xref:Microsoft.Quantum.Math)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Вычисление канонического ресидуе `value` остатка от деления `modulus` .
@@ -45,6 +45,6 @@ function ModulusL (value : BigInt, modulus : BigInt) : BigInt
 
 Целое число $r $ от 0 до значения `modulus - 1` , `value - r` кратного модулю
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эта функция ведет себя иначе, чем оператор `%` в C# и Q #, как в результате, всегда является положительным целым числом от 0 до `modulus - 1` , даже если значение отрицательное.

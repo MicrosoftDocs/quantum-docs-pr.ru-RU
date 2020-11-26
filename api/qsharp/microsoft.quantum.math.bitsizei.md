@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Math.BitSizeI
 title: Функция Битсизеи
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
@@ -10,18 +10,18 @@ qsharp.summary: >-
   For a non-negative integer `a`, returns the number of bits required to represent `a`.
 
   That is, returns the smallest $n$ such that $a < 2^n$.
-ms.openlocfilehash: e7cfe03908a8a394fc8ceb1c9facbf02f3db2d48
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 561450ef43144aa4d7820e1f15d9300018104acd
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92732760"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96195857"
 ---
 # <a name="bitsizei-function"></a>Функция Битсизеи
 
 Пространство имен: [Microsoft. тактов. Math](xref:Microsoft.Quantum.Math)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Для неотрицательного целого числа `a` возвращает число битов, необходимых для представления `a` .
