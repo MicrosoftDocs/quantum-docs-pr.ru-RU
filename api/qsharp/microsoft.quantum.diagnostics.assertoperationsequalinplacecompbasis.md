@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertOperationsEqualInPlaceCompBasis
 title: Операция Ассертоператионсекуалинплацекомпбасис
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: AssertOperationsEqualInPlaceCompBasis
 qsharp.summary: Checks if the operation `givenU` is equal to the operation `expectedU` on the given input size  by checking the action of the operations only on the vectors from the computational basis. This is a necessary, but not sufficient, condition for the equality of two unitaries.
-ms.openlocfilehash: 3275680f86ca2a178c7f044b97d226fe41c3186c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 826369bdf3544fb257c2bb202466426c1ca1e113
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92712962"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202351"
 ---
 # <a name="assertoperationsequalinplacecompbasis-operation"></a>Операция Ассертоператионсекуалинплацекомпбасис
 
 Пространство имен: [Microsoft. тактов. Diagnostics](xref:Microsoft.Quantum.Diagnostics)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Проверяет, равен ли операция `givenU` операции `expectedU` с заданным размером входных данных, проверяя действие операций только на векторах от вычислительной основе.
@@ -41,7 +41,7 @@ operation AssertOperationsEqualInPlaceCompBasis (nQubits : Int, givenU : (Qubit[
 Операция с $n $ Кубитс будет проверена.
 
 
-### <a name="expectedu--qubit--unit-adj"></a>Експектеду: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] [=>ная](xref:microsoft.quantum.lang-ref.unit) прогода
+### <a name="expectedu--qubit--unit--is-adj"></a>Експектеду: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] = [единица измерения](xref:microsoft.quantum.lang-ref.unit) >
 
 Операция ссылки на $n $ Кубитс `givenU` для сравнения с.
 

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.Recover
 title: Операция восстановления
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: Recover
 qsharp.summary: Performs a single round of error correction by a quantum code described by a `QECC` type.
-ms.openlocfilehash: a659399f51794a4edc1d2ff43da84e46797103fb
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: bdf09decc3705d3285f4eb605c176d7764a994d3
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92712206"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96200583"
 ---
 # <a name="recover-operation"></a>Операция восстановления
 
 Пространство имен: [Microsoft. тактов. ерроркорректион](xref:Microsoft.Quantum.ErrorCorrection)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Выполняет единичное округление исправления ошибки с помощью кода такта, описанного `QECC` типом.

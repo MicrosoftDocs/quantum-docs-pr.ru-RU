@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.NearEqualityFactD
 title: Функция Неарекуалитифактд
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: NearEqualityFactD
 qsharp.summary: Asserts that a classical floating point value has the expected value up to a small tolerance of 1e-10.
-ms.openlocfilehash: 5b55f515b27667071218a3f604ef703a6a15206d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 5acfe5043342fd88276910a9fd0347f7d2f6960f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92712653"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96201518"
 ---
 # <a name="nearequalityfactd-function"></a>Функция Неарекуалитифактд
 
 Пространство имен: [Microsoft. тактов. Diagnostics](xref:Microsoft.Quantum.Diagnostics)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Утверждает, что классическое значение с плавающей запятой имеет ожидаемое значение вплоть до маленькой допустимой допускки 1E-10.
@@ -45,6 +45,6 @@ function NearEqualityFactD (actual : Double, expected : Double) : Unit
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Это эквивалентно <xref:microsoft.quantum.diagnostics.equalitywithintolerancefact> параметру с жестким отклонением $10 ^ {-10} $.

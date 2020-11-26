@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.DumpRegister
 title: Функция Думпрегистер
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: DumpRegister
 qsharp.summary: Dumps the current target machine's status associated with the given qubits.
-ms.openlocfilehash: a6d29dbf0525077fd804563f85f189740fdc0429
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 9623d6d881f1f0ec048c3a951fe259bdfac84766
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92712836"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202028"
 ---
 # <a name="dumpregister-function"></a>Функция Думпрегистер
 
 Пространство имен: [Microsoft. тактов. Diagnostics](xref:Microsoft.Quantum.Diagnostics)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Выводит состояние текущего целевого компьютера, связанного с заданным Кубитс.
@@ -51,7 +51,7 @@ function DumpRegister<'T> (location : 'T, qubits : Qubit[]) : Unit
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот метод позволяет сохранить дамп сведений, связанных с состоянием заданного Кубитс, в файл или в другое расположение.
 Фактически сформированные сведения и семантика `location` относятся к каждому целевому компьютеру. Однако предоставление пустого кортежа в качестве расположения ( `()` ) обычно означает создание выходных данных в консоли.

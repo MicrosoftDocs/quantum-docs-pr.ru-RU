@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertQubitIsInStateWithinTolerance
 title: Операция Ассерткубитисинстатевисинтолеранце
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Asserts that a qubit in the expected state.
 
   `expected` represents a complex vector, $\ket{\psi} = \begin{bmatrix}a & b\end{bmatrix}^{\mathrm{T}}$. The first element of the tuples representing each of $a$, $b$ is the real part of the complex number, while the second one is the imaginary part. The last argument defines the tolerance with which assertion is made.
-ms.openlocfilehash: 5d34bdac53870326dacb5a11c27c857793c3f420
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1ceb7243cba93e42c67cc3655283a5d07c96863e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92712934"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202215"
 ---
 # <a name="assertqubitisinstatewithintolerance-operation"></a>Операция Ассерткубитисинстатевисинтолеранце
 
 Пространство имен: [Microsoft. тактов. Diagnostics](xref:Microsoft.Quantum.Diagnostics)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Утверждает, что кубит находится в ожидаемом состоянии.
@@ -58,7 +58,7 @@ operation AssertQubitIsInStateWithinTolerance (expected : (Microsoft.Quantum.Mat
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Следующий код Масематика можно использовать для проверки выражений для MI, MX, My, MZ:
 
