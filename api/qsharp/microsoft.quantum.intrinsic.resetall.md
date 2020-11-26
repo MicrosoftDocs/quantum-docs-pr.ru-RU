@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.ResetAll
 title: Операция Ресеталл
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
 qsharp.name: ResetAll
 qsharp.summary: Given an array of qubits, measure them and ensure they are in the |0⟩ state such that they can be safely released.
-ms.openlocfilehash: 00b7c0f508d76fb0f5b46c7ec00c0718469365a3
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d22ce607e8e5cb3a1c041dc1973875f2a0777d2b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92711408"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198696"
 ---
 # <a name="resetall-operation"></a>Операция Ресеталл
 
 Пространство имен: [Microsoft. такт. внутренний](xref:Microsoft.Quantum.Intrinsic)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Учитывая массив Кубитс, измерьте их и убедитесь, что они находятся в состоянии | 0 ⟩, чтобы их можно было безопасно освободить.

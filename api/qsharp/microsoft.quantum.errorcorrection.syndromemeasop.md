@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp
 title: Определяемый пользователем тип Синдромемеасоп
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: SyndromeMeasOp
 qsharp.summary: Represents an operation that is used to measure the syndrome of an error-correcting code block.
-ms.openlocfilehash: 1314e16d26c7310bab21caa91cb398d4b6f09b29
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 65e47d82546b1df0beec2c00f435d3e7a28e6ae6
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92712121"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96200260"
 ---
 # <a name="syndromemeasop-user-defined-type"></a>Определяемый пользователем тип Синдромемеасоп
 
 Пространство имен: [Microsoft. тактов. ерроркорректион](xref:Microsoft.Quantum.ErrorCorrection)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Представляет операцию, используемую для измерения синдром блока кода исправления ошибок.
@@ -30,7 +30,7 @@ newtype SyndromeMeasOp = ((Microsoft.Quantum.ErrorCorrection.LogicalRegister => 
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Подпись `(LogicalRegister => Syndrome)` представляет операцию, которая взаимодействует с Кубитс в `LogicalRegister` и некоторыми дополнительными Кубитс, за которыми следуют измерения вспомогательного Кубитс для извлечения `Syndrome` значения, представляющего `Result[]` эти измерения.
 

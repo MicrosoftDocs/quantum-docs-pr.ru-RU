@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.SteaneCodeEncoderImpl
 title: Операция Стеанекодинкодеримпл
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: SteaneCodeEncoderImpl
 qsharp.summary: Private operation used to implement both the Steane code encoder and decoder.
-ms.openlocfilehash: b843422a6007d01de9b57ec659c229b8ab0ad2e6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 3a9a1b11ed9255f18135e3717de7e9e1ec891298
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92712191"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96200431"
 ---
 # <a name="steanecodeencoderimpl-operation"></a>Операция Стеанекодинкодеримпл
 
 Пространство имен: [Microsoft. тактов. ерроркорректион](xref:Microsoft.Quantum.ErrorCorrection)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Закрытая операция, используемая для реализации кодировщика кода Стеане и декодера.
 
 ```qsharp
-operation SteaneCodeEncoderImpl (data : Qubit[], scratch : Qubit[]) : Unit
+operation SteaneCodeEncoderImpl (data : Qubit[], scratch : Qubit[]) : Unit is Adj
 ```
 
 

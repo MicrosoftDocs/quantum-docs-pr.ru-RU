@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.Ry
 title: Операция дые
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Applies a rotation about the $y$-axis by a given angle.
 
   \begin{align} R_y(\theta) \mathrel{:=} e^{-i \theta \sigma_y / 2} = \begin{bmatrix} \cos \frac{\theta}{2} & -\sin \frac{\theta}{2}  \\\\ \sin \frac{\theta}{2} & \cos \frac{\theta}{2} \end{bmatrix}. \end{align}
-ms.openlocfilehash: 9966693eb7283e855f7b72e910aa3604d6c2bd61
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 5a1f762aacca5c72dc8dbe450ab8e8a4aef12c69
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730776"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198611"
 ---
 # <a name="ry-operation"></a>Операция дые
 
 Пространство имен: [Microsoft. такт. внутренний](xref:Microsoft.Quantum.Intrinsic)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Применяет поворот к $y $-оси на заданный угол.
@@ -30,7 +30,7 @@ ms.locfileid: "92730776"
 \енд{алигн}
 
 ```qsharp
-operation Ry (theta : Double, qubit : Qubit) : Unit
+operation Ry (theta : Double, qubit : Qubit) : Unit is Adj + Ctl
 ```
 
 
@@ -51,7 +51,7 @@ operation Ry (theta : Double, qubit : Qubit) : Unit
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эквивалентно:
 
