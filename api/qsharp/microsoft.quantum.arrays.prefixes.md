@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Prefixes
 title: Функция префиксов
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Prefixes
 qsharp.summary: Given an array, returns all its prefixes.
-ms.openlocfilehash: 1576e57e9dc64a605eb65cb841640e72a3b126ab
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 3501c11437534b1623bffba272a4517487e5634a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730064"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96220400"
 ---
 # <a name="prefixes-function"></a>Функция префиксов
 
 Пространство имен: [Microsoft. тактов. Arrays](xref:Microsoft.Quantum.Arrays)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 При наличии массива возвращает все его префиксы.

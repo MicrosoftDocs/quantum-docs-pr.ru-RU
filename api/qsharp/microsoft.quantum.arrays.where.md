@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Where
 title: WHERE, функция
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Where
 qsharp.summary: Given a predicate and an array, returns the indices of that array where the predicate is true.
-ms.openlocfilehash: 1c9fa0463ed49788d12502257d735b965565d1ab
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 97598aa25d2d085aaab94f3d60ee64db9e2b89d6
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92729937"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96219929"
 ---
 # <a name="where-function"></a>WHERE, функция
 
 Пространство имен: [Microsoft. тактов. Arrays](xref:Microsoft.Quantum.Arrays)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 При наличии предиката и массива возвращает индексы этого массива, где предикат имеет значение true.

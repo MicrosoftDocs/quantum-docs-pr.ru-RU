@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Bitwise.LeftShiftedL
 title: Функция Лефтшифтедл
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Bitwise
 qsharp.name: LeftShiftedL
 qsharp.summary: Shifts the bitwise representation of a number left by a given number of bits.
-ms.openlocfilehash: 17e5c845755f74e9703381bc82bfd63be836d038
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 00d4f9151c620e044074930933ea2912b52534ed
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92729857"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96219674"
 ---
 # <a name="leftshiftedl-function"></a>Функция Лефтшифтедл
 
 Пространство имен: [Microsoft. тактов. побитовое](xref:Microsoft.Quantum.Bitwise)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Сдвигает побитовое представление числа влево на заданное число битов.
@@ -45,7 +45,7 @@ function LeftShiftedL (value : BigInt, amount : Int) : BigInt
 
 Значение `value` , смещенное влево на `amount` биты.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Следующие эквивалентны:
 

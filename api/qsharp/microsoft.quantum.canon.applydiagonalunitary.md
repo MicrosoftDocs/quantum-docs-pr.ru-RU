@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyDiagonalUnitary
 title: Операция Апплидиагоналунитари
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyDiagonalUnitary
 qsharp.summary: Applies an array of complex phases to numeric basis states of a register of qubits.
-ms.openlocfilehash: 6ecacf6e4fe2c505036de208c8aeb5350e479e3c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8f17c3cb222bef00ead5e7fea5d29d296b9a428a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92729625"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218858"
 ---
 # <a name="applydiagonalunitary-operation"></a>Операция Апплидиагоналунитари
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет массив сложных фаз к числовым состояниям регистра Кубитс.
 
 ```qsharp
-operation ApplyDiagonalUnitary (coefficients : Double[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation ApplyDiagonalUnitary (coefficients : Double[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
 ```
 
 
@@ -53,7 +53,7 @@ $n $-кубит управления регистром, который коди
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `coefficients` будет дополнен элементами $ \ theta_j = $0,0, если указано меньше $2 ^ n $.
 

@@ -1,36 +1,36 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyBoundA
 title: Операция Апплибаунда
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyBoundA
 qsharp.summary: ''
-ms.openlocfilehash: 131b011a967cfb1d52764442361ad4d5fa10a05a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e4b821a6add9d44d4ffe973f4475cfa113a3a392
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92729729"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96219249"
 ---
 # <a name="applybounda-operation"></a>Операция Апплибаунда
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 
 
 ```qsharp
-operation ApplyBoundA<'T> (operations : ('T => Unit is Adj)[], target : 'T) : Unit
+operation ApplyBoundA<'T> (operations : ('T => Unit is Adj)[], target : 'T) : Unit is Adj
 ```
 
 
 ## <a name="input"></a>Входные данные
 
-### <a name="operations--t--unit-adj"></a>операции: 'T => [единицы измерения](xref:microsoft.quantum.lang-ref.unit) []
+### <a name="operations--t--unit--is-adj"></a>операции: t =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  является суммой []
 
 
 

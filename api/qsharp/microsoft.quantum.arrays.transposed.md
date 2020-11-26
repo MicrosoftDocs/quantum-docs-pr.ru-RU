@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Transposed
 title: Переданная функция
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Transposed
 qsharp.summary: Returns the transpose of a matrix represented as an array of arrays.
-ms.openlocfilehash: 54071c461cf9f9411c332763b81e3bc448fb6c6e
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: f293399d8e3a2cb32b2929e8d1591ac5eaefd277
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92729977"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96219997"
 ---
 # <a name="transposed-function"></a>Переданная функция
 
 Пространство имен: [Microsoft. тактов. Arrays](xref:Microsoft.Quantum.Arrays)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает перестановку матрицы, представленной в виде массива массивов.

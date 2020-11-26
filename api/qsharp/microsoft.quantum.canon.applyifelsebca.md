@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfElseBCA
 title: Операция Апплифелсебка
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfElseBCA
 qsharp.summary: Applies one of two unitary operations, depending on the value of a classical bit.
-ms.openlocfilehash: 0ebd086f4c8166a8d6b593200b0a3354c1420c6e
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d36b16298ea177f16b7bbb260f069bfe35b9a72f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92718197"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218637"
 ---
 # <a name="applyifelsebca-operation"></a>Операция Апплифелсебка
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет одну из двух операций в зависимости от значения классического бита.
 
 ```qsharp
-operation ApplyIfElseBCA<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Adj + Ctl), trueInput : 'T), (falseOp : ('U => Unit is Adj + Ctl), falseInput : 'U)) : Unit
+operation ApplyIfElseBCA<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Adj + Ctl), trueInput : 'T), (falseOp : ('U => Unit is Adj + Ctl), falseInput : 'U)) : Unit is Adj + Ctl
 ```
 
 
@@ -39,7 +39,7 @@ operation ApplyIfElseBCA<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Adj + Ctl
 Логическое значение, используемое для определения того, применяется ли оператор `trueOp` или `falseOp` .
 
 
-### <a name="trueop--t--unit-adj--ctl"></a>Труеоп: 'T => [модульные](xref:microsoft.quantum.lang-ref.unit) года + CTL
+### <a name="trueop--t--unit--is-adj--ctl"></a>Труеоп: не>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Единая операция, применяемая, если `bit` имеет значение `true` .
 
@@ -49,7 +49,7 @@ operation ApplyIfElseBCA<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Adj + Ctl
 Входные данные, которые должны быть предоставлены, `trueOp` Если `bit` имеет значение `true` .
 
 
-### <a name="falseop--u--unit-adj--ctl"></a>Фалсеоп: "U => [единицы](xref:microsoft.quantum.lang-ref.unit) + CTL
+### <a name="falseop--u--unit--is-adj--ctl"></a>Фалсеоп: "U => [единицей](xref:microsoft.quantum.lang-ref.unit)  является список" года + CTL "
 
 Единая операция, применяемая, если `bit` имеет значение `false` .
 

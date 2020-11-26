@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfElseRA
 title: Операция Апплифелсера
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfElseRA
 qsharp.summary: Applies one of two adjointable operations, depending on the value of a classical result.
-ms.openlocfilehash: d0181d98a9867f71d8a8f8dea4331e5a13f9e59c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 3ebd09b1e5876ff397f3524ba828ba26a271e91e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92718142"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218603"
 ---
 # <a name="applyifelsera-operation"></a>Операция Апплифелсера
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет одну из двух операций аджоинтабле в зависимости от значения классического результата.
 
 ```qsharp
-operation ApplyIfElseRA<'T, 'U> (result : Result, (zeroOp : ('T => Unit is Adj), zeroInput : 'T), (oneOp : ('U => Unit is Adj), oneInput : 'U)) : Unit
+operation ApplyIfElseRA<'T, 'U> (result : Result, (zeroOp : ('T => Unit is Adj), zeroInput : 'T), (oneOp : ('U => Unit is Adj), oneInput : 'U)) : Unit is Adj
 ```
 
 
@@ -39,7 +39,7 @@ operation ApplyIfElseRA<'T, 'U> (result : Result, (zeroOp : ('T => Unit is Adj),
 Результат измерения, используемый для определения `zeroOp` применения или `oneOp` .
 
 
-### <a name="zeroop--t--unit-adj"></a>Зеруп: 'T [=>ное](xref:microsoft.quantum.lang-ref.unit) прогода
+### <a name="zeroop--t--unit--is-adj"></a>Зеруп: 'T => [единица](xref:microsoft.quantum.lang-ref.unit)  Нагода
 
 Операция аджоинтабле, применяемая при `result == Zero` .
 
@@ -49,7 +49,7 @@ operation ApplyIfElseRA<'T, 'U> (result : Result, (zeroOp : ('T => Unit is Adj),
 Входные данные, которые должны быть предоставлены в `zeroOp` when `result == Zero` .
 
 
-### <a name="oneop--u--unit-adj"></a>Онеоп: "U [=>ная](xref:microsoft.quantum.lang-ref.unit) прогода
+### <a name="oneop--u--unit--is-adj"></a>Онеоп: "U = [единица](xref:microsoft.quantum.lang-ref.unit) > является просуммой
 
 Операция аджоинтабле, применяемая при `result == One` .
 
