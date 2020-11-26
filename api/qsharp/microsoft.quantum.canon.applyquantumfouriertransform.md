@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyQuantumFourierTransform
 title: Операция Аппликуантумфауриертрансформ
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyQuantumFourierTransform
 qsharp.summary: Performs the Quantum Fourier Transform on a quantum register containing an integer in the little-endian representation.
-ms.openlocfilehash: fa8d135c0665f0a576229797d208b321ba0329a6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 6d3ad9ca2e0d10c264f8020e1f34687f6cbc9f94
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92717792"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218195"
 ---
 # <a name="applyquantumfouriertransform-operation"></a>Операция Аппликуантумфауриертрансформ
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Выполняет преобразование Фурье в тактовую операцию для регистра такта, содержащего целое число в представлении с прямым порядком байтов.
 
 ```qsharp
-operation ApplyQuantumFourierTransform (qs : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation ApplyQuantumFourierTransform (qs : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
 ```
 
 
@@ -40,7 +40,7 @@ operation ApplyQuantumFourierTransform (qs : Microsoft.Quantum.Arithmetic.Little
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Предполагается, что входные и выходные данные находятся в кодировке с прямым порядком байтов.
 

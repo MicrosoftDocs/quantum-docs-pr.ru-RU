@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfZeroCA
 title: Операция Апплифзерока
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfZeroCA
 qsharp.summary: Applies a unitary operation conditioned on a classical result value being zero.
-ms.openlocfilehash: 85612bd3dd7af45b7901fef775a7d556eb229608
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 4baae1fe7d615cbbf01935b4eca05fe947ff296e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92718002"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218467"
 ---
 # <a name="applyifzeroca-operation"></a>Операция Апплифзерока
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет единую операцию с условием для классического результирующего значения, равного нулю.
 
 ```qsharp
-operation ApplyIfZeroCA<'T> (result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T)) : Unit
+operation ApplyIfZeroCA<'T> (result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T)) : Unit is Adj + Ctl
 ```
 
 
@@ -40,7 +40,7 @@ operation ApplyIfZeroCA<'T> (result : Result, (op : ('T => Unit is Adj + Ctl), t
 Результат измерения, определяющий, применяется ли оператор Op.
 
 
-### <a name="op--t--unit-adj--ctl"></a>Op: 'T => [модульные](xref:microsoft.quantum.lang-ref.unit) года + CTL
+### <a name="op--t--unit--is-adj--ctl"></a>Op: t =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Операция, применяемая к условию.
 
