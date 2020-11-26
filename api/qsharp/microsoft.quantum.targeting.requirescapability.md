@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Targeting.RequiresCapability
 title: Определяемый пользователем тип Рекуирескапабилити
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Targeting
 qsharp.name: RequiresCapability
 qsharp.summary: Compiler-recognized attribute used to mark a callable with the runtime capabilities it requires.
-ms.openlocfilehash: 63b1952d402f1bcb81a8f9d0afc3cdf7aa7e5ed8
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 0d9e4eb294b3ce91058c204d5dba37ea29b4ac28
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733865"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96231013"
 ---
 # <a name="requirescapability-user-defined-type"></a>Определяемый пользователем тип Рекуирескапабилити
 
 Пространство имен: [Microsoft. тактов. нацеливание](xref:Microsoft.Quantum.Targeting)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Распознанный компилятором атрибут, используемый для пометки вызываемого с возможностями среды выполнения, которые он требует.
@@ -40,7 +40,7 @@ newtype RequiresCapability = (Level : String, Reason : String);
 
 Описание причин, по которым вызываемый объект требует этой возможности среды выполнения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот атрибут автоматически добавляется в вызываемые компилятором, если в вызываемом экземпляре уже не существует экземпляра этого атрибута. Его не следует использовать, за исключением редких случаев, когда компилятор неправильно выводит требуемую возможность.
 
