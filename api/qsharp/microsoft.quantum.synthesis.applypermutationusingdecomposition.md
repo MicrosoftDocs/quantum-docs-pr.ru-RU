@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingDecomposition
 title: Операция Апплипермутатионусингдекомпоситион
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Synthesis
 qsharp.name: ApplyPermutationUsingDecomposition
 qsharp.summary: Permutes the amplitudes in a quantum state given a permutation using decomposition-based synthesis.
-ms.openlocfilehash: 40b51807da155c57c3fa8d740eff28ceef0a0ffc
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 5b25ef3327bbca2dfdbe8fa876f3f797dddf77e8
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733969"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96192134"
 ---
 # <a name="applypermutationusingdecomposition-operation"></a>Операция Апплипермутатионусингдекомпоситион
 
 Пространство имен: [Microsoft. тактов. синтез](xref:Microsoft.Quantum.Synthesis)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Пермутес амплитуды в состоянии такта, учитывая перестановку с помощью синтеза на основе декомпозиции.
 
 ```qsharp
-operation ApplyPermutationUsingDecomposition (perm : Int[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation ApplyPermutationUsingDecomposition (perm : Int[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
 ```
 
 
@@ -59,8 +59,8 @@ operation ApplyPermutationUsingDecomposition (perm : Int[], qubits : Microsoft.Q
 
 ## <a name="references"></a>Ссылки
 
-- [*Алексис de вос* , *Иван Van рентержем* , rebys. of Dataport. 2 (2), 2008, PP. 183--200](http://www.aimsciences.org/article/doi/10.3934/amc.2008.2.183)
-- [*Матиас соекен* , *Мария Тагуе* , *жерхард W. дуекк* , *ролф дречслер* , журнал символьных вычислений 73 (2016), PP. 1--26](https://www.sciencedirect.com/science/article/pii/S0747717115000188?via%3Dihub)
+- [*Алексис de вос*, *Иван Van рентержем*, rebys. of Dataport. 2 (2), 2008, PP. 183--200](http://www.aimsciences.org/article/doi/10.3934/amc.2008.2.183)
+- [*Матиас соекен*, *Мария Тагуе*, *жерхард W. дуекк*, *ролф дречслер*, журнал символьных вычислений 73 (2016), PP. 1--26](https://www.sciencedirect.com/science/article/pii/S0747717115000188?via%3Dihub)
 
 ## <a name="see-also"></a>См. также:
 

@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: d38482be17e67f180441440ee8ccc7f1f64ebc9d
-ms.sourcegitcommit: fb75d8f30f1d91f644b2a594f46867eb5968cfda
+ms.openlocfilehash: 93ece8cbaa2ac8e6e0c9bb417e8f40130cb8a3fa
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448350"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96192100"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -23,6 +23,18 @@ ms.locfileid: "94448350"
 См. [инструкции по установке](xref:microsoft.quantum.install).
 
 См. [инструкции по обновлению](xref:microsoft.quantum.update).
+
+## <a name="version-0142011120240"></a>Версия 0.14.2011120240
+
+*Дата выпуска: 25 ноября 2020*
+
+- Улучшена производительность компилятора из-за более быстрой загрузки ссылок.
+- Добавлена [грамматика ANTLR для Q# ](https://github.com/microsoft/qsharp-language/tree/main/Specifications/Language/5_Grammar) в Q# спецификацию языка.
+- Обновлено [ `Microsoft.Quantum.Preparation` пространство имен](xref:Microsoft.Quantum.Preparation) для более стабильного соответствия с руководством по стилю и принципами проектирования API, а также для поддержки пурифиед смешанных состояний с дополнительными данными (см. [предложение](https://github.com/microsoft/QuantumLibraries/issues/344), [просмотреть заметки](https://github.com/microsoft/QuantumLibraries/blob/main/Design/meetings/2020/api-design-2020-11-05.md) и вытягивание [#212](https://github.com/microsoft/QuantumLibraries/pull/212), [#322](https://github.com/microsoft/QuantumLibraries/pull/322), [#375](https://github.com/microsoft/QuantumLibraries/pull/375), [#376](https://github.com/microsoft/QuantumLibraries/pull/376)).
+- Круглые скобки вокруг повторных выражений вызовов теперь необязательными: `(Foo(x))(y)` могут быть написаны как `Foo(x)(y)` .
+- Пользователям расширений Visual Studio или Visual Studio Code, которые установили .NET 5 или Visual Studio 16,8, может быть предложено установить .NET Core 3,1, чтобы продолжить работу с расширениями.
+
+См. полный список закрытых вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18), [I Q# ](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18) и [Катас](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18).
 
 ## <a name="version-01320111004"></a>Версия 0.13.20111004
 
@@ -109,7 +121,7 @@ ms.locfileid: "94448350"
 - Перемещенные операции:
   - `Microsoft.Quantum.Intrinsic.Assert` изменено на `Microsoft.Quantum.Diagnostics.AssertMeasurement`.
   - `Microsoft.Quantum.Intrinsic.AssertProb` изменено на `Microsoft.Quantum.Diagnostics.AssertMeasurementProbability`.
-- Исправленные ошибки 
+- Исправления ошибок 
 
 См. полный список закрытых вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed), [I Q# ](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) и [Катас](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
 
@@ -240,7 +252,7 @@ ms.locfileid: "94448350"
 
 См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed) и [ката](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
 
-## <a name="version-09-packagereference-0919082902"></a>Версия 0.9 ( *PackageReference 0.9.1908.2902* )
+## <a name="version-09-packagereference-0919082902"></a>Версия 0.9 (*PackageReference 0.9.1908.2902*)
 
 *Дата выпуска: 29 августа 2019 г.*
 
@@ -257,7 +269,7 @@ ms.locfileid: "94448350"
 
 Здесь перечислены эти изменения вместе с инструкциями по обновлению существующих программ.  Дополнительные сведения об этих изменениях см. в [ Q# блоге разработчика](https://devblogs.microsoft.com/qsharp).
 
-## <a name="version-08-packagereference-0819071701"></a>Версия 0.8 ( *PackageReference 0.8.1907.1701* )
+## <a name="version-08-packagereference-0819071701"></a>Версия 0.8 (*PackageReference 0.8.1907.1701*)
 
 *Дата выпуска: 12 июля 2019 г.*
 
@@ -269,7 +281,7 @@ ms.locfileid: "94448350"
 
 См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed) и [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed).  
 
-## <a name="version-07-packagereference-0719053109"></a>Версия 0.7 ( *PackageReference 0.7.1905.3109* )
+## <a name="version-07-packagereference-0719053109"></a>Версия 0.7 (*PackageReference 0.7.1905.3109*)
 
 *Дата выпуска: 31 мая 2019 г.*
 
@@ -557,7 +569,7 @@ Q#Сообщество программистов растет, и мы вост
 
 ### <a name="update-existing-projects"></a>Обновление существующих проектов
 
-Этот выпуск сохраняет полную обратную совместимость. Просто обновите пакеты NuGet в ваших проектах до версии `0.2.1806.1503-preview` и выполните **полное перестроение** , чтобы восстановить все промежуточные файлы.
+Этот выпуск сохраняет полную обратную совместимость. Просто обновите пакеты NuGet в ваших проектах до версии `0.2.1806.1503-preview` и выполните **полное перестроение**, чтобы восстановить все промежуточные файлы.
 
 Для Visual Studio выполните обычные инструкции по [обновлению пакета](https://docs.microsoft.com/nuget/tools/package-manager-ui#updating-a-package).
 

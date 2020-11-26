@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases
 title: Определяемый пользователем тип Рефлектионфасес
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
 qsharp.name: ReflectionPhases
 qsharp.summary: Phases for a sequence of partial reflections in amplitude amplification.
-ms.openlocfilehash: e0c7db6cd1aad636a34684958be117de1b9888f8
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 743ece778239c223573a3a8536ae8059cea09d5f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92731969"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96191352"
 ---
 # <a name="reflectionphases-user-defined-type"></a>Определяемый пользователем тип Рефлектионфасес
 
 Пространство имен: [Microsoft. тактов. амплитудеамплификатион](xref:Microsoft.Quantum.AmplitudeAmplification)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Этапы последовательности частичных отражений в усилении амплитуды.
@@ -39,6 +39,6 @@ newtype ReflectionPhases = (AboutStart : Double[], AboutTarget : Double[]);
 
 Массив этапов для отражения состояния целевого объекта.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Оба массива должны иметь одинаковую длину. Обратите внимание, что во многих случаях первый этап о начальном состоянии и последнем этапе о целевом состоянии представляет собой смену глобального этапа и может иметь значение $0 $.

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromPartialReflections
 title: Функция Обливиаусамплитудеамплификатионфромпартиалрефлектионс
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
 qsharp.name: ObliviousAmplitudeAmplificationFromPartialReflections
 qsharp.summary: Returns a unitary that implements oblivious amplitude amplification by specifying for partial reflections.
-ms.openlocfilehash: 98f410e4c00e50d60d9b45b675e99396d79f955c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: c818fcd8d8b83d8b479b4f133497449d500ca70e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92731984"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96191318"
 ---
 # <a name="obliviousamplitudeamplificationfrompartialreflections-function"></a>Функция Обливиаусамплитудеамплификатионфромпартиалрефлектионс
 
 Пространство имен: [Microsoft. тактов. амплитудеамплификатион](xref:Microsoft.Quantum.AmplitudeAmplification)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает значение типа, которое реализует усиление амплитуды очевидным путем указания для частичных отражений.
@@ -51,5 +51,5 @@ function ObliviousAmplitudeAmplificationFromPartialReflections (phases : Microso
 
 
 
-## <a name="output--qubitqubit--unit-adj--ctl"></a>Выходные данные: ([кубит](xref:microsoft.quantum.lang-ref.qubit)[],[кубит](xref:microsoft.quantum.lang-ref.qubit)[]) = [>ная](xref:microsoft.quantum.lang-ref.unit) расгода и список доверия
+## <a name="output--qubitqubit--unit--is-adj--ctl"></a>Выходные данные: ([кубит](xref:microsoft.quantum.lang-ref.qubit)[],[кубит](xref:microsoft.quantum.lang-ref.qubit)[]) =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
