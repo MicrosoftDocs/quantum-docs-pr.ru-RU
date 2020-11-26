@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.AbsB
 title: Функция Абсб
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.absl".
-ms.openlocfilehash: cd143afa2b010547abfbe9c8ca09218c13e7c8f5
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2b66d5675d5d89cd409605a4cb45c6bf06ba8322
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92710456"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96213231"
 ---
 # <a name="absb-function"></a>Функция Абсб
 
 Пространство имен: [Microsoft. тактов. Extensions. Math](xref:Microsoft.Quantum.Extensions.Math)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 > [!WARNING]
