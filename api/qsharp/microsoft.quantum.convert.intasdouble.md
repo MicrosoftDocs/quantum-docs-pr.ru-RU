@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Convert.IntAsDouble
 title: Функция Интасдаубле
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: IntAsDouble
 qsharp.summary: Converts a given integer to an equivalent double-precision floating-point number.
-ms.openlocfilehash: 195c94480c0a121227bd70fa6d13489b6d71b770
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 03658ab98296a52347bf27970753ba2ec5bd676a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92713451"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96214098"
 ---
 # <a name="intasdouble-function"></a>Функция Интасдаубле
 
 Пространство имен: [Microsoft. тактов. Convert](xref:Microsoft.Quantum.Convert)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Преобразует заданное целое число в эквивалентное число двойной точности с плавающей запятой.
@@ -40,6 +40,6 @@ function IntAsDouble (a : Int) : Double
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [C# Convert. ToDouble](https://docs.microsoft.com/dotnet/api/system.convert.todouble?view=netframework-4.7.1#System_Convert_ToDouble_System_Int64_) .
