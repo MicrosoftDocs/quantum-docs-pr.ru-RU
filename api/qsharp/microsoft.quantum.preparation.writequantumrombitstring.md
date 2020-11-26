@@ -1,60 +1,75 @@
 ---
 uid: Microsoft.Quantum.Preparation.WriteQuantumROMBitString
 title: Операция Вритекуантумромбитстринг
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: WriteQuantumROMBitString
 qsharp.summary: ''
-ms.openlocfilehash: 25eb3d6cc28ea64d4827c36eeb52c4950782ab67
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: cee30a37cca418b6d0122416ce122576511cf303
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92732584"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96193188"
 ---
-# <a name="writequantumrombitstring-operation"></a><span data-ttu-id="f1d74-102">Операция Вритекуантумромбитстринг</span><span class="sxs-lookup"><span data-stu-id="f1d74-102">WriteQuantumROMBitString operation</span></span>
+# <a name="writequantumrombitstring-operation"></a><span data-ttu-id="7717f-102">Операция Вритекуантумромбитстринг</span><span class="sxs-lookup"><span data-stu-id="7717f-102">WriteQuantumROMBitString operation</span></span>
 
-<span data-ttu-id="f1d74-103">Пространство имен: [Microsoft. тактов. Подготовка](xref:Microsoft.Quantum.Preparation)</span><span class="sxs-lookup"><span data-stu-id="f1d74-103">Namespace: [Microsoft.Quantum.Preparation](xref:Microsoft.Quantum.Preparation)</span></span>
+<span data-ttu-id="7717f-103">Пространство имен: [Microsoft. тактов. Подготовка](xref:Microsoft.Quantum.Preparation)</span><span class="sxs-lookup"><span data-stu-id="7717f-103">Namespace: [Microsoft.Quantum.Preparation](xref:Microsoft.Quantum.Preparation)</span></span>
 
-<span data-ttu-id="f1d74-104">Пакеты [](https://nuget.org/packages/)</span><span class="sxs-lookup"><span data-stu-id="f1d74-104">Package: [](https://nuget.org/packages/)</span></span>
+<span data-ttu-id="7717f-104">Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="7717f-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
 
 
 
 
 ```qsharp
-operation WriteQuantumROMBitString (idx : Int, keepCoeff : Int[], altIndex : Int[], keepCoeffRegister : Microsoft.Quantum.Arithmetic.LittleEndian, altIndexRegister : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation WriteQuantumROMBitString (idx : Int, keepCoeff : Int[], altIndex : Int[], data : Bool[][], keepCoeffRegister : Microsoft.Quantum.Arithmetic.LittleEndian, altIndexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, dataRegister : Qubit[], altDataRegister : Qubit[]) : Unit is Adj + Ctl
 ```
 
 
-## <a name="input"></a><span data-ttu-id="f1d74-105">Входные данные</span><span class="sxs-lookup"><span data-stu-id="f1d74-105">Input</span></span>
+## <a name="input"></a><span data-ttu-id="7717f-105">Входные данные</span><span class="sxs-lookup"><span data-stu-id="7717f-105">Input</span></span>
 
-### <a name="idx--int"></a><span data-ttu-id="f1d74-106">IDX: [int](xref:microsoft.quantum.lang-ref.int)</span><span class="sxs-lookup"><span data-stu-id="f1d74-106">idx : [Int](xref:microsoft.quantum.lang-ref.int)</span></span>
-
-
-
-
-### <a name="keepcoeff--int"></a><span data-ttu-id="f1d74-107">Кипкоефф: [int](xref:microsoft.quantum.lang-ref.int)[]</span><span class="sxs-lookup"><span data-stu-id="f1d74-107">keepCoeff : [Int](xref:microsoft.quantum.lang-ref.int)[]</span></span>
+### <a name="idx--int"></a><span data-ttu-id="7717f-106">IDX: [int](xref:microsoft.quantum.lang-ref.int)</span><span class="sxs-lookup"><span data-stu-id="7717f-106">idx : [Int](xref:microsoft.quantum.lang-ref.int)</span></span>
 
 
 
 
-### <a name="altindex--int"></a><span data-ttu-id="f1d74-108">Алтиндекс: [int](xref:microsoft.quantum.lang-ref.int)[]</span><span class="sxs-lookup"><span data-stu-id="f1d74-108">altIndex : [Int](xref:microsoft.quantum.lang-ref.int)[]</span></span>
+### <a name="keepcoeff--int"></a><span data-ttu-id="7717f-107">Кипкоефф: [int](xref:microsoft.quantum.lang-ref.int)[]</span><span class="sxs-lookup"><span data-stu-id="7717f-107">keepCoeff : [Int](xref:microsoft.quantum.lang-ref.int)[]</span></span>
 
 
 
 
-### <a name="keepcoeffregister--littleendian"></a><span data-ttu-id="f1d74-109">Кипкоеффрегистер: [литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian)</span><span class="sxs-lookup"><span data-stu-id="f1d74-109">keepCoeffRegister : [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian)</span></span>
+### <a name="altindex--int"></a><span data-ttu-id="7717f-108">Алтиндекс: [int](xref:microsoft.quantum.lang-ref.int)[]</span><span class="sxs-lookup"><span data-stu-id="7717f-108">altIndex : [Int](xref:microsoft.quantum.lang-ref.int)[]</span></span>
 
 
 
 
-### <a name="altindexregister--littleendian"></a><span data-ttu-id="f1d74-110">Алтиндексрегистер: [литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian)</span><span class="sxs-lookup"><span data-stu-id="f1d74-110">altIndexRegister : [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian)</span></span>
+### <a name="data--bool"></a><span data-ttu-id="7717f-109">данные: [bool](xref:microsoft.quantum.lang-ref.bool)[] []</span><span class="sxs-lookup"><span data-stu-id="7717f-109">data : [Bool](xref:microsoft.quantum.lang-ref.bool)[][]</span></span>
+
+
+
+
+### <a name="keepcoeffregister--littleendian"></a><span data-ttu-id="7717f-110">Кипкоеффрегистер: [литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian)</span><span class="sxs-lookup"><span data-stu-id="7717f-110">keepCoeffRegister : [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian)</span></span>
+
+
+
+
+### <a name="altindexregister--littleendian"></a><span data-ttu-id="7717f-111">Алтиндексрегистер: [литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian)</span><span class="sxs-lookup"><span data-stu-id="7717f-111">altIndexRegister : [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian)</span></span>
+
+
+
+
+### <a name="dataregister--qubit"></a><span data-ttu-id="7717f-112">Register: [кубит](xref:microsoft.quantum.lang-ref.qubit)[]</span><span class="sxs-lookup"><span data-stu-id="7717f-112">dataRegister : [Qubit](xref:microsoft.quantum.lang-ref.qubit)[]</span></span>
+
+
+
+
+### <a name="altdataregister--qubit"></a><span data-ttu-id="7717f-113">Алтдатарегистер: [кубит](xref:microsoft.quantum.lang-ref.qubit)[]</span><span class="sxs-lookup"><span data-stu-id="7717f-113">altDataRegister : [Qubit](xref:microsoft.quantum.lang-ref.qubit)[]</span></span>
 
 
 
 
 
-## <a name="output--unit"></a><span data-ttu-id="f1d74-111">Выходные данные: [единица измерения](xref:microsoft.quantum.lang-ref.unit)</span><span class="sxs-lookup"><span data-stu-id="f1d74-111">Output : [Unit](xref:microsoft.quantum.lang-ref.unit)</span></span>
+## <a name="output--unit"></a><span data-ttu-id="7717f-114">Выходные данные: [единица измерения](xref:microsoft.quantum.lang-ref.unit)</span><span class="sxs-lookup"><span data-stu-id="7717f-114">Output : [Unit](xref:microsoft.quantum.lang-ref.unit)</span></span>
 
