@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.MultiplyFxP
 title: Операция Мултиплифксп
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: MultiplyFxP
 qsharp.summary: Multiplies two fixed-point numbers in quantum registers.
-ms.openlocfilehash: 18883f3f4c3793b91e248f4bd89f9def640bf254
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 3c9ef9ade660e1f420d85162104d773b96722eeb
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730624"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96222615"
 ---
 # <a name="multiplyfxp-operation"></a>Операция Мултиплифксп
 
 Пространство имен: [Microsoft. тактов. арифметика](xref:Microsoft.Quantum.Arithmetic)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. Numerics](https://nuget.org/packages/Microsoft.Quantum.Numerics)
 
 
 Умножает два числа с фиксированной запятой в тактовые регистры.
 
 ```qsharp
-operation MultiplyFxP (fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, fp2 : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit
+operation MultiplyFxP (fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, fp2 : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit is Adj + Ctl
 ```
 
 
@@ -50,6 +50,6 @@ operation MultiplyFxP (fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, fp2 : Micr
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Текущая реализация требует, чтобы три цифры с фиксированной запятой имели одинаковую позицию и одно и то же число Кубитс.

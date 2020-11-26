@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.MeasureInteger
 title: Операция Меасуреинтежер
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: MeasureInteger
 qsharp.summary: Measures the content of a quantum register and converts it to an integer. The measurement is performed with respect to the standard computational basis, i.e., the eigenbasis of `PauliZ`.
-ms.openlocfilehash: 7cd2d93332eb168c7c2be92a3b910033ca8c10ae
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e3ff06e5cbb2ef8a63e4ad12308b382347c90fc3
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92731416"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96222649"
 ---
 # <a name="measureinteger-operation"></a>Операция Меасуреинтежер
 
 Пространство имен: [Microsoft. тактов. арифметика](xref:Microsoft.Quantum.Arithmetic)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Измеряет содержимое регистра такта и преобразует его в целое число. Измерение выполняется в соответствии со стандартной вычислительной единицей, т. е. еиженбасис `PauliZ` .
@@ -40,7 +40,7 @@ operation MeasureInteger (target : Microsoft.Quantum.Arithmetic.LittleEndian) : 
 
 Целое число без знака, содержащее измеряемое значение `target` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эта операция сбрасывает регистр входных данных в состояние $ \ket{00\cdots 0} $, подходящее для освобождения на целевом компьютере.
 

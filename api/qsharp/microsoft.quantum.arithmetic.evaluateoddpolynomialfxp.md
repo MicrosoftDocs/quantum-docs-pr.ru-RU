@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.EvaluateOddPolynomialFxP
 title: Операция Евалуатеоддполиномиалфксп
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: EvaluateOddPolynomialFxP
 qsharp.summary: Evaluates an odd polynomial in a fixed-point representation.
-ms.openlocfilehash: d52da4092f16d43ab9d08b03f798a4d6789c7348
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1bf9b6e7c416e994e70b93e5967caefd444f6426
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92731568"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96223227"
 ---
 # <a name="evaluateoddpolynomialfxp-operation"></a>Операция Евалуатеоддполиномиалфксп
 
 Пространство имен: [Microsoft. тактов. арифметика](xref:Microsoft.Quantum.Arithmetic)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. Numerics](https://nuget.org/packages/Microsoft.Quantum.Numerics)
 
 
 Вычисляет нечетный полином в представлении с фиксированной запятой.
 
 ```qsharp
-operation EvaluateOddPolynomialFxP (coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit
+operation EvaluateOddPolynomialFxP (coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit is Adj + Ctl
 ```
 
 

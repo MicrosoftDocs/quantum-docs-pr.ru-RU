@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.MultiplyByModularInteger
 title: Операция Мултиплибимодуларинтежер
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: MultiplyByModularInteger
 qsharp.summary: Performs modular multiplication by an integer constant on a qubit register.
-ms.openlocfilehash: 6deced7862ab4cb74315219eaaab97380cdf0f92
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 080414d208a2a0c114857db8e93efb4cd74a4d8d
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730632"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96222581"
 ---
 # <a name="multiplybymodularinteger-operation"></a>Операция Мултиплибимодуларинтежер
 
 Пространство имен: [Microsoft. тактов. арифметика](xref:Microsoft.Quantum.Arithmetic)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Выполняет модульное умножение с помощью целочисленной константы в регистре кубит.
 
 ```qsharp
-operation MultiplyByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation MultiplyByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
 ```
 
 
@@ -56,7 +56,7 @@ operation MultiplyByModularInteger (constMultiplier : Int, modulus : Int, multip
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 - Схема канала и описание см. на рис. 7 на [стр. 8 из арксив: Куант-pH/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8)
 - Эта операция соответствует U ₐ в [арксив: Куант-pH/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf)

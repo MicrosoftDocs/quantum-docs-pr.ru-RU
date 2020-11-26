@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.MultiplyAndAddPhaseByModularInteger
 title: Операция Мултипляндаддфасебимодуларинтежер
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: MultiplyAndAddPhaseByModularInteger
 qsharp.summary: The same as MultiplyAndAddByModularInteger, but assumes that the summand encodes integers in QFT basis.
-ms.openlocfilehash: be7df50f040697329c2fe8bbc319c8cebb8b2687
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1ca20b525d2a76e554d5a2e8d4f40060b5ef51cf
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730640"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96223873"
 ---
 # <a name="multiplyandaddphasebymodularinteger-operation"></a>Операция Мултипляндаддфасебимодуларинтежер
 
 Пространство имен: [Microsoft. тактов. арифметика](xref:Microsoft.Quantum.Arithmetic)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 То же, что и Мултипляндаддбимодуларинтежер, но предполагает, что слагаемому кодирует целые числа в Кфт.
 
 ```qsharp
-operation MultiplyAndAddPhaseByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, phaseSummand : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit
+operation MultiplyAndAddPhaseByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, phaseSummand : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit is Adj + Ctl
 ```
 
 
@@ -55,7 +55,7 @@ operation MultiplyAndAddPhaseByModularInteger (constMultiplier : Int, modulus : 
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Предполагается, что `phaseSummand` имеет наивысший бит, равный 0.
 Также предполагается, что значение `phaseSummand` меньше $N $.

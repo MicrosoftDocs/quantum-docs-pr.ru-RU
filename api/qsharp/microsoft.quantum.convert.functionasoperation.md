@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Convert.FunctionAsOperation
 title: Функция Функтионасоператион
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: FunctionAsOperation
 qsharp.summary: Converts functions to operations.
-ms.openlocfilehash: 90e9f0c922a77fbb6d6faf8945d4f5d1c8ff33b7
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 10703818242cf6b3853f08a45bfb9094f397f6c2
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92713508"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96224383"
 ---
 # <a name="functionasoperation-function"></a>Функция Функтионасоператион
 
 Пространство имен: [Microsoft. тактов. Convert](xref:Microsoft.Quantum.Convert)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Преобразует функции в операции.
@@ -53,6 +53,6 @@ function FunctionAsOperation<'Input, 'Output> (fn : ('Input -> 'Output)) : ('Inp
 
 Тип выходных данных функции для преобразования.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Это в основном полезно для передачи функций функциям или операциям, которые в качестве входных данных ожидает операцию.

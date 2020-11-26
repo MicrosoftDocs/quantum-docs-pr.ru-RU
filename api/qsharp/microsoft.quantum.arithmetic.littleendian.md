@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.LittleEndian
 title: Определяемый пользователем тип Литтлиндиан
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: LittleEndian
 qsharp.summary: Register that encodes an unsigned integer in little-endian order. The qubit with index `0` encodes the lowest bit of an unsigned integer.
-ms.openlocfilehash: fd2744a8372793ad01d1391c035c64de1264d2f2
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2a00e499bf59e6d22a774706331737461e8e95e1
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92731465"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96222785"
 ---
 # <a name="littleendian-user-defined-type"></a>Определяемый пользователем тип Литтлиндиан
 
 Пространство имен: [Microsoft. тактов. арифметика](xref:Microsoft.Quantum.Arithmetic)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Регистр кодирует целое число без знака в порядке с прямым порядком байтов. Кубит с индексом `0` кодирует наименьший бит целого числа без знака.
@@ -30,6 +30,6 @@ newtype LittleEndian = (Qubit[]);
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Мы предлагаем сокращение, `LittleEndian` как `LE` в документации.
