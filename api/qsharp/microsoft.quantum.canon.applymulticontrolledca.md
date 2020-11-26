@@ -1,37 +1,37 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyMultiControlledCA
 title: Операция Апплимултиконтролледка
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyMultiControlledCA
 qsharp.summary: Applies a multiply controlled version of a singly controlled operation. The modifier `CA` indicates that the single-qubit operation is controllable and adjointable.
-ms.openlocfilehash: 5662efe0dc6f665206b8773596bf885ce631413c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 28797583c23e21eb4bcae996a34c70ee06c6dbe8
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92717960"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209287"
 ---
 # <a name="applymulticontrolledca-operation"></a>Операция Апплимултиконтролледка
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет версию управляемой операции с одной операцией умножения.
 Модификатор `CA` указывает, что одна операция кубит является управляемой и аджоинтабле.
 
 ```qsharp
-operation ApplyMultiControlledCA (singlyControlledOp : (Qubit[] => Unit is Adj), ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[], targets : Qubit[]) : Unit
+operation ApplyMultiControlledCA (singlyControlledOp : (Qubit[] => Unit is Adj), ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[], targets : Qubit[]) : Unit is Adj + Ctl
 ```
 
 
 ## <a name="input"></a>Входные данные
 
-### <a name="singlycontrolledop--qubit--unit-adj"></a>Сингликонтролледоп: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] [=>ная](xref:microsoft.quantum.lang-ref.unit) прогода
+### <a name="singlycontrolledop--qubit--unit--is-adj"></a>Сингликонтролледоп: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] = [единица измерения](xref:microsoft.quantum.lang-ref.unit) >
 
 Операция, управляемая для одного кубит.
 Первым кубит в аргументе операции считается элемент управления, а остальные считаются целевыми Кубитс.
@@ -59,7 +59,7 @@ operation ApplyMultiControlledCA (singlyControlledOp : (Qubit[] => Unit is Adj),
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эта операция использует только чистый анЦилла Кубитс.
 
@@ -67,7 +67,7 @@ operation ApplyMultiControlledCA (singlyControlledOp : (Qubit[] => Unit is Adj),
 
 ## <a name="references"></a>Ссылки
 
-- [*Майкл A. Nielsen, Исаак L. Чжуанский* , вычисление такта и сведения о такте](http://doi.org/10.1017/CBO9780511976667)
+- [*Майкл A. Nielsen, Исаак L. Чжуанский*, вычисление такта и сведения о такте](http://doi.org/10.1017/CBO9780511976667)
 
 ## <a name="see-also"></a>См. также:
 

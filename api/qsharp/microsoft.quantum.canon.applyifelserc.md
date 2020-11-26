@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfElseRC
 title: Операция Апплифелсерк
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfElseRC
 qsharp.summary: Applies one of two controllable operations, depending on the value of a classical result.
-ms.openlocfilehash: 45bd0f46fb2e28c5c9aaa21cb7ec065baf279d2a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b2e4ade84b25b0100fe4b69814c760a672833f06
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92718114"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209491"
 ---
 # <a name="applyifelserc-operation"></a>Операция Апплифелсерк
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет одну из двух контролируемых операций в зависимости от значения классического результата.
 
 ```qsharp
-operation ApplyIfElseRC<'T, 'U> (result : Result, (zeroOp : ('T => Unit is Ctl), zeroInput : 'T), (oneOp : ('U => Unit is Ctl), oneInput : 'U)) : Unit
+operation ApplyIfElseRC<'T, 'U> (result : Result, (zeroOp : ('T => Unit is Ctl), zeroInput : 'T), (oneOp : ('U => Unit is Ctl), oneInput : 'U)) : Unit is Ctl
 ```
 
 
@@ -39,7 +39,7 @@ operation ApplyIfElseRC<'T, 'U> (result : Result, (zeroOp : ('T => Unit is Ctl),
 Результат измерения, используемый для определения `zeroOp` применения или `oneOp` .
 
 
-### <a name="zeroop--t--unit-ctl"></a>Зеруп: 'T = список CTL для [единицы](xref:microsoft.quantum.lang-ref.unit)>
+### <a name="zeroop--t--unit--is-ctl"></a>Зеруп: не>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — CTL
 
 Управляемая операция, применяемая при `result == Zero` .
 
@@ -49,7 +49,7 @@ operation ApplyIfElseRC<'T, 'U> (result : Result, (zeroOp : ('T => Unit is Ctl),
 Входные данные, которые должны быть предоставлены в `zeroOp` when `result == Zero` .
 
 
-### <a name="oneop--u--unit-ctl"></a>Онеоп: "U = список доверия для [единицы](xref:microsoft.quantum.lang-ref.unit)>
+### <a name="oneop--u--unit--is-ctl"></a>Онеоп: "U = [единица](xref:microsoft.quantum.lang-ref.unit) > является CTL
 
 Управляемая операция, применяемая при `result == One` .
 

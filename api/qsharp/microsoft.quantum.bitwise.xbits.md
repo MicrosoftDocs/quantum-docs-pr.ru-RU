@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Bitwise.XBits
 title: Функция Ксбитс
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Bitwise
 qsharp.name: XBits
 qsharp.summary: Returns an integer representing the X bits of an array of Pauli operators.
-ms.openlocfilehash: 91619803c7efe56e617b16637f5302aa0b7978ec
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 969be01204bad497496ff24cb64213f5fe1f089b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92729809"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209763"
 ---
 # <a name="xbits-function"></a>Функция Ксбитс
 
 Пространство имен: [Microsoft. тактов. побитовое](xref:Microsoft.Quantum.Bitwise)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Возвращает целое число, представляющее X бит массива операторов Паули.
@@ -40,7 +40,7 @@ function XBits (paulis : Pauli[]) : Int
 
 Целочисленное $x $ с двоичным представлением $ (p_ {62} \, p_ {61} \, \дотс \, p_0) $, где $p _i = $0, если `paulis[i]` имеет значение `PauliI` или `PauliZ` и, где $p _i = $1, если `paulis[i]` имеет значение `PauliX` или `PauliY` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция вызывает исключение, если длина `paulis` массива больше 63.
 

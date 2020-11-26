@@ -1,24 +1,60 @@
 ### YamlMime:QSharpNamespace
 functions:
+- summary: Этап реализации процедуры подготовки произвольного состояния.
+  uid: Microsoft.Quantum.Preparation.ApproximatelyUnprepareArbitraryStatePlan
 - summary: >-
     Выполняет вычисление координат БЛОЧ-сферы для одного кубит состояния.
 
     Учитывая два комплексных числа $a 0, a1 $, которые представляют состояние кубит, рассчитывает координаты в блочной сфере, что $a 0 \кет {0} + a1 \кет {1} = r e ^ {IT} (e ^ {-i \фи/2}\cos{(\ тета/2)} \кет {0} + e ^ {i \фи/2}\sin{(\ тета/2)} \кет {1} ) $.
   uid: Microsoft.Quantum.Preparation.BlochSphereCoordinates
 - summary: >-
+    Возвращает операцию, которая готовит пурификатион данного смешанного состояния.
+
+    "Пурифиед смешанное состояние" относится к состояниям вида | ψ ⟩ = Σи √ PI | i ⟩ | гарбажеи ⟩, указанным вектором коэффициентов {PI}. Состояния этой формы можно сократить до смешанных состояний p ≔ PI | i ⟩ ⟨ i | Трассировка по регистру «мусора» (то есть смешанному состоянию, который является диагональным по диагонали).
+
+
+    Дополнительные https://arxiv.org/pdf/1805.03662.pdf?page=15 сведения см. в статье.
+  uid: Microsoft.Quantum.Preparation.PurifiedMixedState
+- summary: Возвращает общее число Кубитс, которые должны быть выделены для применения операции, возвращенной @"microsoft.quantum.preparation.purifiedmixedstate" .
+  uid: Microsoft.Quantum.Preparation.PurifiedMixedStateRequirements
+- summary: >-
+    Возвращает операцию, которая готовит пурификатион данного смешанного состояния, запутанными с регистром, представляющим данную коллекцию данных.
+
+    "Пурифиед смешанное состояние с данными" относится к состоянию вида Σи √ PI | i ⟩ | XI ⟩ | гарбажеи ⟩, где каждое значение XI является битстринг кодировкой дополнительных данных, связанных с регистрацией | i ⟩.
+
+
+    Дополнительные https://arxiv.org/pdf/1805.03662.pdf?page=15 сведения см. в статье.
+  uid: Microsoft.Quantum.Preparation.PurifiedMixedStateWithData
+- summary: >-
+    > [!WARNING]
+
+    > Куантумром является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Preparation.PurifiedMixedState>.
+
+
     Использует методику такта для представления заданной матрицы плотности.
 
     Учитывая список коэффициентов $N $ alpha_j $, он возвращает единую $U $, которая использует методику такта для подготовки приближения $ \тилде\рхо\ sum_ {j = 0} ^ {N-1} p_j \кет{ж}\бра{ж} $ пурификатион матрицы плотности $ \рхо = \ sum_ {j = 0} ^ {N-1} \фрак{| alpha_j |} {\ sum_k | \ alpha_k |} \кет{ж}\бра{ж} $. В этом приближении ошибка $ \епсилон $ заключается в том, что $ | p_j-\фрак{| alpha_j |} {\ sum_k | \ alpha_k |} | \ле \епсилон/N $ and $ \| \тилде\рхо-\рхо \| \ле \епсилон $. Иными словами, $ $ \бегин{алигн} У\кет {0} ^ {\лцеил\ Log_2 н\рцеил} \ Сисакет {0} ^ {m} = \ sum_ {j = 0} ^ {N-1} \скрт{p_j} \кет{ж}\кет{\текст{гарбаже} _j}. \енд{алигн} $ $
   uid: Microsoft.Quantum.Preparation.QuantumROM
 - summary: ''
   uid: Microsoft.Quantum.Preparation.QuantumROMBitStringWriterByIndex
-- summary: Возвращает общее число Кубитс, которые должны быть выделены операции, возвращенной `QuantumROM` .
+- summary: >-
+    > [!WARNING]
+
+    > Куантумромкубиткаунт является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Preparation.PurifiedMixedStateRequirements>.
+
+
+    Возвращает общее число Кубитс, которые должны быть выделены операции, возвращенной `QuantumROM` .
   uid: Microsoft.Quantum.Preparation.QuantumROMQubitCount
 - summary: ''
-  uid: Microsoft.Quantum.Preparation.RangeLength
-- summary: ''
   uid: Microsoft.Quantum.Preparation.RoundedDiscretizationCoefficients
+- summary: ''
+  uid: Microsoft.Quantum.Preparation.SplitSign
 - summary: >-
+    > [!WARNING]
+
+    > СтатепрепаратионкомплекскоеффиЦиентс является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Preparation.PrepareArbitraryStateCP>.
+
+
     Возвращает операцию, которая готовит определенное состояние такта.
 
     Возвращенная операция $U $ подготавливает произвольное состояние такта $ \кет{\пси} $ с сложными коэффициентами $r _j e ^ {i t_j} $ из $n $-кубит вычислительного состояния $ \ket{0...0} $.
@@ -26,6 +62,11 @@ functions:
     Действие U для вновь выделенной регистрации задается параметром $ $ \бегин{алигн} У\кет {0... 0} = \кет{\пси} = \фрак{\ sum_ {j = 0} ^ {2 ^ n-1} r_j e ^ {i t_j} \кет{ж}}{\скрт{\ sum_ {j = 0} ^ {2 ^ n-1} | r_j | ^ 2}}. \енд{алигн} $ $
   uid: Microsoft.Quantum.Preparation.StatePreparationComplexCoefficients
 - summary: >-
+    > [!WARNING]
+
+    > СтатепрепаратионпоситивекоеффиЦиентс является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Preparation.PrepareArbitraryStateD>.
+
+
     Возвращает операцию, которая готовит заданное состояние такта.
 
     Возвращаемая операция, $U $, подготавливает произвольное состояние такта $ \ alpha_j \же $0 из $n $-кубит вычислительного состояния $ \ket{0...0} $.
@@ -33,17 +74,17 @@ functions:
     Действие U для вновь выделенной регистрации задается параметром $ $ \бегин{алигн} U \ket{0\cdots 0} = \кет{\пси} = \фрак{\ sum_ {j = 0} ^ {2 ^ n-1} \ alpha_j \кет{ж}}{\скрт{\ sum_ {j = 0} ^ {2 ^ n-1} | \ alpha_j | ^ 2}}. \енд{алигн} $ $
   uid: Microsoft.Quantum.Preparation.StatePreparationPositiveCoefficients
 - summary: Этап реализации процедуры подготовки произвольного состояния.
-  uid: Microsoft.Quantum.Preparation._ApproximatelyUnprepareArbitraryStatePlan
+  uid: Microsoft.Quantum.Preparation.StatePreparationSBMComputeCoefficients
 - summary: ''
   uid: Microsoft.Quantum.Preparation._CompileApproximateArbitraryStatePreparation
 - summary: ''
   uid: Microsoft.Quantum.Preparation._QuantumROMDiscretization
-- summary: ''
-  uid: Microsoft.Quantum.Preparation._QuantumROMQubitManager
-- summary: Этап реализации процедуры подготовки произвольного состояния.
-  uid: Microsoft.Quantum.Preparation._StatePreparationSBMComputeCoefficients
 name: Microsoft.Quantum.Preparation
-newtypes: []
+newtypes:
+- summary: Представляет конкретное смешанное состояние, которое может быть подготовлено для индекса и для регистрации мусора.
+  uid: Microsoft.Quantum.Preparation.MixedStatePreparation
+- summary: Представляет число Кубитс, необходимых для подготовки заданного смешанного состояния.
+  uid: Microsoft.Quantum.Preparation.MixedStatePreparationRequirements
 operations:
 - summary: ''
   uid: Microsoft.Quantum.Preparation.ApplyGlobalRotationStep
@@ -51,17 +92,39 @@ operations:
   uid: Microsoft.Quantum.Preparation.ApplyMultiplexStep
 - summary: Применяет операцию к базовому Кубитс, делая регистр с прямым порядком байтов. Эта операция помечена как внутренняя, так как регистр с прямым порядком байтов должен быть "непрозрачным", так что это только деталь реализации.
   uid: Microsoft.Quantum.Preparation.ApplyToLittleEndian
-- summary: Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает состояние для этой регистрации, описываемое заданным коэффициентом, вплоть до заданного допустимого значения приближения.
+- summary: >-
+    > [!WARNING]
+
+    > Аппроксимателипрепареарбитраристате является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryStateCP>.
+
+
+    Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает состояние для этой регистрации, описываемое заданным коэффициентом, вплоть до заданного допустимого значения приближения.
   uid: Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryState
-- summary: Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает к этому регистру состояние, описываемое заданным коэффициентом.
+- summary: Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает состояние для этой регистрации, описываемое заданным коэффициентом, вплоть до заданного допустимого значения приближения.
+  uid: Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryStateCP
+- summary: Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает состояние для этой регистрации, описываемое заданным коэффициентом, вплоть до заданного допустимого значения приближения.
+  uid: Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryStateD
+- summary: ''
+  uid: Microsoft.Quantum.Preparation.IgnoreDataRegister
+- summary: >-
+    > [!WARNING]
+
+    > Препареарбитраристате является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Preparation.PrepareArbitraryStateCP>.
+
+
+    Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает к этому регистру состояние, описываемое заданным коэффициентом.
   uid: Microsoft.Quantum.Preparation.PrepareArbitraryState
-- summary: Подготавливает состояние Чои – Жамиłковски для данной операции к указанным ссылочным и целевым регистрам.
+- summary: Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает к этому регистру состояние, описываемое заданным коэффициентом.
+  uid: Microsoft.Quantum.Preparation.PrepareArbitraryStateCP
+- summary: Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает к этому регистру состояние, описываемое заданным коэффициентом.
+  uid: Microsoft.Quantum.Preparation.PrepareArbitraryStateD
+- summary: Подготавливает состояние Чои – Жамиоłковски для данной операции к указанным ссылочным и целевым регистрам.
   uid: Microsoft.Quantum.Preparation.PrepareChoiState
-- summary: Подготавливает состояние Чои – Жамиłковски для данной операции с примыкающим вариантом к заданным ссылочным и целевым регистрам.
+- summary: Подготавливает состояние Чои – Жамиоłковски для данной операции с примыкающим вариантом к заданным ссылочным и целевым регистрам.
   uid: Microsoft.Quantum.Preparation.PrepareChoiStateA
-- summary: Подготавливает состояние Чои – Жамиłковски для данной операции с контролируемым вариантом на заданный эталонный и целевой регистр.
+- summary: Подготавливает состояние Чои – Жамиоłковски для данной операции с контролируемым вариантом на заданный эталонный и целевой регистр.
   uid: Microsoft.Quantum.Preparation.PrepareChoiStateC
-- summary: Подготавливает состояние Чои – Жамиłковски для заданной операции с управляемыми и соседними вариантами на заданный эталонный и целевой регистры.
+- summary: Подготавливает состояние Чои – Жамиоłковски для заданной операции с управляемыми и соседними вариантами на заданный эталонный и целевой регистры.
   uid: Microsoft.Quantum.Preparation.PrepareChoiStateCA
 - summary: >-
     Парные ентанглес два регистра кубит.
@@ -73,9 +136,16 @@ operations:
 
     Регистрация подготавливается в состоянии $ \болдоне/2 ^ N $, применяя полный канал деполаризинг к каждому кубит, где $N $ — это длина регистра.
   uid: Microsoft.Quantum.Preparation.PrepareIdentity
+- summary: Подготавливает кубит в положительном еиженстатее данного оператора Паули. Если указан оператор Identity, кубит подготавливается в максимально смешанном состоянии.
+  uid: Microsoft.Quantum.Preparation.PreparePauliEigenstate
 - summary: ''
   uid: Microsoft.Quantum.Preparation.PrepareQuantumROMState
 - summary: >-
+    > [!WARNING]
+
+    > Препарекубит является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Preparation.PreparePauliEigenstate>.
+
+
     Подготавливает кубит в еиженстате + 1 ( `Zero` ) для данного оператора Паули. Если указан оператор Identity, кубит подготавливается в максимально смешанном состоянии.
 
     Если кубит изначально находится в состоянии $ \кет {0} $, эта операция подготавливает кубит в еиженстате $ + $1 для данного оператора Паули или, для `PauliI` , в максимально смешанном состоянии (см <xref:microsoft.quantum.preparation.preparesinglequbitidentity> .).
@@ -93,15 +163,17 @@ operations:
     То есть, это единое $U $ создает равномерное перестановку для всех состояний $0 $ в $M-$1, учитывая входное состояние $ \ket{0\cdots 0} $. Иными словами, $ $ \бегин{алигн} У\кет {0} = \фрак {1} {\скрт{м}}\ sum_ {j = 0} ^ {M-1} \кет{ж}. \енд{алигн} $ $.
   uid: Microsoft.Quantum.Preparation.PrepareUniformSuperposition
 - summary: Этап реализации <xref:microsoft.quantum.canon.prepareuniformsuperposition>
-  uid: Microsoft.Quantum.Preparation.PrepareUniformSuperposition_
+  uid: Microsoft.Quantum.Preparation.PrepareUniformSuperpositionOracle
 - summary: ''
   uid: Microsoft.Quantum.Preparation.WriteQuantumROMBitString
+- summary: Учитывая набор коэффициентов и регистр такта с прямым порядком байтов для унентанглед Кубитс, все из которых находятся в нулевом состоянии, подготавливает состояние для этой регистрации, описываемой этими коэффициентами. Использует эмуляцию состояния, если поддерживается целевым объектом.
+  uid: Microsoft.Quantum.Preparation._PrepareAmplitudesFromZeroState
 summary: Это пространство имен содержит функции и операции для подготовки Кубитс к произвольным начальным состояниям.
 uid: Microsoft.Quantum.Preparation
 metadata:
-  ms.openlocfilehash: f8dc07d5fe1073f626eea41e6291d8cc919d93b6
-  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.openlocfilehash: f08467fae166b83cbb71d86739b4cd1300259b8b
+  ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/27/2020
-  ms.locfileid: "92732848"
+  ms.lasthandoff: 11/26/2020
+  ms.locfileid: "96210307"

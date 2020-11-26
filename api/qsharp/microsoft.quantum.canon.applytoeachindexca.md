@@ -1,37 +1,37 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToEachIndexCA
 title: Операция Апплитоеачиндекска
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToEachIndexCA
 qsharp.summary: Applies a single-qubit operation to each indexed element in a register. The modifier `CA` indicates that the single-qubit operation is adjointable and controllable.
-ms.openlocfilehash: c5bb61aadbdaab9c74a3dcd418088c532b495ff5
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: abb616498a8ff9c3348df81cf0ca1a1669561eec
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92717512"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96208947"
 ---
 # <a name="applytoeachindexca-operation"></a>Операция Апплитоеачиндекска
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет одну операцию кубит к каждому индексированному элементу в регистре.
 Модификатор `CA` указывает, что операция с одним кубитом является аджоинтабле и управляемой.
 
 ```qsharp
-operation ApplyToEachIndexCA<'T> (singleElementOperation : ((Int, 'T) => Unit is Adj + Ctl), register : 'T[]) : Unit
+operation ApplyToEachIndexCA<'T> (singleElementOperation : ((Int, 'T) => Unit is Adj + Ctl), register : 'T[]) : Unit is Adj + Ctl
 ```
 
 
 ## <a name="input"></a>Входные данные
 
-### <a name="singleelementoperation--intt--unit-adj--ctl"></a>Синглилементоператион: ([int](xref:microsoft.quantum.lang-ref.int), 't) =>ная начисление [единиц](xref:microsoft.quantum.lang-ref.unit) + CTL
+### <a name="singleelementoperation--intt--unit--is-adj--ctl"></a>Синглилементоператион: ([int](xref:microsoft.quantum.lang-ref.int), 't) => [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Операция, применяемая к каждому кубит.
 

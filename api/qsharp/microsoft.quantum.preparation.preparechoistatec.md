@@ -1,36 +1,36 @@
 ---
 uid: Microsoft.Quantum.Preparation.PrepareChoiStateC
 title: Операция Препаречоистатек
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: PrepareChoiStateC
-qsharp.summary: Prepares the Choi–Jamiłkowski state for a given operation with a controlled variant onto given reference and target registers.
-ms.openlocfilehash: b23b22fa4bf21ca48076ccda0db62b313f887aa9
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+qsharp.summary: Prepares the Choi–Jamiołkowski state for a given operation with a controlled variant onto given reference and target registers.
+ms.openlocfilehash: 7d9e53b1dd8ec08c0d0b200cc51562ca6330b06e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733729"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96210545"
 ---
 # <a name="preparechoistatec-operation"></a>Операция Препаречоистатек
 
 Пространство имен: [Microsoft. тактов. Подготовка](xref:Microsoft.Quantum.Preparation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
-Подготавливает состояние Чои – Жамиłковски для данной операции с контролируемым вариантом на заданный эталонный и целевой регистр.
+Подготавливает состояние Чои – Жамиоłковски для данной операции с контролируемым вариантом на заданный эталонный и целевой регистр.
 
 ```qsharp
-operation PrepareChoiStateC (op : (Qubit[] => Unit is Ctl), reference : Qubit[], target : Qubit[]) : Unit
+operation PrepareChoiStateC (op : (Qubit[] => Unit is Ctl), reference : Qubit[], target : Qubit[]) : Unit is Ctl
 ```
 
 
 ## <a name="input"></a>Входные данные
 
-### <a name="op--qubit--unit-ctl"></a>Op: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] = Ctl [единицы](xref:microsoft.quantum.lang-ref.unit)>
+### <a name="op--qubit--unit--is-ctl"></a>Op: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] = [единица](xref:microsoft.quantum.lang-ref.unit) > является CTL
 
 
 

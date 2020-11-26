@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyPauliFromBitString
 title: Операция Апплипаулифромбитстринг
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyPauliFromBitString
 qsharp.summary: Applies a Pauli operator on each qubit in an array if the corresponding bit of a Boolean array matches a given input.
-ms.openlocfilehash: 09754accb92c1339b781003e5722e3c8f5884e6f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: cf4c99ec5134fac788cdd4c8a057258790152a82
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92717806"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209066"
 ---
 # <a name="applypaulifrombitstring-operation"></a>Операция Апплипаулифромбитстринг
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет оператор Паули к каждому кубит в массиве, если соответствующий бит логического массива совпадает с заданным входным значением.
 
 ```qsharp
-operation ApplyPauliFromBitString (pauli : Pauli, bitApply : Bool, bits : Bool[], qubits : Qubit[]) : Unit
+operation ApplyPauliFromBitString (pauli : Pauli, bitApply : Bool, bits : Bool[], qubits : Qubit[]) : Unit is Adj + Ctl
 ```
 
 
@@ -55,6 +55,6 @@ operation ApplyPauliFromBitString (pauli : Pauli, bitApply : Bool, bits : Bool[]
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Логический массив и регистр такта должны иметь одинаковую длину.
