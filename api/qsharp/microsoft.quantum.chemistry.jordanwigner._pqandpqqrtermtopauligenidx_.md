@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._PQandPQQRTermToPauliGenIdx_
 title: Функция _пкандпккртермтопаулиженидкс_
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _PQandPQQRTermToPauliGenIdx_
 qsharp.summary: Converts a GeneratorIndex describing a PQ or PQQR term to an expression 'GeneratorIndex[]' in terms of Paulis
-ms.openlocfilehash: 44a6d6b63d2f6bc8b628603e78931570d1ec22eb
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 17acd2c09129275af90222e30fd96a7551e18b50
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92714375"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96203541"
 ---
 # <a name="_pqandpqqrtermtopauligenidx_-function"></a>Функция _пкандпккртермтопаулиженидкс_
 
 Пространство имен: [Microsoft. тактов. химия. жорданвигнер](xref:Microsoft.Quantum.Chemistry.JordanWigner)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. Химия](https://nuget.org/packages/Microsoft.Quantum.Chemistry)
 
 
 Преобразует Женераториндекс, описывающий термин PQ или ПККР, в выражение "Женераториндекс []" с точки зрения пол.

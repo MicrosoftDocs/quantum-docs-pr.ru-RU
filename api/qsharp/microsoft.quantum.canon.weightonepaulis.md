@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.WeightOnePaulis
 title: Функция Веигхтонепаулис
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: WeightOnePaulis
 qsharp.summary: Returns an array of all weight-1 Pauli operators on a given number of qubits.
-ms.openlocfilehash: 89802c1bc6f3da8edef27b698eb61098e47dfc85
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 904c606393131d51eaa44d464ad52bec509eaf72
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92715201"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96204544"
 ---
 # <a name="weightonepaulis-function"></a>Функция Веигхтонепаулис
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает массив всех операторов Паули веса-1 для заданного числа Кубитс.
