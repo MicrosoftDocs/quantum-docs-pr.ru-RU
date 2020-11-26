@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.PauliLCUUnitary
 title: Функция Паулилкуунитари
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: PauliLCUUnitary
 qsharp.summary: Used in implementation of `PauliBlockEncoding`
-ms.openlocfilehash: d88bb01e7b3d75113f66719b292ddd99f642d1c7
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 39ace64019ed6b46688f24709352750e5c45ab3a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92710553"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96229109"
 ---
 # <a name="paulilcuunitary-function"></a>Функция Паулилкуунитари
 
 Пространство имен: [Microsoft. тактов. Моделирование](xref:Microsoft.Quantum.Simulation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Используется в реализации `PauliBlockEncoding`
@@ -36,7 +36,7 @@ function PauliLCUUnitary (generatorIndex : Microsoft.Quantum.Simulation.Generato
 
 
 
-## <a name="output--qubit--unit-adj--ctl"></a>Выходные данные: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] => [единицы измерения](xref:microsoft.quantum.lang-ref.unit) + CTL
+## <a name="output--qubit--unit--is-adj--ctl"></a>Выходные данные: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] = [единица измерения](xref:microsoft.quantum.lang-ref.unit)  ">" + CTL
 
 
 

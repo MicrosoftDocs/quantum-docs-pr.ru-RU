@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math.MaxD
 title: Функция Максд
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: MaxD
 qsharp.summary: Returns the larger of two specified numbers.
-ms.openlocfilehash: 1fcaffdc008cd297ed23244f5b4b3190da76ad7a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: bc6140f4fc4015619194a7a0c3023fc9414fee08
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92709658"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96228038"
 ---
 # <a name="maxd-function"></a>Функция Максд
 
 Пространство имен: [Microsoft. тактов. Math](xref:Microsoft.Quantum.Math)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Возвращает большее из двух указанных чисел.
@@ -45,6 +45,6 @@ function MaxD (a : Double, b : Double) : Double
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [System. Math. Max](https://docs.microsoft.com/dotnet/api/system.math.max) .

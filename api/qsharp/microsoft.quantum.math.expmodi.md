@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math.ExpModI
 title: Функция Експмоди
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ExpModI
 qsharp.summary: Returns an integer raised to a given power, with respect to a given modulus.
-ms.openlocfilehash: e31273702a9850d0162f160ca412ff6d50f38b28
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 197f7351ce76ebb7684ca8014cab9ab65d9c784c
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92732856"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96228497"
 ---
 # <a name="expmodi-function"></a>Функция Експмоди
 
 Пространство имен: [Microsoft. тактов. Math](xref:Microsoft.Quantum.Math)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает целое число, возведенное в заданную степень, по отношению к заданному модулю.
@@ -57,6 +57,6 @@ function ExpModI (expBase : Int, power : Int, modulus : Int) : Int
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Принимает время пропорционально числу битов в `power` , а не в `power` самой.
