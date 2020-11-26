@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Simulation.EvolutionUnitary
 title: Определяемый пользователем тип Еволутионунитари
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Simulation
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Represents a unitary time-evolution operator.
 
   The first parameter is is duration of time-evolution, and the second parameter is the qubit register acted upon by the unitary.
-ms.openlocfilehash: 28ab492573b67e4aa42392e4ee499596b9c0225f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 38e7da28d4146df9cc132ad69ee939c44bc917f7
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733705"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96225267"
 ---
 # <a name="evolutionunitary-user-defined-type"></a>Определяемый пользователем тип Еволутионунитари
 
 Пространство имен: [Microsoft. тактов. Моделирование](xref:Microsoft.Quantum.Simulation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Представляет отдельный оператор времени развития.

@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Preparation.QuantumROMBitStringWriterByIndex
 title: Функция Куантумромбитстрингвритербиндекс
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: QuantumROMBitStringWriterByIndex
 qsharp.summary: ''
-ms.openlocfilehash: cccc18a14aa6870dd29de5001a5cc184ff28eaaf
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 7a0a8668a8e771268dda0e17e15942e6d30c7deb
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92732609"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96226457"
 ---
 # <a name="quantumrombitstringwriterbyindex-function"></a>Функция Куантумромбитстрингвритербиндекс
 
 Пространство имен: [Microsoft. тактов. Подготовка](xref:Microsoft.Quantum.Preparation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 
 
 ```qsharp
-function QuantumROMBitStringWriterByIndex (idx : Int, keepCoeff : Int[], altIndex : Int[]) : ((Microsoft.Quantum.Arithmetic.LittleEndian, Microsoft.Quantum.Arithmetic.LittleEndian) => Unit is Adj + Ctl)
+function QuantumROMBitStringWriterByIndex (idx : Int, keepCoeff : Int[], altIndex : Int[], data : Bool[][]) : ((Microsoft.Quantum.Arithmetic.LittleEndian, Microsoft.Quantum.Arithmetic.LittleEndian, Qubit[], Qubit[]) => Unit is Adj + Ctl)
 ```
 
 
@@ -45,6 +45,11 @@ function QuantumROMBitStringWriterByIndex (idx : Int, keepCoeff : Int[], altInde
 
 
 
+### <a name="data--bool"></a>данные: [bool](xref:microsoft.quantum.lang-ref.bool)[] []
 
-## <a name="output--littleendianlittleendian--unit-adj--ctl"></a>Выходные данные: ([литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian),[литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian)) = [>ная](xref:microsoft.quantum.lang-ref.unit) расгода и список доверия
+
+
+
+
+## <a name="output--littleendianlittleendianqubitqubit--unit--is-adj--ctl"></a>Выходные данные: ([литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian),[литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian),[кубит](xref:microsoft.quantum.lang-ref.qubit)[],[кубит](xref:microsoft.quantum.lang-ref.qubit)[]) =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 

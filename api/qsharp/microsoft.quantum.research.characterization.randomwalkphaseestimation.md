@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Research.Characterization.RandomWalkPhaseEstimation
 title: Операция Рандомвалкфасистиматион
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Characterization
 qsharp.name: RandomWalkPhaseEstimation
 qsharp.summary: Performs iterative phase estimation using a random walk to approximate Bayesian inference on the classical measurement results from a given oracle and eigenstate.
-ms.openlocfilehash: 5e0c0871b916ff51b85dec8703111788b5204bc6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2c3afdd41da24a1f32f59f36f0f5c5ed29df1f0b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92710876"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96226168"
 ---
 # <a name="randomwalkphaseestimation-operation"></a>Операция Рандомвалкфасистиматион
 
 Пространство имен: [Microsoft. тактов. Research. character](xref:Microsoft.Quantum.Research.Characterization)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. Research. character](https://nuget.org/packages/Microsoft.Quantum.Research.Characterization)
 
 
 Выполняет итеративную оценку этапа с помощью случайного прохода, чтобы приблизительно Байеса вывод на классический результат измерения из заданных Oracle и еиженстате.
@@ -70,7 +70,7 @@ operation RandomWalkPhaseEstimation (initialMean : Double, initialStdDev : Doubl
 
 Окончательная оценка $ \хат{\фи} \масрел{: =} \експект [\фи] $, где ожидание на апостериорные задается всеми принятыми данными.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 ### <a name="iterative-phase-estimation-and-eigenstates"></a>Оценка этапа итерации и Еиженстатес
 
@@ -80,7 +80,7 @@ operation RandomWalkPhaseEstimation (initialMean : Double, initialStdDev : Doubl
 
 ### <a name="experiment-design"></a>Проектирование экспериментов
 
-Измерение времени $t $ и углов инверсии $ \сета $, переданных в, `oracle` выбирается в соответствии с *эвристическим эвристиком предположения* , \Бегин{алигн} \сета \сим \пр (\фи), \куад t \аппрокс \фрак {1} {\варианце{\фи}}.
+Измерение времени $t $ и углов инверсии $ \сета $, переданных в, `oracle` выбирается в соответствии с *эвристическим эвристиком предположения*, \Бегин{алигн} \сета \сим \пр (\фи), \куад t \аппрокс \фрак {1} {\варианце{\фи}}.
 \енд{алигн} этот эвристический подход оптимальен для уменьшения ожидаемой дисперсии апостериорные в итеративной оценке этапа в соответствии с предположением обычного ранее.
 
 ### <a name="optimality"></a>Оптимальность
@@ -93,4 +93,4 @@ operation RandomWalkPhaseEstimation (initialMean : Double, initialStdDev : Doubl
 
 - Феррие *et al.* 2011 [ДОИ: 10/tfx](https://doi.org/10.1007/s11128-012-0407-6), [арксив: 1110.3067](https://arxiv.org/abs/1110.3067).
 - Виебе *et al.* 2013 [ДОИ: 10/TF3](https://doi.org/10.1103/PhysRevLett.112.190501), [арксив: 1309.0876](https://arxiv.org/abs/1309.0876)
-- Виебе и Гранаде 2018 *(в процессе подготовки)* .
+- Виебе и Гранаде 2018 *(в процессе подготовки)*.

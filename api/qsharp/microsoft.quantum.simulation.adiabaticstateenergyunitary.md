@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.AdiabaticStateEnergyUnitary
 title: Операция Адиабатикстатинергюнитари
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: AdiabaticStateEnergyUnitary
 qsharp.summary: Performs state preparation by applying a `statePrepUnitary` on the input state, followed by adiabatic state preparation using a `adiabaticUnitary`, and finally phase estimation with respect to `qpeUnitary`on the resulting state using a `phaseEstAlgorithm`.
-ms.openlocfilehash: 642f6a0af76b3b2d0703f0377c379abf33ecee71
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: a69eb29318a750bea9c7c84ae4f90f7a31007c33
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92732513"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96225539"
 ---
 # <a name="adiabaticstateenergyunitary-operation"></a>Операция Адиабатикстатинергюнитари
 
 Пространство имен: [Microsoft. тактов. Моделирование](xref:Microsoft.Quantum.Simulation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Выполняет подготовку состояния, применяя к `statePrepUnitary` входному состоянию, за которым следует подготовка состояния адиабатик с помощью `adiabaticUnitary` , и, наконец, Оценка этапа с учетом `qpeUnitary` состояния с помощью `phaseEstAlgorithm` .
@@ -40,7 +40,7 @@ Oracle, представляющий подготовку состояния д�
 Oracle, представляющий алгоритм эволюции адиабатик, который используется для реализации очистки до окончательного состояния алгоритма.
 
 
-### <a name="qpeunitary--qubit--unit-adj--ctl"></a>Кпеунитари: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] => [единицы измерения](xref:microsoft.quantum.lang-ref.unit) + CTL
+### <a name="qpeunitary--qubit--unit--is-adj--ctl"></a>Кпеунитари: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Oracle, представляющий отдельный оператор $U $ представляющие развитие времени $ \делта t $ в динамическом генераторе с состоянием заземления $ \кет{\фи} $ и состоянием заземления $E = \фи \\ , \делта t $.
 

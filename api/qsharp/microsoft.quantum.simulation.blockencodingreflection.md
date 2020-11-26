@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.BlockEncodingReflection
 title: Определяемый пользователем тип Блоккенкодингрефлектион
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: BlockEncodingReflection
 qsharp.summary: Represents a `BlockEncoding` that is also a reflection.
-ms.openlocfilehash: 2395037634d54222c10ee1a9ab0bed2bd500a719
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 24ad4a992bbec82eb8e8cd32e70650818f606ddc
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733193"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96225403"
 ---
 # <a name="blockencodingreflection-user-defined-type"></a>Определяемый пользователем тип Блоккенкодингрефлектион
 
 Пространство имен: [Microsoft. тактов. Моделирование](xref:Microsoft.Quantum.Simulation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Представляет объект `BlockEncoding` , который также является отражением.
