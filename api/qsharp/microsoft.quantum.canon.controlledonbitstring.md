@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.ControlledOnBitString
 title: Функция Контролледонбитстринг
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ControlledOnBitString
 qsharp.summary: Returns a unitary operation that applies an oracle on the target register if the control register state corresponds to a specified bit mask.
-ms.openlocfilehash: ca5a6e116eff187060f7a160e42836b170f0362d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 9435406506fc99fe211f5dce628b21c18ee4f9fe
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92716447"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96216665"
 ---
 # <a name="controlledonbitstring-function"></a>Функция Контролледонбитстринг
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает единую операцию, которая применяет Oracle к целевой регистрации, если состояние регистра элемента управления соответствует заданной битовой маске.
@@ -39,13 +39,13 @@ function ControlledOnBitString<'T> (bits : Bool[], oracle : ('T => Unit is Adj +
 Битовая строка для управления данной единой операцией в.
 
 
-### <a name="oracle--t--unit-adj--ctl"></a>Oracle: 'T => [модульные](xref:microsoft.quantum.lang-ref.unit) года + CTL
+### <a name="oracle--t--unit--is-adj--ctl"></a>Oracle: 'T => [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Единая операция, применяемая к целевому регистру.
 
 
 
-## <a name="output--qubitt--unit-adj--ctl"></a>Выходные данные: ([кубит](xref:microsoft.quantum.lang-ref.qubit)[], 't) = [>ная](xref:microsoft.quantum.lang-ref.unit) Расгода и список доверия
+## <a name="output--qubitt--unit--is-adj--ctl"></a>Выходные данные: ([кубит](xref:microsoft.quantum.lang-ref.qubit)[], 't) => [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Единая операция, которая применяется к `oracle` целевому регистру, если контрольное состояние регистра соответствует битовой маске `bits` .
 
@@ -55,7 +55,7 @@ function ControlledOnBitString<'T> (bits : Bool[], oracle : ('T => Unit is Adj +
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон, заданный параметром `bits` , может быть короче `controlRegister` , в этом случае дополнительные элементы управления Кубитс игнорируются (то есть не контролируются в $ \кет {0} $ и $ \кет {1} $).
 Если `bits` значение больше `controlRegister` , возникает ошибка.

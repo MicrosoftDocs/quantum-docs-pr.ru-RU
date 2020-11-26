@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Characterization.MeasureIdentity
 title: Операция Меасуреидентити
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Characterization
 qsharp.name: MeasureIdentity
 qsharp.summary: Measures the identity operator on a register of qubits.
-ms.openlocfilehash: 71a103fddb3a27703318975bea94bc7a22a9ce81
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 4a169355d0669c67f0eb14c80e8554b2f24b035a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92714964"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96216121"
 ---
 # <a name="measureidentity-operation"></a>Операция Меасуреидентити
 
 Пространство имен: [Microsoft. тактов. charactering](xref:Microsoft.Quantum.Characterization)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Измеряет оператор Identity в регистре Кубитс.
@@ -40,7 +40,7 @@ operation MeasureIdentity (register : Qubit[]) : Result
 
 Результирующее значение `Zero` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Поскольку $ \болдоне $ имеет только еиженвалуе $1 $ и не имеет отрицательного еиженвалуе, эта операция всегда возвращает значение `Zero` , соответствующее еиженвалуе $ + 1 = (-1) ^ 0 $, и не приводит к свертыванию состояния `register` .
 

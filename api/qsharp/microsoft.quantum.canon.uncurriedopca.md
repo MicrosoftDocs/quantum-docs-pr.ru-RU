@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.UncurriedOpCA
 title: Функция Ункурриедопка
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: UncurriedOpCA
 qsharp.summary: Given a function which returns operations, returns a new operation which takes both inputs as a tuple. The modifier `CA` indicates that the operations are controllable and adjointable.
-ms.openlocfilehash: 6a0f2e1b345d0ba3ac5c779c5dc2bfffaf659a0b
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 45526c0202e417213aab3fe7819827588e794e23
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92715202"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96216393"
 ---
 # <a name="uncurriedopca-function"></a>Функция Ункурриедопка
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 При наличии функции, возвращающей операции, возвращает новую операцию, которая принимает оба входа как кортеж.
@@ -31,13 +31,13 @@ function UncurriedOpCA<'T, 'U> (curriedOp : ('T -> ('U => Unit is Ctl + Adj))) :
 
 ## <a name="input"></a>Входные данные
 
-### <a name="curriedop--t---u--unit-ctl--adj"></a>Курриедоп: не> "U => [Unit](xref:microsoft.quantum.lang-ref.unit) CTL + прилагательные
+### <a name="curriedop--t---u--unit--is-adj--ctl"></a>Курриедоп: не> "U = [единица](xref:microsoft.quantum.lang-ref.unit) > является" суммой + CTL "
 
 Функция, возвращающая операции.
 
 
 
-## <a name="output--tu--unit-ctl--adj"></a>Выходные данные: ('T, "U" => [Unit](xref:microsoft.quantum.lang-ref.unit) CTL + прилагательные
+## <a name="output--tu--unit--is-adj--ctl"></a>Выходные данные: ('T, ' U) => [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Новая операция `op` , которая `op(t, u)` эквивалентна `(curriedOp(t))(u)` .
 

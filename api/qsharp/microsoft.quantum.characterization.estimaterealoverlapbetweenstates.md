@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Characterization.EstimateRealOverlapBetweenStates
 title: Операция Естиматереаловерлапбетвинстатес
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Characterization
 qsharp.name: EstimateRealOverlapBetweenStates
 qsharp.summary: Given two operations which each prepare copies of a state, estimates the real part of the overlap between the states prepared by each operation.
-ms.openlocfilehash: 01631bcbff2bff26ddc1db4e42d90ac4f8380bd4
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d9f569ceffc16f377189dc94035213b9075609cc
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92714977"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96216189"
 ---
 # <a name="estimaterealoverlapbetweenstates-operation"></a>Операция Естиматереаловерлапбетвинстатес
 
 Пространство имен: [Microsoft. тактов. charactering](xref:Microsoft.Quantum.Characterization)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 При наличии двух операций, каждый из которых подготавливает копии состояния, оценивает реальную часть перекрытия между состояниями, подготовленными каждой операцией.
@@ -30,17 +30,17 @@ operation EstimateRealOverlapBetweenStates (commonPreparation : (Qubit[] => Unit
 
 ## <a name="input"></a>Входные данные
 
-### <a name="commonpreparation--qubit--unit-adj"></a>Коммонпрепаратион: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] [=>ная](xref:microsoft.quantum.lang-ref.unit) прогода
+### <a name="commonpreparation--qubit--unit--is-adj"></a>Коммонпрепаратион: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] = [единица измерения](xref:microsoft.quantum.lang-ref.unit) >
 
 Операция, которая подготавливает фиксированное состояние ввода.
 
 
-### <a name="preparation1--qubit--unit-adj--ctl"></a>preparation1: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] => [единицы измерения](xref:microsoft.quantum.lang-ref.unit) + CTL
+### <a name="preparation1--qubit--unit--is-adj--ctl"></a>preparation1: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Первая из двух операций подготовки состояния для сравнения.
 
 
-### <a name="preparation2--qubit--unit-adj--ctl"></a>preparation2: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] => [единицы измерения](xref:microsoft.quantum.lang-ref.unit) + CTL
+### <a name="preparation2--qubit--unit--is-adj--ctl"></a>preparation2: [кубит](xref:microsoft.quantum.lang-ref.qubit)[] =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Вторая из двух операций подготовки состояния для сравнения.
 
@@ -60,7 +60,7 @@ operation EstimateRealOverlapBetweenStates (commonPreparation : (Qubit[] => Unit
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эта операция использует тест Хадамард для поиска действительной части $ $ \бегин{алигн} \бракет{\пси | V ^ {\дагжер} U | \пси} \енд{алигн} $ $, где $ \кет{\пси} $ — это состояние, подготовленное `commonPreparation` , $U $ является единым представлением действия `preparation1` , а $V $ соответствует `preparation2` .
 

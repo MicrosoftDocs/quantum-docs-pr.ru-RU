@@ -1,37 +1,37 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToFirstTwoQubitsC
 title: Операция Апплитофирсттвокубитск
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToFirstTwoQubitsC
 qsharp.summary: Applies an operation to the first two qubits in the register. The modifier `C` indicates that the operation is controllable.
-ms.openlocfilehash: 97706ffcc8700a0055ff37bbbaccc6fb4f8854b6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 6b6ee5f05ace92c15ce2038e2fedbaa2fee3dcc9
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92717287"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96217362"
 ---
 # <a name="applytofirsttwoqubitsc-operation"></a>Операция Апплитофирсттвокубитск
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет операцию к первым двум Кубитс в регистре.
 Модификатор `C` указывает, что операция является управляемой.
 
 ```qsharp
-operation ApplyToFirstTwoQubitsC (op : ((Qubit, Qubit) => Unit is Ctl), register : Qubit[]) : Unit
+operation ApplyToFirstTwoQubitsC (op : ((Qubit, Qubit) => Unit is Ctl), register : Qubit[]) : Unit is Ctl
 ```
 
 
 ## <a name="input"></a>Входные данные
 
-### <a name="op--qubitqubit--unit-ctl"></a>Op: ([кубит](xref:microsoft.quantum.lang-ref.qubit),[кубит](xref:microsoft.quantum.lang-ref.qubit)) = CTL [единицы](xref:microsoft.quantum.lang-ref.unit)>
+### <a name="op--qubitqubit--unit--is-ctl"></a>Op: ([кубит](xref:microsoft.quantum.lang-ref.qubit),[кубит](xref:microsoft.quantum.lang-ref.qubit)) => [единица](xref:microsoft.quantum.lang-ref.unit)  — CTL
 
 Операция, применяемая к первым двум Кубитс
 
@@ -46,7 +46,7 @@ operation ApplyToFirstTwoQubitsC (op : ((Qubit, Qubit) => Unit is Ctl), register
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Это соответствует следующей записи:
 

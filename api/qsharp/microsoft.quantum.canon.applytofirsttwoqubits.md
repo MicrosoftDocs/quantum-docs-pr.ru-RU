@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToFirstTwoQubits
 title: Операция Апплитофирсттвокубитс
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToFirstTwoQubits
 qsharp.summary: Applies an operation to the first two qubits in the register.
-ms.openlocfilehash: aad07889c0dbf2329304c98b06dbd0c225df8a81
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e4f1eb396efb390c7470ea2aaf5c3b5be60b8c1b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92717315"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96217413"
 ---
 # <a name="applytofirsttwoqubits-operation"></a>Операция Апплитофирсттвокубитс
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет операцию к первым двум Кубитс в регистре.
@@ -45,7 +45,7 @@ operation ApplyToFirstTwoQubits (op : ((Qubit, Qubit) => Unit), register : Qubit
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Это соответствует следующей записи:
 

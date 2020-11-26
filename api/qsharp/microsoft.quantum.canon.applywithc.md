@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyWithC
 title: Операция Аппливиск
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyWithC
 qsharp.summary: Given two operations, applies one as conjugated with the other.
-ms.openlocfilehash: 8de1ddf0bf176853b33926be7647bc5d1d35095d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 172f9098a53c97e71f160b4a48479c3184be4385
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92716896"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96217243"
 ---
 # <a name="applywithc-operation"></a>Операция Аппливиск
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 При выполнении двух операций применяется одна, как сопряженная с другой.
 
 ```qsharp
-operation ApplyWithC<'T> (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Ctl), target : 'T) : Unit
+operation ApplyWithC<'T> (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Ctl), target : 'T) : Unit is Ctl
 ```
 
 
@@ -34,12 +34,12 @@ operation ApplyWithC<'T> (outerOperation : ('T => Unit is Adj), innerOperation :
 
 ## <a name="input"></a>Входные данные
 
-### <a name="outeroperation--t--unit-adj"></a>Аутероператион: 'T [=>ное](xref:microsoft.quantum.lang-ref.unit) прогода
+### <a name="outeroperation--t--unit--is-adj"></a>Аутероператион: 'T => [единица](xref:microsoft.quantum.lang-ref.unit)  Нагода
 
 Операция $U $, которую следует использовать для сопряженного $V $. Обратите внимание, что внешняя операция $U $ должна быть аджоинтабле, но не обязательно должна быть управляемой.
 
 
-### <a name="inneroperation--t--unit-ctl"></a>Иннероператион: 'T = список CTL для [единицы](xref:microsoft.quantum.lang-ref.unit)>
+### <a name="inneroperation--t--unit--is-ctl"></a>Иннероператион: не>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — CTL
 
 Операция $V $, для которой выполняется сопряжение.
 
@@ -60,7 +60,7 @@ operation ApplyWithC<'T> (outerOperation : ('T => Unit is Adj), innerOperation :
 
 Целевой объект, на котором работают все внутренние и внешние операции.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Во внешней операции всегда предполагается, что это аджоинтабле, но не обязательно быть управляемым, чтобы Объединенная операция была управляемой.
 
