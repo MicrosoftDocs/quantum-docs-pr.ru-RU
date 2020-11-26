@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Optimization.LocalUnivariateMinimum
 title: Функция Локалунивариатеминимум
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Optimization
 qsharp.name: LocalUnivariateMinimum
 qsharp.summary: Returns the local minimum for a univariate function over a bounded interval, using a golden interval search.
-ms.openlocfilehash: 3b09af88bbed20a392768d005e5e9567b3bb7022
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e804e6a6ed82f14dcc9b8f721ad503d77922dc0f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92711016"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96194089"
 ---
 # <a name="localunivariateminimum-function"></a>Функция Локалунивариатеминимум
 
 Пространство имен: [Microsoft. тактов. Optimization](xref:Microsoft.Quantum.Optimization)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает локальное минимальное значение для функции унивариате через ограниченный интервал при помощи золотого интервала поиска.

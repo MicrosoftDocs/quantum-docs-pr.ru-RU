@@ -1,39 +1,30 @@
 ---
-uid: Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryState
-title: Операция Аппроксимателипрепареарбитраристате
+uid: Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryStateD
+title: Операция Аппроксимателипрепареарбитраристатед
 ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
-qsharp.name: ApproximatelyPrepareArbitraryState
-qsharp.summary: >-
-  > [!WARNING]
-
-  > ApproximatelyPrepareArbitraryState has been deprecated. Please use <xref:Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryStateCP> instead.
-
-
-  Given a set of coefficients and a little-endian encoded quantum register, prepares an state on that register described by the given coefficients, up to a given approximation tolerance.
-ms.openlocfilehash: 9e1b172258acd0cb09b824a773e7e79d44fec20c
+qsharp.name: ApproximatelyPrepareArbitraryStateD
+qsharp.summary: Given a set of coefficients and a little-endian encoded quantum register, prepares an state on that register described by the given coefficients, up to a given approximation tolerance.
+ms.openlocfilehash: 822efe08e66c43b7a3128d100e3e58a8c2ce3c2e
 ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/26/2020
-ms.locfileid: "96193715"
+ms.locfileid: "96193596"
 ---
-# <a name="approximatelypreparearbitrarystate-operation"></a>Операция Аппроксимателипрепареарбитраристате
+# <a name="approximatelypreparearbitrarystated-operation"></a>Операция Аппроксимателипрепареарбитраристатед
 
 Пространство имен: [Microsoft. тактов. Подготовка](xref:Microsoft.Quantum.Preparation)
 
 Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
-> [!WARNING]
-> Аппроксимателипрепареарбитраристате является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryStateCP>.
-
 Учитывая набор коэффициентов и регистр такта с прямым порядком байтов, подготавливает состояние для этой регистрации, описываемое заданным коэффициентом, вплоть до заданного допустимого значения приближения.
 
 ```qsharp
-operation ApproximatelyPrepareArbitraryState (tolerance : Double, coefficients : Microsoft.Quantum.Math.ComplexPolar[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
+operation ApproximatelyPrepareArbitraryStateD (tolerance : Double, coefficients : Double[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
 ```
 
 
@@ -52,9 +43,9 @@ $ $ \бегин{алигн} У\кет {0... 0} & = \кет{\пси} \\ \\ & = \�
 Отклонение аппроксимации, используемое при подготовке данного состояния.
 
 
-### <a name="coefficients--complexpolar"></a>коэффициенты: [комплексполар](xref:Microsoft.Quantum.Math.ComplexPolar)[]
+### <a name="coefficients--double"></a>коэффициенты: [Double](xref:microsoft.quantum.lang-ref.double)[]
 
-Массив до $2 ^ n $ сложных коэффициентов, представленных абсолютным значением и фазой $ (r_j, t_j) $. Коэффициент $j $ TH индексирует числовое состояние $ \кет{ж} $, закодированное в формате с прямым порядком байтов.
+Массив до $2 ^ n $ Real коэффициентов. Коэффициент $j $ TH индексирует числовое состояние $ \кет{ж} $, закодированное в формате с прямым порядком байтов.
 
 
 ### <a name="qubits--littleendian"></a>Кубитс: [литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian)
@@ -74,7 +65,3 @@ $ $ \бегин{алигн} У\кет {0... 0} & = \кет{\пси} \\ \\ & = \�
 ## <a name="references"></a>Ссылки
 
 - Синтез каналов логики тактов Вивек V. Шенде, Стивен S. Буллокк, Игорь L. марковской https://arxiv.org/abs/quant-ph/0406176
-
-## <a name="see-also"></a>См. также:
-
-- [Microsoft. тактов. подготовка. Аппроксимателипрепареарбитраристате](xref:Microsoft.Quantum.Preparation.ApproximatelyPrepareArbitraryState)

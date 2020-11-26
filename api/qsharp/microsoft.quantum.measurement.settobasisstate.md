@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Measurement.SetToBasisState
 title: Операция Сеттобасисстате
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Measurement
 qsharp.name: SetToBasisState
 qsharp.summary: Sets a qubit to a given computational basis state by measuring the qubit and applying a bit flip if needed.
-ms.openlocfilehash: bb40ddcf6518a30f5d88eec21cf8e2c2d6e0bbaf
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2612bfe488c830abd835be89b2f8ea6795abf675
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733601"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96194157"
 ---
 # <a name="settobasisstate-operation"></a>Операция Сеттобасисстате
 
 Пространство имен: [Microsoft. тактов. Измерение](xref:Microsoft.Quantum.Measurement)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Задает кубит для заданного вычислительного состояния, измеряя кубит и применяя бит отражения при необходимости.
@@ -45,6 +45,6 @@ operation SetToBasisState (desired : Result, target : Qubit) : Unit
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 В качестве инварианта этой операции вызов `M(q)` сразу после вернет значение `SetToBasisState(result, q)` `result` .

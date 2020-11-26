@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Preparation._CompileApproximateArbitraryStatePreparation
 title: Функция _CompileApproximateArbitraryStatePreparation
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: _CompileApproximateArbitraryStatePreparation
 qsharp.summary: ''
-ms.openlocfilehash: 38c11e8276161f45bf0aaa1818d5052f797590b9
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 85b8a79066c1620c95fb271050b788440f08d38c
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733329"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96193800"
 ---
 # <a name="_compileapproximatearbitrarystatepreparation-function"></a>Функция _CompileApproximateArbitraryStatePreparation
 
 Пространство имен: [Microsoft. тактов. Подготовка](xref:Microsoft.Quantum.Preparation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 
@@ -46,5 +46,5 @@ function _CompileApproximateArbitraryStatePreparation (tolerance : Double, coeff
 
 
 
-## <a name="output--littleendian--unit-adj--ctl"></a>Выходные данные: [литтлиндиан](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [единицы измерения](xref:microsoft.quantum.lang-ref.unit) + CTL
+## <a name="output--littleendian--unit--is-adj--ctl"></a>Выходные данные [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) : => [единица](xref:microsoft.quantum.lang-ref.unit) литтлиндиан — "года + CTL"
 

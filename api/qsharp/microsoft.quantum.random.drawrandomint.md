@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Random.DrawRandomInt
 title: Операция Драврандоминт
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: DrawRandomInt
 qsharp.summary: Draws a random integer in a given inclusive range.
-ms.openlocfilehash: d9d8d9fbb25587ac5ccbd4edf0e555649380375f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: f7b6cb75f761e4c45295245ed4bd4fb82c592809
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733593"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96192916"
 ---
 # <a name="drawrandomint-operation"></a>Операция Драврандоминт
 
 Пространство имен: [Microsoft. тактов. Random](xref:Microsoft.Quantum.Random)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 Рисует случайное целое число в заданном инклюзивном диапазоне.
@@ -45,7 +45,7 @@ operation DrawRandomInt (min : Int, max : Int) : Int
 
 Целое число в инклюзивном диапазоне от `min` до `max` с равномерным значением вероятности.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Завершается ошибкой `max <= min` , если.
 

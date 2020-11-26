@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Preparation.PrepareSingleQubitIdentity
 title: Операция Препаресинглекубитидентити
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Prepares a qubit in the maximally mixed state.
 
   It prepares the given qubit in the $\boldone / 2$ state by applying the depolarizing channel $$ \begin{align} \Omega(\rho) \mathrel{:=} \frac{1}{4} \sum_{\mu \in \{0, 1, 2, 3\}} \sigma\_{\mu} \rho \sigma\_{\mu}^{\dagger}, \end{align} $$ where $\sigma\_i$ is the $i$th Pauli operator, and where $\rho$ is a density operator representing a mixed state.
-ms.openlocfilehash: 12a650568aa5682e8fb6498808d188b154527acb
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1c8c161ec2eae73a81c46e7941af49145cde0493
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733721"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96193630"
 ---
 # <a name="preparesinglequbitidentity-operation"></a>Операция Препаресинглекубитидентити
 
 Пространство имен: [Microsoft. тактов. Подготовка](xref:Microsoft.Quantum.Preparation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Подготавливает кубит в максимально смешанном состоянии.
@@ -45,7 +45,7 @@ operation PrepareSingleQubitIdentity (qubit : Qubit) : Unit
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Смешанное состояние $ \болдоне/$2, описывающее результат применения этой операции к состоянию, неявно описывает значение ожидания для случайных вариантов, сделанных в этой операции.
 Таким образом, для любого отдельного приложения эта операция сопоставляет чистые состояния с чистыми состояниями, но действует, как описано в разделе ожидание.

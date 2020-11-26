@@ -1,30 +1,38 @@
 ---
 uid: Microsoft.Quantum.Preparation.PrepareQubit
 title: Операция Препарекубит
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: PrepareQubit
 qsharp.summary: >-
+  > [!WARNING]
+
+  > PrepareQubit has been deprecated. Please use <xref:Microsoft.Quantum.Preparation.PreparePauliEigenstate> instead.
+
+
   Prepares a qubit in the +1 (`Zero`) eigenstate of the given Pauli operator. If the identity operator is given, then the qubit is prepared in the maximally mixed state.
 
   If the qubit was initially in the $\ket{0}$ state, this operation prepares the qubit in the $+1$ eigenstate of a given Pauli operator, or, for `PauliI`, in the maximally mixed state instead (see <xref:microsoft.quantum.preparation.preparesinglequbitidentity>).
 
   If the qubit was in a state other than $\ket{0}$, this operation applies the following gates: $H$ for `PauliX`, $HS$ for `PauliY`, $I$ for `PauliZ` and <xref:microsoft.quantum.preparation.preparesinglequbitidentity> for `PauliI`.
-ms.openlocfilehash: 5f42bf26a8f9638ea88c035a18846050c3776b45
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 84674d70d6a038ceaf1c637b22afa1b724d90795
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92732649"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96193528"
 ---
 # <a name="preparequbit-operation"></a>Операция Препарекубит
 
 Пространство имен: [Microsoft. тактов. Подготовка](xref:Microsoft.Quantum.Preparation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
+
+> [!WARNING]
+> Препарекубит является устаревшим. Взамен рекомендуется использовать <xref:Microsoft.Quantum.Preparation.PreparePauliEigenstate>.
 
 Подготавливает кубит в еиженстате + 1 ( `Zero` ) для данного оператора Паули.
 Если указан оператор Identity, кубит подготавливается в максимально смешанном состоянии.

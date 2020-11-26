@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Oracles.DeterministicStateOracle
 title: Определяемый пользователем тип Детерминистикстатеоракле
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Oracles
@@ -12,18 +12,18 @@ qsharp.summary: >-
   The input to the oracle $O$ is:
 
   - The register that will store the desired quantum state $\ket{\psi}\_s$.
-ms.openlocfilehash: f02267d48cf42fb5b02782dc6b667ac7b60a05dc
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 6f8f80aacd3386ba61675101acb87e09fff5afff
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733385"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96193936"
 ---
 # <a name="deterministicstateoracle-user-defined-type"></a>Определяемый пользователем тип Детерминистикстатеоракле
 
 Пространство имен: [Microsoft. такт. Oracle](xref:Microsoft.Quantum.Oracles)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Представляет Oracle для подготовки детерминированного состояния.
@@ -39,7 +39,7 @@ newtype DeterministicStateOracle = ((Qubit[] => Unit is Adj + Ctl));
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эта база данных Oracle, определенная $O \кет {0} = \кет{\пси} $, действует в состоянии вычислительного основания $ \кет {0} $ для создания состояния $ \кет{\пси} $.
 Первый параметр — это кубит регистр $ \кет{\пси} $.

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Preparation._QuantumROMDiscretization
 title: Функция _QuantumROMDiscretization
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: _QuantumROMDiscretization
 qsharp.summary: ''
-ms.openlocfilehash: 13d622f6983c17206bef9009b1042200724839c6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 094bcea0156586fb2ab3287921dc31a13590d8f9
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92733313"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96193783"
 ---
 # <a name="_quantumromdiscretization-function"></a>Функция _QuantumROMDiscretization
 
 Пространство имен: [Microsoft. тактов. Подготовка](xref:Microsoft.Quantum.Preparation)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 
