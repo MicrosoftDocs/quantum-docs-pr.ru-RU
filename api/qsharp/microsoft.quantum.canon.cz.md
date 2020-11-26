@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.CZ
 title: Операция CZ
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Applies the controlled-Z (CZ) gate to a pair of qubits.
 
   $$ \begin{align} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 & -1 \end{align}, $$ where rows and columns are organized as in the quantum concepts guide.
-ms.openlocfilehash: bc38cd43a0dcaf7aea735ef6468a394e91c85593
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 419082dbf8f96a9fe2dfabeab77e1823cb59a8f2
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92716349"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96207213"
 ---
 # <a name="cz-operation"></a>Операция CZ
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет шлюз с управляемым Z (CZ) к паре Кубитс.
@@ -29,7 +29,7 @@ ms.locfileid: "92716349"
 $ $ \бегин{алигн} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 0 & 0 &-1 \енд{алигн}, $ $ где строки и столбцы упорядочены как в разделе "Основные понятия о такте".
 
 ```qsharp
-operation CZ (control : Qubit, target : Qubit) : Unit
+operation CZ (control : Qubit, target : Qubit) : Unit is Adj + Ctl
 ```
 
 
@@ -50,7 +50,7 @@ operation CZ (control : Qubit, target : Qubit) : Unit
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эквивалентно:
 

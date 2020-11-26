@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.ConjugatedByA
 title: Функция Конжугатедбя
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ConjugatedByA
 qsharp.summary: Given outer and inner operations, returns a new operation that conjugates the inner operation by the outer operation.
-ms.openlocfilehash: bcaab28e99d3d61f4a36da866321d28f3dc4bd53
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: eaa104039b857f0469ddc0aaba97698eca20860d
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92716462"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96207349"
 ---
 # <a name="conjugatedbya-function"></a>Функция Конжугатедбя
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 При наличии внешних и внутренних операций возвращает новую операцию, которая сопряжена с внутренней операцией внешней операцией.
@@ -30,18 +30,18 @@ function ConjugatedByA<'T> (outerOperation : ('T => Unit is Adj), innerOperation
 
 ## <a name="input"></a>Входные данные
 
-### <a name="outeroperation--t--unit-adj"></a>Аутероператион: 'T [=>ное](xref:microsoft.quantum.lang-ref.unit) прогода
+### <a name="outeroperation--t--unit--is-adj"></a>Аутероператион: 'T => [единица](xref:microsoft.quantum.lang-ref.unit)  Нагода
 
 Операция $U $, которую следует использовать для сопряженного $V $. Обратите внимание, что внешняя операция $U $ должна быть аджоинтабле, но не обязательно должна быть управляемой.
 
 
-### <a name="inneroperation--t--unit-adj"></a>Иннероператион: 'T [=>ное](xref:microsoft.quantum.lang-ref.unit) прогода
+### <a name="inneroperation--t--unit--is-adj"></a>Иннероператион: 'T => [единица](xref:microsoft.quantum.lang-ref.unit)  Нагода
 
 Операция $V $, для которой выполняется сопряжение.
 
 
 
-## <a name="output--t--unit-adj"></a>Выходные данные: 'T => [единица](xref:microsoft.quantum.lang-ref.unit) прогода
+## <a name="output--t--unit--is-adj"></a>Выходные данные: 'T => [единица](xref:microsoft.quantum.lang-ref.unit)  является прогода
 
 Новая операция, действие которой представляется единой $U ^ {\дагжер} V U $.
 
@@ -51,7 +51,7 @@ function ConjugatedByA<'T> (outerOperation : ('T => Unit is Adj), innerOperation
 
 Тип целевого объекта, в котором работают все внутренние и внешние операции.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Во внешней операции всегда предполагается, что это аджоинтабле, но не обязательно быть управляемым, чтобы Объединенная операция была управляемой.
 

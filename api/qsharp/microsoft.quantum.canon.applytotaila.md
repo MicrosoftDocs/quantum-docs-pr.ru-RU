@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToTailA
 title: Операция Апплитотаила
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToTailA
 qsharp.summary: Applies an operation to the last element of an array.
-ms.openlocfilehash: a84fa6c53f3e11bef82b8b83fffa1451a8299511
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2cacac14ad6e5003f1a50d9b84c4e0f96950dd7d
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92716979"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96207927"
 ---
 # <a name="applytotaila-operation"></a>Операция Апплитотаила
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет операцию к последнему элементу массива.
 
 ```qsharp
-operation ApplyToTailA<'T> (op : ('T => Unit is Adj), targets : 'T[]) : Unit
+operation ApplyToTailA<'T> (op : ('T => Unit is Adj), targets : 'T[]) : Unit is Adj
 ```
 
 
@@ -34,7 +34,7 @@ operation ApplyToTailA<'T> (op : ('T => Unit is Adj), targets : 'T[]) : Unit
 
 ## <a name="input"></a>Входные данные
 
-### <a name="op--t--unit-adj"></a>Op: 'T => [единица измерения](xref:microsoft.quantum.lang-ref.unit)
+### <a name="op--t--unit--is-adj"></a>Op: t =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  является просуммой
 
 Операция, которую необходимо применить.
 

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.DelayedCA
 title: Функция Делайедка
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: DelayedCA
 qsharp.summary: Returns an operation that applies given operation with given argument.
-ms.openlocfilehash: 8ee55e2ca7ec2cff9618b5dc66e19d88779d39ce
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: fe2babb87d716185286b0864745f7ff6e637f8a1
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92716223"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96207022"
 ---
 # <a name="delayedca-function"></a>Функция Делайедка
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает операцию, которая применяет заданную операцию с заданным аргументом.
@@ -30,7 +30,7 @@ function DelayedCA<'T> (op : ('T => Unit is Ctl + Adj), arg : 'T) : (Unit => Uni
 
 ## <a name="input"></a>Входные данные
 
-### <a name="op--t--unit-ctl--adj"></a>Op: t => [Unit](xref:microsoft.quantum.lang-ref.unit) CTL + прилагательные
+### <a name="op--t--unit--is-adj--ctl"></a>Op: t =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Операция, применяемая в результате применения возвращаемого значения
 
@@ -41,7 +41,7 @@ function DelayedCA<'T> (op : ('T => Unit is Ctl + Adj), arg : 'T) : (Unit => Uni
 
 
 
-## <a name="output--unit--unit-ctl--adj"></a>Выходные данные [:](xref:microsoft.quantum.lang-ref.unit) => [Units](xref:microsoft.quantum.lang-ref.unit) CTL + прилагательный
+## <a name="output--unit--unit--is-adj--ctl"></a>Выходные данные: единица [измерения](xref:microsoft.quantum.lang-ref.unit) => [Unit](xref:microsoft.quantum.lang-ref.unit) — "года + CTL"
 
 Новая операция, которая применяется `op` с входными данными `arg`
 
