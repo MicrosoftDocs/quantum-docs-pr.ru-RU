@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.NotNearlyEqualD
 title: Функция Нотнеарлекуалд
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: NotNearlyEqualD
 qsharp.summary: Returns true if and only if two inputs are not nearly equal (that is, are not within a tolerance of 1e-12).
-ms.openlocfilehash: d9e4cc5b0cfba3989ae64e494d0daa52069718a4
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 23229b1630982eba4485330cc2290aed733c4d86
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92731256"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96197149"
 ---
 # <a name="notnearlyequald-function"></a>Функция Нотнеарлекуалд
 
 Пространство имен: [Microsoft. тактов. Logical](xref:Microsoft.Quantum.Logical)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает значение true только в том случае, если два входных значения не почти равны (то есть не находятся в пределах допустимого диапазона 1E-12).
@@ -45,7 +45,7 @@ function NotNearlyEqualD (a : Double, b : Double) : Bool
 
 `true` Если и, только если `a` не равно `b` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Следующие эквивалентны:
 

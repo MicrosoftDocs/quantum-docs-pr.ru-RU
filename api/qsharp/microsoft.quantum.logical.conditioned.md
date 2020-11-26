@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.Conditioned
 title: Условная функция
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: Conditioned
 qsharp.summary: Returns one of two values, depending on the value of a Boolean condition.
-ms.openlocfilehash: 8aabe8b018129ddee3b934c207d0a62e59fb6f4a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: c0f55d4db95ad1f0d2b7f291cbc6ba8ae704cb81
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92731296"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198492"
 ---
 # <a name="conditioned-function"></a>Условная функция
 
 Пространство имен: [Microsoft. тактов. Logical](xref:Microsoft.Quantum.Logical)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает одно из двух значений в зависимости от значения логического условия.
@@ -56,7 +56,7 @@ function Conditioned<'T> (condition : Bool, ifTrue : 'T, ifFalse : 'T) : 'T
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 В отличие от `?|` оператора, эта функция не является сокращенной, так что оба входа полностью оцениваются.
 

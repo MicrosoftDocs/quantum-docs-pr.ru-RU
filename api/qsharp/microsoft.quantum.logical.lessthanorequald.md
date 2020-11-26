@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.LessThanOrEqualD
 title: Функция Лесссанорекуалд
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: LessThanOrEqualD
 qsharp.summary: Returns true if and only if a number is less than or equal to another number.
-ms.openlocfilehash: 7b0e9da379bd67eb78a80e7a535a15dcb8ba85c7
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 3f4ccb0888e7df7c43ff73be8a3140e3fa84d4dc
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92709951"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96197642"
 ---
 # <a name="lessthanorequald-function"></a>Функция Лесссанорекуалд
 
 Пространство имен: [Microsoft. тактов. Logical](xref:Microsoft.Quantum.Logical)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает значение true только в том случае, если число меньше или равно другому числу.
@@ -45,7 +45,7 @@ function LessThanOrEqualD (a : Double, b : Double) : Bool
 
 `true` только в случае, если `a` меньше или равно `b` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Следующие эквивалентны:
 

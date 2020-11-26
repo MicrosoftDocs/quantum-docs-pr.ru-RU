@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.NotEqualL
 title: Функция Нотекуалл
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: NotEqualL
 qsharp.summary: Returns true if and only if two inputs are not equal.
-ms.openlocfilehash: f1d36c284293519e75e6c30ac64679c7bdf4609c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e138a8def30bc77499662ffa6bc214d0c6a38893
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92709811"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96197234"
 ---
 # <a name="notequall-function"></a>Функция Нотекуалл
 
 Пространство имен: [Microsoft. тактов. Logical](xref:Microsoft.Quantum.Logical)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает значение true только в том случае, если два входных значения не равны.
@@ -45,7 +45,7 @@ function NotEqualL (a : BigInt, b : BigInt) : Bool
 
 `true` Если и, только если `a` не равно `b` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Следующие эквивалентны:
 

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.LexographicComparison
 title: Функция Лексографиккомпарисон
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: LexographicComparison
 qsharp.summary: Given a comparison function, returns a new function that lexographically compares two arrays.
-ms.openlocfilehash: f0b68974a0ea26907b58971e4fa4b1f06f5714d2
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 4d8596c52b0fc8082a2b766d95d4052a4964b8b9
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92709909"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96197590"
 ---
 # <a name="lexographiccomparison-function"></a>Функция Лексографиккомпарисон
 
 Пространство имен: [Microsoft. тактов. Logical](xref:Microsoft.Quantum.Logical)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 При наличии функции сравнения возвращает новую функцию, лексографикалли сравнение двух массивов.
@@ -46,7 +46,7 @@ function LexographicComparison<'T> (elementComparison : (('T, 'T) -> Bool)) : ((
 
 Тип элементов сравниваемых массивов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Сравнение лексографик между двумя массивами `xs` и `ys` определяется следующей процедурой. Мы говорим, что два элемента `x` и `y` эквивалентны, если `elementComparison(x, y)` и `elementComparison(y, x)` оба имеют значение true.
 
