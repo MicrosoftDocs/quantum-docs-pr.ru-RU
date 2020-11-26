@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 93ece8cbaa2ac8e6e0c9bb417e8f40130cb8a3fa
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1c3c502b6487482f06820e07425b8516f259fb0d
+ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192100"
+ms.locfileid: "96231797"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Заметки о выпуске пакета средств разработки Microsoft Quantum
 
@@ -173,7 +173,7 @@ ms.locfileid: "96192100"
 
 Этот выпуск включает следующие обновления:
 
-- Новая поддержка модификаторов доступа в. Q# Дополнительные сведения см. в разделе [структуры файлов](xref:microsoft.quantum.guide.filestructure) .
+- Новая поддержка модификаторов доступа в. Q# Дополнительные сведения см. в [разделе модификаторы доступа](xref:microsoft.quantum.qsharp.accessmodifiers) .
 - Обновление до пакета SDK для .NET Core 3.1
 
 См. полный список закрытых запросов на вытягивание для [библиотек](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed), [компилятора](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed), [среды выполнения](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed), [примеров](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed) и [ката](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed).  
@@ -258,7 +258,7 @@ ms.locfileid: "96192100"
 
 Этот выпуск включает следующие обновления:
 
-- Новая поддержка [инструкций конжугатион](xref:microsoft.quantum.guide.operationsfunctions#conjugations) в Q#
+- Новая поддержка [инструкций конжугатион](xref:microsoft.quantum.qsharp.conjugations#conjugations) в Q#
 - Новые действия с кодом в компиляторе, в том числе"заменить", "добавить документацию" и обновление элементов простого массива.
 - Добавлен шаблон установки и новые команды проекта для расширения Visual Studio Code.
 - Добавлены новые варианты блока объединения ApplyIf, например [Microsoft.Quantum.Canon.ApplyIfOne](xref:Microsoft.Quantum.Canon.ApplyIfOne).
@@ -275,7 +275,7 @@ ms.locfileid: "96192100"
 
 Этот выпуск включает следующие обновления:
 
-- Добавлены расположения индексирования для массивов срезов (см. сведения в [справочнике по языку программирования](xref:microsoft.quantum.guide.expressions#array-slices)).
+- Новая индексация для массивов срезов. Дополнительные сведения [см. в справочнике по языку](xref:microsoft.quantum.qsharp.contextualexpressions#contextual-and-omitted-expressions) .
 - Добавлены Dockerfile, размещенные в [реестре контейнеров Microsoft](https://github.com/microsoft/ContainerRegistry), см. [ Q# Дополнительные сведения в репозитории I](https://github.com/microsoft/iqsharp/blob/main/README.md) .
 - Критическое изменение в [симуляторе трассировки](xref:microsoft.quantum.machines.qc-trace-simulator.intro); изменены параметры конфигурации и имена (см. сведения о [средстве просмотра API .NET](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulatorconfiguration)).
 
@@ -296,10 +296,10 @@ ms.locfileid: "96192100"
 
 ### <a name="no-locq-language-syntax"></a>Q# Синтаксис языка
 В этом выпуске добавлен новый Q# синтаксис языка:
-* Добавлены именованные элементы для [определяемых пользователем типов](xref:microsoft.quantum.guide.types#user-defined-types).  
+* Добавление именованных элементов для [определяемых пользователем типов] Microsoft. тактing. кшарп. типедекларатионс #-объявления типа).  
 * Теперь конструкторы определяемых пользователем типов можно использовать в качестве функций.
-* Добавлена поддержка операций [copy-and-update](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions) и [apply-and-reassign](xref:microsoft.quantum.guide.variables#rebinding-of-mutable-symbols) для определяемых пользователем типов.
-* Блок исправления для циклов [repeat-until-success](xref:microsoft.quantum.guide.controlflow#repeat-until-success-loop) теперь необязателен.
+* Добавлена поддержка операций [copy-and-update](xref:microsoft.quantum.qsharp.copyandupdateexpressions#copy-and-update-expressions) и [apply-and-reassign](xref:microsoft.quantum.qsharp.variabledeclarationsandreassignments#evaluate-and-reassign-statements) для определяемых пользователем типов.
+* Блок исправления для циклов [repeat-until-success](xref:microsoft.quantum.qsharp.conditionalloops#repeat-statement) теперь необязателен.
 * Теперь мы поддерживаем циклы while в функциях (но не операциях).
 
 ### <a name="library"></a>Библиотека 
@@ -327,10 +327,10 @@ ms.locfileid: "96192100"
 
 ### <a name="no-locq-language-syntax"></a>Q# Синтаксис языка
 В этом выпуске добавлен новый Q# синтаксис языка:
-* Добавлен [краткий способ для выражения специализации квантовых операций](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations) (control и adjoints) с помощью операторов `+`.  Старый синтаксис объявлен устаревшим.  Программы, в которых используется старый синтаксис (например, `: adjoint`), по-прежнему будут работать, но при их компиляции будет создаваться предупреждение.  
-* Добавлен новый оператор `w/` для операции [copy-and-update](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions), который позволяет выразить создание массива как изменение существующего массива.
-* Добавлена общая инструкция [apply-and-upate](xref:microsoft.quantum.guide.variables#rebinding-of-mutable-symbols), например `+=` и `w/=`.
-* Добавлен способ указать короткое имя для пространств имен в директивах [open](xref:microsoft.quantum.guide.filestructure#open-directives).
+* Добавлен [краткий способ для выражения специализации квантовых операций](xref:microsoft.quantum.qsharp.specializationdeclarations) (control и adjoints) с помощью операторов `+`.  Старый синтаксис объявлен устаревшим.  Программы, в которых используется старый синтаксис (например, `: adjoint`), по-прежнему будут работать, но при их компиляции будет создаваться предупреждение.  
+* Добавьте новый оператор ternary для [копирования и обновления](xref:microsoft.quantum.qsharp.copyandupdateexpressions#copy-and-update-expressions), `w/` `<-` который можно использовать для выражения создания массива в качестве изменения существующего массива.
+* Добавьте общую [инструкцию Apply-and-Assign](xref:microsoft.quantum.qsharp.variabledeclarationsandreassignments#evaluate-and-reassign-statements), например,, `+=` `w/=` .
+* Добавлен способ указать короткое имя для пространств имен в директивах [open](xref:microsoft.quantum.qsharp.namespaces#open-directives).
 
 Начиная с этого выпуска, не допускается указание элемента массива в левой части инструкции set.  Это связано с тем, что такой синтаксис подразумевает изменяемость массивов, тогда как в результате этой операции всегда создавался новый массив с изменением.  Теперь будет создаваться ошибка компилятора с предложением применить новый оператор copy-and-update `w/`, который возвращает такой же результат.  
 
@@ -405,7 +405,7 @@ ms.locfileid: "96192100"
 
 - Исправлена ошибка, приводящая к проблеме с DumpRegister, о которой сообщило сообщество ([#148](https://github.com/Microsoft/Quantum/issues/148)).
 
-- Добавлена возможность возврата из [оператора using](xref:microsoft.quantum.guide.qubits#allocating-qubits).
+- Добавлена возможность возврата из [использования в операторе using и](xref:microsoft.quantum.qsharp.quantummemorymanagement#quantum-memory-management).
 
 - Переработано [руководство по началу работы](xref:microsoft.quantum.install).
 
@@ -428,7 +428,7 @@ ms.locfileid: "96192100"
 
 Этот выпуск включает следующие обновления:
 
-- Добавлена поддержка нового примитивного типа BigInt, который представляет целое число со знаком произвольного размера.  См. сведения о [типе BigInt](xref:microsoft.quantum.guide.types).
+- Добавлена поддержка нового примитивного типа BigInt, который представляет целое число со знаком произвольного размера.  Дополнительные сведения о [bigint](xref:microsoft.quantum.qsharp.valueliterals#bigint-literals).
 - Добавлен новый специализированный симулятор Тоффоли, который может имитировать квантовые операции X, CNOT и X с несколькими элементами управления для очень большого числа кубитов.  См. сведения о [симуляторе Тоффоли](xref:microsoft.quantum.machines.toffoli-simulator).
 - Добавляет простой оценщик ресурсов, который оценивает ресурсы, необходимые для выполнения определенного экземпляра Q# операции на компьютере-такте.  См. сведения об [оценщике ресурсов](xref:microsoft.quantum.machines.resources-estimator).
 
