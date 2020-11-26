@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.ScheduleLength
 title: Функция Счедулеленгс
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: ScheduleLength
 qsharp.summary: Returns the number of elements in a given sampling schedule.
-ms.openlocfilehash: 77538984fbd7334712df423b991ef43ce31ed849
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 008bdcdc0a7c0ad2775dea65ebba46556092beed
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92732305"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96211599"
 ---
 # <a name="schedulelength-function"></a>Функция Счедулеленгс
 
 Пространство имен: [Microsoft. тактов. MachineLearning](xref:Microsoft.Quantum.MachineLearning)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. MachineLearning](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)
 
 
 Возвращает количество элементов в заданном расписании выборки.
