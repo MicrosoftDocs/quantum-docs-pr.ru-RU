@@ -1,36 +1,36 @@
 ---
 uid: Microsoft.Quantum.Canon.RepeatCA
 title: Операция Репеатка
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: RepeatCA
 qsharp.summary: Repeats an operation a given number of times.
-ms.openlocfilehash: b68c3aa4298fffa76f7c43ac4c6d27cdf3b72fbf
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 24606486b3d5703065a7c7f62d3bbc7e3d07615f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92715551"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96205411"
 ---
 # <a name="repeatca-operation"></a>Операция Репеатка
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Повторяет операцию заданное число раз.
 
 ```qsharp
-operation RepeatCA<'TInput> (op : ('TInput => Unit is Adj + Ctl), nTimes : Int, input : 'TInput) : Unit
+operation RepeatCA<'TInput> (op : ('TInput => Unit is Adj + Ctl), nTimes : Int, input : 'TInput) : Unit is Adj + Ctl
 ```
 
 
 ## <a name="input"></a>Входные данные
 
-### <a name="op--tinput--unit-adj--ctl"></a>Op: ' Тинпут => [единицы измерения](xref:microsoft.quantum.lang-ref.unit) + CTL
+### <a name="op--tinput--unit--is-adj--ctl"></a>Op: ' Тинпут =>ная [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL"
 
 Операция, которая вызывается повторно.
 

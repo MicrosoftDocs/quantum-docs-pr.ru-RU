@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.MultiplexOperations
 title: Операция Мултиплексоператионс
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -12,18 +12,18 @@ qsharp.summary: >-
   That is, applies Multiply-controlled unitary operation $U$ that applies a unitary $V_j$ when controlled by $n$-qubit number state $\ket{j}$.
 
   $U = \sum^{2^n-1}_{j=0}\ket{j}\bra{j}\otimes V_j$.
-ms.openlocfilehash: 267c9c2858090ebe024fd387938e8bd2f8c76867
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: ad66b39fcfacbe5231ec3b9ba96989d6d5d449c1
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92715832"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96206108"
 ---
 # <a name="multiplexoperations-operation"></a>Операция Мултиплексоператионс
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет массив операций, управляемых массивом числовых состояний.
@@ -33,13 +33,13 @@ ms.locfileid: "92715832"
 $U = \сум ^ {2 ^ n-1} _ {j = 0} \кет{ж}\бра{ж}\отимес V_j $.
 
 ```qsharp
-operation MultiplexOperations<'T> (unitaries : ('T => Unit is Adj + Ctl)[], index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T) : Unit
+operation MultiplexOperations<'T> (unitaries : ('T => Unit is Adj + Ctl)[], index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T) : Unit is Adj + Ctl
 ```
 
 
 ## <a name="input"></a>Входные данные
 
-### <a name="unitaries--t--unit-adj--ctl"></a>унитариес: 'T => [модульные](xref:microsoft.quantum.lang-ref.unit) года + CTL []
+### <a name="unitaries--t--unit--is-adj--ctl"></a>унитариес: 'T => [единица](xref:microsoft.quantum.lang-ref.unit)  — "года + CTL []"
 
 Массив операций до $2 ^ n $ от единой операции. Операция $j $ TH индексируется по числу состояния $ \кет{ж} $, закодированному в формате с прямым порядком байтов.
 
@@ -65,7 +65,7 @@ $n $-кубит управления регистром, который коди
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `coefficients` будут заполнены элементами Identity, если указано меньше $2 ^ n $. В этой реализации используется $n-$1 вспомогательная Кубитс.
 

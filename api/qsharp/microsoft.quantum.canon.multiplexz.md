@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.MultiplexZ
 title: Операция Мултиплексз
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: MultiplexZ
 qsharp.summary: Applies a Pauli Z rotation conditioned on an array of qubits.
-ms.openlocfilehash: f7b1973e18ad396ebe892ad63ae47374a7cafbd5
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 364d23a0e57a2510f069b6db66b085368f20162e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92715776"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96206074"
 ---
 # <a name="multiplexz-operation"></a>Операция Мултиплексз
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет поворот Паули Z к массиву Кубитс.
 
 ```qsharp
-operation MultiplexZ (coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit
+operation MultiplexZ (coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit is Adj + Ctl
 ```
 
 
@@ -58,7 +58,7 @@ $n $-кубит управления регистром, который коди
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `coefficients` будет дополнен элементами $ \ theta_j = $0,0, если указано меньше $2 ^ n $.
 

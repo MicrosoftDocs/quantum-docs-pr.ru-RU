@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.IterateThroughCartesianPower
 title: Операция Итератесраугхкартесианповер
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: IterateThroughCartesianPower
 qsharp.summary: Applies an operation for each index in the Cartesian power of an integer range.
-ms.openlocfilehash: 526d28cbf3cd356b4f48eec02b3f032f70a868d9
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2883e7cb30633afe51d380befe806665207c5abd
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92716027"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96206482"
 ---
 # <a name="iteratethroughcartesianpower-operation"></a>Операция Итератесраугхкартесианповер
 
 Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Применяет операцию к каждому индексу в блоке питания целого диапазона.
