@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.SquareI
 title: Операция Скуареи
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: SquareI
 qsharp.summary: Computes the square of the integer `xs` into `result`, which must be zero initially.
-ms.openlocfilehash: d7334d50f245ba358624e6e2eee94b63d9ed7569
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 79a431d411c4ffd502fb5338b5396341fd63aea8
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730464"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96221867"
 ---
 # <a name="squarei-operation"></a>Операция Скуареи
 
 Пространство имен: [Microsoft. тактов. арифметика](xref:Microsoft.Quantum.Arithmetic)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. Numerics](https://nuget.org/packages/Microsoft.Quantum.Numerics)
 
 
 Вычисляет квадрат целого числа `xs` в `result` , который должен быть равен нулю изначально.
 
 ```qsharp
-operation SquareI (xs : Microsoft.Quantum.Arithmetic.LittleEndian, result : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation SquareI (xs : Microsoft.Quantum.Arithmetic.LittleEndian, result : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
 ```
 
 
@@ -45,6 +45,6 @@ $2N $-bit Result (Литтлиндиан) должен находиться в �
 
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Использует стандартный подход Shift и-Add для расчета квадрата. Сохраняет $n-$1 Кубитс по сравнению с прямым решением, которое сначала копирует XS перед применением обычного множителя, а затем отменяет операцию копирования.

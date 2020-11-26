@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.IndexRange
 title: Функция Индексранже
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: IndexRange
 qsharp.summary: Given an array, returns a range over the indices of that array, suitable for use in a for loop.
-ms.openlocfilehash: 7f9779acd4a781c50388217aa780710bd0b99ff3
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 5afd4cc260ac3e384d2736bf7b43d941afd9ef73
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730201"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96220949"
 ---
 # <a name="indexrange-function"></a>Функция Индексранже
 
 Пространство имен: [Microsoft. тактов. Arrays](xref:Microsoft.Quantum.Arrays)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. тактов. кшарп. Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 При наличии массива возвращает диапазон по индексам этого массива, который подходит для использования в цикле for.

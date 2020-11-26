@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.ElementAt
 title: Функция ElementAt
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: ElementAt
 qsharp.summary: Returns the at the given index of an array.
-ms.openlocfilehash: edd05dcf2e7560d777d8031f45b7e444bb1935b1
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 23f336da77135820c46d1d76a196c6d453f1322f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730345"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96221510"
 ---
 # <a name="elementat-function"></a>Функция ElementAt
 
 Пространство имен: [Microsoft. тактов. Arrays](xref:Microsoft.Quantum.Arrays)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Возвращает объект по указанному индексу массива.

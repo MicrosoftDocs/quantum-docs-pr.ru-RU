@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.IsSorted
 title: Функция IsSorted
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: IsSorted
 qsharp.summary: Given an array, returns whether that array is sorted as defined by a given comparison function.
-ms.openlocfilehash: 330c1f789585f64cf255bc74f8a9c1ccf81b009e
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b2c5f11c0d92ddf9214de2d439c175319c569be0
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730169"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96220842"
 ---
 # <a name="issorted-function"></a>Функция IsSorted
 
 Пространство имен: [Microsoft. тактов. Arrays](xref:Microsoft.Quantum.Arrays)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 При наличии массива возвращает значение, указывающее, сортируется ли этот массив как определенный данной функцией сравнения.
@@ -51,6 +51,6 @@ function IsSorted<'T> (comparison : (('T, 'T) -> Bool), array : 'T[]) : Bool
 
 Тип каждого элемента `array` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `comparison`Предполагается, что функция является транзитивным, например, если `comparison(a, b)` `comparison(b, c)` `comparison(a, c)` предполагается и. Если это свойство не удерживает, выходные данные этой функции могут быть неправильными.

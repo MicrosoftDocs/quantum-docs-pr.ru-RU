@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.ColumnAtUnchecked
 title: Функция Колумнатунчеккед
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: ColumnAtUnchecked
 qsharp.summary: This function does not check for matrix shape
-ms.openlocfilehash: 17211c1ae1fe12fcadf34a9411f9b0cf0cdcab50
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 06fce23bbf7142ee0e0b0ed3f2c0578676f2097b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92730401"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96221595"
 ---
 # <a name="columnatunchecked-function"></a>Функция Колумнатунчеккед
 
 Пространство имен: [Microsoft. тактов. Arrays](xref:Microsoft.Quantum.Arrays)
 
-Пакеты [](https://nuget.org/packages/)
+Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Эта функция не проверяет фигуру матрицы
