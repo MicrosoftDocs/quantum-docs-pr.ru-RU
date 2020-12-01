@@ -1,0 +1,32 @@
+- name: Выражения в Q#
+  href: index.md
+- name: Очередность и ассоциативность
+  href: precedenceandassociativity.md
+- name: Операторы
+  items:
+    - name: Выражения копирования и обновления
+      href: copyandupdateexpressions.md
+    - name: Условные выражения
+      href: conditionalexpressions.md
+    - name: Выражения сравнения
+      href: comparativeexpressions.md
+    - name: Логические выражения
+      href: logicalexpressions.md
+    - name: Выражения битовых операций
+      href: bitwiseexpressions.md
+    - name: Арифметические выражения
+      href: arithmeticexpressions.md
+    - name: Объединения
+      href: concatenation.md
+- name: Модификаторы и методы объединения
+  items:
+    - name: Применение частично выполненной строки
+      href: partialapplication.md
+    - name: Применение функтора
+      href: functorapplication.md
+    - name: Выражения доступа к элементам
+      href: itemaccessexpressions.md
+- name: Контекстные выражения
+  href: contextualexpressions.md
+- name: Литералы значений и значения по умолчанию
+  href: valueliterals.md

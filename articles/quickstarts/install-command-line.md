@@ -10,12 +10,12 @@ uid: microsoft.quantum.install.standalone
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a6823888dcbe8cf79f0045d2615fe8b889dcc7c3
-ms.sourcegitcommit: a13c7c86fd52a05cbf129b8dd713d6586ca1cc2c
+ms.openlocfilehash: eeb567dedc1b8123b32faf7ed3a42bb51f16a7d2
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93376428"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96228735"
 ---
 # <a name="develop-with-no-locq-applications-in-an-ide"></a>Разработка с помощью приложений Q# в интегрированной среде разработки
 
@@ -63,7 +63,7 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 
 1. Щелкните **Представление** -> **Палитра команд** и выберите **Q#: создать проект**.
 2. Щелкните **Standalone console application** (Автономное консольное приложение).
-3. Перейдите к расположению, в котором нужно сохранить проект, и щелкните **Создать проект**.
+3. Перейдите к расположению, чтобы сохранить проект. Введите имя проекта и щелкните **Создать проект**.
 4. После успешного создания проекта нажмите **Открыть новый проект...** в правом нижнем углу.
 
 Проверьте проект. Вы увидите исходный файл с именем `Program.qs`, который представляет собой программу Q#, определяющую простую операцию вывода сообщения в консоль.
