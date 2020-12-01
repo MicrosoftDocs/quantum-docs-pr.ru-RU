@@ -1,13 +1,13 @@
 - name: Обзор и содержание
   href: index.md
-- name: Основные сведения о Q#
-  href: basics.md
+- name: Программы на Q#
+  href: programs.md
 - name: Способы запуска программы Q#
   href: host-programs.md
-- name: Язык Q#
+- name: Тестирование и отладка
+  href: testing-debugging.md
+- name: Руководство по языку Q#
   href: language/toc.yml
-- name: Использование Q#
-  href: using-qsharp/toc.yml
 - name: Симуляторы и средства оценки ресурсов
   href: machines/toc.yml
 - name: Библиотеки Q#
