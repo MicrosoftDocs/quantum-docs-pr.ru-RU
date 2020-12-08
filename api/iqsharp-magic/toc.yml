@@ -1,3 +1,5 @@
+- href: index.md
+  name: Магические команды IQ#
 - href: azure.connect.md
   name: Магическая команда %azure.connect
 - href: azure.execute.md
