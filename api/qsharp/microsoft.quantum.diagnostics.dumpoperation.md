@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.DumpOperation
 title: Операция Думпоператион
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: DumpOperation
 qsharp.summary: Given an operation, displays diagnostics about the operation that are made available by the current execution target.
-ms.openlocfilehash: b0e07173ddbeb8a96d4a85928258b6e30deb394d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: cde188806506c586c4c77a7f9b2b43ad0e10ef1b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96202062"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98829273"
 ---
 # <a name="dumpoperation-operation"></a>Операция Думпоператион
 
@@ -45,7 +45,18 @@ operation DumpOperation (nQubits : Int, op : (Qubit[] => Unit is Adj)) : Unit
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="example"></a>Пример
+
+При запуске на целевом объекте такта имитатора следующий фрагмент выводит матрицу $ $ \бегин{алигнед} \лефт (\бегин{Матрикс} 1 & 0 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 1 & 0 & 0 \енд{Матрикс}\ригхт) \енд{алигнед}.
+$$
+
+```qsharp
+operation DumpCnot() : Unit {
+    DumpOperation(2, ApplyToFirstTwoQubitsCA(CNOT, _));
+}
+```
+
+## <a name="remarks"></a>Remarks
 
 Вызов этой операции не имеет наблюдаемого воздействия в Q #. Точная диагностика, отображаемая при их наличии, зависит от текущего целевого объекта выполнения и среды редактора.
 Например, при использовании в симуляторе с полным состоянием отображается единая матрица, используемая для представления `op` .
