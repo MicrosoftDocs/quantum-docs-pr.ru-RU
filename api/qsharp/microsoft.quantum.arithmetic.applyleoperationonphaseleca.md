@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyLEOperationOnPhaseLECA
 title: Операция Апплилеоператиононфаселека
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyLEOperationOnPhaseLECA
 qsharp.summary: Applies an operation that takes a <xref:microsoft.quantum.arithmetic.phaselittleendian> register as input on a target register of type <xref:microsoft.quantum.arithmetic.littleendian>.
-ms.openlocfilehash: 4762eb17b4c11e46b5b94498b7fc8fd2f855c659
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 024eb923d8e09ecb75a95dd61d300fd0d643c7ec
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190689"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843737"
 ---
 # <a name="applyleoperationonphaseleca-operation"></a>Операция Апплилеоператиононфаселека
 
@@ -30,7 +30,7 @@ operation ApplyLEOperationOnPhaseLECA (op : (Microsoft.Quantum.Arithmetic.Little
 
 ## <a name="input"></a>Входные данные
 
-### <a name="op--littleendian--unit--is-adj--ctl"></a>Op: [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [единица](xref:microsoft.quantum.lang-ref.unit) литтлиндиан — "года + CTL"
+### <a name="op--littleendian--unit--is-adj--ctl"></a>Op: [](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [единица](xref:microsoft.quantum.lang-ref.unit) литтлиндиан — "года + CTL"
 
 Операция, которая будет применена.
 
@@ -45,7 +45,7 @@ operation ApplyLEOperationOnPhaseLECA (op : (Microsoft.Quantum.Arithmetic.Little
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Регистр преобразуется в `LittleEndian` с помощью <xref:microsoft.quantum.canon.qftle> и возвращается в исходное представление после применения `op` .
 
