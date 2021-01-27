@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromStatePreparation
 title: Функция Амплитудеамплификатионфромстатепрепаратион
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
 qsharp.name: AmplitudeAmplificationFromStatePreparation
 qsharp.summary: Amplitude amplification by oracles for partial reflections.
-ms.openlocfilehash: 30e1cf6e353b8a4491e13a9e2f588ec9cc103cb4
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e64ad5ad4e975483f20f92c0b070dd6788ef296b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96191607"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847456"
 ---
 # <a name="amplitudeamplificationfromstatepreparation-function"></a>Функция Амплитудеамплификатионфромстатепрепаратион
 
@@ -50,7 +50,7 @@ function AmplitudeAmplificationFromStatePreparation (phases : Microsoft.Quantum.
 
 Операция, которая реализует усиление амплитуды с помощью Oracle, которые реализуются частичными отражениями.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Это накладывает более четкие условия на формат начального и целевого состояний, чем в `AmpAmpByReflectionPhases` .
 Предполагается, что целевое состояние помечено как $ \кет {1} \_ f $.

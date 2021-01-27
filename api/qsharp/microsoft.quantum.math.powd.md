@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.PowD
 title: Функция ПОВД
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: PowD
 qsharp.summary: Returns the number x raised to the power y.
-ms.openlocfilehash: 26580499f09602fac1a4195d04a82299d287ed72
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 4040dad2c976c77cd6d68bcc01d3be5039254c99
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96228361"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857497"
 ---
 # <a name="powd-function"></a>Функция ПОВД
 
@@ -45,6 +45,6 @@ function PowD (x : Double, y : Double) : Double
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Дополнительные сведения см. в разделе [System. Math. Pow](https://docs.microsoft.com/dotnet/api/system.math.pow) .

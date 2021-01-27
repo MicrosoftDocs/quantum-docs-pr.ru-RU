@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ModulusI
 title: Функция Модулуси
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ModulusI
 qsharp.summary: Computes the canonical residue of `value` modulo `modulus`.
-ms.openlocfilehash: 6bbb3877b93e1fc6b38f85a716ba617311c7cfba
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7bad044db9e2229c85cb3909dc4802bceaee6382
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96227783"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847292"
 ---
 # <a name="modulusi-function"></a>Функция Модулуси
 
@@ -45,6 +45,6 @@ function ModulusI (value : Int, modulus : Int) : Int
 
 Целое число $r $ от 0 до значения `modulus - 1` , `value - r` кратного модулю
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
-Эта функция ведет себя иначе, чем оператор `%` в C# и Q #, как в результате, всегда является положительным целым числом от 0 до `modulus - 1` , даже если значение отрицательное.
+Эта функция ведет себя иначе, чем оператор `%` в C# и Q #, как в результате, всегда является неотрицательным целым числом от 0 до `modulus - 1` , даже если значение отрицательное.

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry._DeltaParityCNOTbitstring
 title: Функция _DeltaParityCNOTbitstring
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
 qsharp.name: _DeltaParityCNOTbitstring
 qsharp.summary: Classical processing step of `ApplyDeltaParity`. This computes a list of control qubits for evaluating parity difference between any two PQRS... terms of even length.
-ms.openlocfilehash: 0c0da60e3c389f8208f9f7d5c84a09893f3c1bda
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 3dd2d299a094577d377780d731e76287815e8d03
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96226083"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847604"
 ---
 # <a name="_deltaparitycnotbitstring-function"></a>Функция _DeltaParityCNOTbitstring
 
@@ -46,7 +46,7 @@ function _DeltaParityCNOTbitstring (prevFermionicTerm : Int[], nextFermionicTerm
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Предполагается, что длина терминов равна.
 Вычисление списка элементов управления для разницы четности между любыми двумя терминами.
