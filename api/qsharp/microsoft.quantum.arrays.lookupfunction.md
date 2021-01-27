@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.LookupFunction
 title: Функция Лукупфунктион
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: LookupFunction
 qsharp.summary: Given an array, returns a function which returns elements of that array.
-ms.openlocfilehash: db20795719d11138cbdc5a38c0a19d0f247af059
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 22b56bb7e9f03ebc5b2225efb2e6450d56022664
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220779"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845698"
 ---
 # <a name="lookupfunction-function"></a>Функция Лукупфунктион
 
@@ -46,6 +46,6 @@ function LookupFunction<'T> (array : 'T[]) : (Int -> 'T)
 
 Тип элементов массива, представленного в виде функции уточняющего запроса.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Эта функция в основном полезна для взаимодействия с функциями и операциями, которые принимают `Int -> 'T` в качестве аргументов функции. Это обычно, например, в библиотеке представления генератора, где функции используются, чтобы избежать необходимости записи всего массива в памяти.

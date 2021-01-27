@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromStatePreparation
 title: Функция Обливиаусамплитудеамплификатионфромстатепрепаратион
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
 qsharp.name: ObliviousAmplitudeAmplificationFromStatePreparation
 qsharp.summary: Oblivious amplitude amplification by oracles for partial reflections.
-ms.openlocfilehash: 44bb394b0eb4ec98fd47fd1b156410b7a33903f1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 873c436d4b8d8efc9dc61c2baba9b0e0f7f09fc2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96191301"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845822"
 ---
 # <a name="obliviousamplitudeamplificationfromstatepreparation-function"></a>Функция Обливиаусамплитудеамплификатионфромстатепрепаратион
 
@@ -55,7 +55,7 @@ function ObliviousAmplitudeAmplificationFromStatePreparation (phases : Microsoft
 
 Операция, реализующая усиление амплитуды очевидным на основе частичных отражений.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Это накладывает более четкие условия на формат начального и целевого состояний, чем в `AmpAmpObliviousByReflectionPhases` .
 Предполагается, что $A \кет {0} \_ ф\кет {0} \_ A = \кет{\текст{старт}} \_ {FA} $ подготавливает вспомогательное состояние запуска $ \кет{\текст{старт}} \_ {FA} $ от вычислительной базы $ \кет {0} \_ ф\кет {0} $.

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Bitwise.XBits
 title: Функция Ксбитс
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Bitwise
 qsharp.name: XBits
 qsharp.summary: Returns an integer representing the X bits of an array of Pauli operators.
-ms.openlocfilehash: 969be01204bad497496ff24cb64213f5fe1f089b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ddaace8df6e4c47c4affe2eeffb8d8ce31f37327
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96209763"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845245"
 ---
 # <a name="xbits-function"></a>Функция Ксбитс
 
@@ -40,7 +40,7 @@ function XBits (paulis : Pauli[]) : Int
 
 Целочисленное $x $ с двоичным представлением $ (p_ {62} \, p_ {61} \, \дотс \, p_0) $, где $p _i = $0, если `paulis[i]` имеет значение `PauliI` или `PauliZ` и, где $p _i = $1, если `paulis[i]` имеет значение `PauliX` или `PauliY` .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Функция вызывает исключение, если длина `paulis` массива больше 63.
 
