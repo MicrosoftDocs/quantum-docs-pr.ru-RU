@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ReversedOpBECA
 title: Функция Реверседопбека
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ReversedOpBECA
 qsharp.summary: Given an operation that takes a big-endian input, returns a new operation that takes a little-endian input.
-ms.openlocfilehash: da21b09110400ad4ee862f662d45e166a49e7bd8
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 09bb99645d5946af0e0c654500165077691f8da3
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96222207"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846412"
 ---
 # <a name="reversedopbeca-function"></a>Функция Реверседопбека
 
@@ -30,13 +30,13 @@ function ReversedOpBECA (op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit is
 
 ## <a name="input"></a>Входные данные
 
-### <a name="op--bigendian--unit--is-adj--ctl"></a>Op: [BigEndian](xref:Microsoft.Quantum.Arithmetic.BigEndian) => [единица](xref:microsoft.quantum.lang-ref.unit) байтов — "года + CTL"
+### <a name="op--bigendian--unit--is-adj--ctl"></a>Op: [](xref:Microsoft.Quantum.Arithmetic.BigEndian) => [единица](xref:microsoft.quantum.lang-ref.unit) байтов — "года + CTL"
 
 Операция, входные данные которой должны быть отменены.
 
 
 
-## <a name="output--littleendian--unit--is-adj--ctl"></a>Выходные данные [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) : => [единица](xref:microsoft.quantum.lang-ref.unit) литтлиндиан — "года + CTL"
+## <a name="output--littleendian--unit--is-adj--ctl"></a>Выходные данные [](xref:Microsoft.Quantum.Arithmetic.LittleEndian) : => [единица](xref:microsoft.quantum.lang-ref.unit) литтлиндиан — "года + CTL"
 
 Новая операция, принимающая свои входные данные в виде регистра с прямым порядком байтов.
 

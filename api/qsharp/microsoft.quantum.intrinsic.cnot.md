@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.CNOT
 title: Операция кнот
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -12,12 +12,12 @@ qsharp.summary: >-
   \begin{align} \operatorname{CNOT} \mathrel{:=} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \end{bmatrix}, \end{align}
 
   where rows and columns are ordered as in the quantum concepts guide.
-ms.openlocfilehash: 90e84f7d0ea7373498632474dfafa23335f0c78e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 02ae795c785dcbc25b56ac513a9237540e57ea63
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198982"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849438"
 ---
 # <a name="cnot-operation"></a>Операция кнот
 
@@ -54,7 +54,7 @@ operation CNOT (control : Qubit, target : Qubit) : Unit is Adj + Ctl
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Эквивалентно:
 
