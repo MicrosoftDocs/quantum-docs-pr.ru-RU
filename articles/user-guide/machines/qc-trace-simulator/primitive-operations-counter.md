@@ -4,17 +4,17 @@ description: Сведения о счетчике примитивных опе�
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.qc-trace-simulator.primitive-counter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: bf75eb94696a489a587316928bc3f33baa4a1785
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 19ea3c1f5a91c00de4d3e435318bf4cf8cdd83be
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690948"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858598"
 ---
 # <a name="quantum-trace-simulator-primitive-operations-counter"></a>Симулятор трассировки тактов: Счетчик примитивных операций
 
@@ -24,7 +24,7 @@ ms.locfileid: "92690948"
 
 ## <a name="invoking-the-primitive-operation-counter"></a>Вызов счетчика примитивной операции
 
-Чтобы запустить симулятор трассировки тактов со счетчиком операций-примитивов, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, присвоить `UsePrimitiveOperationsCounter` свойству **значение true** , а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра.
+Чтобы запустить симулятор трассировки тактов со счетчиком операций-примитивов, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, присвоить `UsePrimitiveOperationsCounter` свойству **значение true**, а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра.
 
 ```csharp
 var config = new QCTraceSimulatorConfiguration();
@@ -34,7 +34,7 @@ var sim = new QCTraceSimulator(config);
 
 ## <a name="using-the-primitive-operation-counter-in-a-c-host-program"></a>Использование счетчика примитивных операций в основной программе C#
 
-В примере C#, приведенном в этом разделе, подсчитывается количество <xref:Microsoft.Quantum.Intrinsic.T> операций, необходимых для реализации <xref:Microsoft.Quantum.Intrinsic.ccnot> операции, на основе следующего Q# примера кода:
+В примере C#, приведенном в этом разделе, подсчитывается количество <xref:Microsoft.Quantum.Intrinsic.T> операций, необходимых для реализации <xref:Microsoft.Quantum.Intrinsic.CCNOT> операции, на основе следующего Q# примера кода:
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;
@@ -75,7 +75,7 @@ double cxCount = sim.GetMetric<Primitive.CCNOT, ApplySampleWithCCNOT>(PrimitiveO
 string csvSummary = sim.ToCSV()[MetricsCountersNames.primitiveOperationsCounter];
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.

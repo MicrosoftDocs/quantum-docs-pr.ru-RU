@@ -5,16 +5,16 @@ author: QuantumWriter
 uid: microsoft.quantum.concepts.control-flow
 ms.author: martinro
 ms.date: 12/11/2017
-ms.topic: article
+ms.topic: conceptual
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ad107f5c65a4bf368d12d30e4a72786f2076205c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8f4b69250ed49bd56c3066d5cd40db4b8abfc9cb
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690863"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858702"
 ---
 # <a name="higher-order-control-flow"></a>Поток управления Higher-Order #
 
@@ -162,9 +162,9 @@ U(1, time / Float(nSteps), target);
 // ...
 ```
 
-На этом этапе мы теперь можем потроттер о расширении Сузуки *без ссылки на механизм тактов* .
+На этом этапе мы теперь можем потроттер о расширении Сузуки *без ссылки на механизм тактов*.
 Развертывание фактически представляет собой очень конкретный шаблон итерации, на который послужила $ \екреф{ЕК: Троттер-Сузуки-0} $.
-Этот шаблон итерации реализуется <xref:Microsoft.Quantum.Canon.DecomposedIntoTimestepsCA> следующим образом:
+Этот шаблон итерации реализуется <xref:Microsoft.Quantum.Canon.DecomposedIntoTimeStepsCA> следующим образом:
 
 ```qsharp
 // The 2 indicates how many terms we need to decompose,
@@ -213,7 +213,7 @@ operation _ControlledOnBitString(
 ```
 
 Здесь мы использовали, <xref:Microsoft.Quantum.Canon.ApplyPauliFromBitString> чтобы применить $P $, частично применить его к цели для использования с `ApplyWith` .
-Однако обратите внимание, что нам нужно преобразовать *контрольную* регистрацию в нужную форму, поэтому мы частично приведем внутреннюю операцию к `(Controlled oracle)` *целевому объекту* .
+Однако обратите внимание, что нам нужно преобразовать *контрольную* регистрацию в нужную форму, поэтому мы частично приведем внутреннюю операцию к `(Controlled oracle)` *целевому объекту*.
 Это покидает `ApplyWith` круглую скобку элемента управления с $P $ точно так же, как нам нужно.
 
 На этом этапе можно было бы сделать, но это не противоречит тем, что наша новая операция не работает, как применение `Controlled` функтор.

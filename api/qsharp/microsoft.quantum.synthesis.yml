@@ -8,6 +8,8 @@ functions:
   uid: Microsoft.Quantum.Synthesis.Extended
 - summary: Вычисление Хадамард преобразования логической функции в {-1,1} кодировке с помощью метода Йейтса
   uid: Microsoft.Quantum.Synthesis.FastHadamardTransformed
+- summary: Для каждого 2-уровневого вычисления вычисляет "отразить маску", которая обозначает Кубитс, которые должны быть инвертированы до и после применения соответствующего шлюза 1-кубит. Для удобства в начале добавьте значение 0.
+  uid: Microsoft.Quantum.Synthesis.FlipMasks
 - summary: Конструирует тип Мкмтмаск как одноэлементный массив, если целевые объекты не равны 0, в противном случае возвращает пустой массив.
   uid: Microsoft.Quantum.Synthesis.GateMask
 - summary: Выполняет вычисление до двух масок МКМТ для преобразования y в x.
@@ -20,6 +22,8 @@ functions:
   uid: Microsoft.Quantum.Synthesis.RMEncoding
 - summary: Корректирует истинную таблицу от массива логических значений в соответствии с количеством переменных, возвращаемых новым массивом `2^numVars` , возможно, требуется расширить `table` размер с помощью `false` записей или усечь его для `2^numVars` элементов.
   uid: Microsoft.Quantum.Synthesis.SizeAdjustedTruthTable
+- summary: Проверяет, что данный массив представляет квадратную матрицу.
+  uid: Microsoft.Quantum.Synthesis.SquareMatrixFact
 - summary: Вычислить маски шлюзов для синтезирования перестановки.
   uid: Microsoft.Quantum.Synthesis.TBSMain
 - summary: Вычисление масок шлюзов для преобразования разрешений [x] в x и обновление текущей перестановки.
@@ -34,6 +38,8 @@ functions:
   uid: Microsoft.Quantum.Synthesis.UpdatedPermutation
 - summary: Вставить 0-разрядное значение в целое число
   uid: Microsoft.Quantum.Synthesis.WithZeroInsertedAt
+- summary: ''
+  uid: Microsoft.Quantum.Synthesis._TwoLevelDecomposition
 name: Microsoft.Quantum.Synthesis
 newtypes:
 - summary: Состояние во время декомпозиции на основе индексов переменных
@@ -54,8 +60,15 @@ operations:
   uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingDecompositionWithVariableOrder
 - summary: Пермутес амплитуды в состоянии такта, учитывая перестановку с помощью синтеза на основе преобразования.
   uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingTransformation
+- summary: Применяет кубитй шлюз, определенный матрицей 2x2.
+  uid: Microsoft.Quantum.Synthesis.ApplySingleQubitUnitary
 - summary: ''
   uid: Microsoft.Quantum.Synthesis.ApplyTransposition
+- summary: >-
+    Применяет шлюз, определенный 2 ^ n x 2 ^ n, единой матрицей.
+
+    Завершается ошибкой, если матрица не является единой или имеет неправильный размер.
+  uid: Microsoft.Quantum.Synthesis.ApplyUnitary
 - summary: Применяет @"microsoft.quantum.intrinsic.x" операцию к `target` , если логическая функция `func` возвращает значение true для классического назначения в `controlRegister` .
   uid: Microsoft.Quantum.Synthesis.ApplyXControlledOnTruthTable
 - summary: Применяет @"microsoft.quantum.intrinsic.x" операцию к `target` , если логическая функция `func` возвращает значение true для классического назначения в `controlRegister` .
@@ -63,9 +76,9 @@ operations:
 summary: Это пространство имен содержит функции и операции для синтезирования тактовых операций на основе перестановок и логических функций.
 uid: Microsoft.Quantum.Synthesis
 metadata:
-  ms.openlocfilehash: 2f92f4662252148ff0e093f5392f5f00f26b661f
-  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.openlocfilehash: e238fdedcc931bb02c35591014d20b50b695b116
+  ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/27/2020
-  ms.locfileid: "92734201"
+  ms.lasthandoff: 01/26/2021
+  ms.locfileid: "98855189"

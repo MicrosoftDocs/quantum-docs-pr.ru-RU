@@ -4,17 +4,17 @@ description: Сведения о спецификациях для такта Б
 author: guanghaolow
 ms.author: gulow
 ms.date: 05/28/2019
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.libraries.chemistry.schema.spec_v_0_2
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 851d10c0137deecf8e861aad30b5e08a9ae61754
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 8d26b56d88f365144510692466bfffc7feb71d88
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833764"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854066"
 ---
 # <a name="broombridge-specification-v02"></a>Спецификация брумбридже v 0,2 #
 
@@ -133,7 +133,7 @@ format:                        # required
 
 ### <a name="hamiltonian-section"></a>Раздел хамилтониан ###
 
-#### <a name="overview"></a>Overview ####
+#### <a name="overview"></a>Обзор ####
 
 Этот раздел является информативным.
 
@@ -171,7 +171,7 @@ $$
 Каждый объект описания проблемы должен иметь свойство `energy_offet` , значение которого является простым объектом Quantity.
 > МЕТИМ Значения `coulomb_repulsion` и складываются `energy_offet` вместе с условием идентификации хамилтониан.
 
-##### <a name="one-electron-integrals-object"></a>Объект «интегралы за один электронный» #####
+##### <a name="one-electron-integrals-object"></a>One-Electronный объект интегралов #####
 
 Этот раздел является нормативным.
 
@@ -201,7 +201,7 @@ one_electron_integrals:     # required
 > Брумбридже использует индексирование, основанное на 1.
 
 
-##### <a name="two-electron-integrals-object"></a>Объект интегралов с двумя электронными данными #####
+##### <a name="two-electron-integrals-object"></a>Two-Electronный объект интегралов #####
 
 Этот раздел является нормативным.
 

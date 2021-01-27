@@ -4,17 +4,17 @@ description: Пошаговое руководство по примерам Q# 
 author: guanghaolow
 ms.author: gulow
 ms.date: 07/02/2020
-ms.topic: article-type-from-white-list
+ms.topic: sample
 uid: microsoft.quantum.chemistry.examples.energyestimate
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 81fba0c52c854d61f9143659795fb4d3c3cee8b9
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 60935e7c1e8c674fab3a546c1f110f589d2e6b77
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691537"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855051"
 ---
 # <a name="obtaining-energy-level-estimates"></a>Получение оценок энергетических уровней
 Оценка значений уровня энергии является одним из основных приложений тактовой химия. В этой статье описано, как это сделать для канонического примера водомолекулярное. Образец, указанный в этом разделе, находится [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogen) в репозитории примеров химия. Более наглядным примером, который отображает выходные данные, является [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogenGUI) демонстрация.

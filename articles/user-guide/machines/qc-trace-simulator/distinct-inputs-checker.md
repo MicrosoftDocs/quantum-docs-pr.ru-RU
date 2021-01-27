@@ -4,17 +4,17 @@ description: Сведения о проверке различных входн�
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.qc-trace-simulator.distinct-inputs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: bcb0bc92a546279496d27ad9b8c5f943ac133e2a
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 8076a705b1960ae8e23be4cea87e613329a24f77
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833468"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858646"
 ---
 # <a name="quantum-trace-simulator-distinct-inputs-checker"></a>Симулятор трассировки тактов: отдельный модуль проверки входных данных
 
@@ -50,7 +50,7 @@ operation ApplyWithNonDistinctInputs() : Unit {
 }
 ```
 
-Обратите внимание, что `op1` и `op2` они получаются с помощью частичного приложения и совместно используют кубит. При вызове `ApplyBoth` в этом примере результат операции зависит от порядка следования `op1` и `op2` внутреннего результата `ApplyBoth` . При включении проверки различных входных параметров обнаруживает такие ситуации и создает исключение `DistinctInputsCheckerException` . Дополнительные сведения см <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException> . в разделе Q# библиотеки API.
+Обратите внимание, что `op1` и `op2` они получаются с помощью частичного приложения и совместно используют кубит. При вызове `ApplyBoth` в этом примере результат операции зависит от порядка следования `op1` и `op2` внутреннего результата `ApplyBoth` . При включении проверки различных входных параметров обнаруживает такие ситуации и создает исключение `DistinctInputsCheckerException` . Дополнительные сведения см <xref:Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.DistinctInputsCheckerException> . в разделе Q# библиотеки API.
 
 ## <a name="invoking-the-distinct-inputs-checker"></a>Вызов средства проверки различных значений
 
@@ -93,4 +93,4 @@ namespace Quantum.MyProgram
 - Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>Справочник по API.
-- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException>Справочник по API.
+- <xref:Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.DistinctInputsCheckerException>Справочник по API.
