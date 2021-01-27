@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.IncrementPhaseByInteger
 title: Операция Инкрементфасебинтежер
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: IncrementPhaseByInteger
 qsharp.summary: Increments an unsigned quantum register by a classical integer, using phase rotations.
-ms.openlocfilehash: 54b83b3d4460c05478543c51f8f9c0b0e7f5b1fa
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: cc7922b2940cb979394958d5eb4e9933144eb062
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96222921"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843143"
 ---
 # <a name="incrementphasebyinteger-operation"></a>Операция Инкрементфасебинтежер
 
@@ -50,7 +50,7 @@ operation IncrementPhaseByInteger (increment : Int, target : Microsoft.Quantum.A
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Обратите внимание, что мы упростили канал, так как инкремент является классической константой, а не тактовой регистром.
 

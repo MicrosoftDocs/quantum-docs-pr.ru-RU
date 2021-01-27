@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Count
 title: Count, функция
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Count
 qsharp.summary: Given an array and a predicate that is defined for the elements of the array, returns the number of elements an array that consists of those elements that satisfy the predicate.
-ms.openlocfilehash: 48b75cc6d6584f899223a0803f31fd174836f303
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e178ee63526e3485e8cc83a3ba8f827d8ecac552
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221561"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842852"
 ---
 # <a name="count-function"></a>Count, функция
 
@@ -51,6 +51,17 @@ function Count<'T> (predicate : ('T -> Bool), array : 'T[]) : Int
 
 Тип `array` элементов.
 
-## <a name="remarks"></a>Комментарии
+## <a name="example"></a>Пример
+
+В следующем коде показана функция "Count".
+Предикат определяется с помощью @"microsoft.quantum.logical.greaterthani" функции:
+
+```qsharp
+ let predicate = GreaterThanI(_, 5);
+ let count = Count(predicate, [2, 5, 9, 1, 8]);
+ // count = 2
+```
+
+## <a name="remarks"></a>Remarks
 
 Функция определена для универсальных типов, т. е. при наличии массива `'T[]` и предиката `'T -> Bool` можно фильтровать элементы.

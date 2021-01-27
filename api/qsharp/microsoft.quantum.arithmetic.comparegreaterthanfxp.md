@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.CompareGreaterThanFxP
 title: Операция Компарегреатерсанфксп
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: CompareGreaterThanFxP
 qsharp.summary: Compares two fixed-point numbers stored in quantum registers, and controls a flip on the result.
-ms.openlocfilehash: 1e9afc7645f62b932fa8ebc3d33e21a2a5182361
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f49c713c8a1e8a6451f2c54fa59a72f00bfbb4c4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96223533"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843324"
 ---
 # <a name="comparegreaterthanfxp-operation"></a>Операция Компарегреатерсанфксп
 
@@ -50,6 +50,6 @@ operation CompareGreaterThanFxP (fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, 
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Текущая реализация требует, чтобы два числа с фиксированной запятой имели одно и то же расположение точки и одно и то же число Кубитс.

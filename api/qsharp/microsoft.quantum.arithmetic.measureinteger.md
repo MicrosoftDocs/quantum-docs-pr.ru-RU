@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.MeasureInteger
 title: Операция Меасуреинтежер
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: MeasureInteger
 qsharp.summary: Measures the content of a quantum register and converts it to an integer. The measurement is performed with respect to the standard computational basis, i.e., the eigenbasis of `PauliZ`.
-ms.openlocfilehash: e3ff06e5cbb2ef8a63e4ad12308b382347c90fc3
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 288aee24e0ae6425db35312b560630a6bb9bfc80
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96222649"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843124"
 ---
 # <a name="measureinteger-operation"></a>Операция Меасуреинтежер
 
@@ -40,7 +40,7 @@ operation MeasureInteger (target : Microsoft.Quantum.Arithmetic.LittleEndian) : 
 
 Целое число без знака, содержащее измеряемое значение `target` .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Эта операция сбрасывает регистр входных данных в состояние $ \ket{00\cdots 0} $, подходящее для освобождения на целевом компьютере.
 
