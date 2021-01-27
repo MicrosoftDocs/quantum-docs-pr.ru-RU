@@ -1,55 +1,63 @@
 ---
 uid: Microsoft.Quantum.Arrays.FlatMapped
 title: Функция Флатмаппед
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: FlatMapped
 qsharp.summary: Given an array and a function that maps an array element to some output array, returns the concatenated output arrays for each array element.
-ms.openlocfilehash: e851e8503b3afcb4572f09fe39079247518c22c4
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: bee7002c5a1e80cee7907ff9cb4ebaaedf8e9923
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221255"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848642"
 ---
-# <a name="flatmapped-function"></a><span data-ttu-id="54b2b-102">Функция Флатмаппед</span><span class="sxs-lookup"><span data-stu-id="54b2b-102">FlatMapped function</span></span>
+# <a name="flatmapped-function"></a><span data-ttu-id="a0ce9-102">Функция Флатмаппед</span><span class="sxs-lookup"><span data-stu-id="a0ce9-102">FlatMapped function</span></span>
 
-<span data-ttu-id="54b2b-103">Пространство имен: [Microsoft. тактов. Arrays](xref:Microsoft.Quantum.Arrays)</span><span class="sxs-lookup"><span data-stu-id="54b2b-103">Namespace: [Microsoft.Quantum.Arrays](xref:Microsoft.Quantum.Arrays)</span></span>
+<span data-ttu-id="a0ce9-103">Пространство имен: [Microsoft. тактов. Arrays](xref:Microsoft.Quantum.Arrays)</span><span class="sxs-lookup"><span data-stu-id="a0ce9-103">Namespace: [Microsoft.Quantum.Arrays](xref:Microsoft.Quantum.Arrays)</span></span>
 
-<span data-ttu-id="54b2b-104">Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="54b2b-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
+<span data-ttu-id="a0ce9-104">Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="a0ce9-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
 
 
-<span data-ttu-id="54b2b-105">При наличии массива и функции, которая сопоставляет элемент массива с каким-либо выходным массивом, возвращает объединенные выходные массивы для каждого элемента массива.</span><span class="sxs-lookup"><span data-stu-id="54b2b-105">Given an array and a function that maps an array element to some output array, returns the concatenated output arrays for each array element.</span></span>
+<span data-ttu-id="a0ce9-105">При наличии массива и функции, которая сопоставляет элемент массива с каким-либо выходным массивом, возвращает объединенные выходные массивы для каждого элемента массива.</span><span class="sxs-lookup"><span data-stu-id="a0ce9-105">Given an array and a function that maps an array element to some output array, returns the concatenated output arrays for each array element.</span></span>
 
 ```qsharp
 function FlatMapped<'TInput, 'TOutput> (mapper : ('TInput -> 'TOutput[]), array : 'TInput[]) : 'TOutput[]
 ```
 
 
-## <a name="input"></a><span data-ttu-id="54b2b-106">Входные данные</span><span class="sxs-lookup"><span data-stu-id="54b2b-106">Input</span></span>
+## <a name="input"></a><span data-ttu-id="a0ce9-106">Входные данные</span><span class="sxs-lookup"><span data-stu-id="a0ce9-106">Input</span></span>
 
-### <a name="mapper--tinput---toutput"></a><span data-ttu-id="54b2b-107">сопоставитель: ' Тинпут-> ' Таутпут []</span><span class="sxs-lookup"><span data-stu-id="54b2b-107">mapper : 'TInput -> 'TOutput[]</span></span>
+### <a name="mapper--tinput---toutput"></a><span data-ttu-id="a0ce9-107">сопоставитель: ' Тинпут-> ' Таутпут []</span><span class="sxs-lookup"><span data-stu-id="a0ce9-107">mapper : 'TInput -> 'TOutput[]</span></span>
 
-<span data-ttu-id="54b2b-108">Функция из `'TInput` в `'TOutput[]` , используемая для отображения элементов массива.</span><span class="sxs-lookup"><span data-stu-id="54b2b-108">A function from `'TInput` to `'TOutput[]` that is used to map array elements.</span></span>
-
-
-### <a name="array--tinput"></a><span data-ttu-id="54b2b-109">массив: ' Тинпут []</span><span class="sxs-lookup"><span data-stu-id="54b2b-109">array : 'TInput[]</span></span>
-
-<span data-ttu-id="54b2b-110">Массив элементов.</span><span class="sxs-lookup"><span data-stu-id="54b2b-110">An array of elements.</span></span>
+<span data-ttu-id="a0ce9-108">Функция из `'TInput` в `'TOutput[]` , используемая для отображения элементов массива.</span><span class="sxs-lookup"><span data-stu-id="a0ce9-108">A function from `'TInput` to `'TOutput[]` that is used to map array elements.</span></span>
 
 
+### <a name="array--tinput"></a><span data-ttu-id="a0ce9-109">массив: ' Тинпут []</span><span class="sxs-lookup"><span data-stu-id="a0ce9-109">array : 'TInput[]</span></span>
 
-## <a name="output--toutput"></a><span data-ttu-id="54b2b-111">Выходные данные: ' Таутпут []</span><span class="sxs-lookup"><span data-stu-id="54b2b-111">Output : 'TOutput[]</span></span>
+<span data-ttu-id="a0ce9-110">Массив элементов.</span><span class="sxs-lookup"><span data-stu-id="a0ce9-110">An array of elements.</span></span>
 
-<span data-ttu-id="54b2b-112">Массив `'TOutput[]` , который является объединением всех массивов, созданных функцией сопоставления.</span><span class="sxs-lookup"><span data-stu-id="54b2b-112">An array of `'TOutput[]` which is the concatenation of all arrays generated by the mapping function.</span></span>
 
-## <a name="type-parameters"></a><span data-ttu-id="54b2b-113">Параметры типа</span><span class="sxs-lookup"><span data-stu-id="54b2b-113">Type Parameters</span></span>
 
-### <a name="tinput"></a><span data-ttu-id="54b2b-114">' Тинпут</span><span class="sxs-lookup"><span data-stu-id="54b2b-114">'TInput</span></span>
+## <a name="output--toutput"></a><span data-ttu-id="a0ce9-111">Выходные данные: ' Таутпут []</span><span class="sxs-lookup"><span data-stu-id="a0ce9-111">Output : 'TOutput[]</span></span>
 
-<span data-ttu-id="54b2b-115">Тип `array` элементов.</span><span class="sxs-lookup"><span data-stu-id="54b2b-115">The type of `array` elements.</span></span>
-### <a name="toutput"></a><span data-ttu-id="54b2b-116">' Таутпут</span><span class="sxs-lookup"><span data-stu-id="54b2b-116">'TOutput</span></span>
+<span data-ttu-id="a0ce9-112">Массив `'TOutput[]` , который является объединением всех массивов, созданных функцией сопоставления.</span><span class="sxs-lookup"><span data-stu-id="a0ce9-112">An array of `'TOutput[]` which is the concatenation of all arrays generated by the mapping function.</span></span>
 
-<span data-ttu-id="54b2b-117">`mapper`Функция возвращает массивы этого типа.</span><span class="sxs-lookup"><span data-stu-id="54b2b-117">The `mapper` function returns arrays of this type.</span></span>
+## <a name="type-parameters"></a><span data-ttu-id="a0ce9-113">Параметры типа</span><span class="sxs-lookup"><span data-stu-id="a0ce9-113">Type Parameters</span></span>
+
+### <a name="tinput"></a><span data-ttu-id="a0ce9-114">' Тинпут</span><span class="sxs-lookup"><span data-stu-id="a0ce9-114">'TInput</span></span>
+
+<span data-ttu-id="a0ce9-115">Тип `array` элементов.</span><span class="sxs-lookup"><span data-stu-id="a0ce9-115">The type of `array` elements.</span></span>
+### <a name="toutput"></a><span data-ttu-id="a0ce9-116">' Таутпут</span><span class="sxs-lookup"><span data-stu-id="a0ce9-116">'TOutput</span></span>
+
+<span data-ttu-id="a0ce9-117">`mapper`Функция возвращает массивы этого типа.</span><span class="sxs-lookup"><span data-stu-id="a0ce9-117">The `mapper` function returns arrays of this type.</span></span>
+
+## <a name="example"></a><span data-ttu-id="a0ce9-118">Пример</span><span class="sxs-lookup"><span data-stu-id="a0ce9-118">Example</span></span>
+
+```qsharp
+let Numbers = SequenceI(1, _); // generates numbers starting from 1
+let values = FlatMapped(Numbers, [1, 2, 3]);
+// values = [1, 1, 2, 1, 2, 3]
+```
