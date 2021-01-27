@@ -4,17 +4,17 @@ description: Сведения о том, как с помощью симулят
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.qc-trace-simulator.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2e2d9f8494d8709fba34123793cecce4011b609a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1e9207d7dcd6ec09353b234654e0567b377144e9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690836"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858640"
 ---
 # <a name="microsoft-quantum-development-kit-qdk-quantum-trace-simulator"></a>Пакет средств разработки Microsoft Quantum (QDK) — квантовый симулятор трассировки
 
@@ -74,7 +74,7 @@ operation TeleportQubit(source : Qubit, target : Qubit) : Unit {
 }
 ```
 
-Когда квантовый симулятор трассировки вычисляет `AssertMeasurementProbability`, он записывает измерение `PauliZ` в `source`, и ожидается, что `q` выдаст результат `Zero` с вероятностью **0,5** . При выполнении операции `M` в дальнейшем он находит записанные значения вероятностей результата, и `M` возвращает `Zero` или `One` с вероятностью **0,5** . Если один и тот же код выполняется в симуляторе, который отслеживает квантовое состояние, такой симулятор проверяет правильность предоставленных вероятностей в `AssertMeasurementProbability`.
+Когда квантовый симулятор трассировки вычисляет `AssertMeasurementProbability`, он записывает измерение `PauliZ` в `source`, и ожидается, что `q` выдаст результат `Zero` с вероятностью **0,5**. При выполнении операции `M` в дальнейшем он находит записанные значения вероятностей результата, и `M` возвращает `Zero` или `One` с вероятностью **0,5**. Если один и тот же код выполняется в симуляторе, который отслеживает квантовое состояние, такой симулятор проверяет правильность предоставленных вероятностей в `AssertMeasurementProbability`.
 
 Учтите, что, если есть хотя бы одна операция измерения, не помеченная с помощью `AssertMeasurementProbability`, симулятор выдаст [`UnconstrainedMeasurementException`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.unconstrainedmeasurementexception).
 

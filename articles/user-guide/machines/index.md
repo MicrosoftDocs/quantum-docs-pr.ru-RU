@@ -4,17 +4,17 @@ description: Описание квантовых симуляторов, дос�
 author: QuantumWriter
 ms.author: v-benbra
 ms.date: 6/17/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f40c63eed60379aa46a0cd9cfdd7d8de8c22c079
-ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
+ms.openlocfilehash: 408c636d5383cf594e7ebec6ab2edd66e20ffb82
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91771311"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858768"
 ---
 # <a name="quantum-simulators"></a>Квантовые симуляторы
 
