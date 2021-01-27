@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.FiveQubitCodeEncoderImpl
 title: Операция Фивекубиткодинкодеримпл
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: FiveQubitCodeEncoderImpl
 qsharp.summary: Private operation used to implement both the 5 qubit encoder and decoder.
-ms.openlocfilehash: f70d2d1352c7b2eebee7a863eba97d78d7351dab
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0a40d9674c011567b2fa9c838f31a0ee115e4268
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96200855"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98826082"
 ---
 # <a name="fivequbitcodeencoderimpl-operation"></a>Операция Фивекубиткодинкодеримпл
 
@@ -45,6 +45,6 @@ operation FiveQubitCodeEncoderImpl (data : Qubit[], scratch : Qubit[]) : Unit is
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Выбранный кодировщик взят из бумаги V. Клиучников и D. Маслов, "Оптимизация Клиффордных цепей," инвентаризационная. Rev. инвентаризационная. Rev. A 88, 052307 (2013); https://arxiv.org/abs/1305.0810, Рис. 4b) и требует всего 11 шлюзов.
