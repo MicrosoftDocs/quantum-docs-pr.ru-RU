@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.TrotterStep
 title: Функция Троттерстеп
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: TrotterStep
 qsharp.summary: Implements a single time-step of time-evolution by the system described in an `EvolutionGenerator` using a Trotter–Suzuki decomposition.
-ms.openlocfilehash: 516b40ac9920a4a8acc09ad7f558db88dbeb41e8
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 4c0e7dd89b1beae9fb6a35ae5b8d16e09d355ab8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192814"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854709"
 ---
 # <a name="trotterstep-function"></a>Функция Троттерстеп
 
@@ -50,6 +50,6 @@ function TrotterStep (evolutionGenerator : Microsoft.Quantum.Simulation.Evolutio
 
 Единая операция, которая приблизительно составляет один шаг времени — развитие длительности `trotterStepSize` .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Дополнительные сведения о декомпозиции Троттер – Сузуки см. в разделе [упорядочение по времени](/quantum/libraries/control-flow#time-ordered-composition).

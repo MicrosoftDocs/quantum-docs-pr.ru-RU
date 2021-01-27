@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection._ExtractLogicalQubitFromSteaneCode
 title: _ExtractLogicalQubitFromSteaneCode операция
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Syndrome measurement and the inverse of embedding.
 
   $X$- and $Z$-stabilizers are not treated equally, which is due to the particular choice of the encoding circuit. This asymmetry leads to a different syndrome extraction routine. One could measure the syndrome by measuring multi-qubit Pauli operator directly on the code state, but for the distillation purpose the logical qubit is returned into a single qubit, in course of which the syndrome measurements can be done without further ancillas.
-ms.openlocfilehash: 273692efa629cb8cc20069ef500c4e0902fbc3ff
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fe64343e30a0a3f0d05382e7812d37d5b13133d3
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96201348"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853211"
 ---
 # <a name="_extractlogicalqubitfromsteanecode-operation"></a>_ExtractLogicalQubitFromSteaneCode операция
 
@@ -48,7 +48,7 @@ operation _ExtractLogicalQubitFromSteaneCode (code : Microsoft.Quantum.ErrorCorr
 Логические кубит и пара целых чисел для $X $-синдром и $Z $-синдром.
 Они представляют индекс кода кубит, в котором одна $X $-или $Z $-Error вызывала измеряемый синдром.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Обратите внимание, что эта операция не помечена как `internal` , так как модульные тесты непосредственно зависят от этой операции. В качестве будущего улучшения модульные тесты должны быть подвергнуты рефакторингу, чтобы они зависели только от открытых вызываемых.
 
