@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.EqualA
 title: Функция EQUAL
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: EqualA
 qsharp.summary: Given two arrays of the same type and a predicate that is defined for pairs of elements of the arrays, checks whether the arrays are equal.
-ms.openlocfilehash: 176e15139a27d375fb047c07fa1ee778dc8cc2ce
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fe22e208f67d2c289b0b2d99f19ff26fc5abc3d8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221374"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848692"
 ---
 # <a name="equala-function"></a>Функция EQUAL
 
@@ -57,7 +57,25 @@ function EqualA<'T> (equal : (('T, 'T) -> Bool), array1 : 'T[], array2 : 'T[]) :
 
 Тип элементов каждого массива.
 
-## <a name="remarks"></a>Комментарии
+## <a name="example"></a>Пример
+
+Следующий код проверяет, равны ли разные пары массивов:
+
+```qsharp
+open Microsoft.Quantum.Arrays;
+open Microsoft.Quantum.Logical;
+
+function EqualADemo() : Unit {
+    let equalArrays = EqualA(EqualI, [2, 3, 4], [2, 3, 4]);
+    let differentLength = EqualA(EqualD, [2.0, 3.0, 4.0], [2.0, 3.0]);
+    let differentElements = EqualA(EqualR, [One, Zero], [One, One]);
+    Message($"Equal arrays are {equalArrays ? "equal" | "not equal"}");
+    Message($"Arrays of different length are {differentLength ? "equal" | "not equal"}");
+    Message($"Arrays of the same length with different elements are {differentElements ? "equal" | "not equal"}");
+}
+```
+
+## <a name="remarks"></a>Remarks
 
 Эта функция определена для универсальных типов; Например, если у нас есть два массива `'T[]` и функция `equal: ('T, 'T) -> Bool` , эта функция возвращает `Bool` значение, указывающее, равны ли массивы.
 Чтобы два массива считались равными, они должны иметь одинаковую длину, а элементы в одинаковых позициях массивов должны быть равны.
