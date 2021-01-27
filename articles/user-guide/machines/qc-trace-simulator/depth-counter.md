@@ -4,17 +4,17 @@ description: Узнайте о счетчике Microsoft КДК Depth, кото
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.qc-trace-simulator.depth-counter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 89d8a2c9f2ecd5c5332215cd4307bcf4a6422036
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 9c3a772861582e5c49fe5ad27519c25a59d617b1
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92692098"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98859048"
 ---
 # <a name="quantum-trace-simulator-depth-counter"></a>Симулятор тактовой трассировки: счетчик глубины
 
@@ -23,13 +23,13 @@ ms.locfileid: "92692098"
 
 ## <a name="depth-values"></a>Значения глубины
 
-По умолчанию все операции имеют глубину **0** , за исключением `T` операции с глубиной **1** . Это означает, что по умолчанию `T` вычисляются только глубина операций (что часто желательно). Счетчик глубины выполняет статистическую обработку и собирает статистические данные по всем краям [графа вызовов](https://en.wikipedia.org/wiki/Call_graph)операции.
+По умолчанию все операции имеют глубину **0** , за исключением `T` операции с глубиной **1**. Это означает, что по умолчанию `T` вычисляются только глубина операций (что часто желательно). Счетчик глубины выполняет статистическую обработку и собирает статистические данные по всем краям [графа вызовов](https://en.wikipedia.org/wiki/Call_graph)операции.
 
 Все <xref:Microsoft.Quantum.Intrinsic> операции выражаются с точки зрения однокубитных поворотов, <xref:Microsoft.Quantum.Intrinsic.T> операций, операций с одной кубит Клиффорд операции, <xref:Microsoft.Quantum.Intrinsic.CNOT> операций и измерений множества кубит Паули observable. Пользователи могут задать глубину для каждой из примитивных операций с помощью `gateTimes` поля <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> .
 
 ## <a name="invoking-the-depth-counter"></a>Вызов счетчика глубины
 
-Чтобы запустить симулятор трассировки тактов с счетчиком глубины, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, присвоить его `UseDepthCounter` свойству **значение true** , а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра. 
+Чтобы запустить симулятор трассировки тактов с счетчиком глубины, необходимо создать <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> экземпляр, присвоить его `UseDepthCounter` свойству **значение true**, а затем создать новый <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> экземпляр с `QCTraceSimulatorConfiguration` параметром в качестве параметра. 
 
 ```csharp
 var config = new QCTraceSimulatorConfiguration();
@@ -52,7 +52,7 @@ operation ApplySampleWithCCNOT() : Unit {
 }
 ```
 
-Чтобы проверить, что `CCNOT` имеет `T` глубину **5** и `ApplySampleWithCCNOT` имеет `T` глубину **6** , используйте следующий код C#:
+Чтобы проверить, что `CCNOT` имеет `T` глубину **5** и `ApplySampleWithCCNOT` имеет `T` глубину **6**, используйте следующий код C#:
 
 ```csharp
 using Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators;
@@ -73,7 +73,7 @@ double tDepthAll = sim.GetMetric<ApplySampleWithCCNOT>(DepthCounter.Metrics.Dept
 string csvSummary = sim.ToCSV()[MetricsCountersNames.depthCounter];
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - Обзор [имитатора трассировки такта](xref:microsoft.quantum.machines.qc-trace-simulator.intro) в пакете разработки тактов.
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>Справочник по API.
