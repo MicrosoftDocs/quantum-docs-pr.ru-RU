@@ -5,16 +5,16 @@ author: QuantumWriter
 uid: microsoft.quantum.libraries.data-structures
 ms.author: martinro
 ms.date: 12/11/2017
-ms.topic: article
+ms.topic: conceptual
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: c3ce5d531618c269d15be3e4eb58ecbb597a022c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e9b593ba69ed41a9fb3c1298b5b945a4cbe43d5d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92692242"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858331"
 ---
 # <a name="data-structures-and-modeling"></a>Структуры и моделирование данных #
 
@@ -72,7 +72,7 @@ ApplyToEach(
 ## <a name="oracles"></a>Oracle ##
 
 При [оценке этапов](https://en.wikipedia.org/wiki/Quantum_phase_estimation_algorithm) и повышении [амплитуды](https://en.wikipedia.org/wiki/Amplitude_amplification) понятие Oracle часто встречается.
-Здесь термин Oracle означает подпрограммы такта блаккбокс, которая работает с набором Кубитс и возвращает ответ в качестве фазы.
+Здесь термин Oracle относится к подподпрограмме такта, которая работает с набором Кубитс и возвращает ответ в качестве фазы.
 Эту подпрограммы часто можно рассматривать как входные данные для алгоритма такта, который принимает Oracle, в дополнение к некоторым другим параметрам и применяет ряд операций в такте и обрабатывая вызов этой подпрограммы-такта, как если бы это был фундаментальный шлюз.
 Очевидно, что для реализации более крупного алгоритма необходимо предоставить конкретную декомпозицию Oracle в фундаментальных шлюзах, но такая декомпозиция не требуется для понимания алгоритма, который вызывает Oracle.
 В Q# Эта абстракция представляется с помощью таких операций, которые являются первыми значениями класса, поэтому операции могут передаваться в реализации алгоритмов тактовой передачи в виде черного ящика.

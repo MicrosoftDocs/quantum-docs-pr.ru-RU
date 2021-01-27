@@ -4,17 +4,17 @@ description: Сведения о спецификациях Брумбридже
 author: cgranade
 ms.author: chgranad
 ms.date: 10/17/2018
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.libraries.chemistry.schema.spec_v_0_1
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: b99c90c434958f7b04712580789b203766cd084d
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 0a306f59a823e76ba0518d023a41f1f9d5670e7a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835746"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858192"
 ---
 # <a name="broombridge-specification-v01"></a>Спецификация брумбридже 0,1 #
 
@@ -133,7 +133,7 @@ format:                        # required
 
 ### <a name="hamiltonian-section"></a>Раздел хамилтониан ###
 
-#### <a name="overview"></a>Overview ####
+#### <a name="overview"></a>Обзор ####
 
 Этот раздел является информативным.
 
@@ -169,7 +169,7 @@ $$
 Объект Хамилтониан также может иметь свойство `particle_hole_representation` .
 При наличии значение `particle_hole_representation` должно соответствовать формату, описанному в оставшейся части этого раздела.
 
-##### <a name="one-electron-integrals-object"></a>Объект «интегралы за один электронный» #####
+##### <a name="one-electron-integrals-object"></a>One-Electronный объект интегралов #####
 
 Этот раздел является нормативным.
 
@@ -199,7 +199,7 @@ one_electron_integrals:     # required
 > Брумбридже использует индексирование, основанное на 1.
 
 
-##### <a name="two-electron-integrals-object"></a>Объект интегралов с двумя электронными данными #####
+##### <a name="two-electron-integrals-object"></a>Two-Electronный объект интегралов #####
 
 Этот раздел является нормативным.
 
