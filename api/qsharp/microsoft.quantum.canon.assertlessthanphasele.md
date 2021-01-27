@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.AssertLessThanPhaseLE
 title: Операция Ассертлесссанфаселе
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -14,24 +14,24 @@ qsharp.summary: >-
   >
 
   > Please use @"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan".
-ms.openlocfilehash: 9ba41c0fa068196b74fc2dfb13615c5a0c25424a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b26a76adbd81dd256d907c6b17de2d5965dfbfb4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96217005"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844551"
 ---
-# <a name="assertlessthanphasele-operation"></a><span data-ttu-id="5515f-102">Операция Ассертлесссанфаселе</span><span class="sxs-lookup"><span data-stu-id="5515f-102">AssertLessThanPhaseLE operation</span></span>
+# <a name="assertlessthanphasele-operation"></a><span data-ttu-id="a5ee5-102">Операция Ассертлесссанфаселе</span><span class="sxs-lookup"><span data-stu-id="a5ee5-102">AssertLessThanPhaseLE operation</span></span>
 
-<span data-ttu-id="5515f-103">Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)</span><span class="sxs-lookup"><span data-stu-id="5515f-103">Namespace: [Microsoft.Quantum.Canon](xref:Microsoft.Quantum.Canon)</span></span>
+<span data-ttu-id="a5ee5-103">Пространство имен: [Microsoft. тактов. Canon](xref:Microsoft.Quantum.Canon)</span><span class="sxs-lookup"><span data-stu-id="a5ee5-103">Namespace: [Microsoft.Quantum.Canon](xref:Microsoft.Quantum.Canon)</span></span>
 
-<span data-ttu-id="5515f-104">Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="5515f-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
+<span data-ttu-id="a5ee5-104">Пакет: [Microsoft. такт. Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="a5ee5-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
 
 
 > [!WARNING]
-> <span data-ttu-id="5515f-105">Ассертлесссанфаселе является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="5515f-105">AssertLessThanPhaseLE has been deprecated.</span></span> <span data-ttu-id="5515f-106">Взамен рекомендуется использовать <xref:Microsoft.Quantum.Arithmetic.AssertPhaseLessThan>.</span><span class="sxs-lookup"><span data-stu-id="5515f-106">Please use <xref:Microsoft.Quantum.Arithmetic.AssertPhaseLessThan> instead.</span></span>
+> <span data-ttu-id="a5ee5-105">Ассертлесссанфаселе является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="a5ee5-105">AssertLessThanPhaseLE has been deprecated.</span></span> <span data-ttu-id="a5ee5-106">Взамен рекомендуется использовать <xref:Microsoft.Quantum.Arithmetic.AssertPhaseLessThan>.</span><span class="sxs-lookup"><span data-stu-id="a5ee5-106">Please use <xref:Microsoft.Quantum.Arithmetic.AssertPhaseLessThan> instead.</span></span>
 >
-> <span data-ttu-id="5515f-107">Используйте @"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan".</span><span class="sxs-lookup"><span data-stu-id="5515f-107">Please use @"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan".</span></span>
+> <span data-ttu-id="a5ee5-107">Используйте @"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan".</span><span class="sxs-lookup"><span data-stu-id="a5ee5-107">Please use @"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan".</span></span>
 
 
 
@@ -40,18 +40,18 @@ operation AssertLessThanPhaseLE (value : Int, number : Microsoft.Quantum.Arithme
 ```
 
 
-## <a name="input"></a><span data-ttu-id="5515f-108">Входные данные</span><span class="sxs-lookup"><span data-stu-id="5515f-108">Input</span></span>
+## <a name="input"></a><span data-ttu-id="a5ee5-108">Входные данные</span><span class="sxs-lookup"><span data-stu-id="a5ee5-108">Input</span></span>
 
-### <a name="value--int"></a><span data-ttu-id="5515f-109">значение: [int](xref:microsoft.quantum.lang-ref.int)</span><span class="sxs-lookup"><span data-stu-id="5515f-109">value : [Int](xref:microsoft.quantum.lang-ref.int)</span></span>
-
-
-
-
-### <a name="number--phaselittleendian"></a><span data-ttu-id="5515f-110">число: [фаселиттлиндиан](xref:Microsoft.Quantum.Arithmetic.PhaseLittleEndian)</span><span class="sxs-lookup"><span data-stu-id="5515f-110">number : [PhaseLittleEndian](xref:Microsoft.Quantum.Arithmetic.PhaseLittleEndian)</span></span>
+### <a name="value--int"></a><span data-ttu-id="a5ee5-109">значение: [int](xref:microsoft.quantum.lang-ref.int)</span><span class="sxs-lookup"><span data-stu-id="a5ee5-109">value : [Int](xref:microsoft.quantum.lang-ref.int)</span></span>
 
 
 
 
+### <a name="number--phaselittleendian"></a><span data-ttu-id="a5ee5-110">число: [фаселиттлиндиан](xref:Microsoft.Quantum.Arithmetic.PhaseLittleEndian)</span><span class="sxs-lookup"><span data-stu-id="a5ee5-110">number : [PhaseLittleEndian](xref:Microsoft.Quantum.Arithmetic.PhaseLittleEndian)</span></span>
 
-## <a name="output--unit"></a><span data-ttu-id="5515f-111">Выходные данные: [единица измерения](xref:microsoft.quantum.lang-ref.unit)</span><span class="sxs-lookup"><span data-stu-id="5515f-111">Output : [Unit](xref:microsoft.quantum.lang-ref.unit)</span></span>
+
+
+
+
+## <a name="output--unit"></a><span data-ttu-id="a5ee5-111">Выходные данные: [единица измерения](xref:microsoft.quantum.lang-ref.unit)</span><span class="sxs-lookup"><span data-stu-id="a5ee5-111">Output : [Unit](xref:microsoft.quantum.lang-ref.unit)</span></span>
 
