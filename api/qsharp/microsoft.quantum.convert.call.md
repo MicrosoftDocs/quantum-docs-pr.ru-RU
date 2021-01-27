@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.Call
 title: Операция вызова
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: Call
 qsharp.summary: Calls a function with a given input.
-ms.openlocfilehash: 92c159cef878fb587b0ed514fd6660dd19527cab
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 93458d08aa83ffa8b7b33de8bf51c970af291db9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214217"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850196"
 ---
 # <a name="call-operation"></a>Операция вызова
 
@@ -58,6 +58,6 @@ operation Call<'Input, 'Output> (fn : ('Input -> 'Output), input : 'Input) : 'Ou
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Эта операция в основном полезна для принудительного вызова функции в определенном месте операции или для вызова функции, в которой ожидается операция.

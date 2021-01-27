@@ -4,17 +4,17 @@ description: Сведения о том, как внести пример и к�
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
-ms.topic: article
+ms.topic: contributor-guide
 uid: microsoft.quantum.contributing.code
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 47845c4f3520e8c50cf8aefd9bf9e8f086c42842
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 54ef15db2b850e6a3bff38945c57129361517bfe
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691804"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856678"
 ---
 # <a name="contributing-code"></a>Участие в написании кода
 
@@ -59,7 +59,7 @@ function PairTest () : Unit {
 Более сложные условия можно проверить с помощью методик, описанных в [разделе "тестирование](xref:microsoft.quantum.libraries.diagnostics) " в руководству стандартных библиотек.
 Например, следующий тест проверяет, что, `H(q); X(q); H(q);` как вызвано, <xref:Microsoft.Quantum.Canon.ApplyWith> выполняет то же самое, что и `Z(q)` .
 
-```Q#
+```qsharp
 @Test("QuantumSimulator")
 operation TestApplyWith() : Unit {
     let actual = ApplyWith(H, X, _);

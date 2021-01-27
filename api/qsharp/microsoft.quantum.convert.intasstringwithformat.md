@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.IntAsStringWithFormat
 title: Функция Интасстрингвисформат
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: IntAsStringWithFormat
 qsharp.summary: Converts a given integer number to an equivalent string representation, using the given format.
-ms.openlocfilehash: ff9812b0e2d256fc5212a40b39dc65e69a8a6b7a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 27132075075b6be6d3bbadca22bd82e8d0254c6b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214081"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850138"
 ---
 # <a name="intasstringwithformat-function"></a>Функция Интасстрингвисформат
 
@@ -45,6 +45,6 @@ function IntAsStringWithFormat (a : Int, fmt : String) : String
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Дополнительные сведения см. в разделе [C# Int64. ToString](https://docs.microsoft.com/dotnet/api/system.int64.tostring?view=netframework-4.7.1#System_Int64_ToString_System_String_) .

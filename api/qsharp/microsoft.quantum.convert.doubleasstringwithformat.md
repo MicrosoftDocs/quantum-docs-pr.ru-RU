@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.DoubleAsStringWithFormat
 title: Функция Даублеасстрингвисформат
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: DoubleAsStringWithFormat
 qsharp.summary: Converts a given double-precision floating-point number to an equivalent string representation, using the given format.
-ms.openlocfilehash: e2c2f8692d2ef63510c36777aef83699339b774e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 36511d9736e90b4285f68ef640318a2ae8d3c56a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214183"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850184"
 ---
 # <a name="doubleasstringwithformat-function"></a>Функция Даублеасстрингвисформат
 
@@ -45,6 +45,6 @@ function DoubleAsStringWithFormat (a : Double, fmt : String) : String
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Дополнительные сведения см. в разделе [C# Double. ToString](https://docs.microsoft.com/dotnet/api/system.double.tostring?view=netframework-4.7.1#System_Double_ToString_System_String_) .
