@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyPauliFromBitString
 title: Операция Апплипаулифромбитстринг
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyPauliFromBitString
 qsharp.summary: Applies a Pauli operator on each qubit in an array if the corresponding bit of a Boolean array matches a given input.
-ms.openlocfilehash: cf4c99ec5134fac788cdd4c8a057258790152a82
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e0edd8420127339116e525421ba23e246dcf0a45
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96209066"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841590"
 ---
 # <a name="applypaulifrombitstring-operation"></a>Операция Апплипаулифромбитстринг
 
@@ -55,6 +55,6 @@ operation ApplyPauliFromBitString (pauli : Pauli, bitApply : Bool, bits : Bool[]
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Логический массив и регистр такта должны иметь одинаковую длину.

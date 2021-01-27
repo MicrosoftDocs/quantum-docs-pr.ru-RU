@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.DecomposedIntoTimeStepsCA
 title: Функция Декомпосединтотиместепска
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: DecomposedIntoTimeStepsCA
 qsharp.summary: Returns an operation implementing the Trotter–Suzuki integrator for a given operation.
-ms.openlocfilehash: aa5f09f2e1fde878b523b4efc20b86c26ac738ff
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e82df36d2e4f3767a152d5c92d7b1897c744a2ca
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96216546"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840689"
 ---
 # <a name="decomposedintotimestepsca-function"></a>Функция Декомпосединтотиместепска
 
@@ -57,7 +57,7 @@ function DecomposedIntoTimeStepsCA<'T> ((nSteps : Int, op : ((Int, Double, 'T) =
 
 Тип, с которым должен действовать каждый шаг времени; как правило, `Qubit[]` или `Qubit` .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 При вызове с параметром `order` Equals `1` Эта функция возвращает операцию, которая может быть смоделирована с помощью самого низкого порядка Троттер – Сузуки Integrator $ $ \бегин{алигн} S_1 (\ламбда) = \ prod_ {j = 1} ^ {m} e ^ {H_j \ламбда}, \енд{алигн} $ $, где мы соблюдаем нотацию [Куант-pH/0508139](https://arxiv.org/abs/quant-ph/0508139) и разберем $ \ламбда $ как время развития (представленное первыми входными данными возвращаемой операции), и пусть $ \{ H_j \} _ {j = 1} ^ {m} $ является набором (неравномерные) динамических генераторов (хермитиан), которые `op(j, lambda, _)` моделируются с помощью единого оператора $e ^ {H_j \lambda} $.
 

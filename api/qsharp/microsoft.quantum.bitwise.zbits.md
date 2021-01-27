@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Bitwise.ZBits
 title: Функция Збитс
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Bitwise
 qsharp.name: ZBits
 qsharp.summary: Returns an integer representing the Z bits of an array of Pauli operators.
-ms.openlocfilehash: 3ded981dc53236a48f1fb8f6ae12e39c17469447
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: d1ddc2a4cdbdfd3945885de856456b3108592594
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219453"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842064"
 ---
 # <a name="zbits-function"></a>Функция Збитс
 
@@ -40,7 +40,7 @@ function ZBits (paulis : Pauli[]) : Int
 
 Целочисленное $x $ с двоичным представлением $ (p_ {62} \, p_ {61} \, \дотс \, p_0) $, где $p _i = $0, если `paulis[i]` имеет значение `PauliI` или `PauliX` и, где $p _i = $1, если `paulis[i]` имеет значение `PauliY` или `PauliZ` .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Функция вызывает исключение, если длина `paulis` массива больше 63.
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Bitwise.Not
 title: Not, функция
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Bitwise
 qsharp.name: Not
 qsharp.summary: Returns the bitwise NOT of an integer. This performs the same computation as the built-in `~~~` operator.
-ms.openlocfilehash: 99c4a503b79ea0cb416c8b4e64d053be82ee9605
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 9c7642770c4f1db4878ccc1aba288fb9254e017e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219589"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842114"
 ---
 # <a name="not-function"></a>Not, функция
 
@@ -41,6 +41,13 @@ function Not (a : Int) : Int
 
 
 
-## <a name="remarks"></a>Комментарии
+## <a name="example"></a>Пример
+
+```qsharp
+let a = 248;
+let x = Not(a); // x : Int = -249, due to two's complement representation.
+```
+
+## <a name="remarks"></a>Remarks
 
 Дополнительные сведения см. в разделе [оператор C# ~](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/bitwise-complement-operator) .
