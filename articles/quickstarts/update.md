@@ -4,18 +4,17 @@ description: Описание процесса обновления проект
 author: bradben
 ms.author: v-benbra
 ms.date: 5/30/2020
-ms.topic: article
-ms.custom: how-to
+ms.topic: quickstart
 uid: microsoft.quantum.update
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: d9678a61f5fe4ca466b6a84e9e4b68321c5baee3
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 1b5def3226bd073c878f8573aaddd757d733ec48
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834929"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858061"
 ---
 # <a name="update-the-microsoft-quantum-development-kit-qdk"></a>Обновление пакета средств разработки Microsoft Quantum Development Kit (QDK)
 
@@ -27,7 +26,7 @@ ms.locfileid: "90834929"
 1. Обновление имеющихся файлов Q# и проектов для согласования кода с обновленным синтаксисом.
 2. Обновление самого пакета QDK для выбранной среды разработки.
 
-## <a name="updating-no-locq-projects"></a>Обновление проектов Q# 
+## <a name="updating-q-projects"></a>Обновление проектов Q# 
 
 Следуйте этим инструкциям по обновлению проектов Q# независимо от того, на каком языке написана ведущая программа для выполнения операций Q#: C# или Python.
 
@@ -39,7 +38,7 @@ ms.locfileid: "90834929"
 
     Убедитесь, что в результате получена версия `3.1.100` или более новая. В противном случае установите [последнюю версию](https://dotnet.microsoft.com/download) и повторите проверку снова. Затем следуйте приведенным ниже инструкциям в зависимости от настроек (в Visual Studio, Visual Studio Code или непосредственно в командной строке).
 
-### <a name="update-no-locq-projects-in-visual-studio"></a>Обновление проектов Q# в Visual Studio
+### <a name="update-q-projects-in-visual-studio"></a>Обновление проектов Q# в Visual Studio
  
 1. Обновите Visual Studio 2019 до последней версии. Инструкции см. [здесь](https://docs.microsoft.com/visualstudio/install/update-visual-studio).
 2. Откройте решение в Visual Studio.
@@ -80,13 +79,13 @@ ms.locfileid: "90834929"
 Теперь вы можете сразу перейти к [обновлению расширения QDK для Visual Studio](#update-visual-studio-qdk-extension).
 
 
-### <a name="update-no-locq-projects-in-visual-studio-code"></a>Обновление проектов Q# в Visual Studio Code
+### <a name="update-q-projects-in-visual-studio-code"></a>Обновление проектов Q# в Visual Studio Code
 
 1. В Visual Studio Code откройте папку с проектом, который необходимо обновить.
 2. Выберите **Терминал** -> **Создать терминал**.
 3. Выполните инструкции по обновлению с помощью командной строки (см. ниже).
 
-### <a name="update-no-locq-projects-using-the-command-prompt"></a>Обновление проектов Q# с помощью командной строки
+### <a name="update-q-projects-using-the-command-prompt"></a>Обновление проектов Q# с помощью командной строки
 
 1. Перейдите к папке, содержащей основной файл проекта.
 
@@ -234,7 +233,7 @@ ms.locfileid: "90834929"
 
 Теперь вы можете использовать обновленную версию пакета Python `qsharp` для выполнения имеющихся квантовых программ.
 
-### <a name="update-the-ino-locq-jupyter-kernel"></a>Обновление ядра IQ# для Jupyter
+### <a name="update-the-iq-jupyter-kernel"></a>Обновление ядра IQ# для Jupyter
 
 Процедура обновления зависит от того, была ли изначально установка выполнена с помощью conda или с помощью .NET CLI и pip.
 
@@ -282,7 +281,7 @@ ms.locfileid: "90834929"
     %workspace reload
     ```
 
-***
+**_
 
 Теперь вы можете использовать обновленное ядро IQ# для запуска существующих записных книжек Jupyter Notebook для Q#.
 
@@ -301,7 +300,7 @@ ms.locfileid: "90834929"
 1. Обновите расширение Quantum для VS Code.
 
     - Перезапустите VS Code.
-    - Перейдите на вкладку **Расширения**.
+    - Перейдите на вкладку _ *Расширения**.
     - Выберите расширение **Microsoft Quantum Development Kit для Visual Studio Code**.
     - Перезагрузите расширение.
 
