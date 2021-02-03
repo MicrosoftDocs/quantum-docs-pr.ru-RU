@@ -1,8 +1,0 @@
-- name: Получение оценок энергетических уровней
-  href: molecular-hydrogen.md
-- name: Загрузка гамильтонова представления из файла
-  href: loading-from-file.md
-- name: Получение счетчиков ресурсов
-  href: resource-counts.md
-- name: Полный цикл работы с NWChem
-  href: end-to-end.md
